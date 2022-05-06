@@ -1,0 +1,49 @@
+site_name: K3D - всё о 3D печати
+site_url: http://k3d.tech
+#repo_url: https://github.com/dmitry-sorkin/K3D-VOSTOK
+copyright: Copyright &copy; 2022 Dmitry Sorkin @ K3D
+theme:
+  name: material
+  language: ru
+  logo: pics/logo.png
+  favicon: pics/favicon.ico
+  features:
+    - navigation.expand
+#    - toc.integrate
+  palette:
+    scheme: slate
+    primary: deep orange
+    accent: orange
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/vostok3dp
+    - icon: material/youtube
+      link: https://www.youtube.com/c/SorkinDmitry
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Домашняя страница: index.md
+  - VOSTOK:
+    - Описание проекта: ./vostok/index.md
+    - Релизы: ./vostok/releases.md
+    - Инструкции:
+      - Сборка Lite Print Head: ./vostok/lite_print_head.md
+      - Ручной подбор частоты Input Shaping: ./vostok/manual_is_calibration.md
+      - Инструкция по BOM: ./vostok/how_to_use_bom.md
+      - Инструкция по оформлению статей: ./vostok/how_to_write_article.md
+  - Minifeeder:
+    - Описание проекта: ./minifeeder/index.md
+    - Релизы: ./minifeeder/releases.md
+    - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
