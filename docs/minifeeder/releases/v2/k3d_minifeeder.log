@@ -1,0 +1,74 @@
+﻿UG to STEP
+! INFO-     NX STEP AP242 - V1899
+! INFO-      
+! INFO-     Start of Translation: 10-MAY-2022  2:03:47 PM
+! INFO-      
+! STATUS-   Converting Part: G:\project_bulba\V0.7\MF-00 - K3D Minifeeder.prt
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 10-MAY-2022 2:03:47 PM
+! STATUS-    
+! INFO-           Summary of STEP Entities 
+! INFO-      
+! INFO-     Entity Type                                                   Count 
+! INFO-     -----------                                                   ------ 
+! INFO-     advanced_brep_shape_representation .......................:   30 
+! INFO-     advanced_face ............................................:   789 
+! INFO-     application_context ......................................:   1 
+! INFO-     application_protocol_definition ..........................:   1 
+! INFO-     axis2_placement_3d .......................................:   1447 
+! INFO-     b_spline_curve_with_knots ................................:   137 
+! INFO-     b_spline_curve_with_knots_and_rational_b_spline_curve ....:   12 
+! INFO-     b_spline_surface_with_knots ..............................:   25 
+! INFO-     cartesian_point ..........................................:   7289 
+! INFO-     circle ...................................................:   646 
+! INFO-     closed_shell .............................................:   30 
+! INFO-     colour_rgb ...............................................:   9 
+! INFO-     conical_surface ..........................................:   93 
+! INFO-     context_dependent_shape_representation ...................:   21 
+! INFO-     cylindrical_surface ......................................:   213 
+! INFO-     direction ................................................:   3973 
+! INFO-     edge_curve ...............................................:   1889 
+! INFO-     edge_loop ................................................:   929 
+! INFO-     ellipse ..................................................:   15 
+! INFO-     face_bound ...............................................:   941 
+! INFO-     fill_area_style ..........................................:   173 
+! INFO-     fill_area_style_colour ...................................:   173 
+! INFO-     geometric_representation_context_and_global_uncertainty_a :   16 
+! INFO-     item_defined_transformation ..............................:   21 
+! INFO-     length_unit_and_si_unit ..................................:   1 
+! INFO-     line .....................................................:   1079 
+! INFO-     manifold_solid_brep ......................................:   30 
+! INFO-     mechanical_design_geometric_presentation_representation ..:   1 
+! INFO-     next_assembly_usage_occurrence ...........................:   21 
+! INFO-     oriented_edge ............................................:   3778 
+! INFO-     plane ....................................................:   439 
+! INFO-     plane_angle_unit_and_si_unit .............................:   1 
+! INFO-     presentation_style_assignment ............................:   173 
+! INFO-     product ..................................................:   16 
+! INFO-     product_category .........................................:   16 
+! INFO-     product_context ..........................................:   16 
+! INFO-     product_definition .......................................:   16 
+! INFO-     product_definition_context ...............................:   16 
+! INFO-     product_definition_formation_with_specified_source .......:   16 
+! INFO-     product_definition_shape .................................:   37 
+! INFO-     product_related_product_category .........................:   16 
+! INFO-     representation_relationship_with_transformation_and_shape :   21 
+! INFO-     shape_definition_representation ..........................:   16 
+! INFO-     shape_representation .....................................:   16 
+! INFO-     shape_representation_relationship ........................:   30 
+! INFO-     si_unit_and_solid_angle_unit .............................:   1 
+! INFO-     spherical_surface ........................................:   14 
+! INFO-     styled_item ..............................................:   173 
+! INFO-     surface_side_style .......................................:   173 
+! INFO-     surface_style_fill_area ..................................:   173 
+! INFO-     surface_style_usage ......................................:   173 
+! INFO-     toroidal_surface .........................................:   5 
+! INFO-     uncertainty_measure_with_unit ............................:   16 
+! INFO-     vector ...................................................:   1079 
+! INFO-     vertex_loop ..............................................:   12 
+! INFO-     vertex_point .............................................:   1234 
+! INFO-                                                                  ------- 
+! INFO-     Total                                                         27681 
+! INFO-      
+! INFO-     End of Translation: 10-MAY-2022  2:03:49 PM
+! INFO-      

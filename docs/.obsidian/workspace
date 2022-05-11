@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "minifeeder/index.md",
+            "file": "minifeeder/releases.md",
             "mode": "source",
             "source": true
           }
@@ -21,7 +21,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "minifeeder/index.md",
+            "file": "minifeeder/releases.md",
             "mode": "source",
             "source": false
           }
@@ -81,7 +81,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "minifeeder/index.md",
+                "file": "minifeeder/releases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +101,7 @@
   },
   "active": "66e0afbfd63d557e",
   "lastOpenFiles": [
+    "minifeeder/releases.md",
     "minifeeder/index.md",
     "index.md"
   ]
