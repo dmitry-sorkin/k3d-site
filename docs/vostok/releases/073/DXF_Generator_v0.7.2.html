@@ -100,21 +100,24 @@ if (thn != thn_dm && chamberEnabled && domeEnabled) {
 	: '<span style="font-weight: bold">Указана различная толщина зашивки камеры и купола,<br>после сборки на стыке камеры и купола будет<br>образована ступенька шириной ' + Math.abs((thn - thn_dm) / 2) + ' мм<br>&nbsp;</span>');
 }
 
-SHOW_INFO('<span style="font-weight: bold; display: block; text-align: center">' + (lang ? 'Calculated profile length for crosscheck' : 'Расчетные размеры профилей для сверки') + '</span>');
-
 // PROFILE LENGTH
+SHOW_INFO('<span style="font-weight: bold; display: block; text-align: center">' + (lang ? 'Calculated profile length for crosscheck' : 'Расчетные размеры профилей для сверки') + '</span>');
+SHOW_INFO('<span style="font-weight: bold; display: block; text-align: center">' + (lang ? 'Portal' : 'Портал') + '</span>');
 SHOW_INFO(lang ? 'Gantry Beam Y (mm):' : 'Продольная балка портала (мм):', dy_f(450));
 SHOW_INFO(lang ? 'Gantry Beam X (mm):' : 'Поперечная балка портала (мм):', dx_f(650));
 SHOW_INFO(lang ? 'Auxiliary Gantry Beam X (mm):' : 'Вспомогательная балка портала (мм):', dx_f(530));
+SHOW_INFO(lang ? 'X Axis Beam (mm):' : 'Балка оси X (мм):', dx_f(500));
+SHOW_INFO('<span style="font-weight: bold; display: block; text-align: center">' + (lang ? 'Frame' : 'Нижняя часть рамы') + '</span>');
 SHOW_INFO(lang ? 'Corner Pillar (mm):' : 'Угловая стойка (мм):', dz_f(440));
 SHOW_INFO(lang ? 'Auxiliary Pillar (mm):' : 'Вспомогательная стойка (мм):', dz_f(390));
 SHOW_INFO(lang ? 'Auxiliary Base Beam (mm):' : 'Вспомогательная поперечина (мм):', dx_f(610));
 SHOW_INFO(lang ? 'Base Beam X (mm):' : 'Поперечная балка основания (мм):', dx_f(610));
 SHOW_INFO(lang ? 'Base Beam Y (mm):' : 'Продольная балка основания (мм):', dy_f(450));
+SHOW_INFO('<span style="font-weight: bold; display: block; text-align: center">' + (lang ? 'Z Axis' : 'Ось Z') + '</span>');
 SHOW_INFO(lang ? 'Z Rail Beam (mm):' : 'Стойка оси Z (мм):', dz_f(390));
-SHOW_INFO(lang ? 'Table Beam X (mm):' : 'Поперечная балка рамы стола (мм):', dx_f(500));
-SHOW_INFO(lang ? 'Table Beam Y (mm):' : 'Продольные балки рамы стола (мм):', dy_f(320));
-SHOW_INFO(lang ? 'X Axis Beam (mm):' : 'Балка оси X (мм):', dx_f(500));
+SHOW_INFO(lang ? 'Table Frame Beam X (mm):' : 'Поперечная балка рамы стола (мм):', dx_f(500));
+SHOW_INFO(lang ? 'Table Frame Beam Y (mm):' : 'Продольная балка рамы стола (мм):', dy_f(170));
+SHOW_INFO(lang ? 'Table Beam Y (mm):' : 'Плечо рамы стола (мм):', dy_f(320));
 
 
 // CHAMBER START
@@ -456,6 +459,26 @@ if (fourPillars && fourZSteppers) {
   G1(E, 71.083, 0);
   MULTI_CIRCLE_GAP(-10, 10, 0, 206 - 75 - 47.2, 2.15, 110);
   G1(E, 0, 206 - 75 - 23.2);
+} else if (fourPillars && !fourZSteppers) {
+  MULTI_CIRCLE_GAP(-10, 10, 0, 97 - 10.2 - 20, 2.15, 110);
+  G1(E, 0, 97 - 10.2);
+  G1(E, -20, 0);
+  G1(E, 0, 20.4);
+  G1(E, 20, 0);
+  MULTI_CIRCLE_GAP(-10, 10, 0, 51.8 - 10.2 + dy(0) / 2 - 20, 2.15, 110, dy(0) < 60, false);
+  G1(E, 0, 51.8 - 10.2 + dy(0) / 2);
+  G1(E, -71.083, 0);
+  G1(E, -4.117, 4.117);
+  G1(E, 0, 38.166);
+  G1(E, 4.117, 4.117);
+  G1(E, 71.083, 0);
+  MULTI_CIRCLE_GAP(-10, 10, 0, 51.8 - 10.2 + dy(0) / 2 - 20, 2.15, 110, false, dy(0) < 60);
+  G1(E, 0, 51.8 - 10.2 + dy(0) / 2);
+  G1(E, -20, 0);
+  G1(E, 0, 20.4);
+  G1(E, 20, 0);
+  MULTI_CIRCLE_GAP(-10, 10, 0, 127 - 10.2 - 20, 2.15, 110);
+  G1(E, 0, 131 - 10.2);
 } else {
   MULTI_CIRCLE_GAP(-10, 10, 0, 172 + dy(0) / 2 - 43.2, 2.15, 110);
   G1(E, 0, 172 + dy(0) / 2 - 23.2);
@@ -491,6 +514,26 @@ if (fourPillars && fourZSteppers) {
   G1(E, -71.083, 0);
   MULTI_CIRCLE_GAP(10, -10, 0, -(172 - 75 - 43.2), 2.15, 110);
   G1(E, 0, -(172 - 75 - 23.2));
+} else if (fourPillars && !fourZSteppers) {
+  MULTI_CIRCLE_GAP(10, -14, 0, -(127 - 10.2 - 20), 2.15, 110);
+  G1(E, 0, -(131 - 10.2));
+  G1(E, 20, 0);
+  G1(E, 0, -20.4);
+  G1(E, -20, 0);
+  MULTI_CIRCLE_GAP(10, -10, 0, -(51.8 - 10.2 + dy(0) / 2 - 20), 2.15, 110, dy(0) < 60, false);
+  G1(E, 0, -(51.8 - 10.2 + dy(0) / 2));
+  G1(E, 71.083, 0);
+  G1(E, 4.117, -4.117);
+  G1(E, 0, -38.166);
+  G1(E, -4.117, -4.117);
+  G1(E, -71.083, 0);
+  MULTI_CIRCLE_GAP(10, -10, 0, -(51.8 - 10.2 + dy(0) / 2 - 20), 2.15, 110, false, dy(0) < 60);
+  G1(E, 0, -(51.8 - 10.2 + dy(0) / 2));
+  G1(E, 20, 0);
+  G1(E, 0, -20.4);
+  G1(E, -20, 0);
+  MULTI_CIRCLE_GAP(10, -10, 0, -(97 - 10.2 - 20), 2.15, 110);
+  G1(E, 0, -(97 - 10.2));
 } else {
   MULTI_CIRCLE_GAP(10, -14, 0, -(206 + dy(0) / 2 - 47.2), 2.15, 110);
   G1(E, 0, -(206 + dy(0) / 2 - 23.2));

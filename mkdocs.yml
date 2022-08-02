@@ -35,6 +35,7 @@ extra_css:
   - stylesheets/extra.css
 nav:
   - Домашняя страница: index.md
+  - Калибровщик откатов: ./retractions/index.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md

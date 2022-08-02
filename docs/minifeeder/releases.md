@@ -1,5 +1,18 @@
 # Релизы K3D Minifeeder
 
+## v2.2 - Усиленная качалка
+
+### Что нового
+
+Сообщили о проблеме недостаточного прижима подающих шестеренок ввиду недостаточной жесткости качалки. Поэтому качалка была переработана так, чтобы быть значительно более жесткой.
+
+### Скачать
+
+- [:material-printer-3d-nozzle: Minifeeder front](./releases/v2/minifeeder_2_front.stl)
+- [:material-printer-3d-nozzle: Minifeeder back](./releases/v2/minifeeder_2_back.stl)
+- [:material-printer-3d-nozzle: Minifeeder lever](./releases/v2/minifeeder_2_lever.stl)
+- [:material-video-3d: Minifeeder assembly](./releases/v2/k3d_minifeeder.stp)
+
 ## v2.1 - Дополнительная точка крепления
 
 ### Что нового
@@ -8,10 +21,7 @@
 
 ### Скачать
 
-- [:material-printer-3d-nozzle: Minifeeder front](./releases/v2/minifeeder_2_front.stl)
-- [:material-printer-3d-nozzle: Minifeeder back](./releases/v2/minifeeder_2_back.stl)
-- [:material-printer-3d-nozzle: Minifeeder lever](./releases/v2/minifeeder_2_lever.stl)
-- [:material-video-3d: Minifeeder assembly](./releases/v2/k3d_minifeeder.stp)
+- Файлы заменены на более свежие (см. последний релиз)
 
 ## v2 - Фиттинг и облегчение
 
@@ -25,10 +35,7 @@
 
 ### Скачать
 
-- [:material-printer-3d-nozzle: Minifeeder front](./releases/v2/minifeeder_2_front.stl)
-- [:material-printer-3d-nozzle: Minifeeder back](./releases/v2/minifeeder_2_back.stl)
-- [:material-printer-3d-nozzle: Minifeeder lever](./releases/v2/minifeeder_2_lever.stl)
-- [:material-video-3d: Minifeeder assembly](./releases/v2/k3d_minifeeder.stp)
+- Файлы заменены на более свежие (см. последний релиз)
 
 ## v1 - Первоначальный релиз
 
