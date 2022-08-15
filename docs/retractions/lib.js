@@ -36,7 +36,7 @@ function showError(value) {
     output.id = "gCode";
     // output.name = "gCode";
     output.cols = "80";
-    output.rows = "40";
+    output.rows = "10";
     output.value = value;
     // output.className = "css-class-name"; // set the CSS class
     container.appendChild(output); //appendChild
@@ -50,9 +50,12 @@ function destroyClickedElement(event) {
 var formFields = [
     "bedX",
     "bedY",
+    "zOffset",
+    "delta",
     "bedProbe",
     "hotendTemperature",
     "bedTemperature",
+    "cooling",
     "lineWidth",
     "firstLayerLineWidth",
     "layerHeight",
@@ -60,19 +63,58 @@ var formFields = [
     "firstLayerPrintSpeed",
     "travelSpeed",
     "initRetractLength",
-    "retractLengthDelta",
+    "endRetractLength",
     "initRetractSpeed",
-    "retractSpeedDelta",
+    "endRetractSpeed",
     "numSegments",
-    "segmentHeight"
+    "segmentHeight",
+    "kFactor",
+    "towerSpacing",
 ];
 
-function addFormFieldChangeHandler() {
-    var generateButton = document.getElementById("generateButton");
+var saveForm = function () {
     for (var elementId of formFields) {
         var element = document.getElementById(elementId);
-        element.onchange = function () {
-            generateButton.disabled = true;
-        };
+        if (element) {
+            var saveValue = element.value;
+            if (elementId == 'delta' || elementId == 'bedProbe') {
+                saveValue = element.checked;
+            }
+            localStorage.setItem(elementId, saveValue);
+        }
     }
+}
+
+function loadForm() {
+    for (var elementId of formFields) {
+        let loadValue = localStorage.getItem(elementId);
+        if (loadValue === undefined) {
+            continue;
+        }
+
+        var element = document.getElementById(elementId);
+        if (element) {
+            if (elementId == 'delta' || elementId == 'bedProbe') {
+                if (loadValue == 'true') {
+                    element.checked = true;
+                } else {
+                    element.checked = false;
+                }
+                
+            } else {
+                if (loadValue != null) {
+                    element.value = loadValue;
+                }
+            }
+            
+        }
+    }
+}
+
+function initForm() {
+    for (var elementId of formFields) {
+        var element = document.getElementById(elementId);
+        element.onchange = saveForm;
+    }
+    loadForm();
 }

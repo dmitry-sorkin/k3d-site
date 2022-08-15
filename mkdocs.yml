@@ -31,11 +31,15 @@ extra:
       link: https://t.me/vostok3dp
     - icon: material/youtube
       link: https://www.youtube.com/c/SorkinDmitry
+  analytics:
+    property: foobar
 extra_css:
   - stylesheets/extra.css
 nav:
   - Домашняя страница: index.md
-  - Калибровщик откатов: ./retractions/index.md
+  - Калибровщик откатов:
+    - Описание: ./retractions/index.md
+    - Калибровщик: ./retractions/rct.html
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
@@ -48,3 +52,4 @@ nav:
     - Описание проекта: ./minifeeder/index.md
     - Релизы: ./minifeeder/releases.md
     - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
+  - Форум: https://forum.k3d.tech

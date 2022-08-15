@@ -25,7 +25,8 @@ function loadWasm(path) {
 // Load the wasm file
 loadWasm("rct_lib.wasm").then(wasm => {
     console.log("rct_lib.wasm is loaded 👋")
+    document.getElementById("generateButton").style.display = "inline"
+    document.getElementById("generateButtonLoading").style.display = "none"
 }).catch(error => {
     console.log("ouch", error)
 })
-
