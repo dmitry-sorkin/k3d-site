@@ -12,12 +12,12 @@ jobs:
         uses: actions/checkout@v2
       - name: Build
         uses: Tiryoh/actions-mkdocs@v0
-      - name: Upload ftp
-        uses: sebastianpopp/ftp-action@releases/v2
+      - name: Deploy
+        uses: burnett01/rsync-deployments@5.2.1
         with:
-          host: ${{ secrets.ftp_server }}
-          user: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          localDir: "site"
-          remoteDir: ${{ secrets.ftp_dir }}
-          options: "--delete --asci"
+          switches: -avzr --delete
+          path: ./site/
+          remote_path: ${{ secrets.deploy_path }}
+          remote_host: ${{ secrets.ssh_server }}
+          remote_user: ${{ secrets.ssh_username }}
+          remote_key: ${{ secrets.ssh_private_key }}
