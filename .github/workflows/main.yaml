@@ -1,0 +1,23 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        uses: Tiryoh/actions-mkdocs@v0
+      - name: Deploy
+        uses: burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avzr --delete
+          path: ./site/
+          remote_path: ${{ secrets.deploy_path }}
+          remote_host: ${{ secrets.ssh_server }}
+          remote_user: ${{ secrets.ssh_username }}
+          remote_key: ${{ secrets.ssh_private_key }}
