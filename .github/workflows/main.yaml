@@ -1,0 +1,23 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        uses: Tiryoh/actions-mkdocs@v0
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.ftp_server }}
+          user: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          localDir: "site"
+          remoteDir: ${{ secrets.ftp_dir }}
+          options: "--delete --asci"
