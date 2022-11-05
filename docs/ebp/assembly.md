@@ -196,8 +196,8 @@
 1. Калибровка стола и Z-offset
 2. [Калибровка PID](https://youtu.be/aizbpcZ7LU0)
 3. [Калибровка разрешения экструдера](https://youtu.be/Mga_ezYDTNI). Поток можно оставить 100% для начала и калибровать только в случае пере- или недоэкструзии на моделях
-4. [Подбор к-фактора Linear Advance](../retractions/index.md)
-5. [Подбор длины и скорости откатов](../la/index.md)
+4. [Подбор к-фактора Linear Advance](../la/index.md)
+5. [Подбор длины и скорости откатов](../retractions/index.md)
 6. [Подбор частоты Input shaping](https://youtu.be/ZFPkfZEB-XU) (если он есть)
 
 ## Поддержать проект

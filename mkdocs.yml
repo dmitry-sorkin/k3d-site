@@ -54,17 +54,17 @@ nav:
   - Чат K3D VOSTOK: http://t.me/k3d_vostok
   - Калибровки:
       - Калибровка откатов:
-        - Инструкция: ./retractions/index.md
-        - Калибровщик: ./retractions/rct.html
+        - Инструкция: ./calibrations/retractions/index.md
+        - Калибровщик: ./calibrations/retractions/rct.html
       - Калибровка Linear Advance:
-        - Инструкция: ./la/index.md
-        - Калибровщик: ./la/k3d_la.html
+        - Инструкция: ./calibrations/la/index.md
+        - Калибровщик: ./calibrations/la/k3d_la.html
+      - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
     - Инструкции:
       - Инструменты: ./vostok/tools.md
-      - Ручной подбор частоты Input Shaping: ./vostok/manual_is_calibration.md
       - Инструкция по BOM: ./vostok/how_to_use_bom.md
   - Minifeeder:
     - Описание проекта: ./minifeeder/index.md
