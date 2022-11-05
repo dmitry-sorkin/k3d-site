@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 jobs:
   build:
     name: Deploy docs
@@ -14,6 +15,7 @@ jobs:
         uses: Tiryoh/actions-mkdocs@v0
       - name: Deploy
         uses: burnett01/rsync-deployments@5.2.1
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         with:
           switches: -avzr --delete
           path: ./site/
