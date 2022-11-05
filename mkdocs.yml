@@ -8,8 +8,8 @@ theme:
   logo: pics/logo.png
   favicon: pics/favicon.ico
   features:
-    - navigation.expand
-#    - toc.integrate
+    - navigation.sections
+    - content.tabs.link
   palette:
     scheme: slate
     primary: deep orange
@@ -22,11 +22,22 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.keys
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - toc
+  - pymdownx.tabbed:
+      alternate_style: true
 extra:
   social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/dsorkin
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/K_3_D
     - icon: fontawesome/brands/telegram
       link: https://t.me/vostok3dp
     - icon: material/youtube
@@ -37,19 +48,32 @@ extra_css:
   - stylesheets/extra.css
 nav:
   - Домашняя страница: index.md
-  - Калибровщик откатов:
-    - Описание: ./retractions/index.md
-    - Калибровщик: ./retractions/rct.html
+  - Канал Dmitry Sorkin: http://t.me/dsorkin
+  - Общий чат K3D: http://t.me/K_3_D
+  - Канал K3D VOSTOK: http://t.me/vostok3dp
+  - Чат K3D VOSTOK: http://t.me/k3d_vostok
+  - Калибровки:
+      - Калибровка откатов:
+        - Инструкция: ./retractions/index.md
+        - Калибровщик: ./retractions/rct.html
+      - Калибровка Linear Advance:
+        - Инструкция: ./la/index.md
+        - Калибровщик: ./la/k3d_la.html
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
     - Инструкции:
-      - Сборка Lite Print Head: ./vostok/lite_print_head.md
+      - Инструменты: ./vostok/tools.md
       - Ручной подбор частоты Input Shaping: ./vostok/manual_is_calibration.md
       - Инструкция по BOM: ./vostok/how_to_use_bom.md
-      - Инструкция по оформлению статей: ./vostok/how_to_write_article.md
   - Minifeeder:
     - Описание проекта: ./minifeeder/index.md
     - Релизы: ./minifeeder/releases.md
     - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
-  - Форум: https://forum.k3d.tech
+  - Ender-3 BMG Printhead:
+    - Описание проекта: ./ebp/index.md
+    - Релизы: ./ebp/releases.md
+    - Инструкции по сборке:
+      - Шаг 1. Покупка деталей: ./ebp/bom.md
+      - Шаг 2. Печать деталей: ./ebp/printed_parts.md
+      - Шаг 3. Сборка: ./ebp/assembly.md

@@ -1,5 +1,25 @@
 # Релизы K3D Minifeeder
 
+## Самый свежий релиз
+
+- [:material-printer-3d-nozzle: Minifeeder front](./releases/v3/k3d_mf3_front.stl)
+- [:material-printer-3d-nozzle: Minifeeder back](./releases/v3/k3d_mf3_back.stl)
+- [:material-printer-3d-nozzle: Minifeeder lever](./releases/v3/k3d_mf3_lever.stl)
+- [:material-video-3d: Minifeeder assembly](./releases/v3/mf-00_-_k3d_minifeeder.stp)
+
+## v3.0 - Увеличенная жесткость
+
+### Что нового
+
+Minifeeder v2.x показал себя хорошо печатающим, но недостаточно жестким во время перемещений с высокими ускорениями (>10000мм/с²). В связи с этим было принято решение усилить все детали. Суммарное увеличение массы составило ~5.5г. Зато тесты показали, что теперь жесткости достаточно для печати на высоких скоростях.
+
+### Скачать
+
+- [:material-printer-3d-nozzle: Minifeeder front](./releases/v3/k3d_mf3_front.stl)
+- [:material-printer-3d-nozzle: Minifeeder back](./releases/v3/k3d_mf3_back.stl)
+- [:material-printer-3d-nozzle: Minifeeder lever](./releases/v3/k3d_mf3_lever.stl)
+- [:material-video-3d: Minifeeder assembly](./releases/v3/mf-00_-_k3d_minifeeder.stp)
+
 ## v2.2 - Усиленная качалка
 
 ### Что нового

@@ -3,7 +3,7 @@
 <table>
   <tbody>
     <tr>
-      <td width=300 style="vertical-align: middle"><img src="./pics/index_vostok.jpg" alt="VOSTOK"></td>
+      <td width=300 style="vertical-align: middle"><img src="./pics/index_vostok.png" alt="VOSTOK"></td>
       <td style="vertical-align: middle; font-size: 1.2em"><b>K3D VOSTOK</b> - это открытый проект продвинутого самосборного 3D принтера.
         <ul>
           <li>Быстрый</li>
@@ -22,7 +22,7 @@
     <tr>
       <td style="vertical-align: middle; font-size: 1.2em"><b>K3D Minifeeder</b> - небольшой, но способный на многое подающий механизм.
       <ul>
-          <li>Масса в сборе от 95г</li>
+          <li>Масса в сборе от 100г</li>
           <li>Частичная совместимость с LGX Lite</li>
           <li>Низкая стоимость</li>
           <li>Распространенные запчасти</li>
