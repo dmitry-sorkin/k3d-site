@@ -18,6 +18,6 @@ jobs:
           switches: -avzr --delete
           path: ./site/
           remote_path: ${{ secrets.deploy_path }}
-          remote_host: ${{ secrets.server }}
-          remote_user: ${{ secrets.username }}
+          remote_host: ${{ secrets.ssh_server }}
+          remote_user: ${{ secrets.ssh_username }}
           remote_key: ${{ secrets.ssh_private_key }}
