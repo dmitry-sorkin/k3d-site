@@ -1,3 +1,5 @@
 site/
 *bat
 docs/.obsidian/workspace
+
+.idea
