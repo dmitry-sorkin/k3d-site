@@ -17,7 +17,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: ./site/
-          remote_path: ~
-          remote_host: ${{ secrets.ftp_server }}
-          remote_user: ${{ secrets.ftp_username }}
+          remote_path: ${{ secrets.deploy_path }}
+          remote_host: ${{ secrets.server }}
+          remote_user: ${{ secrets.username }}
           remote_key: ${{ secrets.ssh_private_key }}
