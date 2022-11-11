@@ -1,6 +1,5 @@
 site_name: K3D - всё о 3D печати
 site_url: http://k3d.tech
-#repo_url: https://github.com/dmitry-sorkin/K3D-VOSTOK
 copyright: Copyright &copy; 2022 Dmitry Sorkin @ K3D
 theme:
   name: material
@@ -14,6 +13,7 @@ theme:
     scheme: slate
     primary: deep orange
     accent: orange
+  custom_dir: overrides
 markdown_extensions:
   - attr_list
   - md_in_html
@@ -43,6 +43,7 @@ extra:
     - icon: material/youtube
       link: https://www.youtube.com/c/SorkinDmitry
   analytics:
+    provider: custom
     property: foobar
 extra_css:
   - stylesheets/extra.css
@@ -77,3 +78,7 @@ nav:
       - Шаг 1. Покупка деталей: ./ebp/bom.md
       - Шаг 2. Печать деталей: ./ebp/printed_parts.md
       - Шаг 3. Сборка: ./ebp/assembly.md
+  - Ender-3 H2 Printhead:
+    - Описание проекта: ./ehp/index.md
+    - Релизы: ./ehp/releases.md
+    - Инструкция: ./ehp/guide.md
