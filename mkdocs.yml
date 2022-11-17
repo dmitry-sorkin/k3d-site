@@ -7,8 +7,10 @@ theme:
   logo: pics/logo.png
   favicon: pics/favicon.ico
   features:
-    - navigation.sections
-    - content.tabs.link
+    - navigation.tabs
+    - navigation.expand
+    # - navigation.sections
+    # - content.tabs.link
   palette:
     scheme: slate
     primary: deep orange
@@ -27,7 +29,6 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - admonition
-  - pymdownx.details
   - footnotes
   - toc
   - pymdownx.tabbed:
@@ -48,11 +49,12 @@ extra:
 extra_css:
   - stylesheets/extra.css
 nav:
-  - Домашняя страница: index.md
-  - Канал Dmitry Sorkin: http://t.me/dsorkin
-  - Общий чат K3D: http://t.me/K_3_D
-  - Канал K3D VOSTOK: http://t.me/vostok3dp
-  - Чат K3D VOSTOK: http://t.me/k3d_vostok
+  - Домашняя страница:
+      - Домашняя страница: index.md
+      - Канал Dmitry Sorkin: http://t.me/dsorkin
+      - Общий чат K3D: http://t.me/K_3_D
+      - Канал K3D VOSTOK: http://t.me/vostok3dp
+      - Чат K3D VOSTOK: http://t.me/k3d_vostok
   - Калибровки:
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
@@ -71,14 +73,15 @@ nav:
     - Описание проекта: ./minifeeder/index.md
     - Релизы: ./minifeeder/releases.md
     - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
-  - Ender-3 BMG Printhead:
-    - Описание проекта: ./ebp/index.md
-    - Релизы: ./ebp/releases.md
-    - Инструкции по сборке:
-      - Шаг 1. Покупка деталей: ./ebp/bom.md
-      - Шаг 2. Печать деталей: ./ebp/printed_parts.md
-      - Шаг 3. Сборка: ./ebp/assembly.md
-  - Ender-3 H2 Printhead:
-    - Описание проекта: ./ehp/index.md
-    - Релизы: ./ehp/releases.md
-    - Инструкция: ./ehp/guide.md
+  - Апгрейды для Ender-3:
+    - Ender-3 BMG Printhead:
+      - Описание проекта: ./ebp/index.md
+      - Релизы: ./ebp/releases.md
+      - Инструкции по сборке:
+        - Шаг 1. Покупка деталей: ./ebp/bom.md
+        - Шаг 2. Печать деталей: ./ebp/printed_parts.md
+        - Шаг 3. Сборка: ./ebp/assembly.md
+    - Ender-3 H2 Printhead:
+      - Описание проекта: ./ehp/index.md
+      - Релизы: ./ehp/releases.md
+      - Инструкция: ./ehp/guide.md
