@@ -74,6 +74,7 @@ nav:
     - Релизы: ./minifeeder/releases.md
     - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
   - Апгрейды для Ender-3:
+    - Домашняя страница раздела: ./ender_upgrades.md
     - Ender-3 BMG Printhead:
       - Описание проекта: ./ebp/index.md
       - Релизы: ./ebp/releases.md
@@ -85,3 +86,8 @@ nav:
       - Описание проекта: ./ehp/index.md
       - Релизы: ./ehp/releases.md
       - Инструкция: ./ehp/guide.md
+    - Ender-3 Sprite Printhead:
+      - Описание проекта: ./esp/index.md
+      - Релизы: ./esp/releases.md
+      - Инструкция для Ender-3 S1/S1 Pro/S1 Plus: ./esp/guide_s1.md
+      - Инструкция для Ender-3: ./esp/guide_ender3.md
