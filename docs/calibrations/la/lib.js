@@ -98,7 +98,7 @@ function loadForm() {
 
         var element = document.getElementById(elementId);
         if (element) {
-            if (elementId == 'k3d_la_delta' || elementId == 'k3d_la_g29') {
+            if (elementId == 'k3d_la_delta' || elementId == 'k3d_la_g29' || elementId == 'k3d_la_firmwareMarlin' || elementId == 'k3d_la_firmwareRRF' || elementId == 'k3d_la_firmwareKlipper') {
                 if (loadValue == 'true') {
                     element.checked = true;
                 } else {

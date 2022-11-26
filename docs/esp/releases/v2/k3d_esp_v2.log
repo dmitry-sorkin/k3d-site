@@ -1,0 +1,87 @@
+﻿UG to STEP
+! INFO-     NX STEP AP242 - V2206.5001
+! INFO-      
+! INFO-     Start of Translation: 26-NOV-2022  3:50:33 AM
+! INFO-      
+! STATUS-   Converting Part: D:\projects\1 - FDM\2 - current projects\K3D Ender-3 Sprite printhead\ESP-00 - K3D Ender-3 Sprite printhead (2).prt
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 26-NOV-2022 3:50:33 AM
+! STATUS-    
+! INFO-     Bspline aprx. value in effect for this translation :0.000025  meters 
+! INFO-      
+! INFO-           Summary of STEP Entities 
+! INFO-      
+! INFO-     Entity Type                                                   Count 
+! INFO-     -----------                                                   ------ 
+! INFO-     advanced_brep_shape_representation .......................:   26 
+! INFO-     advanced_face ............................................:   2496 
+! INFO-     application_context ......................................:   1 
+! INFO-     application_protocol_definition ..........................:   1 
+! INFO-     axis2_placement_3d .......................................:   4537 
+! INFO-     brep_with_voids ..........................................:   1 
+! INFO-     b_spline_curve_with_knots ................................:   1028 
+! INFO-     b_spline_curve_with_knots_and_rational_b_spline_curve ....:   20 
+! INFO-     b_spline_surface_with_knots ..............................:   40 
+! INFO-     b_spline_surface_with_knots_and_rational_b_spline_surface :   2 
+! INFO-     cartesian_point ..........................................:   18930 
+! INFO-     circle ...................................................:   1962 
+! INFO-     closed_shell .............................................:   33 
+! INFO-     colour_rgb ...............................................:   15 
+! INFO-     conical_surface ..........................................:   137 
+! INFO-     context_dependent_over_riding_styled_item ................:   18 
+! INFO-     context_dependent_shape_representation ...................:   52 
+! INFO-     cylindrical_surface ......................................:   998 
+! INFO-     degenerate_toroidal_surface ..............................:   3 
+! INFO-     direction ................................................:   12646 
+! INFO-     draughting_pre_defined_colour ............................:   1 
+! INFO-     edge_curve ...............................................:   6650 
+! INFO-     edge_loop ................................................:   2906 
+! INFO-     ellipse ..................................................:   68 
+! INFO-     face_bound ...............................................:   2906 
+! INFO-     fill_area_style ..........................................:   201 
+! INFO-     fill_area_style_colour ...................................:   201 
+! INFO-     geometric_representation_context_and_global_uncertainty_a :   28 
+! INFO-     integer_representation_item ..............................:   2 
+! INFO-     item_defined_transformation ..............................:   52 
+! INFO-     length_unit_and_si_unit ..................................:   1 
+! INFO-     line .....................................................:   3572 
+! INFO-     manifold_solid_brep ......................................:   31 
+! INFO-     mapped_item ..............................................:   1 
+! INFO-     mechanical_design_geometric_presentation_representation ..:   1 
+! INFO-     next_assembly_usage_occurrence ...........................:   52 
+! INFO-     oriented_closed_shell ....................................:   1 
+! INFO-     oriented_edge ............................................:   13300 
+! INFO-     plane ....................................................:   1302 
+! INFO-     plane_angle_unit_and_si_unit .............................:   1 
+! INFO-     presentation_style_assignment ............................:   202 
+! INFO-     product ..................................................:   28 
+! INFO-     product_category .........................................:   28 
+! INFO-     product_context ..........................................:   28 
+! INFO-     product_definition .......................................:   28 
+! INFO-     product_definition_context ...............................:   28 
+! INFO-     product_definition_formation_with_specified_source .......:   28 
+! INFO-     product_definition_shape .................................:   80 
+! INFO-     product_related_product_category .........................:   28 
+! INFO-     property_definition ......................................:   4 
+! INFO-     property_definition_representation .......................:   4 
+! INFO-     representation ...........................................:   4 
+! INFO-     representation_map .......................................:   1 
+! INFO-     representation_relationship_with_transformation_and_shape :   52 
+! INFO-     shape_definition_representation ..........................:   28 
+! INFO-     shape_representation .....................................:   28 
+! INFO-     shape_representation_relationship ........................:   26 
+! INFO-     si_unit_and_solid_angle_unit .............................:   1 
+! INFO-     spherical_surface ........................................:   5 
+! INFO-     styled_item ..............................................:   184 
+! INFO-     surface_side_style .......................................:   201 
+! INFO-     surface_style_fill_area ..................................:   201 
+! INFO-     surface_style_usage ......................................:   201 
+! INFO-     toroidal_surface .........................................:   9 
+! INFO-     uncertainty_measure_with_unit ............................:   28 
+! INFO-     vector ...................................................:   3572 
+! INFO-     vertex_point .............................................:   4390 
+! INFO-                                                                  ------- 
+! INFO-     Total                                                         83640 
+! INFO-      
+! INFO-     End of Translation: 26-NOV-2022  3:50:38 AM
+! INFO-      
