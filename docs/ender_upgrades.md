@@ -63,4 +63,4 @@
 
 ### Ссылки
 
-[:fontawesome-solid-list: Описание](./esp/index.md){ .md-button } [:octicons-download-16: Релизы](./esp/releases.md){ .md-button } [:material-file-document-outline: Инструкция для Ender-3](./esp/guide_ender3.md){ .md-button } [:material-file-document-outline: Инструкция для Ender-3 S1/S1 Pro/S1 Plus](./esp/guide_ender3.md){ .md-button }
+[:fontawesome-solid-list: Описание](./esp/index.md){ .md-button } [:octicons-download-16: Релизы](./esp/releases.md){ .md-button } [:material-file-document-outline: Инструкция для Ender-3](./esp/guide_ender3.md){ .md-button } [:material-file-document-outline: Инструкция для Ender-3 S1/S1 Pro/S1 Plus](./esp/guide_s1.md){ .md-button }
