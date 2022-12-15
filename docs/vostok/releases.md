@@ -2,10 +2,26 @@
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация](./releases/082/v0.8.2_bom.ods)
-- [:material-drawing-box: Генератор зашивки](./releases/073/DXF_Generator_v0.7.2.html)
+- [:material-file-document: Спецификация](./releases/083/v0.8.3_bom.ods)
+- [:material-drawing-box: Генератор зашивки](releases/083/v0.8.3_dxf_generator.html)
 - [:material-video-3d: Сборка в формате .step](./releases/082/v0.8.2_k3d_vostok.stp.7z)
 - [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/A5sdlwUXIK1eqw)
+
+## 0.8.3-beta
+
+### Что нового в спецификации
+
+- Добавлен раздел с расчётом размеров для сверления профиля;
+- Добавлен кронштейн гайки для версии с 4 стойками и 2 приводами.
+
+### Что нового в генераторе зашивки
+
+- Убраны отверстия для привода оси Y старой версии.
+
+### Скачать
+
+- [:material-file-document: Спецификация](./releases/083/v0.8.3_bom.ods)
+- [:material-drawing-box: Генератор зашивки](releases/083/v0.8.3_dxf_generator.html)
 
 ## 0.8.2-beta
 
