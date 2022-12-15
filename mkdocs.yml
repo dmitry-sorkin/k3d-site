@@ -27,7 +27,11 @@ markdown_extensions:
   - pymdownx.keys
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - admonition
   - footnotes
   - toc
@@ -66,9 +70,24 @@ nav:
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
-    - Инструкции:
+    - Сборка механики:
+      - С чего начать: ./vostok/guide_index.md
+      - Шаг 1 - Подготовка профилей: ./vostok/profiles_preparation.md
+      - Шаг 2 - Портал: ./vostok/portal.md
+      - Шаг 3 - Нижняя часть рамы: ./vostok/lower_frame.md
+      - Шаг 4 - Зашивка часть 1: ./vostok/enclosure_part_1.md
+      - Шаг 5 - Печатающая голова LPH: ./vostok/lph_assembly.md
+      - Шаг 6 - Балка оси X: ./vostok/x_beam.md
+      - Шаг 7 - Натяжители: ./vostok/tensioners.md
+      - Шаг 8 - Приводы осей XU: ./vostok/xu_drives.md
+      - Шаг 9 - Приводы оси Y: ./vostok/y_drive.md
+      - Шаг 10 - Приводы оси Z: ./vostok/z_drive.md
+      - Шаг 11 - Рама стола: ./vostok/heatbed_frame.md
+      - Шаг 12 - Держатели катушек: ./vostok/spool_holders.md
+      - Шаг 13 - Электроника: ./vostok/electronics.md
+      - Шаг 14 - Зашивка часть 2: ./vostok/enclosure_part_2.md
+    - Дополнения:
       - Инструменты: ./vostok/tools.md
-      - Инструкция по BOM: ./vostok/how_to_use_bom.md
   - Minifeeder:
     - Описание проекта: ./minifeeder/index.md
     - Релизы: ./minifeeder/releases.md
