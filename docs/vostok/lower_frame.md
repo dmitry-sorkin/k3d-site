@@ -1,4 +1,4 @@
-# Сборка нижней части рамы
+# Шаг 3 - Сборка нижней части рамы
 
 <iframe width="900" height="400" src="https://www.youtube.com/embed/7GxtSSZW7pc" title="K3D VOSTOK v0.4 - Сборка рамы" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
