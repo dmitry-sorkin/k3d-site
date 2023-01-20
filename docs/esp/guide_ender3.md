@@ -4,7 +4,7 @@
 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
-| Экструдер Sprite | 1 | [:material-shopping:](https://alli.pub/6j6t13) | Выбирать `Standart extruder` |
+| Экструдер Sprite | 1 | [:material-shopping:](https://aliclick.shop/s/14s1wn) | Выбирать `Standart extruder` |
 | Горло биметалл | 1 | [:material-shopping:](https://alli.pub/6j6ugt) | |
 | Сопло латунное mk8 | 0-1 | [:material-shopping:]() | Если не планируете менять хотэнд |
 | Сопло стальное закалённое mk8 | 0-1 | [:material-shopping:]() | Для печати композитами. Если не планируете менять хотэнд |

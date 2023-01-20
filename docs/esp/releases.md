@@ -18,6 +18,7 @@
 - Крепление BLTouch/CRTouch:
     - [:material-printer-3d-nozzle: Для стокового хотэнда](./releases/v2/k3d_sprite_crtouch_mount_(stock_hotend).stl)
     - [:material-printer-3d-nozzle: Для Volcano хотэнда](./releases/v2/k3d_sprite_crtouch_mount_(volcano_hotend).stl)
+- [:material-printer-3d-nozzle: Проставка CRTouch под хотэнд Volcano для E3S1](./releases/v2/e3s1_crtouch_volcano_spacer.stl)
 - [:material-video-3d: Сборка в формате .STEP](./releases/v2/k3d_esp_v2.1.stp)
 
 ## V2.1 - Исправления крепления экструдера под 4010 вентилятор
