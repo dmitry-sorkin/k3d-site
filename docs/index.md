@@ -41,9 +41,9 @@
       <td style="vertical-align: middle; font-size: 1.2em">В наших чатах и каналах вы всегда найдёте ответы на свои вопросы:<br>
         <ul>
           <li><a href="http://t.me/dsorkin">Личный телеграм канал Dmitry Sorkin</a></li>
-          <li><a href="http://t.me/K_3_D">Общий чат K3D</a></li>
-          <li><a href="http://t.me/vostok3dp">Новости проекта VOSTOK</a></li>
-          <li><a href="http://t.me/k3d_vostok">Обсуждение проекта VOSTOK</a></li>
+          <li><a href="http://t.me/K_3_D">Чат K3D - Всё о 3D печати</a></li>
+          <li><a href="http://t.me/vostok3dp">Новости принтера VOSTOK</a></li>
+          <li><a href="http://t.me/k3d_vostok">Обсуждение принтера VOSTOK</a></li>
         </ul>
       </td>
     </tr>

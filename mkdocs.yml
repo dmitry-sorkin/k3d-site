@@ -56,9 +56,9 @@ nav:
   - Домашняя страница:
       - Домашняя страница: index.md
       - Канал Dmitry Sorkin: http://t.me/dsorkin
-      - Общий чат K3D: http://t.me/K_3_D
-      - Канал K3D VOSTOK: http://t.me/vostok3dp
-      - Чат K3D VOSTOK: http://t.me/k3d_vostok
+      - Чат K3D - Всё о 3D печати: http://t.me/K_3_D
+      - Новости принтера VOSTOK: http://t.me/vostok3dp
+      - Обсуждение принтера VOSTOK: http://t.me/k3d_vostok
   - Калибровки:
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
