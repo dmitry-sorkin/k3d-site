@@ -7,6 +7,7 @@
 | Вентилятор 5015 | 2 | [:material-shopping:](http://alli.pub/6huh9y) | |
 | Винт М4х20 DIN 7380 | 2 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
 | Винт М4х35 DIN 7380 | 1 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh35_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
+| Винт М3х5 DIN 7380 | 3 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh5_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
 
 ## Печать деталей
 
@@ -21,13 +22,13 @@
 === "Prusaslicer"
 
     ![](../ebp/pics/ebp_ps_orientation_tool.png)
-
+    
     В левом меню инструмент `Place on face` -> клик по поверхности, которой деталь должна соприкасаться со столом
 
 === "Cura"
 
     ![](../ebp//pics/ebp_cura_orientation_tool.png)
-
+    
     В левом меню инструмент `Вращение` -> `Положить плашмя` -> клик по поверхности, которой деталь должна соприкасаться со столом
 
 ### Материалы и настройки
@@ -60,7 +61,7 @@
 
 ![ESP S1 fan duct install image](./pics/esp_s1_fan_duct_install.png)
 
-Сопло системы охлаждения устанавливается на мотор экструдера и крепится тремя винтами М3х5 (теми, которыми крепилась штатная система охлаждения).
+Сопло системы охлаждения устанавливается на мотор экструдера и крепится тремя винтами М3х5.
 
 Если система охлаждения распечатана из плохо спекающегося пластика типа ABS и подобных, то может быть хорошей идеей нарезать резьбу метчиком М4 или вплавить резьбовые втулки, так как подобные детали склонны расслаиваться от вкручивания винтов.
 
