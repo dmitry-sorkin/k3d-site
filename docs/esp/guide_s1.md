@@ -8,6 +8,7 @@
 | Винт М4х20 DIN 7380 | 2 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
 | Винт М4х35 DIN 7380 | 1 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh35_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
 | Винт М3х5 DIN 7380 | 3 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh5_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
+| Коннектор xh1.25 2pin | 2 | [:material-shopping:](https://alli.pub/6p165l) | Опционально. Ссылка не проверена |
 
 ## Печать деталей
 
@@ -95,7 +96,7 @@
 - [Поддержать из-за рубежа](https://www.donationalerts.com/r/dsorkin)
 
 ```
-Дата: 24.11.2022
+Дата: 11.05.2022
 Автор: Дмитрий Соркин
 Telegram: @dmitry_sorkin
 E-mail: dbsorkin@gmail.com
