@@ -37,6 +37,8 @@ markdown_extensions:
   - toc
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
 extra:
   social:
     - icon: fontawesome/brands/telegram
@@ -52,6 +54,10 @@ extra:
     property: foobar
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
   - Домашняя страница:
       - Домашняя страница: index.md
@@ -67,6 +73,9 @@ nav:
         - Инструкция: ./calibrations/la/index.md
         - Калибровщик: ./calibrations/la/k3d_la.html
       - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
+      - Калибровка точности:
+        - Инструкция:  ./calibrations/accuracy/index.md
+        - Релизы: ./calibrations/accuracy/releases.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
