@@ -2,11 +2,23 @@
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация ](./releases/085/v0.8.5_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5_dxf_generator.html)
+- [:material-file-document: Спецификация ](./releases/085/v0.8.5b_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5b_dxf_generator.html)
 - [:material-video-3d: Сборка в формате .step](./releases/084/v0.8.4_k3d_vostok.stp.7z)
 - [:material-video-3d: Сборка в формате .x_t](./releases/084/v0.8.4_k3d_vostok.x_t.7z)
 - [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/pFaTX8n5_hflfg)
+
+## 0.8.5b-beta
+
+### Что нового в спецификации
+
+- На листе `Покупные изделия` исправлена ссылка на BTT Octopus Pro
+- На листе `Стандартные изделия` исправлено количество винтов М6х12.
+
+### Скачать
+
+- [:material-file-document: Спецификация ](./releases/085/v0.8.5b_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5b_dxf_generator.html)
 
 ## 0.8.5-beta
 
