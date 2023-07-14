@@ -98,10 +98,3 @@
 === "Корпус (base)"
 
     ![](./pics/ebp_base_prepare.png)
-
-```
-Дата: 21.10.2022
-Автор: Дмитрий Соркин
-Telegram: @dmitry_sorkin
-E-mail: dbsorkin@gmail.com
-```

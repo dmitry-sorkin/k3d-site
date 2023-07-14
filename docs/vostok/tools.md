@@ -38,8 +38,3 @@ Telegram: @DeltaDesignRus
 !!! warning "Не спешите сверлить эти отверстия. В большинстве случаев можно обойтись без них"
 
 - [:material-printer-3d-nozzle: Кондуктор отверстий мотора Х](./releases/tools/x_motor_change_holes_conductor.stl)
-
-```
-Автор: Дмитрий Соркин
-Telegram: @dmitry_sorkin
-```

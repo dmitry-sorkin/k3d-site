@@ -172,10 +172,3 @@
 ![Final assembly](./pics/lite_print_head_final_assembly.png)
 
 10.1 Установите печатающую голову на каретку и закрепите винтами М3х6 с потайной головкой. 
-
-```
-Дата: 24.04.2022
-Автор: Дмитрий Соркин
-Telegram: @dmitry_sorkin
-E-mail: dbsorkin@gmail.com
-```
