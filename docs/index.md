@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # K3D - всё о 3D печати
 
 <table>

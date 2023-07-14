@@ -2,19 +2,24 @@ site_name: K3D - всё о 3D печати
 site_url: http://k3d.tech
 copyright: Copyright &copy; 2022 Dmitry Sorkin @ K3D
 theme:
+  palette:
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Dark theme
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Light theme
+  icon:
+    logo: material/printer-3d-nozzle
   name: material
   language: ru
-  logo: pics/logo.png
   favicon: pics/favicon.ico
   features:
     - navigation.tabs
-    - navigation.expand
-    # - navigation.sections
-    # - content.tabs.link
-  palette:
-    scheme: slate
-    primary: deep orange
-    accent: orange
   custom_dir: overrides
 markdown_extensions:
   - attr_list
@@ -59,12 +64,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
-  - Домашняя страница:
-      - Домашняя страница: index.md
-      - Канал Dmitry Sorkin: http://t.me/dsorkin
-      - Чат K3D - Всё о 3D печати: http://t.me/K_3_D
-      - Новости принтера VOSTOK: http://t.me/vostok3dp
-      - Обсуждение принтера VOSTOK: http://t.me/k3d_vostok
+  - Домашняя страница: index.md
   - Калибровки:
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
@@ -89,12 +89,6 @@ nav:
       - Шаг 6 - Балка оси X: ./vostok/x_beam.md
       - Шаг 7 - Натяжители: ./vostok/tensioners.md
       - Шаг 8 - Приводы осей XU: ./vostok/xu_drives.md
-      - Шаг 9 - Приводы оси Y: ./vostok/y_drive.md
-      - Шаг 10 - Приводы оси Z: ./vostok/z_drive.md
-      - Шаг 11 - Рама стола: ./vostok/heatbed_frame.md
-      - Шаг 12 - Держатели катушек: ./vostok/spool_holders.md
-      - Шаг 13 - Электроника: ./vostok/electronics.md
-      - Шаг 14 - Зашивка часть 2: ./vostok/enclosure_part_2.md
     - Дополнения:
       - Инструменты: ./vostok/tools.md
   - Minifeeder:
