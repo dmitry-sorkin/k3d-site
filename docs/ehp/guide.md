@@ -281,10 +281,3 @@
 
 - [Поддержать из РФ](https://donate.stream/dmitrysorkin)
 - [Поддержать из-за рубежа](https://www.donationalerts.com/r/dsorkin)
-
-```
-Дата: 11.11.2022
-Автор: Дмитрий Соркин
-Telegram: @dmitry_sorkin
-E-mail: dbsorkin@gmail.com
-```
