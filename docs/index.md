@@ -6,9 +6,9 @@ hide:
 
 # K3D - всё о 3D печати
 
-<table>
-  <tbody>
-    <tr>
+<table width=100%>
+  <tbody width=100%>
+    <tr width=100%>
       <td width=300 style="vertical-align: middle"><img src="./pics/index_vostok.png" alt="VOSTOK"></td>
       <td style="vertical-align: middle; font-size: 1.2em"><b>K3D VOSTOK</b> - это открытый проект продвинутого самосборного 3D принтера.
         <ul>
@@ -23,9 +23,9 @@ hide:
   </tbody>
 </table>
 
-<table>
-  <tbody>
-    <tr>
+<table width=100%>
+  <tbody width=100%>
+    <tr width=100%>
       <td style="vertical-align: middle; font-size: 1.2em"><b>K3D Minifeeder</b> - небольшой, но способный на многое подающий механизм.
       <ul>
           <li>Масса в сборе от 100г</li>
@@ -40,9 +40,9 @@ hide:
   </tbody>
 </table>
 
-<table>
-  <tbody>
-    <tr>
+<table width=100%>
+  <tbody width=100%>
+    <tr width=100%>
       <td width=300 style="vertical-align: middle"><img src="./pics/index_cat.jpg" alt="Cat"></td>
       <td style="vertical-align: middle; font-size: 1.2em">В наших чатах и каналах вы всегда найдёте ответы на свои вопросы:<br>
         <ul>
