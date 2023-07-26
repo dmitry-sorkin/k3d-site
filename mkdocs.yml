@@ -44,6 +44,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
 extra:
   social:
     - icon: fontawesome/brands/telegram
@@ -64,18 +67,7 @@ extra_javascript:
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 nav:
-  - Домашняя страница: index.md
-  - Калибровки:
-      - Калибровка откатов:
-        - Инструкция: ./calibrations/retractions/index.md
-        - Калибровщик: ./calibrations/retractions/rct.html
-      - Калибровка Linear Advance:
-        - Инструкция: ./calibrations/la/index.md
-        - Калибровщик: ./calibrations/la/k3d_la.html
-      - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
-      - Калибровка точности:
-        - Инструкция:  ./calibrations/accuracy/index.md
-        - Релизы: ./calibrations/accuracy/releases.md
+  - K3D.tech: index.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
@@ -92,12 +84,24 @@ nav:
       - Шаг 9 - Приводы оси Y: ./vostok/y_drive.md
     - Дополнения:
       - Инструменты: ./vostok/tools.md
-  - Minifeeder:
-    - Описание проекта: ./minifeeder/index.md
-    - Релизы: ./minifeeder/releases.md
-    - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
-  - Апгрейды для Ender-3:
-    - Домашняя страница раздела: ./ender_upgrades.md
+  - Калибровки:
+      - Калибровка принтера с нуля: ./calibrations/index.md
+      - Калибровка PID: ./calibrations/pid.md
+      - Калибровка откатов:
+        - Инструкция: ./calibrations/retractions/index.md
+        - Калибровщик: ./calibrations/retractions/rct.html
+      - Калибровка Linear Advance:
+        - Инструкция: ./calibrations/la/index.md
+        - Калибровщик: ./calibrations/la/k3d_la.html
+      - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
+      - Калибровка точности:
+        - Инструкция:  ./calibrations/accuracy/index.md
+        - Релизы: ./calibrations/accuracy/releases.md
+  - Другие проекты:
+    - Minifeeder:
+      - Описание проекта: ./minifeeder/index.md
+      - Релизы: ./minifeeder/releases.md
+      - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
     - Ender-3 BMG Printhead:
       - Описание проекта: ./ebp/index.md
       - Релизы: ./ebp/releases.md
@@ -114,3 +118,6 @@ nav:
       - Релизы: ./esp/releases.md
       - Инструкция для Ender-3 S1/S1 Pro/S1 Plus: ./esp/guide_s1.md
       - Инструкция для Ender-3: ./esp/guide_ender3.md
+  - YouTube: http://www.youtube.com/@SorkinDmitry/
+  - Telegram: http://t.me/dsorkin
+  - Чат K3D: http://t.me/K_3_D
