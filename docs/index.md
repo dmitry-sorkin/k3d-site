@@ -35,7 +35,7 @@ hide:
 			<td colspan="2" style="vertical-align: middle; font-size: 1.2em">Другие проекты K3D:<br>
       <ul>
         <li><a href="./minifeeder/">Minifeeder</a> - легкий и простой подающий механизм</li>
-        <!-- <li><a href="./feeder965/">Feeder965</a> - компактный подающий механизм с большим подающим колесом</li> -->
+        <li><a href="./feeder965/">Feeder965</a> - компактный подающий механизм с большим подающим колесом</li>
         <li><a href="./ebp/">EBP</a> - печатающая голова на основе BMG и E3D V6/Volcano</li>
         <li><a href="./esp/">ESP</a> - печатающая голова на основе Sprite extruder</li>
         <li><a href="./ehp/">EHP</a> - печатающая голова на основе Biqu H2</li>

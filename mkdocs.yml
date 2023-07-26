@@ -98,6 +98,10 @@ nav:
         - Инструкция:  ./calibrations/accuracy/index.md
         - Релизы: ./calibrations/accuracy/releases.md
   - Другие проекты:
+    - Feeder965:
+      - Описание проекта: ./feeder965/index.md
+      - Инструкция: ./feeder965/feeder965_assembly.md
+      - Релизы: ./feeder965/releases.md
     - Minifeeder:
       - Описание проекта: ./minifeeder/index.md
       - Релизы: ./minifeeder/releases.md
