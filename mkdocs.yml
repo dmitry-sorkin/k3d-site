@@ -106,6 +106,7 @@ nav:
       - Описание проекта: ./minifeeder/index.md
       - Релизы: ./minifeeder/releases.md
       - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
+    - BeMeGe: ./bemege/index.md
     - Ender-3 BMG Printhead:
       - Описание проекта: ./ebp/index.md
       - Релизы: ./ebp/releases.md
