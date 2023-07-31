@@ -71,7 +71,7 @@ nav:
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
-    - Сборка механики:
+    - Инструкция по сборке:
       - С чего начать: ./vostok/guide_index.md
       - Шаг 1 - Подготовка профилей: ./vostok/profiles_preparation.md
       - Шаг 2 - Портал: ./vostok/portal.md
@@ -82,6 +82,7 @@ nav:
       - Шаг 7 - Натяжители: ./vostok/tensioners.md
       - Шаг 8 - Приводы осей XU: ./vostok/xu_drives.md
       - Шаг 9 - Приводы оси Y: ./vostok/y_drive.md
+      - Шаг 10 - Установка ремней: ./vostok/belts.md
     - Дополнения:
       - Инструменты: ./vostok/tools.md
   - Калибровки:
