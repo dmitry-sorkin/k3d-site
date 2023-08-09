@@ -20,6 +20,7 @@ theme:
   favicon: pics/favicon.ico
   features:
     - navigation.tabs
+    - content.code.copy
   custom_dir: overrides
 markdown_extensions:
   - attr_list
