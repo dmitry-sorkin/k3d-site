@@ -23,7 +23,7 @@ function loadWasm(path) {
 }
 
 // Load the wasm file
-loadWasm("k3d_la_lib.wasm").then(wasm => {
+loadWasm("assets/wasm/k3d_la_lib.wasm").then(wasm => {
     console.log("k3d_la_lib.wasm is loaded 👋")
     document.getElementById("generateButton").style.display = "inline"
     document.getElementById("generateButtonLoading").style.display = "none"

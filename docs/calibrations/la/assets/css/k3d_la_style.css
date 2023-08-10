@@ -84,11 +84,11 @@ div.button-section {
 button.generate-button {
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 350px;
 }
 
-button.reset-button {
-    margin-top: 20px;
-    margin-bottom: 20px;
+button.top-button {
+    width: 350px;
 }
 
 button:disabled {
@@ -124,7 +124,7 @@ textarea {
 
 tr:hover td {
     color: #6c91d5;
-    transition: .2s ease;
+    transition: .2s linear;
 }
 
 tr td {
@@ -322,4 +322,9 @@ a.social-link:hover {
 
 svg.social-icon {
     fill: rgba(255, 255, 255, 0.7)
+}
+
+span.inline-error {
+	color: rgba(255, 75, 43, 1.0);
+	font-weight: bold;
 }
