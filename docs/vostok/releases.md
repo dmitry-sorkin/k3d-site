@@ -2,11 +2,33 @@
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация ](./releases/085/v0.8.5b_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5b_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/084/v0.8.4_k3d_vostok.stp.7z)
-- [:material-video-3d: Сборка в формате .x_t](./releases/084/v0.8.4_k3d_vostok.x_t.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/pFaTX8n5_hflfg)
+- [:material-file-document: Спецификация ](./releases/086/v0.8.6_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/086/v0.8.6_dxf_generator.html)
+- [:material-video-3d: Сборка в формате .step](./releases/086/v0.8.6_k3d_vostok.stp.7z)
+- [:material-video-3d: Сборка в формате .x_t](./releases/086/v0.8.6_k3d_vostok.x_t.7z)
+- [:material-printer-3d-nozzle: STL файлы для печати (архив)](./releases/086/v0.8.6_stl_full.7z)
+- [:material-printer-3d-nozzle: STL файлы для печати (yandex.disk)](https://disk.yandex.ru/d/G0xEEMd5xXYQRw)
+
+## 0.8.6-beta
+
+### Что нового
+
+- В спецификации, на листе `Зашивка` добавлена ссылка на генератор зашивки. Ссылка содержит в себе все параметры, необходимые для генерации зашивки;
+- Генератор зашивки теперь способен принимать параметры через адресную строку;
+- В сборках исправлены ошибки:
+    - Добавлено недостающее крепление мотора оси U;
+    - Добавлен слюнявчик для правой головы;
+    - Починена модель крепления концевика оси Y справа;
+- В STL добавлена недостающая модель тела слюнявчика, и убрана модель ламели слюнявчика.
+
+### Скачать
+
+- [:material-file-document: Спецификация ](./releases/086/v0.8.6_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/086/v0.8.6_dxf_generator.html)
+- [:material-video-3d: Сборка в формате .step](./releases/086/v0.8.6_k3d_vostok.stp.7z)
+- [:material-video-3d: Сборка в формате .x_t](./releases/086/v0.8.6_k3d_vostok.x_t.7z)
+- [:material-printer-3d-nozzle: STL файлы для печати (архив)](./releases/086/v0.8.6_stl_full.7z)
+- [:material-printer-3d-nozzle: STL файлы для печати (yandex.disk)](https://disk.yandex.ru/d/G0xEEMd5xXYQRw)
 
 ## 0.8.5b-beta
 

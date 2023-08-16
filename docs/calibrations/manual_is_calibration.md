@@ -43,6 +43,7 @@ SET_INPUT_SHAPER SHAPER_TYPE_X=mzv SHAPER_TYPE_Y=mzv
 ``` dot
 SET_INPUT_SHAPER SHAPER_FREQ_X=0
 ```
+
 ``` dot
 TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_Y START=30 STEP_DELTA=5 STEP_HEIGHT=3
 ```
@@ -58,6 +59,7 @@ TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_Y START=30 STEP_DELT
 ``` dot
 SET_INPUT_SHAPER SHAPER_FREQ_Y=значение_из_предыдущей_калибровки
 ```
+
 ``` dot
 TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_X START=40 STEP_DELTA=10 STEP_HEIGHT=3
 ```
@@ -92,30 +94,38 @@ shaper_freq_y = {значение для оси Y}
 ### Ось Y
 
 1. Введите команду:
+
 ``` dot
 SET_INPUT_SHAPER SHAPER_FREQ_X=значение_из_предыдущей_калибровки
 ```
-2. Введите команду:
+
+1. Введите команду:
+
 ``` dot
 TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_Y START=30 STEP_DELTA=5 STEP_HEIGHT=3
 ```
+
 1. Запустите печать ранее нарезанной модели;
 2. Интерпретируйте как раньше;
 
 ### Ось X
 
 1. Введите команду:
+
 ``` dot
 SET_INPUT_SHAPER SHAPER_FREQ_Y=значение_из_предыдущей_калибровки
 ```
-2. Введите команду:
+
+1. Введите команду:
+
 ``` dot
 TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_X START=40 STEP_DELTA=10 STEP_HEIGHT=3
 ```
-3. Запустите печать ранее нарезанной модели;
-4. Интерпретируйте как раньше;
-5. Сохраните параметры и сделайте `FIRMWARE_RESTART`;
-6. Сделайте проверочную печать.
+
+1. Запустите печать ранее нарезанной модели;
+2. Интерпретируйте как раньше;
+3. Сохраните параметры и сделайте `FIRMWARE_RESTART`;
+4. Сделайте проверочную печать.
 
 ## Проверка шейпера EI
 
@@ -134,30 +144,38 @@ SET_INPUT_SHAPER SHAPER_TYPE_X=ei SHAPER_TYPE_Y=ei
 ### Подбор частоты шейпера 2hump_ei для оси Y
 
 1. Введите команду:
+
 ``` dot
 SET_INPUT_SHAPER SHAPER_TYPE_X=2hump_ei SHAPER_TYPE_Y=2hump_ei SHAPER_FREQ_X=50
 ```
-2. Введите команду:
+
+1. Введите команду:
+
 ``` dot
 TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_Y START=50 STEP_DELTA=10 STEP_HEIGHT=3
 ```
-3. Запустите печать ранее нарезанной модели;
-4. Интерпретируйте как раньше, но с одним изменением. Если результат вас устраивает на каком-то спектре частот, то выбирайте не среднее, а максимальное значение, чтобы избежать излишнего скругления углов.
+
+1. Запустите печать ранее нарезанной модели;
+2. Интерпретируйте как раньше, но с одним изменением. Если результат вас устраивает на каком-то спектре частот, то выбирайте не среднее, а максимальное значение, чтобы избежать излишнего скругления углов.
 
 ### Подбор частоты шейпера 2hump_ei для оси Х
 
 1. Введите команду:
+
 ``` dot
 SET_INPUT_SHAPER SHAPER_TYPE_X=2hump_ei SHAPER_TYPE_Y=2hump_ei SHAPER_FREQ_Y={значение из предыдущего шага}
 ```
-2. Введите команду:
+
+1. Введите команду:
+
 ``` dot
 TUNING_TOWER COMMAND=SET_INPUT_SHAPER PARAMETER=SHAPER_FREQ_X START=50 STEP_DELTA=10 STEP_HEIGHT=3
 ```
-3. Запустите печать ранее нарезанной модели;
-4. Интерпретируйте как раньше, но с одним изменением. Если результат вас устраивает на каком-то спектре частот, то выбирайте не среднее, а максимальное значение, чтобы избежать излишнего скругления углов;
-5. Сохраните параметры и сделайте `FIRMWARE_RESTART`;
-6. Сделайте проверочную печать.
+
+1. Запустите печать ранее нарезанной модели;
+2. Интерпретируйте как раньше, но с одним изменением. Если результат вас устраивает на каком-то спектре частот, то выбирайте не среднее, а максимальное значение, чтобы избежать излишнего скругления углов;
+3. Сохраните параметры и сделайте `FIRMWARE_RESTART`;
+4. Сделайте проверочную печать.
 
 ### Последний шанс
 
