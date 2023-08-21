@@ -24,7 +24,7 @@ hide:
 			<td colspan="2" style="vertical-align: middle; font-size: 1.2em">Методики по калибровке FDM 3D принтеров, включающие в том числе и генераторы моделей.<br>
       <ul>
           <li><a href="./calibrations/">Калибровка принтера с нуля</a></li>
-          <li><a href="./calibrations/pid.html">Калибровка PID</a></li>
+          <li><a href="./calibrations/pid/">Калибровка PID</a></li>
           <li><a href="./calibrations/la/">Калибровка Linear/Pressure Advance</a></li>
           <li><a href="./calibrations/retractions/">Калибровка откатов</a></li>
           <li><a href="./calibrations/accuracy/">Калибровка точности печати</a></li>
