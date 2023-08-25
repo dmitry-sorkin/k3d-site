@@ -6,8 +6,8 @@
 |:------------ |:------:|:------:|:---------- |
 | Экструдер Sprite | 1 | [:material-shopping:](https://aliclick.shop/s/14s1wn) | Выбирать `Standart extruder` |
 | Горло биметалл | 1 | [:material-shopping:](https://alli.pub/6j6ugt) | |
-| Сопло латунное mk8 | 0-1 | [:material-shopping:]() | Если не планируете менять хотэнд |
-| Сопло стальное закалённое mk8 | 0-1 | [:material-shopping:]() | Для печати композитами. Если не планируете менять хотэнд |
+| Сопло латунное mk8 | 0-1 | [:material-shopping:](https://alli.pub/6rpkpa) | Если не планируете менять хотэнд |
+| Сопло стальное закалённое mk8 | 0-1 | [:material-shopping:](https://alli.pub/6rpkp3) | Для печати композитами. Если не планируете менять хотэнд |
 | Вентилятор 5015 | 2 | [:material-shopping:](http://alli.pub/6huh9y) | |
 | Винт М3х8 DIN 7380 | 3-4 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh8_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | Для 3010 версии кронштейна 4шт., для 4010 - 3шт. |
 | Винт М4х20 DIN 7380 | 4 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
