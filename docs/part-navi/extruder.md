@@ -10,9 +10,9 @@
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)") [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)") | [:material-shopping:](https://alli.pub/6st9c8 "AliExpress") [:material-shopping:](https://alli.pub/6sta8w) | В комплекте биметаллическое горло, хитблок, аналогичный в6, латунное сопло и вентилятор обдува радиатора |
-| Creality Sprite | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6stcuf "Кит AliExpress") [:material-shopping:](https://alli.pub/6stcwr "Кит AliExpress") | В комплекте стальное горло со сквозным прохождением трубки, хитблок CR-10, латунное сопло. Рекомендуется заменить горло на биметаллическое. |
-| Trianglelab Matrix Lite | [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=bUOmRvFc1P1ZAs-f "Обзор") | [:material-shopping:](https://alli.pub/6su124 "AliExpress") [:material-shopping:]( "AliExpress") | В комплекте экструдер, вентилятор 40мм, биметаллическое горло, хитблок e3d v6 с носком и латунным соплом, термистор и нагреватель |
+| Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)") [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)") | [:material-shopping:](https://alli.pub/6st9c8 "Big Tree Tech co. LTD") [:material-shopping:](https://alli.pub/6sta8w "BIGTREETECH Mavellous store") | В комплекте биметаллическое горло, хитблок, аналогичный в6, латунное сопло и вентилятор обдува радиатора |
+| Creality Sprite Kit | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6stcuf "Maybemonda") [:material-shopping:](https://alli.pub/6stcwr "Кит AliExpress") | В комплекте стальное горло со сквозным прохождением трубки, хитблок CR-10, латунное сопло. Рекомендуется заменить горло на биметаллическое. |
+| Trianglelab Matrix Lite | [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=bUOmRvFc1P1ZAs-f "Обзор") | [:material-shopping:](https://alli.pub/6su124 "Trianglelab") | В комплекте экструдер, вентилятор 40мм, биметаллическое горло, хитблок e3d v6 с носком и латунным соплом, термистор и нагреватель |
 
 ## Подающие механизмы
 
@@ -20,10 +20,11 @@
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| BMG 5A | - | [:material-shopping:](http://alii.pub/6fdbrk "AliExpress") | Выбирать `Right clear hardened`. Вариант с низкокачественным корпусом, но хорошими подающими колёсами. Под печать только твёрдыми филаментами или в качестве донора для других проектов |
-| BMG Trianglelab | - | [:material-shopping:](http://alli.pub/6hqbie "AliExpress")| Значительно более качественная, но и более дорогая версия. Способна печатать средне-мягкими эластомерами, если с другой частью экструдера всё будет хорошо. Очень мягкие эластомеры жует |
-| Фидер от Creality K1 | [:simple-youtube:](https://youtu.be/Qdcv0IBwyc4?t=719 "Часть обзора К1 посвящена этому фидеру") | [:material-shopping:](https://alli.pub/6stfuj "AliExpress") [:material-shopping:](https://alli.pub/6stftr?erid=Kra23yF6R "AliExpress") | Подающий механизм в комплекте с мотором |
-| Orbiter V2 | - | [:material-shopping:]( "AliExpress") [:material-shopping:]( "AliExpress") | Подающий механизм в комплекте с мотором |
+| BMG 5A | - | [:material-shopping:](http://alii.pub/6fdbrk "5A. Выбирать Right clear hardened") | Вариант с низкокачественным корпусом, но хорошими подающими колёсами. Под печать только твёрдыми филаментами или в качестве донора для других проектов |
+| BMG Trianglelab | - | [:material-shopping:](http://alli.pub/6hqbie "Trianglelab")| Значительно более качественная, но и более дорогая версия. Способна печатать средне-мягкими эластомерами, если с остальными частями экструдера всё будет хорошо. Очень мягкие эластомеры жует |
+| Creality Sprite / Sprite Pro | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6sxs2g "Creality Maker Store") | Подающий механизм с радиатором и мотором. Пластиковая версия интереснее так как легче и дешевле |
+| Фидер от Creality K1 | [:simple-youtube:](https://youtu.be/Qdcv0IBwyc4?t=719 "Часть обзора К1 посвящена этому фидеру") | [:material-shopping:](https://alli.pub/6stfuj "Creality Online Store") [:material-shopping:](https://alli.pub/6stftr?erid=Kra23yF6R "Creality Official store") | Подающий механизм в комплекте с мотором |
+| Orbiter V2 | - | [:material-shopping:](https://alli.pub/6sxrzj "Trianglelab") | Подающий механизм в комплекте с мотором |
 
 ### Колёса подающих механизмов
 
@@ -66,7 +67,7 @@
 | Chimera биметаллический сталь+медь | - | [:material-shopping:](https://alli.pub/6suawz "5А. Выбирать smooth") | Для радиатора CR-10[^2], а также хотэндов на Neptune 3 Pro/Plus/Max[^2], FBG6 и других с цилиндрическим отверстием диаметром 7мм |
 | Chimera титановый цельнометаллический | - | [:material-shopping:](https://alli.pub/6suazb "Trianglelab") | Для радиатора CR-10[^2], а также хотэндов на Neptune 3 Pro/Plus/Max[^2], FBG6 и других с цилиндрическим отверстием диаметром 7мм |
 | TD6 биметаллический | - | [:material-shopping:](https://alli.pub/6sub0o "Trianglelab") | Для радиатора TD6S, Matrix/Matrix Lite. Если обрезать по длине, подойдёт к радиатору от Bambu Lab |
-| Sprite биметаллический | - | [:material-shopping:](https://alli.pub/6j6ugt "Maybemonda") | Для экструдеров Sprite и K1 |
+| Sprite биметаллический | - | [:material-shopping:](https://alli.pub/6sxs40 "Creality Online Store") | Для экструдеров Sprite и K1 |
 | H2 биметаллический/титановый | - | [:material-shopping:](https://alli.pub/6sub19 "BigTreeTech") | Для экструдера H2, кроме версий Revo и Lite |
 
 ### Хитблоки
