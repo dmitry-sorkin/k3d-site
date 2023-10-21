@@ -13,6 +13,7 @@
 | Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)") [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)") | [:material-shopping:](https://alli.pub/6st9c8 "Big Tree Tech co. LTD") [:material-shopping:](https://alli.pub/6sta8w "BIGTREETECH Mavellous store") | В комплекте биметаллическое горло, хитблок, аналогичный в6, латунное сопло и вентилятор обдува радиатора |
 | Creality Sprite Kit | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6stcuf "Maybemonda") [:material-shopping:](https://alli.pub/6stcwr "Кит AliExpress") | В комплекте стальное горло со сквозным прохождением трубки, хитблок CR-10, латунное сопло. Рекомендуется заменить горло на биметаллическое. |
 | Trianglelab Matrix Lite | [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=bUOmRvFc1P1ZAs-f "Обзор") | [:material-shopping:](https://alli.pub/6su124 "Trianglelab") | В комплекте экструдер, вентилятор 40мм, биметаллическое горло, хитблок e3d v6 с носком и латунным соплом, термистор и нагреватель |
+| E3D Titan Aero (клон) | - | [:material-shopping:](https://alli.pub/6sxs6c "Trianglelab") | В комплекте экструдер, вентилятор 40мм, стальное горло, хитблок и сопло V6/Volcano, нагреватель, термистор 104GT-2, носок. Горло под замену! |
 
 ## Подающие механизмы
 
@@ -141,6 +142,15 @@
 | TUN медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6sw5ow "Trianglelab") | Для хитблоков E3D V6, CHC. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
 | TUN Pro латунное | - | [:material-shopping:](https://alli.pub/6sw4s1 "Trianglelab") | Для хитблоков volcano, CHC Pro. Не подходит для композитов |
 | TUN Pro медное с калёной вставкой | - |  [:material-shopping:](https://alli.pub/6sw5s0 "Trianglelab") | Для хитблоков volcano, CHC Pro. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
+
+### Адаптеры для сопел
+
+По возможности стоит избегать применения адаптеров т.к. они могут негативно повлиять на работу хотэнда.
+
+| Наименование | Обзор\Тест | Ссылки | Комментарий |
+|:------------ |:----------:|:------:|:----------- |
+| V6 -> Volcano | - |  [:material-shopping:](https://alli.pub/6sxsvf "Mellow") | Вставляется в Volcano-совместимые хотэнды между термобарьером и V6 соплом. При сборке сначала надо протянуть этот адаптер, потом закрутить сопло и протянуть его |
+| Volcano -> V6 | - |  [:material-shopping:](https://alli.pub/6sxsth "Trianglelab") | Позволяет установить Volcano сопло в хитблок, совместимый с V6 соплами. Главное при сборке сначала протянуть сопло на горячую и только потом прижать гайку к хитблоку |
 
 ### Датчики температуры
 
