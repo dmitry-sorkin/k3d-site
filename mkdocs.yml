@@ -4,12 +4,12 @@ copyright: Copyright &copy; 2023 Dmitry Sorkin @ K3D
 theme:
   palette:
     - scheme: slate
-      primary: indigo
+      primary: teal
       toggle:
         icon: material/lightbulb
         name: Dark theme
     - scheme: default
-      primary: indigo
+      primary: teal
       toggle:
         icon: material/lightbulb-outline
         name: Light theme
@@ -20,9 +20,11 @@ theme:
   favicon: pics/favicon.ico
   features:
     - navigation.tabs
+    - navigation.top
     - content.code.copy
   custom_dir: overrides
 markdown_extensions:
+  - abbr
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -70,6 +72,7 @@ extra_javascript:
 nav:
   - 3D Рекомендатор:
     - Детали экструдеров: ./part-navi/extruder.md
+    - Электроника: ./part-navi/electronics.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md

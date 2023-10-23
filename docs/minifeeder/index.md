@@ -20,6 +20,6 @@
 
 ## Материалы
 
-[:material-download: Скачать файлы для печати и исходники](./releases){ .md-button }
+[:material-download: Скачать файлы для печати и исходники](./releases.md){ .md-button }
 
-[:material-file-document: Посмотреть инструкцию по сборке](./minifeeder_assembly){ .md-button }
+[:material-file-document: Посмотреть инструкцию по сборке](./minifeeder_assembly.md){ .md-button }

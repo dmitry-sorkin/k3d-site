@@ -31,3 +31,17 @@
 .divTableBody {
 	display: table-row-group;
 }
+
+.md-typeset table:not([class]) th {
+    min-width: 2.5rem;
+    vertical-align: middle;
+}
+
+.md-typeset table:not([class]) td {
+	vertical-align: middle;
+	min-width: none;
+}
+
+.md-grid {
+	max-width: 1600px; 
+}
