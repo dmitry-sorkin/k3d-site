@@ -74,6 +74,7 @@ nav:
     - Детали экструдеров: ./part-navi/extruder.md
     - Электроника: ./part-navi/electronics.md
     - Механика: ./part-navi/mechanics.md
+    - Филаменты и расходники: ./part-navi/filament.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md

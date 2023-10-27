@@ -45,3 +45,8 @@
 .md-grid {
 	max-width: 1600px; 
 }
+
+.md-nav__link svg {
+    height: 1.3em;
+	max-width: 1.3em
+}

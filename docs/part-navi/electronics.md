@@ -1,3 +1,7 @@
+---
+icon: fontawesome/solid/microchip
+---
+
 # 3D рекомендатор: электроника
 
 В этом разделе вы можете найти проверенные ссылки на электронику для FDM 3D принтеров.
@@ -16,10 +20,10 @@
 |:--- |:---:|:---:|:---:|:---:|:--- |
 | BTT SKR Mini E3 V2 | 4x tmc2209 | 1 | 2 | [:material-shopping:](https://alli.pub/6t0rhd "BTT Official store") | Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Хуже, чем Cheetah по железу, но легко и просто ставится Marlin |
 | FYSETC Cheetah | 4x tmc2209 | 1 | 3 | [:material-shopping:](https://alli.pub/6t0r02 "FYSETC Official store") | Только под Klipper![^2]. Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Выбор питания вентиляторов 5\12\24в. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi |
-| BTT SKR 1.4 | 5x pololu | 2 | 1 | [:material-shopping:](https://alli.pub/6t0e80 "BTT Official store") | Одна из лучших плат цена/качество для одноэкструдерных принтеров. Недостаток портов управляемых вентиляторов компенсируется возможностью подключить вентилятор в порт для второго экструдера |
+| BTT SKR 1.4 | 5x pololu | 2 | 1 | [:material-shopping:](https://alli.pub/6t5svz "BTT Official store") | Одна из лучших плат цена/качество для одноэкструдерных принтеров. Недостаток портов управляемых вентиляторов компенсируется возможностью подключить вентилятор в порт для второго экструдера |
 | Fysetc S6 | 6x pololu | 3 | 3 | [:material-shopping:](https://alli.pub/6t0i0p "FYSETC Official store") | Популярная плата под принтеры с 6 моторами. |
-| BTT Octopus / Octopus Pro | 8x pololu | 4 | 6 | [:material-shopping:](https://alli.pub/6t0cqc "BTT Official store") [:material-shopping:](https://alli.pub/6t0ctn "BTT Official store") | Плата для продвинутых проектов с большим количеством моторов. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi. Есть выбор напряжения питания вентиляторов. В Pro версии (2 ссылка) есть возможность устанавливать высоковольтные драйверы до 60в и усилитель для PT100/PT1000 |
-| BTT Octopus Max EZ | 10x EZ | 4 | 6 | [:material-shopping:](https://alli.pub/6t0hd6 "BTT Official store") | Наиболее "нашпигованная" плата. Много драйверов, питание для одноплатников, возможность подключать 4-проводные вентиляторы, мощный МК, 5 усилителей для PT100 |
+| BTT Octopus / Octopus Pro | 8x pololu | 4 | 6 | [:material-shopping:](https://alli.pub/6t0cqc "BTT Official store") [:material-shopping:](https://alli.pub/6t0ctn "BTT Official store") | Плата для продвинутых проектов с большим количеством моторов. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi. Есть выбор напряжения питания вентиляторов. В Pro версии (2 ссылка) есть усилитель для PT100/PT1000 и возможность устанавливать высоковольтные драйверы до 60в |
+| BTT Octopus Max EZ | 10x EZ | 4 | 6 | [:material-shopping:](https://alli.pub/6t0hd6 "BTT Official store") | Наиболее "нашпигованная" плата. Много драйверов, питание для одноплатников, возможность подключать 4-проводные вентиляторы, выбор напряжения на вентиляторы, мощный МК, 5 усилителей для PT100/PT1000 и т.д. |
 
 ### MCU + CPU
 
