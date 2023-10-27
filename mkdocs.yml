@@ -73,6 +73,7 @@ nav:
   - 3D Рекомендатор:
     - Детали экструдеров: ./part-navi/extruder.md
     - Электроника: ./part-navi/electronics.md
+    - Механика: ./part-navi/mechanics.md
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md

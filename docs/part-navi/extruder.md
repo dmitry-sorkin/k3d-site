@@ -202,9 +202,9 @@
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| PC4-M6 | - | [:material-shopping:](https://alli.pub/6swcqn "") |  |
-| PC4-01 | - | [:material-shopping:](https://alli.pub/6swcqn "") |  |
-| Встраиваемый фиттинг | - | [:material-shopping:](https://alli.pub/6swcy8 "XCR3D") | Для некоторых проектов подающих механизмов |
+| PC4-M6 | - | [:material-shopping:](https://alli.pub/6swcqn) |  |
+| PC4-01 | - | [:material-shopping:](https://alli.pub/6swcqn) |  |
+| Встраиваемый фиттинг | - | [:material-shopping:](https://alli.pub/6t3qhw "5шт. в комплекте. IdeaFormer Factory Store")  [:material-shopping:](https://alli.pub/6swcy8 "XCR3D") | Для некоторых проектов подающих механизмов |
 
 ## Список деталей для сборки хотэндов E3D V6 и E3D Volcano
 
