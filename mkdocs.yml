@@ -20,7 +20,9 @@ theme:
   favicon: pics/favicon.ico
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.expand
     - content.code.copy
   custom_dir: overrides
 markdown_extensions:
@@ -96,13 +98,13 @@ nav:
   - Калибровки:
       - Калибровка принтера с нуля: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
+      - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
         - Калибровщик: ./calibrations/retractions/rct.html
       - Калибровка Linear Advance:
         - Инструкция: ./calibrations/la/index.md
         - Калибровщик: ./calibrations/la/k3d_la.html
-      - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
       - Калибровка точности:
         - Инструкция:  ./calibrations/accuracy/index.md
         - Релизы: ./calibrations/accuracy/releases.md

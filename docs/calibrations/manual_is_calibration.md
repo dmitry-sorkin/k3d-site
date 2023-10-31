@@ -1,3 +1,7 @@
+---
+icon: material/rounded-corner
+---
+
 # Ручной подбор частоты Input Shaping
 
 ## Подготовка
