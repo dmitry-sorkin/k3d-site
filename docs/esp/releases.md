@@ -9,6 +9,8 @@
 
 ## Последние версии файлов
 
+!!! warning "Для Ender-3S1 и Sprite Pro Kit (с переходной платой и кареткой) печатать кронштейн не надо!"
+
 - Крепление Sprite к каретке Ender-3:
     - [:material-printer-3d-nozzle: Под 3010 радиальный вентилятор](./releases/v1/k3d_sprite_mount_(ender-3%2C_3010_fan).stl)
     - [:material-printer-3d-nozzle: Под 4010 радиальный вентилятор](./releases/v2/k3d_sprite_ender-3_mount_(4010_fan).stl)
