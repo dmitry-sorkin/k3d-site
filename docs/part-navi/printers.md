@@ -15,7 +15,7 @@ icon: material/printer-3d
 <table class="printertable">
     <tbody>
         <tr>
-            <td rowspan="5" style="padding-right: 50px;"><img class="printerimg" src="../pics/kp3s_pro.png"></img></td>
+            <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/kp3s_pro.png"></img></td>
             <td><b>Наименование</b></td>
             <td style="text-align: center;"><b>KINGROON KP3S</b></td>
             <td style="text-align: center;"><b>KINGROON KP3S Pro</b></td>
@@ -53,11 +53,15 @@ icon: material/printer-3d
 
 ---
 
-**Альтернативные варианты**
-
-![Aone 2](pics/fb_aone2.png){ width="150" align="left" }
-
-[Flying Bear Aone 2](https://alli.pub/6t83sw?erid=Kra23tUAn). По сравнению с KP3S Pro чуть дороже, чуть меньше область печати и значительно менее распространен, т.е. под него меньше инструкций, готовых модификаций и т.д. В остальном сопоставимы. Брать если почему-то вас обуяла лютая ненависть к компании KINGROON. <br><br>
+<table class="altprinters">
+    <tbody>
+        <th colspan=2 style="text-align: center;"><b>Альтернативные варианты</b></th>
+        <tr>
+            <td class="altprinterimgtd"><img class="altprinterimg" src="../pics/fb_aone2.png"></img></td>
+            <td><p><b><a href="https://alli.pub/6t83sw?erid=Kra23tUAn">Flying Bear Aone 2</a></b>. По сравнению с KP3S Pro чуть дороже, чуть меньше область печати и значительно менее распространен, т.е. под него меньше инструкций, готовых модификаций и т.д. В остальном сопоставимы. Брать если почему-то вас обуяла лютая ненависть к компании KINGROON. <br><br></p></td>
+        </tr>
+    </tbody>
+</table>
 
 ## Универсальный принтер до 300$
 
