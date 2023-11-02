@@ -102,6 +102,7 @@
 	padding-right: 1.25em;
 	padding-top: 0.9375em;
 	vertical-align: middle;
+	min-width: 120px;
 }
 
 .altprinterimg {
