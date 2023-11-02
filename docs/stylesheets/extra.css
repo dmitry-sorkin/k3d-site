@@ -67,7 +67,7 @@
 	width: 230px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.printerimg {
 		display: none;
 	}
@@ -76,7 +76,7 @@
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1100px) {
 	.altprinterimg {
 		display: none;
 	}
@@ -118,4 +118,5 @@
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 	padding-top: 0.9375em;
+	min-width: 120px;
 }
