@@ -122,6 +122,7 @@ icon: material/printer-3d-nozzle
 |:------------ |:----------:|:------:|:----------- |
 | Mk8 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6svf14 "Trianglelab") [:material-shopping:](https://alli.pub/6svf23 "Mellow") | Не подходит для композитных материалов |
 | Mk8 стальное закалённое | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6svf1b "Trianglelab") [:material-shopping:](https://alli.pub/6svf2o "Mellow") | МОР[^3] немного ниже, чем у латунных сопел, но подходит для композитных материалов |
+| Mk8 медное с калённой вставкой | [:material-shopping:](https://alli.pub/6t8x3k "Trianglelab") | Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
 
 #### Volcano
 
