@@ -53,22 +53,21 @@
 
 .printertable {
 	width: fit-content;
-	line-height: 1.6em;
 	font-size: .8rem;
 }
 
 .printertable td {
-	padding-bottom: 0.9375em;
+	padding-bottom: 0.5em;
 	padding-left: 1.25em;
 	padding-right: 1.25em;
-	padding-top: 0.9375em;
+	padding-top: 0.5em;
 }
 
 .printerimg {
 	width: 230px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 	.printerimg {
 		display: none;
 	}
@@ -102,13 +101,20 @@
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 	padding-top: 0.9375em;
+	vertical-align: middle;
 }
 
 .altprinterimg {
 	width: 120px;
 	min-width: 120px;
+	vertical-align: middle;
 }
 
 .printerimgtd {
 	padding-right: 50px;
+	vertical-align: middle;
+	padding-bottom: 0.9375em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.9375em;
 }
