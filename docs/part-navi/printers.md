@@ -14,6 +14,9 @@ icon: material/printer-3d
 
 <table class="printertable">
     <tbody>
+        <tr class="upperprinterimgtr">
+            <td colspan=4 style="text-align: center;"><img class="printerimg" src="../pics/kp3s_pro.png"></img></td>
+        </tr>
         <tr>
             <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/kp3s_pro.png"></img></td>
             <td><b>Наименование</b></td>
@@ -67,6 +70,9 @@ icon: material/printer-3d
 
 <table class="printertable">
     <tbody>
+        <tr class="upperprinterimgtr">
+            <td colspan=2 style="text-align: center;"><img class="printerimg" src="../pics/neptune_3_pro.png"></img></td>
+        </tr>
         <tr>
             <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/neptune_3_pro.png"></img></td>
             <td><b>Наименование</b></td>
@@ -119,6 +125,9 @@ icon: material/printer-3d
 
 <table class="printertable">
     <tbody>
+        <tr class="upperprinterimgtr">
+        <td colspan=999 style="text-align: center;"><img class="printerimg" src="../pics/k1.png"></img></td>
+        </tr>
         <tr>
             <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/k1.png"></img></td>
             <td><b>Наименование</b></td>
@@ -167,6 +176,9 @@ icon: material/printer-3d
 
 <table class="printertable">
     <tbody>
+        <tr class="upperprinterimgtr">
+            <td colspan=999 style="text-align: center;"><img class="printerimg" src="../pics/e3s1plus.png"></img></td>
+        </tr>
         <tr>
             <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/e3s1plus.png"></img></td>
             <td><b>Наименование</b></td>

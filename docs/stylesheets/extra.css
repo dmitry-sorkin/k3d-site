@@ -52,7 +52,7 @@
 }
 
 .printertable {
-	width: fit-content;
+	width: 100%;
 	font-size: .8rem;
 }
 
@@ -65,25 +65,6 @@
 
 .printerimg {
 	width: 230px;
-}
-
-@media (max-width: 768px) {
-	.printerimg {
-		display: none;
-	}
-	.printerimgtd {
-		display: none;
-	}
-}
-
-@media (max-width: 1100px) {
-	.altprinterimg {
-		display: none;
-	}
-	.altprinterimgtd {
-		display: none;
-	}
-	
 }
 
 .altprinters {
@@ -101,14 +82,12 @@
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 	padding-top: 0.9375em;
-	vertical-align: middle;
 	min-width: 120px;
 }
 
 .altprinterimg {
 	width: 120px;
 	min-width: 120px;
-	vertical-align: middle;
 }
 
 .printerimgtd {
@@ -119,4 +98,22 @@
 	padding-right: 1.25em;
 	padding-top: 0.9375em;
 	min-width: 120px;
+}
+
+@media (max-width: 600px) {
+	.printerimgtd {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.altprinterimgtd {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+	.upperprinterimgtr {
+		display: none;
+	}
 }
