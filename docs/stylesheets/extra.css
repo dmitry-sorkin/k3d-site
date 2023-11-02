@@ -67,3 +67,9 @@
 .printerimg {
 	width: 230px;
 }
+
+@media (max-width: 768px) {
+	.printerimg {
+		display: none;
+	}
+}
