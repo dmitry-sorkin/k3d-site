@@ -112,7 +112,7 @@ icon: material/printer-3d-nozzle
 | E3D V6 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](http://alii.pub/6fdbq0 "Trianglelab") [:material-shopping:](https://alli.pub/6suc3y "Mellow") | Не подходит для композитных материалов |
 | E3D V6 латунное 0.15мм | - | [:material-shopping:](https://alli.pub/6sw5v4 "Trianglelab") | Сопло с малым выходным отверстием. Печатать таким относительно тяжело + очень медлено, но детализация очень высокая. Не подходит для композитов |
 | E3D V6 стальное закалённое | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6suc4j "Trianglelab") [:material-shopping:](https://alli.pub/6suc45 "Mellow") | Для хотэндов E3D V6, Dragon, Goliaph, Rapido HF и других. МОР[^3] немного ниже, чем у латунных сопел, но подходит для композитных материалов |
-| E3D V6 медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6suc6h "Trianglelab") | Для хотэндов E3D V6, Dragon, Goliaph, Rapido HF и других. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
+| E3D V6 медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6suc6h "Trianglelab") | Для хотэндов E3D V6, Dragon, Goliaph, Rapido HF и других. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами. Plus версию не брать, по [тестам](https://docs.google.com/document/d/1vghLMq1WTomFR5fy38nsG1gg9jwYtOC2bucn81J_EUc/edit?usp=sharing) расход ниже, чем у обычной |
 
 #### Mk8
 
@@ -122,7 +122,7 @@ icon: material/printer-3d-nozzle
 |:------------ |:----------:|:------:|:----------- |
 | Mk8 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6svf14 "Trianglelab") [:material-shopping:](https://alli.pub/6svf23 "Mellow") | Не подходит для композитных материалов |
 | Mk8 стальное закалённое | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6svf1b "Trianglelab") [:material-shopping:](https://alli.pub/6svf2o "Mellow") | МОР[^3] немного ниже, чем у латунных сопел, но подходит для композитных материалов |
-| Mk8 медное с калённой вставкой | [:material-shopping:](https://alli.pub/6t8x3k "Trianglelab") | Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
+| Mk8 медное с калённой вставкой | [:material-shopping:](https://alli.pub/6t8x3k "Trianglelab") | Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами. Plus версию не брать, по [тестам](https://docs.google.com/document/d/1vghLMq1WTomFR5fy38nsG1gg9jwYtOC2bucn81J_EUc/edit?usp=sharing) расход ниже, чем у обычной |
 
 #### Volcano
 
@@ -132,7 +132,7 @@ icon: material/printer-3d-nozzle
 |:------------ |:----------:|:------:|:----------- |
 | Volcano латунное | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест") | [:material-shopping:](https://alli.pub/6svevv "Trianglelab") [:material-shopping:](https://alli.pub/6svex8 "Mellow") | Не подходит для композитных материалов. |
 | Volcano стальное закалённое | - | [:material-shopping:](https://alli.pub/6sveys "Trianglelab") [:material-shopping:](https://alli.pub/6sveyz "Mellow") | МОР[^3] немного ниже, чем у латунных сопел, но подходит для композитных материалов |
-| Volcano медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6svezr "Trianglelab") | Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
+| Volcano медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6svezr "Trianglelab") | Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами. Plus версию не брать, по [тестам](https://docs.google.com/document/d/1vghLMq1WTomFR5fy38nsG1gg9jwYtOC2bucn81J_EUc/edit?usp=sharing) расход ниже, чем у обычной |
 
 #### TUN / TUN Pro
 
@@ -146,7 +146,7 @@ icon: material/printer-3d-nozzle
 | TUN стальное закалённое | - | [:material-shopping:](https://alli.pub/6sw5hw "Trianglelab") | Для хитблоков E3D V6, CHC. МОР[^3] немного ниже, чем у латунных сопел, но подходит для композитных материалов |
 | TUN медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6sw5ow "Trianglelab") | Для хитблоков E3D V6, CHC. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
 | TUN Pro латунное | - | [:material-shopping:](https://alli.pub/6sw4s1 "Trianglelab") | Для хитблоков volcano, CHC Pro. Не подходит для композитов |
-| TUN Pro медное с калёной вставкой | - |  [:material-shopping:](https://alli.pub/6sw5s0 "Trianglelab") | Для хитблоков volcano, CHC Pro. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами |
+| TUN Pro медное с калёной вставкой | - |  [:material-shopping:](https://alli.pub/6sw5s0 "Trianglelab") | Для хитблоков volcano, CHC Pro. Сочетает плюсы латунных и калёных сопел, но стоит дороже. Подходит для печати композитными материалами. Plus версию не брать, по [тестам](https://docs.google.com/document/d/1vghLMq1WTomFR5fy38nsG1gg9jwYtOC2bucn81J_EUc/edit?usp=sharing) расход ниже, чем у обычной |
 
 ### Адаптеры для сопел
 

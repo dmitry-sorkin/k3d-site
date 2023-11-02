@@ -12,16 +12,36 @@ icon: material/printer-3d
 
 ## Универсальный принтер до 200$
 
-![Kingroon KP3S Pro](pics/kp3s_pro.png){ align="left" width="275" }
-
-| Наименование   |                                 KINGROON KP3S                                  |                     KINGROON KP3S Pro                     |
-| :------------- | :----------------------------------------------------------------------------: | :-------------------------------------------------------: |
-| Стоимость      |                                    130-150$                                    |                         150-180$                          |
-| Область печати |                                   180х180мм                                    |                         200х200мм                         |
-| Обзор          | [:material-youtube: YouTube](https://youtu.be/19mHB4haXQI?si=y7Bi4MaD61pW5LbO) |                             -                             |
-| Купить         |           [:material-shopping: AliExpress](https://alli.pub/6t8275)            | [:material-shopping: AliExpress](https://alli.pub/6t827j) |
-
-<br>
+<table class="printertable">
+    <tbody>
+        <tr>
+            <td rowspan="5" style="padding-right: 50px;"><img class="printerimg" src="../pics/kp3s_pro.png"></img></td>
+            <td><b>Наименование</b></td>
+            <td style="text-align: center;"><b>KINGROON KP3S</b></td>
+            <td style="text-align: center;"><b>KINGROON KP3S Pro</b></td>
+        </tr>
+        <tr>
+            <td>Стоимость:</td>
+            <td style="text-align: center;">130-150$</td>
+            <td style="text-align: center;">150-180$</td>
+        </tr>
+        <tr>
+            <td>Область печати:</td>
+            <td style="text-align: center;">180х180 мм</td>
+            <td style="text-align: center;">200х200 мм</td>
+        </tr>
+        <tr>
+            <td>Обзор:</td>
+            <td style="text-align: center;"><a href="https://youtu.be/19mHB4haXQI?si=y7Bi4MaD61pW5LbO"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m10 15 5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73Z"></path></svg></span> YouTube</a></td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>Купить:</td>
+            <td style="text-align: center;"><a href="https://alli.pub/6t8275"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3 3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5 5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"></path></svg></span> AliExpress</a></td>
+            <td style="text-align: center;"><a href="https://alli.pub/6t827j"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3 3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5 5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"></path></svg></span> AliExpress</a></td>
+        </tr>
+    </tbody>
+</table>
 
 Сразу две модели т.к. это, фактически, просто разные версии одного принтера. Главное достоинство - все основные агрегаты уже в стоке сделаны адекватно как для принтера с настолько низкой ценой, то есть это не заготовки под апгрейд, а уже, хоть и простенькие, но полноценные принтеры. Директ экструдер нормально печатает твёрдыми филаментами, и может печатать средне-мягкими эластомерами после небольшой доработки. Механика не жесткая, из-за чего оба принтера в стоке не быстрые, но и не совсем медленные. Электроника без интересных фишек, но и всё нужное есть - тихие драйверы, не проблемный микроконтроллер и не блокирующий функциональность прошивки экран.
 
