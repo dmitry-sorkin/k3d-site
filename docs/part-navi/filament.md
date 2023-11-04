@@ -62,7 +62,7 @@ icon: fontawesome/solid/drum-steelpan
     | Производитель | Оф.магазин | Кол-во голосов | Ср. оценка качества | Ср. оценка цены |
     |:------------- |:----------:|:--------------:|:-------------------:|:---------------:|
     | Bambu Lab | - | 53 | 4.4 | 1.3 |
-    | ESUN | [:material-store:](https://esun-3d.ru) | 573 | 4.3 | 2.4 |
+    | ESUN | [:material-store:](https://alli.pub/6tddf2) | 573 | 4.3 | 2.4 |
     | Novaprint | [:material-store:](https://novaprint3d.ru) | 129 | 4.3 | 3.7 |
     | Eryone | [:material-store:](https://alli.pub/6t6gm6) | 382 | 4.2 | 3.2 |
     | FDPlast | [:material-store:](https://www.sopytka.ru/products/prutki-dlya-3d-printera/) | 763 | 4.2 | 4.3 |
