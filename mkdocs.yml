@@ -65,7 +65,7 @@ extra:
     provider: custom
     property: foobar
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/extra1.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
