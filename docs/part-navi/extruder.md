@@ -73,7 +73,7 @@ icon: material/printer-3d-nozzle
 | Chimera титановый цельнометаллический | - | [:material-shopping:](https://alli.pub/6suazb "Trianglelab") | Для радиатора CR-10[^2], а также хотэндов на Neptune 3 Pro/Plus/Max[^2], FBG6 и других с цилиндрическим отверстием диаметром 7мм |
 | TD6 биметаллический | - | [:material-shopping:](https://alli.pub/6sub0o "Trianglelab") | Для радиатора TD6S, Matrix/Matrix Lite. Если обрезать по длине, подойдёт к радиатору от Bambu Lab |
 | Sprite биметаллический | - | [:material-shopping:](https://alli.pub/6sxs40 "Creality Online Store") | Для экструдеров Sprite и K1 |
-| H2 биметаллический/титановый | - | [:material-shopping:](https://alli.pub/6sub19 "BigTreeTech") | Для экструдера H2, кроме версий Revo и Lite |
+| H2 биметаллический/титановый | - | [:material-shopping:](https://alli.pub/6sub19 "BigTreeTech") | Для экструдера H2, кроме версий Revo. На H2 V2S Lite установка такого термобарьера возможна, но придётся заменить и весь хотэнд |
 
 ### Хитблоки
 
