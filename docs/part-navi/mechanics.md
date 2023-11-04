@@ -30,7 +30,7 @@ icon: fontawesome/solid/wrench
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
 | Колёса Openbuilds | [:material-shopping:](https://alli.pub/6t3a6o "5A") | Обычные колёса из ПОМ |
-| Каретка Ender-3 в сборе | [:material-shopping:](https://alli.pub/6t3qzz "IdeaFormer Official Store") | Для установки печатающих голов для `Ender-3` на принтеры с другими каретками |
+| Каретка Ender-3 в сборе | [:material-shopping:](https://alli.pub/6tdd3z "IdeaFormer Official Store") | Для установки печатающих голов для `Ender-3` на принтеры с другими каретками |
 | Эксцентриковая гайка | [:material-shopping:](https://alli.pub/6t3p08 "В комплекте 5 или 10шт. IdeaFormer Official Store") | Служит для регулировки прижима колёс |
 | Проставки под колёса 6мм | [:material-shopping:](https://alli.pub/6t3pzm "В комплекте 10шт. IdeaFormer Official Store") | Ставится между кареткой и колесом чтобы обеспечить нужный вылет |
 | Проставки под колёса 8мм | [:material-shopping:](https://alli.pub/6t3ufg "В комплекте 10шт. IdeaFormer Official Store") | -//- |
