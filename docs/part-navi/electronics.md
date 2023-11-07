@@ -4,6 +4,8 @@ icon: fontawesome/solid/microchip
 
 # 3D рекомендатор: электроника
 
+`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`[^1]
+
 В этом разделе вы можете найти проверенные ссылки на электронику для FDM 3D принтеров.
 
 - [:simple-telegram: Задать вопрос по поводу выбора комплектующих](https://t.me/K_3_D/1944033)
@@ -19,7 +21,7 @@ icon: fontawesome/solid/microchip
 | Наименование | :fontawesome-solid-microchip:{ title="Количество и тип драйверов" } | :material-printer-3d-nozzle:{ title="Максимум хотэндов" } | :material-fan:{ title="Максимум управляемых вентиляторов" }  | :material-link:{ title="Ссылки" } | Комментарий |
 |:--- |:---:|:---:|:---:|:---:|:--- |
 | BTT SKR Mini E3 V2 | 4x tmc2209 | 1 | 2 | [:material-shopping:](https://alli.pub/6t0rhd "BTT Official store") | Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Хуже, чем Cheetah по железу, но легко и просто ставится Marlin |
-| FYSETC Cheetah | 4x tmc2209 | 1 | 3 | [:material-shopping:](https://alli.pub/6t0r02 "FYSETC Official store") | Только под Klipper![^2]. Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Выбор питания вентиляторов 5\12\24в. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi |
+| FYSETC Cheetah | 4x tmc2209 | 1 | 3 | [:material-shopping:](https://alli.pub/6t0r02 "FYSETC Official store") | Только под Klipper![^3]. Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Выбор питания вентиляторов 5\12\24в. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi |
 | BTT SKR 1.4 | 5x pololu | 2 | 1 | [:material-shopping:](https://alli.pub/6t5svz "BTT Official store") | Одна из лучших плат цена/качество для одноэкструдерных принтеров. Недостаток портов управляемых вентиляторов компенсируется возможностью подключить вентилятор в порт для второго экструдера |
 | Fysetc S6 | 6x pololu | 3 | 3 | [:material-shopping:](https://alli.pub/6t0i0p "FYSETC Official store") | Популярная плата под принтеры с 6 моторами. |
 | BTT Octopus / Octopus Pro | 8x pololu | 4 | 6 | [:material-shopping:](https://alli.pub/6t0cqc "BTT Official store") [:material-shopping:](https://alli.pub/6t0ctn "BTT Official store") | Плата для продвинутых проектов с большим количеством моторов. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi. Есть выбор напряжения питания вентиляторов. В Pro версии (2 ссылка) есть усилитель для PT100/PT1000 и возможность устанавливать высоковольтные драйверы до 60в |
@@ -57,7 +59,7 @@ icon: fontawesome/solid/microchip
 | tmc2209 pololu | [:material-shopping:](https://alli.pub/6t0oa2 "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6t0pug "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6t0q1n "Mellow Official Store") | [:material-shopping:](https://alli.pub/6t0q6p "FYSETC Official Store") | Хороший универсальный драйвер. Ток до 2А. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Напряжение питания до 28в. Подключение к плате по step/dir или UART. При подключении по UART можно использовать sensorless homing |
 | tmc2209 EZ | [:material-shopping:](https://alli.pub/6t0pqk "BigTreeTech Official Store") | - | - | - | То же самое, но для плат BigTreeTech с разъёмами EZ |
 | tmc2240 pololu | [:material-shopping:](https://alli.pub/6t0oec "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6t0pw0 "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6t0q1u "Mellow Official Store") | [:material-shopping:](https://alli.pub/6t0q55 "FYSETC Official Store") | Ток до 2.1А. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Напряжение питания до 36в. Подключение к плате по SPI. Есть sensorless homing |
-| tmc5160_HV pololu | [:material-shopping:](https://alli.pub/6t0pkc "BigTreeTech Official Store") | - | [:material-shopping:](https://alli.pub/6t0pzw "Mellow Official Store") | - | Ток до 3А. Напряжение до 60в. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Подключение к плате по SPI. Есть sensorless homing. Такие драйверы громче и дороже, чем 2209\2240, так что их имеет смысл брать только под питание высоким напряжением[^1] или под моторы, требующие более 2А |
+| tmc5160_HV pololu | [:material-shopping:](https://alli.pub/6t0pkc "BigTreeTech Official Store") | - | [:material-shopping:](https://alli.pub/6t0pzw "Mellow Official Store") | - | Ток до 3А. Напряжение до 60в. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Подключение к плате по SPI. Есть sensorless homing. Такие драйверы громче и дороже, чем 2209\2240, так что их имеет смысл брать только под питание высоким напряжением[^2] или под моторы, требующие более 2А |
 | tmc5160_HV внешние | [:material-shopping:](https://alli.pub/6t0pkq "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6t0pvf "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6t0q12 "Mellow Official Store") | - | То же самое, только на отдельной внешней плате. Имеют своё питание и разъёмы, благодаря чему могут выдерживать больший ток (зависит от производителя). Имеют смысл только под Nema23 моторы |
 | tmc5160_HV EZ | [:material-shopping:](https://alli.pub/6t0prj "BigTreeTech Official Store") | - | - | - | То же самое, что tmc5160 HV pololu, но для плат BigTreeTech с разъёмами EZ |
 
@@ -189,8 +191,9 @@ icon: fontawesome/solid/microchip
 | SSR-10 | [:material-shopping:](https://alli.pub/6t2j17 "Longwei Store") [:material-shopping:](https://alli.pub/6t2j1s "Mellow") | Твердотельное реле на 10А. Первая ссылка - китайский китай, но дешево. Вторая - оригинальный OMRON за много денег |
 | BTT Relay | [:material-shopping:](https://alli.pub/6t2jru "BigTreeTech Official Store") | Реле для управления питанием принтера. Удобно тем, что под него достаточно много инструкций и используются распространенные в 3д принтерах разъёмы. Но можно то же самое реализовать дешевле |
 
-[^1]: чем выше напряжение питания моторов, тем на больших оборотах в секунду они могут вращаться без потери крутящего момента. В подавляющем большинстве конструкций не достигаются такие высокие обороты в секунду, чтобы не хватало обычных драйверов, так что штука очень узкоспециализированная.
-[^2]: на момент написания статьи, под эту плату не было рабочей конфигурации Marlin + у платы нет загрузчика, то есть установка прошивки только через DFU.
+[^1]: Нет человека или юр.лица, которые заказали бы создание этой страницы или рекламу товаров, приводимых на этой странице. Я создал все статьи в рекомендаторе сам, по своему желанию и в целях сообщества. Тем не менее, чтобы не получить штраф в 100000р, я вынужден маркировать страницу в соответствии с текущим законодательством РФ. Да буду славны чиновники, придумавшие этот гениальный закон!
+[^2]: чем выше напряжение питания моторов, тем на больших оборотах в секунду они могут вращаться без потери крутящего момента. В подавляющем большинстве конструкций не достигаются такие высокие обороты в секунду, чтобы не хватало обычных драйверов, так что штука очень узкоспециализированная.
+[^3]: на момент написания статьи, под эту плату не было рабочей конфигурации Marlin + у платы нет загрузчика, то есть установка прошивки только через DFU.
 
 *[pololu]: Стандартный разъём для сменных драйверов
 *[EZ]: Разъём для сменных драйверов от компании BigTreeTech

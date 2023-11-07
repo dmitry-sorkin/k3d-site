@@ -48,7 +48,9 @@ markdown_extensions:
       alternate_style: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.critic
   - pymdownx.caret
+  - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
 extra:
