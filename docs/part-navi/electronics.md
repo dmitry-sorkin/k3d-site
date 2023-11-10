@@ -44,8 +44,8 @@ icon: fontawesome/solid/microchip
 | Наименование | :octicons-cpu-24:{ title="Процессор" } | :fontawesome-solid-memory:{ title="Объём оперативной памяти" } | :material-usb:{ title="Количество USB type A портов" } | :material-power-plug:{ title="Напряжение питания" } | :material-link:{ title="Ссылки" } | Комментарий |
 |:--- |:---:|:---:|:---:|:---:|:---:|:--- |
 | BTT Pi | Allwinner H616 | 1Gb | 4 | 12-24v | [:material-shopping:](https://alli.pub/6t0gjm "BTT Official store") | Есть готовые сборки системы с предустановленным Klipper'ом. Подключается к БП принтера, не нужен отдельный БП или понижающий преобразователь |
-| Orange Pi 3 LTS | Allwinner H6 | 2Gb | 3 | 5v | [:material-shopping:](https://alli.pub/6t0grz?erid=Kra23fhe6 "Shenzhen Xunlong Software Co") | Очень распространенный одноплатник для перевода принтеров на Klipper, множество инструкций написано именно под него. Есть eMMC 8Gb, то есть microSD карточка нужна только для установки системы, дальше плата работает без неё |
-| Orange Pi Zero3 | Allwinner H618 | 1Gb | 1 | 5v | [:material-shopping:](https://alli.pub/6t0gzy?erid=Kra23XeAA "Shenzhen Xunlong Software Co") | Одно из самых выгодных предложений по цена/характеристики |
+| Orange Pi 3 LTS | Allwinner H6 | 2Gb | 3 | 5v | [:material-shopping:](https://alli.pub/6tkte1?erid=2SDnjbuPUUg "Shenzhen Xunlong Software Co") | Очень распространенный одноплатник для перевода принтеров на Klipper, множество инструкций написано именно под него. Есть eMMC 8Gb, то есть microSD карточка нужна только для установки системы, дальше плата работает без неё |
+| Orange Pi Zero3 | Allwinner H618 | 1Gb | 1 | 5v | [:material-shopping:](https://alli.pub/6tkte8?erid=2SDnjbvsTm2 "Shenzhen Xunlong Software Co") | Одно из самых выгодных предложений по цена/характеристики |
 | BTT CB1 | Allwinner H616 | 1Gb | - | - | [:material-shopping:](https://alli.pub/6t0hlq "BTT Official store") | Плата, созданная для замены Raspberry Pi CM4. Используется как модуль для некоторых плат BTT. Не имеет своих портов ввода\вывода и не может быть использована отдельно без специального адаптера |
 
 ## Драйверы
@@ -94,7 +94,7 @@ icon: fontawesome/solid/microchip
 | LRS-600-24 | 24в | 600Вт | [:material-shopping:](https://www.chipdip.ru/product/lrs-600-24 "ChipDip") | Для принтеров с большими столами, питающимися от БП |
 | LRS-200-48 | 48в | 211Вт | [:material-shopping:](https://www.chipdip.ru/product/lrs-200-48 "ChipDip") | Для питания моторов в продвинутых принтерах с высоковольтными драйверами |
 | XL4015 | Настраивается | - | [:material-shopping:](https://alli.pub/6t0uq8 "AITEXM ROBOT Official Store") | Для подключения одноплатников к БП принтера. Также можно использовать для питания светодиодной ленты и прочих потребителей, чьё напряжение питания отличается от напряжения с БП принтера. Ток заявлен до 5А, но это китайские амперы |
-| MP1584 | Настраивается | - | [:material-shopping:](https://alli.pub/6t1kd9) [:material-shopping:](https://alli.pub/6t1kgd?erid=Kra244BY3) | Для подключения вентиляторов 5-12в к принтеру с питанием 24в. Маленький и дешевый. Макс. ток заявлен до 3А, но это китайские амперы |
+| MP1584 | Настраивается | - | [:material-shopping:](https://alli.pub/6t1kd9) [:material-shopping:](https://alli.pub/6tktem?erid=2SDnjbxMT3N) | Для подключения вентиляторов 5-12в к принтеру с питанием 24в. Маленький и дешевый. Макс. ток заявлен до 3А, но это китайские амперы |
 
 ## Датчики автоуровня
 
@@ -135,11 +135,11 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Подешевле | Потише | Комментарий |
 |:------------ |:---------:|:------:|:----------- |
-| 30х30х10 мм | [12в](https://alli.pub/6t1n5l?erid=Kra24AuUK "RRF 3D Shop") / [24в](https://alli.pub/6t1n5z "RRF 3D Shop") | [12в](https://alli.pub/6t1n6d "Mellow") | Такие часто используются для охлаждения радиатора хотэнда |
-| 35х35х10 мм | [24в](https://alli.pub/6t1non?erid=Kra23gh6X "RRF 3D Shop") |  | Используются на Biqu H2 |
-| 40х40х10 мм | [12в](https://alli.pub/6t1n6y "RRF 3D Shop") / [24в](https://alli.pub/6t1n7c?erid=Kra23Tvo9 "RRF 3D Shop") | [12в](https://alli.pub/6t1kyg?erid=Kra23YxiT "RRF 3D Shop") | Такие часто используются для охлаждения радиатора хотэнда. Также эти вентиляторы можно иногда найти в компьютерных магазинах |
-| 50х50х10 мм | [12в](https://alli.pub/6t1nuh?erid=Kra23m4Md "RRF 3D Shop") / [24в](https://alli.pub/6t1nuo?erid=Kra23mPqZ "RRF 3D Shop") | - | Используется для охлаждения блока электроники в некоторых принтерах |
-| 60х60х10 мм | [12в](https://alli.pub/6t1npf?erid=Kra23hhYK "RRF 3D Shop") / [24в](https://alli.pub/6t1npm?erid=Kra23i32F "RRF 3D Shop") | - | Используются для охлаждения блока электроники на некоторых принтерах или на некоторых блоках питания |
+| 30х30х10 мм | [12в](https://alli.pub/6tktfe?erid=2SDnjc4HQAk "RRF 3D Shop") / [24в](https://alli.pub/6t1n5z "RRF 3D Shop") | [12в](https://alli.pub/6t1n6d "Mellow") | Такие часто используются для охлаждения радиатора хотэнда |
+| 35х35х10 мм | [24в](https://alli.pub/6tktfs?erid=2SDnjcDBKrp "RRF 3D Shop") |  | Используются на Biqu H2 |
+| 40х40х10 мм | [12в](https://alli.pub/6tktgd?erid=2SDnjcHdHhr "RRF 3D Shop") / [24в](https://alli.pub/6tku43?erid=2SDnjeQgbaQ "RRF 3D Shop") | [12в](https://alli.pub/6tku4o?erid=2SDnjeV8ZRS "RRF 3D Shop") | Такие часто используются для охлаждения радиатора хотэнда. Также эти вентиляторы можно иногда найти в компьютерных магазинах |
+| 50х50х10 мм | [12в](https://alli.pub/6tku52?erid=2SDnjeY6Xz8 "RRF 3D Shop") / [24в](https://alli.pub/6tku5g?erid=2SDnjeZaXGU "RRF 3D Shop") | - | Используется для охлаждения блока электроники в некоторых принтерах |
+| 60х60х10 мм | [12в](https://alli.pub/6tku61?erid=2SDnjecYVqA "RRF 3D Shop") / [24в](https://alli.pub/6tku68?erid=2SDnjee2V7W "RRF 3D Shop") | - | Используются для охлаждения блока электроники на некоторых принтерах или на некоторых блоках питания |
 
 ### Центробежные вентиляторы
 
@@ -148,7 +148,7 @@ icon: fontawesome/solid/microchip
 | 3010 | [12в](https://alli.pub/6t1mq1 "Younuon Cooling Store") / [24в](https://alli.pub/6t1mp9 "Younuon Cooling Store") | - | Редко используются в 3д принтерах |
 | 4010 | [12в](https://alli.pub/6t1lbv "Younuon Cooling Store") / [24в](https://alli.pub/6t1lap "Younuon Cooling Store") | - | Используются в основном в стоковых печатающих головах. Не особо производительны, так что при выходе такого из строя лучше будет сразу апгрейдить обдув на 2х 5015 |
 | 4020 | [12в](https://alli.pub/6t1mtj "Younuon Cooling Store") / [24в](https://alli.pub/6t1mtq "Younuon Cooling Store") | - | Дуют заметно лучше, чем 4010, но не так хорошо, как 5015. Имеют смысл только если обдув из 5015 не лезет |
-| 5015 | [12в](https://alli.pub/6t1l3p "Younuon Cooling Store") / [24в](https://alli.pub/6t1l2j "Younuon Cooling Store") | [12в](https://alli.pub/6t1kxa?erid=Kra23YHkb "RRF 3D Shop") | Высокое статическое давление и расход. Используется в большинстве производительных систем охлаждения |
+| 5015 | [12в](https://alli.pub/6t1l3p "Younuon Cooling Store") / [24в](https://alli.pub/6t1l2j "Younuon Cooling Store") | [12в](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop") | Высокое статическое давление и расход. Используется в большинстве производительных систем охлаждения |
 
 ### Компрессоры
 
@@ -167,7 +167,7 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| GY-291 (ADXL345) | [:material-shopping:](https://alli.pub/6t1o29?erid=Kra23uTUK "Wanzai Store") | Подключается по SPI, надо паять и обжимать провод + конфигурировать в системе как описано [тут](https://www.klipper3d.org/Measuring_Resonances.html). Зато очень дешево. Если будете брать, то рекомендую взять несколько т.к. они часто косячные |
+| GY-291 (ADXL345) | [:material-shopping:](https://alli.pub/6tku7l?erid=2SDnjejxSEt "Wanzai Store") | Подключается по SPI, надо паять и обжимать провод + конфигурировать в системе как описано [тут](https://www.klipper3d.org/Measuring_Resonances.html). Зато очень дешево. Если будете брать, то рекомендую взять несколько т.к. они часто косячные |
 | Fly-ADXL345 | [:material-shopping:](https://alli.pub/6t1o40 "Mellow") | Стоит дороже, но подключается обычным USB Type-C кабелем, за счёт чего значительно удобнее в эксплуатации, если не планируете стационарно устанавливать на принтер |
 | BTT S2DW | [:material-shopping:](https://alli.pub/6t1o6c "BigTreeTech Official Store") | Акселерометр на основе LIS2DW12TR. Подключается с помощью USB Type-C кабеля. Может легко крепиться вместо сопла для наиболее точных измерений |
 

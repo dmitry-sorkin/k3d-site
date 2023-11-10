@@ -53,18 +53,6 @@ icon: material/printer-3d
 
 [:material-file-document: Подробнее + про апгрейды](../printers/kp3s.md){ .md-button }
 
----
-
-<table class="altprinters">
-    <tbody>
-        <th colspan=2 style="text-align: center;"><b>Альтернативные варианты</b></th>
-        <tr>
-            <td class="altprinterimgtd"><img class="altprinterimg" src="../pics/fb_aone2.png"></img></td>
-            <td><p><b><a href="https://alli.pub/6t83sw?erid=Kra23tUAn">Flying Bear Aone 2</a></b>. По сравнению с KP3S Pro чуть дороже, чуть меньше область печати и значительно менее распространен, т.е. под него меньше инструкций, готовых модификаций и т.д. В остальном сопоставимы. Брать если почему-то вас обуяла лютая ненависть к компании KINGROON.</p></td>
-        </tr>
-    </tbody>
-</table>
-
 ## Универсальный принтер до 300$
 
 <table class="printertable">
@@ -115,7 +103,7 @@ icon: material/printer-3d
         </tr>
             <tr>
             <td class="altprinterimgtd"><img class="altprinterimg" src="../pics/fbg6.png"></img></td>
-            <td><p><b><a href="https://alli.pub/6tbahj?erid=Kra23eN6a">Flying Bear Ghost 6</a></b>. По скорости такой же что на прошивке Marlin, что на Klipper'е (тесты см. в <a href="https://youtu.be/hOqHLGjwfpA?si=t56VTOTrZIYOTaKA">обзоре</a>). Экструдер хуже т.к. плохо справляется с эластомерами, особенно мягкими. Электроника сопоставимая по возможностям, но надо прошивать чтобы получить все нужные функции. Зато есть закрытая камера, которая позволит проще печатать материалами с высокой усадкой и\или с плохой спекаемостью (ABS, ASA, PC и подобное). Цена при этом выше в 1.5 раза.</p></td>
+            <td><p><b><a href="https://alli.pub/6tku8r?erid=2SDnjesNNec">Flying Bear Ghost 6</a></b>. По скорости такой же что на прошивке Marlin, что на Klipper'е (тесты см. в <a href="https://youtu.be/hOqHLGjwfpA?si=t56VTOTrZIYOTaKA">обзоре</a>). Экструдер хуже т.к. плохо справляется с эластомерами, особенно мягкими. Электроника сопоставимая по возможностям, но надо прошивать чтобы получить все нужные функции. Зато есть закрытая камера, которая позволит проще печатать материалами с высокой усадкой и\или с плохой спекаемостью (ABS, ASA, PC и подобное). Цена при этом выше в 1.5 раза.</p></td>
         </tr>
     </tbody>
 </table>

@@ -28,7 +28,7 @@ icon: material/printer-3d-nozzle
 | BMG 5A | - | [:material-shopping:](http://alii.pub/6fdbrk "5A. Выбирать Right clear hardened") | Вариант с низкокачественным корпусом, но хорошими подающими колёсами. Под печать только твёрдыми филаментами или в качестве донора для других проектов |
 | BMG Trianglelab | - | [:material-shopping:](http://alli.pub/6hqbie "Trianglelab")| Значительно более качественная, но и более дорогая версия. Способна печатать средне-мягкими эластомерами, если с остальными частями экструдера всё будет хорошо. Очень мягкие эластомеры жует |
 | Creality Sprite / Sprite Pro | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6sxs2g "Creality Maker Store") | Подающий механизм с радиатором и мотором. Пластиковая версия интереснее так как легче и дешевле |
-| Фидер от Creality K1 | [:simple-youtube:](https://youtu.be/Qdcv0IBwyc4?t=719 "Часть обзора К1 посвящена этому фидеру") | [:material-shopping:](https://alli.pub/6stfuj "Creality Online Store") [:material-shopping:](https://alli.pub/6stftr?erid=Kra23yF6R "Creality Official store") | Подающий механизм в комплекте с мотором |
+| Фидер от Creality K1 | [:simple-youtube:](https://youtu.be/Qdcv0IBwyc4?t=719 "Часть обзора К1 посвящена этому фидеру") | [:material-shopping:](https://alli.pub/6stfuj "Creality Online Store") [:material-shopping:](https://alli.pub/6tkt5h?erid=2SDnjdk8FHa "Creality Official store") | Подающий механизм в комплекте с мотором |
 | Orbiter V2 | - | [:material-shopping:](https://alli.pub/6sxrzj "Trianglelab") | Подающий механизм в комплекте с мотором |
 
 ### Колёса подающих механизмов

@@ -74,8 +74,8 @@ icon: fontawesome/solid/wrench
 
 | Размер | Ссылки | Комментарий |
 |:------ |:------:|:----------- |
-| 235x235 мм | [:material-shopping:](https://alli.pub/6t5miq?erid=Kra23usNG "YuQin Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
-| 310x310 мм | [:material-shopping:](https://alli.pub/6t5mjb?erid=Kra23vsp4 "YuQin Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
+| 235x235 мм | [:material-shopping:](https://aliexpress.ru/item/1005004936298279.html "YuQin Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
+| 310x310 мм | [:material-shopping:](https://aliexpress.ru/item/1005004936298279.html "YuQin Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
 
 Другие размеры под самостоятельную обрезку можно посмотреть по тем же ссылкам, а также тут: [[:material-shopping: prodiel.ru]](https://prodiel.ru/izolyatsionnye-materialy/cteklotekstolit-prutki-fr-4-trubki-tsef/steklotekstolit-listy-i-prutki-fr-4/)
 
@@ -116,7 +116,7 @@ icon: fontawesome/solid/wrench
 | Nema 14 | 20 мм | 100 мН*м | 1 А | [:material-shopping:](https://alli.pub/6t4ei7 "Mellow") [:material-shopping:](https://alli.pub/6t4fi6?erid=Kra23jggQ "RRF 3D Shop") | `LDO 36STH20-1004AHG` с 10-зубой шестерней. Распространенный вариант под небольшие подающие механизмы |
 | Nema 17 | 22 мм | 130 мН*м | 1 А | [:material-shopping:](https://alli.pub/6t4g1m "Usongshine Official Store") [:material-shopping:](https://alli.pub/6t4jzd?erid=Kra23yTRa "RRF 3D Shop") | `Usongshine 17HS4023` Для подающих механизмов Titan, BMG и подобных |
 | Nema 17 | 38 мм | 420 мН*м | 1.5 А | [:material-shopping:](https://alli.pub/6t4i2c  "Usongshine Official Store") | `Usongshine 17HS4401` Дешевый, но относительно неплохой мотор, рябит слабо |
-| Nema 17 | 48 мм | 590 мН*м | 2.0 А | [:material-shopping:](https://alli.pub/6t4jw9?erid=Kra23u6AU "RRF 3D Shop") | `LDO 42STH48-2004AC` Хороший универсальный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
+| Nema 17 | 48 мм | 590 мН*м | 2.0 А | [:material-shopping:](https://aliexpress.ru/item/1005003629003159.html "RRF 3D Shop") | `LDO 42STH48-2004AC` Хороший универсальный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
 | Nema 17 | 60 мм | 850 мН*м | 2.0 А | [:material-shopping:](https://alli.pub/6t4jye "RRF 3D Shop") | `LDO 42STH60-2004AC` Хороший крупный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
 
 ### Ходовые винты и гайки
