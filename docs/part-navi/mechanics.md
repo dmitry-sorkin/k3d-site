@@ -18,22 +18,22 @@ icon: fontawesome/solid/wrench
 
 | Наименование | Типоразмер | KGT[^2] | RDBB[^3] | Комментарий |
 |:------------ |:------:|:------:|:------:|:----------- |
-| Рельса с кареткой | MGN9 | [:material-shopping:](https://alli.pub/6t3912 "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6t5ib9 "CNA Mechanical Parts Store") | Длина рельсы и тип каретки на выбор |
-| Каретка | MGN9 | [:material-shopping:](https://alli.pub/6t392m "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6t5ibu "CNA Mechanical Parts Store") | C - короткая каретка, H - длинная |
-| Шары | MGN9 | [:material-shopping:](https://alli.pub/6t39l3 "KGT Manufactor store") | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
-| Рельса с кареткой | MGN12 | [:material-shopping:](https://alli.pub/6t393l "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6t5il6 "CNA Mechanical Parts Store") | Длина рельсы и тип каретки на выбор |
-| Каретка | MGN12 | [:material-shopping:](https://alli.pub/6t394k "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6t5id7 "CNA Mechanical Parts Store") | C - короткая каретка, H - длинная |
-| Шары | MGN12 | [:material-shopping:](https://alli.pub/6t39pr "KGT Manufactor store") | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
+| Рельса с кареткой | MGN9 | [:material-shopping:](https://alli.pub/6tvx68?erid=2SDnjcX8FrQ "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6tvx6t?erid=2SDnjcbaDhS "CNA Mechanical Parts Store") | Длина рельсы и тип каретки на выбор |
+| Каретка | MGN9 | [:material-shopping:](https://alli.pub/6tvx77?erid=2SDnjceYCG8 "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6tvx7l?erid=2SDnjcg2BYU "CNA Mechanical Parts Store") | C - короткая каретка, H - длинная |
+| Шары | MGN9 | [:material-shopping:](https://alli.pub/6tvx7z?erid=2SDnjcizA7A "KGT Manufactor store") | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
+| Рельса с кареткой | MGN12 | [:material-shopping:](https://alli.pub/6tvx86?erid=2SDnjckU9PW "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6tvx8d?erid=2SDnjcmx8fr "CNA Mechanical Parts Store") | Длина рельсы и тип каретки на выбор |
+| Каретка | MGN12 | [:material-shopping:](https://alli.pub/6tvx8r?erid=2SDnjcoS7xC "KGT Manufactor store") | [:material-shopping:](https://alli.pub/6tvx95?erid=2SDnjcrQ6Wt "CNA Mechanical Parts Store") | C - короткая каретка, H - длинная |
+| Шары | MGN12 | [:material-shopping:](https://alli.pub/6tvx9c?erid=2SDnjcst5oE "KGT Manufactor store") | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
 
 ## Комплектующие Openbuilds
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| Колёса Openbuilds | [:material-shopping:](https://alli.pub/6t3a6o "5A") | Обычные колёса из ПОМ |
-| Каретка Ender-3 в сборе | [:material-shopping:](https://alli.pub/6tdd3z "IdeaFormer Official Store") | Для установки печатающих голов для `Ender-3` на принтеры с другими каретками |
-| Эксцентриковая гайка | [:material-shopping:](https://alli.pub/6t3p08 "В комплекте 5 или 10шт. IdeaFormer Official Store") | Служит для регулировки прижима колёс |
-| Проставки под колёса 6мм | [:material-shopping:](https://alli.pub/6t3pzm "В комплекте 10шт. IdeaFormer Official Store") | Ставится между кареткой и колесом чтобы обеспечить нужный вылет |
-| Проставки под колёса 8мм | [:material-shopping:](https://alli.pub/6t3ufg "В комплекте 10шт. IdeaFormer Official Store") | -//- |
+| Колёса Openbuilds | [:material-shopping:](https://alli.pub/6tvxbh?erid=2SDnjd5jz3z "5A") | Обычные колёса из ПОМ |
+| Каретка Ender-3 в сборе | [:material-shopping:](https://alli.pub/6tvxbo?erid=2SDnjd7DyLL "IdeaFormer Official Store") | Для установки печатающих голов для `Ender-3` на принтеры с другими каретками |
+| Эксцентриковая гайка | [:material-shopping:](https://alli.pub/6tvxc2?erid=2SDnjd8hxcg "В комплекте 5 или 10шт. IdeaFormer Official Store") | Служит для регулировки прижима колёс |
+| Проставки под колёса 6мм | [:material-shopping:](https://alli.pub/6tvxc9?erid=2SDnjdABwu2 "В комплекте 10шт. IdeaFormer Official Store") | Ставится между кареткой и колесом чтобы обеспечить нужный вылет |
+| Проставки под колёса 8мм | [:material-shopping:](https://alli.pub/6tvxcg?erid=2SDnjdBfwBN "В комплекте 10шт. IdeaFormer Official Store") | -//- |
 
 ## Покрытия для столов
 
@@ -49,10 +49,10 @@ icon: fontawesome/solid/wrench
 
 | Размер | Ссылки | Комментарий |
 |:------ |:------:|:----------- |
-| 235x235 мм | [:material-shopping:](https://alli.pub/6t5h25 "ENERGETIC 3D Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
-| 310x310 мм | [:material-shopping:](https://alli.pub/6t5h8y "ENERGETIC 3D Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
+| 235x235 мм | [:material-shopping:](https://alli.pub/6tvxd1?erid=2SDnjdD9vTi "ENERGETIC 3D Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
+| 310x310 мм | [:material-shopping:](https://alli.pub/6tvxdf?erid=2SDnjdG7u2Q "ENERGETIC 3D Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
 
-Другие размеры искать в каталоге производителя: [:material-shopping: ENERGETIC 3D](https://alli.pub/6t5hx9).
+Другие размеры искать в каталоге производителя: [:material-shopping: ENERGETIC 3D](https://alli.pub/6tvxdt?erid=2SDnjdHbtJk).
 
 ### Стальной лист с PEI
 
@@ -62,9 +62,9 @@ icon: fontawesome/solid/wrench
 
 | Размер | Ссылки | Комментарий |
 |:------ |:------:|:----------- |
-| 235x235 мм | [:material-shopping:](https://alli.pub/6t5mci "ENERGETIC 3D Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
-| 257x230 мм | [:material-shopping:](https://alli.pub/6t5iw2 "ENERGETIC 2th Store") | Для FBG6. Идёт в комплекте с наклейкой |
-| 310x310 мм | [:material-shopping:](https://alli.pub/6t5mda "ENERGETIC 2th Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
+| 235x235 мм | [:material-shopping:](https://alli.pub/6tvxe7?erid=2SDnjdN3r9n "ENERGETIC 3D Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
+| 257x230 мм | [:material-shopping:](https://alli.pub/6tvxee?erid=2SDnjdPXqS8 "ENERGETIC 2th Store") | Для FBG6. Идёт в комплекте с наклейкой |
+| 310x310 мм | [:material-shopping:](https://alli.pub/6tvxel?erid=2SDnjdR1piU "ENERGETIC 2th Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
 
 ### Стеклотестолит FR-4
 
@@ -74,8 +74,8 @@ icon: fontawesome/solid/wrench
 
 | Размер | Ссылки | Комментарий |
 |:------ |:------:|:----------- |
-| 235x235 мм | [:material-shopping:](https://aliexpress.ru/item/1005004936298279.html "YuQin Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
-| 310x310 мм | [:material-shopping:](https://aliexpress.ru/item/1005004936298279.html "YuQin Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
+| 235x235 мм | [:material-shopping:](https://alli.pub/6tvxes?erid=2SDnjdSVozp "YuQin Store") | Используется на `Ender-3` / `Ender-3 Pro` / `Ender-3V2` / `Ender-3Neo` / `Ender-3S1` / `Ender-3S1 Pro` / `Ender-3 V3SE` / `Neptune 3Pro` / `Neptune 4` / `Creality K1` и подобных. Для принтеров с направляющими винтами придётся их выкрутить (очень просто) или вырезать ключи в листе самостоятельно |
+| 310x310 мм | [:material-shopping:](https://alli.pub/6tvxf6?erid=2SDnjdTyoHA "YuQin Store") | Используется на `CR-10`, увеличенных версиях `Ender-3` / `Neptune 3` и многих других |
 
 Другие размеры под самостоятельную обрезку можно посмотреть по тем же ссылкам, а также тут: [[:material-shopping: prodiel.ru]](https://prodiel.ru/izolyatsionnye-materialy/cteklotekstolit-prutki-fr-4-trubki-tsef/steklotekstolit-listy-i-prutki-fr-4/)
 
@@ -89,22 +89,22 @@ icon: fontawesome/solid/wrench
 
 | Производитель | 6 мм | 9 мм | Комментарий |
 |:------------- |:----:|:----:|:----------- |
-| POWGE | [:material-shopping:](https://alli.pub/6t4kg3 "POWGE Official Store") | [:material-shopping:](https://alli.pub/6t4kh2 "POWGE Official Store") | Цена низкая, качество хорошее. Себе покупаю такой и доволен |
-| GATES | [:material-shopping:](https://alli.pub/6t4kgh "POWGE Official Store") | [:material-shopping:](https://alli.pub/6t4khu "POWGE Official Store") | GATES стоит дороже POWGE и считается более качественным. Но лично я разницы по эксплуатации не видел, хоть многократно менял на разных принтерах одно на другое. Если шейх, то берите. Если работяга, то и POWGE норм :) |
+| POWGE | [:material-shopping:](https://alli.pub/6tvxfd?erid=2SDnjdVTnZW "POWGE Official Store") | [:material-shopping:](https://alli.pub/6tvxgj?erid=2SDnjdbPjgt "POWGE Official Store") | Цена низкая, качество хорошее. Себе покупаю такой и доволен |
+| GATES | [:material-shopping:](https://alli.pub/6tvxfr?erid=2SDnjdYRm8C "POWGE Official Store") | [:material-shopping:](https://alli.pub/6tvxgq?erid=2SDnjdcsiyE "POWGE Official Store") | GATES стоит дороже POWGE и считается более качественным. Но лично я разницы по эксплуатации не видел, хоть многократно менял на разных принтерах одно на другое. Если шейх, то берите. Если работяга, то и POWGE норм :) |
 
 ### Кольцевые ремни 2GT
 
-Кольцевые ремни подбираются по ширине и количеству зубов. Мнообразие размеров такое большое, что я не могу привести их все в таблице. Лучше сами выберите в каталогах: [[:material-shopping: GATES]](https://alli.pub/6t4kfi) [[:material-shopping: POWGE]](https://alli.pub/6t4kfp)
+Кольцевые ремни подбираются по ширине и количеству зубов. Мнообразие размеров такое большое, что я не могу привести их все в таблице. Лучше сами выберите в каталогах: [[:material-shopping: GATES]](https://alli.pub/6tvxgx?erid=2SDnjdeMiFa) [[:material-shopping: POWGE]](https://alli.pub/6tvxh4?erid=2SDnjdfqhXv)
 
 ### Шкивы 2GT
 
 | Кол-во зубов | 6 мм | 9 мм | Комментарий |
 |:------------ |:----:|:----:|:----------- |
-| 12 | [:material-shopping:](https://alli.pub/6t5pvh "GKTOOLS Official Store") | [:material-shopping:](https://alli.pub/6t5pub "GKTOOLS Official Store") | Используются как основа для печатных шкивов |
-| 16 | [:material-shopping:](https://alli.pub/6t4kk6 "POWGE Official Store") | [:material-shopping:](https://alli.pub/6t4kkd "POWGE Official Store") | Редко встречаются в 3д принтерах |
-| 20 | [:material-shopping:](https://alli.pub/6t4kit "POWGE Official Store") | [:material-shopping:](https://alli.pub/6t4kje "POWGE Official Store") | Самые распространенные шкивы на 3д принтерах. Под Nema 17 мотор брать с диаметром центрального отверстия 5мм |
+| 12 | [:material-shopping:](https://alli.pub/6tvxhp?erid=2SDnjdiog6c "GKTOOLS Official Store") | [:material-shopping:](https://alli.pub/6tvxi3?erid=2SDnjdmmefJ "GKTOOLS Official Store") | Используются как основа для печатных шкивов |
+| 16 | [:material-shopping:](https://alli.pub/6tvxiv?erid=2SDnjdpjdDz "POWGE Official Store") | [:material-shopping:](https://alli.pub/6tvxj2?erid=2SDnjdshbng "POWGE Official Store") | Редко встречаются в 3д принтерах |
+| 20 | [:material-shopping:](https://alli.pub/6tvxj9?erid=2SDnjduBb52 "POWGE Official Store") | [:material-shopping:](https://alli.pub/6tvxjg?erid=2SDnjdvfaMN "POWGE Official Store") | Самые распространенные шкивы на 3д принтерах. Под Nema 17 мотор брать с диаметром центрального отверстия 5мм |
 
-Шкивы другого размера можно найти в каталоге: [[:material-shopping: POWGE]](https://alli.pub/6t5pzk)
+Шкивы другого размера можно найти в каталоге: [[:material-shopping: POWGE]](https://alli.pub/6tvxjn?erid=2SDnjdx9Zdi)
 
 ### Шаговые двигатели
 
@@ -112,12 +112,12 @@ icon: fontawesome/solid/wrench
 
 | Типоразмер | Длина | Кр.момент | Ток_RMS | Ссылки | Комментарий |
 |:----------:|:-----:|:---------:|:-------:|:------:|:----------- |
-| Nema 14 | 17 мм | 60 мН*м | 0.35 А | [:material-shopping:](https://alli.pub/6t4bkm "Mellow") [:material-shopping:](https://alli.pub/6t4b2x?erid=Kra23hLJt "RRF 3D Shop") | `LDO 36STH17-0354AHG` с 10-зубой шестерней. Нужен для подающих механизмов, где крайне важна длина или масса. В противных случаях лучше брать аналогичный 20мм мотор |
-| Nema 14 | 20 мм | 100 мН*м | 1 А | [:material-shopping:](https://alli.pub/6t4ei7 "Mellow") [:material-shopping:](https://alli.pub/6t4fi6?erid=Kra23jggQ "RRF 3D Shop") | `LDO 36STH20-1004AHG` с 10-зубой шестерней. Распространенный вариант под небольшие подающие механизмы |
-| Nema 17 | 22 мм | 130 мН*м | 1 А | [:material-shopping:](https://alli.pub/6tstpv?erid=2SDnjcK7HSg "Usongshine Official Store") [:material-shopping:](https://alli.pub/6t4jzd?erid=Kra23yTRa "RRF 3D Shop") | `Usongshine 17HS4023` Для подающих механизмов Titan, BMG и подобных |
-| Nema 17 | 38 мм | 420 мН*м | 1.5 А | [:material-shopping:](https://alli.pub/6t4i2c  "Usongshine Official Store") | `Usongshine 17HS4401` Дешевый, но относительно неплохой мотор, рябит слабо |
-| Nema 17 | 48 мм | 590 мН*м | 2.0 А | [:material-shopping:](https://aliexpress.ru/item/1005003629003159.html "RRF 3D Shop") | `LDO 42STH48-2004AC` Хороший универсальный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
-| Nema 17 | 60 мм | 850 мН*м | 2.0 А | [:material-shopping:](https://alli.pub/6t4jye "RRF 3D Shop") | `LDO 42STH60-2004AC` Хороший крупный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
+| Nema 14 | 17 мм | 60 мН*м | 0.35 А | [:material-shopping:](https://alli.pub/6tvxk1?erid=2SDnje17YCQ "Mellow") [:material-shopping:](https://alli.pub/6tvxkm?erid=2SDnje45Wm6 "RRF 3D Shop") | `LDO 36STH17-0354AHG` с 10-зубой шестерней. Нужен для подающих механизмов, где крайне важна длина или масса. В противных случаях лучше брать аналогичный 20мм мотор |
+| Nema 14 | 20 мм | 100 мН*м | 1 А | [:material-shopping:](https://alli.pub/6tvxkt?erid=2SDnje5ZW3S "Mellow") [:material-shopping:](https://alli.pub/6tvxl7?erid=2SDnjeA1TtU "RRF 3D Shop") | `LDO 36STH20-1004AHG` с 10-зубой шестерней. Распространенный вариант под небольшие подающие механизмы |
+| Nema 17 | 22 мм | 130 мН*м | 1 А | [:material-shopping:](https://alli.pub/6tvxls?erid=2SDnjeCySTA "Usongshine Official Store") [:material-shopping:](https://alli.pub/6tvxm6?erid=2SDnjeETRjW "RRF 3D Shop") | `Usongshine 17HS4023` Для подающих механизмов Titan, BMG и подобных |
+| Nema 17 | 38 мм | 420 мН*м | 1.5 А | [:material-shopping:](https://alli.pub/6tvxmd?erid=2SDnjeFwR1r "Usongshine Official Store") | `Usongshine 17HS4401` Дешевый, но относительно неплохой мотор, рябит слабо |
+| Nema 17 | 48 мм | 590 мН*м | 2.0 А | [:material-shopping:](https://alli.pub/6tvxmr?erid=2SDnjeHRQJC "RRF 3D Shop") | `LDO 42STH48-2004AC` Хороший универсальный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
+| Nema 17 | 60 мм | 850 мН*м | 2.0 А | [:material-shopping:](https://alli.pub/6tvxn5?erid=2SDnjeLPNrt "RRF 3D Shop") | `LDO 42STH60-2004AC` Хороший крупный мотор. Стоит относительно дорого, но качественный и хорошо сопротивляется ряби |
 
 ### Ходовые винты и гайки
 
@@ -125,12 +125,12 @@ icon: fontawesome/solid/wrench
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| Винт Tr8x8 (P2) с латунной гайкой | [:material-shopping:](https://alli.pub/6t5s3e "KINGROON Official Store") | Четырёхзаходная резьба. Такие винты наиболее распространены среди 3д принтеров. Дают возможность перемещать ось Z относительно быстро. Не обладают самоторможением, то есть трогая стол/балку можно через гайку прокрутить винт |
-| Гайка Tr8x8 (P2) POM обычная | [:material-shopping:](https://alli.pub/6t5rv1 "FYSETC Official Store") [:material-shopping:](https://alli.pub/6t5sjc "VENTSPOW Official Store") | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
-| Гайка Tr8x8 (P2) POM под Ender | [:material-shopping:](https://alli.pub/6t5rwe "TWOTREES Speciality Store") | Гайка типоразмера как у Ender-3. Если не собираетесь менять стоковый винт, то вам нужна именно такая |
-| Винт Tr8x2 с латунной гайкой | [:material-shopping:](https://alli.pub/6t5s1u "KINGROON Official Store") | Однозаходная резьба. Теоретически, в 4 раза точнее, чем винты с четырёхзаходной резьбой, но на практике это не ощущается. Обладают самоторможением, что бывает удобно в некоторых конструкциях |
-| Гайка Tr8x2 POM обычная | [:material-shopping:](https://alli.pub/6t5rug "FYSETC Official Store") [:material-shopping:](https://alli.pub/6t5sjx "VENTSPOW Official Store") | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
-| Гайка Tr8x2 POM под Ender | [:material-shopping:](https://alli.pub/6t5rv8 "FYSETC Official Store") | Гайка типоразмера как у Ender-3. Под эту гайку надо будет установить винт с однозаходной резьбой |
+| Винт Tr8x8 (P2) с латунной гайкой | [:material-shopping:](https://alli.pub/6tvxqg?erid=2SDnjeidC64 "KINGROON Official Store") | Четырёхзаходная резьба. Такие винты наиболее распространены среди 3д принтеров. Дают возможность перемещать ось Z относительно быстро. Не обладают самоторможением, то есть трогая стол/балку можно через гайку прокрутить винт |
+| Гайка Tr8x8 (P2) POM обычная | [:material-shopping:](https://alli.pub/6tvxqn?erid=2SDnjek7BNQ "FYSETC Official Store") [:material-shopping:](https://alli.pub/6tvxqu?erid=2SDnjembAek "VENTSPOW Official Store") | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
+| Гайка Tr8x8 (P2) POM под Ender | [:material-shopping:](https://alli.pub/6tvxr1?erid=2SDnjepZ9DS "TWOTREES Speciality Store") | Гайка типоразмера как у Ender-3. Если не собираетесь менять стоковый винт, то вам нужна именно такая |
+| Винт Tr8x2 с латунной гайкой | [:material-shopping:](https://alli.pub/6tvxrm?erid=2SDnjesX7n8 "KINGROON Official Store") | Однозаходная резьба. Теоретически, в 4 раза точнее, чем винты с четырёхзаходной резьбой, но на практике это не ощущается. Обладают самоторможением, что бывает удобно в некоторых конструкциях |
+| Гайка Tr8x2 POM обычная | [:material-shopping:](https://alli.pub/6tvxrt?erid=2SDnjeu174U "FYSETC Official Store") [:material-shopping:](https://alli.pub/6tvxse?erid=2SDnjewy5dA "VENTSPOW Official Store") | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
+| Гайка Tr8x2 POM под Ender | [:material-shopping:](https://alli.pub/6tvxss?erid=2SDnjf2R3UC "FYSETC Official Store") | Гайка типоразмера как у Ender-3. Под эту гайку надо будет установить винт с однозаходной резьбой |
 
 ### Муфты
 
@@ -138,8 +138,8 @@ icon: fontawesome/solid/wrench
 
 | Наименование | Изображение | Ссылка | Комментарий |
 |:------------ |:-----------:|:------:|:----------- |
-| Муфта продольно-свёртная 5х8мм | ![муфта продольно-свёртная](pics/copler_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6t5sh7 "5A") | Лучший вариант для приводов оси Z. Стоит дешево, нормально центрирует вал и винт друг с другом, держит хорошо, вплоть до возможности установки мотора сверху винта |
-| Муфта кулачковая 5х8мм | ![муфта кулачковая](pics/copler_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6t5sm9 "VENTSPOW Official Store") | Лучше продольно-стяжной тем, что частично поглощает вибрации. Хуже тем, что не скрепляет винт и мотор жестко |
+| Муфта продольно-свёртная 5х8мм | ![муфта продольно-свёртная](pics/copler_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6tvyi9?erid=2SDnjeh9sma "5A") | Лучший вариант для приводов оси Z. Стоит дешево, нормально центрирует вал и винт друг с другом, держит хорошо, вплоть до возможности установки мотора сверху винта |
+| Муфта кулачковая 5х8мм | ![муфта кулачковая](pics/copler_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6tvyig?erid=2SDnjeids3v "VENTSPOW Official Store") | Лучше продольно-стяжной тем, что частично поглощает вибрации. Хуже тем, что не скрепляет винт и мотор жестко |
 
 `Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`[^1]
 

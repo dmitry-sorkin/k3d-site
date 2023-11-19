@@ -36,6 +36,7 @@ icon: material/printer-3d-nozzle
 |:------------ |:------:|:----------- |
 | Подающие колёса BMG 5A | [:material-shopping:](https://alli.pub/6ttfke?erid=2SDnjcbpKmi "5A") | Качественные подающие колёса для фидеров `Minifeeder`, `SMG`, `Titanator`, `Sherpa Mini/Micro` и подобных. По ссылке можно купить в том числе и калёные |
 | Подающие колёса TBG Lite | [:material-shopping:](https://alli.pub/6ttfld?erid=2SDnjcz48zt "Trianglelab") | Для использования в Feeder965 v1. Есть сообщения про эксцентриситет |
+| Creality Sprite Extrusion Kit | [:material-shopping:](https://alli.pub/6tuu8h?erid=2SDnjeU3kuE "CREALITY 3D Printer Official Store") | Для замены подающих колёс в Creality Sprite |
 
 ## Хотэнды
 

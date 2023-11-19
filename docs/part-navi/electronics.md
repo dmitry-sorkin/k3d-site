@@ -18,12 +18,12 @@ icon: fontawesome/solid/microchip
 
 | Наименование | :fontawesome-solid-microchip:{ title="Количество и тип драйверов" } | :material-printer-3d-nozzle:{ title="Максимум хотэндов" } | :material-fan:{ title="Максимум управляемых вентиляторов" }  | :material-link:{ title="Ссылки" } | Комментарий |
 |:--- |:---:|:---:|:---:|:---:|:--- |
-| BTT SKR Mini E3 V2 | 4x tmc2209 | 1 | 2 | [:material-shopping:](https://alli.pub/6t0rhd "BTT Official store") | Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Хуже, чем Cheetah по железу, но легко и просто ставится Marlin |
-| FYSETC Cheetah | 4x tmc2209 | 1 | 3 | [:material-shopping:](https://alli.pub/6t0r02 "FYSETC Official store") | Только под Klipper![^3]. Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Выбор питания вентиляторов 5\12\24в. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi |
-| BTT SKR 1.4 | 5x pololu | 2 | 1 | [:material-shopping:](https://alli.pub/6t5svz "BTT Official store") | Одна из лучших плат цена/качество для одноэкструдерных принтеров. Недостаток портов управляемых вентиляторов компенсируется возможностью подключить вентилятор в порт для второго экструдера |
-| Fysetc S6 | 6x pololu | 3 | 3 | [:material-shopping:](https://alli.pub/6t0i0p "FYSETC Official store") | Популярная плата под принтеры с 6 моторами. |
-| BTT Octopus / Octopus Pro | 8x pololu | 4 | 6 | [:material-shopping:](https://alli.pub/6t0cqc "BTT Official store") [:material-shopping:](https://alli.pub/6t0ctn "BTT Official store") | Плата для продвинутых проектов с большим количеством моторов. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi. Есть выбор напряжения питания вентиляторов. В Pro версии (2 ссылка) есть усилитель для PT100/PT1000 и возможность устанавливать высоковольтные драйверы до 60в |
-| BTT Octopus Max EZ | 10x EZ | 4 | 6 | [:material-shopping:](https://alli.pub/6t0hd6 "BTT Official store") | Наиболее "нашпигованная" плата. Много драйверов, питание для одноплатников, возможность подключать 4-проводные вентиляторы, выбор напряжения на вентиляторы, мощный МК, 5 усилителей для PT100/PT1000 и т.д. |
+| BTT SKR Mini E3 V2 | 4x tmc2209 | 1 | 2 | [:material-shopping:](https://alli.pub/6tuser?erid=2SDnjeuEYFJ "BTT Official store") | Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Хуже, чем Cheetah по железу, но легко и просто ставится Marlin |
+| FYSETC Cheetah | 4x tmc2209 | 1 | 3 | [:material-shopping:](https://alli.pub/6tusey?erid=2SDnjexCWoz "FYSETC Official store") | Только под Klipper![^3]. Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления. Выбор питания вентиляторов 5\12\24в. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi |
+| BTT SKR 1.4 | 5x pololu | 2 | 1 | [:material-shopping:](https://alli.pub/6tusfq?erid=2SDnjf1AVNg "BTT Official store") | Одна из лучших плат цена/качество для одноэкструдерных принтеров. Недостаток портов управляемых вентиляторов компенсируется возможностью подключить вентилятор в порт для второго экструдера |
+| Fysetc S6 | 6x pololu | 3 | 3 | [:material-shopping:](https://alli.pub/6tusfx?erid=2SDnjborNdW "FYSETC Official store") | Популярная плата под принтеры с 6 моторами. |
+| BTT Octopus / Octopus Pro | 8x pololu | 4 | 6 | [:material-shopping:](https://alli.pub/6tusgb?erid=2SDnjbrpMCC "BTT Official store") [:material-shopping:](https://alli.pub/6tusgi?erid=2SDnjbtJLUY "BTT Official store") | Плата для продвинутых проектов с большим количеством моторов. У 5в линии питания хватает мощности для подключения к ней одноплатников типа Raspberry/Orange Pi. Есть выбор напряжения питания вентиляторов. В Pro версии (2 ссылка) есть усилитель для PT100/PT1000 и возможность устанавливать высоковольтные драйверы до 60в |
+| BTT Octopus Max EZ | 10x EZ | 4 | 6 | [:material-shopping:](https://alli.pub/6tusgp?erid=2SDnjbunKkt "BTT Official store") | Наиболее "нашпигованная" плата. Много драйверов, питание для одноплатников, возможность подключать 4-проводные вентиляторы, выбор напряжения на вентиляторы, мощный МК, 5 усилителей для PT100/PT1000 и т.д. |
 
 ### MCU + CPU
 
@@ -31,9 +31,9 @@ icon: fontawesome/solid/microchip
 
 | Наименование | :fontawesome-solid-microchip:{ title="Количество и тип драйверов" } | :material-printer-3d-nozzle:{ title="Максимум хотэндов" } | :material-fan:{ title="Максимум управляемых вентиляторов" } | :material-link:{ title="Ссылки" } | Комментарий |
 |:--- |:---:|:---:|:---:|:---:|:--- |
-| FLY Gemini | 4x pololu | 1 | 2 | [:material-shopping:](https://alli.pub/6t0j7h "Mellow") | Встроен Allwinner H5, 1Gb RAM, 16Gb eMMC. Выбор напряжения питания вентиляторов 5\12\24в. Питание драйверов до 48в |
-| BTT Manta E3EZ | 5x EZ | 2 | 3 | [:material-shopping:](https://alli.pub/6t0hjs "BTT Official store") | Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления, но может использоваться и на других принтерах. Очень немощный МК, нормально работать будет только под Klipper. Для работы требует установки Raspberry Pi CM4/BTT CB1. Очень дорогое решение, в большинстве случаев лучше обойтись комплектом из отдельной материнки и одноплатника |
-| MKS SKIPR | 7x pololu | 3 | 3 | [:material-shopping:](https://alli.pub/6t0ng4 "Makerbase Official Store") | Встроен RK3328, 1Gb RAM, 3x USB-A. Съёмная eMMC (опционально). Встроенного Wi-Fi нет, но можно подключить внешний USB адаптер (опционально). Выбор питания вентиляторов 5\12\24в. Со всем необходимым будет стоить как более функциональная отдельная материнка + одноплатник, так что выбирать имеет смысл только если место в отсеке электроники очень ограничено |
+| FLY Gemini | 4x pololu | 1 | 2 | [:material-shopping:](https://alli.pub/6tusi9?erid=2SDnjbxkJKa "Mellow") | Встроен Allwinner H5, 1Gb RAM, 16Gb eMMC. Выбор напряжения питания вентиляторов 5\12\24в. Питание драйверов до 48в |
+| BTT Manta E3EZ | 5x EZ | 2 | 3 | [:material-shopping:](https://alli.pub/6tusin?erid=2SDnjbzEHbv "BTT Official store") | Устанавливается в Ender-3/Ender-3Pro/Ender-3V2/Ender-3 Neo/Ender-3V2 Neo и подобные на штатные крепления, но может использоваться и на других принтерах. Очень немощный МК, нормально работать будет только под Klipper. Для работы требует установки Raspberry Pi CM4/BTT CB1. Очень дорогое решение, в большинстве случаев лучше обойтись комплектом из отдельной материнки и одноплатника |
+| MKS SKIPR | 7x pololu | 3 | 3 | [:material-shopping:](https://alli.pub/6tusj8?erid=2SDnjc3CGAc "Makerbase Official Store") | Встроен RK3328, 1Gb RAM, 3x USB-A. Съёмная eMMC (опционально). Встроенного Wi-Fi нет, но можно подключить внешний USB адаптер (опционально). Выбор питания вентиляторов 5\12\24в. Со всем необходимым будет стоить как более функциональная отдельная материнка + одноплатник, так что выбирать имеет смысл только если место в отсеке электроники очень ограничено |
 
 ## Одноплатные компьютеры
 
@@ -43,10 +43,10 @@ icon: fontawesome/solid/microchip
 
 | Наименование | :octicons-cpu-24:{ title="Процессор" } | :fontawesome-solid-memory:{ title="Объём оперативной памяти" } | :material-usb:{ title="Количество USB type A портов" } | :material-power-plug:{ title="Напряжение питания" } | :material-link:{ title="Ссылки" } | Комментарий |
 |:--- |:---:|:---:|:---:|:---:|:---:|:--- |
-| BTT Pi | Allwinner H616 | 1Gb | 4 | 12-24v | [:material-shopping:](https://alli.pub/6t0gjm "BTT Official store") | Есть готовые сборки системы с предустановленным Klipper'ом. Подключается к БП принтера, не нужен отдельный БП или понижающий преобразователь |
+| BTT Pi | Allwinner H616 | 1Gb | 4 | 12-24v | [:material-shopping:](https://alli.pub/6tusk0?erid=2SDnjc7eE1e "BTT Official store") | Есть готовые сборки системы с предустановленным Klipper'ом. Подключается к БП принтера, не нужен отдельный БП или понижающий преобразователь |
 | Orange Pi 3 LTS | Allwinner H6 | 2Gb | 3 | 5v | [:material-shopping:](https://alli.pub/6tkte1?erid=2SDnjbuPUUg "Shenzhen Xunlong Software Co") | Очень распространенный одноплатник для перевода принтеров на Klipper, множество инструкций написано именно под него. Есть eMMC 8Gb, то есть microSD карточка нужна только для установки системы, дальше плата работает без неё |
 | Orange Pi Zero3 | Allwinner H618 | 1Gb | 1 | 5v | [:material-shopping:](https://alli.pub/6tkte8?erid=2SDnjbvsTm2 "Shenzhen Xunlong Software Co") | Одно из самых выгодных предложений по цена/характеристики |
-| BTT CB1 | Allwinner H616 | 1Gb | - | - | [:material-shopping:](https://alli.pub/6t0hlq "BTT Official store") | Плата, созданная для замены Raspberry Pi CM4. Используется как модуль для некоторых плат BTT. Не имеет своих портов ввода\вывода и не может быть использована отдельно без специального адаптера |
+| BTT CB1 | Allwinner H616 | 1Gb | - | - | [:material-shopping:](https://alli.pub/6tuskl?erid=2SDnjcC6Brg "BTT Official store") | Плата, созданная для замены Raspberry Pi CM4. Используется как модуль для некоторых плат BTT. Не имеет своих портов ввода\вывода и не может быть использована отдельно без специального адаптера |
 
 ## Драйверы
 
@@ -54,12 +54,12 @@ icon: fontawesome/solid/microchip
 
 | Тип драйвера | BTT | MKS | FLY | FYSETC | Комментарий |
 |:------------ |:---:|:---:|:---:|:------:|:----------- |
-| tmc2209 pololu | [:material-shopping:](https://alli.pub/6t0oa2 "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6t0pug "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6t0q1n "Mellow Official Store") | [:material-shopping:](https://alli.pub/6t0q6p "FYSETC Official Store") | Хороший универсальный драйвер. Ток до 2А. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Напряжение питания до 28в. Подключение к плате по step/dir или UART. При подключении по UART можно использовать sensorless homing |
-| tmc2209 EZ | [:material-shopping:](https://alli.pub/6t0pqk "BigTreeTech Official Store") | - | - | - | То же самое, но для плат BigTreeTech с разъёмами EZ |
-| tmc2240 pololu | [:material-shopping:](https://alli.pub/6t0oec "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6t0pw0 "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6t0q1u "Mellow Official Store") | [:material-shopping:](https://alli.pub/6t0q55 "FYSETC Official Store") | Ток до 2.1А. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Напряжение питания до 36в. Подключение к плате по SPI. Есть sensorless homing |
-| tmc5160_HV pololu | [:material-shopping:](https://alli.pub/6t0pkc "BigTreeTech Official Store") | - | [:material-shopping:](https://alli.pub/6t0pzw "Mellow Official Store") | - | Ток до 3А. Напряжение до 60в. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Подключение к плате по SPI. Есть sensorless homing. Такие драйверы громче и дороже, чем 2209\2240, так что их имеет смысл брать только под питание высоким напряжением[^2] или под моторы, требующие более 2А |
-| tmc5160_HV внешние | [:material-shopping:](https://alli.pub/6t0pkq "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6t0pvf "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6t0q12 "Mellow Official Store") | - | То же самое, только на отдельной внешней плате. Имеют своё питание и разъёмы, благодаря чему могут выдерживать больший ток (зависит от производителя). Имеют смысл только под Nema23 моторы |
-| tmc5160_HV EZ | [:material-shopping:](https://alli.pub/6t0prj "BigTreeTech Official Store") | - | - | - | То же самое, что tmc5160 HV pololu, но для плат BigTreeTech с разъёмами EZ |
+| tmc2209 pololu | [:material-shopping:](https://alli.pub/6tuslk?erid=2SDnjcGY9hi "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6tuslr?erid=2SDnjcJ28z4 "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6tusmj?erid=2SDnjcLz7Yk "Mellow Official Store") | [:material-shopping:](https://alli.pub/6tusnp?erid=2SDnjcSv4g8 "FYSETC Official Store") | Хороший универсальный драйвер. Ток до 2А. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Напряжение питания до 28в. Подключение к плате по step/dir или UART. При подключении по UART можно использовать sensorless homing |
+| tmc2209 EZ | [:material-shopping:](https://alli.pub/6tusnw?erid=2SDnjcUQ3xU "BigTreeTech Official Store") | - | - | - | То же самое, но для плат BigTreeTech с разъёмами EZ |
+| tmc2240 pololu | [:material-shopping:](https://alli.pub/6tusoa?erid=2SDnjcXN2XA "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6tusoo?erid=2SDnjcbozNC "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6tusp9?erid=2SDnjcgFxDE "Mellow Official Store") | [:material-shopping:](https://alli.pub/6tuspg?erid=2SDnjchjwVa "FYSETC Official Store") | Ток до 2.1А. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Напряжение питания до 36в. Подключение к плате по SPI. Есть sensorless homing |
+| tmc5160_HV pololu | [:material-shopping:](https://alli.pub/6tuspu?erid=2SDnjcjDvmv "BigTreeTech Official Store") | - | [:material-shopping:](https://alli.pub/6tusqf?erid=2SDnjcoftcx "Mellow Official Store") | - | Ток до 3А. Напряжение до 60в. Дробление шагов до 1/256. Интерполяция шагов до 1/256. Подключение к плате по SPI. Есть sensorless homing. Такие драйверы громче и дороже, чем 2209\2240, так что их имеет смысл брать только под питание высоким напряжением[^2] или под моторы, требующие более 2А |
+| tmc5160_HV внешние | [:material-shopping:](https://alli.pub/6tusqm?erid=2SDnjcq9suJ "BigTreeTech Official Store") | [:material-shopping:](https://alli.pub/6tusr7?erid=2SDnjcubqkL "Makerbase Official Store") | [:material-shopping:](https://alli.pub/6tusrl?erid=2SDnjcz3obN "Mellow Official Store") | - | То же самое, только на отдельной внешней плате. Имеют своё питание и разъёмы, благодаря чему могут выдерживать больший ток (зависит от производителя). Имеют смысл только под Nema23 моторы |
+| tmc5160_HV EZ | [:material-shopping:](https://alli.pub/6tusrs?erid=2SDnjd1Xnsi "BigTreeTech Official Store") | - | - | - | То же самое, что tmc5160 HV pololu, но для плат BigTreeTech с разъёмами EZ |
 
 Информация по некоторым не указанным драйверам:
 
@@ -78,8 +78,8 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| Mini 12864 (SD сбоку) | [:material-shopping:](https://alli.pub/6t0uin "Вход под SD сбоку. BigTreeTech Official Store") [:material-shopping:](https://alli.pub/6t0ujf "Вход под SD сбоку. BigTreeTech Official Store") | Небольшой 12864 экран. Устанавливается в множество современных самосборов. Может быть установлен в принтеры, где предполагается установка SD спереди, при этом доступ к слоту потеряется |
-| Mini 12864 (SD спереди) | [:material-shopping:](https://alli.pub/6t0uk0 "Вход под SD спереди. BigTreeTech Official Store") | Такой же экран, но с припаянным разъёмом SD. В некоторые принтеры, рассчитанные на вход SD сбоку не влезет |
+| Mini 12864 (SD сбоку) | [:material-shopping:](https://alli.pub/6tussy?erid=2SDnjd5ykik "Вход под SD сбоку. BigTreeTech Official Store") [:material-shopping:](https://alli.pub/6tust5?erid=2SDnjd8wjHS "Вход под SD сбоку. BigTreeTech Official Store") | Небольшой 12864 экран. Устанавливается в множество современных самосборов. Может быть установлен в принтеры, где предполагается установка SD спереди, при этом доступ к слоту потеряется |
+| Mini 12864 (SD спереди) | [:material-shopping:](https://alli.pub/6tustc?erid=2SDnjdARiZn "Вход под SD спереди. BigTreeTech Official Store") | Такой же экран, но с припаянным разъёмом SD. В некоторые принтеры, рассчитанные на вход SD сбоку не влезет |
 
 ## Источники питания и преобразователи
 
@@ -94,7 +94,7 @@ icon: fontawesome/solid/microchip
 | LRS-600-24 | 24в | 600Вт | [:material-shopping:](https://www.chipdip.ru/product/lrs-600-24 "ChipDip") | Для принтеров с большими столами, питающимися от БП |
 | LRS-200-48 | 48в | 211Вт | [:material-shopping:](https://www.chipdip.ru/product/lrs-200-48 "ChipDip") | Для питания моторов в продвинутых принтерах с высоковольтными драйверами |
 | XL4015 | Настраивается | - | [:material-shopping:](https://alli.pub/6t0uq8 "AITEXM ROBOT Official Store") | Для подключения одноплатников к БП принтера. Также можно использовать для питания светодиодной ленты и прочих потребителей, чьё напряжение питания отличается от напряжения с БП принтера. Ток заявлен до 5А, но это китайские амперы |
-| MP1584 | Настраивается | - | [:material-shopping:](https://alli.pub/6t1kd9) [:material-shopping:](https://alli.pub/6tktem?erid=2SDnjbxMT3N) | Для подключения вентиляторов 5-12в к принтеру с питанием 24в. Маленький и дешевый. Макс. ток заявлен до 3А, но это китайские амперы |
+| MP1584 | Настраивается | - | [:material-shopping:](https://alli.pub/6tustx?erid=2SDnjdEsgQp) [:material-shopping:](https://alli.pub/6tktem?erid=2SDnjbxMT3N) | Для подключения вентиляторов 5-12в к принтеру с питанием 24в. Маленький и дешевый. Макс. ток заявлен до 3А, но это китайские амперы |
 
 ## Датчики автоуровня
 
@@ -102,12 +102,12 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| 3D Touch | [:material-shopping:](https://alli.pub/6t0v1p "Trianglelab") [:material-shopping:](https://alli.pub/6t0v2a "Kingroon Official Store") | Клон BLTouch. Могут быть проблемы с глючным поведением, но всё исправимо настройкой прошивки |
-| CR Touch | [:material-shopping:](https://alli.pub/6t0v14 "Maybemonda official store") | Датчик от современных принтеров Creality. Работает аналогично BLTouch, по размеру и креплениям совместим кроме того, что провод подсоединяется по центру датчика. Предпочтительный вариант под проекты |
-| BTT Microprobe | [:material-shopping:](https://alli.pub/6t0uxf "BigTreeTech Official Store") | *Не совместим с BLTouch!* Небольшой датчик автоуровня для компактных печатающих голов |
+| 3D Touch | [:material-shopping:](https://alli.pub/6tusuw?erid=2SDnjdNHcpY "Trianglelab") [:material-shopping:](https://alli.pub/6tusv3?erid=2SDnjdPmc6t "Kingroon Official Store") | Клон BLTouch. Могут быть проблемы с глючным поведением, но всё исправимо настройкой прошивки |
+| CR Touch | [:material-shopping:](https://alli.pub/6tusw2?erid=2SDnjdSjafa "Maybemonda official store") | Датчик от современных принтеров Creality. Работает аналогично BLTouch, по размеру и креплениям совместим кроме того, что провод подсоединяется по центру датчика. Предпочтительный вариант под проекты |
+| BTT Microprobe | [:material-shopping:](https://alli.pub/6tusx1?erid=2SDnjdbdWMe "BigTreeTech Official Store") | *Не совместим с BLTouch!* Небольшой датчик автоуровня для компактных печатающих голов |
 | Славянский зажим яйцами | - | Позволяет выровнять не только стол, и но и портал. Может быть использован в борьбе с ящерами |
-| SN-04 | [:material-shopping:](https://alli.pub/6t1arc "Longwei Store") | Распространенный тип индуктивных датчиков. Срабатывает только о металл, то есть для использования только со стальными листами. Можно использовать как концевик |
-| P.I.N.D.A V2 | [:material-shopping:](https://alli.pub/6t1axd "Trianglelab") | Индуктивный датчик с компенсацией температурного дрейфа, который используется на принтерах Prusa и некоторых других. При выборе для замены подобного датчика на других принтерах проверяйте диаметр и длину т.к. существует множество внешне похожих, но отличающихся размерами датчиков |
+| SN-04 | [:material-shopping:](https://alli.pub/6tusxt?erid=2SDnjdj3SmN "Longwei Store") | Распространенный тип индуктивных датчиков. Срабатывает только о металл, то есть для использования только со стальными листами. Можно использовать как концевик |
+| P.I.N.D.A V2 | [:material-shopping:](https://alli.pub/6tusye?erid=2SDnjdoVQcQ "Trianglelab") | Индуктивный датчик с компенсацией температурного дрейфа, который используется на принтерах Prusa и некоторых других. При выборе для замены подобного датчика на других принтерах проверяйте диаметр и длину т.к. существует множество внешне похожих, но отличающихся размерами датчиков |
 
 ## Концевики
 
@@ -117,12 +117,12 @@ icon: fontawesome/solid/microchip
 
 | Изображение | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| ![механический концевик без платы](pics/mech_endstop_no_board.png){ width=100 } | [:material-shopping:](https://alli.pub/6t1dml "Kingroon Official Store") | Механический концевик без платы. Для перепайки или прямого подключения к принтеру |
-| ![механический концевик от эндера](pics/mech_endstop_ender.png){ width=100 } | [:material-shopping:](https://alli.pub/6t1dkg "Kingroon Official Store") | Механический концевик. Используются на Ender-3 и некоторых других принтерах. 3-проводный разъём xh2.54 |
-| ![механический концевик](pics/mech_endstop_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6t1dr9 "Kingroon Official Store") | Механический концевик. 3-проводный разъём xh2.54 |
-| ![механический концевик](pics/mech_endstop_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6t1dur "Kingroon Official Store") | Механический концевик. 4-проводный разъём xh2.54 |
-| ![оптический концевик](pics/opt_endstop_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6t1eop "Kingroon Official Store") | Оптический концевик. 3-проводный разъём xh2.54 располагается с другой стороны от концевика, что удобно при скрытной укладке проводов |
-| ![оптический концевик](pics/opt_endstop_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6t1ewa "Kingroon Official Store") [:material-shopping:](https://alli.pub/6t3qzz "IdeaFormer Factory Store") | Оптический концевик. 3-проводный разъём xh2.54 с той же стороны, где и сам концевик |
+| ![механический концевик без платы](pics/mech_endstop_no_board.png){ width=100 } | [:material-shopping:](https://alli.pub/6tuubz?erid=2SDnjeyhWY8 "Kingroon Official Store") | Механический концевик без платы. Для перепайки или прямого подключения к принтеру |
+| ![механический концевик от эндера](pics/mech_endstop_ender.png){ width=100 } | [:material-shopping:](https://alli.pub/6tuucd?erid=2SDnjf2fV6p "Kingroon Official Store") | Механический концевик. Используются на Ender-3 и некоторых других принтерах. 3-проводный разъём xh2.54 |
+| ![механический концевик](pics/mech_endstop_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6tuucr?erid=2SDnjbosP5J "Kingroon Official Store") | Механический концевик. 3-проводный разъём xh2.54 |
+| ![механический концевик](pics/mech_endstop_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6tuucy?erid=2SDnjbqMNMe "Kingroon Official Store") | Механический концевик. 4-проводный разъём xh2.54 |
+| ![оптический концевик](pics/opt_endstop_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6tuud5?erid=2SDnjbtKLvL "Kingroon Official Store") | Оптический концевик. 3-проводный разъём xh2.54 располагается с другой стороны от концевика, что удобно при скрытной укладке проводов |
+| ![оптический концевик](pics/opt_endstop_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6tuudc?erid=2SDnjbuoLCg "Kingroon Official Store") [:material-shopping:](https://alli.pub/6tuudq?erid=2SDnjbxmJmN "IdeaFormer Factory Store") | Оптический концевик. 3-проводный разъём xh2.54 с той же стороны, где и сам концевик |
 
 ## Вентиляторы
 
@@ -135,7 +135,7 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Подешевле | Потише | Комментарий |
 |:------------ |:---------:|:------:|:----------- |
-| 30х30х10 мм | [12в](https://alli.pub/6tktfe?erid=2SDnjc4HQAk "RRF 3D Shop") / [24в](https://alli.pub/6t1n5z "RRF 3D Shop") | [12в](https://alli.pub/6t1n6d "Mellow") | Такие часто используются для охлаждения радиатора хотэнда |
+| 30х30х10 мм | [12в](https://alli.pub/6tktfe?erid=2SDnjc4HQAk "RRF 3D Shop") / [24в](https://alli.pub/6tuuew?erid=2SDnjc99Djn "RRF 3D Shop") | [12в](https://alli.pub/6tuuf3?erid=2SDnjcAdD28 "Mellow") | Такие часто используются для охлаждения радиатора хотэнда |
 | 35х35х10 мм | [24в](https://alli.pub/6tktfs?erid=2SDnjcDBKrp "RRF 3D Shop") |  | Используются на Biqu H2 |
 | 40х40х10 мм | [12в](https://alli.pub/6tktgd?erid=2SDnjcHdHhr "RRF 3D Shop") / [24в](https://alli.pub/6tku43?erid=2SDnjeQgbaQ "RRF 3D Shop") | [12в](https://alli.pub/6tku4o?erid=2SDnjeV8ZRS "RRF 3D Shop") | Такие часто используются для охлаждения радиатора хотэнда. Также эти вентиляторы можно иногда найти в компьютерных магазинах |
 | 50х50х10 мм | [12в](https://alli.pub/6tku52?erid=2SDnjeY6Xz8 "RRF 3D Shop") / [24в](https://alli.pub/6tku5g?erid=2SDnjeZaXGU "RRF 3D Shop") | - | Используется для охлаждения блока электроники в некоторых принтерах |
@@ -145,10 +145,10 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Подешевле | Потише | Комментарий |
 |:------------ |:---------:|:------:|:----------- |
-| 3010 | [12в](https://alli.pub/6t1mq1 "Younuon Cooling Store") / [24в](https://alli.pub/6t1mp9 "Younuon Cooling Store") | - | Редко используются в 3д принтерах |
-| 4010 | [12в](https://alli.pub/6t1lbv "Younuon Cooling Store") / [24в](https://alli.pub/6t1lap "Younuon Cooling Store") | - | Используются в основном в стоковых печатающих головах. Не особо производительны, так что при выходе такого из строя лучше будет сразу апгрейдить обдув на 2х 5015 |
-| 4020 | [12в](https://alli.pub/6t1mtj "Younuon Cooling Store") / [24в](https://alli.pub/6t1mtq "Younuon Cooling Store") | - | Дуют заметно лучше, чем 4010, но не так хорошо, как 5015. Имеют смысл только если обдув из 5015 не лезет |
-| 5015 | [12в](https://alli.pub/6t1l3p "Younuon Cooling Store") / [24в](https://alli.pub/6t1l2j "Younuon Cooling Store") | [12в](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop") | Высокое статическое давление и расход. Используется в большинстве производительных систем охлаждения |
+| 3010 | [12в](https://alli.pub/6tuufa?erid=2SDnjcC7CJU "Younuon Cooling Store") / [24в](https://alli.pub/6tuufh?erid=2SDnjcDbBap "Younuon Cooling Store") | - | Редко используются в 3д принтерах |
+| 4010 | [12в](https://alli.pub/6tuufv?erid=2SDnjcGZA9W "Younuon Cooling Store") / [24в](https://alli.pub/6tuug9?erid=2SDnjcKX8iC "Younuon Cooling Store") | - | Используются в основном в стоковых печатающих головах. Не особо производительны, так что при выходе такого из строя лучше будет сразу апгрейдить обдув на 2х 5015 |
+| 4020 | [12в](https://alli.pub/6tuugn?erid=2SDnjcPy6ZE "Younuon Cooling Store") / [24в](https://alli.pub/6tuuh1?erid=2SDnjcSw57v "Younuon Cooling Store") | - | Дуют заметно лучше, чем 4010, но не так хорошо, как 5015. Имеют смысл только если обдув из 5015 не лезет |
+| 5015 | [12в](https://alli.pub/6tuuh8?erid=2SDnjcXP2xx "Younuon Cooling Store") / [24в](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe "Younuon Cooling Store") | [12в](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop") | Высокое статическое давление и расход. Используется в большинстве производительных систем охлаждения |
 
 ### Компрессоры
 
@@ -158,8 +158,8 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| WS7040 | [:material-shopping:](https://alli.pub/6t1of3 "Mellow") | Подключается к 24в, управляется напрямую с материнской платы принтера. Относительно дорогое, но при этом простое решение |
-| Трубка 15мм | [:material-shopping:](https://alli.pub/6tdd2m "Mellow") | Длина 1.8м. Используется для подачи воздуха от копрессора к печатающей голове |
+| WS7040 | [:material-shopping:](https://alli.pub/6tuuht?erid=2SDnjcdJz6L "Mellow") | Подключается к 24в, управляется напрямую с материнской платы принтера. Относительно дорогое, но при этом простое решение |
+| Трубка 15мм | [:material-shopping:](https://alli.pub/6tuui7?erid=2SDnjcenyNg "Mellow") | Длина 1.8м. Используется для подачи воздуха от копрессора к печатающей голове |
 
 ## Акселерометры
 
@@ -168,8 +168,8 @@ icon: fontawesome/solid/microchip
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
 | GY-291 (ADXL345) | [:material-shopping:](https://alli.pub/6tku7l?erid=2SDnjejxSEt "Wanzai Store") | Подключается по SPI, надо паять и обжимать провод + конфигурировать в системе как описано [тут](https://www.klipper3d.org/Measuring_Resonances.html). Зато очень дешево. Если будете брать, то рекомендую взять несколько т.к. они часто косячные |
-| Fly-ADXL345 | [:material-shopping:](https://alli.pub/6t1o40 "Mellow") | Стоит дороже, но подключается обычным USB Type-C кабелем, за счёт чего значительно удобнее в эксплуатации, если не планируете стационарно устанавливать на принтер |
-| BTT S2DW | [:material-shopping:](https://alli.pub/6t1o6c "BigTreeTech Official Store") | Акселерометр на основе LIS2DW12TR. Подключается с помощью USB Type-C кабеля. Может легко крепиться вместо сопла для наиболее точных измерений |
+| Fly-ADXL345 | [:material-shopping:](https://alli.pub/6tuuie?erid=2SDnjcgGxf2 "Mellow") | Стоит дороже, но подключается обычным USB Type-C кабелем, за счёт чего значительно удобнее в эксплуатации, если не планируете стационарно устанавливать на принтер |
+| BTT S2DW | [:material-shopping:](https://alli.pub/6tuuis?erid=2SDnjcjEwDi "BigTreeTech Official Store") | Акселерометр на основе LIS2DW12TR. Подключается с помощью USB Type-C кабеля. Может легко крепиться вместо сопла для наиболее точных измерений |
 
 ## Веб-камеры
 
@@ -178,7 +178,7 @@ icon: fontawesome/solid/microchip
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
 | Logitech C270 | [:material-shopping:](https://www.dns-shop.ru/product/5b3ed8272511ed20/veb-kamera-logitech-c270/) | Очень распространенная камера. Легко установить и настроить, даёт сносную картинку, стоит дешево |
-| K1 camera | [:material-shopping:](https://alli.pub/6t1oa1 "Ender 3D Printer Online Store") | Камера для установки на Creality K1 или K1 Max. Дешевая, даёт HD разрешение. Не протестирована на других принтерах |
+| K1 camera | [:material-shopping:](https://alli.pub/6tuuj6?erid=2SDnjcqAtM6 "Ender 3D Printer Online Store") | Камера для установки на Creality K1 или K1 Max. Дешевая, даёт HD разрешение. Не протестирована на других принтерах |
 
 ## Твердотельные реле
 
@@ -186,8 +186,8 @@ icon: fontawesome/solid/microchip
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| SSR-10 | [:material-shopping:](https://alli.pub/6t2j17 "Longwei Store") [:material-shopping:](https://alli.pub/6t2j1s "Mellow") | Твердотельное реле на 10А. Первая ссылка - китайский китай, но дешево. Вторая - оригинальный OMRON за много денег |
-| BTT Relay | [:material-shopping:](https://alli.pub/6t2jru "BigTreeTech Official Store") | Реле для управления питанием принтера. Удобно тем, что под него достаточно много инструкций и используются распространенные в 3д принтерах разъёмы. Но можно то же самое реализовать дешевле |
+| SSR-10 | [:material-shopping:](https://alli.pub/6tuujd?erid=2SDnjcresdS "Longwei Store") [:material-shopping:](https://alli.pub/6tuujk?erid=2SDnjct8run "Mellow") | Твердотельное реле на 10А. Первая ссылка - китайский китай, но дешево. Вторая - оригинальный OMRON за много денег |
+| BTT Relay | [:material-shopping:](https://alli.pub/6tuujy?erid=2SDnjcucrC8 "BigTreeTech Official Store") | Реле для управления питанием принтера. Удобно тем, что под него достаточно много инструкций и используются распространенные в 3д принтерах разъёмы. Но можно то же самое реализовать дешевле |
 
 `Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`[^1]
 

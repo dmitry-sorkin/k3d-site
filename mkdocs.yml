@@ -22,6 +22,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.sections
     - content.code.copy
   custom_dir: overrides
 markdown_extensions:

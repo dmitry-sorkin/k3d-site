@@ -17,7 +17,7 @@
 
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Радиатор E3D V6 | 1 | [:material-shopping:](http://alii.pub/6fdbsj) | Выбирать `Bowden Wade 1.75 3.0` |
+    | Радиатор E3D V6 | 1 | [:material-shopping:](https://alli.pub/6tusbg?erid=2SDnjePancQ) | Выбирать `Bowden Wade 1.75 3.0` |
     | Термобарьер | 1 | [:material-shopping:](http://alii.pub/6fdblx) | Выбирать `Threaded version` |
     | Термистор | 0-1 | [:material-shopping:](http://alli.pub/6hvqq0) | Если штатный термистор не в гильзе, то его придётся заменить |
     | Нагревательный блок E3D Volcano | 1 | [:material-shopping:](http://alii.pub/6fdbl5) | Выбирать `Aluminium` |
