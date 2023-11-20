@@ -101,6 +101,7 @@ nav:
       - Калибровка принтера с нуля: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
       - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
+      - Тест ряби: ./calibrations/vfa.md
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
         - Калибровщик: ./calibrations/retractions/rct.html
