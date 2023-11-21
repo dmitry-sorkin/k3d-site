@@ -14,9 +14,9 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)") [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)") | [:material-shopping:](https://alli.pub/6ttfek?erid=2SDnje8mFCU "Big Tree Tech co. LTD") [:material-shopping:](https://alli.pub/6ttfey?erid=2SDnjeDDD3W "BIGTREETECH Mavellous store") | В комплекте биметаллическое горло, хитблок, аналогичный V6, латунное сопло и вентилятор обдува радиатора |
-| Creality Sprite Kit | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6ttffc?erid=2SDnjeLd9TE "Maybemonda") [:material-shopping:](https://alli.pub/6ttfgb?erid=2SDnjeSZ6ac "Creality 3d printer store") | В комплекте стальное горло со сквозным прохождением трубки, хитблок CR-10, латунное сопло. Рекомендуется заменить горло на биметаллическое. |
-| Trianglelab Matrix Lite | [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=bUOmRvFc1P1ZAs-f "Обзор") | [:material-shopping:](https://alli.pub/6ttfgp?erid=2SDnjeirxgQ "Trianglelab") | В комплекте экструдер, вентилятор 40мм, биметаллическое горло, хитблок e3d v6 с носком и латунным соплом, термистор и нагреватель |
+| Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)"){ target="_blank" } [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfek?erid=2SDnje8mFCU "Big Tree Tech co. LTD") [:material-shopping:](https://alli.pub/6ttfey?erid=2SDnjeDDD3W "BIGTREETECH Mavellous store") | В комплекте биметаллическое горло, хитблок, аналогичный V6, латунное сопло и вентилятор обдува радиатора |
+| Creality Sprite Kit | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttffc?erid=2SDnjeLd9TE "Maybemonda") [:material-shopping:](https://alli.pub/6ttfgb?erid=2SDnjeSZ6ac "Creality 3d printer store") | В комплекте стальное горло со сквозным прохождением трубки, хитблок CR-10, латунное сопло. Рекомендуется заменить горло на биметаллическое. |
+| Trianglelab Matrix Lite | [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=bUOmRvFc1P1ZAs-f "Обзор"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfgp?erid=2SDnjeirxgQ "Trianglelab") | В комплекте экструдер, вентилятор 40мм, биметаллическое горло, хитблок e3d v6 с носком и латунным соплом, термистор и нагреватель |
 | E3D Titan Aero (клон) | - | [:material-shopping:](https://alli.pub/6ttfha?erid=2SDnjeygqVr "Trianglelab") | В комплекте экструдер, вентилятор 40мм, стальное горло, хитблок и сопло V6/Volcano, нагреватель, термистор 104GT-2, носок. Горло под замену! |
 
 ## Подающие механизмы
@@ -27,8 +27,8 @@ icon: material/printer-3d-nozzle
 |:------------ |:----------:|:------:|:----------- |
 | BMG 5A | - | [:material-shopping:](https://alli.pub/6ttfho?erid=2SDnjbqLhKN "5A. Выбирать Right clear hardened") | Вариант с низкокачественным корпусом, но хорошими подающими колёсами. Под печать только твёрдыми филаментами или в качестве донора для других проектов |
 | BMG Trianglelab | - | [:material-shopping:](https://alli.pub/6ttfhv?erid=2SDnjbtJft4 "Trianglelab")| Значительно более качественная, но и более дорогая версия. Способна печатать средне-мягкими эластомерами, если с остальными частями экструдера всё будет хорошо. Очень мягкие эластомеры жует |
-| Creality Sprite / Sprite Pro | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту") | [:material-shopping:](https://alli.pub/6ttfig?erid=2SDnjc6Aa8p "Creality Maker Store") | Подающий механизм с радиатором и мотором. Пластиковая версия интереснее так как легче и дешевле |
-| Фидер от Creality K1 | [:simple-youtube:](https://youtu.be/Qdcv0IBwyc4?t=719 "Часть обзора К1 посвящена этому фидеру") | [:material-shopping:](https://alli.pub/6ttfjf?erid=2SDnjcNUSEc "Creality Online Store") [:material-shopping:](https://alli.pub/6tkt5h?erid=2SDnjdk8FHa "Creality Official store") | Подающий механизм в комплекте с мотором |
+| Creality Sprite / Sprite Pro | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfig?erid=2SDnjc6Aa8p "Creality Maker Store") | Подающий механизм с радиатором и мотором. Пластиковая версия интереснее так как легче и дешевле |
+| Фидер от Creality K1 | [:simple-youtube:](https://youtu.be/Qdcv0IBwyc4?t=719 "Часть обзора К1 посвящена этому фидеру"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfjf?erid=2SDnjcNUSEc "Creality Online Store") [:material-shopping:](https://alli.pub/6tkt5h?erid=2SDnjdk8FHa "Creality Official store") | Подающий механизм в комплекте с мотором |
 
 ### Колёса подающих механизмов
 
@@ -44,8 +44,8 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Trianglelab Rapido HF/UHF | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест") | [:material-shopping:](https://alli.pub/6ttfuw?erid=2SDnjcRSkHE "pt1000 Trianglelab") | В HF версии совместим с Volcano, но использует сопла V6. Производительность на ~13% выше, чем у volcano. В UHF версии длиннее volcano на ~8.5мм, использует сопла volcano, производительность на ~25% выше, чем у volcano |
-| Mellow NF Zone V6 | [:simple-youtube:](https://youtu.be/WaITh4YVcQ8 "Тест") | [:material-shopping:](https://alli.pub/6ttfvh?erid=2SDnjcUQiqv "Mellow") | Хотэнд, частично совместимый и с E3D V6, и с CR-10. Отличительной особенностью является возможность работать почти без охлаждения. Рекомендуется посмотреть видео с тестами перед покупкой! |
+| Trianglelab Rapido HF/UHF | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfuw?erid=2SDnjcRSkHE "pt1000 Trianglelab") | В HF версии совместим с Volcano, но использует сопла V6. Производительность на ~13% выше, чем у volcano. В UHF версии длиннее volcano на ~8.5мм, использует сопла volcano, производительность на ~25% выше, чем у volcano |
+| Mellow NF Zone V6 | [:simple-youtube:](https://youtu.be/WaITh4YVcQ8 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfvh?erid=2SDnjcUQiqv "Mellow") | Хотэнд, частично совместимый и с E3D V6, и с CR-10. Отличительной особенностью является возможность работать почти без охлаждения. Рекомендуется посмотреть видео с тестами перед покупкой! |
 
 !!! note "Качественных готовых V6 и Volcano хотэндов в адекватной комплектации я не нашёл в продаже. Проще и дешевле будет собрать такой хотэнд самому из комплектующих. Список деталей для сборки в конце страницы"
 
@@ -66,8 +66,8 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| E3D V6 биметаллический сталь+медь | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест") | [:material-shopping:](https://alli.pub/6ttg8p?erid=2SDnjeDEDVJ "5А. Выбирать threaded") | Для радиатора E3D V6 |
-| E3D V6 титановый цельнометаллический | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест") | [:material-shopping:](https://alli.pub/6ttg8w?erid=2SDnjePc8Ti "5A. Выбирать titanium 1.75") | Для радиатора E3D V6 |
+| E3D V6 биметаллический сталь+медь | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttg8p?erid=2SDnjeDEDVJ "5А. Выбирать threaded") | Для радиатора E3D V6 |
+| E3D V6 титановый цельнометаллический | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttg8w?erid=2SDnjePc8Ti "5A. Выбирать titanium 1.75") | Для радиатора E3D V6 |
 | Chimera биметаллический сталь+медь | - | [:material-shopping:](https://alli.pub/6ttg9h?erid=2SDnjeYW49n "5А. Выбирать smooth") | Для радиатора CR-10[^3], а также хотэндов на Neptune 3 Pro/Plus/Max[^3], FBG6 и других с цилиндрическим отверстием диаметром 7мм |
 | Chimera титановый цельнометаллический | - | [:material-shopping:](https://alli.pub/6ttga9?erid=2SDnjecx1zp "Trianglelab") | Для радиатора CR-10[^3], а также хотэндов на Neptune 3 Pro/Plus/Max[^3], FBG6 и других с цилиндрическим отверстием диаметром 7мм |
 | TD6 биметаллический | - | [:material-shopping:](https://alli.pub/6ttgau?erid=2SDnjerHuXv "Trianglelab") | Для радиатора TD6S, Matrix/Matrix Lite. Если обрезать по длине, подойдёт к радиатору от Bambu Lab |
@@ -80,10 +80,10 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| E3D V6 | [:simple-youtube:](https://youtu.be/WaITh4YVcQ8?t=1725) | [:material-shopping:](https://alli.pub/6ttgga?erid=2SDnjdPnwxC "5A") [:material-shopping:](https://alli.pub/6ttgh9?erid=2SDnjdd8qVJ "5A") | Под сопла v6, термистор в гильзе и стандартный нагреватель D6 L20 |
-| E3D Volcano | [:simple-youtube:](https://youtu.be/rywLgUy9-8c) | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A") [:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab") | Под сопла volcano, термистор в гильзе и стандартный нагреватель D6 L20 |
-| CR-10 | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4) | [:material-shopping:](https://alli.pub/6ttgj7?erid=2SDnjePcTwe "Trianglelab") | Под сопла mk8, термистор-каплю и стандартный нагреватель D6 L20. Практически во всех случаях лучше сразу менять на V6, чтобы перейти на термисторы в гильзах, так как они безопаснее и надежнее. Также вместо покупки этого хитблока выгодно сразу проводить апгрейд до других, более производительных вариантов |
-| CHC Pro | [:simple-youtube:](https://youtu.be/ZMRE5Hb7uyA "Обзор") | [:material-shopping:](https://alli.pub/6ttgk6?erid=2SDnjeVYR52 "Версия с NTC100k B3950") [:material-shopping:](https://alli.pub/6ttglc?erid=2SDnjecxMUk "Версия под pt1000") | Под сопла Volcano. Имеет встроенный нагреватель и термистор |
+| E3D V6 | [:simple-youtube:](https://youtu.be/WaITh4YVcQ8?t=1725){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttgga?erid=2SDnjdPnwxC "5A") [:material-shopping:](https://alli.pub/6ttgh9?erid=2SDnjdd8qVJ "5A") | Под сопла v6, термистор в гильзе и стандартный нагреватель D6 L20 |
+| E3D Volcano | [:simple-youtube:](https://youtu.be/rywLgUy9-8c){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A") [:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab") | Под сопла volcano, термистор в гильзе и стандартный нагреватель D6 L20 |
+| CR-10 | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttgj7?erid=2SDnjePcTwe "Trianglelab") | Под сопла mk8, термистор-каплю и стандартный нагреватель D6 L20. Практически во всех случаях лучше сразу менять на V6, чтобы перейти на термисторы в гильзах, так как они безопаснее и надежнее. Также вместо покупки этого хитблока выгодно сразу проводить апгрейд до других, более производительных вариантов |
+| CHC Pro | [:simple-youtube:](https://youtu.be/ZMRE5Hb7uyA "Обзор"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttgk6?erid=2SDnjeVYR52 "Версия с NTC100k B3950") [:material-shopping:](https://alli.pub/6ttglc?erid=2SDnjecxMUk "Версия под pt1000") | Под сопла Volcano. Имеет встроенный нагреватель и термистор |
 
 ### Носки
 
@@ -108,9 +108,9 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| E3D V6 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6ttkbb?erid=2SDnjefzhJY "Trianglelab") [:material-shopping:](https://alli.pub/6ttkbi?erid=2SDnjesrbZJ "Mellow") | Не подходит для композитных материалов |
+| E3D V6 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkbb?erid=2SDnjefzhJY "Trianglelab") [:material-shopping:](https://alli.pub/6ttkbi?erid=2SDnjesrbZJ "Mellow") | Не подходит для композитных материалов |
 | E3D V6 латунное 0.15мм | - | [:material-shopping:](https://alli.pub/6ttkco?erid=2SDnjcFAD1i "Trianglelab") | Сопло с малым выходным отверстием. Печатать таким относительно тяжело + очень медлено, но детализация очень высокая. Не подходит для композитов |
-| E3D V6 латунное CHT | [:simple-youtube:](https://youtu.be/2rrQZ8g-2Zo?si=guFBlkxU7y1f1ZdK) | [:material-shopping:](https://alli.pub/6tuj2d?erid=2SDnjepgXjW "5A") | Не подходят для композитных материалов. По сравнению с обычными, могут расплавить больший объём пластика за единицу времени, но качество у этих сопел не супер-классное |
+| E3D V6 латунное CHT | [:simple-youtube:](https://youtu.be/2rrQZ8g-2Zo?si=guFBlkxU7y1f1ZdK){ target="_blank" } | [:material-shopping:](https://alli.pub/6tuj2d?erid=2SDnjepgXjW "5A") | Не подходят для композитных материалов. По сравнению с обычными, могут расплавить больший объём пластика за единицу времени, но качество у этих сопел не супер-классное |
 | E3D V6 медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6ttkdn?erid=2SDnjcomwDJ "Mellow") | Для всех материалов |
 
 #### Mk8
@@ -119,8 +119,8 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Mk8 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест") | [:material-shopping:](https://alli.pub/6ttkgy?erid=2SDnje1TMTW "Trianglelab") [:material-shopping:](https://alli.pub/6ttkhj?erid=2SDnjeDKFiG "Mellow") | Не подходит для композитных материалов |
-| Mk8 латунное CHT | [:simple-youtube:](https://youtu.be/2rrQZ8g-2Zo?si=guFBlkxU7y1f1ZdK) | [:material-shopping:](https://alli.pub/6tuj5o?erid=2SDnjc1cEDW "5A") | Не подходят для композитных материалов. По сравнению с обычными, могут расплавить больший объём пластика за единицу времени, но качество у этих сопел не супер-классное |
+| Mk8 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkgy?erid=2SDnje1TMTW "Trianglelab") [:material-shopping:](https://alli.pub/6ttkhj?erid=2SDnjeDKFiG "Mellow") | Не подходит для композитных материалов |
+| Mk8 латунное CHT | [:simple-youtube:](https://youtu.be/2rrQZ8g-2Zo?si=guFBlkxU7y1f1ZdK){ target="_blank" } | [:material-shopping:](https://alli.pub/6tuj5o?erid=2SDnjc1cEDW "5A") | Не подходят для композитных материалов. По сравнению с обычными, могут расплавить больший объём пластика за единицу времени, но качество у этих сопел не супер-классное |
 | Mk8 медное с калённой вставкой | - | [:material-shopping:](https://alli.pub/6ttkhq?erid=2SDnjeVd7p4 "Mellow") | Подходит для всех материалов |
 
 #### Volcano
@@ -129,8 +129,8 @@ icon: material/printer-3d-nozzle
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Volcano латунное | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест") | [:material-shopping:](https://alli.pub/6ttkk9?erid=2SDnjdgBrGx "Trianglelab") [:material-shopping:](https://alli.pub/6ttkl8?erid=2SDnjdw1j6Q "Mellow") | Не подходит для композитных материалов. |
-| Volcano латунное CHT | [:simple-youtube:](https://youtu.be/2rrQZ8g-2Zo?si=guFBlkxU7y1f1ZdK) | [:material-shopping:](https://alli.pub/6tuj01?erid=2SDnje8es8C "5A") | Не подходят для композитных материалов. По сравнению с обычными, могут расплавить больший объём пластика за единицу времени, но качество у этих сопел не супер-классное |
+| Volcano латунное | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkk9?erid=2SDnjdgBrGx "Trianglelab") [:material-shopping:](https://alli.pub/6ttkl8?erid=2SDnjdw1j6Q "Mellow") | Не подходит для композитных материалов. |
+| Volcano латунное CHT | [:simple-youtube:](https://youtu.be/2rrQZ8g-2Zo?si=guFBlkxU7y1f1ZdK){ target="_blank" } | [:material-shopping:](https://alli.pub/6tuj01?erid=2SDnje8es8C "5A") | Не подходят для композитных материалов. По сравнению с обычными, могут расплавить больший объём пластика за единицу времени, но качество у этих сопел не супер-классное |
 | Volcano медное с калёной вставкой | - | [:material-shopping:](https://alli.pub/6ttkml?erid=2SDnjePhWAc "Mellow") | Подходит для всех материалов |
 
 #### TUN / TUN Pro
@@ -240,4 +240,3 @@ icon: material/printer-3d-nozzle
 
 *[LA]: Linear Advance - алгоритм, синхронизирующий экструзию филамента с перемещениями печатающей головы. Убирает множество дефектов печати. В некоторых прошивках может называться по-другому, например, Pressure Advance (PA) или Pressure Control.
 *[МОР]: Максимальный Объёмный Расход хотэнда, то есть какой объём материала хотэнд способен эффективно прогреть за единицу времени. Считается как [скорость перемещения печатающей головки] x [высота слоя] x [ширина линии]
-

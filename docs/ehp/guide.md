@@ -6,14 +6,14 @@
 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
-| Biqu H2 V2 | 1 | [:material-shopping:](https://alli.pub/6ip008) | Полный комплект вместе с V6-подобным хотэндом, вентилятором, термистором и нагревателем |
-| Сопло V6 стальное закалённое | 0-1 | [:material-shopping:](http://alii.pub/6fdbq7) | Если хотите печатать композитными материалами на стоковом хотэнде |
-| Хитблок Volcano | 0-1 | [:material-shopping:](http://alii.pub/6fdbl5) | Если хочется печатать с большим объёмным расходом. Выбирать `Aluminium` |
-| Сопло Volcano латунное | 0-1 | [:material-shopping:](http://alii.pub/6f6ep5) | Под хотэнд Volcano |
-| Сопло Volcano стальное закаленное | 0-1 | [:material-shopping:](http://alii.pub/6fdbkd) | Для печати композитами на Volcano |
-| Носок | 0-1 | [:material-shopping:](http://alli.pub/6hqe44) | Выбирать `Volcano PT100` |
-| Вентилятор 5015 | 2 | [:material-shopping:](http://alli.pub/6huh9y) | |
-| Понижающий преобразователь | 0-1 | [:material-shopping:](http://alli.pub/6huhvc) | Выбирать `adjustable` или `12v`. Нужен только в случае, если вы ставите 12в вентилятор в 24в принтер |
+| Biqu H2 V2 | 1 | [:material-shopping:](https://alli.pub/6ttfek?erid=2SDnje8mFCU) | Полный комплект вместе с V6-подобным хотэндом, вентилятором, термистором и нагревателем |
+| Сопло E3D V6 медное с калёной вставкой | 0-1 | [:material-shopping:](https://alli.pub/6ttkdn?erid=2SDnjcomwDJ "Mellow") | Если захотите печатать композитными материалами на стоковом хитблоке |
+| Хитблок Volcano | 0-1 | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi) | Если хочется печатать с большим объёмным расходом. Выбирать `Aluminium` |
+| Сопло Volcano латунное | 0-1 | [:material-shopping:](https://alli.pub/6ttkk9?erid=2SDnjdgBrGx "Trianglelab") [:material-shopping:](https://alli.pub/6ttkl8?erid=2SDnjdw1j6Q "Mellow") | Базовое сопло под Volcano хотэнд |
+| Сопло Volcano медное с калёной вставкой | 0-1 | [:material-shopping:](https://alli.pub/6ttkml?erid=2SDnjePhWAc "Mellow") | Если хотите печатать композитами на Volcano хотэнде |
+| Носок | 0-1 | [:material-shopping:](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz) | Выбирать `Volcano PT100` |
+| Вентилятор 5015 | 2 | [:material-shopping:](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe "Younuon Cooling Store") [:material-shopping:](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop") | Первый вариант - подешевле, дуют хорошо, но иногда могут вибрировать. Второй вариант стоит дороже, но лучше во всём |
+| Понижающий преобразователь | 0-1 | [:material-shopping:](https://alli.pub/6tustx?erid=2SDnjdEsgQp) | Нужен только в случае, если вы ставите 12в вентилятор в 24в принтер |
 
 !!! warning "Не берите набор сопел всех диаметров. Через сопло 0.4 мм можно давить линии шириной от 0.35 до 0.6 миллиметра вообще без дефектов, до 1 мм с незначительными дефектами. Поэтому одного сопла 0.4 или 0.5 мм хватит на практически все случаи применения"
 
@@ -70,7 +70,7 @@
 
 ### Настройки печати
 
-Все детали, кроме левого сопла, спроектированы так, что при правильной ориентации не требуют никаких поддержек. Все горизонтальные участки печатаются мостами, которые требуется настроить по [этому видео](https://www.youtube.com/watch?v=Xf8D3R_VADo). 
+Все детали, кроме левого сопла, спроектированы так, что при правильной ориентации не требуют никаких поддержек. Все горизонтальные участки печатаются мостами, которые требуется настроить по [этому видео](https://www.youtube.com/watch?v=Xf8D3R_VADo){ target="_blank" }.
 
 ![](./pics/ehp_supports.png)
 

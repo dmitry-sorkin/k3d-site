@@ -2,14 +2,21 @@
 
 ## Последние версии файлов
 
-- [:material-file-document: Таблица v2.0-alpha2](./releases/calcs/k3d_accuracy_calibration_v2.0-alpha2.ods)
-- [:material-video-3d: Модель v7](./releases/models/k3d_accuracy_test_v7.stp)
+- [:material-file-document: Таблица v2.0](./releases/calcs/k3d_accuracy_calibration_v2.0.ods){ download="k3d_accuracy_calibration_v2.0.ods" }
+- [:material-video-3d: Модель v7 STEP](./releases/models/k3d_accuracy_test_v7.stp){ download="k3d_accuracy_test_v7.stp" }
+- [:material-video-3d: Модель v7 STL](./releases/models/k3d_accuracy_test_v7.stl){ download="k3d_accuracy_test_v7.stl" }
 
 ## Релизы
 
+### Таблица v2.0
+
+[:material-file-document: Таблица v2.0](./releases/calcs/k3d_accuracy_calibration_v2.0.ods){ download="k3d_accuracy_calibration_v2.0.ods" }
+
+Аналогична v2.0-alpha2, за исключением изначально введенных размеров. Смена версии связана с тем, что прошло большое время, таблица протестирована и больше не является альфа версией.
+
 ### Таблица v2.0-alpha2
 
-[:material-file-document: Таблица v2.0-alpha2](./releases/calcs/k3d_accuracy_calibration_v2.0-alpha2.ods)
+[:material-file-document: Таблица v2.0-alpha2](./releases/calcs/k3d_accuracy_calibration_v2.0-alpha2.ods){ download="k3d_accuracy_calibration_v2.0-alpha2.ods" }
 
 По сравнению с предыдущими версиями:
 
@@ -19,7 +26,8 @@
 
 ### Модель v7
 
-[:material-video-3d: Модель v7](./releases/models/k3d_accuracy_test_v7.stp)
+- [:material-video-3d: Модель v7 STEP](./releases/models/k3d_accuracy_test_v7.stp){ download="k3d_accuracy_test_v7.stp" }
+- [:material-video-3d: Модель v7 STL](./releases/models/k3d_accuracy_test_v7.stl){ download="k3d_accuracy_test_v7.stl" }
 
 По сравнению с предыдущей версией:
 
@@ -28,7 +36,7 @@
 
 ### Модель v6
 
-[:material-video-3d: Модель v7](./releases/models/k3d_accuracy_test_v6.stp)
+[:material-video-3d: Модель v7](./releases/models/k3d_accuracy_test_v6.stp){ download="k3d_accuracy_test_v6.stp" }
 
 По сравнению с предыдущей версией:
 
@@ -39,7 +47,7 @@
 
 ### Таблица v1.1
 
-[:material-file-document: Таблица v1.1](./releases/calcs/k3d_accuracy_calibration_v1.1.ods)
+[:material-file-document: Таблица v1.1](./releases/calcs/k3d_accuracy_calibration_v1.1.ods){ download="k3d_accuracy_calibration_v1.1.ods" }
 
 По сравнению с v1.0 исправлены ошибки на листе "анализ".
 
@@ -47,10 +55,10 @@
 
 Первоначальная версия таблицы из видео.
 
-[:material-file-document: Таблица v1.0](./releases/calcs/k3d_accuracy_calibration_v1.0.ods)
+[:material-file-document: Таблица v1.0](./releases/calcs/k3d_accuracy_calibration_v1.0.ods){ download="k3d_accuracy_calibration_v1.0.ods" }
 
 ### Модель v5
 
 Первоначальная версия модели из видео. Может применяться с более новыми версиями таблиц.
 
-[:material-printer-3d-nozzle: Модель v5](releases/models/dimension_test_v5.stl)
+[:material-printer-3d-nozzle: Модель v5](releases/models/dimension_test_v5.stl){ download="dimension_test_v5.stl" }

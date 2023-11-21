@@ -10,7 +10,7 @@ icon: material/waves
 
 ## Скачать
 
-- [:material-download: K3D VFA Test v1](./models/k3d_vfa_test.3mf){ target="_blank" }
+- [:material-download: K3D VFA Test v1](./models/k3d_vfa_test.3mf){ download="k3d_vfa_test.3mf" }
 
 ## Настройки печати
 

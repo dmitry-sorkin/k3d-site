@@ -17,31 +17,31 @@
 
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Радиатор E3D V6 | 1 | [:material-shopping:](https://alli.pub/6tusbg?erid=2SDnjePancQ) | Выбирать `Bowden Wade 1.75 3.0` |
-    | Термобарьер | 1 | [:material-shopping:](http://alii.pub/6fdblx) | Выбирать `Threaded version` |
-    | Термистор | 0-1 | [:material-shopping:](http://alli.pub/6hvqq0) | Если штатный термистор не в гильзе, то его придётся заменить |
-    | Нагревательный блок E3D Volcano | 1 | [:material-shopping:](http://alii.pub/6fdbl5) | Выбирать `Aluminium` |
-    | Сопло медное с калёной вставкой | 1 | [:material-shopping:](https://alli.pub/6tstnx?erid=2SDnjf3jd7e) | Диаметр выбирать на своё усмотрение. Не берите много сопел так как в этом нет смысла. Соплом, например, 0.5 можно печатать линии от 0.4 до 0.8 без потери качества. Подходит для печати композитами |
-    | Носок | 1 | [:material-shopping:](http://alli.pub/6hqe44) | Выбирать `Volcano PT100` |
+    | Радиатор E3D V6 | 1 | [:material-shopping:](https://alli.pub/6ttfxf?erid=2SDnjcxaVCU) | Выбирать `Bowden Wade 1.75 3.0` |
+    | Термобарьер | 1 | [:material-shopping:](https://alli.pub/6ttg8p?erid=2SDnjeDEDVJ) | Выбирать `Threaded version` |
+    | Термистор | 0-1 | [:material-shopping:](https://alli.pub/6ttpso?erid=2SDnjeJdGPS) | Если штатный термистор не в гильзе, то его придётся заменить |
+    | Нагревательный блок E3D Volcano | 1 | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi) | Выбирать `Aluminium` |
+    | Сопло медное с калёной вставкой | 1 | [:material-shopping:](https://alli.pub/6ttkml?erid=2SDnjePhWAc) | Диаметр выбирать на своё усмотрение. Не берите много сопел так как в этом нет смысла. Соплом, например, 0.5 можно печатать линии от 0.4 до 0.8 без потери качества. Подходит для печати композитами |
+    | Носок | 1 | [:material-shopping:](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz) | Выбирать `Volcano PT100` |
 
 === "Детали E3D V6"
 
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Радиатор E3D V6 | 1 | [:material-shopping:](http://alii.pub/6fdbsj) | Выбирать `Bowden Wade 1.75 3.0` |
-    | Термобарьер | 1 | [:material-shopping:](http://alii.pub/6fdblx) | Выбирать `Threaded version` |
-    | Термистор | 0-1 | [:material-shopping:](http://alli.pub/6hvqq0) | Если штатный термистор не в гильзе, то его придётся заменить |
-    | Нагревательный блок E3D V6 | 1 | [:material-shopping:](http://alii.pub/6f67wx) | |
-    | Сопло медное с калёной вставкой | 1 | [:material-shopping:](https://alli.pub/6tstn5?erid=2SDnjewofzG) | Диаметр выбирать на своё усмотрение. Не берите много сопел так как в этом нет смысла. Соплом, например, 0.5 можно печатать линии от 0.4 до 0.8 без потери качества. Подходит для печати композитами |
-    | Носок | 1 | [:material-shopping:](http://alli.pub/6hqe44) | Выбирать `V6 PT100` |
+    | Радиатор E3D V6 | 1 | [:material-shopping:](https://alli.pub/6ttfxf?erid=2SDnjcxaVCU) | Выбирать `Bowden Wade 1.75 3.0` |
+    | Термобарьер | 1 | [:material-shopping:](https://alli.pub/6ttg8p?erid=2SDnjeDEDVJ) | Выбирать `Threaded version` |
+    | Термистор | 0-1 | [:material-shopping:](https://alli.pub/6ttpso?erid=2SDnjeJdGPS) | Если штатный термистор не в гильзе, то его придётся заменить |
+    | Нагревательный блок E3D V6 | 1 | [:material-shopping:](https://alli.pub/6ttgga?erid=2SDnjdPnwxC) | |
+    | Сопло медное с калёной вставкой | 1 | [:material-shopping:](https://alli.pub/6ttkdn?erid=2SDnjcomwDJ) | Диаметр выбирать на своё усмотрение. Не берите много сопел так как в этом нет смысла. Соплом, например, 0.5 можно печатать линии от 0.4 до 0.8 без потери качества. Подходит для печати композитами |
+    | Носок | 1 | [:material-shopping:](https://alli.pub/6ttjm8?erid=2SDnjdRLJ3r) | Выбирать `V6 PT100` |
 
 ### Вентиляторы системы охлаждения
 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
-| 4010 осевой | 0-1 | [:material-shopping:](https://www.citilink.ru/product/ventilyator-deepcool-xfan-40-40mm-ret-944771) | Если штатный вентилятор не шумный, то менять не надо. Обратите внимание, что указанный вентилятор требует 12в, а питание принтеров - 24в |
-| 5015 радиальный | 1-2 | [:material-shopping:](http://alli.pub/6huh9y) | В приведенном лоте продаётся сразу 2 вентилятора |
-| Понижающий преобразователь | 0-1 | [:material-shopping:](http://alli.pub/6huhvc) | Выбирать `adjustable` или `12v`. Нужен только в случае, если вы ставите 12в вентилятор в 24в принтер |
+| 4010 осевой | 0-1 | [:material-shopping:](https://alli.pub/6tku43?erid=2SDnjeQgbaQ) | Если штатный вентилятор не шумный, то менять не надо. Обратите внимание, что указанный вентилятор требует 12в, а питание принтеров - 24в |
+| 5015 радиальный | 1-2 | [:material-shopping:](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe) | В приведенном лоте продаётся сразу 2 вентилятора |
+| Понижающий преобразователь | 0-1 | [:material-shopping:](https://alli.pub/6tustx?erid=2SDnjdEsgQp) | Выбирать `adjustable` или `12v`. Нужен только в случае, если вы ставите 12в вентилятор в 24в принтер |
 
 ### Крепеж
 

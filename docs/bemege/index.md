@@ -19,11 +19,11 @@ BeMeGe - это проект печатного корпуса для экстр
 
 #### Скачать
 
-- [:material-printer-3d-nozzle: Передняя деталь](./releases/v8/BeMeGe_v8_front.stl)
-- [:material-printer-3d-nozzle: Задняя деталь](./releases/v8/BeMeGe_v8_back.stl)
-- [:material-printer-3d-nozzle: Качалка](./releases/v8/BeMeGe_v8_lever.stl)
-- [:material-video-3d: Сборка STEP](./releases/v8/BeMeGe_v8.stp)
+- [:material-printer-3d-nozzle: Передняя деталь](./releases/v8/BeMeGe_v8_front.stl){ download="BeMeGe_v8_front.stl" }
+- [:material-printer-3d-nozzle: Задняя деталь](./releases/v8/BeMeGe_v8_back.stl){ download="BeMeGe_v8_back.stl" }
+- [:material-printer-3d-nozzle: Качалка](./releases/v8/BeMeGe_v8_lever.stl){ download="BeMeGe_v8_lever.stl" }
+- [:material-video-3d: Сборка STEP](./releases/v8/BeMeGe_v8.stp){ download="BeMeGe_v8.stp" }
 
 ### Предыдущие версии
 
-Версии раньше восьмой можно скачать в истории на [:simple-git: GitHub проекта](https://github.com/dmitry-sorkin/BeMeGe).
+Версии раньше восьмой можно скачать в истории на [:simple-git: GitHub проекта](https://github.com/dmitry-sorkin/BeMeGe){ taget="_blank" }.
