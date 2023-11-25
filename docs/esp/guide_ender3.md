@@ -4,11 +4,11 @@
 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
-| Экструдер Sprite | 1 | [:material-shopping:](https://aliclick.shop/s/14s1wn) | Выбирать `Standart extruder` |
-| Горло биметалл | 1 | [:material-shopping:](https://alli.pub/6j6ugt) | |
-| Сопло латунное mk8 | 0-1 | [:material-shopping:](https://alli.pub/6rpkpa) | Если не планируете менять хотэнд |
-| Сопло стальное закалённое mk8 | 0-1 | [:material-shopping:](https://alli.pub/6rpkp3) | Для печати композитами. Если не планируете менять хотэнд |
-| Вентилятор 5015 | 2 | [:material-shopping:](http://alli.pub/6huh9y) | |
+| Экструдер Sprite | 1 | [:material-shopping:](https://alli.pub/6txmvr?erid=2SDnje89ywN "Creality 3D printer online store") | Выбирать `Standart extruder` |
+| Горло биметалл | 1 | [:material-shopping:](https://alli.pub/6txrun?erid=2SDnjenp3R2) | |
+| Сопло латунное mk8 | 0-1 | [:material-shopping:](https://alli.pub/6txruu?erid=2SDnjesG1G4) | Если не планируете менять хотэнд |
+| Сопло Mk8 медное с калённой вставкой | 0-1 | [:material-shopping:](https://alli.pub/6ttkhq?erid=2SDnjeVd7p4 "Mellow") | Для печати композитами на стоковом хотэнде |
+| Вентилятор 5015 | 2 | [:material-shopping:](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe) [:material-shopping:](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop") | Первый вариант - дешевые, но хорошо дующие вентиляторы. Могут вибрировать иногда. Второй вариант - более качественные, но и более дорогие вентиляторы |
 | Винт М3х8 DIN 7380 | 3-4 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh8_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | Для 3010 версии кронштейна 4шт., для 4010 - 3шт. |
 | Винт М4х20 DIN 7380 | 4 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
 
@@ -25,8 +25,8 @@
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
 | Хитблок Volcano | 1 | [:material-shopping:](http://alii.pub/6fdbl5) | Выбирать `Aluminium` |
-| Сопло Volcano латунное | 0-1 | [:material-shopping:](http://alii.pub/6f6ep5) | Под хотэнд Volcano |
-| Сопло Volcano стальное закаленное | 0-1 | [:material-shopping:](http://alii.pub/6fdbkd) | Для печати композитами на Volcano |
+| Сопло Volcano латунное | 0-1 | [:material-shopping:](https://alli.pub/6ttkk9?erid=2SDnjdgBrGx) | Под хотэнд Volcano |
+| Сопло Volcano медное с калёной вставкой | 0-1 | [:material-shopping:](https://alli.pub/6ttkml?erid=2SDnjePhWAc) | Для печати композитами на Volcano |
 | Носок | 0-1 | [:material-shopping:](http://alli.pub/6hqe44) | Выбирать `Volcano PT100` |
 
 ## Детали для установки CRTouch

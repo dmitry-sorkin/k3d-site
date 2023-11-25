@@ -22,7 +22,6 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - navigation.sections
     - content.code.copy
   custom_dir: overrides
 markdown_extensions:
@@ -128,10 +127,7 @@ nav:
         - Шаг 1. Покупка деталей: ./ebp/bom.md
         - Шаг 2. Печать деталей: ./ebp/printed_parts.md
         - Шаг 3. Сборка: ./ebp/assembly.md
-    - Ender-3 H2 Printhead:
-      - Описание проекта: ./ehp/index.md
-      - Релизы: ./ehp/releases.md
-      - Инструкция: ./ehp/guide.md
+    - Ender-3 H2 Printhead: ./ehp/index.md
     - Ender-3 Sprite Printhead:
       - Описание проекта: ./esp/index.md
       - Релизы: ./esp/releases.md
