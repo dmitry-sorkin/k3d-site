@@ -11,7 +11,7 @@
 - [:material-folder-zip: K3D EHP V2 - Все STL файлы](./releases/v2/v2.0.zip){ download="k3d_ehp_v2_stl.zip" .md-button }
 - [:material-video-3d: K3D EHP V2 - Сборка .STEP](./releases/v2/k3d_ehp_v2.stp){ download="k3d_ehp_v2_assembly.stp" .md-button }
 
-Старую версию можно скачать тут: [K3D EHP V1 -  Все файлы](./releases/v1/k3d_ehp_v1_full.zip){ download="k3d_ehp_v1_full.zip" }
+Старую версию можно скачать тут: [K3D EHP V1 -  Все файлы](./releases/v1/k3d_ehp_v1_full.zip){ download="k3d_ehp_v1_full.zip" } + [инструкция для старой версии](./guide_old.md)
 
 ## Покупные изделия
 
