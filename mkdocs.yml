@@ -94,6 +94,8 @@ nav:
       - Шаг 8 - Приводы осей XU: ./vostok/xu_drives.md
       - Шаг 9 - Приводы оси Y: ./vostok/y_drive.md
       - Шаг 10 - Установка ремней: ./vostok/belts.md
+      - Шаг 11 - Изготовление и сборка стола: ./vostok/bed_and_heating_pad.md
+      - Шаг 12 - Сборка рамы стола: ./vostok/bed_frame.md
     - Дополнения:
       - Инструменты: ./vostok/tools.md
   - Калибровки:
