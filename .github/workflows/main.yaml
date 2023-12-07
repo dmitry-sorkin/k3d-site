@@ -15,6 +15,7 @@ jobs:
         uses: Tiryoh/actions-mkdocs@v0
         with:
           mkdocs_version: 'latest'
+          requirements: './.github/workflows/requirements.txt'
       - name: Copy htaccess
         run: |
           sudo chown -R runner:docker ./site
