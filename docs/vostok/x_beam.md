@@ -39,7 +39,7 @@
 ### Подготовка роликов
 
 <figure markdown>
-  ![](.\pics\step_6\s6_roller_assembly.png){ width="500" }
+  ![](./pics/step_6/s6_roller_assembly.png){ width="500" }
 </figure>
 
 
