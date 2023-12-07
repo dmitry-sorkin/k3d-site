@@ -24,6 +24,8 @@ theme:
     - navigation.top
     - content.code.copy
   custom_dir: overrides
+plugins:
+  - glightbox
 markdown_extensions:
   - abbr
   - attr_list
