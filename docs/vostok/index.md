@@ -1,3 +1,7 @@
+---
+icon: material/printer-3d
+---
+
 # K3D VOSTOK
 
 ![](./pics/vostok_index.png)

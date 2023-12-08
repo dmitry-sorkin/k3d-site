@@ -1,3 +1,7 @@
+---
+icon: material/download
+---
+
 # Релизы K3D VOSTOK
 
 ## Самый свежий релиз

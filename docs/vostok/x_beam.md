@@ -1,3 +1,7 @@
+---
+icon: material/source-commit-local
+---
+
 # Сборка балки оси X
 
 ## Подготовка печатных деталей

@@ -1,3 +1,7 @@
+---
+icon: material/source-commit-local
+---
+
 # Сборка рамы стола
 
 ## Варианты рамы стола

@@ -1,3 +1,7 @@
+---
+icon: material/source-commit-local
+---
+
 # Установка ремней
 
 ## Подготовка нервов

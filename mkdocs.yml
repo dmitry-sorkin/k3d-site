@@ -22,6 +22,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - navigation.sections
     - content.code.copy
     - content.tabs.link
   custom_dir: overrides
@@ -89,22 +90,21 @@ nav:
   - VOSTOK:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
+    - Инструменты: ./vostok/tools.md
     - Инструкция по сборке:
       - С чего начать: ./vostok/guide_index.md
-      - Шаг 1 - Подготовка профилей: ./vostok/profiles_preparation.md
-      - Шаг 2 - Портал: ./vostok/portal.md
-      - Шаг 3 - Нижняя часть рамы: ./vostok/lower_frame.md
-      - Шаг 4 - Зашивка часть 1: ./vostok/enclosure_part_1.md
-      - Шаг 5 - Печатающая голова LPH: ./vostok/lph_assembly.md
-      - Шаг 6 - Балка оси X: ./vostok/x_beam.md
-      - Шаг 7 - Натяжители: ./vostok/tensioners.md
-      - Шаг 8 - Приводы осей XU: ./vostok/xu_drives.md
-      - Шаг 9 - Приводы оси Y: ./vostok/y_drive.md
-      - Шаг 10 - Установка ремней: ./vostok/belts.md
-      - Шаг 11 - Изготовление и сборка стола: ./vostok/bed_and_heating_pad.md
-      - Шаг 12 - Сборка рамы стола: ./vostok/bed_frame.md
-    - Дополнения:
-      - Инструменты: ./vostok/tools.md
+      - Подготовка профилей: ./vostok/profiles_preparation.md
+      - Портал: ./vostok/portal.md
+      - Нижняя часть рамы: ./vostok/lower_frame.md
+      - Зашивка часть 1: ./vostok/enclosure_part_1.md
+      - Печатающая голова LPH: ./vostok/lph_assembly.md
+      - Балка оси X: ./vostok/x_beam.md
+      - Натяжители: ./vostok/tensioners.md
+      - Приводы осей XU: ./vostok/xu_drives.md
+      - Приводы оси Y: ./vostok/y_drive.md
+      - Установка ремней: ./vostok/belts.md
+      - Изготовление стола: ./vostok/bed_and_heating_pad.md
+      - Сборка рамы стола: ./vostok/bed_frame.md
   - Калибровки:
       - Калибровка принтера с нуля: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
