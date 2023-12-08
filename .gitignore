@@ -4,4 +4,4 @@ docs/.obsidian/workspace
 
 .idea
 *.ods#
-./cache*
+.cache/*

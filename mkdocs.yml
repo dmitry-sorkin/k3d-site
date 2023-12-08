@@ -1,6 +1,6 @@
 site_name: K3D - всё о 3D печати
-site_url: http://k3d.tech
-copyright: Copyright &copy; 2023 Dmitry Sorkin @ K3D
+site_url: https://k3d.tech
+copyright: Copyright &copy; 2022-2023 Dmitry Sorkin @ K3D
 theme:
   palette:
     - scheme: slate
@@ -23,9 +23,14 @@ theme:
     - navigation.tabs.sticky
     - navigation.top
     - content.code.copy
+    - content.tabs.link
   custom_dir: overrides
 plugins:
   - glightbox
+  - social:
+      cards_layout_options:
+        background_color: "#009485"
+        font_family: Handjet
 markdown_extensions:
   - abbr
   - attr_list
