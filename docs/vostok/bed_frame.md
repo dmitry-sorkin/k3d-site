@@ -10,7 +10,7 @@ icon: material/source-commit-local
 
 | Вариант с 1 поперечной балкой | Вариант с 2 поперечными балками |
 | :---------------------------: | :-----------------------------: |
-| ![variant 1](./pics/step_10/bed_frame_variant_1.png) | ![variant 2](./pics/step_10/bed_frame_variant_2.png) |
+| ![variant 1](./pics/bed_frame_assembly/bed_frame_variant_1.png) | ![variant 2](./pics/bed_frame_assembly/bed_frame_variant_2.png) |
 
 Вариант с 1 поперечной балкой обычно собирается с 4 или 6 точками крепления стола т.к. размещению центральных точек мешает поперечная балка. Также этот вариант может использоваться только при сборке VOSTOK'а с 2 стойками оси Z. Иными словами, это упрощенный вариант для принтеров с относительно небольшой областью печати по оси Y, примерно до 300мм.
 
@@ -30,28 +30,34 @@ icon: material/source-commit-local
 
 ### Сборка плеча
 
-![](./pics/bed_frame_assembly/arm_end_install.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/arm_end_install.png){ width="700" }
+</figure>
 
 Концевые детали (bed arm end) устанавливаются в 10мм от края профиля как показано на картинке выше, и крепятся на 1 винт М4х8 с потайной головкой и 1 пазовую гайку М4 каждая.
 
-![](./pics/bed_frame_assembly/2020_to_2060_mount_install.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/2020_to_2060_mount_install.png){ width="500" }
+</figure>
 
 Два крепления профилей 2020 к 2060 устанавливаются в центрах плеч и крепятся на 2 винта М4х8 с полукруглой или цилиндрической головкой и 2 пазовые гайки М4 каждое. На данном этапе винты затягивать не надо.
 
 ### Сборка рамы
 
-![](./pics/bed_frame_assembly/bed_arm_install.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/bed_arm_install.png){ width="500" }
+</figure>
 
 Прикрепите плечи рамы стола к профилю 2060 на 6 винтов М4х8 с полукруглой или цилиндрической головкой и 6 пазовых гаек М4 на каждое. Затягивать крепления на данном этапе не надо.
 
-![](./pics/bed_frame_assembly/bed_frame_install.png)
+![](./pics/bed_frame_assembly/bed_frame_install.png){ width="1000" }
 
 1. Положите стол принтера на любую горизонтальную поверхность винтами вверх;
 2. Наденьте пружины на винты;
 3. Подстраивая положение плеч на поперечной балке, установите раму на винты и добейтесь того, чтобы поперечная балка была центрирована относительно стола;
 4. Затяните все крепления.
 
-![](./pics/bed_frame_assembly/bed_knob_install.png)
+![](./pics/bed_frame_assembly/bed_knob_install.png){ width="850" }
 
 Заложите в барашки по 1 гайке М3 и закрутите получившуюся конструкцию на винты стола.
 
@@ -69,28 +75,39 @@ icon: material/source-commit-local
 
 ### Сборка плеча
 
-![](./pics/bed_frame_assembly/bed_arm_assembled.png)
-![](./pics/bed_frame_assembly/arm_end_install.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/bed_arm_assembled.png){ width="700" }
+
+  ![](./pics/bed_frame_assembly/arm_end_install.png){ width="700" }
+</figure>
 
 Концевые детали (bed arm end) устанавливаются в 10мм от края профиля как показано на картинке выше, а также в центре плеча. Каждая деталь крепится на 1 винт М4х8 с потайной головкой и 1 пазовую гайку М4.
 
 ### Сборка основания рамы
 
-![](./pics/bed_frame_assembly/bed_frame_square_assembly.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/bed_frame_square_assembly.png){ width="850" }
+</figure>
 
 Расположите профили рамы стола на ровной горизонтальной поверхности и соедините между собой на винты М6х12 как показано на изображении выше. Чтобы проверить, что всё собрано ровно, промерьте диагонали полученного портала, они должны быть равны.
 
-![](./pics/bed_frame_assembly/2020_to_2020_mount_install.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/2020_to_2020_mount_install.png){ width="1000" }
+</figure>
 
 Установите крепления профилей 2020 друг к другу по 3 на каждую поперечную балку основания рамы. Закрепите каждое крепление на 4 винта М4х8 и 4 пазовые гайки М4. Не затягивайте винты на данном этапе, детали должны сохранять подвижность.
 
 ### Сборка рамы
 
-![](./pics/bed_frame_assembly/bed_arm_install_v2.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/bed_arm_install_v2.png){ width="1000" }
+</figure>
 
 Установите плечи на основание рамы и закрепите их на винты М4х8 и пазовые гайки М4. Не затягивайте винты на данном этапе, детали должны сохранять подвижность.
 
-![](./pics/bed_frame_assembly/bed_frame_install_v2.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/bed_frame_install_v2.png){ width="850" }
+</figure>
 
 1. Положите стол принтера на любую горизонтальную поверхность винтами вверх;
 2. Наденьте пружины на винты;
@@ -99,6 +116,8 @@ icon: material/source-commit-local
 
 !!! note "В текущей версии конструкции концевая деталь плеча может блокировать доступ к одному из винтов крепления 2020 профилей друг к другу. Пока это не исправлено, вы можете либо не устанавливать эти винты т.к. 3 оставшихся будет более чем достаточно, либо частично разобрать раму чтобы получить доступ для этих винтов, затянуть их и собрать всё в обратном порядке"
 
-![](./pics/bed_frame_assembly/bed_knob_install_v2.png)
+<figure markdown>
+  ![](./pics/bed_frame_assembly/bed_knob_install_v2.png){ width="1000" }
+</figure>
 
 Заложите в барашки по 1 гайке М3 и закрутите получившуюся конструкцию на винты стола.

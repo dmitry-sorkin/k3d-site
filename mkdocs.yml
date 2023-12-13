@@ -36,9 +36,7 @@ markdown_extensions:
   - abbr
   - attr_list
   - md_in_html
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.emoji
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.keys
@@ -104,7 +102,8 @@ nav:
       - Приводы оси Y: ./vostok/y_drive.md
       - Установка ремней: ./vostok/belts.md
       - Изготовление стола: ./vostok/bed_and_heating_pad.md
-      - Сборка рамы стола: ./vostok/bed_frame.md
+      - Рама стола: ./vostok/bed_frame.md
+      - Ось Z: ./vostok/z_drive.md
   - Калибровки:
       - Калибровка принтера с нуля: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
