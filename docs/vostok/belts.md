@@ -1,5 +1,7 @@
 ---
 icon: material/source-commit-local
+title: K3D VOSTOK - Установка ремней
+description: Инструкция по сборке VOSTOK
 ---
 
 # Установка ремней

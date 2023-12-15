@@ -1,5 +1,7 @@
 ---
 icon: material/source-commit-local
+title: K3D VOSTOK - Сборка балки оси X
+description: Инструкция по сборке VOSTOK
 ---
 
 # Сборка балки оси X

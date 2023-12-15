@@ -1,5 +1,7 @@
 ---
 icon: material/source-commit-local
+title: K3D VOSTOK - Сборка оси Z
+description: Инструкция по сборке VOSTOK
 ---
 
 # Сборка оси Z

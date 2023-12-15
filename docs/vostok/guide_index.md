@@ -1,5 +1,7 @@
 ---
 icon: material/source-commit-start
+title: K3D VOSTOK - С чего начать?
+description: Инструкция по сборке VOSTOK
 ---
 
 # Начало сборки K3D VOSTOK

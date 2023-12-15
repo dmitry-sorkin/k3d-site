@@ -1,5 +1,7 @@
 ---
 icon: material/toolbox
+title: K3D VOSTOK - Печатные приспособления для сборки K3D VOSTOK
+description: Инструкция по сборке VOSTOK
 ---
 
 # Приспособления для сборки K3D VOSTOK

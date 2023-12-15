@@ -1,5 +1,7 @@
 ---
 icon: material/printer-3d
+title: K3D VOSTOK
+description: Описание проекта
 ---
 
 # K3D VOSTOK

@@ -1,5 +1,7 @@
 ---
 icon: material/source-commit-local
+title: K3D VOSTOK - Сборка приводов оси Y
+description: Инструкция по сборке VOSTOK
 ---
 
 # Сборка приводов оси Y

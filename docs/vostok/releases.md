@@ -1,5 +1,7 @@
 ---
 icon: material/download
+title: K3D VOSTOK - Релизы
+description: Скачать документацию и модели для K3D VOSTOK
 ---
 
 # Релизы K3D VOSTOK

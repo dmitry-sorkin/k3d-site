@@ -1,5 +1,7 @@
 ---
 icon: material/source-commit-local
+title: K3D VOSTOK - Изготовление и сборка стола
+description: Инструкция по сборке VOSTOK
 ---
 
 # Изготовление и сборка стола
