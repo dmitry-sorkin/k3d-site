@@ -26,7 +26,7 @@ description: Инструкция по сборке VOSTOK
 ### Ориентация деталей и особенности печати
 
 <figure markdown>
-  ![](./pics/step_7/s7_belt_tensioner_bases_orientation.png){ width="500" }
+  ![](./pics/tensioners/s7_belt_tensioner_bases_orientation.png){ width="500" }
 </figure>
 
 Детали `* belt tensioner base` печатаются в ориентации, указанной на изображении выше. При этом требуется использовать поддержки "от стола".
@@ -34,7 +34,7 @@ description: Инструкция по сборке VOSTOK
 Эти две детали являются очень крупными, но при этом от них требуется высокая прочность и жесткость. Так что рекомендуется использовать более дешевые материалы для печати, например, `PETG`. При этом лучше поставить толщину периметров, дна и крышки >2мм и 100% заполнения.
 
 <figure markdown>
-  ![](./pics/step_7/s7_other_parts_orientation.png){ width="500" }
+  ![](./pics/tensioners/s7_other_parts_orientation.png){ width="500" }
 </figure>
 
 Остальные детали печатаются без поддержек в указанной ориентации. Требуется любой жесткий и хорошо спекающийся материал. Периметры 2-3мм, 100% заполнения.
@@ -46,13 +46,13 @@ description: Инструкция по сборке VOSTOK
 ### Установка левого корпуса натяжителей
 
 <figure markdown>
-  ![](./pics/step_7/s7_left_belt_tensioner_nut_install.png){ width="300" }
+  ![](./pics/tensioners/s7_left_belt_tensioner_nut_install.png){ width="300" }
 </figure>
 
 Установите гайку М3 в углубление в нижней части `Left belt tensioner base` и продвиньте её до конца. Если она плохо держится, то лучше будет закрепить её каплей клея или чем-нибудь подобным.
 
 <figure markdown>
-  ![](./pics/step_7/s7_profile_nut_install.png){ width="900" }
+  ![](./pics/tensioners/s7_profile_nut_install.png){ width="900" }
 </figure>
 
 1. Заложите в указанные пазы пазовые гайки М4. В нижний паз поперечной балки закладывается 1 гайка, в вертикальную стойку 2 гайки;
@@ -67,13 +67,13 @@ description: Инструкция по сборке VOSTOK
 ### Сборка ползуна с роликом
 
 <figure markdown>
-  ![](./pics/step_7/s7_roller_assembly.png){ width="500" }
+  ![](./pics/tensioners/s7_roller_assembly.png){ width="500" }
 </figure>
 
 Ролик собирается из 2 подшипников F623, одного 623 и одной шайбы М3. Для удобства установки, можно предварительно собрать ролик и обернуть его полоской скотча. После сборки скотч надо будет снять.
 
 <figure markdown>
-  ![](./pics/step_7/roller_tensioner_assembly.png){ width="700" }
+  ![](./pics/tensioners/roller_tensioner_assembly.png){ width="700" }
 </figure>
 
 1. Установите гайку М5 в паз. Для надёжности лучше будет вклеить её;
@@ -83,14 +83,14 @@ description: Инструкция по сборке VOSTOK
 ### Сборка ползуна с фиксированным креплением ремня
 
 <figure markdown>
-  ![](./pics/step_7/s7_belt_tensioner_05xy_prepare_1.png){ width="700" }
+  ![](./pics/tensioners/s7_belt_tensioner_05xy_prepare_1.png){ width="700" }
 </figure>
 
 1. В детали Belt tensioner (0.5XY) body необходимо будет удалить мембраны в отверстиях под гайки. Проще всего удалить их сверлами D3 и D5 соответственно;
 2. Установите гайки М3 и М5 в соответствующие углубления и, если они там плохо держатся, закрепите на клей.
 
 <figure markdown>
-  ![](./pics/step_7/s7_belt_tensioner_05xy_assembly.png){ width="900" }
+  ![](./pics/tensioners/s7_belt_tensioner_05xy_assembly.png){ width="900" }
 </figure>
 
 1. Заложите деталь `clamp` вырезом от зубчатой части;
@@ -100,7 +100,7 @@ description: Инструкция по сборке VOSTOK
 ### Сборка винтов натяжителей
 
 <figure markdown>
-  ![](./pics/step_7/s7_knob_assembly.png){ width="600" }
+  ![](./pics/tensioners/s7_knob_assembly.png){ width="600" }
 </figure>
 
 1. Вставьте болт М5х50 в деталь `Belt tensioner knob`. Для надёжности лучше всего будет приклеить его;

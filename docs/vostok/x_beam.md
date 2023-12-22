@@ -19,7 +19,7 @@ description: Инструкция по сборке VOSTOK
 ### Ориентация деталей и особенности печати
 
 <figure markdown>
-  ![](./pics/step_6/s6_models_orientation.png){ width="500" }
+  ![](./pics/x_beam/s6_models_orientation.png){ width="500" }
 </figure>
 
 В указанной ориентации детали печатаются без поддержек.
@@ -34,7 +34,7 @@ description: Инструкция по сборке VOSTOK
 ### Вплавление резьбовых втулок
 
 <figure markdown>
-  ![](./pics/step_6/s6_lph_mount_threaded_inserts.png){ width="400" }
+  ![](./pics/x_beam/s6_lph_mount_threaded_inserts.png){ width="400" }
 </figure>
 
 В деталь `Lite print head mount` необходимо вплавить 4 резьбовые втулки М3х5. Если диаметр внешней части резьбовой втулки отличается от диаметра отверстия (~3.5мм), то отверстия необходимо будет предварительно рассверлить.
@@ -44,7 +44,7 @@ description: Инструкция по сборке VOSTOK
 ### Подготовка роликов
 
 <figure markdown>
-  ![](./pics/step_6/s6_roller_assembly.png){ width="500" }
+  ![](./pics/x_beam/s6_roller_assembly.png){ width="500" }
 </figure>
 
 Все ролики в принтере состоят из двух подшипников f623, одного подшипника 623 и шайбы М3, соединенных таким образом, как показано на изображении выше. При этом не важно между какой парой подшипников располагается шайба.
@@ -54,14 +54,14 @@ description: Инструкция по сборке VOSTOK
 ### Сборка каретки оси Y
 
 <figure markdown>
-  ![](./pics/step_6/s6_y_carriage_nut_install.png){ width="500" }
+  ![](./pics/x_beam/s6_y_carriage_nut_install.png){ width="500" }
 </figure>
 
 1. Вставьте гайки м3 в углубления в `Y carriage base`;
 2. Вставьте винт М3х6 с потайной головкой в указанное отверстие и зафиксируйте его так, чтобы он не выпадал, например, гайкой М3 или кусочком скотча с наружней стороны каретки.
 
 <figure markdown>
-  ![](./pics/step_6/s6_inner_rollers_install.png){ width="600" }
+  ![](./pics/x_beam/s6_inner_rollers_install.png){ width="600" }
 </figure>
 
 1. Установите нижний внутренний ролик (1) на место;
@@ -75,7 +75,7 @@ description: Инструкция по сборке VOSTOK
 ### Установка кареток оси Y
 
 <figure markdown>
-  ![](./pics/step_6/s6_y_carriage_install.png){ width="400" }
+  ![](./pics/x_beam/s6_y_carriage_install.png){ width="400" }
 </figure>
 
 Установите каретку на профиль и убедитесь, что она зашла до конца. Если каретка не заходит до конца, то необходимо будет обработать углы в посадочном месте под профиль. Если всё встало как надо, то каретка крепится на два винта М4х12 с потайной головкой и 2 пазовые гайки М4.
@@ -83,13 +83,13 @@ description: Инструкция по сборке VOSTOK
 ### Установка рельсы оси Х
 
 <figure markdown>
-  ![](./pics/step_6/s6_rail_install.png){ width="600" }
+  ![](./pics/x_beam/s6_rail_install.png){ width="600" }
 </figure>
 
 Рельса прикручивается спереди на винты М3х8 с цилиндрической или полукруглой головкой. Желательно использовать каждое второе отверстие, но не критично, если не получается. Для того, чтобы рельса встала ровно по центру балки, лучше всего пользоваться [печатным шаблоном](./tools.md).
 
 <figure markdown>
-  ![](./pics/step_6/s6_mgn9_carriages_install.png){ width="600" }
+  ![](./pics/x_beam/s6_mgn9_carriages_install.png){ width="600" }
 </figure>
 
 Каретки MGN9 задвигаются на рельсу с краёв. Будьте аккуратны, чтобы шарики не выпали из кареток.
@@ -97,20 +97,20 @@ description: Инструкция по сборке VOSTOK
 ### Сборка левой каретки оси X
 
 <figure markdown>
-  ![](./pics/step_6/s6_lph_mount_install.png){ width="400" }
+  ![](./pics/x_beam/s6_lph_mount_install.png){ width="400" }
 </figure>
 
 Деталь `Lite print head mount` устанавливается на каретку рельсы и прикручивается 4 винтами М3х6 с полукруглой головкой. Обратите внимание, что выемка в передней части детали должна смотреть наверх, а выемка в задней - в сторону ближайшей каретки оси Y.
 
 <figure markdown>
-  ![](./pics/step_6/s6_x_carriage_roller_spacer_install.png){ width="600" }
+  ![](./pics/x_beam/s6_x_carriage_roller_spacer_install.png){ width="600" }
 </figure>
 
 1. Установите деталь `0.5XY print head roller spacer` так, как это указано на изображении выше;
 2. Установите ролики и закрепите их на винты М3х35 с потайной головкой.
 
 <figure markdown>
-  ![](./pics/step_6/s6_x_carriage_nuts_install.png){ width="400" }
+  ![](./pics/x_beam/s6_x_carriage_nuts_install.png){ width="400" }
 </figure>
 
 Вставьте гайки М3 снизу и закручиванием винтов М3х35 втяните их в углубление в корпусе каретки.
@@ -124,20 +124,20 @@ description: Инструкция по сборке VOSTOK
 ### Установка рельс оси Y
 
 <figure markdown>
-  ![](./pics/step_6/s6_y_axis_rails_nuts_install.png){ width="500" }
+  ![](./pics/x_beam/s6_y_axis_rails_nuts_install.png){ width="500" }
   Вид на портал снизу
 </figure>
 
 В указанные пазы снизу портала заложите пазовые гайки М3. Общее количество гаек можно посмотреть в спецификации или рассчитать исходя из крепления рельс на каждое второе отверстие.
 
 <figure markdown>
-  ![](./pics/step_6/s6_y_axis_rail_install.png){ width="600" }
+  ![](./pics/x_beam/s6_y_axis_rail_install.png){ width="600" }
 </figure>
 
 Две рельсы MGN12 устанавливаются в портал снизу, в крайние внутренние пазы профилей 2060. Задние торцы рельс должны быть плюс-минус вровень со средней панелью зашивки. Не затягивайте крепления на данном этапе, просто наживите винты, оставив рельсам небольшую подвижность в горизонтальной плоскости.
 
 <figure markdown>
-  ![](./pics/step_6/s6_mgn12_carriages_install.png){ width="600" }
+  ![](./pics/x_beam/s6_mgn12_carriages_install.png){ width="600" }
 </figure>
 
 Задвиньте каретки на рельсы. Чтобы каретки не слетели с рельс во время работ с принтером, рекомендуется временно установить какие-нибудь упоры для них. Например, хорошо работает просто винт, вкрученный в пазовую гайку.
@@ -147,13 +147,13 @@ description: Инструкция по сборке VOSTOK
 !!! warning "Этот шаг можно выполнить в одиночку, но будет удобнее и безопаснее, если позвать кого-нибудь на помощь"
 
 <figure markdown>
-  ![](./pics/step_6/s6_x_axis_install.png){ width="600" }
+  ![](./pics/x_beam/s6_x_axis_install.png){ width="600" }
 </figure>
 
 Установите балку оси Х и закрепите на 2 заранее заложенных винта. Винты на этом этапе сильно затягивать не надо.
 
 <figure markdown>
-  ![](./pics/step_6/s6_y_carriage_screws_install.png){ width="600" }
+  ![](./pics/x_beam/s6_y_carriage_screws_install.png){ width="600" }
 </figure>
 
 Установите и закрутите остальные винты М3х6 с потайной головкой. Затягивать на этом этапе не надо.

@@ -18,7 +18,7 @@ description: Инструкция по сборке VOSTOK
 ### Ориентация деталей и особенности печати
 
 <figure markdown>
-  ![](./pics/step_9/s9_orientation.png){ width="600" }
+  ![](./pics/y_drive/s9_orientation.png){ width="600" }
 </figure>
 
 При печати деталей в указанной ориентации, поддержки не нужны. Все детали должны быть максимально прочными и жесткими. Поэтому рекомендуется печатать со следующими параметрами:
@@ -35,7 +35,7 @@ description: Инструкция по сборке VOSTOK
 ### Подготовка мотора
 
 <figure markdown>
-  ![](./pics/step_9/s9_pulley_install.png){ width="300" }
+  ![](./pics/y_drive/s9_pulley_install.png){ width="300" }
 </figure>
 
 Установите шкив на мотор как показано на изображении выше. Если используются шкив и мотор из спецификации, то можно просто совместить торец шкива и торец вала мотора.
@@ -43,7 +43,7 @@ description: Инструкция по сборке VOSTOK
 ### Сборка привода оси Y
 
 <figure markdown>
-  ![](./pics/step_9/s9_motor_mount_assembly.png){ width="400" }
+  ![](./pics/y_drive/s9_motor_mount_assembly.png){ width="400" }
 </figure>
 
 Установите мотор в привод так, чтобы провод выходил вниз (на изображении показано синей стрелкой) и закрепите на 4 винта М3х12.
@@ -51,13 +51,13 @@ description: Инструкция по сборке VOSTOK
 ### Установка привода оси Y
 
 <figure markdown>
-  ![](./pics/step_9/s9_nut_install.png){ width="400" }
+  ![](./pics/y_drive/s9_nut_install.png){ width="400" }
 </figure>
 
 Заложите по 1 пазовой гайке М4 в указанные на изображении пазы профиля.
 
 <figure markdown>
-  ![](./pics/step_9/s9_drive_install.png){ width="900" }
+  ![](./pics/y_drive/s9_drive_install.png){ width="900" }
 </figure>
 
 1. Установите винт М4х8 с потайной головкой как показано на изображении;
@@ -66,14 +66,14 @@ description: Инструкция по сборке VOSTOK
 ### Установка усилителя (опционально)
 
 <figure markdown>
-  ![](./pics/step_9/s9_optional_nut_install.png){ width="700" }
+  ![](./pics/y_drive/s9_optional_nut_install.png){ width="700" }
 </figure>
 
 1. Из мотора выкрутите 2 указанных винта;
 2. В указанные на изображении пазы заложите по 1 гайке М4.
 
 <figure markdown>
-  ![](./pics/step_9/s9_strengthener_install.png){ width="900" }
+  ![](./pics/y_drive/s9_strengthener_install.png){ width="900" }
 </figure>
 
 1. Прикрутите усилитель к мотору на 2 винта М3х[длина мотора + 2] с потайной головкой;

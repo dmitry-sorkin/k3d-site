@@ -19,7 +19,7 @@ description: Инструкция по сборке VOSTOK
 ### Ориентация деталей и особенности печати
 
 <figure markdown>
-  ![](./pics/step_8/s8_orientation.png){ width="600" }
+  ![](./pics/xu_drives/s8_orientation.png){ width="600" }
 </figure>
 
 При печати деталей в указанной ориентации, поддержки не нужны. Все детали должны быть максимально прочными и жесткими. Поэтому рекомендуется печатать со следующими параметрами:
@@ -33,7 +33,7 @@ description: Инструкция по сборке VOSTOK
 ### Подготовка кронштейнов моторов
 
 <figure markdown>
-  ![](./pics/step_8/s8_motor_mount_prepare.png){ width="300" }
+  ![](./pics/xu_drives/s8_motor_mount_prepare.png){ width="300" }
 </figure>
 
 После печати кронштейнов моторов будет необходимо удалить мембрану из отверстия, отмеченного на изображении выше.
@@ -43,7 +43,7 @@ description: Инструкция по сборке VOSTOK
 ### Подготовка моторов
 
 <figure markdown>
-  ![](./pics/step_8/s8_left_motor_prepare.png){ width="600" }
+  ![](./pics/xu_drives/s8_left_motor_prepare.png){ width="600" }
 </figure>
 
 На моторы осей X и U установите шкивы так, как показано на изображении выше. 
@@ -51,7 +51,7 @@ description: Инструкция по сборке VOSTOK
 ### Сборка роликов
 
 <figure markdown>
-  ![](./pics/step_8/roller_assembly.png){ width="500" }
+  ![](./pics/xu_drives/roller_assembly.png){ width="500" }
 </figure>
 
 Все ролики в принтере состоят из двух подшипников f623, одного подшипника 623 и шайбы М3, соединенных таким образом, как показано на изображении выше. При этом не важно между какой парой подшипников располагается шайба.
@@ -63,7 +63,7 @@ description: Инструкция по сборке VOSTOK
 ### Сборка привода оси X
 
 <figure markdown>
-  ![](./pics/step_8/s8_left_drive_1_roller_install.png){ width="900" }
+  ![](./pics/xu_drives/s8_left_drive_1_roller_install.png){ width="900" }
 </figure>
 
 1. Установите мотор в кронштейн и закрепите на 3 винта М3х8. Обратите внимание на ориентацию мотора, он должен стоять разъёмом к центру принтера (синяя стрелка);
@@ -73,7 +73,7 @@ description: Инструкция по сборке VOSTOK
 ### Установка усилителя оси X
 
 <figure markdown>
-  ![](./pics/step_8/motor_strengthener_install.png){ width="600" }
+  ![](./pics/xu_drives/motor_strengthener_install.png){ width="600" }
 </figure>
 
 Выкрутите любые два винта мотора по диагонали. Это никак не повлияет на его работу, если оставить два оставшихся на месте.
@@ -83,7 +83,7 @@ description: Инструкция по сборке VOSTOK
 ## Сборка привода оси U
 
 <figure markdown>
-  ![](./pics/step_8/s8_u_axis_drive_variants.png){ width="500" }
+  ![](./pics/xu_drives/s8_u_axis_drive_variants.png){ width="500" }
 </figure>
 
 Привод оси U собирается аналогичным образом, за исключением пары вещей:
@@ -94,7 +94,7 @@ description: Инструкция по сборке VOSTOK
 ## Установка привода оси X
 
 <figure markdown>
-  ![](./pics/step_8/x_axis_drive_install.png){ width="600" }
+  ![](./pics/xu_drives/x_axis_drive_install.png){ width="600" }
 </figure>
 
 1. Заложите пазовые гайки М4 согласно изображению выше. 1 стрелка = 1 гайка;
