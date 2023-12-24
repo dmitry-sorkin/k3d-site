@@ -189,3 +189,7 @@ description: Инструкция по сборке VOSTOK
 Заложите пазовые гайки М4 в указанные пазы. Количество гаек можно определить по количеству отверстий в панели портала. Гайки надо расположить так, чтобы резьбовые отверстия совпадали с отверстиями в панели портала.
 
 Прикрепите панель винтами М4х8 через все отверстия, кроме отмеченных :). Так как панель устанавливается уже окончательно, то можно затянуть винты. Но не перетяните, так как акриловые панели от перетяжки лопаются, а композитные панели сминаются.
+
+---
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://k3d.tech/vostok/">K3D VOSTOK</a> by <span property="cc:attributionName">Dmitry Sorkin</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

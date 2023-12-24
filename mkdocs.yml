@@ -1,4 +1,4 @@
-site_name: K3D - всё о 3D печати
+site_name: ВСË О 3D ПЕЧАТИ
 site_url: https://k3d.tech
 copyright: Copyright &copy; 2022-2023 Dmitry Sorkin @ K3D
 theme:
@@ -13,8 +13,7 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Light theme
-  icon:
-    logo: material/printer-3d-nozzle
+  logo: assets/k3d_logo.png
   name: material
   language: ru
   favicon: pics/favicon.ico

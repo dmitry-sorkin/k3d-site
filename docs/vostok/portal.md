@@ -88,3 +88,7 @@ description: Инструкция по сборке VOSTOK
 4. Балки выравниваются между собой по плоскостям и крепление затягивается;
 
 Повторить эту последовательность действий для всех углов, после чего проверить ортогональность балок угольником. Если всё сходится, то процесс сборки портала завершен. Если не сходится, то, скорее всего, какие-то из профилей неправильно нарезаны. Например, длиннее или короче, чем надо, торец не под прямым углом к профилю и т.д. В таком случае вам придётся искать в чём конкретно проблема и устранять её доступными для вас способами. Например, торцевать профили нормально, подложить фольгу под торцы и т.д.
+
+---
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://k3d.tech/vostok/">K3D VOSTOK</a> by <span property="cc:attributionName">Dmitry Sorkin</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

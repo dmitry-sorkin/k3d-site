@@ -167,3 +167,7 @@ description: Инструкция по сборке VOSTOK
 После этого можно закрепить оставшиеся винты крепления рельс и проверить, легко ли балка двигается по оси Y. Если очень легко, то всё хорошо и можно переходить к следующему шагу. 
 
 Если балка двигается с затруднениями, то отпустите винты крепления кареток оси Y к кареткам рельс оси Y, подвигайте балку туда-сюда по оси Y и закрепите эти винты обратно, сохраняя ортогональность балки осям рамы. Если и после этого балка оси Y двигается с затруднениями, то стоит повторить регулировку параллельности рельс.
+
+---
+
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://k3d.tech/vostok/">K3D VOSTOK</a> by <span property="cc:attributionName">Dmitry Sorkin</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>

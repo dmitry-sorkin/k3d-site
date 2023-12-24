@@ -5,3 +5,4 @@ docs/.obsidian/workspace
 .idea
 *.ods#
 .cache/*
+.DS_Store
