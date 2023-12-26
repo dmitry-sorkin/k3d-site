@@ -8,12 +8,57 @@ description: Скачать документацию и модели для K3D 
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация ](./releases/086/v0.8.6_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/086/v0.8.6_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/086/v0.8.6_k3d_vostok.stp.7z)
-- [:material-video-3d: Сборка в формате .x_t](./releases/086/v0.8.6_k3d_vostok.x_t.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати (архив)](./releases/086/v0.8.6_stl_full.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати (yandex.disk)](https://disk.yandex.ru/d/G0xEEMd5xXYQRw)
+- [:material-file-document: Спецификация ](./releases/087/v0.8.7_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/087/v0.8.7_dxf_generator.html)
+- [:material-video-3d: Сборка в формате .step](./releases/087/v0.8.7_k3d_vostok.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087/v0.8.7_z_axis_4guides_2drives.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087/v0.8.7_z_axis_4guides_4drives.stp.zip)
+- [:material-video-3d: Сборка в формате .x_t](./releases/087/v0.8.7_k3d_vostok.x_t.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087/v0.8.7_stl_full.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087/v0.8.7_stl_changed.zip)
+
+## 0.8.7-beta
+
+### Что нового в моделях
+
+- Деталь `V08-03-05-01 - Z optical endstop mount` изменена так, чтобы провода можно было закладывать в паз в обе стороны. Теперь эту деталь не обязательно зеркалить при печати на правую сторону принтера. Кроме того, крепления этой детали были переделаны с 3 винтов М4х8 с потайной головкой на 2 винта М4х8 с полукруглой головкой;
+- Для конфигураций с 4 стойками оси Z добавлена деталь `V08-03-06 - Z axis stop`. Она служит ограничителем хода кареток оси Z на тех стойках, где не устанавливаются оптические концевики;
+- Деталь `V08-03-07-01 - Quad guide nut mount` изменена так, чтобы использовать только винты М4х8 с потайной головкой;
+- В решетках отсека электроники `V08-04-08 - Electronics box side grill` добавлены отверстия для крепления решеток на винты М3х4 или М3х5;
+- В решетке отсека электроники под розетку `V08-04-08(B) - Electronics box side grill` углубление под розетку изменено так, чтобы влезало большинство розеток;
+- Детали `V07-04-11 - Print head cable guide` и `V07-04-12 - Print head cable guide nut` были заменены на `V08-05-07-01 - GX20 cable guide body` и `V08-05-07-02 - GX20 cable guide nut`. Изменение коснулось не только структуры сборки, но и логики установки этих деталей. Теперь, если жгут печатающей головы не подключен, то можно открутить гайку `GX20 cable guide nut` и снять деталь `GX20 cable guide body` внутрь отсека электроники не отключания никакие разъёмы от материнской платы. Это может быть полезно для диагностики неполадок и обслуживания принтера;
+- Проработан референсный вариант расположения электроники. В ходе этого были добавлены быстросъемные крепления компонентов на DIN рейки:
+    - `V08-05-02 - DIN rail mount` - крепления DIN рейки к вспомогательным вертикальным стойкам;
+    - `V08-05-03-01 - BTT and Raspberry Pi DIN rail mount` - крепление BTT или Raspberry Pi к DIN рейке;
+    - `V08-05-04-01 - BTT Octopus DIN rail mount` - крепление BTT Octopus или Octopus Pro к DIN рейке;
+    - `V08-05-05-01 - SSR DIN rail mount` - крепление твердотельных реле к DIN рейке;
+    - `V08-05-06-01 - LRS-200 and LRS-350 DIN rail mount` - крепление блоков питания LRS-200 или LRS-350 к DIN рейке;
+    - `V08-05-08-01`, `V08-05-08-02`, `V08-05-08-03 - WAGO terminals DIN rail mount` - корпус для крепления 3 шт. WAGO 222-415 на DIN рейку;
+    - `V08-05-09-00 - Fysetc Spider DIN rail mount` - крепление Fysetc Spider на DIN рейку;
+    - `V08-05-10-00 - SKR 1.4 DIN rail mount` - крепление SKR 1.4 на DIN рейку;
+- Добавлены вспомогательные сборки для того, чтобы можно было ознакомиться с конфигурацией оси Z в разных вариантах:
+    - `V08-03-00B - Z axis (4 guides 4 drives)`;
+    - `V08-03-00C - Z axis (4 guides 2 drives)`;
+- В основной сборке размер стола приведен в соответствие с размером рамы.
+
+### Что нового в спецификации
+
+- В расчёты включены все добавленные детали;
+- В расчёты включены детали K3D Minifeeder;
+- Из расчётов удалено несколько покупных и печатных деталей, которые уже несколько версий как не нужны;
+- Цены и ссылки обновлены на 25.12.2023;
+- На листе `Печатные изделия` добавлен рассчёт количества филаментов.
+
+### Скачать
+
+- [:material-file-document: Спецификация ](./releases/087/v0.8.7_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/087/v0.8.7_dxf_generator.html)
+- [:material-video-3d: Сборка в формате .step](./releases/087/v0.8.7_k3d_vostok.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087/v0.8.7_z_axis_4guides_2drives.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087/v0.8.7_z_axis_4guides_4drives.stp.zip)
+- [:material-video-3d: Сборка в формате .x_t](./releases/087/v0.8.7_k3d_vostok.x_t.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087/v0.8.7_stl_full.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087/v0.8.7_stl_changed.zip)
 
 ## 0.8.6-beta
 
