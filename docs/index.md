@@ -52,10 +52,11 @@ description: Главная страница
 
     ---
 
-    - [:simple-youtube: Основной YouTube канал](https://www.youtube.com/@SorkinDmitry/videos)
-    - [:simple-youtube: Второй YouTube канал](https://www.youtube.com/@dmitrysorkinlive/videos)
-    - [:simple-telegram: Telegram-канал](https://t.me/dsorkin)
-    - [:simple-telegram: Общий чат K3D](https://t.me/K_3_D)
-    - [:simple-vk: Группа VK](https://vk.com/dmitrysorkin)
+    - [:simple-youtube: Основной YouTube канал](https://www.youtube.com/@SorkinDmitry/videos){ target=_blank }
+    - [:simple-youtube: Второй YouTube канал](https://www.youtube.com/@dmitrysorkinlive/videos){ target=_blank }
+    - [:simple-telegram: Telegram-канал](https://t.me/dsorkin){ target=_blank }
+    - [:simple-telegram: Общий чат K3D](https://t.me/K_3_D){ target=_blank }
+    - [:simple-vk: Группа VK](https://vk.com/dmitrysorkin){ target=_blank }
+    - [:material-forum: Форум K3D VOSTOK](https://forum.k3d.tech){ target=_blank }
 
 </div>

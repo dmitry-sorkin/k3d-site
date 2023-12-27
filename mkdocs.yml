@@ -93,6 +93,7 @@ nav:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
     - Инструменты: ./vostok/tools.md
+    - Форум проекта: https://forum.k3d.tech
     - Инструкция по сборке:
       - С чего начать: ./vostok/guide_index.md
       - Подготовка профилей: ./vostok/profiles_preparation.md
