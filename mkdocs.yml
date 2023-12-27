@@ -24,6 +24,8 @@ theme:
     - navigation.sections
     - content.code.copy
     - content.tabs.link
+    - search.suggest
+    - search.highlight
   custom_dir: overrides
 plugins:
   - glightbox
@@ -31,6 +33,7 @@ plugins:
       cards_layout_options:
         background_color: "#009485"
         font_family: Handjet
+  - search
 markdown_extensions:
   - abbr
   - attr_list

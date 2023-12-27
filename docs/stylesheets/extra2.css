@@ -131,3 +131,14 @@
 .md-header__topic:first-child {
     font-weight: 100;
 }
+
+.navitable {
+	width: 100%;
+	font-size: large;
+}
+
+.navitable td {
+	text-align: center;
+	width: 33%;
+	padding: 0.2rem;
+}
