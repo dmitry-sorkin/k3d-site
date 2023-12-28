@@ -61,5 +61,6 @@ hide:
 
     - [:simple-telegram: Новости проекта в TG](https://t.me/vostok3dp)
     - [:simple-telegram: Обсуждение проекта в TG](https://t.me/k3d_vostok)
+    - [:material-forum: Форум K3D VOSTOK](https://forum.k3d.tech){ target=_blank }
 
 </div>
