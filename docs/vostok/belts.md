@@ -227,11 +227,24 @@ description: Инструкция по сборке VOSTOK
     <tbody>
         <tr>
             <td><a class="md-button" href="../y_drive" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg></span> Приводы оси Y</a></td>
-            <td><a class="md-button" href="https://forum.k3d.tech/t/obsuzhdenie-stati-ustanovka-remnej/37" target="_blank" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1Z"></path></svg></span> Обсуждение статьи</a></td>
             <td><a class="md-button" href="../bed_and_heating_pad/" style="width: 100%; padding-left: 0em; padding-right: 0em;">Изготовление стола <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg></span></a></td>
         </tr>
     </tbody>
 </table>
+
+<script type="text/javascript">
+  DiscourseEmbed = {
+    discourseUrl: 'https://forum.k3d.tech/',
+    discourseEmbedUrl: 'https://k3d.tech/vostok/belts/',
+    // className: 'CLASS_NAME',
+  };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 
 ---
 

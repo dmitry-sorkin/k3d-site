@@ -110,16 +110,10 @@ description: Инструкция по сборке VOSTOK
     <tbody>
         <tr>
             <td><a class="md-button" href="../tensioners" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg></span> Натяжители</a></td>
-            <td><a class="md-button" href="https://forum.k3d.tech/t/obsuzhdenie-stati-privody-osej-xu/35" target="_blank" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1Z"></path></svg></span> Обсуждение статьи</a></td>
             <td><a class="md-button" href="../y_drive" style="width: 100%; padding-left: 0em; padding-right: 0em;">Приводы оси Y <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg></span></a></td>
         </tr>
     </tbody>
 </table>
-
----
-
-<div id='discourse-comments'></div>
-<meta name='discourse-username' content='DISCOURSE_USERNAME'>
 
 <script type="text/javascript">
   DiscourseEmbed = {
