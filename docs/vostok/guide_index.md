@@ -109,6 +109,8 @@ graph TD
     </tbody>
 </table>
 
+---
+
 <div id='discourse-comments'></div>
 <meta name='discourse-username' content='DISCOURSE_USERNAME'>
 

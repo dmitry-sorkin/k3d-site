@@ -45,6 +45,8 @@ Telegram: @DeltaDesignRus
 
 - [:material-printer-3d-nozzle: Кондуктор отверстий мотора Х](./releases/tools/x_motor_change_holes_conductor.stl)
 
+---
+
 <div id='discourse-comments'></div>
 <meta name='discourse-username' content='DISCOURSE_USERNAME'>
 

@@ -215,11 +215,29 @@ description: Инструкция по сборке VOSTOK
     <tbody>
         <tr>
             <td><a class="md-button" href="../bed_frame" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg></span> Рама стола</a></td>
-            <td><a class="md-button" href="https://forum.k3d.tech/t/obsuzhdenie-stati-os-z/40" target="_blank" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1Z"></path></svg></span> Обсуждение статьи</a></td>
             <td></td>
         </tr>
     </tbody>
 </table>
+
+---
+
+<div id='discourse-comments'></div>
+<meta name='discourse-username' content='DISCOURSE_USERNAME'>
+
+<script type="text/javascript">
+  DiscourseEmbed = {
+    discourseUrl: 'https://forum.k3d.tech/',
+    discourseEmbedUrl: 'https://k3d.tech/vostok/y_drive/',
+    // className: 'CLASS_NAME',
+  };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
 
 ---
 
