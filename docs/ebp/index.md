@@ -1,3 +1,8 @@
+---
+title: K3D EBP - описание
+description: Проект печатающей головы для Ender-3 на основе экструдера BMG
+---
+
 # K3D Ender-3 BMG Printhead
 
 ![](pics/ebp_index.png)

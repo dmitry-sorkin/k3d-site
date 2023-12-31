@@ -1,3 +1,8 @@
+---
+title: K3D Minifeeder - описание
+description: Открытый проект компактного и лёгкого подающего механизма на основе деталей BMG
+---
+
 # K3D Minifeeder
 
 ![](./pics/minifeeder_index_pic.png)

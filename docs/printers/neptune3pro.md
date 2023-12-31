@@ -1,6 +1,7 @@
 ---
 hide:
     - navigation
+title: Доработки Elegoo Neptune 3 Pro
 ---
 
 # Neptune 3 Pro

@@ -1,5 +1,4 @@
 ---
-icon: material/coolant-temperature
 title: Калибровка PID
 description: Как подобрать значения PID
 ---

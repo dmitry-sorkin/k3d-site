@@ -1,3 +1,8 @@
+---
+title: K3D калибровщик Linear Advance
+description: описание и инструкция
+---
+
 # K3D калибровщик Linear Advance
 
 ## Описание

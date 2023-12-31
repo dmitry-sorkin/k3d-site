@@ -1,3 +1,8 @@
+---
+title: K3D EHP
+description: Проект печатающей головы для Ender-3 на основе экструдера Biqu H2
+---
+
 # K3D Ender-3 H2 Printhead
 
 ![EHP V2](./pics/ehp_v2_index.png)

@@ -1,5 +1,4 @@
 ---
-icon: material/rounded-corner
 title: Калибровка Input Shaping
 description: Методика ручного подбора частоты Input Shaping
 ---

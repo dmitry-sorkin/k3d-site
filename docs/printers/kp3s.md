@@ -1,6 +1,7 @@
 ---
 hide:
     - navigation
+title: Доработки Kingroon KP3S
 ---
 
 # KINGROON KP3S / KP3S Pro

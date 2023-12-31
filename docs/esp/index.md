@@ -1,3 +1,8 @@
+---
+title: K3D ESP - описание
+description: Проект печатающей головы для Ender-3 на основе экструдера Sprite
+---
+
 # K3D Ender-3 Sprite Printhead
 
 ![K3D ESP image](./pics/esp_index_1.png)

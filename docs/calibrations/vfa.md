@@ -1,5 +1,5 @@
 ---
-icon: material/waves
+title: K3D тест ряби
 ---
 
 # Тест ряби

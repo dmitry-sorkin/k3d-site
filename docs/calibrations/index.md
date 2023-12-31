@@ -1,5 +1,4 @@
 ---
-icon: material/format-list-text
 title: Все калибровки с нуля
 description: Гайд по калибровкам 3D принтера
 ---
