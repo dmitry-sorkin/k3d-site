@@ -14,8 +14,6 @@ description: Какой принтер купить, а какой не стои
 
 ## Универсальный принтер до 300$
 
-## Универсальный принтер до 300$
-
 <table class="printertable">
     <tbody>
         <tr class="upperprinterimgtr">
