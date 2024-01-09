@@ -120,7 +120,7 @@ nav:
       - Тест ряби: ./calibrations/vfa.md
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
-        - Калибровщик откатов: ./redirects/rct.md
+        - Калибровщик откатов: ./calibrations/retractions/calibrator.md
       - Калибровка Linear Advance:
         - Инструкция: ./calibrations/la/index.md
         - Калибровщик LA: ./calibrations/la/calibrator.md
