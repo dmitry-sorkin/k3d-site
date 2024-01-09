@@ -82,7 +82,7 @@ extra:
     provider: custom
     property: foobar
 extra_css:
-  - stylesheets/extra3.css
+  - stylesheets/extra4.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6

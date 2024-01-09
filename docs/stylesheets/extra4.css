@@ -1,0 +1,225 @@
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.md-typeset table:not([class]) th {
+    min-width: 2.5rem;
+    vertical-align: middle;
+}
+
+.md-typeset table:not([class]) td {
+	vertical-align: middle;
+	min-width: none;
+}
+
+.md-grid {
+	max-width: 1500px; 
+}
+
+.md-nav__link svg {
+    height: 1.3em;
+	max-width: 1.3em
+}
+
+.printertable {
+	width: 100%;
+	font-size: .8rem;
+}
+
+.printertable td {
+	padding-bottom: 0.5em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.5em;
+}
+
+.printerimg {
+	width: 230px;
+}
+
+.altprinters {
+	width: fit-content;
+	line-height: 1.6em;
+	font-size: .8rem;
+}
+
+.altprinters th {
+	font-size: 1rem;
+}
+
+.altprinters td {
+	padding-bottom: 0.9375em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.9375em;
+	min-width: 120px;
+	vertical-align: middle;
+	text-align: justify;
+}
+
+.altprinterimg {
+	width: 120px;
+	min-width: 120px;
+}
+
+.printerimgtd {
+	padding-right: 50px;
+	vertical-align: middle;
+	padding-bottom: 0.9375em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.9375em;
+	min-width: 120px;
+}
+
+@media (max-width: 600px) {
+	.printerimgtd {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.altprinterimgtd {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+	.upperprinterimgtr {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 76.25em) {
+	.md-nav__item--section {
+		margin-top: 2em;
+	}
+}
+
+[dir=ltr] .md-header__title {
+	margin-top: 0.1rem;
+	margin-left: 0.5rem;
+	font-size: 1.6rem;
+  }
+
+.md-header__topic:first-child {
+    font-weight: 100;
+}
+
+.navitable {
+	width: 100%;
+	font-size: large;
+}
+
+.navitable td {
+	text-align: center;
+	width: 33%;
+	padding: 0.2rem;
+}
+
+.calibratorInput {
+	text-align: center;
+	min-height: 2em;
+	border-radius: 0.3em;
+	max-width: 6em;
+	font-size: 0.8rem;
+	border: 1px solid #000000;
+}
+
+input[type=radio] {
+	min-height: fit-content;
+}
+
+.calibrationCodeTable {
+	width: 100%;
+	font-size: .8rem;
+	border-top: 0.05rem solid var(--md-typeset-table-color);
+	border-bottom: 0.05rem solid var(--md-typeset-table-color);
+	border-left: 0.05rem solid var(--md-typeset-table-color);
+	border-right: 0.05rem solid var(--md-typeset-table-color);
+}
+
+.calibrationCodeTable th {
+	font-weight: 700;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.calibrationCodeTable td {
+	text-align: center;
+	line-height: 1.6;
+	padding-left: 1.5em;
+	padding-bottom: 0.5em;
+	padding-right: 1.5em;
+}
+
+.calibrationCodeTable textarea {
+	width: 100%;
+}
+
+.caliButton {
+    border-width: 0.1rem solid var(--md-primary-fg-color);
+    font-weight: 700;
+    border-radius: 0.1rem;
+    border-style: solid;
+    color: var(--md-primary-fg-color);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.caliButton:hover {
+    background-color: var(--md-accent-fg-color);
+	border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color);
+}
+
+.caliButton:focus {
+    background-color: #6c91d5;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 4px #6c91d5;
+}
+
+.caliButtonTable {
+	width: 100%;
+	font-size: .8rem;
+	border: 0px;
+	margin-top: 2em;
+}
+
+.caliButtonTable td {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	align-content: center;
+}
