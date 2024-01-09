@@ -125,8 +125,7 @@ nav:
         - Калибровщик откатов: ./redirects/rct.md
       - Калибровка Linear Advance:
         - Инструкция: ./calibrations/la/index.md
-        - Калибровщик LA (старый): ./redirects/la.md
-        - Калибровщик LA (новый): ./calibrations/la/calibrator.md
+        - Калибровщик LA: ./calibrations/la/calibrator.md
   - Другие проекты:
     - Feeder965:
       - Описание проекта: ./feeder965/index.md
