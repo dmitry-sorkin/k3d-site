@@ -12,7 +12,7 @@ hide:
 <script src="../assets/js/gwaloader.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/streamsaver@2.0.3/StreamSaver.min.js"></script>
 
-[:material-file-document: Инструкция](../index.md) | Язык: [:flag_gb: English](?lang=en) [:flag_ru: Русский](?lang=ru)
+[:material-file-document: Инструкция](./index.md) | Язык: [:flag_gb: English](?lang=en) [:flag_ru: Русский](?lang=ru)
 
 <table style="width: 100%; font-size: 0.8rem;">
     <tbody>

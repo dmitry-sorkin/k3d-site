@@ -37,8 +37,6 @@ plugins:
   - redirects:
       redirect_maps:
         './redirects/forum.md': 'https://forum.k3d.tech'
-        './redirects/rct.md': './calibrations/retractions/rct.html'
-        './redirects/la.md': './calibrations/la/k3d_la.html'
 markdown_extensions:
   - abbr
   - attr_list

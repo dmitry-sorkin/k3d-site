@@ -244,9 +244,8 @@ function initLang(key) {
 			values['table.segment_height.title'] = 'Segment height';
 			values['table.segment_height.description'] = '[mm] The height of one segment of the tower. For example, if the height of the segment is 3mm, and the number of segments is 10, then the height of the entire tower will be 30mm';
 			values['table.start_gcode.title'] = 'Start G-Code';
-			values['table.start_gcode.description'] = 'The code that is executed before test. Change at your own risk! List of possible placeholders:<br><b>$BEDTEMP</b> - bed temperature<br><b>$HOTTEMP</b> - hotend temperature<br><b>$G29</b> - bed heightmap command<br><b>$FLOW</b> - flow';
+			values['table.start_gcode.description'] = 'Start code is executed before test, end code - after test. You don\'n need to change it until your printer needs special initialisation or print end workflow. Change at your own risk! List of possible placeholders:<br><b>$BEDTEMP</b> - bed temperature<br><b>$HOTTEMP</b> - hotend temperature<br><b>$G29</b> - bed heightmap command<br><b>$FLOW</b> - flow';
 			values['table.end_gcode.title'] = 'End G-Code';
-			values['table.end_gcode.description'] = 'The code that is executed after the test. Change at your own risk!';
 			
 			values['generator.generate_and_download'] = 'Generate and download';		
 			values['generator.generate_button_loading'] = 'Generator loading...';
