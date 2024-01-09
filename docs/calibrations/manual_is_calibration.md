@@ -1,4 +1,5 @@
 ---
+icon: fontawesome/solid/wave-square
 title: Калибровка Input Shaping
 description: Методика ручного подбора частоты Input Shaping
 ---

@@ -1,4 +1,5 @@
 ---
+icon: fontawesome/solid/temperature-low
 title: Калибровка PID
 description: Как подобрать значения PID
 ---

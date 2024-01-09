@@ -1,4 +1,5 @@
 ---
+icon: material/sine-wave 
 title: K3D тест ряби
 ---
 

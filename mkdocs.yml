@@ -34,6 +34,11 @@ plugins:
         background_color: "#009485"
         font_family: Handjet
   - search
+  - redirects:
+      redirect_maps:
+        './redirects/forum.md': 'https://forum.k3d.tech'
+        './redirects/rct.md': './calibrations/retractions/rct.html'
+        './redirects/la.md': './calibrations/la/k3d_la.html'
 markdown_extensions:
   - abbr
   - attr_list
@@ -93,7 +98,7 @@ nav:
     - Описание проекта: ./vostok/index.md
     - Релизы: ./vostok/releases.md
     - Инструменты: ./vostok/tools.md
-    - Форум проекта: https://forum.k3d.tech
+    - Форум проекта: ./redirects/forum.md
     - Инструкция по сборке:
       - С чего начать: ./vostok/guide_index.md
       - Подготовка профилей: ./vostok/profiles_preparation.md
@@ -110,19 +115,18 @@ nav:
       - Рама стола: ./vostok/bed_frame.md
       - Ось Z: ./vostok/z_drive.md
   - Калибровки:
-      - Калибровка принтера с нуля: ./calibrations/index.md
+      - Порядок калибровок: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
-      - Ручной подбор частоты Input Shaping: ./calibrations/manual_is_calibration.md
+      - Input Shaping: ./calibrations/manual_is_calibration.md
+      - Калибровка точности: ./calibrations/accuracy/index.md
       - Тест ряби: ./calibrations/vfa.md
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
-        - Калибровщик: ./calibrations/retractions/rct.html
+        - Калибровщик откатов: ./redirects/rct.md
       - Калибровка Linear Advance:
         - Инструкция: ./calibrations/la/index.md
-        - Калибровщик: ./calibrations/la/k3d_la.html
-      - Калибровка точности:
-        - Инструкция:  ./calibrations/accuracy/index.md
-        - Релизы: ./calibrations/accuracy/releases.md
+        - Калибровщик LA (старый): ./redirects/la.md
+        - Калибровщик LA (новый): ./calibrations/la/calibrator.md
   - Другие проекты:
     - Feeder965:
       - Описание проекта: ./feeder965/index.md

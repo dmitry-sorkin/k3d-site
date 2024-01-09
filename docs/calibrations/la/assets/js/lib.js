@@ -194,10 +194,6 @@ function initLang(key) {
 	switch (key) {
 		case 'en':
 			values['header.title'] = 'K3D Linear Advance calibrator';
-			values['header.language'] = 'Language: ';
-			values['header.useful_links'] = 'Useful links: ';
-			values['header.instruction'] = 'Instructions for use';
-			values['header.width_not_changing'] = 'What to do if the thickness of the central section does not change?';
 			
 			values['table.header.parameter'] = 'Parameter';
 			values['table.header.value'] = 'Value';
@@ -257,9 +253,6 @@ function initLang(key) {
 			values['generator.segment'] = '; Segment %d: K-Factor: %s\n';
 			values['generator.reset_to_default'] = 'Reset settings';
 			
-			values['navbar.back'] = ' Back ';
-			values['navbar.site'] = 'Site';
-			
 			values['error.bed_size_x.format'] = 'Bed size Х - format error';
 			values['error.bed_size_x.small_or_big'] = 'Bed size X is incorrect (less than 100 or greater than 1000 mm)';
 			values['error.bed_size_y.format'] = 'Bed size Y - format error';
@@ -302,10 +295,6 @@ function initLang(key) {
 			break;
 		case 'ru':
 			values['header.title'] = 'K3D калибровщик Linear Advance';
-			values['header.language'] = 'Язык: ';
-			values['header.useful_links'] = 'Полезные ссылки:';
-			values['header.instruction'] = 'Инструкция по использованию';
-			values['header.width_not_changing'] = 'Что делать, если толщина центрального участка не меняется?';
 			
 			values['table.header.parameter'] = 'Параметр';
 			values['table.header.value'] = 'Значение';
@@ -356,17 +345,13 @@ function initLang(key) {
 			values['table.segment_height.title'] = 'Высота сегмента';
 			values['table.segment_height.description'] = '[мм] Высота одного сегмента башенки. К примеру, если высота сегмента 3мм, а количество сегментов 10, то высота всей башенки будет 30мм';
 			values['table.start_gcode.title'] = 'Начальный G-код';
-			values['table.start_gcode.description'] = 'Код, выполняемый перед печатью теста. Менять на свой страх и риск! Список возможных плейсхолдеров:<br><b>$BEDTEMP</b> - температура стола<br><b>$HOTTEMP</b> - температура хотэнда<br><b>$G29</b> - команда на снятие карты высот стола<br><b>$FLOW</b> - поток';
+			values['table.start_gcode.description'] = 'Начальный код выполняется перед печатью модели и служит для правильной инициализации принтера. Конечный код выполняется после окончания печати. На большинстве принтеров стандартные коды работают хорошо и менять их не надо. <a href="../#g-">Список возможных плейсхолдеров</a>';
 			values['table.end_gcode.title'] = 'Конечный G-код';
-			values['table.end_gcode.description'] = 'Код, выполняемый после печати теста. Менять на свой страх и риск!';
 			
 			values['generator.generate_and_download'] = 'Генерировать и скачать';		
 			values['generator.generate_button_loading'] = 'Генератор загружается...';		
 			values['generator.segment'] = '; Сегмент %d: K-Factor: %s\n';
 			values['generator.reset_to_default'] = 'Сбросить настройки';
-			
-			values['navbar.back'] = ' Назад ';
-			values['navbar.site'] = 'Сайт';
 			
 			values['error.bed_size_x.format'] = 'Размер оси Х - ошибка формата';
 			values['error.bed_size_x.small_or_big'] = 'Размер стола по X указан неверно (меньше 100 или больше 1000 мм)';
@@ -418,7 +403,6 @@ function initLang(key) {
 	}
 	document.getElementsByClassName('generate-button')[0].innerHTML = window.lang.getString('generator.generate_and_download');
 	document.getElementsByClassName('reset-button')[0].innerHTML = window.lang.getString('generator.reset_to_default');
-	document.getElementsByClassName('navbar-direction')[0].innerHTML = window.lang.getString('navbar.back');
 	document.getElementById('generateButtonLoading').innerHTML = window.lang.getString('generator.generate_button_loading');
 }
 

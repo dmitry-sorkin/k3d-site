@@ -142,3 +142,84 @@
 	width: 33%;
 	padding: 0.2rem;
 }
+
+.calibratorInput {
+	text-align: center;
+	min-height: 2em;
+	border-radius: 0.3em;
+	max-width: 6em;
+	font-size: 0.8rem;
+	border: 1px solid #000000;
+}
+
+input[type=radio] {
+	min-height: fit-content;
+}
+
+.calibrationCodeTable {
+	width: 100%;
+	font-size: .8rem;
+	border-top: 0.05rem solid var(--md-typeset-table-color);
+	border-bottom: 0.05rem solid var(--md-typeset-table-color);
+	border-left: 0.05rem solid var(--md-typeset-table-color);
+	border-right: 0.05rem solid var(--md-typeset-table-color);
+}
+
+.calibrationCodeTable th {
+	font-weight: 700;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.calibrationCodeTable td {
+	text-align: center;
+	line-height: 1.6;
+	padding-left: 1.5em;
+	padding-bottom: 0.5em;
+	padding-right: 1.5em;
+}
+
+.calibrationCodeTable textarea {
+	width: 100%;
+}
+
+.caliButton {
+    border-width: 0.1rem solid var(--md-primary-fg-color);
+    font-weight: 700;
+    border-radius: 0.1rem;
+    border-style: solid;
+    color: var(--md-primary-fg-color);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.caliButton:hover {
+    background-color: var(--md-accent-fg-color);
+	border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color);
+}
+
+.caliButton:focus {
+    background-color: #6c91d5;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 4px #6c91d5;
+}
+
+.caliButtonTable {
+	width: 100%;
+	font-size: .8rem;
+	border: 0px;
+	margin-top: 2em;
+}
+
+.caliButtonTable td {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	align-content: center;
+}

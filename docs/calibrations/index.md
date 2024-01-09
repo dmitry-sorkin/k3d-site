@@ -1,6 +1,7 @@
 ---
-title: Все калибровки с нуля
-description: Гайд по калибровкам 3D принтера
+icon: material/notification-clear-all
+title: Порядок калибровок
+description: Гайд по калибровкам 3D принтера с нуля
 ---
 
 # Как настроить принтер с нуля
