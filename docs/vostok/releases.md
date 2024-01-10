@@ -8,14 +8,14 @@ description: Скачать документацию и модели для K3D 
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация ](./releases/087/v0.8.7b_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](./releases/087/v0.8.7b_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/087/v0.8.7b_k3d_vostok.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087/v0.8.7b_z_axis_4guides_2drives.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087/v0.8.7b_z_axis_4guides_4drives.stp.zip)
-- [:material-video-3d: Сборка в формате .x_t](./releases/087/v0.8.7b_k3d_vostok.x_t.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087/v0.8.7b_stl_full.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087/v0.8.7b_stl_changed.zip)
+- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html)
+- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip)
+- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip)
 
 ## 0.8.7b-beta
 
@@ -60,14 +60,14 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация ](./releases/087/v0.8.7b_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](./releases/087/v0.8.7b_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/087/v0.8.7b_k3d_vostok.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087/v0.8.7b_z_axis_4guides_2drives.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087/v0.8.7b_z_axis_4guides_4drives.stp.zip)
-- [:material-video-3d: Сборка в формате .x_t](./releases/087/v0.8.7b_k3d_vostok.x_t.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087/v0.8.7b_stl_full.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087/v0.8.7b_stl_changed.zip)
+- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods) - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html)
+- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip)
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip)
+- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip)
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip)
 
 ## 0.8.6-beta
 
