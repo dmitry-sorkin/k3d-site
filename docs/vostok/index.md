@@ -51,7 +51,7 @@ hide:
 
     ---
 
-    **K3D VOSTOK** распространяется под лицензией [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1) :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by:. Эта лицензия позволяет вам использовать проект и документацию к нему как вам угодно, в том числе в коммерческих целях, за исключением возможности присвоить себе авторство
+    **K3D VOSTOK** распространяется под лицензией [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1){ target="_blank" } :fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by:. Эта лицензия позволяет вам использовать проект и документацию к нему как вам угодно, в том числе в коммерческих целях, за исключением возможности присвоить себе авторство
 
 - :material-comment-account-outline:{ .lg .middle } __Большое сообщество__
 
@@ -59,8 +59,8 @@ hide:
 
     Уже более 100 VOSTOK'ов печатают и еще больше на подходе. Присоединяйся!
 
-    - [:simple-telegram: Новости проекта в TG](https://t.me/vostok3dp)
-    - [:simple-telegram: Обсуждение проекта в TG](https://t.me/k3d_vostok)
+    - [:simple-telegram: Новости проекта в TG](https://t.me/vostok3dp){ target="_blank" }
+    - [:simple-telegram: Обсуждение проекта в TG](https://t.me/k3d_vostok){ target="_blank" }
     - [:material-forum: Форум K3D VOSTOK](https://forum.k3d.tech){ target=_blank }
 
 </div>

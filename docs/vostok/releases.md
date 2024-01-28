@@ -8,14 +8,14 @@ description: Скачать документацию и модели для K3D 
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip)
-- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip)
+- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods){ download="v0.8.7b_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html){ download="v0.8.7b_dxf_generator.html" }
+- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip){ download="v0.8.7b_k3d_vostok.stp.zip" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip){ download="v0.8.7b_z_axis_4guides_2drives.stp.zip" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip){ download="v0.8.7b_z_axis_4guides_4drives.stp.zip" }
+- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip){ download="v0.8.7b_k3d_vostok.x_t.zip" }
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip){ download="v0.8.7b_stl_full.zip" }
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip){ download="v0.8.7b_stl_changed.zip" }
 
 ## 0.8.7b-beta
 
@@ -60,14 +60,14 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip)
-- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip)
-- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip)
-- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip)
+- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods){ download="v0.8.7b_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html){ download="v0.8.7b_dxf_generator.html" }
+- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip){ download="v0.8.7b_k3d_vostok.stp.zip" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip){ download="v0.8.7b_z_axis_4guides_2drives.stp.zip" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip){ download="v0.8.7b_z_axis_4guides_4drives.stp.zip" }
+- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip){ download="v0.8.7b_k3d_vostok.x_t.zip" }
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip){ download="v0.8.7b_stl_full.zip" }
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip){ download="v0.8.7b_stl_changed.zip" }
 
 ## 0.8.6-beta
 
@@ -83,12 +83,12 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация ](./releases/086/v0.8.6_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/086/v0.8.6_dxf_generator.html)
-- [:material-video-3d: Сборка в формате .step](./releases/086/v0.8.6_k3d_vostok.stp.7z)
-- [:material-video-3d: Сборка в формате .x_t](./releases/086/v0.8.6_k3d_vostok.x_t.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати (архив)](./releases/086/v0.8.6_stl_full.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати (yandex.disk)](https://disk.yandex.ru/d/G0xEEMd5xXYQRw)
+- [:material-file-document: Спецификация ](./releases/086/v0.8.6_bom.ods){ download="v0.8.6_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/086/v0.8.6_dxf_generator.html){ download="v0.8.6_dxf_generator.html" }
+- [:material-video-3d: Сборка в формате .step](./releases/086/v0.8.6_k3d_vostok.stp.7z){ download="v0.8.6_k3d_vostok.stp.7z" }
+- [:material-video-3d: Сборка в формате .x_t](./releases/086/v0.8.6_k3d_vostok.x_t.7z){ download="v0.8.6_k3d_vostok.x_t.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати (архив)](./releases/086/v0.8.6_stl_full.7z){ download="v0.8.6_stl_full.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати (yandex.disk)](https://disk.yandex.ru/d/G0xEEMd5xXYQRw){ target="_blank" }
 
 ## 0.8.5b-beta
 
@@ -99,8 +99,8 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация ](./releases/085/v0.8.5b_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5b_dxf_generator.html)
+- [:material-file-document: Спецификация ](./releases/085/v0.8.5b_bom.ods){ download="v0.8.5b_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5b_dxf_generator.html){ download="v0.8.5b_dxf_generator.html" }
 
 ## 0.8.5-beta
 
@@ -137,8 +137,8 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация ](./releases/085/v0.8.5_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5_dxf_generator.html)
+- [:material-file-document: Спецификация ](./releases/085/v0.8.5_bom.ods){ download="v0.8.5_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/085/v0.8.5_dxf_generator.html){ download="v0.8.5_dxf_generator.html" }
 
 ## 0.8.4-beta
 
@@ -161,10 +161,10 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация ](./releases/084/v0.8.4_bom.ods) - открывать в LibreOffice!
-- [:material-video-3d: Сборка в формате .step](./releases/084/v0.8.4_k3d_vostok.stp.7z)
-- [:material-video-3d: Сборка в формате .x_t](./releases/084/v0.8.4_k3d_vostok.x_t.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/pFaTX8n5_hflfg)
+- [:material-file-document: Спецификация ](./releases/084/v0.8.4_bom.ods){ download="v0.8.4_bom.ods" } - открывать в LibreOffice!
+- [:material-video-3d: Сборка в формате .step](./releases/084/v0.8.4_k3d_vostok.stp.7z){ download="v0.8.4_k3d_vostok.stp.7z" }
+- [:material-video-3d: Сборка в формате .x_t](./releases/084/v0.8.4_k3d_vostok.x_t.7z){ download="v0.8.4_k3d_vostok.x_t.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/pFaTX8n5_hflfg){ target="_blank" }
 
 ## 0.8.3-beta
 
@@ -179,8 +179,8 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация](./releases/083/v0.8.3_bom.ods) - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/083/v0.8.3_dxf_generator.html)
+- [:material-file-document: Спецификация](./releases/083/v0.8.3_bom.ods){ download="v0.8.3_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/083/v0.8.3_dxf_generator.html){ download="v0.8.3_dxf_generator.html" }
 
 ## 0.8.2-beta
 
@@ -195,9 +195,9 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация](./releases/082/v0.8.2_bom.ods) - открывать в LibreOffice!
-- [:material-video-3d: Сборка в формате .step](./releases/082/v0.8.2_k3d_vostok.stp.7z)
-- [:material-printer-3d-nozzle: STL файлы](https://disk.yandex.ru/d/A5sdlwUXIK1eqw)
+- [:material-file-document: Спецификация](./releases/082/v0.8.2_bom.ods){ download="v0.8.2_bom.ods" } - открывать в LibreOffice!
+- [:material-video-3d: Сборка в формате .step](./releases/082/v0.8.2_k3d_vostok.stp.7z){ download="v0.8.2_k3d_vostok.stp.7z" }
+- [:material-printer-3d-nozzle: STL файлы](https://disk.yandex.ru/d/A5sdlwUXIK1eqw){ target="_blank" }
 
 ## 0.8.1-beta
 
@@ -229,9 +229,9 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация](./releases/081/v0.8.1_bom.ods) - открывать в LibreOffice!
-- [:material-video-3d: Сборка в формате .step](./releases/081/v0.8.1_k3d_vostok.7z)
-- [:material-printer-3d-nozzle: STL файлы](https://disk.yandex.ru/d/AzG_6dfCySiXNA)
+- [:material-file-document: Спецификация](./releases/081/v0.8.1_bom.ods){ download="v0.8.1_bom.ods" } - открывать в LibreOffice!
+- [:material-video-3d: Сборка в формате .step](./releases/081/v0.8.1_k3d_vostok.7z){ download="v0.8.1_k3d_vostok.7z" }
+- [:material-printer-3d-nozzle: STL файлы](https://disk.yandex.ru/d/AzG_6dfCySiXNA){ target="_blank" }
 
 ## 0.7.3b-alpha
 
@@ -256,7 +256,7 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-[:material-file-document: Спецификация v0.7.3b](releases/073/BOM_v0.7.3b.ods) - открывать в LibreOffice!
+[:material-file-document: Спецификация v0.7.3b](releases/073/BOM_v0.7.3b.ods){ download="BOM_v0.7.3b.ods" } - открывать в LibreOffice!
 
 ## 0.7.3-alpha
 
@@ -281,11 +281,11 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация](releases/073/BOM_v0.7.3.ods)  - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/073/DXF_Generator_v0.7.2.html)
-- [:material-video-3d: Сборка в формате .step](releases/073/K3D_VOSTOK_v0.7.3.stp.7z)
-- [:material-video-3d: Сборка в формате .x_t](releases/073/K3D_VOSTOK_v0.7.3.x_t.7z)
-- [:material-printer-3d-nozzle: STL файлы](https://disk.yandex.ru/d/ld84l5EMjL6yKQ)
+- [:material-file-document: Спецификация](releases/073/BOM_v0.7.3.ods){ download="BOM_v0.7.3.ods" }  - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/073/DXF_Generator_v0.7.2.html){ download="DXF_Generator_v0.7.2.html" }
+- [:material-video-3d: Сборка в формате .step](releases/073/K3D_VOSTOK_v0.7.3.stp.7z){ download="K3D_VOSTOK_v0.7.3.stp.7z" }
+- [:material-video-3d: Сборка в формате .x_t](releases/073/K3D_VOSTOK_v0.7.3.x_t.7z){ download="K3D_VOSTOK_v0.7.3.x_t.7z" }
+- [:material-printer-3d-nozzle: STL файлы](https://disk.yandex.ru/d/ld84l5EMjL6yKQ){ target="_blank" }
 
 ----
 
@@ -312,11 +312,11 @@ description: Скачать документацию и модели для K3D 
 
 ### Скачать
 
-- [:material-file-document: Спецификация](releases/072/BOM v0.7.2.ods)  - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](releases/072/DXF Generator v0.7.2.html)
-- [:material-video-3d: Сборка в формате .step](releases/072/K3D VOSTOK v0.7.2.stp.7z)
-- [:material-video-3d: Сборка в формате .x_t](releases/072/K3D VOSTOK v0.7.2.x_t.7z)
-- [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/P3nnBWUvl0q9yg)
+- [:material-file-document: Спецификация](releases/072/BOM v0.7.2.ods){ download="BOM_v0.7.2.ods" }  - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](releases/072/DXF Generator v0.7.2.html){ download="DXF_Generator_v0.7.2.html" }
+- [:material-video-3d: Сборка в формате .step](releases/072/K3D VOSTOK v0.7.2.stp.7z){ download="K3D_VOSTOK_v0.7.2.stp.7z" }
+- [:material-video-3d: Сборка в формате .x_t](releases/072/K3D VOSTOK v0.7.2.x_t.7z){ download="K3D_VOSTOK_v0.7.2.x_t.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати](https://disk.yandex.ru/d/P3nnBWUvl0q9yg){ target="_blank" }
 
 ---
 
@@ -339,7 +339,7 @@ description: Скачать документацию и модели для K3D 
 - Кабелеводы для жгутов печатных голов смещены ближе к центру
 - Добавлены отверстия для доступа к натяжителю кольцевого ремня оси Y
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.7.1-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.7.1-alpha){ target="_blank" }
 
 ___
 
@@ -370,7 +370,7 @@ ___
 - В расчёт профиля добавлен новый вариант рамы стола;
 - Полностью переработан расчёт печатных изделий.
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.7.0-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.7.0-alpha){ target="_blank" }
 
 ---
 
@@ -401,7 +401,7 @@ ___
 - В расчёте профиля теперь для варианта с 4 стойками в качестве поперечин предлагаются 2020 профили
 - Исправлен баг, вызывавший несовместимость таблицы с Google Sheets
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.6.5-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.6.5-alpha){ target="_blank" }
 
 ---
 
@@ -419,7 +419,7 @@ ___
 - Появилась возможность вручную выбрать количество стоек оси Z
 - Расчёты обновлены до текущей версии сборки
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.6.3-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.6.3-alpha){ target="_blank" }
 
 ---
 
@@ -441,7 +441,7 @@ ___
 - Исправлены модели ручек передних дверей 
 - Добавлены отверстия под петли задней двери 
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.82-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.82-alpha){ target="_blank" }
 
 ---
 
@@ -470,7 +470,7 @@ ___
 - Добавлено крепление FYSETC Spider
 - Добавлено крепление Raspberry Pi
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.55-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.55-alpha){ target="_blank" }
 
 ---
 
@@ -480,7 +480,7 @@ ___
 - Исправлено положение всей оси Z таким образом, что теперь возможно будет использовать всю область печати
 - Обновлён BOM
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.37-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.37-alpha){ target="_blank" }
 
 ---
 
@@ -498,7 +498,7 @@ ___
 - Добавлена карта крепежа (она же калькулятор)
 - Исправлены незначительные баги
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.36-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.36-alpha){ target="_blank" }
 
 ---
 
@@ -520,7 +520,7 @@ ___
 - Калькуляция проводки
 - Перевод на английский
 
-:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.32-alpha)
+:material-github: [Релиз на github](https://github.com/dmitry-sorkin/K3D-VOSTOK/releases/tag/v0.5.32-alpha){ target="_blank" }
 
 ---
 

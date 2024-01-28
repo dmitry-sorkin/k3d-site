@@ -96,7 +96,7 @@ graph TD
 
 ### Где можно задать вопросы по сборке VOSTOK?
 
-У проекта есть [чат в Telegram](https://t.me/k3d_vostok). Также вопросы по востоку можно задать на стримах [на YouTube канале автора](https://www.youtube.com/@SorkinDmitry).
+У проекта есть [чат в Telegram](https://t.me/k3d_vostok){ target="_blank" }. Также вопросы по востоку можно задать на стримах [на YouTube канале автора](https://www.youtube.com/@SorkinDmitry){ target="_blank" }.
 
 ---
 

@@ -9,11 +9,11 @@ description: Проект печатающей головы для Ender-3 на 
 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
-| Вентилятор 5015 | 2 | [:material-shopping:](http://alli.pub/6huh9y) | |
-| Винт М4х20 DIN 7380 | 2 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
-| Винт М4х35 DIN 7380 | 1 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh35_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) |  |
-| Винт М3х5 DIN 7380 | 3 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh5_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
-| Коннектор xh1.25 2pin | 2 | [:material-shopping:](https://alli.pub/6p165l) | Опционально. Ссылка не проверена |
+| Вентилятор 5015 | 2 | [12в](https://alli.pub/6tuuh8?erid=2SDnjcXP2xx "Younuon Cooling Store"){ target="_blank" } / [24в](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe "Younuon Cooling Store"){ target="_blank" } | |
+| Винт М4х20 DIN 7380 | 2 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } |  |
+| Винт М4х35 DIN 7380 | 1 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh35_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } |  |
+| Винт М3х5 DIN 7380 | 3 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh5_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+| Коннектор xh1.25 2pin | 2 | [:material-shopping:](https://alli.pub/6vp3s6?erid=2SDnjbvuEBz){ target="blank" } | Опционально. Ссылка не проверена |
 
 ## Печать деталей
 
@@ -91,11 +91,4 @@ description: Проект печатающей головы для Ender-3 на 
 
 ## Прошивка и калибровки
 
-Замена системы охлаждения не требует внесения изменений в прошивку принтера. Также не требуются никакие калибровки.
-
-## Поддержать проект
-
-Проект K3D существует и развивается за счёт поддержки сообществом. Если у вас есть желание поддержать автора и тем самым спонсировать выход новых подобных апгрейдов, то это можно сделать следующим образом:
-
-- [Поддержать из РФ](https://donate.stream/dmitrysorkin)
-- [Поддержать из-за рубежа](https://www.donationalerts.com/r/dsorkin)
+Замена системы охлаждения не требует внесения изменений в прошивку принтера. Также не требуются никакие калибровки.3

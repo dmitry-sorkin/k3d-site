@@ -14,8 +14,8 @@ description: Инструкция по сборке VOSTOK
 
 Ось сверления проходит в 10мм от торца кондуктора (часть, которая была направлена к столу при печати). Выставлять кондуктор очень удобно с помощью глубиномера штангенциркуля.
 
-- [:material-printer-3d-nozzle: Для 2020 профиля](./releases/tools/drilling_jig_2020_v1.2.stl)
-- [:material-printer-3d-nozzle: Для 2040 или 2060 профиля](./releases/tools/drilling_jig_2040-2060_v1.2.stl)
+- [:material-printer-3d-nozzle: Для 2020 профиля](./releases/tools/drilling_jig_2020_v1.2.stl){ download="drilling_jig_2020_v1.2.stl" }
+- [:material-printer-3d-nozzle: Для 2040 или 2060 профиля](./releases/tools/drilling_jig_2040-2060_v1.2.stl){ download="drilling_jig_2040-2060_v1.2.stl" }
 
 ```
 Автор: DeltaDesignRus
@@ -28,7 +28,7 @@ Telegram: @DeltaDesignRus
 
 Простой печатный кондуктор для того, чтобы центрировать рельсу оси Х на профиле 2020. Печатать нужно 2 штуки.
 
-- [:material-printer-3d-nozzle: Кондуктор рельсы mgn9](./releases/tools/mgn9_center_tool.STL)
+- [:material-printer-3d-nozzle: Кондуктор рельсы mgn9](./releases/tools/mgn9_center_tool.STL){ download="mgn9_center_tool.STL" }
 
 ```
 Автор: Artean
@@ -43,7 +43,7 @@ Telegram: @DeltaDesignRus
 
 !!! warning "Не спешите сверлить эти отверстия. В большинстве случаев можно обойтись без них"
 
-- [:material-printer-3d-nozzle: Кондуктор отверстий мотора Х](./releases/tools/x_motor_change_holes_conductor.stl)
+- [:material-printer-3d-nozzle: Кондуктор отверстий мотора Х](./releases/tools/x_motor_change_holes_conductor.stl){ download="x_motor_change_holes_conductor.stl" }
 
 ---
 

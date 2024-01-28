@@ -21,7 +21,7 @@ description: Методика ручного подбора частоты Input
 
 Также для проведения теста необходимо будет подготовить тестовый G-код:
 
-1. Скачайте тестовую модель: [:material-printer-3d-nozzle: k3d_ringing_tower.stl](../models/k3d_ringing_tower.stl)
+1. Скачайте тестовую модель: [:material-printer-3d-nozzle: k3d_ringing_tower.stl](../models/k3d_ringing_tower.stl){ download="k3d_ringing_tower.stl" }
 2. Откройте её в любом слайсере и нарежьте со следующими параметрами:
       1. В качестве пластика следует использовать любой простой в печати, желательно тёмного цвета, чтобы эхо было различимо;
       2. Крышку и дно выключить (0 слоёв);
@@ -87,9 +87,9 @@ shaper_freq_y = {значение для оси Y}
 1. Добавьте в printer.cfg код из блока сверху, вставив полученные частоты. Обратите внимание, что частоты вводятся без фигурных скобок
 2. Сохраните изменения и сделайте `FIRMWARE_RESTART`
 3. Скачайте любую тестовую модель с большим количеством поворотов: 
-      1. [:material-printer-3d-nozzle: Лис](./models/fox.stl) (печатать лучше в масштабе 50%)
-      2. [:material-printer-3d-nozzle: Кот](./models/calicat.stl)
-      3. [:material-printer-3d-nozzle: Кубик](./models/test_cube.stl)
+      1. [:material-printer-3d-nozzle: Лис](./models/fox.stl){ download="fox.stl" } (печатать лучше в масштабе 50%)
+      2. [:material-printer-3d-nozzle: Кот](./models/calicat.stl){ download="calicat.stl" }
+      3. [:material-printer-3d-nozzle: Кубик](./models/test_cube.stl){ download="test_cube.stl" }
 4. Расчитайте максимальные ускорения, как это описано в разделе "подбор максимальных ускорений" ниже;
 5. Распечатайте модель с получеными шейперами и ускорениями. Если качество печати вас устраивает, то подбор частот закончен.
 

@@ -13,8 +13,8 @@ description: Проект печатающей головы для Ender-3 на 
 
 ## Скачать
 
-- [:material-folder-zip: K3D EHP V2 - Все STL файлы](./releases/v2/v2.0.zip){ download="k3d_ehp_v2_stl.zip" .md-button }
-- [:material-video-3d: K3D EHP V2 - Сборка .STEP](./releases/v2/k3d_ehp_v2.stp){ download="k3d_ehp_v2_assembly.stp" .md-button }
+- [:material-folder-zip: K3D EHP V2 - Все STL файлы](./releases/v2/v2.0.zip){ download="k3d_ehp_v2_stl.zip" }
+- [:material-video-3d: K3D EHP V2 - Сборка .STEP](./releases/v2/k3d_ehp_v2.stp){ download="k3d_ehp_v2_assembly.stp" }
 
 Старую версию можно скачать тут: [K3D EHP V1 -  Все файлы](./releases/v1/k3d_ehp_v1_full.zip){ download="k3d_ehp_v1_full.zip" } + [инструкция для старой версии](./guide_old.md)
 
@@ -24,16 +24,16 @@ description: Проект печатающей головы для Ender-3 на 
 
 | Наименование | Количество | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Biqu H2 V2S | 1 | [:material-shopping:](https://alli.pub/6ttfek?erid=2SDnje8mFCU "Big Tree Tech co. LTD") [:material-shopping:](https://alli.pub/6ttfey?erid=2SDnjeDDD3W "BIGTREETECH Mavellous store") | В комплекте биметаллическое горло, хитблок, аналогичный V6, латунное сопло и вентилятор обдува радиатора |
-| CRTouch | 0-1 | [:material-shopping:](https://alli.pub/6tusw2?erid=2SDnjdSjafa) | Датчик автоуровня, подходящий для этой печатающей головы. Нужен для компенсации кривизны стола. Если стол ровный, то датчик не нужен |
-| Вентилятор 5015 | 2 | [:material-shopping:](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe "Younuon Cooling Store") [:material-shopping:](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop") | Первая ссылка - подешевле, хорошо дует, но может вибрировать. Вторая ссылка - подороже, качественнее, но только 12в. Если в плате вашего принтера нет встроенной понижайки до 12в, то вам придётся [купить её отдельно](https://alli.pub/6tustx?erid=2SDnjdEsgQp) (1шт. на оба вентилятора) |
+| Biqu H2 V2S | 1 | [:material-shopping:](https://alli.pub/6ttfek?erid=2SDnje8mFCU "Big Tree Tech co. LTD"){ target="blank" } [:material-shopping:](https://alli.pub/6ttfey?erid=2SDnjeDDD3W "BIGTREETECH Mavellous store"){ target="blank" } | В комплекте биметаллическое горло, хитблок, аналогичный V6, латунное сопло и вентилятор обдува радиатора |
+| CRTouch | 0-1 | [:material-shopping:](https://alli.pub/6tusw2?erid=2SDnjdSjafa){ target="blank" } | Датчик автоуровня, подходящий для этой печатающей головы. Нужен для компенсации кривизны стола. Если стол ровный, то датчик не нужен |
+| Вентилятор 5015 | 2 | [:material-shopping:](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe "Younuon Cooling Store"){ target="blank" } [:material-shopping:](https://alli.pub/6tku6t?erid=2SDnjefWUPr "RRF 3D Shop"){ target="blank" } | Первая ссылка - подешевле, хорошо дует, но может вибрировать. Вторая ссылка - подороже, качественнее, но только 12в. Если в плате вашего принтера нет встроенной понижайки до 12в, то вам придётся [купить её отдельно](https://alli.pub/6tustx?erid=2SDnjdEsgQp){ target="blank" } (1шт. на оба вентилятора) |
 
 ### Для установки производительного хотэнда
 
 | Наименование | Количество | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| E3D Volcano | 1 | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A") [:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab") | Алюминиевый предпочтительнее |
-| Volcano медное с калёной вставкой | 1 | [:material-shopping:](https://alli.pub/6ttkml?erid=2SDnjePhWAc "Mellow") | Подходит для всех материалов. Одной штуки диаметро 0.4мм хватит практически для всех задач |
+| E3D Volcano | 1 | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="blank" } [:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="blank" } | Алюминиевый предпочтительнее |
+| Volcano медное с калёной вставкой | 1 | [:material-shopping:](https://alli.pub/6ttkml?erid=2SDnjePhWAc "Mellow"){ target="blank" } | Подходит для всех материалов. Одной штуки диаметро 0.4мм хватит практически для всех задач |
 
 ### Крепеж
 
@@ -133,7 +133,7 @@ description: Проект печатающей головы для Ender-3 на 
 
 ### Двигатель
 
-Мотор подключается вместо штатного мотора. В большинстве случаев для этого достаточно просто удлинить проводку. Не бойтесь подключить мотор неправильно, это не нанесет ему никакого вреда. После подключения, но перед проверкой, не забудьте отрегулировать ток на мотор экструдера. Некоторую информацию по этому поводу можно найти [в этом видео](https://www.youtube.com/watch?v=MQE7OZ34_eE).
+Мотор подключается вместо штатного мотора. В большинстве случаев для этого достаточно просто удлинить проводку. Не бойтесь подключить мотор неправильно, это не нанесет ему никакого вреда. После подключения, но перед проверкой, не забудьте отрегулировать ток на мотор экструдера. Некоторую информацию по этому поводу можно найти [в этом видео](https://www.youtube.com/watch?v=MQE7OZ34_eE){ target="blank" }.
 
 Некоторые распространенные проблемы при подключении:
 
@@ -149,7 +149,7 @@ description: Проект печатающей головы для Ender-3 на 
 
 Все вентиляторы подключается вместо штатных с обязательным соблюдением полярности. При этом вентиляторы обдува модели подключаются параллельно (все плюсы отдельно, все минусы отдельно).
 
-Если вентиляторы системы охлаждения 12в, а питание принтера 24в, то плюс (красный провод) от них подключается в плюс на выходе понижающего преобразователя. Минусы объединяются и подключаются вместо минуса штатного вентилятора, напрямую в плату. Пример можно посмотреть [здесь](https://youtu.be/Ozurs525QfU?t=1050).
+Если вентиляторы системы охлаждения 12в, а питание принтера 24в, то плюс (красный провод) от них подключается в плюс на выходе понижающего преобразователя. Минусы объединяются и подключаются вместо минуса штатного вентилятора, напрямую в плату. Пример можно посмотреть [здесь](https://youtu.be/Ozurs525QfU?t=1050){ target="blank" }.
 
 ## Прошивка
 
@@ -226,8 +226,8 @@ description: Проект печатающей головы для Ender-3 на 
 После внесения изменений в прошивку, стоит заново повторить все калибровки, которые зависят от печатающей головы в следующем порядке:
 
 1. Калибровка стола и Z-offset
-2. [Калибровка PID](https://youtu.be/aizbpcZ7LU0)
-3. [Калибровка разрешения экструдера](https://youtu.be/Mga_ezYDTNI). Поток можно оставить 100% для начала и калибровать только в случае пере- или недоэкструзии на моделях
+2. [Калибровка PID](https://youtu.be/aizbpcZ7LU0){ target="blank" }
+3. [Калибровка разрешения экструдера](https://youtu.be/Mga_ezYDTNI){ target="blank" }. Поток можно оставить 100% для начала и калибровать только в случае пере- или недоэкструзии на моделях
 4. [Подбор к-фактора Linear Advance](../calibrations/la/index.md)
 5. [Подбор длины и скорости откатов](../calibrations/retractions/index.md)
-6. [Подбор частоты Input shaping](https://youtu.be/ZFPkfZEB-XU) (если он есть)
+6. [Подбор частоты Input shaping](https://youtu.be/ZFPkfZEB-XU){ target="blank" } (если он есть)
