@@ -1,0 +1,123 @@
+Nozzle,volumetric_flow,sample_weight,skipping
+Trianglelab brass,5,1.485,false
+Trianglelab brass,10,1.479,false
+Trianglelab brass,12,1.475,false
+Trianglelab brass,14,1.463,false
+Trianglelab brass,16,1.457,false
+Trianglelab brass,18,1.449,false
+Trianglelab brass,20,1.445,false
+Trianglelab brass,22,1.433,false
+Trianglelab brass,24,1.431,false
+Trianglelab brass,26,1.414,false
+Trianglelab brass,26,1.414,true
+Trianglelab brass,28,1.356,true
+Trianglelab brass,30,1.265,true
+Trianglelab HS,5,1.493,false
+Trianglelab HS,10,1.472,false
+Trianglelab HS,12,1.465,false
+Trianglelab HS,14,1.455,false
+Trianglelab HS,16,1.448,false
+Trianglelab HS,18,1.438,false
+Trianglelab HS,20,1.429,false
+Trianglelab HS,22,1.419,false
+Trianglelab HS,24,1.406,false
+Trianglelab HS,24,1.406,true
+Trianglelab HS,26,1.308,true
+Mellow Bimetal HC 1,5,1.498,false
+Mellow Bimetal HC 1,10,1.476,false
+Mellow Bimetal HC 1,12,1.468,false
+Mellow Bimetal HC 1,14,1.446,false
+Mellow Bimetal HC 1,16,1.428,false
+Mellow Bimetal HC 1,18,1.416,false
+Mellow Bimetal HC 1,18,1.416,true
+Mellow Bimetal HC 1,20,1.403,true
+Mellow Bimetal HC 1,22,1.347,true
+Mellow Bimetal HC 1,24,1.278,true
+Mellow Bimetal HC 1,26,1.173,true
+Mellow Bimetal HC 2,5,1.473,false
+Mellow Bimetal HC 2,10,1.441,false
+Mellow Bimetal HC 2,12,1.425,false
+Mellow Bimetal HC 2,14,1.419,false
+Mellow Bimetal HC 2,16,1.409,false
+Mellow Bimetal HC 2,16,1.409,true
+Mellow Bimetal HC 2,18,1.404,true
+Mellow Bimetal HC 2,20,1.389,true
+Mellow Bimetal HC 2,22,1.344,true
+Trianglelab ZS,5,1.481,false
+Trianglelab ZS,10,1.465,false
+Trianglelab ZS,12,1.458,false
+Trianglelab ZS,14,1.456,false
+Trianglelab ZS,16,1.438,false
+Trianglelab ZS,18,1.432,false
+Trianglelab ZS,20,1.424,false
+Trianglelab ZS,22,1.423,false
+Trianglelab ZS,24,1.422,false
+Trianglelab ZS,24,1.422,true
+Trianglelab ZS,26,1.399,true
+Trianglelab ZS,28,1.344,true
+Noname brass CHT,5,1.482,false
+Noname brass CHT,10,1.458,false
+Noname brass CHT,12,1.457,false
+Noname brass CHT,14,1.456,false
+Noname brass CHT,16,1.448,false
+Noname brass CHT,18,1.447,false
+Noname brass CHT,20,1.445,false
+Noname brass CHT,22,1.434,false
+Noname brass CHT,24,1.426,false
+Noname brass CHT,24,1.426,true
+Noname brass CHT,26,1.418,true
+Noname brass CHT,28,1.398,true
+Noname brass CHT,30,1.376,true
+Noname HS CHT,5,1.499,false
+Noname HS CHT,10,1.48,false
+Noname HS CHT,12,1.471,false
+Noname HS CHT,14,1.464,false
+Noname HS CHT,16,1.453,false
+Noname HS CHT,18,1.444,false
+Noname HS CHT,20,1.438,false
+Noname HS CHT,22,1.422,false
+Noname HS CHT,24,1.413,false
+Noname HS CHT,26,1.407,false
+Noname HS CHT,26,1.407,true
+Noname HS CHT,28,1.389,true
+Noname HS CHT,30,1.333,true
+Trianglelab ZSTC,5,1.495,false
+Trianglelab ZSTC,10,1.489,false
+Trianglelab ZSTC,12,1.484,false
+Trianglelab ZSTC,14,1.476,false
+Trianglelab ZSTC,16,1.469,false
+Trianglelab ZSTC,18,1.47,false
+Trianglelab ZSTC,20,1.461,false
+Trianglelab ZSTC,22,1.451,false
+Trianglelab ZSTC,24,1.448,false
+Trianglelab ZSTC,26,1.447,false
+Trianglelab ZSTC,26,1.447,true
+Trianglelab ZSTC,28,1.432,true
+Trianglelab ZSTC,30,1.388,true
+Oston carbide (before AP),5,1.447,false
+Oston carbide (before AP),6,1.441,false
+Oston carbide (before AP),7,1.437,false
+Oston carbide (before AP),7,1.437,true
+Oston carbide (before AP),8,1.419,true
+Oston carbide (before AP),9,1.383,true
+Oston carbide (after AP),5,1.468,false
+Oston carbide (after AP),10,1.45,false
+Oston carbide (after AP),12,1.44,false
+Oston carbide (after AP),14,1.432,false
+Oston carbide (after AP),16,1.426,false
+Oston carbide (after AP),18,1.419,false
+Oston carbide (after AP),20,1.406,false
+Oston carbide (after AP),20,1.406,true
+Oston carbide (after AP),22,1.346,true
+Trianglelab ZSD,5,1.48,false
+Trianglelab ZSD,10,1.47,false
+Trianglelab ZSD,12,1.468,false
+Trianglelab ZSD,14,1.454,false
+Trianglelab ZSD,16,1.441,false
+Trianglelab ZSD,18,1.435,false
+Trianglelab ZSD,20,1.433,false
+Trianglelab ZSD,22,1.427,false
+Trianglelab ZSD,24,1.424,false
+Trianglelab ZSD,24,1.424,true
+Trianglelab ZSD,26,1.407,true
+Trianglelab ZSD,28,1.336,true
