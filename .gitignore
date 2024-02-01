@@ -6,3 +6,4 @@ docs/.obsidian/workspace
 *.ods#
 .cache/*
 .DS_Store
+*~lock.*#
