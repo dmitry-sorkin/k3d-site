@@ -49,7 +49,7 @@ description: Volcano 0.4mm
   "width": "container",
   "height": 700,
   "data": {
-    "url": "http://k3d.tech/articles/data/nozzle_test_2024_petg.csv"
+    "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_petg.csv"
   },
   "layer": [
     {
@@ -162,7 +162,7 @@ description: Volcano 0.4mm
   "width": "container",
   "height": 700,
   "data": {
-    "url": "http://k3d.tech/articles/data/nozzle_test_2024_petg_relative.csv"
+    "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_petg_relative.csv"
   },
   "layer": [
     {
@@ -274,7 +274,7 @@ description: Volcano 0.4mm
   "width": "container",
   "height": 700,
   "data": {
-    "url": "http://k3d.tech/articles/data/nozzle_test_2024_pla.csv"
+    "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_pla.csv"
   },
   "layer": [
     {
@@ -388,7 +388,7 @@ description: Volcano 0.4mm
   "width": "container",
   "height": 700,
   "data": {
-    "url": "http://k3d.tech/articles/data/nozzle_test_2024_pla_relative.csv"
+    "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_pla_relative.csv"
   },
   "layer": [
     {
