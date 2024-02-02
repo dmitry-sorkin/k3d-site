@@ -26,6 +26,7 @@ theme:
     - content.tabs.link
     - search.suggest
     - search.highlight
+    - content.tooltips
   custom_dir: overrides
 plugins:
   - glightbox

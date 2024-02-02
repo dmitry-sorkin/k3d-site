@@ -1,0 +1,102 @@
+Nozzle,volumetric_flow,sample_weight,skipping
+Trianglelab brass,5,1.455,false
+Trianglelab brass,10,1.443,false
+Trianglelab brass,12,1.44,false
+Trianglelab brass,14,1.438,false
+Trianglelab brass,16,1.435,false
+Trianglelab brass,18,1.426,false
+Trianglelab brass,20,1.418,false
+Trianglelab brass,22,1.411,false
+Trianglelab brass,24,1.391,false
+Trianglelab brass,24,1.391,true
+Trianglelab brass,26,1.312,true
+Trianglelab HS,5,1.435,false
+Trianglelab HS,10,1.426,false
+Trianglelab HS,12,1.425,false
+Trianglelab HS,14,1.415,false
+Trianglelab HS,16,1.418,false
+Trianglelab HS,18,1.409,false
+Trianglelab HS,20,1.407,false
+Trianglelab HS,22,1.397,false
+Trianglelab HS,24,1.382,false
+Trianglelab HS,24,1.382,true
+Trianglelab HS,26,1.359,true
+Trianglelab HS,28,1.272,true
+Mellow Bimetal HC,5,1.447,false
+Mellow Bimetal HC,10,1.436,false
+Mellow Bimetal HC,12,1.431,false
+Mellow Bimetal HC,14,1.422,false
+Mellow Bimetal HC,16,1.419,false
+Mellow Bimetal HC,18,1.414,false
+Mellow Bimetal HC,20,1.409,false
+Mellow Bimetal HC,20,1.409,true
+Mellow Bimetal HC,22,1.327,true
+Mellow Bimetal HC,24,1.218,true
+Trianglelab ZS,5,1.475,false
+Trianglelab ZS,10,1.468,false
+Trianglelab ZS,12,1.463,false
+Trianglelab ZS,14,1.465,false
+Trianglelab ZS,16,1.462,false
+Trianglelab ZS,18,1.457,false
+Trianglelab ZS,20,1.449,false
+Trianglelab ZS,22,1.444,false
+Trianglelab ZS,24,1.428,false
+Trianglelab ZS,24,1.428,true
+Trianglelab ZS,26,1.339,true
+Trianglelab ZS,28,1.233,true
+Noname brass CHT,5,1.463,false
+Noname brass CHT,10,1.455,false
+Noname brass CHT,12,1.442,false
+Noname brass CHT,14,1.442,false
+Noname brass CHT,16,1.435,false
+Noname brass CHT,18,1.43,false
+Noname brass CHT,20,1.426,false
+Noname brass CHT,22,1.422,false
+Noname brass CHT,24,1.408,false
+Noname brass CHT,26,1.399,false
+Noname brass CHT,28,1.388,false
+Noname brass CHT,30,1.385,false
+Noname HS CHT,5,1.444,false
+Noname HS CHT,10,1.438,false
+Noname HS CHT,12,1.441,false
+Noname HS CHT,14,1.436,false
+Noname HS CHT,16,1.43,false
+Noname HS CHT,18,1.427,false
+Noname HS CHT,20,1.427,false
+Noname HS CHT,22,1.417,false
+Noname HS CHT,24,1.41,false
+Noname HS CHT,26,1.404,false
+Noname HS CHT,28,1.393,false
+Noname HS CHT,28,1.393,true
+Noname HS CHT,30,1.356,true
+Trianglelab ZSTC,5,1.45,false
+Trianglelab ZSTC,10,1.442,false
+Trianglelab ZSTC,12,1.442,false
+Trianglelab ZSTC,14,1.44,false
+Trianglelab ZSTC,16,1.436,false
+Trianglelab ZSTC,18,1.434,false
+Trianglelab ZSTC,20,1.425,false
+Trianglelab ZSTC,22,1.417,false
+Trianglelab ZSTC,24,1.409,false
+Trianglelab ZSTC,24,1.409,true
+Trianglelab ZSTC,26,1.389,true
+Trianglelab ZSTC,28,1.291,true
+Oston carbide (clean),5,1.436,false
+Oston carbide (clean),10,1.419,false
+Oston carbide (clean),12,1.415,false
+Oston carbide (clean),14,1.41,false
+Oston carbide (clean),16,1.404,false
+Oston carbide (clean),16,1.404,true
+Oston carbide (clean),18,1.392,true
+Oston carbide (clean),20,1.381,true
+Trianglelab ZSD,5,1.441,false
+Trianglelab ZSD,10,1.432,false
+Trianglelab ZSD,12,1.428,false
+Trianglelab ZSD,14,1.426,false
+Trianglelab ZSD,16,1.423,false
+Trianglelab ZSD,18,1.417,false
+Trianglelab ZSD,20,1.414,false
+Trianglelab ZSD,22,1.402,false
+Trianglelab ZSD,22,1.402,true
+Trianglelab ZSD,24,1.38,true
+Trianglelab ZSD,26,1.299,true

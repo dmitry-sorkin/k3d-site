@@ -94,21 +94,21 @@ Trianglelab ZSTC,26,1.447,false
 Trianglelab ZSTC,26,1.447,true
 Trianglelab ZSTC,28,1.432,true
 Trianglelab ZSTC,30,1.388,true
-Oston carbide (before AP),5,1.447,false
-Oston carbide (before AP),6,1.441,false
-Oston carbide (before AP),7,1.437,false
-Oston carbide (before AP),7,1.437,true
-Oston carbide (before AP),8,1.419,true
-Oston carbide (before AP),9,1.383,true
-Oston carbide (after AP),5,1.468,false
-Oston carbide (after AP),10,1.45,false
-Oston carbide (after AP),12,1.44,false
-Oston carbide (after AP),14,1.432,false
-Oston carbide (after AP),16,1.426,false
-Oston carbide (after AP),18,1.419,false
-Oston carbide (after AP),20,1.406,false
-Oston carbide (after AP),20,1.406,true
-Oston carbide (after AP),22,1.346,true
+Oston carbide (used),5,1.447,false
+Oston carbide (used),6,1.441,false
+Oston carbide (used),7,1.437,false
+Oston carbide (used),7,1.437,true
+Oston carbide (used),8,1.419,true
+Oston carbide (used),9,1.383,true
+Oston carbide (clean),5,1.468,false
+Oston carbide (clean),10,1.45,false
+Oston carbide (clean),12,1.44,false
+Oston carbide (clean),14,1.432,false
+Oston carbide (clean),16,1.426,false
+Oston carbide (clean),18,1.419,false
+Oston carbide (clean),20,1.406,false
+Oston carbide (clean),20,1.406,true
+Oston carbide (clean),22,1.346,true
 Trianglelab ZSD,5,1.48,false
 Trianglelab ZSD,10,1.47,false
 Trianglelab ZSD,12,1.468,false
