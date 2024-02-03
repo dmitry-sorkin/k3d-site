@@ -15,7 +15,7 @@ description: Volcano 0.4mm
 | Никелированная медь, вставка из закалённой стали | Bimetal HC | Volcano | 0.4мм | Mellow | 2 экземпляра. Новые |
 | Никелированная медь, вставка из закалённой стали | ZS | Volcano | 0.4мм | Trianglelab | Б\У износ незначителен. Прочищено перед тестом |
 | Закалённая сталь с CHT медной вставкой | - | Volcano | 0.4мм | ? | Новое |
-| Латунное с CHT медной вставкой |  | Volcano | 0.4мм | ? | Новое |
+| Латунное с CHT медной вставкой | - | Volcano | 0.4мм | ? | Новое |
 | Никелированная медь, вставка из карбида вольфрама | ZSTC | Volcano | 0.4мм | Trianglelab | Новое |
 | Карбид вольфрама[^1] | - | Volcano | 0.4мм | Oston Carbide | Б\У износ незначителен. Протестирован и без прочистки, и после прочистки |
 | Никелированная медь, вставка из поликристаллического алмаза | ZSD | Volcano | 0.4мм | Trianglelab | Новое |
@@ -47,7 +47,7 @@ description: Volcano 0.4mm
   },
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
-  "height": 700,
+  "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_petg.csv"
   },
@@ -85,31 +85,23 @@ description: Volcano 0.4mm
           "field": "Nozzle",
           "type": "nominal",
           "legend": {
-            "orient": "right",
+            "orient": "top",
             "titleFontSize": 14,
             "labelFontSize": 14,
-            "rowPadding": 5
+            "rowPadding": 5,
+            "padding": 3,
+            "columns": {"expr": "floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
-        "strokeDash": {
-          "field": "skipping",
-          "type": "nominal",
-          "legend": {
-            "orient": "right",
-            "titleFontSize": 14,
-            "labelFontSize": 14,
-            "rowPadding": 5
-          }
-        }
+        "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
         {
           "name": "nozzle",
           "select": {"type": "point", "fields": ["Nozzle"]},
           "bind": "legend"
-        },
-        {"name": "grid", "select": "interval", "bind": "scales"}
+        }
       ]
     },
     {
@@ -118,7 +110,8 @@ description: Volcano 0.4mm
         "dx": 5,
         "dy": -10,
         "fontSize": 16,
-        "align": "left"
+        "align": "left",
+        "clip": true
       },
       "encoding": {
         "x": {
@@ -132,7 +125,10 @@ description: Volcano 0.4mm
           "scale": {"domainMin": 1.35, "domainMax": 1.5}
         },
         "text": {"field": "sample_weight"},
-        "opacity": {"condition": {"param": "nozzle", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {"param": "nozzle", "empty": false, "value": 1},
+          "value": 0
+        },
         "color": {"field": "Nozzle"}
       }
     }
@@ -140,7 +136,7 @@ description: Volcano 0.4mm
 }
 ```
 
-Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде<br>Масштаб - колёсико мыши в области диаграммы<br>Перемещение - зажать ЛКМ в области диаграммы<br>Сброс масштаба и перемещения - двойной клик ЛКМ в области диаграммы" }
+Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде" }
 
 Примечания:
 
@@ -160,7 +156,7 @@ description: Volcano 0.4mm
   },
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
-  "height": 700,
+  "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_petg_relative.csv"
   },
@@ -189,7 +185,7 @@ description: Volcano 0.4mm
           "type": "quantitative",
           "scale": {"domainMin": 90, "domainMax": 100},
           "axis": {
-            "title": "Avg. sample weight [%]",
+            "title": "Avg. sample weight [g]",
             "titleFontSize": 16,
             "labelFontSize": 14
           }
@@ -198,31 +194,23 @@ description: Volcano 0.4mm
           "field": "Nozzle",
           "type": "nominal",
           "legend": {
-            "orient": "right",
+            "orient": "top",
             "titleFontSize": 14,
             "labelFontSize": 14,
-            "rowPadding": 5
+            "rowPadding": 5,
+            "padding": 3,
+            "columns": {"expr": "floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
-        "strokeDash": {
-          "field": "skipping",
-          "type": "nominal",
-          "legend": {
-            "orient": "right",
-            "titleFontSize": 14,
-            "labelFontSize": 14,
-            "rowPadding": 5
-          }
-        }
+        "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
         {
           "name": "nozzle",
           "select": {"type": "point", "fields": ["Nozzle"]},
           "bind": "legend"
-        },
-        {"name": "grid", "select": "interval", "bind": "scales"}
+        }
       ]
     },
     {
@@ -231,7 +219,8 @@ description: Volcano 0.4mm
         "dx": 5,
         "dy": -10,
         "fontSize": 16,
-        "align": "left"
+        "align": "left",
+        "clip": true
       },
       "encoding": {
         "x": {
@@ -241,11 +230,13 @@ description: Volcano 0.4mm
         },
         "y": {
           "field": "sample_weight",
-          "type": "quantitative",
-          "scale": {"domainMin": 90, "domainMax": 100}
+          "type": "quantitative"
         },
         "text": {"field": "sample_weight"},
-        "opacity": {"condition": {"param": "nozzle", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {"param": "nozzle", "empty": false, "value": 1},
+          "value": 0
+        },
         "color": {"field": "Nozzle"}
       }
     }
@@ -253,7 +244,7 @@ description: Volcano 0.4mm
 }
 ```
 
-Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде<br>Масштаб - колёсико мыши в области диаграммы<br>Перемещение - зажать ЛКМ в области диаграммы<br>Сброс масштаба и перемещения - двойной клик ЛКМ в области диаграммы" }
+Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде" }
 
 Данная диаграмма построена на основе диаграммы в абсолютных значениях, за исключением того, что тут первые значения в каждом ряду приравнены к 100%, а последующие высчитываются от них. Это приводит к потере значимой части информации, то есть использовать эту диаграмму в качестве основной или единственной некорректно. Тем не менее, она предоставляет возможность хотя бы очень приблизительно сравнить результаты с другими тестами, где данные приведены только в относительных значениях.
 
@@ -272,7 +263,7 @@ description: Volcano 0.4mm
   },
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
-  "height": 700,
+  "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_pla.csv"
   },
@@ -301,7 +292,7 @@ description: Volcano 0.4mm
           "type": "quantitative",
           "scale": {"domainMin": 1.35, "domainMax": 1.5},
           "axis": {
-            "title": "Avg. sample weight [%]",
+            "title": "Avg. sample weight [g]",
             "titleFontSize": 16,
             "labelFontSize": 14
           }
@@ -310,31 +301,23 @@ description: Volcano 0.4mm
           "field": "Nozzle",
           "type": "nominal",
           "legend": {
-            "orient": "right",
+            "orient": "top",
             "titleFontSize": 14,
             "labelFontSize": 14,
-            "rowPadding": 5
+            "rowPadding": 5,
+            "padding": 3,
+            "columns": {"expr": "floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
-        "strokeDash": {
-          "field": "skipping",
-          "type": "nominal",
-          "legend": {
-            "orient": "right",
-            "titleFontSize": 14,
-            "labelFontSize": 14,
-            "rowPadding": 5
-          }
-        }
+        "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
         {
           "name": "nozzle",
           "select": {"type": "point", "fields": ["Nozzle"]},
           "bind": "legend"
-        },
-        {"name": "grid", "select": "interval", "bind": "scales"}
+        }
       ]
     },
     {
@@ -343,7 +326,8 @@ description: Volcano 0.4mm
         "dx": 5,
         "dy": -10,
         "fontSize": 16,
-        "align": "left"
+        "align": "left",
+        "clip": true
       },
       "encoding": {
         "x": {
@@ -353,11 +337,13 @@ description: Volcano 0.4mm
         },
         "y": {
           "field": "sample_weight",
-          "type": "quantitative",
-          "scale": {"domainMin": 1.35, "domainMax": 1.5}
+          "type": "quantitative"
         },
         "text": {"field": "sample_weight"},
-        "opacity": {"condition": {"param": "nozzle", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {"param": "nozzle", "empty": false, "value": 1},
+          "value": 0
+        },
         "color": {"field": "Nozzle"}
       }
     }
@@ -365,10 +351,11 @@ description: Volcano 0.4mm
 }
 ```
 
-Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде<br>Масштаб - колёсико мыши в области диаграммы<br>Перемещение - зажать ЛКМ в области диаграммы<br>Сброс масштаба и перемещения - двойной клик ЛКМ в области диаграммы" }
+Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде" }
 
 Примечания: 
 
+- Тот факт, что масса образцов при тесте PLA в среднем заметно меньше массы образцов при тесте PETG обусловлен разницей в плотности этих филаментов;
 - Из двух сопел Mellow Bimetal HC было протестировано только одно, в диаграммах для PETG филамента обозначенное под цифрой 1;
 - Сопло от Oston Carbide тестировалось после всех тестов на PETG, поэтому оно не могло быть протестировано в варианте "до чистки";
 - Все сопла, кроме Trianglelab ZS тестировались на филаменте PLA от H-T-P. К сожалению, он закончился прямо перед последним тестом, и Trianglelab ZS пришлось тестировать на PLA от FDPlast. Поэтому заметно отличающиеся результаты на этом сопле могут быть объяснены просто другим филаментом.
@@ -386,7 +373,7 @@ description: Volcano 0.4mm
   },
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
-  "height": 700,
+  "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_pla_relative.csv"
   },
@@ -415,7 +402,7 @@ description: Volcano 0.4mm
           "type": "quantitative",
           "scale": {"domainMin": 90, "domainMax": 100},
           "axis": {
-            "title": "Avg. sample weight [%]",
+            "title": "Avg. sample weight [g]",
             "titleFontSize": 16,
             "labelFontSize": 14
           }
@@ -424,31 +411,23 @@ description: Volcano 0.4mm
           "field": "Nozzle",
           "type": "nominal",
           "legend": {
-            "orient": "right",
+            "orient": "top",
             "titleFontSize": 14,
             "labelFontSize": 14,
-            "rowPadding": 5
+            "rowPadding": 5,
+            "padding": 3,
+            "columns": {"expr": "floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
-        "strokeDash": {
-          "field": "skipping",
-          "type": "nominal",
-          "legend": {
-            "orient": "right",
-            "titleFontSize": 14,
-            "labelFontSize": 14,
-            "rowPadding": 5
-          }
-        }
+        "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
         {
           "name": "nozzle",
           "select": {"type": "point", "fields": ["Nozzle"]},
           "bind": "legend"
-        },
-        {"name": "grid", "select": "interval", "bind": "scales"}
+        }
       ]
     },
     {
@@ -457,7 +436,8 @@ description: Volcano 0.4mm
         "dx": 5,
         "dy": -10,
         "fontSize": 16,
-        "align": "left"
+        "align": "left",
+        "clip": true
       },
       "encoding": {
         "x": {
@@ -467,11 +447,13 @@ description: Volcano 0.4mm
         },
         "y": {
           "field": "sample_weight",
-          "type": "quantitative",
-          "scale": {"domainMin": 90, "domainMax": 100}
+          "type": "quantitative"
         },
         "text": {"field": "sample_weight"},
-        "opacity": {"condition": {"param": "nozzle", "empty": false, "value": 1}, "value": 0},
+        "opacity": {
+          "condition": {"param": "nozzle", "empty": false, "value": 1},
+          "value": 0
+        },
         "color": {"field": "Nozzle"}
       }
     }
@@ -479,7 +461,7 @@ description: Volcano 0.4mm
 }
 ```
 
-Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде<br>Масштаб - колёсико мыши в области диаграммы<br>Перемещение - зажать ЛКМ в области диаграммы<br>Сброс масштаба и перемещения - двойной клик ЛКМ в области диаграммы" }
+Управление диаграммой: :material-information-outline:{ title="Выделить график - ЛКМ по названию в легенде<br>Выделить несколько графиков - Shift + ЛКМ<br>Сбросить выделение - ЛКМ по свободному месту в легенде" }
 
 Данная диаграмма построена на основе диаграммы в абсолютных значениях, за исключением того, что тут первые значения в каждом ряду приравнены к 100%, а последующие высчитываются от них. Это приводит к потере значимой части информации, то есть использовать эту диаграмму в качестве основной или единственной некорректно. Тем не менее, она предоставляет возможность хотя бы очень приблизительно сравнить результаты с другими тестами, где данные приведены только в относительных значениях.
 
@@ -497,8 +479,8 @@ description: Volcano 0.4mm
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "K3D Nozzle retraction test",
-    "subtitle": "PETG; 245ºC; K3D Minifeeder; Titanium heatbreak; 30mm/s",
+    "text": "K3D Nozzle pressure advance test",
+    "subtitle": "PETG; 245ºC; K3D Minifeeder; Titanium heatbreak",
     "fontSize": 20,
     "subtitleFontSize": 16
   },
