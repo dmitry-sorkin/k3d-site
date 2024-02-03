@@ -47,7 +47,8 @@ description: Volcano 0.4mm
   },
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
-  "height": 500,
+  "height": 600,
+  "autosize": "pad",
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_petg.csv"
   },
@@ -90,7 +91,7 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155)"}
+            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
@@ -157,6 +158,7 @@ description: Volcano 0.4mm
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
   "height": 600,
+  "autosize": "pad",
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_petg_relative.csv"
   },
@@ -199,7 +201,7 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155)"}
+            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
@@ -264,6 +266,7 @@ description: Volcano 0.4mm
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
   "height": 600,
+  "autosize": "pad",
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_pla.csv"
   },
@@ -306,7 +309,7 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155)"}
+            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
@@ -374,6 +377,7 @@ description: Volcano 0.4mm
   "description": "Volcano 0.4mm nozzle test - PETG 245ºC",
   "width": "container",
   "height": 600,
+  "autosize": "pad",
   "data": {
     "url": "https://raw.githubusercontent.com/dmitry-sorkin/k3d-site/main/docs/articles/data/nozzle_test_2024_pla_relative.csv"
   },
@@ -416,7 +420,7 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155)"}
+            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
           }
         },
         "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
