@@ -91,10 +91,13 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
-          }
+            "columns": {
+              "expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"
+            }
+          },
+          "scale": {"domain": ["Trianglelab brass","Trianglelab HS","Mellow Bimetal HC 1", "Mellow Bimetal HC 2","Trianglelab ZS","Noname brass CHT","Noname HS CHT","Trianglelab ZSTC","Oston carbide (used)","Oston carbide (clean)","Trianglelab ZSD"], "range": ["#1F78B5","#AEC7E8","#FF7F0D","#FFBB78","#2CA02C","#98DF8A","#D62729","#ff9896","#9467bd","#ce6dbd", "#bcbd22"]}
         },
-        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
+        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.2},
         "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
@@ -201,10 +204,40 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
+            "columns": {
+              "expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"
+            }
+          },
+          "scale": {
+            "domain": [
+              "Trianglelab brass",
+              "Trianglelab HS",
+              "Mellow Bimetal HC 1",
+              "Mellow Bimetal HC 2",
+              "Trianglelab ZS",
+              "Noname brass CHT",
+              "Noname HS CHT",
+              "Trianglelab ZSTC",
+              "Oston carbide (used)",
+              "Oston carbide (clean)",
+              "Trianglelab ZSD"
+            ],
+            "range": [
+              "#1F78B5",
+              "#AEC7E8",
+              "#FF7F0D",
+              "#FFBB78",
+              "#2CA02C",
+              "#98DF8A",
+              "#D62729",
+              "#ff9896",
+              "#9467bd",
+              "#ce6dbd",
+              "#bcbd22"
+            ]
           }
         },
-        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
+        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.2},
         "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
@@ -230,10 +263,7 @@ description: Volcano 0.4mm
           "type": "quantitative",
           "scale": {"domainMin": 5, "domainMax": 30}
         },
-        "y": {
-          "field": "sample_weight",
-          "type": "quantitative"
-        },
+        "y": {"field": "sample_weight", "type": "quantitative"},
         "text": {"field": "sample_weight"},
         "opacity": {
           "condition": {"param": "nozzle", "empty": false, "value": 1},
@@ -309,10 +339,36 @@ description: Volcano 0.4mm
             "labelFontSize": 14,
             "rowPadding": 5,
             "padding": 3,
-            "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
+            "columns": {
+              "expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"
+            }
+          },
+          "scale": {
+            "domain": [
+              "Trianglelab brass",
+              "Trianglelab HS",
+              "Mellow Bimetal HC",
+              "Trianglelab ZS",
+              "Noname brass CHT",
+              "Noname HS CHT",
+              "Trianglelab ZSTC",
+              "Oston carbide (clean)",
+              "Trianglelab ZSD"
+            ],
+            "range": [
+              "#1F78B5",
+              "#AEC7E8",
+              "#FF7F0D",
+              "#2CA02C",
+              "#98DF8A",
+              "#D62729",
+              "#ff9896",
+              "#ce6dbd",
+              "#bcbd22"
+            ]
           }
         },
-        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
+        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.2},
         "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [
@@ -338,10 +394,7 @@ description: Volcano 0.4mm
           "type": "quantitative",
           "scale": {"domainMin": 5, "domainMax": 30}
         },
-        "y": {
-          "field": "sample_weight",
-          "type": "quantitative"
-        },
+        "y": {"field": "sample_weight", "type": "quantitative"},
         "text": {"field": "sample_weight"},
         "opacity": {
           "condition": {"param": "nozzle", "empty": false, "value": 1},
@@ -421,9 +474,33 @@ description: Volcano 0.4mm
             "rowPadding": 5,
             "padding": 3,
             "columns": {"expr": "floor(width / 155) == 0 ? 1 : floor(width / 155)"}
+          },
+          "scale": {
+            "domain": [
+              "Trianglelab brass",
+              "Trianglelab HS",
+              "Mellow Bimetal HC",
+              "Trianglelab ZS",
+              "Noname brass CHT",
+              "Noname HS CHT",
+              "Trianglelab ZSTC",
+              "Oston carbide (clean)",
+              "Trianglelab ZSD"
+            ],
+            "range": [
+              "#1F78B5",
+              "#AEC7E8",
+              "#FF7F0D",
+              "#2CA02C",
+              "#98DF8A",
+              "#D62729",
+              "#ff9896",
+              "#ce6dbd",
+              "#bcbd22"
+            ]
           }
         },
-        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.1},
+        "opacity": {"condition": {"param": "nozzle", "value": 1}, "value": 0.2},
         "strokeDash": {"field": "skipping", "type": "nominal", "legend": null}
       },
       "params": [

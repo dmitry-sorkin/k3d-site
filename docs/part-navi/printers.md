@@ -58,7 +58,7 @@ description: Какой принтер купить, а какой не стои
         <th colspan=2 style="text-align: center;"><b>Альтернативные варианты</b></th>
         <tr>
             <td class="altprinterimgtd"><img class="altprinterimg" src="../pics/e3s1.png"></img></td>
-            <td><p><b><a target="_blank" href="https://alli.pub/6vorzi?erid=2SDnje5K8kQ">Ender-3 S1</a></b>. Очень похож на Neptune 3 Pro и по механике, и по экструдеру, и по электронике. Основные отличия: стол имеет регулировку; датчик автоуровня не индуктивный, а CRTouch; стоковая прошивка фуфло, надо сразу перепрошивать. В общем, возможности те же 1в1, усилий для приведения в хорошее рабочее состояние столько же, а стоит немного дороже. Брать если со скидкой будет дешевле нептуна или если нептуна не будет в наличии.</p></td>
+            <td><p><b>Ender-3 S1</b>. Очень похож на Neptune 3 Pro и по механике, и по экструдеру, и по электронике. Основные отличия: стол имеет регулировку; датчик автоуровня не индуктивный, а CRTouch; стоковая прошивка фуфло, надо сразу перепрошивать. В общем, возможности те же 1в1, усилий для приведения в хорошее рабочее состояние столько же, а стоит немного дороже. Брать если со скидкой будет дешевле нептуна или если нептуна не будет в наличии. В данный момент принтер пропал из наличия у большинства продавцов на AliExpress. Если увидите в наличии, то можно брать.</p></td>
         </tr>
             <tr>
             <td class="altprinterimgtd"><img class="altprinterimg" src="../pics/fbg6.png"></img></td>
@@ -140,7 +140,7 @@ description: Какой принтер купить, а какой не стои
         </tr>
         <tr>
             <td>Купить:</td>
-            <td style="text-align: center;"><a target="_blank" href="https://alli.pub/6vospr?erid=2SDnjemM8qe"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3 3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5 5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"></path></svg></span> AliExpress</a></td>
+            <td style="text-align: center;"><a target="_blank" href="https://alli.pub/6w5ubf?erid=2SDnjdHg1Zi"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3 3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5 5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"></path></svg></span> AliExpress</a></td>
         </tr>
     </tbody>
 </table>
