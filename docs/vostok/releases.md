@@ -8,14 +8,37 @@ description: Скачать документацию и модели для K3D 
 
 ## Самый свежий релиз
 
-- [:material-file-document: Спецификация ](./releases/087b/v0.8.7b_bom.ods){ download="v0.8.7b_bom.ods" } - открывать в LibreOffice!
-- [:material-drawing-box: Генератор зашивки](./releases/087b/v0.8.7b_dxf_generator.html){ download="v0.8.7b_dxf_generator.html" }
-- [:material-video-3d: Сборка в формате .step](./releases/087b/v0.8.7b_k3d_vostok.stp.zip){ download="v0.8.7b_k3d_vostok.stp.zip" }
-- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip){ download="v0.8.7b_z_axis_4guides_2drives.stp.zip" }
-- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip){ download="v0.8.7b_z_axis_4guides_4drives.stp.zip" }
-- [:material-video-3d: Сборка в формате .x_t](./releases/087b/v0.8.7b_k3d_vostok.x_t.zip){ download="v0.8.7b_k3d_vostok.x_t.zip" }
-- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/087b/v0.8.7b_stl_full.zip){ download="v0.8.7b_stl_full.zip" }
-- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/087b/v0.8.7b_stl_changed.zip){ download="v0.8.7b_stl_changed.zip" }
+- [:material-file-document: Спецификация ](./releases/088/v0.8.8_bom.ods){ download="v0.8.8_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/088/v0.8.8_dxf_generator.html){ download="v0.8.8_dxf_generator.html" }
+- [:material-video-3d: Сборка в формате .step](./releases/088/v0.8.8_k3d_vostok.stp.7z){ download="v0.8.8_k3d_vostok.stp.7z" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip){ download="v0.8.8_z_axis_4guides_2drives.stp.zip" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip){ download="v0.8.8_z_axis_4guides_4drives.stp.zip" }
+- [:material-video-3d: Сборка в формате .x_t](./releases/088/v0.8.8_k3d_vostok.x_t.7z){ download="v0.8.8_k3d_vostok.x_t.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/088/v0.8.8_stl_full.7z){ download="v0.8.8_stl_full.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/088/v0.8.8_stl_changed.7z){ download="v0.8.8_stl_changed.7z" }
+
+## 0.8.8-beta
+
+### Что нового?
+
+- У боковых, передней и задней панелей увеличен диаметр отверстий, находящихся напротив винтов, скрепляющих нижнюю часть рамы. Это необходимо чтобы была возможность эти винты крутить не снимая панелей, что несколько облегчает регулировку нижней части рамы. Других изменений в панелях нет, поэтому, если зашивка у вас уже нарезана/заказана, то менять ничего не надо;
+- Усилены пружины на креплениях электроники;
+- Исправлен размер крепления fysetc spider;
+- Исправлен размер винтов для back door lock;
+- Исправлено неправильное количество крепежа для купола;
+- Для сборки ползунов натяжителей с жестким креплением ремня добавлены ранее недостающие винты М3х30;
+- Испревлен ряд мелких багов в спецификации.
+
+### Скачать
+
+- [:material-file-document: Спецификация ](./releases/088/v0.8.8_bom.ods){ download="v0.8.8_bom.ods" } - открывать в LibreOffice!
+- [:material-drawing-box: Генератор зашивки](./releases/088/v0.8.8_dxf_generator.html){ download="v0.8.8_dxf_generator.html" }
+- [:material-video-3d: Сборка в формате .step](./releases/088/v0.8.8_k3d_vostok.stp.7z){ download="v0.8.8_k3d_vostok.stp.7z" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 2 приводами](./releases/087b/v0.8.7b_z_axis_4guides_2drives.stp.zip){ download="v0.8.8_z_axis_4guides_2drives.stp.zip" }
+- [:material-video-3d: Сборка оси Z с 4 стойками и 4 приводами](./releases/087b/v0.8.7b_z_axis_4guides_4drives.stp.zip){ download="v0.8.8_z_axis_4guides_4drives.stp.zip" }
+- [:material-video-3d: Сборка в формате .x_t](./releases/088/v0.8.8_k3d_vostok.x_t.7z){ download="v0.8.8_k3d_vostok.x_t.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати (все детали)](./releases/088/v0.8.8_stl_full.7z){ download="v0.8.8_stl_full.7z" }
+- [:material-printer-3d-nozzle: STL файлы для печати (измененные в версии)](./releases/088/v0.8.8_stl_changed.7z){ download="v0.8.8_stl_changed.7z" }
 
 ## 0.8.7b-beta
 
