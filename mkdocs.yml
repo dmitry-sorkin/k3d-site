@@ -157,6 +157,7 @@ nav:
       - Инструкция для Ender-3: ./esp/guide_ender3.md
   - Статьи:
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
+    - Принципы прочной печати: ./articles/print_strong.md
   - YouTube: http://www.youtube.com/@SorkinDmitry/
   - Telegram: http://t.me/dsorkin
   - Чат K3D: http://t.me/K_3_D
