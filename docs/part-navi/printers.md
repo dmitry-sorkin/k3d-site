@@ -144,10 +144,10 @@ Creality K1C - это модель, которая в большей степе�
 <table class="printertable">
     <tbody>
         <tr class="upperprinterimgtr">
-        <td colspan=999 style="text-align: center;"><img class="printerimg" src="../pics/k1.png"></img></td>
+        <td colspan=999 style="text-align: center;"><img class="printerimg" src="../pics/p1s.png"></img></td>
         </tr>
         <tr>
-            <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/k1.png"></img></td>
+            <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/p1s.png"></img></td>
             <td><b>Наименование</b></td>
             <td style="text-align: center;"><b>Bambu Lab P1S</b></td>
         </tr>
