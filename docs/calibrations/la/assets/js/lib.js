@@ -57,6 +57,7 @@ function finishFile() {
 		currentWriter.ready.then(() => {
 			currentWriter.close();
 			currentWriter = null;
+			currentStream = null;
 		})
 		.catch((err)=>{
 			showError(err);

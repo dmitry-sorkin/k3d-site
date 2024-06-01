@@ -30,7 +30,7 @@ function saveTextAsFile(filename, text) {
         downloadLink.style.display = "none";
         document.body.appendChild(downloadLink);
     }
-
+	
     downloadLink.click();
 }
 
