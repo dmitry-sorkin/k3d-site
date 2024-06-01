@@ -120,12 +120,21 @@ var segmentKeys = [
 	"num_segments"
 ];
 
+var checkboxes = [
+	'k3d_la_delta',
+	'k3d_la_g29',
+	'k3d_la_firmwareMarlin',
+	'k3d_la_firmwareKlipper',
+	'k3d_la_firmwareRRF',
+];
+
+
 var saveForm = function () {
     for (var elementId of formFields) {
         var element = document.getElementById(elementId);
         if (element) {
             var saveValue = element.value;
-            if (elementId == 'k3d_la_delta' || elementId == 'k3d_la_g29') {
+            if (checkboxes.includes(elementId)) {
                 saveValue = element.checked;
             }
             localStorage.setItem(elementId, saveValue);
@@ -142,7 +151,7 @@ function loadForm() {
 
         var element = document.getElementById(elementId);
         if (element) {
-            if (elementId == 'k3d_la_delta' || elementId == 'k3d_la_g29') {
+            if (checkboxes.includes(elementId)) {
                 if (loadValue == 'true') {
                     element.checked = true;
                 } else {
