@@ -2,6 +2,7 @@
 hide:
     - navigation
 title: Доработки Kingroon KP3S
+icon: material/printer-3d
 ---
 
 # KINGROON KP3S / KP3S Pro

@@ -133,10 +133,6 @@ nav:
         - Инструкция: ./calibrations/la/index.md
         - Калибровщик LA: ./calibrations/la/calibrator.md
   - Проекты:
-    - Feeder965:
-      - Описание проекта: ./feeder965/index.md
-      - Инструкция: ./feeder965/feeder965_assembly.md
-      - Релизы: ./feeder965/releases.md
     - Minifeeder:
       - Описание проекта: ./minifeeder/index.md
       - Релизы: ./minifeeder/releases.md
@@ -155,6 +151,11 @@ nav:
       - Релизы: ./esp/releases.md
       - Инструкция для Ender-3 S1/S1 Pro/S1 Plus: ./esp/guide_s1.md
       - Инструкция для Ender-3: ./esp/guide_ender3.md
+    - Архивные проекты:
+      - Feeder965:
+        - Описание проекта: ./feeder965/index.md
+        - Инструкция: ./feeder965/feeder965_assembly.md
+        - Релизы: ./feeder965/releases.md
   - Статьи:
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Принципы прочной печати: ./articles/print_strong.md

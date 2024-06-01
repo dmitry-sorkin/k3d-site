@@ -10,7 +10,7 @@ hide:
 <script src="../assets/js/lib.js"></script>
 <script src="../assets/js/wasm_exec.js"></script>
 <script src="../assets/js/gwaloader.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/streamsaver@2.0.3/StreamSaver.min.js"></script>
+<script src="../assets/js/streamsavermin.js"></script>
 
 [:material-file-document: Инструкция](./index.md) | Язык: [:flag_gb: English](?lang=en) [:flag_ru: Русский](?lang=ru)
 

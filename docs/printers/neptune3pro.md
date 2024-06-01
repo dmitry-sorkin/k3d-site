@@ -2,6 +2,7 @@
 hide:
     - navigation
 title: Доработки Elegoo Neptune 3 Pro
+icon: material/printer-3d
 ---
 
 # Neptune 3 Pro
@@ -41,7 +42,7 @@ title: Доработки Elegoo Neptune 3 Pro
 
 Изменение длины хотэнда должно сопровождаться адаптацией системы охлаждения, иначе она будет дуть не на модель. Просто переносить штатный обдув ниже не имеет большого смысла т.к. он не очень мощный, а стоимость деталей под установку нового не велика. Также надо будет перенести датчик автоуровня ниже на 8.5мм.
 
-Варианты обдува: [:simple-printables: WindWarden](https://www.printables.com/model/626703) | [:simple-thingiverse: HeroMe](https://www.thingiverse.com/thing:3182917)
+Варианты обдува: [:simple-printables: WindWarden](https://www.printables.com/model/641666-volcano-windwarden-upgrade-elegoo-neptune-3-pro-pl) | [:simple-thingiverse: Maxi.Jet](https://www.printables.com/model/844208-maxijet-volcano-neptune-3-series-5015-duct)
 
 !!! warning "Если решили менять хотэнд на volcano, то покупать детали из раздела "Улучшение стокового хотэнда" не надо!"
 
