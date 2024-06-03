@@ -145,7 +145,7 @@ hide:
         </tr>
         <tr>
             <th class="lang" id="table.smooth_time.title">Время сглаживания LA/PA</th>
-            <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_smoothTime" name="k3d_la_smoothTime" value="0.02"></td>
+            <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_smoothTime" name="k3d_la_smoothTime" value="0.04"></td>
             <td class="lang" id="table.smooth_time.description" style="text-align:justify;">[с] В общем случае стоит оставить стандартные 0.04с. Если сталкиваетесь с дефектами от избыточного времени сглаживания (небольшие впадины до и после угла), то можно попробовать прогнать тесты с временем сглаживания 0.03 или 0.02с. Подробнее в инструкции. На Marlin и RRF этот параметр ничего не делает</td>
         </tr>
     </tbody>
