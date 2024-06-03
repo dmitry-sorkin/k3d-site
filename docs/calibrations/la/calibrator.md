@@ -1,11 +1,11 @@
 ---
 icon: octicons/package-16
-title: K3D Калибровщик Linear Advance
+title: K3D Калибровщик Linear Advance (Pressure Advance)
 hide:
     - toc
 ---
 
-<h1 class="lang" id="header.title">K3D калибровщик Linear Advance</h1>
+<h1 class="lang" id="header.title">K3D калибровщик Linear Advance (Pressure Advance)</h1>
 
 <script src="../assets/js/lib.js"></script>
 <script src="../assets/js/wasm_exec.js"></script>
@@ -121,12 +121,12 @@ hide:
             <td class="lang" id="table.slow_segment_speed.description" style="text-align: justify;">[мм/с] Скорость, с которой будут печататься медленные участки. Лучше указать низкие значения (10-30)</td>
         </tr>
         <tr>
-            <th class="lang" id="table.init_la.title">Начальное значение коэффициента LA</td>
+            <th class="lang" id="table.init_la.title">Начальное значение коэффициента LA/PA</td>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_initKFactor" name="k3d_la_initKFactor" value="0.0"></td>
             <td class="lang" id="table.init_la.description" style="text-align: justify;">С какого значения к-фактора начать калибровку. Округляется до 3 знака после разделителя</td>
         </tr>
         <tr>
-            <th class="lang" id="table.end_la.title">Конечное значение коэффициента LA</td>
+            <th class="lang" id="table.end_la.title">Конечное значение коэффициента LA/PA</td>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_endKFactor" name="k3d_la_endKFactor" value="0.2"></td>
             <td class="lang" id="table.end_la.description" style="text-align: justify;">До какого значения к-фактора проводить калибровку. Округляется до 3 знака после разделителя. Для директ
                 экструдеров обычно хватает 0.2, для боуденов 1.5</td>
@@ -134,7 +134,7 @@ hide:
         <tr>
             <th class="lang" id="table.num_segments.title">Количество сегментов</td>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_numSegments" name="k3d_la_numSegments" value="10"></td>
-            <td class="lang" id="table.num_segments.description" style="text-align: justify;">Количество сегментов башенки. В течение сегмента коэффициент LA остаётся неизменным. Сегменты визуально
+            <td class="lang" id="table.num_segments.description" style="text-align: justify;">Количество сегментов башенки. В течение сегмента коэффициент LA/PA остаётся неизменным. Сегменты визуально
                 разделены для упрощения анализа модели</td>
         </tr>
         <tr>
@@ -142,6 +142,11 @@ hide:
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_segmentHeight" name="k3d_la_segmentHeight" value="3.0"></td>
             <td class="lang" id="table.segment_height.description" style="text-align: justify;">[мм] Высота одного сегмента. К примеру, если высота сегмента 3мм, а количество сегментов 10, то
                 высота всей модели будет 30мм</td>
+        </tr>
+        <tr>
+            <th class="lang" id="table.smooth_time.title">Время сглаживания LA/PA</th>
+            <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_smoothTime" name="k3d_la_smoothTime" value="0.02"></td>
+            <td class="lang" id="table.smooth_time.description" style="text-align:justify;">[с] В общем случае стоит оставить стандартные 0.04с. Если сталкиваетесь с дефектами от избыточного времени сглаживания (небольшие впадины до и после угла), то можно попробовать прогнать тесты с временем сглаживания 0.03 или 0.02с. Подробнее в инструкции. На Marlin и RRF этот параметр ничего не делает</td>
         </tr>
     </tbody>
 </table>
@@ -158,6 +163,8 @@ M104 S150 ;прогреть хотэнд до 150 градусов
 M190 S$BEDTEMP ;прогреть стол до температуры, указанной в настройках
 M109 S$HOTTEMP ;прогреть хотэнд до температуры, указанной в настройках
 G28 ;припарковать все оси
+M109 S$HOTTEMP ;обход дебильных макросов Creality
+M190 S$BEDTEMP ;обход дебильных макросов Creality
 $G29 ;снять карту высот стола
 G90 ;абсолютная система координат
 G92 E0 ;сбросить координату экструдера
