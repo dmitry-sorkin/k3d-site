@@ -1,5 +1,6 @@
 ---
 title: Доработки Elegoo Neptune 4
+description: Подключение Wi-Fi, установка Volcano, Open Nept4une, порядок настроек принтера и калибровка Input Shaping
 icon: material/printer-3d
 ---
 
@@ -11,7 +12,7 @@ icon: material/printer-3d
 
 По механике почти идентичен Neptune 3 Pro, который очень близок к Ender-3 и подобным принтерам. Поэтому механика тихая, живучая и очень ремонтопригодная, не даёт никаких дефектов и хорошо поддаётся апгрейдам. В отличие от Neptune 3 Pro, имеет регулируемый стол.
 
-Экструдер печатает всеми материалами, включая самые эластомеры, композиты и т.д. При этом в стоке уже стоят калёные шестерни и биметаллический термобарьер. Хотэнд производительнее обычных cr-10/V6, но менее производительный, чем Volcano. Тем не менее, Volcano ставится как родной. Обдув на 2х4015 по производительности сопоставим с охлаждением Bambu Lab P1S/Creality K1.
+Экструдер печатает всеми материалами, включая самые мягкие эластомеры, композиты и т.д. При этом в стоке уже стоят калёные шестерни и биметаллический термобарьер. Хотэнд производительнее обычных cr-10/V6, но менее производительный, чем Volcano. Тем не менее, Volcano ставится как родной. Обдув на 2х4015 по производительности сопоставим с охлаждением Bambu Lab P1S/Creality K1.
 
 Электроника не кастрирована в плане SoC, ОЗУ и портов + стоит полноценный дистрибутив Linux. Установлена прошивка Klipper, которая позволяет принтеру печатать весьма быстро, всего на 5-15% медленнее топовых и на 40-60% быстрее Neptune 3 Pro и подобных. 
 
@@ -21,7 +22,7 @@ icon: material/printer-3d
 
 ## Доработки
 
-В целом, обязательных для этого принтера доработок нет т.к. у него нет косяков, которые заметно ухудшали бы характеристики или мешали бы эксплуатации принтера. Тем не менее, есть несколько вещей, которые могут улучшить опыт экспулатации принтера при небольшой стоимости. 
+В целом, обязательных для этого принтера доработок нет ввиду отсутствия у него косяков, которые заметно ухудшали бы характеристики или мешали бы эксплуатации принтера. Тем не менее, есть несколько вещей, которые могут улучшить опыт экспулатации принтера при небольшой стоимости. 
 
 ### Подключение Wi-Fi
 
@@ -31,8 +32,8 @@ icon: material/printer-3d
 
 | Тип устройства | Модель | Ссылки | Примечание |
 |:--------------:|:------:|:------:|:---------- |
-| Wi-Fi адаптер | TP-Link TL-WN725N V2 | [:material-shopping: OZON](https://www.ozon.ru/product/setevoy-adapter-wi-fi-tp-link-tl-wn725n-1256496647/){ target="_blank" } [:material-shopping: DNS](https://www.dns-shop.ru/product/bcf490a4e2818499/wi-fi-adapter-tp-link-tl-wn725n/){ target="_blank" } | 600-900р. Персонально я использую такой. Проверяйте, чтобы версия была именно 2 |
-| Wi-Fi адаптер | RTL8192 | [:material-shopping: Ali](https://alli.pub/6z8bdc?erid=2SDnjd15aAv){ target="_blank" } [:material-shopping: DNS](https://www.dns-shop.ru/product/f849646f3c6b3330/wi-fi-adapter-dexp-wfa-301/characteristics/){ target="_blank" } | 300-600р. По ифнормации из интернета, должен работать |
+| Wi-Fi адаптер | TP-Link TL-WN725N V2 | [:material-shopping: OZON](https://www.ozon.ru/product/setevoy-adapter-wi-fi-tp-link-tl-wn725n-1256496647/){ target="_blank" } <br> [:material-shopping: DNS](https://www.dns-shop.ru/product/bcf490a4e2818499/wi-fi-adapter-tp-link-tl-wn725n/){ target="_blank" } | 600-900р. Персонально я использую такой. Проверяйте, чтобы версия была именно 2 |
+| Wi-Fi адаптер | RTL8192 | [:material-shopping: Ali](https://alli.pub/6z8bdc?erid=2SDnjd15aAv){ target="_blank" } <br> [:material-shopping: DNS](https://www.dns-shop.ru/product/f849646f3c6b3330/wi-fi-adapter-dexp-wfa-301/characteristics/){ target="_blank" } | 300-600р. По информации из интернета, должен работать |
 | Маршрутизатор | ZBT WE1626 | [:material-shopping: OZON](https://www.ozon.ru/product/wi-fi-marshrutizator-zbt-we1626-3g-4g-router-300mb-s-811816100/){ target="_blank" } | 1200р; 4 порта |
 | Маршрутизатор | ноунейм | [:material-shopping: Ali](https://alli.pub/6z8d9s?erid=2SDnjeHGK5U){ target="_blank" } | ~450р; 1 порт; не знаю, будет ли конкретно этот нормально работать. Добавил в список скорее для примера, что подобные устройства существуют. Берите на свой страх и риск |
 
@@ -49,7 +50,7 @@ icon: material/printer-3d
 7. Через псевдографический интерфейс установите подключение к своей Wi-Fi сети;
 8. Отключите ethernet кабель. После этого принтер должен будет подключаться к Wi-Fi сети автоматически при перезагрузке.
 
-Найти IP адрес принтера можно найти через экран принтера -> Settings -> About Machine, через веб-интерфейс роутеа или с помощью [ZenMap](https://nmap.org/download){ target="_blank" }.
+Найти IP адрес принтера можно найти через экран принтера -> Settings -> About Machine, через веб-интерфейс роутера или с помощью [ZenMap](https://nmap.org/download){ target="_blank" }.
 
 ### Установка хотэнда Volcano
 
@@ -62,10 +63,10 @@ icon: material/printer-3d
 | Наименование | Ссылки | Примечание |
 |:------------ |:------:|:---------- |
 | Термобарьер Chimera биметалл сталь+медь | [:material-shopping: Ali](https://alli.pub/6ttg9h?erid=2SDnjeYW49n "5А"){ target="_blank" } | Выбирать smooth |
-| Хитблок E3D Volcano | [:material-shopping: Ali](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="_blank" } [:material-shopping: Ali](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="_blank" } | В большинстве случае обычный алюминиевый будет лучше всего |
-| Носок E3D Volcano | [:material-shopping: Ali](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A. Выбирать Volcano Pt100"){ target="_blank" } [:material-shopping: Ali](https://alli.pub/6ttjo6?erid=2SDnjdoa7H2 "Trianglelab"){ target="_blank" } | У 5А выбирать Volcano pt100 |
+| Хитблок E3D Volcano | [:material-shopping: Ali](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="_blank" } <br>[:material-shopping: Ali](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="_blank" } | В большинстве случае обычный алюминиевый будет лучше всего |
+| Носок E3D Volcano | [:material-shopping: Ali](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A. Выбирать Volcano Pt100"){ target="_blank" } <br> [:material-shopping: Ali](https://alli.pub/6ttjo6?erid=2SDnjdoa7H2 "Trianglelab"){ target="_blank" } | У 5А выбирать Volcano pt100 |
 | Сопло Volcano стальное калёное с CHT вставкой | [:material-shopping: Ali](https://alli.pub/6wggu6?erid=2SDnjcbmkEc){ target="_blank" } | Универсальный тип сопел, хорошо подходящий как для обычных материалов, так и для композитов. В общем случае одного 0.4 хватит для всех задач, но по желанию можете приобрести сопла других типов и диаметров |
-| PTFE трубка 2x4 мм | [:material-shopping: Ali](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A. Не брать FEP для использования внутри хотэнда!") [:material-shopping: Ali](https://alli.pub/6w5vlp?erid=2SDnjf3zATJ "Trianglelab"){ target="_blank" } [:material-shopping: Ali](https://alli.pub/6tuprv?erid=2SDnjc4ea3J "Mellow"){ target="_blank" } | Ставится между фидером и горлом. Одного метра хватит с большим запасом |
+| PTFE трубка 2x4 мм | [:material-shopping: Ali](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A. Не брать FEP для использования внутри хотэнда!"){ target="_blank" } <br> [:material-shopping: Ali](https://alli.pub/6w5vlp?erid=2SDnjf3zATJ "Trianglelab"){ target="_blank" } <br> [:material-shopping: Ali](https://alli.pub/6tuprv?erid=2SDnjc4ea3J "Mellow"){ target="_blank" } | Ставится между фидером и горлом. Одного метра хватит с большим запасом |
 
 Термистор и нагревательный элемент просто переносятся в новый хитблок, после чего хотэнд собирается как обычно. При установке хотэнда в радиатор надо будет отмерить и отрезать кусок трубки так, чтобы она стояла в распор между фидером и соплом. 
 
@@ -138,7 +139,7 @@ icon: material/printer-3d
       1. 
         
         ```
-        SET_INPUT_SHAPER SHAPER_TYPE_X=mzv SHAPER_TYPE_Y=2hump_ei SHAPER_FREQ_Y=_частота_подобранная_ранее_
+        SET_INPUT_SHAPER SHAPER_TYPE_X=mzv SHAPER_TYPE_Y=2hump_ei SHAPER_FREQ_Y=частота_подобранная_ранее
         
         ```
         
@@ -165,7 +166,7 @@ icon: material/printer-3d
 
 11. Если не хотите, чтобы принтер шумел при печати коротких зигзагов, укажите в printer.cfg `minimum_cruise_ratio: 0.5`. 
 
-!!! note "Если у вас не получается откалибровать IS этим методом, например, эхо не уходит ни на каких частотах, то, возможно, вы не до конца правильно отрегулировали механику, что-то люфтит. Если вы уверены, что с механикой всё впорядке, то можете задать вопрос касательно этой калибровки в t.me/K_3_D с тегом @dmitry_sorkin"
+!!! note "Если у вас не получается откалибровать IS этим методом, например, эхо не уходит ни на каких частотах, то, возможно, вы не до конца правильно отрегулировали механику, что-то люфтит. Если вы уверены, что с механикой всё в порядке, то можете задать вопрос касательно этой калибровки в t.me/K_3_D с тегом @dmitry_sorkin"
 
 `Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`[^1]
 
