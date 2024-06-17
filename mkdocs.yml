@@ -159,6 +159,10 @@ nav:
   - Статьи:
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Принципы прочной печати: ./articles/print_strong.md
+    - Доработки принтеров:
+      - Creality K1: ./printers/k1.md
+      - Kingroon KP3S: ./printers/kp3s.md
+      - Elegoo Neptune 3 Pro: ./printers/neptune3pro.md
   - YouTube: http://www.youtube.com/@SorkinDmitry/
   - Telegram: http://t.me/dsorkin
   - Чат K3D: http://t.me/K_3_D

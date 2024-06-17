@@ -1,11 +1,9 @@
 ---
-hide:
-    - navigation
 title: Доработки Elegoo Neptune 3 Pro
 icon: material/printer-3d
 ---
 
-# Neptune 3 Pro
+# Elegoo Neptune 3 Pro
 
 ## Обзор
 
