@@ -18,7 +18,9 @@ icon: material/printer-3d
 
 Единственные 2 минуса - в стоке нет Wi-Fi и акселерометров. Wi-Fi легко добавляется покупкой и установкой свистка из списка работающих без установки драйверов. Акселерометр можно купить какой угодно от самых дешевых SPI, до более дорогих USB, или не покупать вовсе и делать калибровку вручную.
 
-Подробнее в [:material-youtube: видео версии обзора](https://youtu.be/HnLohH1MFz0?si=zF5VPuc0XpkL8oRZ).
+Подробнее в [:material-youtube: видео версии обзора](https://youtu.be/HnLohH1MFz0?si=zF5VPuc0XpkL8oRZ){ target=_blank }.
+
+Купить Neptune 4: [:material-shopping: AliExpress](https://alli.pub/6xtus8?erid=2SDnjcNDgeM){ target=_blank }.
 
 ## Доработки
 

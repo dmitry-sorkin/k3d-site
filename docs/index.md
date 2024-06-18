@@ -72,6 +72,7 @@ description: Главная страница
     - [:material-printer-3d: Доработки Creality K1](./printers/k1.md)
     - [:material-printer-3d: Доработки Neptune 3 Pro](./printers/neptune3pro.md)
     - [:material-printer-3d: Доработки Kingroon Kp3s](./printers/kp3s.md)
+    - [:material-printer-3d: Доработки Neptune 4 :fire:](./printers/neptune4.md)
 
 - :material-link:{ .lg .middle } __Ресурсы K3D__
 
