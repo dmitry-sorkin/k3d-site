@@ -7,11 +7,22 @@ description: Релизы
 
 ## Последние версии файлов
 
-- [:material-file-document: Таблица v2.0](./releases/calcs/k3d_accuracy_calibration_v2.0.ods){ download="k3d_accuracy_calibration_v2.0.ods" }
+- [:material-file-document: Таблица v3.0](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
 - [:material-video-3d: Модель v7 STEP](./releases/models/k3d_accuracy_test_v7.stp){ download="k3d_accuracy_test_v7.stp" }
 - [:material-video-3d: Модель v7 STL](./releases/models/k3d_accuracy_test_v7.stl){ download="k3d_accuracy_test_v7.stl" }
 
 ## Релизы
+
+### Таблица v3.0
+
+[:material-file-document: Таблица v3.0](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
+
+По сравнению с v2.0 изменилось:
+
+- Переработана структура таблицы. Теперь калибровка проходит пошагово на 1 листе;
+- Добавлена возможность выбирать цель оптимизации, то есть ставить в приоритет абсолютные значения ошибки, относительные или пытаться соблюсти баланс. В большинстве случаев лучшие результаты достигаются при оптимизации по абсолютной величине ошибки;
+- Добавлена возможность выключить эквидистанту при расчёте. В таком случае таблица будет пытаться компенсировать ошибки изменяя только масштаб модели. В большинстве случаев это даст результат хуже, но в некоторых может быть полезно;
+- Переработан лист анализа - теперь все ошибки указываются с учётом знака.
 
 ### Таблица v2.0
 
