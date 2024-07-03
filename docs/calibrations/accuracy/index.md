@@ -6,6 +6,8 @@ description: Описание и инструкция
 
 # K3D Тест точности
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6seFEWIGTtU?si=uu8G1Tx8gjeh4fvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Скачать
 
 - [:material-file-document: Таблица v3.0](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
@@ -146,7 +148,7 @@ $$
 - Баланс между абсолютной и относительной ошибкой:
 
 $$
-\omega_{n\_бал}=\frac{\omega_{n_абс}+\omega_{n_отн}}{2}
+\omega_{n\_бал}=\frac{\omega_{n\_абс}+\omega_{n\_отн}}{2}
 $$
 
 ## Если возникли проблемы
