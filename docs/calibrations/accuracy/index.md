@@ -10,7 +10,8 @@ description: Описание и инструкция
 
 ## Скачать
 
-- [:material-file-document: Таблица v3.0](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
+- [:material-file-document: Таблица v3.0 (LibreOffice)](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
+- [:material-file-document: Таблица v3.0 (Excel, OpenOffice)](./releases/calcs/k3d_accuracy_calibration_v3.0.xls){ download="k3d_accuracy_calibration_v3.0.xls" }
 - [:material-video-3d: Модель v7 STEP](./releases/models/k3d_accuracy_test_v7.stp){ download="k3d_accuracy_test_v7.stp" }
 - [:material-video-3d: Модель v7 STL](./releases/models/k3d_accuracy_test_v7.stl){ download="k3d_accuracy_test_v7.stl" }
 
