@@ -10,6 +10,8 @@ icon: material/printer-3d
 
 <iframe width="900" height="506" src="https://www.youtube.com/embed/HnLohH1MFz0?si=e67PyFd5nP33c5N1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+!!! warning "На данный момент некоторые экземпляры принтера приходят с браком, вследствие которого невозможно отрегулировать механику оси Z. Поэтому на данный момент приобретение этого принтера не рекомендуется" 
+
 По механике почти идентичен Neptune 3 Pro, который очень близок к Ender-3 и подобным принтерам. Поэтому механика тихая, живучая и очень ремонтопригодная, не даёт никаких дефектов и хорошо поддаётся апгрейдам. В отличие от Neptune 3 Pro, имеет регулируемый стол.
 
 Экструдер печатает всеми материалами, включая самые мягкие эластомеры, композиты и т.д. При этом в стоке уже стоят калёные шестерни и биметаллический термобарьер. Хотэнд производительнее обычных cr-10/V6, но менее производительный, чем Volcano. Тем не менее, Volcano ставится как родной. Обдув на 2х4015 по производительности сопоставим с охлаждением Bambu Lab P1S/Creality K1.
