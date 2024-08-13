@@ -87,7 +87,7 @@ Z_TILT_ADJUST
 После этого две передние регулировочные точки должны быть выставлены в горизонт. Осталось только отрегулировать заднюю точку. Для этого выполните команду:
 
 ```
-SCREW_TILT_CALCULATE
+SCREWS_TILT_CALCULATE
 ```
 
 ![](./pics/q1_screw_tilt_calculate_output.png)
