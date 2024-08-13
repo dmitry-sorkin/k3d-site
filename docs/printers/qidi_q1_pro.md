@@ -10,11 +10,11 @@ icon: material/printer-3d
 
 === "YouTube"
 
-    <iframe width="900" height="600" src="https://www.youtube.com/embed/EVP7JcmSndU?si=70T0zcucv4BMO7uB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/EVP7JcmSndU?si=70T0zcucv4BMO7uB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 === "VK"
 
-    Появится через некоторое время после релиза видео
+    <iframe src="https://vk.com/video_ext.php?oid=-168896673&id=456239634&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 
 QIDI Q1 Pro - это один из самых удачных принтеров в своём ценовом сегменте. Дело в том, что у него, конечно, есть минусы, куда же без них. Но большинство из них незначительны - некрасивый внешний вид, увеличенный габарит, долго греющийся стол. Значимый минус же только один, этот принтер довольно плохо справляется с эластомерами, может печатать только средне-мягкими.
 
