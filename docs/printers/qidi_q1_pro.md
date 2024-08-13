@@ -153,7 +153,7 @@ heater: extruder, heater_bed, chamber
 | Сопло биметаллическое Trianglelab ZS-QD | [:material-shopping:](https://alli.pub/70ma2n?erid=2SDnjdAK4Mp){ target="_blank" } | Более дорогое, но и более качественное сопло. Подходит для композитных материалов |
 | Хотэнд Q1 Pro | [:material-shopping:](https://alli.pub/70ma3f?erid=2SDnjdHizmY){ target="_blank" } | Весь хотэнд в сборе целиком. На случай поломки, покупать прозапас смысла мало |
 | Подающий механизм Q1 Pro | [:material-shopping:](https://alli.pub/70ma40?erid=2SDnjdkQmqk){ target="_blank" } | Весь подающий механизм в сборе. Имеет смысл покупать только если сломались/износились детали кроме подающих колёс |
-| Подающие колёса HGX | [:material-shopping:](https://alli.pub/70ma4l?erid=2SDnjduJhXp){ target="_blank" } | Набор, из подающие колёса из которого подходят к подающему механизму Q1 Pro |
+| Подающие колёса HGX | [:material-shopping:](https://alli.pub/70ma4l?erid=2SDnjduJhXp){ target="_blank" } | Набор, подающие колёса из которого подходят к подающему механизму Q1 Pro |
 | Носки Q1 Pro | [:material-shopping:](https://alli.pub/70ma4s?erid=2SDnjdykfNr){ target="_blank" } | На случай, если штатный порвётся. Имеет смысл взять сразу т.к. уже после пары разборов хотэнда 99% что носок будет надорван хоть немного |
 
 ---
