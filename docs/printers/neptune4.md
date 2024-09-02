@@ -8,20 +8,26 @@ icon: material/printer-3d
 
 ## Обзор
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/HnLohH1MFz0?si=e67PyFd5nP33c5N1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+=== "YouTube"
+
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/HnLohH1MFz0?si=e67PyFd5nP33c5N1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=== "VK"
+
+    <iframe src="https://vk.com/video_ext.php?oid=-168896673&id=456239570&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 
 Экструдер печатает всеми материалами, включая самые мягкие эластомеры, композиты и т.д. При этом в стоке уже стоят калёные шестерни и биметаллический термобарьер. Хотэнд производительнее обычных cr-10/V6, но менее производительный, чем Volcano. Тем не менее, Volcano ставится как родной. Обдув на 2х4015 по производительности сопоставим с охлаждением Bambu Lab P1S/Creality K1.
 
 Электроника не кастрирована в плане SoC, ОЗУ и портов + стоит полноценный дистрибутив Linux, с "чистым" Klipper, функциональным веб-интерфейсом и т.д. Единственный минус - в стоке подключение к сети только проводом. Но это решается покупкой и установкой Wi-Fi адаптера.
 
-Механика спорная. Конструкция взята у Ender-3, где отличается простотой, тишиной и настраиваемостью, ввиду чего получается принтер, который сложно сломать и легко починить. Но у Elegoo наличествует косяк, из-за которого иногда механику настроить сложнее, чем должно быть. Подробнее описано в [:material-youtube: видео про это](https://youtu.be/19Ylp_yEUPY){ target=_blank }. Из-за этого я рекомендую принтер только опытным пользователям, которым описанная проблема покажется мелочью.
+Механика спорная. Конструкция взята у Ender-3, где отличается простотой, тишиной и настраиваемостью, ввиду чего получается принтер, который сложно сломать и легко починить. Но у Elegoo наличествует косяк, из-за которого иногда механику настроить сложнее, чем должно быть. Подробнее описано в видео про это [:material-youtube: на YouTube](https://youtu.be/19Ylp_yEUPY){ target=_blank } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239565){ target=_blank }. Из-за этого я рекомендую принтер только опытным пользователям, которым описанная проблема покажется мелочью.
 
 Перед покупкой принтера рекомендуется ознакомиться с:
 
-- [:material-youtube: Видео версией обзора](https://youtu.be/HnLohH1MFz0?si=zF5VPuc0XpkL8oRZ){ target=_blank }
-- [:material-youtube: Разбор проблемы с колёсами](https://youtu.be/19Ylp_yEUPY){ target=_blank }
+- Видео версией обзора [:simple-youtube: на YouTube](https://youtu.be/HnLohH1MFz0?si=zF5VPuc0XpkL8oRZ){ target=_blank } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239570){ target=_blank }
+- Разбор проблемы с колёсами [:simple-youtube: на YouTube](https://youtu.be/19Ylp_yEUPY){ target=_blank } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239565){ target=_blank }
 
-Купить Neptune 4: [:material-shopping: AliExpress](https://alli.pub/6xtus8?erid=2SDnjcNDgeM){ target=_blank }.
+[Купить Neptune 4](https://alli.pub/6xtus8?erid=2SDnjcNDgeM){ target=_blank }
 
 ## Доработки
 
@@ -95,15 +101,15 @@ icon: material/printer-3d
 
 После получения принтера необходимо его правильно собрать и настроить. Общий порядок настроек:
 
-1. Регулировка механики. Недостаточно просто скрутить 2 половины принтера, надо еще настроить эксцентрики так, чтобы все колёса касались профилей с одинаковыми усилиями. Общие принципы регулировки механики описаны в старом [:material-download: видео на моём канале](https://youtu.be/4H3O8I4-Myo?si=T1z-DjcMPbbN7Rv3){ target="_blank" } или можете поискать аналогичных статьи и видео по интернету;
+1. Регулировка механики. Недостаточно просто скрутить 2 половины принтера, надо еще настроить эксцентрики так, чтобы все колёса касались профилей с одинаковыми усилиями. Общие принципы регулировки механики описаны в старом видео на моём канале [:simple-youtube: в YouTube](https://youtu.be/4H3O8I4-Myo?si=T1z-DjcMPbbN7Rv3){ target="_blank" } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239508){ target="_blank" } или можете поискать аналогичных статьи и видео по интернету;
 2. Разрешение экструдера калибруется по желанию т.к. оно в стоковой прошивке не очень далеко от правды;
 3. Если меняли хотэнд, то [:material-file-document: PID](../calibrations/pid.md){ target="_blank" };
-4. Стол обязательно нужно [:material-download: выставить в горизонт и настроить Z-offset](https://youtu.be/doenKnVk0Ec?t=2804){ target="_blank" };
-5. Первоначальная настройка слайсера описана в [:material-youtube: видео](https://youtu.be/doenKnVk0Ec?t=1385){ target="_blank" } или можете скачать [:material-download: пример профиля для PrusaSlicer](./profiles/k3d_n4_example.ini){ download="k3d_n4_example.ini" }. Обратите внимание, что предоставленный профиль - это не оптимальные настройки для этого принтера, а только пример для облегчения внесения первоначальных настроек в принтер;
+4. Стол обязательно нужно выставить в горизонт и настроить Z-offset. Подробнее в видео [:simple-youtube: на YouTube](https://youtu.be/doenKnVk0Ec?t=2804){ target="_blank" } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239384?t=46m44s){ target="_blank" };
+5. Первоначальная настройка слайсера описана в видео [:simple-youtube: на YouTube](https://youtu.be/doenKnVk0Ec?t=1385){ target="_blank" } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239384?t=23m5s){ target="_blank" } или можете скачать [:material-download: пример профиля для PrusaSlicer](./profiles/k3d_n4_example.ini){ download="k3d_n4_example.ini" }. Обратите внимание, что предоставленный профиль - это не оптимальные настройки для этого принтера, а только пример для облегчения внесения первоначальных настроек в принтер;
 6. [:material-file-document: Pressure Advance](../calibrations/la/calibrator.md){ target="_blank" };
 7. [:material-file-document: Откаты](../calibrations/retractions/calibrator.md){ target="_blank" };
 8. Input Shaping - как откалибровать его на этом принтере описано ниже;
-9. [:material-youtube: Поток](https://youtu.be/doenKnVk0Ec?t=3708){ target="_blank" }
+9. Поток. Калибровка описана в видео [:simple-youtube: на YouTube](https://youtu.be/doenKnVk0Ec?t=3708){ target="_blank" } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239384?t=1h1m48s){ target="_blank" }
 
 ### Калибровка Input Shaping
 

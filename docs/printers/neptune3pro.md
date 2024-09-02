@@ -7,7 +7,13 @@ icon: material/printer-3d
 
 ## Обзор
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/lpzA1QHWDTI?si=L7KcAeQ-_lYdS5Ld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+=== "YouTube"
+
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/lpzA1QHWDTI?si=L7KcAeQ-_lYdS5Ld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+=== "VK"
+
+    <iframe src="https://vk.com/video_ext.php?oid=-168896673&id=456239376&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 
 Механически очень близок к Ender-3, поэтому имеет те же особенности: очень живучий и ремонтопригодный, очень тихий и хорошо поддаётся апгрейдам. В стоке не очень быстрый, но переводом на прошивку Klipper делается в 1.5-2 раза быстрее. Плюс есть возможность еще усилить приводы и сделать принтер еще быстрее.
 
@@ -15,7 +21,7 @@ icon: material/printer-3d
 
 Электроника нормальная. Экран и микроконтроллер не вызывают проблем, на голове есть переходная плата, благодаря которой немного проще обслуживать и ремонтировать экструдер. Драйверы тихие, в прошивке сразу включен Linear Advance и всё вполне адекватно настроено. То есть, в отличие от конкурентов, перепрошивать принтер не надо.
 
-[:material-youtube: Подробнее в видео на YouTube](https://www.youtube.com/embed/lpzA1QHWDTI)
+Подробнее в видео [:simple-youtube: на YouTube](https://youtu.be/lpzA1QHWDTI?si=bkWeMIwQ4TWmNM5z) / [:simple-vk: в Vk](https://vk.com/video-168896673_456239376)
 
 !!! note "В новых ревизиях Neptune 3 Pro подающие колёса нормального качества и калёные, менять их больше не надо"
 
@@ -30,8 +36,8 @@ icon: material/printer-3d
 | Наименование | Ссылка | Комментарий |
 |:------------ |:------:|:----------- |
 | Биметаллический термобарьер | [:material-shopping:](https://alli.pub/6w5u84?erid=2SDnjcSkRGL "5A") | Выбирать Т4. Уменьшает откаты и к-фактор LA, даёт возможность греть хотэнд до 300°C[^1] и печатать композитами |
-| Mk8 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkgy?erid=2SDnje1TMTW "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttkhj?erid=2SDnjeDKFiG "Mellow"){ target="_blank" } | Не подходит для композитных материалов. В остальном показывает себя очень хорошо |
-| Mk8 стальное калёное с CHT вставкой | [:material-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } | [:material-shopping:](https://alli.pub/6wgfa6?erid=2SDnjeD9d4c){ target="_blank" } | Хорошо прогревает пластик и подходит для композитных материалов |
+| Mk8 латунное | [:material-shopping:](https://alli.pub/6ttkgy?erid=2SDnje1TMTW "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttkhj?erid=2SDnjeDKFiG "Mellow"){ target="_blank" } | Не подходит для композитных материалов. В остальном показывает себя очень хорошо |
+| Mk8 стальное калёное с CHT вставкой | [:material-shopping:](https://alli.pub/7154h2?erid=2SDnjdR5cBt){ target="_blank" } | Хорошо прогревает пластик и подходит для композитных материалов |
 | Тефлоновая трубка 2х4мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A") | Когда будете менять термобарьер, придётся обрезать трубку. Со стоковой у вас будет только 1 попытка. Учитывая низкую цену трубки, рационально сразу взять 1 метр в комплект, пригодится |
 
 ### Установка Volcano хотэнда и мощного охлаждения
@@ -48,7 +54,7 @@ icon: material/printer-3d
 |:------------ |:------:|:----------- |
 | Биметаллический термобарьер | [:material-shopping:](https://alli.pub/6w5u84?erid=2SDnjcSkRGL "5A") | Выбирать Т4. Уменьшает откаты и к-фактор LA, даёт возможность греть хотэнд до 300°C[^1] и печатать композитами |
 | Хитблок Volcano | [:material-shopping:](https://alli.pub/6w5u8i?erid=2SDnjcYgNPi "5A") [:material-shopping:](https://alli.pub/6w5u8p?erid=2SDnjcd8LEk "Trianglelab") | Выбирать алюминиевый. Увеличенная длина горячей зоны позволяет значительно увеличить МОР. Плюс к этому лучше прогревает ABS-подобные материалы, за счёт чего те лучше спекаются. Минусы - придётся переносить датчик автоуровня ниже и переделывать обдув, но его и так и так менять рационально |
-| Volcano стальное калёное с CHT вставкой | [:material-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } | [:material-shopping:](https://alli.pub/6wggu6?erid=2SDnjcbmkEc){ target="_blank" } | Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
+| Volcano стальное калёное с CHT вставкой | [:material-shopping:](https://alli.pub/6wggu6?erid=2SDnjcbmkEc){ target="_blank" } | Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
 | Носок Volcano | [:material-shopping:](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A") | Выбирать Volcano Pt100. Чтобы резкое включение охлаждения не понижало температуру хотэнда |
 | Термистор NTC100K B3950 в гильзе | [:material-shopping:](https://alli.pub/6ttpri?erid=2SDnjdThg64 "5A") | Стоковый не подойдёт к V6/Volcano хитблоку. Этот такой же по типу, но в гильзе, прошивку менять не придётся |
 | Тефлоновая трубка 2х4мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A") | Когда будете менять термобарьер, придётся обрезать трубку. Со стоковой у вас будет только 1 попытка. Учитывая низкую цену трубки, рационально сразу взять 1 метр в комплект, пригодится |

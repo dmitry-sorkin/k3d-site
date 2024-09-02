@@ -6,7 +6,13 @@ description: Volcano 0.4mm
 
 # Тест сопел
 
-<iframe width="800" height="500" src="https://www.youtube.com/embed/BiY8nC-Sdqc?si=Cs-47DFzS_Gtpis5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+=== "YouTube"
+
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/BiY8nC-Sdqc?si=Cs-47DFzS_Gtpis5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+=== "VK"
+
+    <iframe src="https://vk.com/video_ext.php?oid=-168896673&id=456239579&hd=2" width="800" height="500" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 
 В этой статье представлены результаты тестирования следующих видов сопел:
 

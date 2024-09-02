@@ -7,7 +7,13 @@ icon: material/printer-3d
 
 ## Обзор
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/19mHB4haXQI?si=-uzeCX9hWeecUMa6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+=== "YouTube"
+
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/19mHB4haXQI?si=-uzeCX9hWeecUMa6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+=== "VK"
+
+    <iframe src="https://vk.com/video_ext.php?oid=-168896673&id=456239411&hd=2" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 
 Сразу две модели т.к. это, фактически, просто разные версии одного принтера. Главное достоинство - все основные агрегаты уже в стоке сделаны адекватно как для принтера с настолько низкой ценой, то есть это не заготовки под апгрейд, а уже, хоть и простенькие, но полноценные принтеры. Директ экструдер нормально печатает твёрдыми филаментами, и может печатать средне-мягкими эластомерами после небольшой доработки. Механика не жесткая, из-за чего оба принтера в стоке не быстрые, но и не совсем медленные. Электроника без интересных фишек, но и всё нужное есть - тихие драйверы, не проблемный микроконтроллер и не блокирующий функциональность прошивки экран.
 

@@ -21,10 +21,10 @@ description: Каталог проверенных ссылок на детал�
 | Наименование | Типоразмер | KGT[^2] | RDBB[^3] | Комментарий |
 |:------------ |:------:|:------:|:------:|:----------- |
 | Рельса с кареткой | MGN9 | - | [:material-shopping:](https://alli.pub/6tvx6t?erid=2SDnjcbaDhS "CNA Mechanical Parts Store"){ target="_blank" } | Длина рельсы и тип каретки на выбор |
-| Каретка | MGN9 | - | [:material-shopping:](https://alli.pub/6tvx7l?erid=2SDnjcg2BYU "CNA Mechanical Parts Store"){ target="_blank" } | C - короткая каретка, H - длинная |
+| Каретка | MGN9 | - | [:material-shopping:](https://alli.pub/6tvx6t?erid=2SDnjcbaDhS "CNA Mechanical Parts Store"){ target="_blank" } | C - короткая каретка, H - длинная. Выбирать block only/carriage only |
 | Шары | MGN9 | [:material-shopping:](https://alli.pub/6tvx7z?erid=2SDnjcizA7A "KGT Manufactor store"){ target="_blank" } | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
 | Рельса с кареткой | MGN12 | - | [:material-shopping:](https://alli.pub/6tvx8d?erid=2SDnjcmx8fr "CNA Mechanical Parts Store"){ target="_blank" } | Длина рельсы и тип каретки на выбор |
-| Каретка | MGN12 | - | [:material-shopping:](https://alli.pub/6tvx95?erid=2SDnjcrQ6Wt "CNA Mechanical Parts Store"){ target="_blank" } | C - короткая каретка, H - длинная |
+| Каретка | MGN12 | - | [:material-shopping:](https://alli.pub/6tvx8d?erid=2SDnjcmx8fr "CNA Mechanical Parts Store"){ target="_blank" } | C - короткая каретка, H - длинная. Выбирать block only/carriage only |
 | Шары | MGN12 | [:material-shopping:](https://alli.pub/6tvx9c?erid=2SDnjcst5oE "KGT Manufactor store"){ target="_blank" } | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
 
 ## Комплектующие Openbuilds
