@@ -1,4 +1,5 @@
 ---
+icon: material/download
 title: K3D Minifeeder - релизы
 description: Открытый проект компактного и лёгкого подающего механизма на основе деталей BMG
 ---

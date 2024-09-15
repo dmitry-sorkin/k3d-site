@@ -1,4 +1,5 @@
 ---
+icon: material/format-list-numbered
 title: K3D EBP - инструкция по сборке
 description: Проект печатающей головы для Ender-3 на основе экструдера BMG
 ---
@@ -201,8 +202,8 @@ description: Проект печатающей головы для Ender-3 на 
 1. Калибровка стола и Z-offset
 2. [Калибровка PID](https://youtu.be/aizbpcZ7LU0){ target="blank" }
 3. [Калибровка разрешения экструдера](https://youtu.be/Mga_ezYDTNI){ target="blank" }. Поток можно оставить 100% для начала и калибровать только в случае пере- или недоэкструзии на моделях
-4. [Подбор к-фактора Linear Advance](../calibrations/la/index.md){ target="blank" }
-5. [Подбор длины и скорости откатов](../calibrations/retractions/index.md){ target="blank" }
+4. [Подбор к-фактора Linear Advance](../../calibrations/la/index.md){ target="blank" }
+5. [Подбор длины и скорости откатов](../../calibrations/retractions/index.md){ target="blank" }
 6. [Подбор частоты Input shaping](https://youtu.be/ZFPkfZEB-XU){ target="blank" } (если он есть)
 
 ## Поддержать проект

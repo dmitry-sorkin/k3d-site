@@ -1,4 +1,5 @@
 ---
+icon: material/download
 title: K3D ESP - релизы
 description: Проект печатающей головы для Ender-3 на основе экструдера Sprite
 ---

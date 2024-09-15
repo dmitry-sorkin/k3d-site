@@ -54,11 +54,15 @@ description: Главная страница
 
     ---
 
-    - [:material-printer-3d-nozzle: Ender-3 BMG Printhead](./ebp/index.md)
-    - [:material-printer-3d-nozzle: Ender-3 H2 Printhead](./ehp/index.md)
-    - [:material-printer-3d-nozzle: Ender-3 Sprite Printhead](./esp/index.md)
-    - [:material-printer-3d-nozzle: BeMeGe](./bemege/index.md)
-    - [:material-printer-3d-nozzle: Minifeeder](./minifeeder/index.md)
+    - [:material-translate: Правильный перевод PrusaSlicer](./projects/ps_translation/index.md)
+
+    ---
+
+    - [:material-printer-3d-nozzle: Ender-3 BMG Printhead](./projects/ebp/index.md)
+    - [:material-printer-3d-nozzle: Ender-3 H2 Printhead](./projects/ehp/index.md)
+    - [:material-printer-3d-nozzle: Ender-3 Sprite Printhead](./projects/esp/index.md)
+    - [:material-printer-3d-nozzle: BeMeGe](./projects/bemege/index.md)
+    - [:material-printer-3d-nozzle: Minifeeder](./projects/minifeeder/index.md)
 
 - :material-file-document:{ .lg .middle } __Статьи__
 

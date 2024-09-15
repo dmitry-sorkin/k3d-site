@@ -38,6 +38,26 @@ plugins:
   - redirects:
       redirect_maps:
         './redirects/forum.md': 'https://forum.k3d.tech'
+        './bemege/index.md': 'projects/bemege/index.md'
+        './feeder965/index.md': 'projects/feeder965/index.md'
+        './feeder965/releases.md': 'projects/feeder965/releases.md'
+        './feeder965/feeder965_assembly.md': 'projects/feeder965/feeder965_assembly.md'
+        './minifeeder/index.md': 'projects/minifeeder/index.md'
+        './minifeeder/releases.md': 'projects/minifeeder/index.md'
+        './minifeeder/minifeeder_assembly.md': 'projects/minifeeder/index.md'
+        './ebp/assembly.md': 'projects/ebp/index.md'
+        './ebp/bom.md': 'projects/ebp/index.md'
+        './ebp/index.md': 'projects/ebp/index.md'
+        './ebp/printed_parts.md': 'projects/ebp/index.md'
+        './ebp/releases.md': 'projects/ebp/index.md'
+        './ehp/guide_old.md': 'projects/ehp/guide_old.md'
+        './ehp/guide.md': 'projects/ehp/guide.md'
+        './ehp/index.md': 'projects/ehp/index.md'
+        './ehp/releases.md': 'projects/ehp/releases.md'
+        './esp/guide_ender3.md': 'projects/esp/index.md'
+        './esp/guide_s1.md': 'projects/esp/index.md'
+        './esp/index.md': 'projects/esp/index.md'
+        './esp/releases.md': 'projects/esp/index.md'
   - charts
 markdown_extensions:
   - abbr
@@ -133,29 +153,17 @@ nav:
         - Инструкция: ./calibrations/la/index.md
         - Калибровщик LA: ./calibrations/la/calibrator.md
   - Проекты:
-    - Minifeeder:
-      - Описание проекта: ./minifeeder/index.md
-      - Релизы: ./minifeeder/releases.md
-      - Инструкция по сборке: ./minifeeder/minifeeder_assembly.md
-    - BeMeGe: ./bemege/index.md
-    - Ender-3 BMG Printhead:
-      - Описание проекта: ./ebp/index.md
-      - Релизы: ./ebp/releases.md
-      - Инструкции по сборке:
-        - Шаг 1. Покупка деталей: ./ebp/bom.md
-        - Шаг 2. Печать деталей: ./ebp/printed_parts.md
-        - Шаг 3. Сборка: ./ebp/assembly.md
-    - Ender-3 H2 Printhead: ./ehp/index.md
-    - Ender-3 Sprite Printhead:
-      - Описание проекта: ./esp/index.md
-      - Релизы: ./esp/releases.md
-      - Инструкция для Ender-3 S1/S1 Pro/S1 Plus: ./esp/guide_s1.md
-      - Инструкция для Ender-3: ./esp/guide_ender3.md
+    - Перевод PrusaSlicer: ./projects/ps_translation/index.md
+    - BeMeGe: ./projects/bemege/index.md
+    - Minifeeder: ./projects/minifeeder/index.md
+    - Ender-3 H2 Printhead: ./projects/ehp/index.md
+    - Ender-3 BMG Printhead: ./projects/ebp/index.md
+    - Ender-3 Sprite Printhead: ./projects/esp/index.md
     - Архивные проекты:
       - Feeder965:
-        - Описание проекта: ./feeder965/index.md
-        - Инструкция: ./feeder965/feeder965_assembly.md
-        - Релизы: ./feeder965/releases.md
+        - Описание проекта: ./projects/feeder965/index.md
+        - Инструкция: ./projects/feeder965/feeder965_assembly.md
+        - Релизы: ./projects/feeder965/releases.md
   - Статьи:
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Принципы прочной печати: ./articles/print_strong.md
