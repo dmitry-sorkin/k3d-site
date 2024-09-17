@@ -74,5 +74,5 @@ description: Правильный перевод PrusaSlicer с понятным
 
 ### v2.8.1
 
-[:material-download: Скачать перевод v2.8.1](./translations/2.8.1.mo){ download="PrusaSlicer.mo" }
-[:material-download: Исходники перевода v2.8.1](./translations/2.8.1.po){ download="PrusaSlicer_k3d_2.8.1.po" }
+- [:material-download: Скачать перевод v2.8.1](./translations/2.8.1.mo){ download="PrusaSlicer.mo" }
+- [:material-download: Исходники перевода v2.8.1](./translations/2.8.1.po){ download="PrusaSlicer_k3d_2.8.1.po" }
