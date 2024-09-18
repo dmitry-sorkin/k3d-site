@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-03 13:44+0200\n"
-"PO-Revision-Date: 2024-09-15 00:34+0300\n"
+"PO-Revision-Date: 2024-09-18 13:13+0300\n"
 "Last-Translator: Dmitry Sorkin <dbsorkin@gmail.com>\n"
 "Language-Team: K3D\n"
 "Language: ru\n"
@@ -1408,7 +1408,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:599
 msgid "Minimum bottom shell thickness"
-msgstr "Минимальная толщина оболочки снизу"
+msgstr "Минимальная толщина дна"
 
 #: src/libslic3r/PrintConfig.cpp:605
 msgid "Bridge"
@@ -2119,7 +2119,7 @@ msgstr "Спиральная октаграмма"
 
 #: src/libslic3r/PrintConfig.cpp:972
 msgid "Bottom fill pattern"
-msgstr "Шаблон заполнения нижней поверхности"
+msgstr "Шаблон заполнения дна"
 
 #: src/libslic3r/PrintConfig.cpp:974
 msgid ""
@@ -3830,7 +3830,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:1875
 msgid "Maximum width of a segmented region"
-msgstr "Толщина покрашенной области"
+msgstr "Глубина мультиматериальной покраски"
 
 #: src/libslic3r/PrintConfig.cpp:1876
 msgid "Maximum width of a segmented region. Zero disables this feature."
@@ -3850,7 +3850,7 @@ msgstr "мм (0 - отключено)"
 # блокировки &&&
 #: src/libslic3r/PrintConfig.cpp:1884
 msgid "Interlocking depth of a segmented region"
-msgstr "Глубина переплетения покрашенной области"
+msgstr "Глубина переплетения мультиматериальной покраски"
 
 #: src/libslic3r/PrintConfig.cpp:1885
 msgid ""
@@ -4360,7 +4360,7 @@ msgstr ""
 
 #: src/libslic3r/PrintConfig.cpp:2150
 msgid "Max volumetric slope positive"
-msgstr "Макс. скорость увеличения расхода"
+msgstr "Макс. скорость увеличения объёмного расхода"
 
 #: src/libslic3r/PrintConfig.cpp:2151
 msgid ""
@@ -4377,7 +4377,8 @@ msgstr ""
 "Теоретически, должно уменьшать некоторые связанные с изменением расхода "
 "дефекты печати. На практике на нормально настроенном принтере с рабочим "
 "Linear/Pressure Advance скорее создаёт или увеличивает эти дефекты. Поэтому "
-"в общем случае рекомендуется ставить 0 - разрешить любые перепады расхода."
+"в общем случае рекомендуется ставить 0 - разрешить любые перепады объёмного "
+"расхода."
 
 #: src/libslic3r/PrintConfig.cpp:2156 src/libslic3r/PrintConfig.cpp:2168
 msgid "mm³/s²"
@@ -4385,7 +4386,7 @@ msgstr "мм³/с²"
 
 #: src/libslic3r/PrintConfig.cpp:2162
 msgid "Max volumetric slope negative"
-msgstr "Макс. скорость снижения расхода"
+msgstr "Макс. скорость снижения объёмного расхода"
 
 #: src/libslic3r/PrintConfig.cpp:2163
 msgid ""
@@ -4402,7 +4403,8 @@ msgstr ""
 "Теоретически, должно уменьшать некоторые связанные с изменением расхода "
 "дефекты печати. На практике на нормально настроенном принтере с рабочим "
 "Linear/Pressure Advance скорее создаёт или увеличивает эти дефекты. Поэтому "
-"в общем случае рекомендуется ставить 0 - разрешить любые перепады расхода."
+"в общем случае рекомендуется ставить 0 - разрешить любые перепады объёмного "
+"расхода."
 
 #: src/libslic3r/PrintConfig.cpp:2174 src/libslic3r/PrintConfig.cpp:2183
 msgid "Min"
@@ -19870,8 +19872,7 @@ msgstr ""
 msgid ""
 "Top / bottom shell thickness hint: Not available due to invalid layer height."
 msgstr ""
-"Подсказка о толщине верхней/нижней оболочки недоступна из-за неправильной "
-"высоты слоя."
+"Подсказка о толщине крышки\\дна недоступна из-за неправильной высоты слоя."
 
 #: src/slic3r/GUI/PresetHints.cpp:287
 #, boost-format
@@ -19881,7 +19882,7 @@ msgstr "Крышка будет имеет толщину %1% мм при выс
 #: src/slic3r/GUI/PresetHints.cpp:290
 #, boost-format
 msgid "Minimum top shell thickness is %1% mm."
-msgstr "Минимальная толщина оболочки сверху составляет %1% мм."
+msgstr "Минимальная толщина крышки составляет %1% мм."
 
 #: src/slic3r/GUI/PresetHints.cpp:293
 msgid "Top is open."
@@ -19895,11 +19896,11 @@ msgstr "Дно будет имеет толщину %1% мм при высоте
 #: src/slic3r/GUI/PresetHints.cpp:309
 #, boost-format
 msgid "Minimum bottom shell thickness is %1% mm."
-msgstr "Минимальная толщина оболочки снизу составляет %1% мм."
+msgstr "Минимальная толщина дна составляет %1% мм."
 
 #: src/slic3r/GUI/PresetHints.cpp:312
 msgid "Bottom is open."
-msgstr "Оболочки снизу (дно) отсутствуют."
+msgstr "Дно отсутствует."
 
 #: src/slic3r/GUI/PrintHostDialogs.cpp:47
 msgid "Send G-Code to printer host"
