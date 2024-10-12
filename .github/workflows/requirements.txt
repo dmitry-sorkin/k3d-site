@@ -1,3 +1,4 @@
+pillow==10.4.0
 mkdocs-glightbox
 mkdocs-material[imaging]
 mkdocs-charts-plugin
