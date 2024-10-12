@@ -1,3 +1,4 @@
 mkdocs-glightbox
 mkdocs-material[imaging]
 mkdocs-charts-plugin
+mkdocs-table-reader-plugin
