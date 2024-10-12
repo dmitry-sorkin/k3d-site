@@ -34,7 +34,7 @@ hide:
 
     Виды филамента, предназначенные для решения специфических задач. Сгруппированы по особым свойствам.
 
-    {{ read_csv('files/special.csv', colalign=("left", "center", "center", "center", "center", "center", "center", "center")) }}
+    {{ read_csv('files/special.csv', colalign=("left", "center", "center", "center", "center", "center", "center")) }}
 
 === "Эластомеры"
 
@@ -48,7 +48,7 @@ hide:
 
     !!! note "Эти филаменты требуют наличия износостойкого сопла. Также рекомендуется узнать, если ли для вашего принтера в продаже сменные подающие колёса фидера. Если нет, то рекомендуется воздержаться от использования композитов"
 
-    {{ read_csv('files/composites.csv', colalign=("left", "center", "center", "center", "center", "center", "center", "center", "center")) }}
+    {{ read_csv('files/composites.csv', colalign=("left", "center", "center", "center", "center", "center", "center")) }}
 
 === "Художественные"
 
