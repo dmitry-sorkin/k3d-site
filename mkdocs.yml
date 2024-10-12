@@ -59,6 +59,7 @@ plugins:
         './esp/index.md': 'projects/esp/index.md'
         './esp/releases.md': 'projects/esp/index.md'
   - charts
+  - table-reader
 markdown_extensions:
   - abbr
   - attr_list

@@ -223,3 +223,12 @@ input[type=radio] {
 	padding-right: 1.5em;
 	align-content: center;
 }
+
+.filamentName {
+	white-space: nowrap;
+	font-size: 0.56rem;
+}
+
+.md-typeset__table th {
+	white-space: nowrap;
+}
