@@ -5,15 +5,16 @@ description: Описание и инструкция
 ---
 
 # K3D Тест точности
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6seFEWIGTtU?si=uu8G1Tx8gjeh4fvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figure markdown="span">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6seFEWIGTtU?si=uu8G1Tx8gjeh4fvN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</figure>
 
 ## Скачать
 
 - [:material-file-document: Таблица v3.0 (LibreOffice)](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
 - [:material-file-document: Таблица v3.0 (Excel, OpenOffice)](./releases/calcs/k3d_accuracy_calibration_v3.0.xls){ download="k3d_accuracy_calibration_v3.0.xls" }
-- [:material-video-3d: Модель v7 STEP](./releases/models/k3d_accuracy_test_v7.stp){ download="k3d_accuracy_test_v7.stp" }
-- [:material-video-3d: Модель v7 STL](./releases/models/k3d_accuracy_test_v7.stl){ download="k3d_accuracy_test_v7.stl" }
+- [:material-video-3d: Модель v8 STEP](./releases/models/k3d_accuracy_test_v8.stp){ download="k3d_accuracy_test_v8.stp" }
+- [:material-video-3d: Модель v8 STL](./releases/models/k3d_accuracy_test_v8.stl){ download="k3d_accuracy_test_v8.stl" }
 
 Старые версии можно найти на [странице релизов](./releases.md).
 
@@ -27,7 +28,9 @@ description: Описание и инструкция
 
 ### Печать модели
 
-![](./pics/cali_cross_seam.png){ width="600" }
+<figure markdown="span">
+    ![](./pics/cali_cross_seam_v8.png){ width="600" }
+</figure>
 
 Модель следует распечатать на обычных для вас настройках из материала, для которого вы хотите получить корректировки. Единственное исключение - надо разместить шов на специальном углублении, указанном на изображении выше. В PrusaSlicer и OrcaSlicer это делается с помощью инструмента `рисование шва` (`seam painting`). В Cura такой функциональности нет.
 
@@ -45,7 +48,9 @@ description: Описание и инструкция
 
 ### Теоретический расчёт
 
-![Теоретический расчёт и корректировки](./pics/theory.png){ width="600" }
+<figure markdown="span">
+    ![Теоретический расчёт и корректировки](./pics/theory.png){ width="600" }
+</figure>
 
 Таблица рассчитала корректировки и какими предположительно станут размеры после этих корректировок. Если предположительный результат вас устраивает, то вводите указанные корректировки в слайсер. Куда вводятся корректировки описаны в столбце "где найти в слайсере.
 
@@ -53,11 +58,15 @@ description: Описание и инструкция
 
 ### Проверочная печать
 
-![Проверочная печать](./pics/check.png){ width="600" }
+<figure markdown="span">
+    ![Проверочная печать](./pics/check.png){ width="600" }
+</figure>
 
 Если вы проводите калибровку точности впервые, или вам предстоит ответственная большая печать, то стоит напечатать ту же самую проверочную модель, которую вы печатали в начале калибровки, но уже с введенными корректировками. Если ввести размеры с неё в соответствующие поля в третьем шаге, то получится проанализировать правильно ли сработала методика и на какую точность можно рассчитывать.
 
-![Анализ](./pics/analyze.png)
+<figure markdown="span">
+    ![Анализ](./pics/analyze.png)
+</figure>
 
 Если перейти на страницу "Анализ", то можно будет легко посмотреть какие абсолютные и относительные отклонения есть на вашей модели. Проще всего работать с диаграммами справа. Чем ближе кривая "проверка" (жёлтая) к нулю, тем лучше. 
 
@@ -69,7 +78,9 @@ description: Описание и инструкция
 
 ### Расчёт с эквидистантой
 
-![](./pics/cali_cross_1.png){ width="700" }
+<figure markdown="span">
+    ![](./pics/cali_cross_1.png){ width="700" }
+</figure>
 
 Рассмотрим на примере оси Х, по оси Y всё аналогично. Погрешность в каждом размере можно представить состоящей из двух частей: постоянной (эквидистанта) и переменной (масштаб). Калибровочная модель составлена таким образом, что на ней есть 2 типа размеров:
 

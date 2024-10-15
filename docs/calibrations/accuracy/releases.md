@@ -13,6 +13,13 @@ description: Релизы
 
 ## Релизы
 
+### Модель v8
+
+[:material-video-3d: Модель v8 STEP](./releases/models/k3d_accuracy_test_v8.stp){ download="k3d_accuracy_test_v8.stp" }
+[:material-video-3d: Модель v8 STL](./releases/models/k3d_accuracy_test_v8.stl){ download="k3d_accuracy_test_v8.stl" }
+
+По сравнению с предыдущей версией исправлена форма вырезов в основании. Это делает модель более устойчивой к дефектам печати, связанным с плохо работающим LA/PA.
+
 ### Таблица v3.0
 
 [:material-file-document: Таблица v3.0](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
