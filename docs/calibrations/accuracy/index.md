@@ -11,8 +11,9 @@ description: Описание и инструкция
 
 ## Скачать
 
+!!! warning "Таблицу открывать в [LibreOffice](https://www.libreoffice.org/). В OpenOffice, Microsoft Excel и подобных может не работать"
+
 - [:material-file-document: Таблица v3.0 (LibreOffice)](./releases/calcs/k3d_accuracy_calibration_v3.0.ods){ download="k3d_accuracy_calibration_v3.0.ods" }
-- [:material-file-document: Таблица v3.0 (Excel, OpenOffice)](./releases/calcs/k3d_accuracy_calibration_v3.0.xls){ download="k3d_accuracy_calibration_v3.0.xls" }
 - [:material-video-3d: Модель v8 STEP](./releases/models/k3d_accuracy_test_v8.stp){ download="k3d_accuracy_test_v8.stp" }
 - [:material-video-3d: Модель v8 STL](./releases/models/k3d_accuracy_test_v8.stl){ download="k3d_accuracy_test_v8.stl" }
 
