@@ -195,7 +195,6 @@ max_temp: 120
 
 | Наименование | Ссылка | Примечание |
 |:------------ |:------:|:---------- |
-| Сопло биметаллическое | [:material-shopping:](https://alli.pub/70ma22?erid=2SDnjcvyApi){ target="_blank" } | Оригинальные сопла QIDI. Подходит для композитных материалов |
 | Сопло биметаллическое Trianglelab ZS-QD | [:material-shopping:](https://alli.pub/70ma2n?erid=2SDnjdAK4Mp){ target="_blank" } | Более дорогое, но и более качественное сопло. Подходит для композитных материалов |
 | Хотэнд Q1 Pro | [:material-shopping:](https://alli.pub/70ma3f?erid=2SDnjdHizmY){ target="_blank" } | Весь хотэнд в сборе целиком. На случай поломки, покупать прозапас смысла мало |
 | Подающий механизм Q1 Pro | [:material-shopping:](https://alli.pub/70ma40?erid=2SDnjdkQmqk){ target="_blank" } | Весь подающий механизм в сборе. Имеет смысл покупать только если сломались/износились детали кроме подающих колёс |

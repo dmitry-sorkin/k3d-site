@@ -71,15 +71,17 @@ icon: material/printer-3d
 
 | Наименование | Ссылки | Примечание |
 |:------------ |:------:|:---------- |
-| Термобарьер Chimera биметалл сталь+медь | [:material-shopping: Ali](https://alli.pub/6ttg9h?erid=2SDnjeYW49n "5А"){ target="_blank" } | Выбирать smooth |
-| Хитблок E3D Volcano | [:material-shopping: Ali](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="_blank" } <br>[:material-shopping: Ali](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="_blank" } | В большинстве случае обычный алюминиевый будет лучше всего |
-| Носок E3D Volcano | [:material-shopping: Ali](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A. Выбирать Volcano Pt100"){ target="_blank" } <br> [:material-shopping: Ali](https://alli.pub/6ttjo6?erid=2SDnjdoa7H2 "Trianglelab"){ target="_blank" } | У 5А выбирать Volcano pt100 |
-| Сопло Volcano стальное калёное с CHT вставкой | [:material-shopping: Ali](https://alli.pub/6wggu6?erid=2SDnjcbmkEc){ target="_blank" } | Универсальный тип сопел, хорошо подходящий как для обычных материалов, так и для композитов. В общем случае одного 0.4 хватит для всех задач, но по желанию можете приобрести сопла других типов и диаметров |
-| PTFE трубка 2x4 мм | [:material-shopping: Ali](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A. Не брать FEP для использования внутри хотэнда!"){ target="_blank" } <br> [:material-shopping: Ali](https://alli.pub/6w5vlp?erid=2SDnjf3zATJ "Trianglelab"){ target="_blank" } <br> [:material-shopping: Ali](https://alli.pub/6tuprv?erid=2SDnjc4ea3J "Mellow"){ target="_blank" } | Ставится между фидером и горлом. Одного метра хватит с большим запасом |
+| Термобарьер Chimera биметалл сталь+медь | [:material-shopping:](https://alli.pub/6ttg9h?erid=2SDnjeYW49n "5А"){ target="_blank" } | Выбирать smooth |
+| Хитблок E3D Volcano | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="_blank" } <br>[:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="_blank" } | В большинстве случае обычный алюминиевый будет лучше всего |
+| Носок E3D Volcano | [:material-shopping:](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A. Выбирать Volcano Pt100"){ target="_blank" } <br> [:material-shopping:](https://alli.pub/6ttjo6?erid=2SDnjdoa7H2 "Trianglelab"){ target="_blank" } | У 5А выбирать Volcano pt100 |
+| Volcano медное с калёной вставкой | [:material-shopping:](https://alli.pub/6wggvq?erid=2SDnjchhhMz){ target="_blank" } | Универсальный тип сопел, хорошо подходящий как для обычных материалов, так и для композитов. В общем случае одного 0.4 хватит для всех задач, но по желанию можете приобрести сопла других типов и диаметров |
+| PTFE трубка 2x4 мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A. Не брать FEP для использования внутри хотэнда!"){ target="_blank" } <br> [:material-shopping:](https://alli.pub/6w5vlp?erid=2SDnjf3zATJ "Trianglelab"){ target="_blank" } <br> [:material-shopping:](https://alli.pub/6tuprv?erid=2SDnjc4ea3J "Mellow"){ target="_blank" } | Ставится между фидером и горлом. Одного метра хватит с большим запасом |
 
 Термистор и нагревательный элемент просто переносятся в новый хитблок, после чего хотэнд собирается как обычно. При установке хотэнда в радиатор надо будет отмерить и отрезать кусок трубки так, чтобы она стояла в распор между фидером и соплом. 
 
 !!! warning "После установки хотэнда не забудьте протянуть сопло на горячую, а также откалибровать PID, PA и откаты"
+
+Альтернативным вариантом является замена родного хотенда на [версию под Bambu сопла](https://alli.pub/705au5?erid=2SDnjbsxZ7p). Для neptune 4 и 4pro это не имеет большого смысла, так как у данного хотенда нет каких-то значимых преимуществ относительно volcano. Для версий plus и max имеет, так как в них заменить хотенд на volcano значительно труднее.
 
 ### Прошивка OpenNept4une
 
