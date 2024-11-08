@@ -73,6 +73,7 @@ description: Главная страница
     
     ---
 
+    - [:material-printer-3d: Доработки Anycubic Kobra 3](./printers/kobra3.md)
     - [:material-printer-3d: Доработки Creality K1](./printers/k1.md)
     - [:material-printer-3d: Доработки Neptune 3 Pro](./printers/neptune3pro.md)
     - [:material-printer-3d: Доработки Kingroon Kp3s](./printers/kp3s.md)
