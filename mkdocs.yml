@@ -168,6 +168,8 @@ nav:
   - Статьи:
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Принципы прочной печати: ./articles/print_strong.md
+    - ЧАВО по сушке филамента: ./articles/filament_drying.md
+    - ЧАВО по пользовательским G-кодам: ./articles/custom_gcode.md
     - Доработки принтеров:
       - Anycubic Kobra 3: ./printers/kobra3.md
       - Creality K1: ./printers/k1.md
