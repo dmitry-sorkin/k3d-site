@@ -70,6 +70,8 @@ description: Главная страница
 
     - [:material-printer-3d-nozzle: Тест сопел Volcano](./articles/nozzle_test_2024.md)
     - [:material-weight-lifter: Принципы прочной печати](./articles/print_strong.md)
+    - [:material-code-block-tags: ЧАВО по пользовательским скриптам](./articles/custom_gcode.md)
+    - [:material-water-off: ЧАВО по сушке филамента](./articles/filament_drying.md)
     
     ---
 
