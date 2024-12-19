@@ -21,7 +21,7 @@ description: Правильный перевод PrusaSlicer с понятным
 
 ## Скачать последнюю версию
 
-- [:material-download: Скачать перевод v2.8.1](./translations/2.8.1.mo){ download="PrusaSlicer.mo" }
+- [:material-download: Скачать перевод v2.9.0](./translations/2.9.0.mo){ download="PrusaSlicer.mo" }
 
 ## Установка
 
@@ -83,6 +83,13 @@ description: Правильный перевод PrusaSlicer с понятным
 ## Релизы
 
 Релизы промаркированы по номеру версии PrusaSlicer, к которой они подходят. При внесении исправлений и изменений старый файл будет заменен новым т.к. не имеет смысла хранить и распространять старые версии перевода.
+
+### v2.9.0
+
+Время последнего обновления: 19.12.2024 18:43 (GMT+3)
+
+- [:material-download: Скачать перевод v2.9.0](./translations/2.9.0.mo){ download="PrusaSlicer.mo" }
+- [:material-download: Исходники перевода v2.9.0](./translations/2.9.0.po){ download="PrusaSlicer_k3d_2.9.0.po" }
 
 ### v2.8.1
 
