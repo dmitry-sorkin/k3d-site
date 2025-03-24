@@ -48,7 +48,7 @@ description: Главная страница
 
     - [:material-translate: Правильный перевод PrusaSlicer](./projects/ps_translation/index.md)<br>^Заменяет^ ^инструкцию^ ^по^ ^слайсеру^
     - [:fontawesome-solid-gears: Подающие механизмы K3D](./projects/feeders.md)<br>^BeMeGe,^ ^Minifeeder,^ ^Feeder965^ ^и^ ^т.д.^
-    - [:material-printer-3d-nozzle: Печатающие головы K3D](./projects/printheads.md)<br>^dEBP,^ ^EHP,^ ^ESP^ ^и^ ^т.д.^
+    - [:material-printer-3d-nozzle: Печатающие головы K3D](./projects/printheads.md)<br>^EBP,^ ^EHP,^ ^ESP^ ^и^ ^т.д.^
 
 - :material-file-document:{ .lg .middle } __Статьи__
 
