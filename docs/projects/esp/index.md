@@ -1,6 +1,7 @@
 ---
-icon: material/printer-3d-nozzle
+icon: material/subdirectory-arrow-right
 title: K3D ESP - описание
+subtitle: На основе Creality Sprite
 description: Проект печатающей головы для Ender-3 на основе экструдера Sprite
 ---
 

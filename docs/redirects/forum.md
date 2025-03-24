@@ -1,6 +1,7 @@
 ---
 icon: material/forum
 title: K3D Форум
+subtitle: Обсуждение, барахолка и т.д.
 description: Место, где можно пообщаться на темы 3D печати
 ---
 

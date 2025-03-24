@@ -1,6 +1,7 @@
 ---
 icon: material/code-block-tags
 title: ЧАВО по пользовательским G-кодам
+subtitle: Стартовый и конечный G-коды
 description: Стартовый и конечный G-код
 ---
 

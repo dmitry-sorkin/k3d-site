@@ -1,6 +1,7 @@
 ---
 icon: material/translate
 title: K3D - Правильный перевод PrusaSlicer
+subtitle: Заменяет инструкцию по слайсеру
 description: Правильный перевод PrusaSlicer с понятными терминами и подробными описаниями параметров
 ---
 

@@ -1,6 +1,7 @@
 ---
 icon: fontawesome/solid/maximize
 title: Калибровка точности
+subtitle: Сделать печать точнее
 description: Описание и инструкция
 ---
 

@@ -1,6 +1,7 @@
 ---
-icon: fontawesome/solid/gears
+icon: material/subdirectory-arrow-right
 title: K3D BeMeGe
+subtitle: Печатный корпус для BMG
 description: Открытый проект печатного корпуса для BMG
 ---
 

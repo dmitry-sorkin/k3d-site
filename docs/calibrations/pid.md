@@ -1,6 +1,7 @@
 ---
 icon: fontawesome/solid/temperature-low
 title: Калибровка PID
+subtitle: Чтобы температура не колебалась
 description: Как подобрать значения PID
 ---
 

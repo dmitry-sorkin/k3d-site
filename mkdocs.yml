@@ -38,6 +38,11 @@ plugins:
   - redirects:
       redirect_maps:
         './redirects/forum.md': 'https://forum.k3d.tech'
+        './redirects/vostok_bugtracker.md': 'https://forum.k3d.tech/c/vostok-bugtracker/'
+        './redirects/vostok_channel.md': 'https://t.me/vostok3dp'
+        './redirects/vostok_chat.md': 'https://t.me/k3d_vostok'
+        './redirects/vostok_mods.md': 'https://forum.k3d.tech/c/vostok-mods'
+        './redirects/vostok_releases.md': 'https://forum.k3d.tech/c/vostok-releases/'
         './bemege/index.md': 'projects/bemege/index.md'
         './feeder965/index.md': 'projects/feeder965/index.md'
         './feeder965/releases.md': 'projects/feeder965/releases.md'
@@ -58,6 +63,21 @@ plugins:
         './esp/guide_s1.md': 'projects/esp/index.md'
         './esp/index.md': 'projects/esp/index.md'
         './esp/releases.md': 'projects/esp/index.md'
+        './vostok/bed_and_heating_pad.md': 'vostok/v8/bed_and_heating_pad.md'
+        './vostok/bed_frame.md': 'vostok/v8/bed_frame.md'
+        './vostok/belts.md': 'vostok/v8/belts.md'
+        './vostok/enclosure_part_1.md': 'vostok/v8/belts.md'
+        './vostok/guide_index.md': 'vostok/v8/guide_index.md'
+        './vostok/lower_frame.md': 'vostok/v8/lower_frame.md'
+        './vostok/lph_assembly.md': 'vostok/v8/lph_assembly.md'
+        './vostok/portal.md': 'vostok/v8/portal.md'
+        './vostok/profiles_preparation.md': 'vostok/v8/profiles_preparation.md'
+        './vostok/tersioners.md': 'vostok/v8/tensioners.md'
+        './vostok/x_beam.md': 'vostok/v8/x_beam.md'
+        './vostok/xu_drives.md': 'vostok/v8/xu_drives.md'
+        './vostok/xy_endstops.md': 'vostok/v8/xy_endstops.md'
+        './vostok/y_drive.md': 'vostok/v8/y_drive.md'
+        './vostok/z_drive.md': 'vostok/v8/z_drive.md'
   - charts
   - table-reader
 markdown_extensions:
@@ -117,31 +137,37 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/vega-embed@6
 nav:
   - 3D Рекомендатор:
-    - Принтеры: ./part-navi/printers.md
+    - 3D Принтеры: ./part-navi/printers.md
     - Детали экструдеров: ./part-navi/extruder.md
     - Электроника: ./part-navi/electronics.md
     - Механика: ./part-navi/mechanics.md
     - Филаменты и расходники: ./part-navi/filament.md
   - VOSTOK:
-    - Описание проекта: ./vostok/index.md
-    - Релизы: ./vostok/releases.md
+    - K3D VOSTOK: ./vostok/index.md
+    - Релизы: ./redirects/vostok_releases.md
     - Инструменты: ./vostok/tools.md
-    - Форум проекта: ./redirects/forum.md
-    - Инструкция по сборке:
-      - С чего начать: ./vostok/guide_index.md
-      - Подготовка профилей: ./vostok/profiles_preparation.md
-      - Портал: ./vostok/portal.md
-      - Нижняя часть рамы: ./vostok/lower_frame.md
-      - Зашивка часть 1: ./vostok/enclosure_part_1.md
-      - Печатающая голова LPH: ./vostok/lph_assembly.md
-      - Балка оси X: ./vostok/x_beam.md
-      - Натяжители: ./vostok/tensioners.md
-      - Приводы осей XU: ./vostok/xu_drives.md
-      - Приводы оси Y: ./vostok/y_drive.md
-      - Установка ремней: ./vostok/belts.md
-      - Изготовление стола: ./vostok/bed_and_heating_pad.md
-      - Рама стола: ./vostok/bed_frame.md
-      - Ось Z: ./vostok/z_drive.md
+    - Модификации: ./redirects/vostok_mods.md
+    - Багтрекер: ./redirects/vostok_bugtracker.md
+    - Ресурсы проекта:
+      - Telegram канал: ./redirects/vostok_channel.md
+      - Telegram чат: ./redirects/vostok_chat.md
+      - Форум проекта: ./redirects/forum.md
+    - Архивные статьи:
+      - Инструкция по сборке VOSTOK v0.8.x:
+        - С чего начать: ./vostok/v8/guide_index.md
+        - Подготовка профилей: ./vostok/v8/profiles_preparation.md
+        - Портал: ./vostok/v8/portal.md
+        - Нижняя часть рамы: ./vostok/v8/lower_frame.md
+        - Зашивка часть 1: ./vostok/v8/enclosure_part_1.md
+        - Печатающая голова LPH: ./vostok/v8/lph_assembly.md
+        - Балка оси X: ./vostok/v8/x_beam.md
+        - Натяжители: ./vostok/v8/tensioners.md
+        - Приводы осей XU: ./vostok/v8/xu_drives.md
+        - Приводы оси Y: ./vostok/v8/y_drive.md
+        - Установка ремней: ./vostok/v8/belts.md
+        - Изготовление стола: ./vostok/v8/bed_and_heating_pad.md
+        - Рама стола: ./vostok/v8/bed_frame.md
+        - Ось Z: ./vostok/v8/z_drive.md
   - Калибровки:
       - Порядок калибровок: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
@@ -156,28 +182,28 @@ nav:
         - Калибровщик LA: ./calibrations/la/calibrator.md
   - Проекты:
     - Перевод PrusaSlicer: ./projects/ps_translation/index.md
-    - BeMeGe: ./projects/bemege/index.md
-    - Minifeeder: ./projects/minifeeder/index.md
-    - Ender-3 H2 Printhead: ./projects/ehp/index.md
-    - Ender-3 BMG Printhead: ./projects/ebp/index.md
-    - Ender-3 Sprite Printhead: ./projects/esp/index.md
-    - Архивные проекты:
-      - Feeder965:
-        - Описание проекта: ./projects/feeder965/index.md
-        - Инструкция: ./projects/feeder965/feeder965_assembly.md
-        - Релизы: ./projects/feeder965/releases.md
+    - Печатающие головы K3D:
+      - Печатающие головы K3D: ./projects/printheads.md
+      - Ender-3 BMG Printhead: ./projects/ebp/index.md
+      - Ender-3 H2 Printhead: ./projects/ehp/index.md
+      - Ender-3 Sprite Printhead: ./projects/esp/index.md
+    - Подающие механизмы:
+      - Подающие механизмы K3D: ./projects/feeders.md
+      - BeMeGe: ./projects/bemege/index.md
+      - Minifeeder: ./projects/minifeeder/index.md
+      - Feeder965: ./projects/feeder965/index.md
   - Статьи:
-    - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Принципы прочной печати: ./articles/print_strong.md
     - ЧАВО по сушке филамента: ./articles/filament_drying.md
-    - ЧАВО по пользовательским G-кодам: ./articles/custom_gcode.md
-    - Доработки принтеров:
-      - Anycubic Kobra 3: ./printers/kobra3.md
-      - Creality K1: ./printers/k1.md
-      - Elegoo Neptune 3 Pro: ./printers/neptune3pro.md
-      - Elegoo Neptune 4: ./printers/neptune4.md
-      - Kingroon KP3S: ./printers/kp3s.md
-      - QIDI Q1 Pro: ./printers/qidi_q1_pro.md
+    - ЧАВО по G-кодам: ./articles/custom_gcode.md
+    - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
+  - Доработки:
+    - Anycubic Kobra 3: ./printers/kobra3.md
+    - Creality K1: ./printers/k1.md
+    - Elegoo Neptune 3 Pro: ./printers/neptune3pro.md
+    - Elegoo Neptune 4: ./printers/neptune4.md
+    - Kingroon KP3S: ./printers/kp3s.md
+    - QIDI Q1 Pro: ./printers/qidi_q1_pro.md
   - YouTube: http://www.youtube.com/@SorkinDmitry/
   - Telegram: http://t.me/dsorkin
   - Чат K3D: http://t.me/K_3_D

@@ -1,6 +1,7 @@
 ---
-icon: fontawesome/solid/gears
-title: K3D Minifeeder - описание
+icon: material/subdirectory-arrow-right
+title: K3D Minifeeder
+subtitle: LGX Lite совместимый
 description: Открытый проект компактного и лёгкого подающего механизма на основе деталей BMG
 ---
 

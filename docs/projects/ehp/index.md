@@ -1,6 +1,7 @@
 ---
-icon: material/printer-3d-nozzle
+icon: material/subdirectory-arrow-right
 title: K3D EHP
+subtitle: На основе Biqu H2
 description: Проект печатающей головы для Ender-3 на основе экструдера Biqu H2
 ---
 

@@ -1,6 +1,7 @@
 ---
-icon: material/printer-3d-nozzle
+icon: material/subdirectory-arrow-right
 title: K3D EBP - Ender-3 BMG Printhead
+subtitle: На основе BMG + E3D V6
 description: Проект печатающей головы для Ender-3 на основе экструдера BMG
 ---
 

@@ -1,6 +1,7 @@
 ---
 icon: material/sine-wave 
 title: K3D тест ряби
+subtitle: Тест ряби для PrusaSlicer
 ---
 
 # Тест ряби
