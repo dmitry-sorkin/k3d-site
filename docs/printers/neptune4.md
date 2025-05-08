@@ -27,8 +27,6 @@ icon: material/printer-3d
 - Видео версией обзора [:simple-youtube: на YouTube](https://youtu.be/HnLohH1MFz0?si=zF5VPuc0XpkL8oRZ){ target=_blank } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239570){ target=_blank }
 - Разбор проблемы с колёсами [:simple-youtube: на YouTube](https://youtu.be/19Ylp_yEUPY){ target=_blank } / [:simple-vk: в Vk](https://vk.com/video-168896673_456239565){ target=_blank }
 
-[Купить Neptune 4](https://alli.pub/6xtus8?erid=2SDnjcNDgeM){ target=_blank }
-
 ## Доработки
 
 В целом, обязательных для этого принтера доработок нет ввиду отсутствия у него косяков, которые заметно ухудшали бы характеристики или мешали бы эксплуатации принтера. Тем не менее, есть несколько вещей, которые могут улучшить опыт экспулатации принтера при небольшой стоимости. 
@@ -41,10 +39,9 @@ icon: material/printer-3d
 
 | Тип устройства | Модель | Ссылки | Примечание |
 |:--------------:|:------:|:------:|:---------- |
-| Wi-Fi адаптер | TP-Link TL-WN725N V2 | [:material-shopping: OZON](https://www.ozon.ru/product/setevoy-adapter-wi-fi-tp-link-tl-wn725n-1256496647/){ target="_blank" } <br> [:material-shopping: DNS](https://www.dns-shop.ru/product/bcf490a4e2818499/wi-fi-adapter-tp-link-tl-wn725n/){ target="_blank" } | 600-900р. Персонально я использую такой. Проверяйте, чтобы версия была именно 2 |
-| Wi-Fi адаптер | RTL8192 | [:material-shopping: Ali](https://alli.pub/6z8bdc?erid=2SDnjd15aAv){ target="_blank" } <br> [:material-shopping: DNS](https://www.dns-shop.ru/product/f849646f3c6b3330/wi-fi-adapter-dexp-wfa-301/characteristics/){ target="_blank" } | 300-600р. По информации из интернета, должен работать |
-| Маршрутизатор | ZBT WE1626 | [:material-shopping: OZON](https://www.ozon.ru/product/wi-fi-marshrutizator-zbt-we1626-3g-4g-router-300mb-s-811816100/){ target="_blank" } | 1200р; 4 порта |
-| Маршрутизатор | ноунейм | [:material-shopping: Ali](https://alli.pub/6z8d9s?erid=2SDnjeHGK5U){ target="_blank" } | ~450р; 1 порт; не знаю, будет ли конкретно этот нормально работать. Добавил в список скорее для примера, что подобные устройства существуют. Берите на свой страх и риск |
+| Wi-Fi адаптер | TP-Link TL-WN725N V2 | [:material-shopping: OZON](https://www.ozon.ru/product/besprovodnoy-setevoy-usb-adapter-tp-link-tl-wn725n-v3-28103796/){ target="_blank" } | ~800р. Персонально я использую такой. Проверяйте, чтобы версия была именно 2 |
+| Wi-Fi адаптер | RTL8192 | [:material-shopping: Ali](https://alli.pub/6z8bdc?erid=2SDnjd15aAv){ target="_blank" } <br> [:material-shopping: DNS](https://www.dns-shop.ru/product/f849646f3c6b3330/wi-fi-adapter-dexp-wfa-301/){ target="_blank" } | 300-800р. По информации из интернета, должен работать |
+| Маршрутизатор | ZBT WE1626 | [:material-shopping: OZON](https://www.ozon.ru/product/wi-fi-router-s-podderzhkoy-usb-lte-3g-4g-modemov-zbt-we1626-300-mbit-s-marshrutizator-9v-1830835768/){ target="_blank" } | 1500р; 4 порта |
 
 Если купите маршрутизатор, то вам надо будет подключить его к своей домашней сети, подключить принтер к маршрутизатору кабелем и всё, принтер должен определяться в сети. 
 
@@ -74,7 +71,7 @@ icon: material/printer-3d
 | Термобарьер Chimera биметалл сталь+медь | [:material-shopping:](https://alli.pub/6ttg9h?erid=2SDnjeYW49n "5А"){ target="_blank" } | Выбирать smooth |
 | Хитблок E3D Volcano | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="_blank" } <br>[:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="_blank" } | В большинстве случае обычный алюминиевый будет лучше всего |
 | Носок E3D Volcano | [:material-shopping:](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A. Выбирать Volcano Pt100"){ target="_blank" } <br> [:material-shopping:](https://alli.pub/6ttjo6?erid=2SDnjdoa7H2 "Trianglelab"){ target="_blank" } | У 5А выбирать Volcano pt100 |
-| Volcano медное с калёной вставкой | [:material-shopping:](https://alli.pub/6wggvq?erid=2SDnjchhhMz){ target="_blank" } | Универсальный тип сопел, хорошо подходящий как для обычных материалов, так и для композитов. В общем случае одного 0.4 хватит для всех задач, но по желанию можете приобрести сопла других типов и диаметров |
+| Сопло Volcano | [:material-link:](../part-navi/extruder.md){ target="_blank" } | Выбирать медное с закалённой вставкой или стальное закалённое cht. Если не планируете печатать абразивными материалами, то можно взять латунное. |
 | PTFE трубка 2x4 мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME "5A. Не брать FEP для использования внутри хотэнда!"){ target="_blank" } <br> [:material-shopping:](https://alli.pub/6w5vlp?erid=2SDnjf3zATJ "Trianglelab"){ target="_blank" } <br> [:material-shopping:](https://alli.pub/6tuprv?erid=2SDnjc4ea3J "Mellow"){ target="_blank" } | Ставится между фидером и горлом. Одного метра хватит с большим запасом |
 
 Термистор и нагревательный элемент просто переносятся в новый хитблок, после чего хотэнд собирается как обычно. При установке хотэнда в радиатор надо будет отмерить и отрезать кусок трубки так, чтобы она стояла в распор между фидером и соплом. 

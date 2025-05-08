@@ -187,8 +187,8 @@ max_temp: 120
 | BTT MicroProbe | [:material-shopping:](https://alli.pub/6tusx1?erid=2SDnjdbdWMe "BigTreeTech Official Store"){ target="_blank" } | Идёт сразу с винтами и проводами |
 | Сопло Volcano | [:material-link:](../part-navi/extruder.md){ target="_blank" } | Сопло выбирайте на свой вкус. Лично я печатаю через стальное закалённое CHT 0.4 и 0.6мм. У вас могут быть другие предпочтения |
 | 2 шт. Магнит Ø5x1 | - | Если будете перепечатывать систему охлаждения под Volcano сопла. О том, когда это необходимо, а когда нет, читайте в `печатные детали` |
-| Разъём xh2.54 2pin мама | [:material-shopping:](https://alli.pub/73yzf5?erid=2SDnjccns4w){ target="_blank" } | Если есть обжимка, то лучше будет обжать пины в разъёмы xh2.54. Если нет, то можно использовать те разъёмы, которые идут в комплекте к MicroProbe и просто зафиксировать их каким-нибудь клеем, чтобы не слетали |
-| Разъём xh2.54 3pin мама | [:material-shopping:](https://alli.pub/73yzf5?erid=2SDnjccns4w){ target="_blank" } |  |
+| Разъём xh2.54 2pin мама | [:material-shopping:](https://alli.pub/773a97?erid=2SDnjdD4ZkH){ target="_blank" } | Если есть обжимка, то лучше будет обжать пины в разъёмы xh2.54. Если нет, то можно использовать те разъёмы, которые идут в комплекте к MicroProbe и просто зафиксировать их каким-нибудь клеем, чтобы не слетали |
+| Разъём xh2.54 3pin мама | [:material-shopping:](https://alli.pub/773a9e?erid=2SDnjdQvU13){ target="_blank" } |  |
 | Радиатор для микроконтроллера | [:material-shopping:](https://alli.pub/73yzkl?erid=2SDnjecRu3q){ target="_blank" } | Пойдёт почти любой, который физически поместится и не будет ничего задевать |
 
 ### Печатные детали

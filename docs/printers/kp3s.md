@@ -32,9 +32,9 @@ icon: material/printer-3d
 | Наименование | Ссылка | Комментарий |
 |:------------ |:------:|:----------- |
 | Радиатор E3D V6 | [:material-shopping:](https://alli.pub/6ttfxf?erid=2SDnjcxaVCU) | Выбирать Bowden Wade |
-| Биметаллический термобарьер V6 | [:material-shopping:](https://alli.pub/6ttg8p?erid=2SDnjeDEDVJ) | Выбирать threaded. Сокращает откаты и к-фактор LA, даёт возможность греть хотэнд до 300°C[^1] и печатать композитными материалами |
+| E3D V6 биметаллический сталь+медь | [:material-shopping:](https://alli.pub/773a5i?erid=2SDnjcHh1bs "Mellow Store"){ target="_blank" } | Сокращает откаты и к-фактор LA, даёт возможность греть хотэнд до 300°C[^1] и печатать композитными материалами |
 | Хитблок E3D V6 | [:material-shopping:](https://alli.pub/6ttgga?erid=2SDnjdPnwxC) |  |
-| Сопло E3D V6 медное с калёной вставкой | [:material-shopping:](https://alli.pub/6wg2tz?erid=2SDnjcUAPTE) | Подходит для печати всеми видами материалов, включая композитные |
+| Сопло E3D V6 | [:material-link:](../part-navi/extruder.md){ target="_blank" } | Выбирать медное с закалённой вставкой или стальное закалённое cht. Если не планируете печатать абразивными материалами, то можно взять латунное. |
 | Носок E3D V6 | [:material-shopping:](https://alli.pub/6ttjm8?erid=2SDnjdRLJ3r) | Выбирать V6 Pt100. Защищает хитблок от резкого перепада температуры при включении системы охлаждения |
 | Термистор NTC100k B3950 в гильзе | [:material-shopping:](https://alli.pub/6ttpri?erid=2SDnjdThg64) | Такой же термистор, как стоит в стоке. Не потребует внесения изменений в прошивку |
 | Тефлоновая трубка 2х4мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME) | Используется при сборке хотэнда. 1м хватит с большим запасом |
