@@ -16,6 +16,7 @@ jobs:
         with:
           mkdocs_version: 'latest'
           requirements: './.github/workflows/requirements.txt'
+          configfile: 'mkdocs.yml'
       - name: Copy htaccess
         run: |
           sudo chown -R runner:docker ./site
