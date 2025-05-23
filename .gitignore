@@ -7,3 +7,4 @@ docs/.obsidian/workspace
 .cache/*
 .DS_Store
 *~lock.*#
+bau.sh

@@ -35,391 +35,313 @@ description: Goliath, CHC XL, Rapido ACE
       {
         "hotend": "Goliath",
         "thermistor_temperature": 200,
-        "nozzle_temperature": 211,
+        "nozzle_temperature": 11,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 210,
-        "nozzle_temperature": 221,
+        "nozzle_temperature": 11,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 220,
-        "nozzle_temperature": 232,
+        "nozzle_temperature": 12,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 230,
-        "nozzle_temperature": 242.5,
+        "nozzle_temperature": 12.5,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 240,
-        "nozzle_temperature": 253,
+        "nozzle_temperature": 13,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 250,
-        "nozzle_temperature": 263.5,
+        "nozzle_temperature": 13.5,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 260,
-        "nozzle_temperature": 274,
+        "nozzle_temperature": 14,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 270,
-        "nozzle_temperature": 284.5,
+        "nozzle_temperature": 14.5,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 280,
-        "nozzle_temperature": 295,
+        "nozzle_temperature": 15,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 290,
-        "nozzle_temperature": 305,
+        "nozzle_temperature": 15,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 300,
-        "nozzle_temperature": 315.2,
+        "nozzle_temperature": 15.2,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 310,
-        "nozzle_temperature": 326,
+        "nozzle_temperature": 16,
         "theory": false
       },
       {
         "hotend": "Goliath",
         "thermistor_temperature": 320,
-        "nozzle_temperature": 336,
+        "nozzle_temperature": 16,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 200,
-        "nozzle_temperature": 210.3,
+        "nozzle_temperature": 10.3,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 210,
-        "nozzle_temperature": 221,
+        "nozzle_temperature": 11,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 220,
-        "nozzle_temperature": 231.5,
+        "nozzle_temperature": 11.5,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 230,
-        "nozzle_temperature": 242.3,
+        "nozzle_temperature": 12.3,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 240,
-        "nozzle_temperature": 252.7,
+        "nozzle_temperature": 12.7,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 250,
-        "nozzle_temperature": 263.1,
+        "nozzle_temperature": 13.1,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 260,
-        "nozzle_temperature": 273.5,
+        "nozzle_temperature": 13.5,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 270,
-        "nozzle_temperature": 284,
+        "nozzle_temperature": 14,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 280,
-        "nozzle_temperature": 294.4,
+        "nozzle_temperature": 14.4,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 290,
-        "nozzle_temperature": 304.9,
+        "nozzle_temperature": 14.9,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 300,
-        "nozzle_temperature": 315.3,
+        "nozzle_temperature": 15.3,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 310,
-        "nozzle_temperature": 325.6,
+        "nozzle_temperature": 15.6,
         "theory": false
       },
       {
         "hotend": "CHC XL",
         "thermistor_temperature": 320,
-        "nozzle_temperature": 336.4,
+        "nozzle_temperature": 16.4,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 200,
-        "nozzle_temperature": 201.7,
+        "nozzle_temperature": 1.7,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 210,
-        "nozzle_temperature": 211.5,
+        "nozzle_temperature": 1.5,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 220,
-        "nozzle_temperature": 221.4,
+        "nozzle_temperature": 1.4,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 230,
-        "nozzle_temperature": 231.2,
+        "nozzle_temperature": 1.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 240,
-        "nozzle_temperature": 241.2,
+        "nozzle_temperature": 1.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 250,
-        "nozzle_temperature": 250.9,
+        "nozzle_temperature": 0.9,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 260,
-        "nozzle_temperature": 260.8,
+        "nozzle_temperature": 0.8,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 270,
-        "nozzle_temperature": 270.2,
+        "nozzle_temperature": 0.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 280,
-        "nozzle_temperature": 279.7,
+        "nozzle_temperature": -0.3,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 290,
-        "nozzle_temperature": 289.1,
+        "nozzle_temperature": -0.9,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 300,
-        "nozzle_temperature": 298.7,
+        "nozzle_temperature": -1.3,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 310,
-        "nozzle_temperature": 307.9,
+        "nozzle_temperature": -2.1,
         "theory": false
       },
       {
         "hotend": "Rapido ACE HF",
         "thermistor_temperature": 320,
-        "nozzle_temperature": 317.3,
+        "nozzle_temperature": -2.7,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 200,
-        "nozzle_temperature": 199.5,
+        "nozzle_temperature": -0.5,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 210,
-        "nozzle_temperature": 209.5,
+        "nozzle_temperature": -0.5,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 220,
-        "nozzle_temperature": 219.3,
+        "nozzle_temperature": -0.7,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 230,
-        "nozzle_temperature": 228.8,
+        "nozzle_temperature": -1.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 240,
-        "nozzle_temperature": 238.2,
+        "nozzle_temperature": -1.8,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 250,
-        "nozzle_temperature": 247.7,
+        "nozzle_temperature": -2.3,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 260,
-        "nozzle_temperature": 256.9,
+        "nozzle_temperature": -3.1,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 270,
-        "nozzle_temperature": 265.8,
+        "nozzle_temperature": -4.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 280,
-        "nozzle_temperature": 274.8,
+        "nozzle_temperature": -5.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 290,
-        "nozzle_temperature": 284.4,
+        "nozzle_temperature": -5.6,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 300,
-        "nozzle_temperature": 293.8,
+        "nozzle_temperature": -6.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 310,
-        "nozzle_temperature": 303.8,
+        "nozzle_temperature": -6.2,
         "theory": false
       },
       {
         "hotend": "Rapido ACE UHF",
         "thermistor_temperature": 320,
-        "nozzle_temperature": 313.1,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 200,
-        "nozzle_temperature": 204.1,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 210,
-        "nozzle_temperature": 214.9,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 220,
-        "nozzle_temperature": 225.1,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 230,
-        "nozzle_temperature": 235,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 240,
-        "nozzle_temperature": 245.4,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 250,
-        "nozzle_temperature": 255.6,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 260,
-        "nozzle_temperature": 266.3,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 270,
-        "nozzle_temperature": 276.6,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 280,
-        "nozzle_temperature": 287.2,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 290,
-        "nozzle_temperature": 298.2,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 300,
-        "nozzle_temperature": 308.5,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 310,
-        "nozzle_temperature": 319.3,
-        "theory": false
-      },
-      {
-        "hotend": "Volcano",
-        "thermistor_temperature": 320,
-        "nozzle_temperature": 330.4,
+        "nozzle_temperature": -6.9,
         "theory": false
       },
       {
@@ -431,7 +353,7 @@ description: Goliath, CHC XL, Rapido ACE
       {
         "hotend": "Theory",
         "thermistor_temperature": 1000,
-        "nozzle_temperature": 1000,
+        "nozzle_temperature": 0,
         "theory": true
       }
     ]
@@ -459,9 +381,9 @@ description: Goliath, CHC XL, Rapido ACE
         "y": {
           "field": "nozzle_temperature",
           "type": "quantitative",
-          "scale": {"domainMin": 200, "domainMax": 340},
+          "scale": {"domainMin": -8, "domainMax": 18},
           "axis": {
-            "title": "Nozzle temperature [ºC]",
+            "title": "Nozzle temperature delta [ºC]",
             "titleFontSize": 16,
             "labelFontSize": 14
           }
@@ -494,7 +416,7 @@ description: Goliath, CHC XL, Rapido ACE
               "#2CA02C",
               "#98DF8A",
               "#D62729",
-              "#000000"
+              "#7f7f7f"
             ]
           }
         },
