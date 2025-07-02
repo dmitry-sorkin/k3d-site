@@ -37,7 +37,7 @@ icon: material/printer-3d
 | Сопло E3D V6 | [:material-link:](../part-navi/extruder.md){ target="_blank" } | Выбирать медное с закалённой вставкой или стальное закалённое cht. Если не планируете печатать абразивными материалами, то можно взять латунное. |
 | Носок E3D V6 | [:material-shopping:](https://alli.pub/6ttjm8?erid=2SDnjdRLJ3r) | Выбирать V6 Pt100. Защищает хитблок от резкого перепада температуры при включении системы охлаждения |
 | Термистор NTC100k B3950 в гильзе | [:material-shopping:](https://alli.pub/6ttpri?erid=2SDnjdThg64) | Такой же термистор, как стоит в стоке. Не потребует внесения изменений в прошивку |
-| Тефлоновая трубка 2х4мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME) | Используется при сборке хотэнда. 1м хватит с большим запасом |
+| Тефлоновая трубка 2x4мм | [:material-shopping:](https://alli.pub/6tupqw?erid=2SDnjbukeME) | Используется при сборке хотэнда. 1м хватит с большим запасом |
 
 Обдув можно найти тут: [:simple-thingiverse: Thingiverse](https://www.thingiverse.com/thing:5218946)
 

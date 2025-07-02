@@ -11,9 +11,9 @@ description: Проект печатающей головы для Ender-3 на 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
 | Вентилятор 5015 | 2 | [12в](https://alli.pub/6tuuh8?erid=2SDnjcXP2xx "Younuon Cooling Store"){ target="_blank" } / [24в](https://alli.pub/6tuuhm?erid=2SDnjcaM1Xe "Younuon Cooling Store"){ target="_blank" } | |
-| Винт М4х20 DIN 7380 | 2 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } |  |
-| Винт М4х35 DIN 7380 | 1 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh35_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } |  |
-| Винт М3х5 DIN 7380 | 3 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh5_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+| Винт М4x20 DIN 7380 | 2 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } |  |
+| Винт М4x35 DIN 7380 | 1 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_4kh35_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } |  |
+| Винт М3x5 DIN 7380 | 3 | [:material-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh5_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
 | Коннектор xh1.25 2pin | 2 | [:material-shopping:](https://alli.pub/6vp3s6?erid=2SDnjbvuEBz){ target="blank" } | Опционально. Ссылка не проверена |
 
 ## Печать деталей
@@ -68,7 +68,7 @@ description: Проект печатающей головы для Ender-3 на 
 
 ![ESP S1 fan duct install image](./pics/esp_s1_fan_duct_install.png)
 
-Сопло системы охлаждения устанавливается на мотор экструдера и крепится тремя винтами М3х5.
+Сопло системы охлаждения устанавливается на мотор экструдера и крепится тремя винтами М3x5.
 
 Если система охлаждения распечатана из плохо спекающегося пластика типа ABS и подобных, то может быть хорошей идеей нарезать резьбу метчиком М4 или вплавить резьбовые втулки, так как подобные детали склонны расслаиваться от вкручивания винтов.
 
@@ -76,7 +76,7 @@ description: Проект печатающей головы для Ender-3 на 
 
 ![ESP fans install S1 image](./pics/esp_fans_install_s1.png)
 
-Вентиляторы крепятся на 2 винта М4х20 в верхние отверстия, и один М4х35 в нижнее отверстие справа. Затягивать винты на этом этапе не нужно.
+Вентиляторы крепятся на 2 винта М4x20 в верхние отверстия, и один М4x35 в нижнее отверстие справа. Затягивать винты на этом этапе не нужно.
 
 ### Регулировка положения системы охлаждения
 

@@ -57,27 +57,27 @@ description: Проект печатающей головы для Ender-3 на 
 
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Винт М3х6 DIN 7380 | 1 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х8 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh8_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х10 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х12 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh12_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х20 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x6 DIN 7380 | 1 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x8 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh8_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x10 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x12 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh12_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x20 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
     | Гайка М3 DIN 934 | 10 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/gayki-razdel/gayka_sh_gr_m_3_DIN_934_ots.htm) |  |
 
 === "Вариант на вплавляемых втулках"
 
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Винт М3х6 DIN 7380 | 5 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х8 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh8_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х10 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х12 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh12_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Винт М3х20 DIN 7380 | 6 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
-    | Вплавляемая втулка М3х4 | 14 | [:fontawesome-solid-basket-shopping:](http://alli.pub/6hurpt){ target="blank" } |  |
+    | Винт М3x6 DIN 7380 | 5 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x8 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh8_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x10 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x12 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh12_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Винт М3x20 DIN 7380 | 6 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | |
+    | Вплавляемая втулка М3x4 | 14 | [:fontawesome-solid-basket-shopping:](http://alli.pub/6hurpt){ target="blank" } |  |
 
 #### Для крепления BLTouch
 
 | Наименование | Кол-во | Ссылки | Примечание |
 |:------------ |:------:|:------:|:---------- |
-| Винт М3х6 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | Не нужно покупать, если вы не собираетесь ставить BLTouch |
-| Винт М3х16 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh16_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | Не нужно покупать, если вы не собираетесь ставить BLTouch |
+| Винт М3x6 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | Не нужно покупать, если вы не собираетесь ставить BLTouch |
+| Винт М3x16 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh16_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm){ target="blank" } | Не нужно покупать, если вы не собираетесь ставить BLTouch |

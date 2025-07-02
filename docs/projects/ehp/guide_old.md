@@ -23,18 +23,18 @@
 
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Винт М3х6 DIN 7380 | 7 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | Если не планируется установка BLTouch, то на 2 меньше |
-    | Винт М3х10 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
-    | Винт М3х16 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh16_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
+    | Винт М3x6 DIN 7380 | 7 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | Если не планируется установка BLTouch, то на 2 меньше |
+    | Винт М3x10 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
+    | Винт М3x16 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh16_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
     | Вплавляемая резьбовая вставка | 1 | [:fontawesome-solid-basket-shopping:](http://alli.pub/6hurpt) | | 
 
 === "Под крепление вентиляторов винтами"
     | Наименование | Кол-во | Ссылки | Примечание |
     |:------------ |:------:|:------:|:---------- |
-    | Винт М3х6 DIN 7380 | 7 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | Если не планируется установка BLTouch, то на 2 меньше |
-    | Винт М3х10 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
-    | Винт М3х16 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh16_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
-    | Винт М3х20 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | | 
+    | Винт М3x6 DIN 7380 | 7 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh6_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | Если не планируется установка BLTouch, то на 2 меньше |
+    | Винт М3x10 DIN 7380 | 4 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh10_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
+    | Винт М3x16 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh16_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | |
+    | Винт М3x20 DIN 7380 | 2 | [:fontawesome-solid-basket-shopping:](https://krepcom.ru/catalog/vinty-razdel/vint_3kh20_s_polukrugloy_golovkoy_i_vnutrennim_shestigrannikom_din_7380_nerzh_stal_a2.htm) | | 
     | Вплавляемая резьбовая вставка | 1 | [:fontawesome-solid-basket-shopping:](http://alli.pub/6hurpt) | | 
 
 ## Печать
@@ -107,7 +107,7 @@
 
 Примерьте вентилятор к экструдеру и решите, в какой позиции он будет крепиться к нему. После этого, вплавьте резьбовую вставку в указанное отверстие. Это отверстие не используется для Biqu H2, так что установка резьбовой вставки в него никак не повлияет на работу экструдера.
 
-Если вы по каким-то причинам боитесь вплавлять вставку в вентилятор, то можно заменить один из винтов М3х6 на винт М3х16. Тогда винт будет проходить через это отверстие вентилятора насквозь и его можно будет закрепить обычной шестигранной гайкой с обратной стороны. При этом регулировка вентиляторов по высоте будет заметно затруднена.
+Если вы по каким-то причинам боитесь вплавлять вставку в вентилятор, то можно заменить один из винтов М3x6 на винт М3x16. Тогда винт будет проходить через это отверстие вентилятора насквозь и его можно будет закрепить обычной шестигранной гайкой с обратной стороны. При этом регулировка вентиляторов по высоте будет заметно затруднена.
 
 ## Сборка
 
@@ -115,7 +115,7 @@
 
 ![](./pics/ehp_mount_install.png)
 
-Установите кронштейн на каретку принтера и прикрутите на 4 винта М3х10 с полукруглой головкой.
+Установите кронштейн на каретку принтера и прикрутите на 4 винта М3x10 с полукруглой головкой.
 
 ### Установка экструдера в сборе
 
@@ -123,8 +123,8 @@
 
 Установите экструдер в кронштейн и прикрутите на винты:
 
-- Спереди один винт М3х16 сквозь вентилятор
-- Сверху и снизу по одному винту М3х6
+- Спереди один винт М3x16 сквозь вентилятор
+- Сверху и снизу по одному винту М3x6
 
 ### Подготовка сопел системы охлаждения
 
@@ -138,7 +138,7 @@
 
     ![](./pics/ehp_fan_duct_prepare_screws.png)
 
-    Установите вентилятор 5015 в углубление в сопле и прикрутите винтом М3х18 или М3х20. Повторите для другого сопла.
+    Установите вентилятор 5015 в углубление в сопле и прикрутите винтом М3x18 или М3x20. Повторите для другого сопла.
 
 ### Установка BLTouch
 
@@ -146,7 +146,7 @@
 
 ![](./pics/ehp_bltouch_install.png)
 
-Прикрутите датчик BLTouch к кронштейну двумя винтами М3х6.
+Прикрутите датчик BLTouch к кронштейну двумя винтами М3x6.
 
 После этого приклейте кронштейн к левому соплу системы охлаждения так, чтобы направляющие на сопле совпали с выемками на кронштейне. Для пластиков типа `ABS`, `ASA`, `PC` и т.д. подойдёт суперклей (цианоакрилат).
 
@@ -154,7 +154,7 @@
 
 ![](./pics/ehp_fan_duct_install.png)
 
-Установите сопла системы охлаждения на экструдер. Левое сопло крепится на 1 винт М3х6 и 1 винт М3х16. Правое сопло крепится на 2 винта М3х6. Не затягивайте крепления на этом этапе.
+Установите сопла системы охлаждения на экструдер. Левое сопло крепится на 1 винт М3x6 и 1 винт М3x16. Правое сопло крепится на 2 винта М3x6. Не затягивайте крепления на этом этапе.
 
 ### Регулировка сопел системы охлаждения
 
