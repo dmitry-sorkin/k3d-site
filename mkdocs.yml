@@ -198,6 +198,7 @@ nav:
     - ЧАВО по G-кодам: ./articles/custom_gcode.md
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Сверхпроизводительные хотэнды: ./articles/ultra_high_flow_hotends.md
+    - Дефекты охлаждения: ./articles/cooling_problems.md
   - Доработки:
     - Anycubic Kobra 3: ./printers/kobra3.md
     - Creality K1: ./printers/k1.md
