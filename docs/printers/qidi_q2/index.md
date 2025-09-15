@@ -149,6 +149,9 @@ IP можно посмотреть прямо через экран принте
 3. Спросит пароль. Введите `makerbase`. Символы при этом не отображаются, но знаки вводятся;
 4. Удалите поломанную версию плагина KAMP:
 ```
+sudo rm -rf ~/Klipper-Adaptive-Meshing-Purging
+```
+```
 sudo rm -rf ~/KAMP
 ```
 ```
@@ -158,7 +161,15 @@ sudo rm -rf ~/printer_data/config/KAMP
 sudo rm -rf ~/printer_data/config/KAMP_settings.cfg
 ```
 Если спросит пароль, то введите `makerbase`. Файлы не обязательно удалять. Если хотите, можете переименовать их любым удобным вам способом;
-5. Установите чистую версию KAMP:
+5. Установите git:
+```
+sudo apt update
+```
+```
+sudo apt install git
+```
+Со всем соглашайтесь. Если спросит пароль, то введите `makerbase`;
+6. Установите чистую версию KAMP:
 ```
 cd ~/
 ```
@@ -171,12 +182,12 @@ ln -s ~/Klipper-Adaptive-Meshing-Purging/Configuration printer_data/config/KAMP
 ```
 cp ~/Klipper-Adaptive-Meshing-Purging/Configuration/KAMP_Settings.cfg ~/printer_data/config/KAMP_Settings.cfg
 ```
-6. Зайдите в веб-интерфейс принтера и во вкладке `Конфигурация` найдите и откройте файл `KAMP_Settings.cfg`;
-7. В нём раскомментируйте (уберите `#` в начале строки) строку `[include ./KAMP/Adaptive_Meshing.cfg]`;
-8. [Опционально] если хотите пользоваться адаптивной прочисткой сопла, то раскомментируйте еще и строку `[include ./KAMP/Line_Purge.cfg]`;
-9. Установите значение параметра `variable_mesh_margin` на 10;
-10. Установите значение параметра `variable_fuzz_amount` на 2;
-11. Нажмите кнопку `Сохранить и перезапустить`
+7. Зайдите в веб-интерфейс принтера и во вкладке `Конфигурация` найдите и откройте файл `KAMP_Settings.cfg`;
+8. В нём раскомментируйте (уберите `#` в начале строки) строку `[include ./KAMP/Adaptive_Meshing.cfg]`;
+9. [Опционально] если хотите пользоваться адаптивной прочисткой сопла, то раскомментируйте еще и строку `[include ./KAMP/Line_Purge.cfg]`;
+10. Установите значение параметра `variable_mesh_margin` на 10;
+11. Установите значение параметра `variable_fuzz_amount` на 2;
+12. Нажмите кнопку `Сохранить и перезапустить`
 
 После этого адаптивная карта высот стола начнёт работать автоматически, никаких дополнительных действий и настроек не требуется. Адаптивная линия прочистки работать сама по себе не будет. Для неё надо будет еще исправить макрос старта печати, заменив вручную прописанную линию прочистки на макрос `LINE_PURGE`.
 
@@ -202,39 +213,30 @@ cp ~/Klipper-Adaptive-Meshing-Purging/Configuration/KAMP_Settings.cfg ~/printer_
 ```
 [gcode_macro POEHALI]
 gcode:
-  {% set target_bed = params.B|int %}
-  {% set target_extruder = params.H|int %}
-  {% set target_chamber = params.C|default("0")|int %}
-
-	SAVE_VARIABLE VARIABLE=qdc_ai_error_code VALUE='""'
-	DISABLE_ALL_SENSOR
-  CLEAR_PAUSE
-  
-  M140 S{ target_bed }
-  M141 S{ target_chamber }
-	
-	G28
-	
-	CLEAR_NOZZLE HOTEND={ target_extruder }
-	
-	M190 S{ target_bed }
-	M191 S{ target_chamber }
-	
-	G28
-	Z_TILT_ADJUST
-	BED_MESH_CALIBRATE
-	
-	M109 S{ target_extruder }
-	
-	M220 S100
-	M221 S100
-	G90
-	M83
-	G92 E0
-	ENABLE_ALL_SENSOR
-	set_zoffset
-	
-	LINE_PURGE
+    {% set target_bed = params.B|int %}
+    {% set target_extruder = params.H|int %}
+    {% set target_chamber = params.C|default("0")|int %}
+    SAVE_VARIABLE VARIABLE=qdc_ai_error_code VALUE='""'
+    DISABLE_ALL_SENSOR
+    CLEAR_PAUSE
+    M140 S{ target_bed }
+    M141 S{ target_chamber }
+    G28
+    CLEAR_NOZZLE HOTEND={ target_extruder }
+    M190 S{ target_bed }
+    M191 S{ target_chamber }
+    G28
+    Z_TILT_ADJUST
+    BED_MESH_CALIBRATE
+    M109 S{ target_extruder }
+    M220 S100
+    M221 S100
+    G90
+    M83
+    G92 E0
+    ENABLE_ALL_SENSOR
+    set_zoffset
+    LINE_PURGE
 
 [gcode_macro HAROSH]
 gcode:
@@ -248,7 +250,7 @@ gcode:
     G90
     G1 X90 F18000
     G1 Y270 F18000
-    G1 Z{ printer.configfile.config["stepper_z"].position_max } F600
+    G1 Z{ printer['gcode_macro PRINTER_PARAM'].max_z_position } F600
     M221 S100
     M220 S100
     G90
