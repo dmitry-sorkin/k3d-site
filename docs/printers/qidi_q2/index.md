@@ -222,12 +222,16 @@ gcode:
     M140 S{ target_bed }
     M141 S{ target_chamber }
     G28
+    M141 S{ target_chamber } # защита от багов. Не трогать
     CLEAR_NOZZLE HOTEND={ target_extruder }
     M190 S{ target_bed }
     M191 S{ target_chamber }
     G28
+    M141 S{ target_chamber } # защита от багов. Не трогать
     Z_TILT_ADJUST
+    M141 S{ target_chamber } # защита от багов. Не трогать
     BED_MESH_CALIBRATE
+    M191 S{ target_chamber } # защита от багов. Не трогать
     M109 S{ target_extruder }
     M220 S100
     M221 S100
@@ -250,8 +254,9 @@ gcode:
     G90
     G1 X90 F18000
     G1 Y270 F18000
-    G1 Z{ printer['gcode_macro PRINTER_PARAM'].max_z_position } F600
-    M221 S100
+    {% if printer.toolhead.position.z < printer['gcode_macro PRINTER_PARAM'].max_z_position / 2 %}
+        G1 Z{ printer['gcode_macro PRINTER_PARAM'].max_z_position / 2 }
+    {% endif %}
     M220 S100
     G90
     M83
