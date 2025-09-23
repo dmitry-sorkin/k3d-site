@@ -152,9 +152,6 @@ IP можно посмотреть прямо через экран принте
 sudo rm -rf ~/Klipper-Adaptive-Meshing-Purging
 ```
 ```
-sudo rm -rf ~/KAMP
-```
-```
 sudo rm -rf ~/printer_data/config/KAMP
 ```
 ```
