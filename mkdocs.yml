@@ -28,6 +28,8 @@ theme:
     - search.highlight
     - content.tooltips
   custom_dir: overrides
+  font:
+    text: Cascadia Code
 plugins:
   - glightbox
   - social:
@@ -78,6 +80,7 @@ plugins:
         './vostok/xy_endstops.md': 'vostok/v8/xy_endstops.md'
         './vostok/y_drive.md': 'vostok/v8/y_drive.md'
         './vostok/z_drive.md': 'vostok/v8/z_drive.md'
+        './articles/filament_drying.md': 'part-navi/filament_dryers.md'
   - charts
   - table-reader
 markdown_extensions:
@@ -141,7 +144,9 @@ nav:
     - Детали экструдеров: ./part-navi/extruder.md
     - Электроника: ./part-navi/electronics.md
     - Механика: ./part-navi/mechanics.md
-    - Филаменты и расходники: ./part-navi/filament.md
+    - Филаменты: ./part-navi/filament.md
+    - Сушка филамента: ./part-navi/filament_dryers.md
+    - Расходники: ./part-navi/consumables.md
   - VOSTOK:
     - K3D VOSTOK: ./vostok/index.md
     - Релизы: ./redirects/vostok_releases.md
@@ -194,7 +199,6 @@ nav:
       - Feeder965: ./projects/feeder965/index.md
   - Статьи:
     - Принципы прочной печати: ./articles/print_strong.md
-    - ЧАВО по сушке филамента: ./articles/filament_drying.md
     - ЧАВО по G-кодам: ./articles/custom_gcode.md
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Сверхпроизводительные хотэнды: ./articles/ultra_high_flow_hotends.md

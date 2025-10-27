@@ -7,11 +7,8 @@ description: Каталог проверенных ссылок на детал�
 
 # 3D рекомендатор: механика
 
-В этом разделе вы можете найти проверенные ссылки на детали механики для FDM 3D принтеров.
-
-- [:simple-telegram: Задать вопрос по поводу выбора комплектующих](https://t.me/K_3_D/1944033)
-- [:simple-telegram: Сообщить об ошибке в telegram](https://t.me/K_3_D/1944075) - обязательно тегайте @dmitry_sorkin в сообщении, чтобы мне пришло уведомление
-- [:octicons-mail-16: Сообщить об ошибке по e-mail](mailto:dbsorkin@gmail.com) - ⚠️ Только для сообщений об ошибках. На вопросы по e-mail не отвечаю
+!!! success "Таблица обновлена 27.10.2025"
+!!! question "По поводу ошибок или помощи с выбором деталей, стоит обращаться в [telegram-чат K3D](https://t.me/K_3_D){ .target=/"_blank/" }"
 
 ## Направляющие серии MGN
 
@@ -21,10 +18,10 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Типоразмер | KGT[^2] | RDBB[^3] | Комментарий |
 |:------------ |:------:|:------:|:------:|:----------- |
-| Рельса с кареткой | MGN9 | [:material-shopping:](https://alli.pub/76ar9c?erid=2SDnjbuaLpC "KGT Manufactor store"){ target="_blank" } | [:material-shopping:](https://alli.pub/770mr1?erid=2SDnjerDDZ7 "CNA Mechanical Parts Store"){ target="_blank" } | Длина рельсы и тип каретки на выбор |
+| Рельса с кареткой | MGN9 | - | [:material-shopping:](https://alli.pub/770mr1?erid=2SDnjerDDZ7 "CNA Mechanical Parts Store"){ target="_blank" } | Длина рельсы и тип каретки на выбор |
 | Каретка | MGN9 | - | [:material-shopping:](https://alli.pub/770mr1?erid=2SDnjerDDZ7 "CNA Mechanical Parts Store"){ target="_blank" } | C - короткая каретка, H - длинная. Выбирать block only/carriage only |
 | Шары | MGN9 | [:material-shopping:](https://alli.pub/6tvx7z?erid=2SDnjcizA7A "KGT Manufactor store"){ target="_blank" } | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
-| Рельса с кареткой | MGN12 | [:material-shopping:](https://alli.pub/76ar9c?erid=2SDnjbuaLpC "KGT Manufactor store"){ target="_blank" } | [:material-shopping:](https://alli.pub/770mr1?erid=2SDnjerDDZ7 "CNA Mechanical Parts Store"){ target="_blank" } | Длина рельсы и тип каретки на выбор |
+| Рельса с кареткой | MGN12 | - | [:material-shopping:](https://alli.pub/770mr1?erid=2SDnjerDDZ7 "CNA Mechanical Parts Store"){ target="_blank" } | Длина рельсы и тип каретки на выбор |
 | Каретка | MGN12 | - | [:material-shopping:](https://alli.pub/770mr1?erid=2SDnjerDDZ7 "CNA Mechanical Parts Store"){ target="_blank" } | C - короткая каретка, H - длинная. Выбирать block only/carriage only |
 | Шары | MGN12 | [:material-shopping:](https://alli.pub/6tvx9c?erid=2SDnjcst5oE "KGT Manufactor store"){ target="_blank" } | - | Шарики для переборки кареток. Цифры Z0, Z1 и т.д. - преднатяг[^4] |
 
@@ -35,7 +32,7 @@ description: Каталог проверенных ссылок на детал�
 | Колёса Openbuilds | [:material-shopping:](https://alli.pub/6tvxbh?erid=2SDnjd5jz3z "5A"){ target="_blank" } | Обычные колёса из ПОМ |
 | Каретка Ender-3 в сборе | [:material-shopping:](https://alli.pub/770mrf?erid=2SDnjboo2W1 "Creativity Store"){ target="_blank" } | Для установки печатающих голов для `Ender-3` на принтеры с другими каретками |
 | Эксцентриковая гайка | [:material-shopping:](https://alli.pub/6tvxc2?erid=2SDnjd8hxcg "В комплекте 5 или 10шт. IdeaFormer Official Store"){ target="_blank" } | Служит для регулировки прижима колёс |
-| Проставки под колёса 6мм | [:material-shopping:](https://alli.pub/6tvxc9?erid=2SDnjdABwu2 "В комплекте 10шт. IdeaFormer Official Store"){ target="_blank" } | Ставится между кареткой и колесом чтобы обеспечить нужный вылет |
+| Проставки под колёса 6мм | [:material-shopping:](https://alli.pub/6tvxcg?erid=2SDnjdBfwBN "В комплекте 10шт. IdeaFormer Official Store"){ target="_blank" } | Ставится между кареткой и колесом чтобы обеспечить нужный вылет |
 | Проставки под колёса 8мм | [:material-shopping:](https://alli.pub/6tvxcg?erid=2SDnjdBfwBN "В комплекте 10шт. IdeaFormer Official Store"){ target="_blank" } | -//- |
 
 ## Покрытия для столов
@@ -62,12 +59,13 @@ description: Каталог проверенных ссылок на детал�
 | Типоразмер | BTT | Energetic | Другое | Комментарий |
 | :----: | :----: | :----: | :----: | :--------- |
 | 184х184 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mso?erid=2SDnjbrm1bb){ target="_blank" } | Используется на Bambu Lab A1 Mini |
-| 235x235 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hnl?erid=2SDnjcXCe6y){ target="_blank" } | [:material-shopping:](https://alli.pub/774mtn?erid=2SDnjc7atR3){ target="_blank" } | Adventurer 5M / 5M Pro |
+| 235x235 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/7akv8u?erid=2SDnjeWwNy5){ target="_blank" } | [:material-shopping:](https://alli.pub/774mtn?erid=2SDnjc7atR3){ target="_blank" } | Adventurer 5M / 5M Pro |
 | 235x235 с ключами | - | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mtu?erid=2SDnjcPtkWq){ target="_blank" } | Ender-3S1, Ender-3V3, K1, K1C, K1SE |
 | 250x250 | - | [:material-shopping:](https://alli.pub/773hne?erid=2SDnjcViepd){ target="_blank" } | [:material-shopping:](https://alli.pub/774mu8?erid=2SDnjcbkemb){ target="_blank" } | Qidi Q1 Pro |
-| 257x257 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mum?erid=2SDnjcraXb3){ target="_blank" } | Bambu Lab P1P / P1S / X1C / X1E |
+| 257x257 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mum?erid=2SDnjcraXb3){ target="_blank" } | Bambu Lab A1 / P1P / P1S / X1C / X1E |
+| 280x280 | - | [:material-shopping:](https://alli.pub/7akv9t?erid=2SDnjepjEMD){ target="_blank" } | [:material-shopping:](https://alli.pub/7akva7?erid=2SDnjex9Akw){ target="_blank" } | Qidi Q2 |
 | 310x315 | - | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mos?erid=2SDnjdHmyty){ target="_blank" } | Creality K1 Max |
-| 350x320 | [:material-shopping:](https://alli.pub/774mpy?erid=2SDnje4FcMK){ target="_blank" } | - | [:material-shopping:](https://alli.pub/774msa?erid=2SDnjekHGxd){ target="_blank" } | Bambu lab H2D |
+| 350x320 | [:material-shopping:](https://alli.pub/774mpy?erid=2SDnje4FcMK){ target="_blank" } | [:material-shopping:](https://alli.pub/7akvaz?erid=2SDnjc94sEw){ target="_blank" } | [:material-shopping:](https://alli.pub/774msa?erid=2SDnjekHGxd){ target="_blank" } | Bambu lab H2D |
 
 Другие размеры листов можете найти в каталогах производителей, ссылки на которых даны в таблице.
 
@@ -102,7 +100,7 @@ description: Каталог проверенных ссылок на детал�
 
 | Типоразмер | Длина | Кр.момент | Ток_RMS | Ссылки | Комментарий |
 |:----------:|:-----:|:---------:|:-------:|:------:|:----------- |
-| Nema 17 | 38 мм | 420 мН*м | 1.5 А | [:material-shopping:](https://alli.pub/6tvxmd?erid=2SDnjeFwR1r "Usongshine Official Store"){ target="_blank" } | `Usongshine 17HS4401` Дешевый, но относительно неплохой мотор, рябит слабо |
+| Nema 17 | 38 мм | 420 мН*м | 1.5 А | [:material-shopping:](https://alli.pub/7akvh0?erid=2SDnjdPibXm "Usongshine Official Store"){ target="_blank" } | `Usongshine 17HS4401` Дешевый, но относительно неплохой мотор, рябит слабо |
 | Nema 17 | 48 мм | 440 мН*м | 1.68 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy-dvigatel-ldo-42sth48-1684ac-nema-17/ "RRF 3D Shop"){ target="_blank" } | `LDO-42STH48-1684AC` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
 | Nema 17 | 48 мм | 590 мН*м | 2.0 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy_dvigatel_ldo_42sth48_2004ac_vrn_nema_17/ "RRF 3D Shop"){ target="_blank" } | `LDO-42STH48-2004AC` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
 | Nema 17 | 48 мм | 600 мН*м | 2.5 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy-dvigatel-42cm06-leadshine/ "RRF 3D Shop"){ target="_blank" } [:material-shopping:](https://alli.pub/72s2xd?erid=2SDnjcAPojh "perfectperfect Store"){ target="_blank" } | `Leadshine 42cm06` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
@@ -130,9 +128,9 @@ description: Каталог проверенных ссылок на детал�
 | Муфта продольно-свёртная 5х8мм | ![муфта продольно-свёртная](pics/copler_1.png){ width=100 } | [:material-shopping:](https://alli.pub/6w5vew?erid=2SDnjdbUsPe "HLTNC Store"){ target="_blank" } | Лучший вариант для приводов оси Z. Стоит дешево, нормально центрирует вал и винт друг с другом, держит хорошо, вплоть до возможности установки мотора сверху винта |
 | Муфта кулачковая 5х8мм | ![муфта кулачковая](pics/copler_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6tvyig?erid=2SDnjeids3v "VENTSPOW Official Store"){ target="_blank" } | Лучше продольно-стяжной тем, что частично поглощает вибрации. Хуже тем, что не скрепляет винт и мотор жестко |
 
-`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`[^1]
+^`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`^[^1]
 
-[^1]: Нет человека или юр.лица, которые заказали бы создание этой страницы или рекламу товаров, приводимых на этой странице. Я создал все статьи в рекомендаторе сам, по своему желанию и в целях сообщества. Тем не менее, по законодательству РФ, любая ссылка на товар является рекламой. Поэтому я вынужден делать эту приписку, чтобы не получить штраф в 100000р.
+[^1]: Нет человека или юр.лица, которые заказали бы создание этой страницы или рекламу товаров, приводимых на этой странице. Я создал все статьи в рекомендаторе сам, по своему желанию и в целях сообщества. Тем не менее, по законодательству РФ, любая ссылка на товар является рекламой. Поэтому я вынужден делать эту приписку, чтобы не нарушать закон.
 [^2]: KGT - китайская компания, производящая рельсы. Качество лотерейное, может придти как вообще нормальная рельса, так и полное фуфло, которое даже не спасти, зато дешево. В случае брака нормально идут на контакт, меняют.
 [^3]: RDBB - китайская компания, производящая рельсы. Среди вороноводов распространена практика брать такие рельсы пачками с запасом, отсеивать совсем неудачные, похуже ставить на стол, а получше на портал. Само по себе это уже говорит о стабильности качества. Тем не менее, куча воронов на таких рельсах работают, так что жить с этим точно можно. Не известно, меняют ли брак.
 [^4]: Обычно рельсы поставляются с преднатягом Z0 или Z1. То есть, если вы при обслуживании потеряли шарики, то возьмите Z0 и Z1. Если у вас рельсы начали люфтить, то стоит взять шарики Z1 и Z2, и попробовать на каких люфт уйдёт. Минусовой преднатяг (гарантированный люфт) нужен для эксплуатации рельс в активной термокамере.
