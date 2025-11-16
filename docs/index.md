@@ -40,7 +40,7 @@ description: Главная страница
 
 - :simple-blueprint:{ .lg .middle } __Другие проекты__
 
-	├ [:material-printer-3d-nozzle-alert-outline: Калибровщик откатов ](./calibrations/retractions/calibrator.md)<br>
+	├ [:material-translate: Правильный перевод PrusaSlicer](./projects/ps_translation/index.md)<br>
 	├ [:fontawesome-solid-gears: Подающие механизмы K3D](./projects/feeders.md)<br>
 	│ ├ [ BeMeGe](./projects/bemege/index.md)<br>
 	│ ├ [ Minifeeder](./projects/minifeeder/index.md)<br>
