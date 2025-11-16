@@ -22,7 +22,7 @@ description: Правильный перевод PrusaSlicer с понятным
 
 ## Скачать последнюю версию
 
-- [:material-download: Скачать перевод v2.9.0](./translations/2.9.0.mo){ download="PrusaSlicer.mo" }
+- [:material-download: Скачать перевод v2.9.4](./translations/2.9.4.mo){ download="PrusaSlicer.mo" }
 
 ## Установка
 
@@ -71,7 +71,7 @@ description: Правильный перевод PrusaSlicer с понятным
 
 ### Будет ли перевод Orca Slicer?
 
-Такие планы есть, но когда этот "перевод" будет сделан я не знаю.
+На данный момент не планируется
 
 ### Почему не оставить английские названия?
 
@@ -89,8 +89,8 @@ description: Правильный перевод PrusaSlicer с понятным
 
 Время последнего обновления: 16.11.2025 19:07 (GMT+3)
 
-- [:material-download: Скачать перевод v2.9.4](./translations/2.9.0.mo){ download="PrusaSlicer.mo" }
-- [:material-download: Исходники перевода v2.9.4](./translations/2.9.0.po){ download="PrusaSlicer_k3d_2.9.4.po" }
+- [:material-download: Скачать перевод v2.9.4](./translations/2.9.4.mo){ download="PrusaSlicer.mo" }
+- [:material-download: Исходники перевода v2.9.4](./translations/2.9.4.po){ download="PrusaSlicer_k3d_2.9.4.po" }
 
 ### v2.9.0
 

@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-24 10:15+0200\n"
-"PO-Revision-Date: 2025-11-16 19:05+0300\n"
+"PO-Revision-Date: 2025-11-16 19:27+0300\n"
 "Last-Translator: Dmitry Sorkin <dbsorkin@gmail.com>\n"
 "Language-Team: K3D\n"
 "Language: ru\n"
@@ -17732,7 +17732,7 @@ msgstr "Без названия"
 
 #: src/slic3r/GUI/MainFrame.cpp:599
 msgid "based on Slic3r"
-msgstr "созданная на основе Slic3r"
+msgstr "создан на основе Slic3r"
 
 #: src/slic3r/GUI/MainFrame.cpp:639
 msgid "Show Log in button in application top bar"
