@@ -187,6 +187,7 @@ nav:
         - Калибровщик LA: ./calibrations/la/calibrator.md
   - Проекты:
     - Перевод PrusaSlicer: ./projects/ps_translation/index.md
+    - Шкивы модифицированной геометрии: ./projects/custom_pulleys/index.md
     - Печатающие головы K3D:
       - Печатающие головы K3D: ./projects/printheads.md
       - Ender-3 BMG Printhead: ./projects/ebp/index.md

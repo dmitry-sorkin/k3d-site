@@ -41,6 +41,7 @@ description: Главная страница
 - :simple-blueprint:{ .lg .middle } __Другие проекты__
 
 	├ [:material-translate: Правильный перевод PrusaSlicer](./projects/ps_translation/index.md)<br>
+	├ [:octicons-gear-24: Шкивы модифицированной геометрии](./projects/custom_pulleys/index.md)<br>
 	├ [:fontawesome-solid-gears: Подающие механизмы K3D](./projects/feeders.md)<br>
 	│ ├ [ BeMeGe](./projects/bemege/index.md)<br>
 	│ ├ [ Minifeeder](./projects/minifeeder/index.md)<br>
