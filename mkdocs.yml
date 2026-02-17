@@ -1,6 +1,6 @@
 site_name: ВСË О 3D ПЕЧАТИ
 site_url: https://k3d.tech
-copyright: Copyright &copy; 2022-2025 Dmitry Sorkin @ K3D
+copyright: Copyright &copy; 2022-2026 Dmitry Sorkin @ K3D
 theme:
   palette:
     - scheme: slate
@@ -177,6 +177,7 @@ nav:
       - Порядок калибровок: ./calibrations/index.md
       - Калибровка PID: ./calibrations/pid.md
       - Input Shaping: ./calibrations/manual_is_calibration.md
+      - Калибровка потока: ./calibrations/flow.md
       - Калибровка точности: ./calibrations/accuracy/index.md
       - Тест ряби: ./calibrations/vfa.md
       - Калибровка откатов:
