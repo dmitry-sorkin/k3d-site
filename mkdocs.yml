@@ -183,9 +183,9 @@ nav:
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
         - Калибровщик откатов: ./calibrations/retractions/calibrator.md
-      - Калибровка Linear Advance:
-        - Инструкция: ./calibrations/la/index.md
-        - Калибровщик LA: ./calibrations/la/calibrator.md
+      - Pressure Advance:
+        - Методы калибровки: ./calibrations/la/index.md
+        - K3D Калибровщик PA: ./calibrations/la/calibrator.md
   - Проекты:
     - Перевод PrusaSlicer: ./projects/ps_translation/index.md
     - Шкивы модифицированной геометрии: ./projects/custom_pulleys/index.md

@@ -165,9 +165,18 @@
 
 .calibratorInput {
 	text-align: center;
-	min-height: 2em;
+	min-height: 2.0em;
 	border-radius: 0.3em;
-	max-width: 6em;
+	max-width: 8.4em;
+	font-size: 0.8rem;
+	border: 1px solid #000000;
+}
+
+.calibratorInputSmall {
+	text-align: center;
+	min-height: 2.0em;
+	border-radius: 0.3em;
+	max-width: 4em;
 	font-size: 0.8rem;
 	border: 1px solid #000000;
 }
@@ -178,7 +187,6 @@ input[type=radio] {
 
 .calibrationCodeTable {
 	width: 100%;
-	font-size: .8rem;
 	border-top: 0.05rem solid var(--md-typeset-table-color);
 	border-bottom: 0.05rem solid var(--md-typeset-table-color);
 	border-left: 0.05rem solid var(--md-typeset-table-color);
@@ -188,17 +196,17 @@ input[type=radio] {
 .calibrationCodeTable th {
 	font-weight: 700;
 	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-bottom: 0.5em;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 }
 
 .calibrationCodeTable td {
 	text-align: center;
-	line-height: 1.6;
-	padding-left: 1.5em;
-	padding-bottom: 0.5em;
-	padding-right: 1.5em;
+	padding-left: 0.5em;
+	padding-bottom: .5em;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
 }
 
 .calibrationCodeTable textarea {
@@ -251,4 +259,27 @@ input[type=radio] {
 
 .md-typeset__table th {
 	white-space: nowrap;
+}
+
+.innerTable {
+	border: 0px;
+}
+
+.innerTableTR:hover {
+	background-color: #1e212900 !important;
+	box-shadow: 0px 0px 0px 0px !important;
+}
+
+.innerTableTD {
+	padding: 0.2em !important;
+	border: 0px !important;
+}
+
+.inline-error {
+	color: rgb(255, 70, 70);
+	padding-top: 1em;
+}
+
+input[type="text"]:disabled {
+	opacity: 0.6;
 }

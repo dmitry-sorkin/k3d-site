@@ -1,3 +1,3 @@
 module k3d_rct
 
-go 1.20
+go 1.26
