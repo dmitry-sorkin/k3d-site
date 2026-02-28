@@ -582,7 +582,7 @@ func processGCode(inputGCode string) (string, string) {
 	// Замена плейсхолдеров температуры стола
 	bedTempPatterns := []string{
 		`\$BEDTEMP`,
-		`\s*[\[{]\s*(?:bed_temperature|first_layer_bed_temperature|hot_plate_temp_initial_layer|hot_plate_temp|supertack_plate_temp_initial_layer|supertack_plate_temp|cool_plate_temp|cool_plate_temp_initial_layer|textured_cool_plate_temp|textured_cool_plate_temp_initial_layer|eng_plate_temp|eng_plate_temp_initial_layer|textured_plate_temp|textured_plate_temp_initial_layer)\s*(?:\[\s*\d+\s*\])?(?:\s*[+\-*/]\s*(?:\d+(?:\.\d+)?)|\d+(?:\.\d+)?)?\s*[\]}]`,
+		`\s*[\[{]\s*(?:bed_temperature|first_layer_bed_temperature|bed_temperature_initial_layer|bed_temperature_initial_layer_single|hot_plate_temp_initial_layer|hot_plate_temp|supertack_plate_temp_initial_layer|supertack_plate_temp|cool_plate_temp|cool_plate_temp_initial_layer|textured_cool_plate_temp|textured_cool_plate_temp_initial_layer|eng_plate_temp|eng_plate_temp_initial_layer|textured_plate_temp|textured_plate_temp_initial_layer)\s*(?:\[\s*\d+\s*\])?(?:\s*[+\-*/]\s*(?:\d+(?:\.\d+)?)|\d+(?:\.\d+)?)?\s*[\]}]`,
 	}
 	re := regexp.MustCompile(`(?i)` + strings.Join(bedTempPatterns, "|"))
 	outputGCode = re.ReplaceAllString(outputGCode, strconv.Itoa(bedTemperature))
@@ -594,7 +594,7 @@ func processGCode(inputGCode string) (string, string) {
 	// Замена плейсхолдеров температуры хотэнда
 	hotendTempPatterns := []string{
 		`\$HOTTEMP`,
-		`\s*[\[{]\s*(?:temperature|first_layer_temperature|nozzle_temperature|nozzle_temperature_initial_layer)\s*(?:\[\s*\d+\s*\])?(?:\s*[+\-*/]\s*(?:\d+(?:\.\d+)?)|\d+(?:\.\d+)?)?\s*[\]}]`,
+		`\s*[\[{]\s*(?:temperature|first_layer_temperature|nozzle_temperature_initial_layer_single|nozzle_temperature|nozzle_temperature_initial_layer)\s*(?:\[\s*\d+\s*\])?(?:\s*[+\-*/]\s*(?:\d+(?:\.\d+)?)|\d+(?:\.\d+)?)?\s*[\]}]`,
 	}
 	re = regexp.MustCompile(`(?i)` + strings.Join(hotendTempPatterns, "|"))
 	outputGCode = re.ReplaceAllString(outputGCode, strconv.Itoa(hotendTemperature))
