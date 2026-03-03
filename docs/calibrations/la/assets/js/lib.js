@@ -1,4 +1,4 @@
-const calibrator_version = 'v2.0';
+const calibrator_version = 'v2.1';
 window.calibrator_version = calibrator_version;
 var savedSegmentsInfo = null;
 
@@ -111,6 +111,7 @@ var formFields = [
 	"k3d_la_acceleration",
 	"k3d_la_startGcode",
 	"k3d_la_endGcode",
+	"k3d_la_numPerimeters",
 ];
 var segmentFields = [
 	"k3d_la_initKFactor",
@@ -279,53 +280,55 @@ function initLang(key) {
 			values['table.header.value'] = 'Value';
 			values['table.header.description'] = 'Description';
 
-			values['table.bed_size.title'] = 'Build Area Size<br>';
-			values['table.bed_size.description'] = '[mm] For Cartesian printers - build area size along axes X/Y<br>For delta printers - bed diameter';
+			values['table.bed_size.title'] = 'Print bed<br>size';
+			values['table.bed_size.description'] = '[mm] For Cartesian printers - the size of the print area along the X/Y axes<br>For delta printers - the diameter of the bed';
 			values['table.firmware.title'] = 'Firmware';
-			values['table.firmware.description'] = 'Firmware installed on your printer<br>If you don\'t know, it is likely Klipper<br>For Bambu Lab printers select Marlin';
-			values['table.delta.title'] = 'Origin at Center of Bed';
-			values['table.delta.description'] = 'Should be disabled for Cartesian printers<br>Enabled for deltas and AD5M';
-			values['table.nozzle_diameter.title'] = 'Nozzle Diameter';
-			values['table.nozzle_diameter.description'] = '[mm] Nozzle diameter installed on your printer. Affects:<br>- First layer line width = D * 1.5<br>- Model line width = D * 1.05<br>- Layer height = D * 0.5<br>When using additional calibration target "flow rate", model line width and layer height will be increased to 1.5*D and 0.75*D respectively<br>If you want to use narrower lines or thinner layers, you can specify a reduced nozzle diameter';
+			values['table.firmware.description'] = 'The firmware installed on your printer<br>If you don\'t know, it\'s most likely Klipper<br>For Bambu Lab printers select Marlin';
+			values['table.delta.title'] = 'Origin at<br>center of bed';
+			values['table.delta.description'] = 'For Cartesian printers this should be disabled<br>For deltas and AD5M enabled';
+			values['table.nozzle_diameter.title'] = 'Nozzle diameter';
+			values['table.nozzle_diameter.description'] = '[mm] Nozzle diameter installed on your printer. Affects:<br>- First layer line width = D * 1.5<br>- Model line width = D * 1.05<br>- Layer height = D * 0.5<br>When using additional calibration target "flow rate", model line width and layer thickness will be increased to 1.5*D and 0.75*D respectively<br>If you want thinner lines or layers, you can specify a smaller nozzle diameter';
 			values['table.temperatures.title'] = 'Temperatures';
-			values['table.temperatures.description'] = '[°C] Hotend and bed temperatures during calibration model printing<br>If the printer has an active thermal chamber, its temperature will be set to 0°C';
-			values['table.fan_speed.title'] = 'Fan Speed<br>';
-			values['table.fan_speed.description'] = '[%] Fan speed in percent<br>To prevent errors related to hotend cooling, the specified fan speed will be reached only by layer 4';
-			values['table.flow.title'] = 'Flow Rate';
-			values['table.flow.description'] = '[%] Flow rate in percent. Needed to compensate for overall over- or under-extrusion';
-			values['table.speed.title'] = 'Print Head Movement<br>Speed';
-			values['table.speed.description'] = '[mm/s] Printing speed of slow and fast sections when checking PA value<br>Also, travel speed will be equal to fast printing speed, and first layer printing speed - slow section printing speed<br>If target "flow rate" is selected, the speed of fast sections will be overridden to achieve the specified flow rate';
+			values['table.temperatures.description'] = '[°C] Hotend and bed temperatures during printing of the calibration model<br>If the printer has an active thermal chamber, its temperature will be set equal to 0°C';
+			values['table.fan_speed.title'] = 'Fan speed';
+			values['table.fan_speed.description'] = '[%] Fan speed in percent<br>To prevent errors related to hotend cooling, the specified fan speed will only be reached by the 4th layer';
+			values['table.flow.title'] = 'Flow';
+			values['table.flow.description'] = '[%] Flow in percent. Needed to compensate for overall over- or under-extrusion';
+			values['table.speed.title'] = 'Printing head<br>movement speed';
+			values['table.speed.description'] = '[mm/s] Printing speed of slow and fast sections when checking PA value<br>Also, travel speed will be equal to fast section print speed, and first layer print speed will match slow section speed<br>If "flow" is selected as target, then fast section speeds will be redefined to achieve the specified flow rate';
 			values['table.acceleration.title'] = 'Acceleration';
-			values['table.acceleration.description'] = '[mm/s^2] Acceleration at which the test model will be printed<br>In general, it is recommended to set it equal to the maximum acceleration of your printer obtained during input shaping calibration or based on the criterion of no echo after corners<br>When calibrating adaptive PA, it is recommended to perform 3 calibrations: at acceleration 1000, half of the maximum acceleration, and at maximum acceleration<br>It is not recommended to set values below 1000 as then the method may work incorrectly';
-			values['table.la_values.title'] = 'Coefficients<br>LA/PA';
-			values['table.la_values.description'] = 'Initial and final values of LA/PA coefficients for checking<br>On printers with direct extruders, when calibrating PA for solid material, it is worth setting 0.0 - 0.1. If this range is not enough, check 0.0 - 0.2<br>When selecting PA for elastomers, increase the final value to 0.5-1.0<br>On printers with Bowden extruders, start calibration best from range 0.0-1.0';
+			values['table.acceleration.description'] = '[mm/s^2] Acceleration with which the test model will be printed<br>In general, it should be equal to the maximum acceleration obtained from input shaping calibration or based on absence of echo after corners<br>For adaptive PA calibration, it is recommended to perform 3 calibrations: at 1000 acceleration, half of maximum acceleration, and at maximum acceleration<br>It is not recommended to use values below 1000 since the methodology may work incorrectly';
+			values['table.num_perimeters.title'] = 'Number of<br>perimeters';
+			values['table.num_perimeters.description'] = 'How many perimeters the main part of the model will have<br>In general, 2 works well. To determine thickness variation through light inspection, set to 1. For elastomers, try 3–4 if the model behaves poorly at 2.';
+			values['table.la_values.title'] = 'LA/PA coefficients';
+			values['table.la_values.description'] = 'Initial and final LA/PA coefficient values for testing<br>On direct drive extruders, for solid material PA calibration, start with 0.0 - 0.1. If that range isn’t sufficient, check 0.0 - 0.2<br>For elastomer PA tuning, increase end value up to 0.5–1.0<br>On Bowden extruders, begin calibration with a range like 0.0–1.0';
 			values['table.z_offset.title'] = 'Z-offset';
-			values['table.z_offset.description'] = '[mm] Vertical offset of the entire model to compensate for incorrect distance from nozzle to bed on the first layer. Positive value shifts model up, negative - down.<br>If your startup G-code already has a Z-offset setting, leave it as 0';
-			values['table.num_segments.title'] = 'Number of<br>Segments';
-			values['table.num_segments.description'] = 'Number of tower segments. During a segment the LA/PA coefficient remains unchanged. Segments are visually separated to simplify model analysis<br>In general, it is recommended to set 11 for quick check, or 21 for checking with a wider range of values';
-			values['table.additional_calibration_target.title'] = 'Additional<br>Calibration Target';
-			values['table.additional_calibration_target.description'] = 'With all additional targets, the PA coefficient changes by height. And the value of the additional parameter changes from minimum on the back wall of the model to maximum on the left wall (printing direction clockwise)<br>No - no additional parameter will change, all walls are identical<br>Smooth Time - between walls the PA smoothing time will change. Works only for Klipper firmware<br>Acceleration - between walls printing acceleration will change<br>Flow Rate - model will be generated with increased layer thickness and line width. Speed of fast sections will change so that flow rate on them matches the additional parameter value';
-			values['table.additional_parameter.title'] = 'Values of<br>Additional<br>Parameter';
-			values['table.additional_parameter.description'] = 'Minimum and maximum value of the additional calibration target parameter<br>If additional target is disabled, nothing changes';
+			values['table.z_offset.description'] = '[mm] Vertical offset applied to entire model to compensate incorrect distance between nozzle and bed on the first layer. Positive moves model upward, negative downward.<br>If your start G-code already sets Z-offset, leave this field at 0.';
+			values['table.num_segments.title'] = 'Number of<br>segments';
+			values['table.num_segments.description'] = 'Number of segments in tower structure. During each segment, LA/PA factor remains constant. Segments are visually separated for easier analysis of the model<br>Generally recommended to use 11 for quick checks or 21 for wider value ranges.';
+			values['table.additional_calibration_target.title'] = 'Additional<br>calibration target';
+			values['table.additional_calibration_target.description'] = 'With all add-on targets, PA factor changes vertically. The add-on parameter varies from minimum at rear wall to maximum at left wall (clockwise print direction)<br>No – no extra parameters change; walls remain identical<br>Smoothing time – smoothing time between walls changes. Works only on Klipper firmware<br>Acceleration – print acceleration changes between walls<br>Flow rate – model generated with increased layer thickness and line width. Fast segment speeds adjusted so flow matches given parameter value';
+			values['table.additional_parameter.title'] = 'Values of<br>additional<br>parameter';
+			values['table.additional_parameter.description'] = 'Minimum and maximum values of the additional calibration target parameter<br>If additional target is off, these do nothing';
 			values['table.start_gcode.title'] = 'Start G-code';
-			values['table.gcodes.description'] = 'To properly initialize and complete printing, you need to specify correct G-codes for your printer. The easiest way is to copy them from your slicer. If the slicer\'s G-codes don\'t contain unsupported elements, they can be copied as-is. If unsupported elements are present, you\'ll need to remove them - manually replace unsupported placeholders with values, calculate math function results, expand conditions, etc.<hr><u>Supported placeholders:</u><br>- <code>$HOTTEMP</code>, <code>{temperature}</code>, <code>{first_layer_temperature}</code>, <code>{nozzle_temperature}</code> and similar will be replaced with hotend temperature;<br>- <code>$BEDTEMP</code>, <code>{bed_temperature}</code>, <code>{first_layer_bed_temperature}</code>, <code>{hot_plate_temp}</code>, <code>{textured_plate_temp_initial_layer}</code> and similar will be replaced with bed temperature;<br>- <code>{chamber_temperature}</code>, <code>{chamber_minimal_temperature}</code> will be replaced with 0;<br>- <code>$FLOW</code> will be replaced with flow value;<br>- Various modifications of the above placeholders. For example, in square brackets instead of curly ones, with array element numbers specified, with arithmetic inside curly braces, etc.<hr><u>Not supported:</u><br>- Other placeholders;<br>- Conditional operators (<code>if</code>);<br>- Ternary operators (<code>a ? b : c</code>);<br>- Mathematical functions and expressions';
+			values['table.gcodes.description'] = 'To properly initialize and complete the print job, correct G-codes must be entered for your printer. Easiest way is copying them from your slicer. If unsupported elements exist in G-codes, they need manual removal — replacing unsupported placeholders with actual values, calculating math expressions, expanding conditions etc.<hr><u>Supported placeholders:</u><br>- <code>$HOTTEMP</code>, <code>{temperature}</code>, <code>{first_layer_temperature}</code>, <code>{nozzle_temperature}</code>, and similar will be replaced with hotend temp;<br>- <code>$BEDTEMP</code>, <code>{bed_temperature}</code>, <code>{first_layer_bed_temperature}</code>, <code>{hot_plate_temp}</code>, <code>{textured_plate_temp_initial_layer}</code>, and similar will be replaced with bed temp;<br>- <code>{chamber_temperature}</code>, <code>{chamber_minimal_temperature}</code> will be replaced with 0;<br>- <code>$FLOW</code> will be replaced with flow value;<br>- Various variations of above placeholders such as square brackets instead of curly braces, array index notation inside braces, arithmetic operations within braces, etc.<hr><u>Unsupported features:</u><br>- Other placeholders;<br>- Conditional statements (<code>if</code>);<br>- Ternary operators (<code>a ? b : c</code>);<br>- Mathematical functions and expressions';
 			values['table.end_gcode.title'] = 'End G-code';
-			values['table.smooth_time.title'] = 'PA Smoothing Time<br>';
-			values['table.smooth_time.description'] = '[s] PA smoothing time<br>In Klipper firmware it reduces load on the feed mechanism, but an excessive smoothing value can cause defects in the form of indentations before and after the seam. Therefore this value should be calibrated by setting additional target "smoothing time"<br>In Marlin and RRF there is no control of PA smoothing time, so there this parameter does nothing<br>When selecting additional calibration target "smoothing time", the value of this parameter will be ignored';
+			values['table.smooth_time.title'] = 'PA Smoothing Time';
+			values['table.smooth_time.description'] = '[s] Pressure advance smoothing time<br>In Klipper firmware reduces load on feeder mechanism but excessive smoothing may cause defects like dents before and after seams. So this value should be calibrated via setting additional target “smoothing time”<br>In Marlin and RRF there\'s no control over PA smoothing time, hence this parameter does nothing there<br>When selecting “smoothing time” as additional calibration target, this parameter’s value will be ignored';
 
-			values['generator.generate_and_download'] = 'Generate and Download';
-			values['generator.generate_button_loading'] = 'Loading generator...';
+			values['generator.generate_and_download'] = 'Generate & Download';
+			values['generator.generate_button_loading'] = 'Generator loading...';
 			values['generator.segment'] = '; Segment %d: K-Factor: %s\n';
 			values['generator.additional_target.smooth_time'] = '; Smoothing Time:\n';
 			values['generator.additional_target.acceleration'] = '; Acceleration:\n';
-			values['generator.additional_target.flowrate'] = '; Flow Rate:\n';
-			values['generator.additional_target.side'] = '; Back: %s\nRight: %s\nFront: %s\nLeft: %s\n';
+			values['generator.additional_target.flowrate'] = '; Volumetric Flow Rate:\n';
+			values['generator.additional_target.side'] = '; Back: %s\n; Right: %s\n; Front: %s\n; Left: %s\n';
 			values['generator.reset_to_default'] = 'Reset Settings';
 
-			values['error.bed_size_x.format'] = 'Format error: Print area size on X axis';
-			values['error.bed_size_x.value'] = 'Value error: Print area size on X axis (less than 100 or more than 1000 mm)';
-			values['error.bed_size_y.format'] = 'Format error: Print area size on Y axis';
-			values['error.bed_size_y.value'] = 'Value error: Print area size on Y axis (less than 100 or more than 1000 mm)';
+			values['error.bed_size_x.format'] = 'Format error: Print bed size along X-axis';
+			values['error.bed_size_x.value'] = 'Value error: Print bed size along X-axis (less than 100 or more than 1000 mm)';
+			values['error.bed_size_y.format'] = 'Format error: Print bed size along Y-axis';
+			values['error.bed_size_y.value'] = 'Value error: Print bed size along Y-axis (less than 100 or more than 1000 mm)';
 			values['error.nozzle_diameter.format'] = 'Format error: Nozzle diameter';
 			values['error.nozzle_diameter.value'] = 'Value error: Nozzle diameter (less than 0.1 or more than 2.0 mm)';
 			values['error.hotend_temp.format'] = 'Format error: Hotend temperature';
@@ -338,15 +341,17 @@ function initLang(key) {
 			values['error.num_segments.value'] = 'Value error: Number of segments (less than 2 or more than 100)';
 			values['error.z_offset.format'] = 'Format error: Z-offset';
 			values['error.z_offset.value'] = 'Value error: Z-offset (less than -0.5 or more than 0.5 mm)';
-			values['error.flow.format'] = 'Format error: Flow rate';
-			values['error.flow.value'] = 'Value error: Flow rate (less than 50 or more than 150%)';
-			values['error.min_print_speed.format'] = 'Format error: Print head movement speed on slow sections';
-			values['error.min_print_speed.value'] = 'Value error: Print head movement speed on slow sections (less than 5 or more than 1000 mm/s)';
-			values['error.max_print_speed.format'] = 'Format error: Print head movement speed on fast sections';
-			values['error.max_print_speed.value'] = 'Value error: Print head movement speed on fast sections (less than 5 or more than 1000 mm/s)';
+			values['error.flow.format'] = 'Format error: Flow';
+			values['error.flow.value'] = 'Value error: Flow (less than 50 or more than 150%)';
+			values['error.min_print_speed.format'] = 'Format error: Slow section movement speed';
+			values['error.min_print_speed.value'] = 'Value error: Slow section movement speed (less than 5 or more than 1000 mm/s)';
+			values['error.max_print_speed.format'] = 'Format error: Fast section movement speed';
+			values['error.max_print_speed.value'] = 'Value error: Fast section movement speed (less than 5 or more than 1000 mm/s)';
 			values['error.firmware.not_set'] = 'Error: Firmware not selected';
 			values['error.acceleration.format'] = 'Format error: Acceleration';
 			values['error.acceleration.value'] = 'Value error: Acceleration (less than 500 or more than 50000 mm/s²)';
+			values['error.num_perimeters.format'] = 'Format error: Number of perimeters';
+			values['error.num_perimeters.value'] = 'Value error: Number of perimeters (less than 1 or more than 5)';
 			values['error.init_la.format'] = 'Format error: Initial LA/PA coefficient value';
 			values['error.init_la.value'] = 'Value error: Initial LA coefficient value (less than 0.0 or more than 2.0)';
 			values['error.end_la.format'] = 'Format error: Final LA/PA coefficient value';
@@ -355,17 +360,19 @@ function initLang(key) {
 			values['error.smooth_time.value'] = 'Value error: LA/PA smoothing time (less than 0.005 or more than 0.2)';
 			values['error.additional_target.not_set'] = 'Error: Additional calibration target not selected';
 			values['error.init_additional_parameter.format'] = 'Format error: Initial additional parameter value';
-			values['error.init_additional_parameter.value'] = 'Value error: Initial additional parameter value. For smoothing time: 0.001-1.0, for acceleration: 500-50000, for flow rate: 1-200';
+			values['error.init_additional_parameter.value'] = 'Value error: Initial additional parameter value. Valid ranges: smoothing time 0.001–1.0, acceleration 500–50000, flow rate 1–200';
 			values['error.end_additional_parameter.format'] = 'Format error: Final additional parameter value';
-			values['error.end_additional_parameter.value'] = 'Value error: Final additional parameter value. For smoothing time: 0.001-1.0, for acceleration: 500-50000, for flow rate: 1-200';
-			values['error.unsupported_placeholders'] = 'Error: Unsupported placeholders detected in start/end G-code:';
-			values['error.unsupported_conditions'] = 'Error: Conditional operators (if) detected in start/end G-code';
-			values['error.unsupported_ternary_operators'] = 'Error: Ternary operators (a ? b : c) detected in start/end G-code';
-			values['error.unsupported_math'] = 'Error: Mathematical operations (min, max, round etc.) detected in start/end G-code';
+			values['error.end_additional_parameter.value'] = 'Value error: Final additional parameter value. Valid ranges: smoothing time 0.001–1.0, acceleration 500–50000, flow rate 1–200';
+			values['error.unsupported_placeholders'] = 'Error: Unsupported placeholders detected in Start or End G-code:';
+			values['error.unsupported_conditions'] = 'Error: Conditional statements (if) detected in Start or End G-code';
+			values['error.unsupported_ternary_operators'] = 'Error: Ternary operators (a ? b : c) detected in Start or End G-code';
+			values['error.unsupported_math'] = 'Error: Math operations (min, max, round, etc.) detected in Start or End G-code';
+			values['error.model_size_limited'] = 'Model size must be increased to allow the print head to accelerate to the speed required for testing the specified volumetric flow rate. However, the resulting part size turned out to be larger than the print bed. Increase acceleration or decrease the volumetric flow rate values for testing';
 
-			values['info.delta_print_speed_too_small'] = 'Speed difference on one of the walls is too small. Recommended to increase initial volumetric flow rate value for checking';
-			values['info.smooth_time_not_supported_by_firmware'] = 'PA smoothing time is not supported by selected firmware';
+			values['info.delta_print_speed_too_small'] = 'Speed difference across one wall too small. Consider increasing initial volumetric flow rate for better results';
+			values['info.smooth_time_not_supported_by_firmware'] = 'Pressure advance smoothing time not supported by selected firmware';
 			values['info.layer_change_calibration_info'] = ';Layer:%s PA:%s';
+			values['info.model_size_changed'] = 'Model size has been increased to allow the print head to accelerate to the speed required for testing the specified volumetric flow rate. If the model size does not suit you, increase acceleration or decrease the maximum value of the volumetric flow rate being tested. Model size: ';
 			break;
 		case 'ru':
 			values['header.title'] = 'K3D калибровщик Pressure Advance';
@@ -392,6 +399,8 @@ function initLang(key) {
 			values['table.speed.description'] = '[мм/с] Скорость печати медленных (slow) и быстрых (fast) участков при проверке значения PA<br>Также, скорость холостых перемещений будет равна скорости печати быстрых участков, а скорость печати первого слоя - скорости печати медленных участков<br>Если выбрана цель "расход", то скорость быстрых участков будет переопределена, чтобы достичь указанного расхода';
 			values['table.acceleration.title'] = 'Ускорение';
 			values['table.acceleration.description'] = '[мм/с^2] Ускорение, с которым будет напечатана тестовая модель<br>В общем случае стоит поставить равной максимальному ускорению вашего принтера, полученному при калибровке input shaping\'а или по критерию отстуствия эхо после углов<br>При калибровке адаптивного PA рекомендуется провести 3 калибровки: при ускорении 1000, половине от максимального ускорения и при максимальном ускорении<br>Не рекомендуется ставить значения ниже 1000 т.к. тогда методика может отработать некорректно';
+			values['table.num_perimeters.title'] = 'Количество<br>периметров';
+			values['table.num_perimeters.description'] = 'Сколько периметров будет у основно части модели<br>В общем случае хорошо работает 2. Для определения перепада толщины на просвет поставьте 1. Для эластомеров можно попробовать 3-4, если модель ведёт при 2';
 			values['table.la_values.title'] = 'Коэффициенты<br>LA/PA';
 			values['table.la_values.description'] = 'Начальное и конечное значение коэффициентов LA/PA для проверки<br>На принтерах с директ экструдерами, при калибровке PA для твёрдого материала, стоит установить 0.0 - 0.1. Если этого диапазона не хватит, то проверить 0.0 - 0.2<br>При подборе PA для эластомеров, стоит увеличить конечное значение до 0.5-1.0<br>На принтерах с боуден экструдерами, начинать калибровку лучше с диапазона 0.0-1.0';
 			values['table.z_offset.title'] = 'Z-offset';
@@ -442,6 +451,8 @@ function initLang(key) {
 			values['error.firmware.not_set'] = 'Ошибка: прошивка не выбрана';
 			values['error.acceleration.format'] = 'Ошибка формата: ускорение';
 			values['error.acceleration.value'] = 'Ошибка значения: ускорение (меньше 500 или больше 50000 мм/с^2)';
+			values['error.num_perimeters.format'] = 'Ошибка формата: количество периметров';
+			values['error.num_perimeters.value'] = 'Ошибка значения: количество периметров (меньше 1 или больше 5)';
 			values['error.init_la.format'] = 'Ошибка формата: Начальное значение коэффициента LA/PA';
 			values['error.init_la.value'] = 'Ошибка значения: Начальное значение коэффициента LA (меньше 0.0 или больше 2.0)';
 			values['error.end_la.format'] = 'Ошибка формата: Конечное значение коэффициента LA/PA';
@@ -457,10 +468,12 @@ function initLang(key) {
 			values['error.unsupported_conditions'] = 'Ошибка: В начальном или конечном G-коде замечены условные операторы (if)';
 			values['error.unsupported_ternary_operators'] = 'Ошибка: В начальном или конечном G-коде замечены тернарные операторы (a ? b : c)';
 			values['error.unsupported_math'] = 'Ошибка: В начальном или конечном G-коде замечены математические операции (min, max, round и подобные)';
+			values['error.model_size_limited'] = 'Размер модели должен быть увеличен для того, чтобы печатающая голова успевала разогнаться до скорости, необходимой для проверки заданного объёмного расхода. Но получаемый размер детали оказался больше стола. Увеличьте ускорение или уменьшите значения объёмного расхода для проверки';
 
 			values['info.delta_print_speed_too_small'] = 'Перепад скоростей на одной из стенок слишком мал. Рекомендуется увеличить начальное значение объёмного расхода для проверки';
 			values['info.smooth_time_not_supported_by_firmware'] = 'Время сглаживания pressure advance не поддерживается выбранной прошивкой';
 			values['info.layer_change_calibration_info'] = ';Слой:%s PA:%s';
+			values['info.model_size_changed'] = 'Размер модели был увеличен для того, чтобы печатающая голова успевала разогнаться до скорости, необходимой для проверки заданного объёмного расхода. Если вас не устраивает размер модели, то увеличьте ускорения или уменьшите максимальное значение проверяемого объёмного расхода. Размер модели: ';
 			break;
 	}
 

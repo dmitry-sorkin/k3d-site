@@ -9,26 +9,26 @@ import (
 	"syscall/js"
 )
 
-const caliVersion = "v2.0"       // Версия калибратора. Пишется в сгенерированном файле
-const filamentDiameter = 1.75    // Диаметр филамента
-const retractSpeed = 35.0        // Скорость отката по умолчанию
-const retractLength = 1.0        // Длина отката по умолчанию
-const defaultSegmentHeight = 3.0 // Высота сегмента по умолчанию. Высота сегмента при печати будет близка к этому значению, но может отличаться, если высота сегмента по умолчанию не делится на высоту слоя без остатка
-const numPerimeters = 2          // количество периметров
-const slowLineLength = 2.0       // длина медленного участка на стенках калибровочной модели
-const maxSpeedDelta = 100        // Максимальная разница в скорости печати между быстрым и медленным элементом
-const minSpeedDelta = 10         // Минимальная разница в скорости печати между быстрым и медленным элементом
-const log = false                // Писать ли в консоль логи происходящего
-const maxWallOffset = 0.2        // Ограничение выпирания линии, разделяющей сегменты
+const caliVersion = "v2.1"        // Версия калибратора. Пишется в сгенерированном файле
+const filamentDiameter = 1.75     // Диаметр филамента
+const retractSpeed = 35.0         // Скорость отката по умолчанию
+const retractLength = 1.0         // Длина отката по умолчанию
+const defaultSegmentHeight = 3.0  // Высота сегмента по умолчанию. Высота сегмента при печати будет близка к этому значению, но может отличаться, если высота сегмента по умолчанию не делится на высоту слоя без остатка
+const defaultSlowLineLength = 2.0 // длина медленного участка на стенках калибровочной модели
+const maxSpeedDelta = 100         // Максимальная разница в скорости печати между быстрым и медленным элементом
+const minSpeedDelta = 10          // Минимальная разница в скорости печати между быстрым и медленным элементом
+const log = true                  // Писать ли в консоль логи происходящего
+const maxSeparatorOffset = 0.2    // Ограничение выпирания линии, разделяющей сегменты
+const defaultModelWidth = 40.0    // Размер модели по умолчанию
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
 var (
-	bedX, bedY, zOffset, nozzleDiameter, firstLayerLineWidth, lineWidth, currentE                                                                       float64
-	layerHeight, initKFactor, endKFactor, smoothTime, initAdditionalParameter, endAdditionalParameter, segmentHeight                                    float64
-	firmware, hotendTemperature, bedTemperature, cooling, maxPrintSpeed, minPrintSpeed, numSegments, flow, additionalTarget, currentSpeed, acceleration int
-	retracted, delta                                                                                                                                    bool
-	startGcode, endGcode                                                                                                                                string
-	currentCoordinates                                                                                                                                  Point
+	bedX, bedY, zOffset, nozzleDiameter, firstLayerLineWidth, lineWidth, currentE                                                                                      float64
+	layerHeight, initKFactor, endKFactor, smoothTime, initAdditionalParameter, endAdditionalParameter, segmentHeight                                                   float64
+	firmware, hotendTemperature, bedTemperature, cooling, maxPrintSpeed, minPrintSpeed, numSegments, flow, additionalTarget, currentSpeed, acceleration, numPerimeters int
+	retracted, delta                                                                                                                                                   bool
+	startGcode, endGcode                                                                                                                                               string
+	currentCoordinates                                                                                                                                                 Point
 )
 
 type Point struct {
@@ -65,6 +65,10 @@ func getLangString(key string) string {
 	return lang.Call("getString", key).String()
 }
 
+func getElementValue(id string) string {
+	return js.Global().Get("document").Call("getElementById", id).Get("value").String()
+}
+
 func check(showErrorBox bool, allowModify bool) bool {
 	// Функция проверки введённых данных
 
@@ -78,7 +82,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Параметры принтера
 	// Размер стола
 
-	docBedX, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_bedX").Get("value").String())
+	docBedX, err := parseInputToFloat(getElementValue("k3d_la_bedX"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.bed_size_x.format"), true
 	} else if docBedX < 100 || docBedX > 1000 {
@@ -94,7 +98,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 		retErr = true
 	}
 
-	docBedY, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_bedY").Get("value").String())
+	docBedY, err := parseInputToFloat(getElementValue("k3d_la_bedY"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.bed_size_y.format"), true
 	} else if docBedY < 100 || docBedY > 1000 {
@@ -131,7 +135,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Диаметр сопла
 
-	docNozzleDiameter, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_nozzleDiameter").Get("value").String())
+	docNozzleDiameter, err := parseInputToFloat(getElementValue("k3d_la_nozzleDiameter"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.nozzle_diameter.format"), true
 	} else if docNozzleDiameter < 0.1 || docNozzleDiameter > 2.0 {
@@ -149,7 +153,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Z offset
 
-	docZOffset, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_zOffset").Get("value").String())
+	docZOffset, err := parseInputToFloat(getElementValue("k3d_la_zOffset"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.z_offset.format"), true
 	} else if docZOffset < -0.5 || docZOffset > 0.5 {
@@ -167,7 +171,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Параметры филамента
 	// Температура хотэнда
 
-	docHotTemp, err := parseInputToInt(doc.Call("getElementById", "k3d_la_hotendTemperature").Get("value").String())
+	docHotTemp, err := parseInputToInt(getElementValue("k3d_la_hotendTemperature"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.hotend_temp.format"), true
 	} else if docHotTemp < 100 {
@@ -187,7 +191,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Температура стола
 
-	docBedTemp, err := parseInputToInt(doc.Call("getElementById", "k3d_la_bedTemperature").Get("value").String())
+	docBedTemp, err := parseInputToInt(getElementValue("k3d_la_bedTemperature"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.bed_temp.format")+err.Error(), true
 	} else if docBedTemp > 150 {
@@ -205,7 +209,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Скорость вентилятора
 
-	docCooling, err := parseInputToInt(doc.Call("getElementById", "k3d_la_cooling").Get("value").String())
+	docCooling, err := parseInputToInt(getElementValue("k3d_la_cooling"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.fan_speed.format"), true
 	} else {
@@ -227,7 +231,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Поток
 
-	docFlow, err := parseInputToInt(doc.Call("getElementById", "k3d_la_flow").Get("value").String())
+	docFlow, err := parseInputToInt(getElementValue("k3d_la_flow"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.flow.format"), true
 	} else if docFlow < 50 || docFlow > 150 {
@@ -245,7 +249,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Параметры калибровки
 	// Скорости движения печатающей головы
 
-	docMinPrintSpeed, err := parseInputToInt(doc.Call("getElementById", "k3d_la_minPrintSpeed").Get("value").String())
+	docMinPrintSpeed, err := parseInputToInt(getElementValue("k3d_la_minPrintSpeed"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.min_print_speed.format"), true
 	} else if docMinPrintSpeed < 5 || docMinPrintSpeed > 1000 {
@@ -261,7 +265,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 		retErr = true
 	}
 
-	docMaxPrintSpeed, err := parseInputToInt(doc.Call("getElementById", "k3d_la_maxPrintSpeed").Get("value").String())
+	docMaxPrintSpeed, err := parseInputToInt(getElementValue("k3d_la_maxPrintSpeed"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.max_print_speed.format"), true
 	} else if docMinPrintSpeed < 5 || docMinPrintSpeed > 1000 {
@@ -279,7 +283,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Ускорение
 
-	docAcceleration, err := parseInputToInt(doc.Call("getElementById", "k3d_la_acceleration").Get("value").String())
+	docAcceleration, err := parseInputToInt(getElementValue("k3d_la_acceleration"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.acceleration.format"), true
 	} else if docAcceleration < 500 || docAcceleration > 50000 {
@@ -295,9 +299,27 @@ func check(showErrorBox bool, allowModify bool) bool {
 		retErr = true
 	}
 
+	// Количество периметров
+
+	docNumPerimeters, err := parseInputToInt(getElementValue("k3d_la_numPerimeters"))
+	if err != nil {
+		curErr, hasErr = getLangString("error.num_perimeters.format"), true
+	} else if docAcceleration < 500 || docAcceleration > 50000 {
+		curErr, hasErr = getLangString("error.num_perimters.value"), true
+	} else {
+		numPerimeters = docNumPerimeters
+	}
+
+	setErrorDescription(doc, "table.num_perimeters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
 	// Коэффициенты LA/PA
 
-	docInitKFactor, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_initKFactor").Get("value").String())
+	docInitKFactor, err := parseInputToFloat(getElementValue("k3d_la_initKFactor"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.init_la.format"), true
 	} else if docInitKFactor < 0.0 || docInitKFactor > 2.0 {
@@ -313,7 +335,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 		retErr = true
 	}
 
-	docEndKFactor, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_endKFactor").Get("value").String())
+	docEndKFactor, err := parseInputToFloat(getElementValue("k3d_la_endKFactor"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.end_la.format"), true
 	} else if docEndKFactor < 0.0 || docEndKFactor > 2.0 {
@@ -330,7 +352,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Время сглаживания
 
-	docSmoothTime, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_smoothTime").Get("value").String())
+	docSmoothTime, err := parseInputToFloat(getElementValue("k3d_la_smoothTime"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.smooth_time.format"), true
 	} else if docSmoothTime < 0.005 || docSmoothTime > 0.2 {
@@ -348,7 +370,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Количество сегментов
 
-	docNumSegment, err := parseInputToInt(doc.Call("getElementById", "k3d_la_numSegments").Get("value").String())
+	docNumSegment, err := parseInputToInt(getElementValue("k3d_la_numSegments"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.num_segments.format"), true
 	} else if docNumSegment < 2 || docNumSegment > 100 {
@@ -404,7 +426,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Значения дополнительного параметра
 
-	docInitAdditionalParameter, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_initAdditionalParameter").Get("value").String())
+	docInitAdditionalParameter, err := parseInputToFloat(getElementValue("k3d_la_initAdditionalParameter"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.init_additional_parameter.format"), true
 	} else if additionalTarget == 1 && (docInitAdditionalParameter < 0.001 || docInitAdditionalParameter > 1.0) {
@@ -427,7 +449,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 		retErr = true
 	}
 
-	docEndAdditionalParameter, err := parseInputToFloat(doc.Call("getElementById", "k3d_la_endAdditionalParameter").Get("value").String())
+	docEndAdditionalParameter, err := parseInputToFloat(getElementValue("k3d_la_endAdditionalParameter"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.end_additional_parameter.format"), true
 	} else if additionalTarget == 1 && (docEndAdditionalParameter < 0.001 || docEndAdditionalParameter > 1.0) {
@@ -452,7 +474,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 
 	// Начальный и конечный G-коды
 
-	docStartGcode := doc.Call("getElementById", "k3d_la_startGcode").Get("value").String()
+	docStartGcode := getElementValue("k3d_la_startGcode")
 	var errorMessage string
 	docStartGcode, errorMessage = processGCode(docStartGcode)
 	if errorMessage != "" {
@@ -463,7 +485,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 		startGcode = docStartGcode
 	}
 
-	docEndGcode := doc.Call("getElementById", "k3d_la_endGcode").Get("value").String()
+	docEndGcode := getElementValue("k3d_la_endGcode")
 	errorMessage = ""
 	docEndGcode, errorMessage = processGCode(docEndGcode)
 	if errorMessage != "" {
@@ -648,6 +670,38 @@ func generate(this js.Value, i []js.Value) interface{} {
 		return js.ValueOf(nil)
 	}
 
+	// Проверяем рассчитываемые значения, которые могут выдать ошибку
+	modelWidth := defaultModelWidth
+	minAdditionalParameter := math.Min(initAdditionalParameter, endAdditionalParameter)
+	maxAdditionalParameter := math.Max(initAdditionalParameter, endAdditionalParameter)
+	if additionalTarget == 3 {
+		// Для тест объёмного расхода необходимо рассчитать размер модели так,
+		// чтобы при указанном ускорении и рассчитанной максимальной скорости
+		// движения, эта максимальная скорость достигалась.
+		maxVelocity := int(roundFloat(maxAdditionalParameter/((lineWidth-layerHeight)*layerHeight+math.Pi*layerHeight*layerHeight/4), 0))
+		accelerationTime := float64(maxVelocity) / float64(acceleration)
+		accelerationTravel := float64(acceleration)*accelerationTime*accelerationTime/2 + 1
+		modelWidth = math.Max(float64(accelerationTravel)*4+defaultSlowLineLength, defaultModelWidth)
+		if log {
+			println("maxVelocity: " + fmt.Sprint(maxVelocity))
+			println("accelerationTime: " + fmt.Sprint(accelerationTime))
+			println("accelerationTravel: " + fmt.Sprint(accelerationTravel))
+			println("modelWidthComputed: " + fmt.Sprint(roundFloat(float64(accelerationTravel)*4+2+defaultSlowLineLength, 3)))
+		}
+		// Если размер модели больше штатного, выводим информационное сообщение
+		if modelWidth > defaultModelWidth {
+			if modelWidth > math.Min(bedX, bedY)-20 {
+				modelWidth = math.Min(bedX, bedY) - 20
+				js.Global().Call("showError", getLangString("error.model_size_limited")+"\n")
+				return js.ValueOf(nil)
+			} else {
+				js.Global().Call("showError", getLangString("info.model_size_changed")+fmt.Sprint(roundFloat(modelWidth, 2))+" мм\n")
+			}
+		}
+		// Ограничиваем размер модели размером стола и выводим информационное сообщение
+
+	}
+
 	// Контейнеры для информационного сообщения
 	infoSpeedDeltaTooSmall := false
 
@@ -662,8 +716,6 @@ func generate(this js.Value, i []js.Value) interface{} {
 	for i := 0; i < numSegments; i++ {
 		caliParams += fmt.Sprintf(segmentStr, numSegments-i, fmt.Sprint(roundFloat(maxKFactor-deltaKFactor*float64(i), 3)))
 	}
-	minAdditionalParameter := math.Min(initAdditionalParameter, endAdditionalParameter)
-	maxAdditionalParameter := math.Max(initAdditionalParameter, endAdditionalParameter)
 	deltaAdditionalParameter := math.Abs((endAdditionalParameter - initAdditionalParameter) / 3)
 	if additionalTarget != 0 {
 		// Значения дополнительного параметра выводятся только если указана дополнительная цель калибровки
@@ -757,7 +809,6 @@ func generate(this js.Value, i []js.Value) interface{} {
 	currentCoordinates.Z = layerHeight
 
 	// Расчёт точек для печати линии для прочистки сопла
-	modelWidth := 40.0
 	raftWidth := modelWidth + 10
 	var purgeStart Point
 	var purgeLineLength float64
@@ -843,8 +894,8 @@ func generate(this js.Value, i []js.Value) interface{} {
 			wallOffset = 0
 		}
 		// Ограничение wallOffset
-		if wallOffset > maxWallOffset {
-			wallOffset = maxWallOffset
+		if wallOffset > maxSeparatorOffset {
+			wallOffset = maxSeparatorOffset
 		}
 
 		// Перемещение к точке начала печати следующего слоя тела калибровочной модели. Модель
@@ -867,9 +918,10 @@ func generate(this js.Value, i []js.Value) interface{} {
 		for j := 0; j < numPerimeters; j++ {
 			// Генерируем параметры линий
 			currentModelWidth := modelWidth + wallOffset - lineWidth*float64(1+2*j)
-			fastLineLength := (currentModelWidth - slowLineLength) / 2
+			currentSlowLineLength := defaultSlowLineLength
+			fastLineLength := (currentModelWidth - currentSlowLineLength) / 2
 			fastPrintSpeed := maxPrintSpeed
-			slowPrintSpeed := int(math.Max(float64(minPrintSpeed), (float64(maxPrintSpeed - maxSpeedDelta))))
+			slowPrintSpeed := minPrintSpeed
 
 			// Печать задней стенки
 			// Расчёт и установка дополнительного параметра
@@ -884,7 +936,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 				// Для достижения нужного расхода, необходимо пересчитать скорости быстрых и медленных участков
 				// V = Q / (w -h) * h + Pi * h * h / 4
 				fastPrintSpeed = int(roundFloat(minAdditionalParameter/((lineWidth-layerHeight)*layerHeight+math.Pi*layerHeight*layerHeight/4), 0))
-				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(maxPrintSpeed - maxSpeedDelta))))
+				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(fastPrintSpeed - maxSpeedDelta))))
 				// Проверка на минимальную разницу между скоростью печати сегментов
 				if fastPrintSpeed-slowPrintSpeed < minSpeedDelta {
 					infoSpeedDeltaTooSmall = true
@@ -892,12 +944,19 @@ func generate(this js.Value, i []js.Value) interface{} {
 			}
 			// Печать линии
 			write(generateRelativeMove(fastLineLength, 0, 0, lineWidth, fastPrintSpeed)...)
-			write(generateRelativeMove(slowLineLength, 0, 0, lineWidth, slowPrintSpeed)...)
+			write(generateRelativeMove(currentSlowLineLength, 0, 0, lineWidth, slowPrintSpeed)...)
 			write(generateRelativeMove(fastLineLength, 0, 0, lineWidth, fastPrintSpeed)...)
 
 			// Печать правой стенки
 			// Рассчёт и установка дополнительного параметра
-			if additionalTarget == 1 {
+			if additionalTarget == 0 {
+				// Если не выбрано никакой цели, то изменяем ширину медленного участка
+				currentSlowLineLength := 2 * defaultSlowLineLength
+				if currentSlowLineLength > modelWidth/2 {
+					currentSlowLineLength = modelWidth / 2
+				}
+				fastLineLength = (currentModelWidth - currentSlowLineLength) / 2
+			} else if additionalTarget == 1 {
 				// Время сглаживания
 				write("SET_PRESSURE_ADVANCE SMOOTH_TIME=" + fmt.Sprint(roundFloat(minAdditionalParameter+deltaAdditionalParameter, 3)) + "\n")
 			} else if additionalTarget == 2 {
@@ -908,7 +967,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 				// Для достижения нужного расхода, необходимо пересчитать скорости быстрых и медленных участков
 				// V = Q / (w -h) * h + Pi * h * h / 4
 				fastPrintSpeed = int(roundFloat((minAdditionalParameter+deltaAdditionalParameter)/((lineWidth-layerHeight)*layerHeight+math.Pi*layerHeight*layerHeight/4), 0))
-				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(maxPrintSpeed - maxSpeedDelta))))
+				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(fastPrintSpeed - maxSpeedDelta))))
 				// Проверка на минимальную разницу между скоростью печати сегментов
 				if fastPrintSpeed-slowPrintSpeed < minSpeedDelta {
 					infoSpeedDeltaTooSmall = true
@@ -916,11 +975,18 @@ func generate(this js.Value, i []js.Value) interface{} {
 			}
 			// Печать линии
 			write(generateRelativeMove(0, -fastLineLength, 0, lineWidth, fastPrintSpeed)...)
-			write(generateRelativeMove(0, -slowLineLength, 0, lineWidth, slowPrintSpeed)...)
+			write(generateRelativeMove(0, -currentSlowLineLength, 0, lineWidth, slowPrintSpeed)...)
 			write(generateRelativeMove(0, -fastLineLength, 0, lineWidth, fastPrintSpeed)...)
 
 			// Печать передней стенки
-			if additionalTarget == 1 {
+			if additionalTarget == 0 {
+				// Если не выбрано никакой цели, то изменяем ширину медленного участка
+				currentSlowLineLength := 4 * defaultSlowLineLength
+				if currentSlowLineLength > modelWidth/2 {
+					currentSlowLineLength = modelWidth / 2
+				}
+				fastLineLength = (currentModelWidth - currentSlowLineLength) / 2
+			} else if additionalTarget == 1 {
 				// Время сглаживания
 				write("SET_PRESSURE_ADVANCE SMOOTH_TIME=" + fmt.Sprint(roundFloat(minAdditionalParameter+2*deltaAdditionalParameter, 3)) + "\n")
 			} else if additionalTarget == 2 {
@@ -931,7 +997,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 				// Для достижения нужного расхода, необходимо пересчитать скорости быстрых и медленных участков
 				// V = Q / (w -h) * h + Pi * h * h / 4
 				fastPrintSpeed = int(roundFloat((minAdditionalParameter+2*deltaAdditionalParameter)/((lineWidth-layerHeight)*layerHeight+math.Pi*layerHeight*layerHeight/4), 0))
-				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(maxPrintSpeed - maxSpeedDelta))))
+				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(fastPrintSpeed - maxSpeedDelta))))
 				// Проверка на минимальную разницу между скоростью печати сегментов
 				if fastPrintSpeed-slowPrintSpeed < minSpeedDelta {
 					infoSpeedDeltaTooSmall = true
@@ -939,11 +1005,18 @@ func generate(this js.Value, i []js.Value) interface{} {
 			}
 			// Печать линии
 			write(generateRelativeMove(-fastLineLength, 0, 0, lineWidth, fastPrintSpeed)...)
-			write(generateRelativeMove(-slowLineLength, 0, 0, lineWidth, slowPrintSpeed)...)
+			write(generateRelativeMove(-currentSlowLineLength, 0, 0, lineWidth, slowPrintSpeed)...)
 			write(generateRelativeMove(-fastLineLength, 0, 0, lineWidth, fastPrintSpeed)...)
 
 			// Печать левой стенки
-			if additionalTarget == 1 {
+			if additionalTarget == 0 {
+				// Если не выбрано никакой цели, то изменяем ширину медленного участка
+				currentSlowLineLength := 8 * defaultSlowLineLength
+				if currentSlowLineLength > modelWidth/2 {
+					currentSlowLineLength = modelWidth / 2
+				}
+				fastLineLength = (currentModelWidth - currentSlowLineLength) / 2
+			} else if additionalTarget == 1 {
 				// Время сглаживания
 				write("SET_PRESSURE_ADVANCE SMOOTH_TIME=" + fmt.Sprint(roundFloat(maxAdditionalParameter, 3)) + "\n")
 			} else if additionalTarget == 2 {
@@ -954,7 +1027,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 				// Для достижения нужного расхода, необходимо пересчитать скорости быстрых и медленных участков
 				// V = Q / (w -h) * h + Pi * h * h / 4
 				fastPrintSpeed = int(roundFloat(maxAdditionalParameter/((lineWidth-layerHeight)*layerHeight+math.Pi*layerHeight*layerHeight/4), 0))
-				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(maxPrintSpeed - maxSpeedDelta))))
+				slowPrintSpeed = int(math.Max(float64(minPrintSpeed), (float64(fastPrintSpeed - maxSpeedDelta))))
 				// Проверка на минимальную разницу между скоростью печати сегментов
 				if fastPrintSpeed-slowPrintSpeed < minSpeedDelta {
 					infoSpeedDeltaTooSmall = true
@@ -962,7 +1035,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 			}
 			// Печать линии
 			write(generateRelativeMove(0, fastLineLength, 0, lineWidth, fastPrintSpeed)...)
-			write(generateRelativeMove(0, slowLineLength, 0, lineWidth, slowPrintSpeed)...)
+			write(generateRelativeMove(0, currentSlowLineLength, 0, lineWidth, slowPrintSpeed)...)
 			write(generateRelativeMove(0, fastLineLength, 0, lineWidth, fastPrintSpeed)...)
 
 			// Если это не последний периметр, то перемещаемся к началу следующего периметра

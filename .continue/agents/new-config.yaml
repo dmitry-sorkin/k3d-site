@@ -1,0 +1,13 @@
+---
+name: qwen2.5-coder 1.5b
+version: 1.1.0
+schema: v1
+models:
+- name: qwen2.5-coder 1.5b
+  provider: ollama
+  model: qwen2.5-coder:1.5b
+  roles:
+    - apply
+    - autocomplete
+    - chat
+    - edit

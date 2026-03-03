@@ -130,6 +130,11 @@ hide:
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_acceleration" name="k3d_la_acceleration" value="5000"></td>
             <td class="lang" id="table.acceleration.description" style="text-align:justify; font-size: 0.9em;">[мм/с^2] Ускорение, с которым будет напечатана тестовая модель<br>В общем случае стоит поставить равной максимальному ускорению вашего принтера, полученному при калибровке input shaping'а или по критерию отстуствия эхо после углов<br>При калибровке адаптивного PA рекомендуется провести 3 калибровки: при ускорении 1000, половине от максимального ускорения и при максимальном ускорении<br>Не рекомендуется ставить значения ниже 1000 т.к. тогда методика может отработать некорректно</td>
         </tr>
+        <tr>
+            <th class="lang" id="table.num_perimeters.title">Количество<br>периметров</th>
+            <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_numPerimeters" name="k3d_la_numPerimeters" value="2"></td>
+            <td class="lang" id="table.num_perimeters.description" style="text-align:justify; font-size: 0.9em;">Сколько периметров будет у основно части модели<br>В общем случае хорошо работает 2. Для определения перепада толщины на просвет поставьте 1. Для эластомеров можно попробовать 3-4, если модель ведёт при 2</td>
+        </tr>
         <!-- Коэффициенты LA/PA -->
         <tr>
             <th class="lang" id="table.la_values.title">Коэффиценты LA/PA</th>
