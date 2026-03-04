@@ -1214,10 +1214,9 @@ func generate(this js.Value, i []js.Value) interface{} {
 	write(endGcode)
 
 	// Запись об окончании печати объекта
-	if firmware == 1 {
-		write("; stop printing object Cali id:0 copy 0")
-		write("EXCLUDE_OBJECT_END NAME='Cali_id_0_copy_0'\n")
-	}
+
+	write("; stop printing object Cali id:0 copy 0")
+	write("EXCLUDE_OBJECT_END NAME='Cali_id_0_copy_0'\n")
 
 	// Вывод информационного сообщения
 	infoMessage := ""
