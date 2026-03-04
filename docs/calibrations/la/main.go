@@ -9,10 +9,10 @@ import (
 	"syscall/js"
 )
 
-const caliVersion = "v2.2"     // Версия калибратора. Пишется в сгенерированном файле
+const caliVersion = "v2.3"     // Версия калибратора. Пишется в сгенерированном файле
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
-const log = true               // Писать ли в консоль логи происходящего
+const log = false              // Писать ли в консоль логи происходящего
 const maxSeparatorOffset = 0.2 // Ограничение выпирания линии, разделяющей сегменты
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
@@ -840,6 +840,32 @@ func generate(this js.Value, i []js.Value) interface{} {
 			fmt.Sprint(roundFloat(minAdditionalParameter+3*deltaAdditionalParameter, 3)))
 	}
 
+	var bedCenter Point
+	if delta {
+		bedCenter.X, bedCenter.Y, bedCenter.Z = 0, 0, layerHeight
+	} else {
+		bedCenter.X, bedCenter.Y, bedCenter.Z = bedX/2, bedY/2, layerHeight
+	}
+	currentE = 0
+	currentSpeed = minPrintSpeed
+	currentCoordinates.X, currentCoordinates.Y, currentCoordinates.Z = 0, 0, 0
+
+	raftWidth := modelWidth + 10
+	var purgeStart Point
+	var purgeLineLength float64
+	if bedX < 110.0 {
+		purgeLineLength = bedX - 10.0
+	} else {
+		purgeLineLength = 100.0
+	}
+	purgeStart.X, purgeStart.Y, purgeStart.Z = bedCenter.X-purgeLineLength/2, bedCenter.Y-modelWidth-10.0, currentCoordinates.Z
+	purgeTwo := purgeStart
+	purgeTwo.X = bedCenter.X + purgeLineLength/2
+	purgeThree := purgeTwo
+	purgeThree.Y += firstLayerLineWidth
+	purgeEnd := purgeThree
+	purgeEnd.X = purgeStart.X
+
 	// Название файла
 	fileName := "K3D_PA_H" + fmt.Sprint(hotendTemperature) + "_B" + fmt.Sprint(bedTemperature) + "_PA" + fmt.Sprint(roundFloat(initKFactor, 2)) + "-" + fmt.Sprint(roundFloat(endKFactor, 2)) + "_d" + fmt.Sprint(roundFloat(deltaKFactor, 3))
 	if additionalTarget == 1 {
@@ -882,7 +908,23 @@ func generate(this js.Value, i []js.Value) interface{} {
 		fmt.Sprintf(";Segment height: "+fmt.Sprint(roundFloat(segmentHeight/layerHeight, 0))+" layers ("+fmt.Sprint(roundFloat(segmentHeight, 3))+" mm)")+"\n",
 		caliParams)
 
+	// Если прошивка klipper, то вставляем команду,
+	// которая передаст прошивке информацию об объекте
+	if firmware == 1 {
+		write(fmt.Sprintf("EXCLUDE_OBJECT_DEFINE NAME='Cali_id_0_copy_0' CENTER=%s,%s POLYGON=[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]",
+			fmt.Sprint(roundFloat(bedCenter.X, 0)), fmt.Sprint(roundFloat(bedCenter.Y, 0)),
+			fmt.Sprint(roundFloat(bedCenter.X-purgeLineLength/2-5, 0)), fmt.Sprint(roundFloat(bedCenter.Y-modelWidth-15.0, 0)),
+			fmt.Sprint(roundFloat(bedCenter.X+purgeLineLength/2+5, 0)), fmt.Sprint(roundFloat(bedCenter.Y-modelWidth-15.0, 0)),
+			fmt.Sprint(roundFloat(bedCenter.X+purgeLineLength/2+5, 0)), fmt.Sprint(roundFloat(bedCenter.Y+modelWidth/2+15.0, 0)),
+			fmt.Sprint(roundFloat(bedCenter.X-purgeLineLength/2-5, 0)), fmt.Sprint(roundFloat(bedCenter.Y+modelWidth/2+15.0, 0)),
+			fmt.Sprint(roundFloat(bedCenter.X-purgeLineLength/2-5, 0)), fmt.Sprint(roundFloat(bedCenter.Y-modelWidth-15.0, 0))) +
+			"\n")
+		write("; printing object Cali id:0 copy 0\n")
+		write("EXCLUDE_OBJECT_START NAME='Cali_id_0_copy_0'\n")
+	}
+
 	// Стартовый G-код
+	write(";TYPE:Custom\n")
 	write(startGcode, "\n")
 
 	// Устанавливаем абсолютные координаты, а также выключаем вентилятор для первого слоя
@@ -900,41 +942,15 @@ func generate(this js.Value, i []js.Value) interface{} {
 	write(";LAYER_CHANGE\n")
 	write(";Z:" + fmt.Sprint(roundFloat(layerHeight, 3)) + "\n")
 	write(";HEIGHT:" + fmt.Sprint(roundFloat(layerHeight, 3)) + "\n")
-	write(";TYPE:Support interface\n")
 	write(";WIDTH:" + fmt.Sprint(roundFloat(firstLayerLineWidth, 3)) + "\n")
-
-	// Генерируем первый слой
-	var bedCenter Point
-	if delta {
-		bedCenter.X, bedCenter.Y, bedCenter.Z = 0, 0, layerHeight
-	} else {
-		bedCenter.X, bedCenter.Y, bedCenter.Z = bedX/2, bedY/2, layerHeight
-	}
-	currentE = 0
-	currentSpeed = minPrintSpeed
-	currentCoordinates.X, currentCoordinates.Y, currentCoordinates.Z = 0, 0, 0
 
 	// Передвигаемся по Z на высоту слоя и применяем Z-оффсет
 	write(fmt.Sprintf("G1 Z%s\n", fmt.Sprint(roundFloat(layerHeight+zOffset, 2))))
 	write(fmt.Sprintf("G92 Z%s\n", fmt.Sprint(roundFloat(layerHeight, 2))))
 	currentCoordinates.Z = layerHeight
 
-	// Расчёт точек для печати линии для прочистки сопла
-	raftWidth := modelWidth + 10
-	var purgeStart Point
-	var purgeLineLength float64
-	if bedX < 110.0 {
-		purgeLineLength = bedX - 10.0
-	} else {
-		purgeLineLength = 100.0
-	}
-	purgeStart.X, purgeStart.Y, purgeStart.Z = bedCenter.X-purgeLineLength/2, bedCenter.Y-modelWidth-10.0, currentCoordinates.Z
-	purgeTwo := purgeStart
-	purgeTwo.X = bedCenter.X + purgeLineLength/2
-	purgeThree := purgeTwo
-	purgeThree.Y += firstLayerLineWidth
-	purgeEnd := purgeThree
-	purgeEnd.X = purgeStart.X
+	// Установка типа линий
+	write(";TYPE:Skirt/Brim\n")
 
 	// Холостое перемещение к началу линии для прочистки сопла
 	write(generateRetraction())
@@ -948,6 +964,9 @@ func generate(this js.Value, i []js.Value) interface{} {
 
 	// Расчёт точек зигзага на первом слое
 	trajectory := generateZigZagTrajectory(bedCenter, firstLayerLineWidth, raftWidth-firstLayerLineWidth*0.5)
+
+	// Установка типа линий
+	write(";TYPE:Support interface\n")
 
 	// Перемещение к началу периметра подложки
 	raftStart := trajectory[0]
@@ -1194,6 +1213,11 @@ func generate(this js.Value, i []js.Value) interface{} {
 	// Конечный гкод
 	write(endGcode)
 
+	// Запись об окончании печати объекта
+
+	write("; stop printing object Cali id:0 copy 0")
+	write("EXCLUDE_OBJECT_END NAME='Cali_id_0_copy_0'\n")
+
 	// Вывод информационного сообщения
 	infoMessage := ""
 	if infoSpeedDeltaTooSmall {
@@ -1241,21 +1265,21 @@ func generateMove(start, end Point, width float64, speed int) []string {
 
 	// add X
 	if end.X != start.X {
-		command += fmt.Sprintf(" X%s", fmt.Sprint(roundFloat(end.X, 2)))
+		command += fmt.Sprintf(" X%s", fmt.Sprint(roundFloat(end.X, 3)))
 	}
 
 	// add Y
 	if end.Y != start.Y {
-		command += fmt.Sprintf(" Y%s", fmt.Sprint(roundFloat(end.Y, 2)))
+		command += fmt.Sprintf(" Y%s", fmt.Sprint(roundFloat(end.Y, 3)))
 	}
 
 	// add Z
 	if end.Z != start.Z {
-		command += fmt.Sprintf(" Z%s", fmt.Sprint(roundFloat(end.Z, 2)))
+		command += fmt.Sprintf(" Z%s", fmt.Sprint(roundFloat(end.Z, 3)))
 	}
 
 	// add E
-	if width > 0 && math.Sqrt(float64(math.Pow((end.X-start.X), 2)+math.Pow((end.Y-start.Y), 2))) > 0.8 {
+	if width > 0 && math.Sqrt(float64(math.Pow((end.X-start.X), 3)+math.Pow((end.Y-start.Y), 3))) > 0.8 {
 		newE := currentE + calcExtrusion(start, end, width)
 		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(newE, 5)))
 		currentE = newE
