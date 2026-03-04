@@ -1,4 +1,4 @@
-const calibrator_version = 'v2.1';
+const calibrator_version = 'v2.2';
 window.calibrator_version = calibrator_version;
 var savedSegmentsInfo = null;
 
@@ -66,6 +66,28 @@ function finishFile() {
 }
 
 function showError(value) {
+    var container = document.getElementById("resultContainer");
+    var output = document.createElement("textarea");
+    output.id = "gCode";
+    output.cols = "80";
+    output.value = value;
+    
+    // Считаем строки аналитически
+    var lines = value.split('\n');
+    var totalLines = 0;
+    
+    for (var i = 0; i < lines.length; i++) {
+        // Для каждой строки считаем сколько ей нужно строк при ширине 80 символов
+        totalLines += Math.ceil(lines[i].length / 80);
+    }
+    
+    // Устанавливаем количество строк
+    output.rows = Math.min(Math.max(3, totalLines), 50) + 1;
+    
+    container.appendChild(output);
+}
+
+function oldShowError(value) {
 	var container = document.getElementById("resultContainer");
 	var output = document.createElement("textarea");
 	output.id = "gCode";
@@ -162,7 +184,7 @@ var saveForm = function () {
 }
 
 function loadForm() {
-	// Flag that indicates whether at least one checkbox was loaded from localStorage
+	// Flag that indicates whether at least one advancedParametersCheckbox was loaded from localStorage
 	let anyCheckboxLoaded = false;
 
 	for (var elementId of formFields) {
@@ -174,7 +196,7 @@ function loadForm() {
 		var element = document.getElementById(elementId);
 		if (element) {
 			if (checkboxes.includes(elementId)) {
-				// We found a checkbox that was loaded from storage
+				// We found a advancedParametersCheckbox that was loaded from storage
 				anyCheckboxLoaded = true;
 				if (loadValue == 'true') {
 					element.checked = true;
@@ -268,6 +290,18 @@ function initForm() {
 
 	// Вызываем один раз сразу после загрузки страницы, чтобы установить корректное состояние
 	updateInputDisability();
+
+	// Вешаем слушатель на галочку расширенных параметров
+	const advancedParametersCheckbox = document.getElementById('k3d_la_advancedParameters');
+    const advancedParametersRows = document.querySelectorAll('[id="table.advanced_parameter.row"]');
+    
+    function toggleRows() {
+        const isVisible = advancedParametersCheckbox?.checked;
+        advancedParametersRows.forEach(row => row.style.display = isVisible ? '' : 'none');
+    }
+    
+    toggleRows(); // Инициализация
+    advancedParametersCheckbox?.addEventListener('change', toggleRows);
 }
 
 function initLang(key) {
@@ -315,6 +349,9 @@ function initLang(key) {
 			values['table.end_gcode.title'] = 'End G-code';
 			values['table.smooth_time.title'] = 'PA Smoothing Time';
 			values['table.smooth_time.description'] = '[s] Pressure advance smoothing time<br>In Klipper firmware reduces load on feeder mechanism but excessive smoothing may cause defects like dents before and after seams. So this value should be calibrated via setting additional target “smoothing time”<br>In Marlin and RRF there\'s no control over PA smoothing time, hence this parameter does nothing there<br>When selecting “smoothing time” as additional calibration target, this parameter’s value will be ignored';
+			values['table.advanced_parameters.title'] = 'Show<br>advanced<br>parameters';
+			values['table.advanced_parameters.description'] = 'This section contains parameters that regular users should not change. Specifying incorrect values may lead to incorrect model generation. Therefore, when using these parameters, be sure to check the G-code before printing. These parameters are not saved';
+
 
 			values['generator.generate_and_download'] = 'Generate & Download';
 			values['generator.generate_button_loading'] = 'Generator loading...';
@@ -400,7 +437,7 @@ function initLang(key) {
 			values['table.acceleration.title'] = 'Ускорение';
 			values['table.acceleration.description'] = '[мм/с^2] Ускорение, с которым будет напечатана тестовая модель<br>В общем случае стоит поставить равной максимальному ускорению вашего принтера, полученному при калибровке input shaping\'а или по критерию отстуствия эхо после углов<br>При калибровке адаптивного PA рекомендуется провести 3 калибровки: при ускорении 1000, половине от максимального ускорения и при максимальном ускорении<br>Не рекомендуется ставить значения ниже 1000 т.к. тогда методика может отработать некорректно';
 			values['table.num_perimeters.title'] = 'Количество<br>периметров';
-			values['table.num_perimeters.description'] = 'Сколько периметров будет у основно части модели<br>В общем случае хорошо работает 2. Для определения перепада толщины на просвет поставьте 1. Для эластомеров можно попробовать 3-4, если модель ведёт при 2';
+			values['table.num_perimeters.description'] = 'Сколько периметров будет у основной части модели<br>В общем случае хорошо работает 2. Для определения перепада толщины на просвет поставьте 1. Для эластомеров можно попробовать 3-4, если модель ведёт при 2';
 			values['table.la_values.title'] = 'Коэффициенты<br>LA/PA';
 			values['table.la_values.description'] = 'Начальное и конечное значение коэффициентов LA/PA для проверки<br>На принтерах с директ экструдерами, при калибровке PA для твёрдого материала, стоит установить 0.0 - 0.1. Если этого диапазона не хватит, то проверить 0.0 - 0.2<br>При подборе PA для эластомеров, стоит увеличить конечное значение до 0.5-1.0<br>На принтерах с боуден экструдерами, начинать калибровку лучше с диапазона 0.0-1.0';
 			values['table.z_offset.title'] = 'Z-offset';
@@ -416,6 +453,8 @@ function initLang(key) {
 			values['table.end_gcode.title'] = 'Конечный G-код';
 			values['table.smooth_time.title'] = 'Время сглаживания<br>PA';
 			values['table.smooth_time.description'] = '[с] Время сглаживания PA<br>В прошивке Klipper уменьшает нагрузку на подающий механизм, но завышенное значение сглаживания может вызвать дефекты в виде ямок перед и после шва. Поэтому это значение стоит откалибровать с помощью установки дополнительной цели "время сглаживания"<br>В Marlin и RRF нет управления временем сглаживания PA, поэтому там этот параметр ничего не делает<br>При выборе доп. цели калибровки "время сглаживания", значение этого параметра будет проигнорировано';
+			values['table.advanced_parameters.title'] = 'Показать<br>расширенные<br>параметры';
+			values['table.advanced_parameters.description'] = 'В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров не сохраняются';
 
 			values['generator.generate_and_download'] = 'Генерировать и скачать';
 			values['generator.generate_button_loading'] = 'Генератор загружается...';

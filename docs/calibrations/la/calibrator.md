@@ -1,6 +1,6 @@
 ---
 icon: octicons/package-16
-title: K3D Калибровщик Linear Advance (Pressure Advance)
+title: K3D Калибровщик Pressure Advance
 hide:
     - toc
 ---
@@ -194,7 +194,7 @@ hide:
             </td>
         </tr>
         <!-- Значения дополнительного параметра -->
-        <tr id="table_additional_parameter_row">
+        <tr>
             <th class="lang" id="table.additional_parameter.title">Значения доп.<br>параметра</th>
             <td>
                 <table class="innerTable">
@@ -211,6 +211,46 @@ hide:
                 </table>
             </td>
             <td class="lang" id="table.additional_parameter.description" style="text-align: justify; font-size: 0.9em;">Минимальное и максимальное значение параметра дополнительной цели калибровки<br>Если дополнительная цель выключена, то не делают ничего</td>
+        </tr>
+        <tr>
+            <th class="lang" id="table.advanced_parameters.title">Показать<br>расширенные<br>параметры</th>
+            <td style="text-align:center"><input type="checkbox" id="k3d_la_advancedParameters" name="k3d_la_advancedParameters"></td>
+            <td class="lang" id="table.advanced_parameters.description" style="text-align: justify; font-size: 0.9em;">В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров не сохраняются</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Layer height<br>limit</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_layerHeightLimit" value="0.3"></td>
+            <td>[0.1-10.0]</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Filament diameter</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_filamentDiameter" value="1.75"></td>
+            <td>[0.1-5.0]</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Default segment<br>height</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_defaultSegmentHeight" value="3.0"></td>
+            <td>[1.0-100.0]</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Min speed delta</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_minSpeedDelta" value="10"></td>
+            <td>[0-1000]</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Max speed delta</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_maxSpeedDelta" value="100"></td>
+            <td>[10-1000]</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Default model<br>width</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_defaultModelWidth" value="40.0"></td>
+            <td>[10.0-1000.0]</td>
+        </tr>
+        <tr id="table.advanced_parameter.row">
+            <th>Default slow<br>line length</th>
+            <td><input class="calibratorInput" type="text" id="k3d_la_defaultSlowLineLength" value="2.0"></td>
+            <td>[0.1-1000.0]</td>
         </tr>
     </tbody>
 </table>

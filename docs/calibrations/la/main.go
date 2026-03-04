@@ -9,26 +9,20 @@ import (
 	"syscall/js"
 )
 
-const caliVersion = "v2.1"        // Версия калибратора. Пишется в сгенерированном файле
-const filamentDiameter = 1.75     // Диаметр филамента
-const retractSpeed = 35.0         // Скорость отката по умолчанию
-const retractLength = 1.0         // Длина отката по умолчанию
-const defaultSegmentHeight = 3.0  // Высота сегмента по умолчанию. Высота сегмента при печати будет близка к этому значению, но может отличаться, если высота сегмента по умолчанию не делится на высоту слоя без остатка
-const defaultSlowLineLength = 2.0 // длина медленного участка на стенках калибровочной модели
-const maxSpeedDelta = 100         // Максимальная разница в скорости печати между быстрым и медленным элементом
-const minSpeedDelta = 10          // Минимальная разница в скорости печати между быстрым и медленным элементом
-const log = true                  // Писать ли в консоль логи происходящего
-const maxSeparatorOffset = 0.2    // Ограничение выпирания линии, разделяющей сегменты
-const defaultModelWidth = 40.0    // Размер модели по умолчанию
+const caliVersion = "v2.2"     // Версия калибратора. Пишется в сгенерированном файле
+const retractSpeed = 35.0      // Скорость отката по умолчанию
+const retractLength = 1.0      // Длина отката по умолчанию
+const log = true               // Писать ли в консоль логи происходящего
+const maxSeparatorOffset = 0.2 // Ограничение выпирания линии, разделяющей сегменты
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
 var (
-	bedX, bedY, zOffset, nozzleDiameter, firstLayerLineWidth, lineWidth, currentE                                                                                      float64
-	layerHeight, initKFactor, endKFactor, smoothTime, initAdditionalParameter, endAdditionalParameter, segmentHeight                                                   float64
-	firmware, hotendTemperature, bedTemperature, cooling, maxPrintSpeed, minPrintSpeed, numSegments, flow, additionalTarget, currentSpeed, acceleration, numPerimeters int
-	retracted, delta                                                                                                                                                   bool
-	startGcode, endGcode                                                                                                                                               string
-	currentCoordinates                                                                                                                                                 Point
+	bedX, bedY, zOffset, nozzleDiameter, firstLayerLineWidth, lineWidth, currentE, layerHeightLimit, filamentDiameter, defaultSlowLineLength, defaultModelWidth, defaultSegmentHeight                float64
+	layerHeight, initKFactor, endKFactor, smoothTime, initAdditionalParameter, endAdditionalParameter, segmentHeight                                                                                 float64
+	firmware, hotendTemperature, bedTemperature, cooling, maxPrintSpeed, minPrintSpeed, numSegments, flow, additionalTarget, currentSpeed, acceleration, numPerimeters, maxSpeedDelta, minSpeedDelta int
+	retracted, delta                                                                                                                                                                                 bool
+	startGcode, endGcode                                                                                                                                                                             string
+	currentCoordinates                                                                                                                                                                               Point
 )
 
 type Point struct {
@@ -404,26 +398,6 @@ func check(showErrorBox bool, allowModify bool) bool {
 		errorString = errorString + getLangString("error.additional_target.not_set") + "\n"
 	}
 
-	// Переопределение ширин линий и толщины слой для разных целей калибровки
-
-	if additionalTarget == 3 {
-		lineWidth = roundFloat(nozzleDiameter*1.5, 2)
-		firstLayerLineWidth = lineWidth
-		layerHeight = roundFloat(nozzleDiameter*0.75, 2)
-	} else {
-		lineWidth = roundFloat(nozzleDiameter*1.05, 2)
-		firstLayerLineWidth = roundFloat(nozzleDiameter*1.5, 2)
-		layerHeight = roundFloat(nozzleDiameter*0.5, 2)
-	}
-
-	// Подгоняем высоту сегмента таким образом, чтобы она делилась на высоту слоя без остатка
-	// Если в сегменте менее 5 слоёв, то увеличиваем количество слоёв до 5
-
-	segmentHeight = layerHeight * (math.Floor(defaultSegmentHeight / layerHeight))
-	if math.Floor(defaultSegmentHeight/layerHeight) < 5 {
-		segmentHeight = 5 * layerHeight
-	}
-
 	// Значения дополнительного параметра
 
 	docInitAdditionalParameter, err := parseInputToFloat(getElementValue("k3d_la_initAdditionalParameter"))
@@ -497,9 +471,130 @@ func check(showErrorBox bool, allowModify bool) bool {
 		// klipper не выполняет команды на последней строке G-кода
 		endGcode = docEndGcode + "\n"
 	}
+	// Расширенные параметры
 
-	if !showErrorBox {
-		return !retErr
+	docLayerHeightLimit, err := parseInputToFloat(getElementValue("k3d_la_layerHeightLimit"))
+	if err != nil || docLayerHeightLimit < 0.1 || docLayerHeightLimit > 10.0 {
+		curErr, hasErr = "Error: layer height limit", true
+	} else {
+		layerHeightLimit = docLayerHeightLimit
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	docFilamentDiameter, err := parseInputToFloat(getElementValue("k3d_la_filamentDiameter"))
+	if err != nil || docFilamentDiameter < 0.1 || docLayerHeightLimit > 5.0 {
+		curErr, hasErr = "Error: filament diameter", true
+	} else {
+		filamentDiameter = docFilamentDiameter
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	docDefaultSegmentHeight, err := parseInputToFloat(getElementValue("k3d_la_defaultSegmentHeight"))
+	if err != nil || docDefaultSegmentHeight < 1.0 || docDefaultSegmentHeight > 100.0 {
+		curErr, hasErr = "Error: default segment height", true
+	} else {
+		defaultSegmentHeight = docDefaultSegmentHeight
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	docMinSpeedDelta, err := parseInputToInt(getElementValue("k3d_la_minSpeedDelta"))
+	if err != nil || docMinSpeedDelta > 1000 {
+		curErr, hasErr = "Error: min speed delta", true
+	} else {
+		minSpeedDelta = docMinSpeedDelta
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	docMaxSpeedDelta, err := parseInputToInt(getElementValue("k3d_la_maxSpeedDelta"))
+	if err != nil || docMaxSpeedDelta < 10 || docMaxSpeedDelta > 1000 {
+		curErr, hasErr = "Error: max speed delta", true
+	} else {
+		maxSpeedDelta = docMaxSpeedDelta
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	docDefaultModelWidth, err := parseInputToFloat(getElementValue("k3d_la_defaultModelWidth"))
+	if err != nil || docDefaultModelWidth < 10.0 || docDefaultModelWidth > 1000.0 {
+		curErr, hasErr = "Error: default model width", true
+	} else {
+		defaultModelWidth = docDefaultModelWidth
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	docDefaultSlowLineLength, err := parseInputToFloat(getElementValue("k3d_la_defaultSlowLineLength"))
+	if err != nil || docDefaultSlowLineLength < 0.1 || docDefaultSlowLineLength > 1000.0 {
+		curErr, hasErr = "Error: default slow line length", true
+	} else {
+		defaultSlowLineLength = docDefaultSlowLineLength
+	}
+
+	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	if hasErr {
+		errorString = errorString + curErr + "\n"
+		hasErr = false
+		retErr = true
+	}
+
+	// Применяем ограничения
+
+	if layerHeight > layerHeightLimit {
+		layerHeight = layerHeightLimit
+	}
+
+	// Подгоняем высоту сегмента таким образом, чтобы она делилась на высоту слоя без остатка
+	// Если в сегменте менее 5 слоёв, то увеличиваем количество слоёв до 5
+
+	segmentHeight = layerHeight * (math.Floor(defaultSegmentHeight / layerHeight))
+	if math.Floor(defaultSegmentHeight/layerHeight) < 5 {
+		segmentHeight = 5 * layerHeight
+	}
+
+	// Переопределение ширин линий и толщины слой для разных целей калибровки
+
+	if additionalTarget == 3 {
+		lineWidth = roundFloat(nozzleDiameter*1.5, 2)
+		firstLayerLineWidth = lineWidth
+		layerHeight = roundFloat(nozzleDiameter*0.75, 2)
+	} else {
+		lineWidth = roundFloat(nozzleDiameter*1.05, 2)
+		firstLayerLineWidth = roundFloat(nozzleDiameter*1.5, 2)
+		layerHeight = roundFloat(nozzleDiameter*0.5, 2)
 	}
 
 	// Если включено логирование, то выводим значение всех параметров в консоль
@@ -527,9 +622,20 @@ func check(showErrorBox bool, allowModify bool) bool {
 		println("endAdditionalParameter=" + fmt.Sprint(endAdditionalParameter))
 		println("delta=" + fmt.Sprint(delta))
 		println("firmware=" + fmt.Sprint(firmware))
+		println("defaultSegmentHeight=" + fmt.Sprint(defaultSegmentHeight))
+		println("layerHeightLimit=" + fmt.Sprint(layerHeightLimit))
+		println("filamentDiameter=" + fmt.Sprint(filamentDiameter))
+		println("minSpeedDelta=" + fmt.Sprint(minSpeedDelta))
+		println("maxSpeedDelta=" + fmt.Sprint(maxSpeedDelta))
+		println("defaultModelWidth=" + fmt.Sprint(defaultModelWidth))
+		println("defaultSlowLineLength=" + fmt.Sprint(defaultSlowLineLength))
 	}
 
 	// Окончание проверки параметров
+
+	if !showErrorBox {
+		return !retErr
+	}
 
 	if !retErr {
 		println("OK")
@@ -698,8 +804,6 @@ func generate(this js.Value, i []js.Value) interface{} {
 				js.Global().Call("showError", getLangString("info.model_size_changed")+fmt.Sprint(roundFloat(modelWidth, 2))+" мм\n")
 			}
 		}
-		// Ограничиваем размер модели размером стола и выводим информационное сообщение
-
 	}
 
 	// Контейнеры для информационного сообщения
@@ -792,6 +896,13 @@ func generate(this js.Value, i []js.Value) interface{} {
 	// Устанавливаем значение потока
 	write("M221 S" + fmt.Sprint(flow) + "\n")
 
+	// Информация о слое для предпросмотрщиков G-кода
+	write(";LAYER_CHANGE\n")
+	write(";Z:" + fmt.Sprint(roundFloat(layerHeight, 3)) + "\n")
+	write(";HEIGHT:" + fmt.Sprint(roundFloat(layerHeight, 3)) + "\n")
+	write(";TYPE:Support interface\n")
+	write(";WIDTH:" + fmt.Sprint(roundFloat(firstLayerLineWidth, 3)) + "\n")
+
 	// Генерируем первый слой
 	var bedCenter Point
 	if delta {
@@ -878,6 +989,11 @@ func generate(this js.Value, i []js.Value) interface{} {
 		// Комментарий в начале каждого слоя
 		write(fmt.Sprintf(getLangString("info.layer_change_calibration_info"), fmt.Sprint(roundFloat(currentCoordinates.Z/layerHeight, 0)), fmt.Sprint(roundFloat(currentKFactor, 3))) + "\n")
 
+		// Информация о слое для предпросмотрщиков G-кода
+		write(";LAYER_CHANGE\n")
+		write(";Z:" + fmt.Sprint(roundFloat(layerHeight*float64(i+1), 3)) + "\n")
+		write(";HEIGHT:" + fmt.Sprint(roundFloat(layerHeight, 3)) + "\n")
+
 		// На первых 4 слоях плавно повышаем скорость вращения вентилятора до cooling
 		if i < 4 {
 			write(fmt.Sprintf("M106 S%s\n", fmt.Sprint(roundFloat(float64(cooling*i/3), 0))))
@@ -923,6 +1039,23 @@ func generate(this js.Value, i []js.Value) interface{} {
 			fastPrintSpeed := maxPrintSpeed
 			slowPrintSpeed := minPrintSpeed
 
+			// Метаданные для слайсера
+			if j == 0 {
+				write(";TYPE:Outer wall\n")
+			} else {
+				write(";TYPE:Inner wall\n")
+			}
+			write(";WIDTH:" + fmt.Sprint(roundFloat(lineWidth, 3)) + "\n")
+
+			// Выводим текущие параметры
+			if log {
+				println("currentModelWidth: " + fmt.Sprint(currentModelWidth))
+				println("currentSlowLineLength: " + fmt.Sprint(currentSlowLineLength))
+				println("fastLineLength: " + fmt.Sprint(fastLineLength))
+				println("fastPrintSpeed: " + fmt.Sprint(fastPrintSpeed))
+				println("slowPrintSpeed: " + fmt.Sprint(slowPrintSpeed))
+			}
+
 			// Печать задней стенки
 			// Расчёт и установка дополнительного параметра
 			if additionalTarget == 1 {
@@ -951,11 +1084,15 @@ func generate(this js.Value, i []js.Value) interface{} {
 			// Рассчёт и установка дополнительного параметра
 			if additionalTarget == 0 {
 				// Если не выбрано никакой цели, то изменяем ширину медленного участка
-				currentSlowLineLength := 2 * defaultSlowLineLength
+				currentSlowLineLength = 2 * defaultSlowLineLength
 				if currentSlowLineLength > modelWidth/2 {
 					currentSlowLineLength = modelWidth / 2
 				}
 				fastLineLength = (currentModelWidth - currentSlowLineLength) / 2
+				if log {
+					println("currentSlowLineLength: " + fmt.Sprint(currentSlowLineLength))
+					println("fastLineLength: " + fmt.Sprint(fastLineLength))
+				}
 			} else if additionalTarget == 1 {
 				// Время сглаживания
 				write("SET_PRESSURE_ADVANCE SMOOTH_TIME=" + fmt.Sprint(roundFloat(minAdditionalParameter+deltaAdditionalParameter, 3)) + "\n")
@@ -981,11 +1118,15 @@ func generate(this js.Value, i []js.Value) interface{} {
 			// Печать передней стенки
 			if additionalTarget == 0 {
 				// Если не выбрано никакой цели, то изменяем ширину медленного участка
-				currentSlowLineLength := 4 * defaultSlowLineLength
+				currentSlowLineLength = 4 * defaultSlowLineLength
 				if currentSlowLineLength > modelWidth/2 {
 					currentSlowLineLength = modelWidth / 2
 				}
 				fastLineLength = (currentModelWidth - currentSlowLineLength) / 2
+				if log {
+					println("currentSlowLineLength: " + fmt.Sprint(currentSlowLineLength))
+					println("fastLineLength: " + fmt.Sprint(fastLineLength))
+				}
 			} else if additionalTarget == 1 {
 				// Время сглаживания
 				write("SET_PRESSURE_ADVANCE SMOOTH_TIME=" + fmt.Sprint(roundFloat(minAdditionalParameter+2*deltaAdditionalParameter, 3)) + "\n")
@@ -1011,11 +1152,15 @@ func generate(this js.Value, i []js.Value) interface{} {
 			// Печать левой стенки
 			if additionalTarget == 0 {
 				// Если не выбрано никакой цели, то изменяем ширину медленного участка
-				currentSlowLineLength := 8 * defaultSlowLineLength
+				currentSlowLineLength = 8 * defaultSlowLineLength
 				if currentSlowLineLength > modelWidth/2 {
 					currentSlowLineLength = modelWidth / 2
 				}
 				fastLineLength = (currentModelWidth - currentSlowLineLength) / 2
+				if log {
+					println("currentSlowLineLength: " + fmt.Sprint(currentSlowLineLength))
+					println("fastLineLength: " + fmt.Sprint(fastLineLength))
+				}
 			} else if additionalTarget == 1 {
 				// Время сглаживания
 				write("SET_PRESSURE_ADVANCE SMOOTH_TIME=" + fmt.Sprint(roundFloat(maxAdditionalParameter, 3)) + "\n")
@@ -1112,7 +1257,7 @@ func generateMove(start, end Point, width float64, speed int) []string {
 	// add E
 	if width > 0 && math.Sqrt(float64(math.Pow((end.X-start.X), 2)+math.Pow((end.Y-start.Y), 2))) > 0.8 {
 		newE := currentE + calcExtrusion(start, end, width)
-		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(newE, 4)))
+		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(newE, 5)))
 		currentE = newE
 	}
 
@@ -1130,8 +1275,9 @@ func generateMove(start, end Point, width float64, speed int) []string {
 }
 
 func calcExtrusion(start, end Point, width float64) float64 {
-	lineLength := math.Sqrt(float64(math.Pow((end.X-start.X), 2) + math.Pow((end.Y-start.Y), 2)))
-	extrusion := width * layerHeight * lineLength * 4 / math.Pi / math.Pow(filamentDiameter, 2)
+	lineLength := math.Sqrt(math.Pow((end.X-start.X), 2) + math.Pow((end.Y-start.Y), 2))
+	// extrusion := width * layerHeight * lineLength * 4 / math.Pi / math.Pow(filamentDiameter, 2)
+	extrusion := (4 * lineLength * ((width-layerHeight)*layerHeight + math.Pi*layerHeight*layerHeight/4)) / (math.Pi * filamentDiameter * filamentDiameter)
 	return extrusion
 }
 
