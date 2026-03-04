@@ -9,7 +9,7 @@ import (
 	"syscall/js"
 )
 
-const caliVersion = "v2.2"     // Версия калибратора. Пишется в сгенерированном файле
+const caliVersion = "v2.3"     // Версия калибратора. Пишется в сгенерированном файле
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = true               // Писать ли в консоль логи происходящего
@@ -580,10 +580,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Подгоняем высоту сегмента таким образом, чтобы она делилась на высоту слоя без остатка
 	// Если в сегменте менее 5 слоёв, то увеличиваем количество слоёв до 5
 
-	segmentHeight = layerHeight * (math.Floor(defaultSegmentHeight / layerHeight))
-	if math.Floor(defaultSegmentHeight/layerHeight) < 5 {
-		segmentHeight = 5 * layerHeight
-	}
+	segmentHeight = math.Max(layerHeight*(math.Floor(defaultSegmentHeight/layerHeight)), 5*layerHeight)
 
 	// Переопределение ширин линий и толщины слой для разных целей калибровки
 
@@ -882,6 +879,21 @@ func generate(this js.Value, i []js.Value) interface{} {
 		fmt.Sprintf(";Segment height: "+fmt.Sprint(roundFloat(segmentHeight/layerHeight, 0))+" layers ("+fmt.Sprint(roundFloat(segmentHeight, 3))+" mm)")+"\n",
 		caliParams)
 
+	// Объявления объекта для работы адаптивной карты высот в klipper
+	if firmware == 1 {
+		minX := int(roundFloat(bedX/2-55.0, 0))
+		minY := int(roundFloat(bedY/2-modelWidth/2-25.0, 0))
+		maxX := int(roundFloat(bedX/2+55.0, 0))
+		maxY := int(roundFloat(bedY/2+modelWidth/2+15, 0))
+		write(fmt.Sprintf("EXCLUDE_OBJECT_DEFINE NAME='Cali_id_0_copy_0' CENTER=%s,%s POLYGON=[[%d,%d],[%d,%d],[%d,%d],[%d,%d],[%d,%d]]\n",
+			fmt.Sprint(roundFloat(bedX/2, 0)), fmt.Sprint(roundFloat(bedY/2, 0)),
+			minX, minY,
+			maxX, minY,
+			maxX, maxY,
+			minX, maxY,
+			minX, minY))
+	}
+
 	// Стартовый G-код
 	write(startGcode, "\n")
 
@@ -928,7 +940,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 	} else {
 		purgeLineLength = 100.0
 	}
-	purgeStart.X, purgeStart.Y, purgeStart.Z = bedCenter.X-purgeLineLength/2, bedCenter.Y-modelWidth-10.0, currentCoordinates.Z
+	purgeStart.X, purgeStart.Y, purgeStart.Z = bedCenter.X-purgeLineLength/2, bedCenter.Y-modelWidth/2-15.0, currentCoordinates.Z
 	purgeTwo := purgeStart
 	purgeTwo.X = bedCenter.X + purgeLineLength/2
 	purgeThree := purgeTwo
