@@ -12,7 +12,7 @@ import (
 const caliVersion = "v2.3"     // Версия калибратора. Пишется в сгенерированном файле
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
-const log = true               // Писать ли в консоль логи происходящего
+const log = false              // Писать ли в консоль логи происходящего
 const maxSeparatorOffset = 0.2 // Ограничение выпирания линии, разделяющей сегменты
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
@@ -474,7 +474,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Расширенные параметры
 
 	docLayerHeightLimit, err := parseInputToFloat(getElementValue("k3d_la_layerHeightLimit"))
-	if err != nil || docLayerHeightLimit < 0.1 || docLayerHeightLimit > 10.0 {
+	if docLayerHeightLimit != docLayerHeightLimit {
+		docLayerHeightLimit = 0.3
+	} else if err != nil || docLayerHeightLimit < 0.1 || docLayerHeightLimit > 10.0 {
 		curErr, hasErr = "Error: layer height limit", true
 	} else {
 		layerHeightLimit = docLayerHeightLimit
@@ -488,7 +490,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	}
 
 	docFilamentDiameter, err := parseInputToFloat(getElementValue("k3d_la_filamentDiameter"))
-	if err != nil || docFilamentDiameter < 0.1 || docLayerHeightLimit > 5.0 {
+	if docFilamentDiameter != docFilamentDiameter {
+		docFilamentDiameter = 1.75
+	} else if err != nil || docFilamentDiameter < 0.1 || docLayerHeightLimit > 5.0 {
 		curErr, hasErr = "Error: filament diameter", true
 	} else {
 		filamentDiameter = docFilamentDiameter
@@ -502,7 +506,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	}
 
 	docDefaultSegmentHeight, err := parseInputToFloat(getElementValue("k3d_la_defaultSegmentHeight"))
-	if err != nil || docDefaultSegmentHeight < 1.0 || docDefaultSegmentHeight > 100.0 {
+	if docDefaultSegmentHeight != docDefaultSegmentHeight {
+		docDefaultSegmentHeight = 3.0
+	} else if err != nil || docDefaultSegmentHeight < 1.0 || docDefaultSegmentHeight > 100.0 {
 		curErr, hasErr = "Error: default segment height", true
 	} else {
 		defaultSegmentHeight = docDefaultSegmentHeight
@@ -516,7 +522,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	}
 
 	docMinSpeedDelta, err := parseInputToInt(getElementValue("k3d_la_minSpeedDelta"))
-	if err != nil || docMinSpeedDelta > 1000 {
+	if docMinSpeedDelta != docMinSpeedDelta {
+		docMinSpeedDelta = 10
+	} else if err != nil || docMinSpeedDelta > 1000 {
 		curErr, hasErr = "Error: min speed delta", true
 	} else {
 		minSpeedDelta = docMinSpeedDelta
@@ -530,7 +538,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	}
 
 	docMaxSpeedDelta, err := parseInputToInt(getElementValue("k3d_la_maxSpeedDelta"))
-	if err != nil || docMaxSpeedDelta < 10 || docMaxSpeedDelta > 1000 {
+	if docMaxSpeedDelta != docMaxSpeedDelta {
+		docMaxSpeedDelta = 100
+	} else if err != nil || docMaxSpeedDelta < 10 || docMaxSpeedDelta > 1000 {
 		curErr, hasErr = "Error: max speed delta", true
 	} else {
 		maxSpeedDelta = docMaxSpeedDelta
@@ -544,7 +554,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	}
 
 	docDefaultModelWidth, err := parseInputToFloat(getElementValue("k3d_la_defaultModelWidth"))
-	if err != nil || docDefaultModelWidth < 10.0 || docDefaultModelWidth > 1000.0 {
+	if docDefaultModelWidth != docDefaultModelWidth {
+		docDefaultModelWidth = 40.0
+	} else if err != nil || docDefaultModelWidth < 10.0 || docDefaultModelWidth > 1000.0 {
 		curErr, hasErr = "Error: default model width", true
 	} else {
 		defaultModelWidth = docDefaultModelWidth
@@ -558,7 +570,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	}
 
 	docDefaultSlowLineLength, err := parseInputToFloat(getElementValue("k3d_la_defaultSlowLineLength"))
-	if err != nil || docDefaultSlowLineLength < 0.1 || docDefaultSlowLineLength > 1000.0 {
+	if docDefaultSlowLineLength != docDefaultSlowLineLength {
+		docDefaultSlowLineLength = 2.0
+	} else if err != nil || docDefaultSlowLineLength < 0.1 || docDefaultSlowLineLength > 1000.0 {
 		curErr, hasErr = "Error: default slow line length", true
 	} else {
 		defaultSlowLineLength = docDefaultSlowLineLength
