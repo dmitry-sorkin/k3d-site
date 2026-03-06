@@ -283,3 +283,206 @@ input[type=radio] {
 input[type="text"]:disabled {
 	opacity: 0.6;
 }
+
+/* =====================================================
+   Стили для системы управления профилями калибровщика
+   ===================================================== */
+
+/* Панель управления профилями - Material Design */
+.profilePanel {
+    padding: 20px;
+    background-color: var(--md-default-bg-color);
+    border: .05rem solid var(--md-typeset-table-color);
+}
+
+.profileControls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.profileControls label {
+    font-weight: 500;
+    color: rgba(210, 215, 249, 0.9);
+    margin-right: 8px;
+}
+
+.profileSelect {
+    padding: 10px 16px;
+    background: rgba(40, 41, 54, 0.6);
+    font-weight: 700;
+    /*font-size: 14px;*/
+    min-width: 220px;
+    border-style: solid;
+    color: var(--md-accent-bg-color);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 0.1rem solid var(--md-primary-fg-color);
+}
+
+.profileSelect:hover {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+}
+
+.profileSelect:focus {
+    background-color: var(--md-accent-fg-color);
+    border-color: var(--md-accent-fg-color);
+}
+
+/* Кнопка удаления */
+.caliButtonDanger {
+    color: var(--md-accent-bg-color);
+    background: rgba(255, 75, 43, 0.1) !important;
+    border: 1px solid rgba(255, 75, 43, 0.4) !important;
+}
+
+.caliButtonDanger:hover:not(:disabled) {
+    background: rgba(255, 75, 43, 0.2) !important;
+    border-color: rgba(255, 75, 43, 0.6) !important;
+}
+
+.caliButtonDanger:disabled {
+    background: transparent !important;
+    border-color: rgba(255, 75, 43, 0.2) !important;
+}
+
+/* Статусные сообщения */
+.profileStatus {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profileStatus.success {
+    display: block;
+    background: linear-gradient(135deg, rgba(0, 148, 133, 0.15) 0%, rgba(0, 212, 187, 0.1) 100%);
+    border-left: 3px solid #00d4bb;
+    color: #00d4bb;
+}
+
+.profileStatus.error {
+    display: block;
+    background: linear-gradient(135deg, rgba(255, 75, 43, 0.15) 0%, rgba(255, 107, 77, 0.1) 100%);
+    border-left: 3px solid #ff4b2b;
+    color: #ff6b4d;
+}
+
+.profileStatus.info {
+    display: block;
+    background: linear-gradient(135deg, rgba(93, 108, 192, 0.15) 0%, rgba(139, 154, 244, 0.1) 100%);
+    border-left: 3px solid #8b9af4;
+    color: #8b9af4;
+}
+
+/* Модальное окно */
+.profileModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profileModalContent {
+    background: linear-gradient(135deg, #2a2b38 0%, #1e1f2a 100%);
+    border: 1px solid rgba(0, 148, 133, 0.2);
+    padding: 32px;
+    min-width: 450px;
+    max-width: 90vw;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    animation: modalSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.profileModalContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #009485, #5d6cc0, #009485);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.profileModalContent h3 {
+    margin: 0 0 24px 0;
+    color: rgba(233, 235, 252, 0.95);
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.profileNameInput {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(40, 41, 54, 0.6);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: rgb(233, 235, 252);
+    font-size: 15px;
+    margin-bottom: 28px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profileNameInput:focus {
+    outline: none;
+    background: rgba(40, 41, 54, 0.8);
+    border-color: #009485;
+    box-shadow: 0 0 0 4px rgba(0, 148, 133, 0.1);
+}
+
+.profileModalButtons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}

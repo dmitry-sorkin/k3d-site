@@ -8,11 +8,57 @@ hide:
 <h1 class="lang" id="header.title">K3D калибровщик Pressure Advance</h1>
 
 <script src="../assets/js/lib.js"></script>
+<script src="../assets/js/profileManager.js"></script>
 <script src="../assets/js/wasm_exec.js"></script>
 <script src="../assets/js/gwaloader.js"></script>
 <script src="../assets/js/streamsavermin.js"></script>
 
 [:material-file-document: Инструкция](./index.md) | Язык: [:flag_gb: English](?lang=en) [:flag_ru: Русский](?lang=ru)
+
+
+
+<!-- Панель управления профилями -->
+<div id="profilePanel" class="profilePanel">
+    <div class="profileControls">
+        <label for="profileSelect" class="lang" id="profile.select.label">Профиль:</label>
+        <select id="profileSelect" class="profileSelect">
+            <option value="" class="lang" id="profile.default">По умолчанию</option>
+        </select>
+        <button id="saveProfileBtn" class="caliButton" onclick="saveCurrentProfile()">
+            <span class="lang" id="profile.save">Сохранить</span>
+        </button>
+        <button id="saveAsProfileBtn" class="caliButton" onclick="saveAsNewProfile()">
+            <span class="lang" id="profile.save_as">Сохранить как...</span>
+        </button>
+        <button id="deleteProfileBtn" class="caliButton caliButtonDanger" onclick="deleteCurrentProfile()">
+            <span class="lang" id="profile.delete">Удалить</span>
+        </button>
+        <button id="exportProfileBtn" class="caliButton" onclick="exportProfile()">
+            <span class="lang" id="profile.export">Экспорт</span>
+        </button>
+        <button id="importProfileBtn" class="caliButton" onclick="importProfile()">
+            <span class="lang" id="profile.import">Импорт</span>
+        </button>
+        <input type="file" id="profileFileInput" accept=".json" style="display: none;" onchange="handleProfileImport(event)">
+    </div>
+    <div id="profileStatus" class="profileStatus"></div>
+</div>
+
+<!-- Модальное окно для сохранения профиля -->
+<div id="profileModal" class="profileModal" style="display: none;">
+    <div class="profileModalContent">
+        <h3 class="lang" id="profile.modal.title">Сохранить профиль</h3>
+        <input type="text" id="profileNameInput" class="profileNameInput" placeholder="Введите название профиля">
+        <div class="profileModalButtons">
+            <button onclick="confirmSaveProfile()" class="caliButton">
+                <span class="lang" id="profile.modal.save">Сохранить</span>
+            </button>
+            <button onclick="closeProfileModal()" class="caliButton caliButtonDanger">
+                <span class="lang" id="profile.modal.cancel">Отмена</span>
+            </button>
+        </div>
+    </div>
+</div>
 
 <table style="width: 100%; font-size: 0.7rem;">
     <tbody>
