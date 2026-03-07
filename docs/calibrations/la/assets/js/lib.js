@@ -310,9 +310,8 @@ function initLang(key) {
 		case 'en':
 			values['header.title'] = 'K3D Pressure Advance Calibrator';
 
-			values['table.header.parameter'] = 'Parameter';
-			values['table.header.value'] = 'Value';
-			values['table.header.description'] = 'Description';
+			values['profile.select.label'] = 'Profile: ';
+			values['lang.label'] = 'Language: ';
 
 			values['table.bed_size.title'] = 'Print bed<br>size';
 			values['table.bed_size.description'] = '[mm] For Cartesian printers - the size of the print area along the X/Y axes<br>For delta printers - the diameter of the bed';
@@ -414,9 +413,8 @@ function initLang(key) {
 		case 'ru':
 			values['header.title'] = 'K3D калибровщик Pressure Advance';
 
-			values['table.header.parameter'] = 'Параметр';
-			values['table.header.value'] = 'Значение';
-			values['table.header.description'] = 'Описание';
+			values['profile.select.label'] = 'Профиль: ';
+			values['lang.label'] = 'Язык: ';
 
 			values['table.bed_size.title'] = 'Размер области<br> печати';
 			values['table.bed_size.description'] = '[мм] Для декартовых принтеров - размер области печати по осям X/Y<br>Для дельта-принтеров - диаметр стола';
@@ -631,18 +629,15 @@ function initProfileManager() {
 			if (profile) {
 				loadProfileSettings(profile.settings);
 				const message = getProfileMessage('profile.status.loaded', profile.name);
-				showProfileStatus(message, 'success');
 			}
 		},
 		onProfileSave: function(profile) {
 			updateProfileSelect();
 			const message = getProfileMessage('profile.status.saved', profile.name);
-			showProfileStatus(message, 'success');
 		},
 		onProfileDelete: function(profile) {
 			updateProfileSelect();
 			const message = getProfileMessage('profile.status.deleted', profile.name);
-			showProfileStatus(message, 'info');
 		}
 	});
 
@@ -665,19 +660,15 @@ function initProfileManager() {
 			profileManager.setCurrentProfile(null);
 			loadForm(); // Загружаем из localStorage
 			const message = window.lang.values['profile.status.default'] || 'Using default settings';
-			showProfileStatus(message, 'info');
 		}
-		updateDeleteButton();
 	});
-
-	updateDeleteButton();
 }
 
 function initProfileLang(key) {
 	var values = window.lang.values;
 	if (key === 'en') {
 		// UI элементы
-		values['profile.select.label'] = 'Profile:';
+		values['profile.select.label'] = 'Profile: ';
 		values['profile.default'] = 'Default';
 		values['profile.save'] = 'Save';
 		values['profile.save_as'] = 'Save As...';
@@ -707,30 +698,12 @@ function initProfileLang(key) {
 		values['profile.confirm.overwrite'] = 'Profile "%s" already exists. Overwrite?';
 	} else {
 		// UI элементы
-		values['profile.select.label'] = 'Профиль:';
+		values['profile.select.label'] = 'Профиль: ';
 		values['profile.default'] = 'По умолчанию';
-		values['profile.save'] = 'Сохранить';
-		values['profile.save_as'] = 'Сохранить как...';
-		values['profile.delete'] = 'Удалить';
-		values['profile.export'] = 'Экспорт';
-		values['profile.import'] = 'Импорт';
 		values['profile.modal.title'] = 'Сохранить профиль';
 		values['profile.modal.save'] = 'Сохранить';
 		values['profile.modal.cancel'] = 'Отмена';
 		values['profile.modal.placeholder'] = 'Введите название профиля';
-
-		// Статусные сообщения
-		values['profile.status.loaded'] = 'Загружен профиль: %s';
-		values['profile.status.saved'] = 'Профиль "%s" сохранен';
-		values['profile.status.deleted'] = 'Профиль "%s" удален';
-		values['profile.status.default'] = 'Используются настройки по умолчанию';
-		values['profile.status.enterName'] = 'Введите название профиля';
-		values['profile.status.importError'] = 'Ошибка импорта: %s';
-		values['profile.status.exportedSettings'] = 'Экспортированные настройки';
-		values['profile.status.exportedCurrent'] = 'Текущие настройки экспортированы';
-		values['profile.status.exportedAll'] = 'Экспортировано профилей: %s';
-		values['profile.status.importedMultiple'] = 'Импортировано профилей: %s';
-		values['profile.status.importedSingle'] = 'Импортирован профиль "%s"';
 
 		// Диалоги
 		values['profile.confirm.delete'] = 'Удалить профиль "%s"?';
@@ -831,12 +804,6 @@ function updateProfileSelect() {
 	}
 }
 
-function updateDeleteButton() {
-	const select = document.getElementById('profileSelect');
-	const deleteBtn = document.getElementById('deleteProfileBtn');
-	deleteBtn.disabled = !select.value;
-}
-
 function saveCurrentProfile() {
 	const select = document.getElementById('profileSelect');
 	const profileId = select.value;
@@ -862,7 +829,6 @@ function confirmSaveProfile() {
 
 	if (!name) {
 		const message = window.lang.values['profile.status.enterName'] || 'Please enter a profile name';
-		showProfileStatus(message, 'error');
 		return;
 	}
 
@@ -872,9 +838,8 @@ function confirmSaveProfile() {
 		profileManager.setCurrentProfile(profile.id);
 		document.getElementById('profileSelect').value = profile.id;
 		closeProfileModal();
-		updateDeleteButton();
 	} catch (e) {
-		showProfileStatus(e.message, 'error');
+		console.log(e.message)
 	}
 }
 
@@ -893,7 +858,6 @@ function deleteCurrentProfile() {
 	if (confirm(confirmMessage)) {
 		profileManager.deleteProfile(profileId);
 		select.value = '';
-		updateDeleteButton();
 	}
 }
 
@@ -922,7 +886,6 @@ function exportProfile() {
 		downloadJSON('la_calibrator_profiles.json', json);
 
 		const message = window.lang.values['profile.status.exportedCurrent'] || 'Current settings exported';
-		showProfileStatus(message, 'success');
 	} else {
 		// Экспортируем все сохраненные профили
 		const json = profileManager.exportAllProfiles();
@@ -933,7 +896,6 @@ function exportProfile() {
 			window.lang.values['profile.status.exportedAll'] || 'Exported %s profiles',
 			profiles.length
 		);
-		showProfileStatus(message, 'success');
 	}
 }
 
@@ -959,14 +921,12 @@ function handleProfileImport(event) {
 					// Активируем первый импортированный профиль
 					profileManager.setCurrentProfile(imported[0].id);
 					document.getElementById('profileSelect').value = imported[0].id;
-					updateDeleteButton();
 					updateProfileSelect();
 
 					const message = getProfileMessage(
 						window.lang.values['profile.status.importedMultiple'] || 'Imported %s profiles',
 						imported.length
 					);
-					showProfileStatus(message, 'success');
 				} else {
 					throw new Error('No profiles were imported');
 				}
@@ -975,7 +935,6 @@ function handleProfileImport(event) {
 			}
 		} catch (error) {
 			const message = getProfileMessage('profile.status.importError', error.message);
-			showProfileStatus(message, 'error');
 		}
 	};
 	reader.readAsText(file);
@@ -994,15 +953,4 @@ function downloadJSON(filename, content) {
 	a.click();
 	document.body.removeChild(a);
 	URL.revokeObjectURL(url);
-}
-
-function showProfileStatus(message, type = 'info') {
-	const statusDiv = document.getElementById('profileStatus');
-	statusDiv.textContent = message;
-	statusDiv.className = `profileStatus ${type}`;
-
-	// Автоматически скрываем через 3 секунды
-	setTimeout(() => {
-		statusDiv.className = 'profileStatus';
-	}, 3000);
 }

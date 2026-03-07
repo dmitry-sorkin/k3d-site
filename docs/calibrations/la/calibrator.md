@@ -13,36 +13,7 @@ hide:
 <script src="../assets/js/gwaloader.js"></script>
 <script src="../assets/js/streamsavermin.js"></script>
 
-[:material-file-document: Инструкция](./index.md) | Язык: [:flag_gb: English](?lang=en) [:flag_ru: Русский](?lang=ru)
-
-
-
-<!-- Панель управления профилями -->
-<div id="profilePanel" class="profilePanel">
-    <div class="profileControls">
-        <label for="profileSelect" class="lang" id="profile.select.label">Профиль:</label>
-        <select id="profileSelect" class="profileSelect">
-            <option value="" class="lang" id="profile.default">По умолчанию</option>
-        </select>
-        <button id="saveProfileBtn" class="caliButton" onclick="saveCurrentProfile()">
-            <span class="lang" id="profile.save">Сохранить</span>
-        </button>
-        <button id="saveAsProfileBtn" class="caliButton" onclick="saveAsNewProfile()">
-            <span class="lang" id="profile.save_as">Сохранить как...</span>
-        </button>
-        <button id="deleteProfileBtn" class="caliButton caliButtonDanger" onclick="deleteCurrentProfile()">
-            <span class="lang" id="profile.delete">Удалить</span>
-        </button>
-        <button id="exportProfileBtn" class="caliButton" onclick="exportProfile()">
-            <span class="lang" id="profile.export">Экспорт</span>
-        </button>
-        <button id="importProfileBtn" class="caliButton" onclick="importProfile()">
-            <span class="lang" id="profile.import">Импорт</span>
-        </button>
-        <input type="file" id="profileFileInput" accept=".json" style="display: none;" onchange="handleProfileImport(event)">
-    </div>
-    <div id="profileStatus" class="profileStatus"></div>
-</div>
+<span class="lang" id="lang.label">Язык: </span>[:flag_gb: English](?lang=en) [:flag_ru: Русский](?lang=ru) | <span class="lang" id="profile.select.label">Профиль: </span><select id="profileSelect" class="profileSelect"><option value="" class="lang" id="profile.default">По умолчанию</option></select> :material-content-save:{class="twemoji inlineButton" title="Save" onclick="saveCurrentProfile()"} :material-content-save-edit:{class="twemoji inlineButton" title="Save as" onclick="saveAsNewProfile()"} :material-delete:{class="twemoji inlineButton" id="deleteProfileBtn" title="Delete" onclick="deleteCurrentProfile()"} :material-export:{class="twemoji inlineButton" title="Export" onclick="exportProfile()"} :material-import:{class="twemoji inlineButton" title="Import" onclick="importProfile()"}
 
 <!-- Модальное окно для сохранения профиля -->
 <div id="profileModal" class="profileModal" style="display: none;">
