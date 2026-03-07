@@ -41,7 +41,7 @@ p {
 table {
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-collapse: disabled;
     border-spacing: 10px;
@@ -327,4 +327,332 @@ svg.social-icon {
 span.inline-error {
 	color: rgba(255, 75, 43, 1.0);
 	font-weight: bold;
+}
+
+/* Стили для панели управления профилями - Material Design */
+.profile-panel {
+    margin: 20px 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(30, 31, 40, 0.9) 0%, rgba(40, 41, 54, 0.8) 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.profile-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.profile-controls label {
+    font-weight: 500;
+    color: rgba(210, 215, 249, 0.9);
+    margin-right: 8px;
+}
+
+.profile-select {
+    padding: 10px 16px;
+    background: rgba(40, 41, 54, 0.6);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: rgb(233, 235, 252);
+    font-size: 14px;
+    min-width: 220px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+                      linear-gradient(90deg, #009485, #5d6cc0);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.profile-select:hover {
+    background: rgba(40, 41, 54, 0.8);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 148, 133, 0.3);
+}
+
+.profile-select:focus {
+    outline: none;
+    background: rgba(40, 41, 54, 0.9);
+    box-shadow: 0 0 0 3px rgba(0, 148, 133, 0.3);
+}
+
+.profile-btn {
+    position: relative;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(0, 148, 133, 0.15) 0%, rgba(93, 108, 192, 0.15) 100%);
+    border: 1px solid rgba(0, 148, 133, 0.3);
+    border-radius: 8px;
+    color: rgb(233, 235, 252);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.profile-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+    z-index: 0;
+}
+
+.profile-btn:hover {
+    background: linear-gradient(135deg, rgba(0, 148, 133, 0.25) 0%, rgba(93, 108, 192, 0.25) 100%);
+    border-color: rgba(0, 148, 133, 0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 148, 133, 0.2);
+}
+
+.profile-btn:hover::before {
+    left: 100%;
+}
+
+.profile-btn:active {
+    transform: scale(0.95);
+}
+
+.profile-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.profile-btn:disabled:hover {
+    background: linear-gradient(135deg, rgba(0, 148, 133, 0.15) 0%, rgba(93, 108, 192, 0.15) 100%);
+    border-color: rgba(0, 148, 133, 0.3);
+    transform: none;
+    box-shadow: none;
+}
+
+.profile-btn:disabled:hover::before {
+    left: -100%;
+}
+
+/* Кнопка с акцентом */
+.profile-btn-accent {
+    background: linear-gradient(135deg, #009485 0%, #00b8a5 100%) !important;
+    border: 1px solid #009485 !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.profile-btn-accent:hover {
+    background: linear-gradient(135deg, #00b8a5 0%, #00d4bb 100%) !important;
+    border-color: #00b8a5 !important;
+    box-shadow: 0 6px 16px rgba(0, 148, 133, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+.profile-btn-accent:active {
+    transform: scale(0.95) !important;
+}
+
+/* Кнопка удаления */
+.profile-btn-danger {
+    background: rgba(255, 75, 43, 0.1) !important;
+    border: 1px solid rgba(255, 75, 43, 0.4) !important;
+}
+
+.profile-btn-danger:hover:not(:disabled) {
+    background: rgba(255, 75, 43, 0.2) !important;
+    border-color: rgba(255, 75, 43, 0.6) !important;
+    box-shadow: 0 4px 8px rgba(255, 75, 43, 0.25) !important;
+}
+
+.profile-btn-danger:disabled {
+    background: transparent !important;
+    border-color: rgba(255, 75, 43, 0.2) !important;
+}
+
+.profile-status {
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: none;
+    animation: slideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-status.success {
+    display: block;
+    background: linear-gradient(135deg, rgba(0, 148, 133, 0.15) 0%, rgba(0, 212, 187, 0.1) 100%);
+    border-left: 3px solid #00d4bb;
+    color: #00d4bb;
+}
+
+.profile-status.error {
+    display: block;
+    background: linear-gradient(135deg, rgba(255, 75, 43, 0.15) 0%, rgba(255, 107, 77, 0.1) 100%);
+    border-left: 3px solid #ff4b2b;
+    color: #ff6b4d;
+}
+
+.profile-status.info {
+    display: block;
+    background: linear-gradient(135deg, rgba(93, 108, 192, 0.15) 0%, rgba(139, 154, 244, 0.1) 100%);
+    border-left: 3px solid #8b9af4;
+    color: #8b9af4;
+}
+
+/* Модальное окно - Material Design */
+.profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profile-modal-content {
+    background: linear-gradient(135deg, #2a2b38 0%, #1e1f2a 100%);
+    border: 1px solid rgba(0, 148, 133, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+    min-width: 450px;
+    max-width: 90vw;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    animation: modalSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.profile-modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #009485, #5d6cc0, #009485);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.profile-modal-content h3 {
+    margin: 0 0 24px 0;
+    color: rgba(233, 235, 252, 0.95);
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.profile-name-input {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(40, 41, 54, 0.6);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: rgb(233, 235, 252);
+    font-size: 15px;
+    margin-bottom: 28px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-name-input:focus {
+    outline: none;
+    background: rgba(40, 41, 54, 0.8);
+    border-color: #009485;
+    box-shadow: 0 0 0 4px rgba(0, 148, 133, 0.1);
+}
+
+.profile-modal-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.profile-btn-primary {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #009485 0%, #00b8a5 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.profile-btn-primary:hover {
+    background: linear-gradient(135deg, #00b8a5 0%, #00d4bb 100%);
+    box-shadow: 0 6px 20px rgba(0, 148, 133, 0.4);
+    transform: translateY(-2px);
+}
+
+.profile-btn-secondary {
+    padding: 12px 28px;
+    background: transparent;
+    border: 2px solid rgba(93, 108, 192, 0.3);
+    border-radius: 8px;
+    color: rgb(233, 235, 252);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.profile-btn-secondary:hover {
+    background: rgba(93, 108, 192, 0.1);
+    border-color: rgba(93, 108, 192, 0.5);
 }

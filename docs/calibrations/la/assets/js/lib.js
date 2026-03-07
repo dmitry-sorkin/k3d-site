@@ -563,6 +563,7 @@ function reset() {
 
 function init() {
 	initForm();
+	initProfileManager();
 
 	const urlParams = new URLSearchParams(window.location.search);
 	var lang = urlParams.get('lang');
@@ -583,6 +584,7 @@ function init() {
 	};
 
 	initLang(lang);
+	initProfileLang(lang);
 
 	setTimeout(function () {
 		if (checkGo != undefined && window.lang != undefined) {
@@ -614,4 +616,393 @@ function updateInputDisability() {
 		initAdditionalParameterInput.disabled = false;
 		endAdditionalParameterInput.disabled = false;
 	}
+}
+
+// ===================== Функции управления профилями =====================
+
+let profileManager = null;
+
+function initProfileManager() {
+	// Инициализация менеджера профилей
+	profileManager = new ProfileManager('k3d_la_profiles', 10);
+
+	profileManager.setCallbacks({
+		onProfileChange: function(profile) {
+			if (profile) {
+				loadProfileSettings(profile.settings);
+				const message = getProfileMessage('profile.status.loaded', profile.name);
+				showProfileStatus(message, 'success');
+			}
+		},
+		onProfileSave: function(profile) {
+			updateProfileSelect();
+			const message = getProfileMessage('profile.status.saved', profile.name);
+			showProfileStatus(message, 'success');
+		},
+		onProfileDelete: function(profile) {
+			updateProfileSelect();
+			const message = getProfileMessage('profile.status.deleted', profile.name);
+			showProfileStatus(message, 'info');
+		}
+	});
+
+	updateProfileSelect();
+
+	// Загружаем последний активный профиль, если есть
+	const currentProfile = profileManager.getCurrentProfile();
+	if (currentProfile) {
+		document.getElementById('profileSelect').value = currentProfile.id;
+		loadProfileSettings(currentProfile.settings);
+	}
+
+	// Обработчик изменения выбора профиля
+	document.getElementById('profileSelect').addEventListener('change', function(e) {
+		const profileId = e.target.value;
+		if (profileId) {
+			profileManager.setCurrentProfile(profileId);
+		} else {
+			// Сброс на дефолтные настройки
+			profileManager.setCurrentProfile(null);
+			loadForm(); // Загружаем из localStorage
+			const message = window.lang.values['profile.status.default'] || 'Using default settings';
+			showProfileStatus(message, 'info');
+		}
+		updateDeleteButton();
+	});
+
+	updateDeleteButton();
+}
+
+function initProfileLang(key) {
+	var values = window.lang.values;
+	if (key === 'en') {
+		// UI элементы
+		values['profile.select.label'] = 'Profile:';
+		values['profile.default'] = 'Default';
+		values['profile.save'] = 'Save';
+		values['profile.save_as'] = 'Save As...';
+		values['profile.delete'] = 'Delete';
+		values['profile.export'] = 'Export';
+		values['profile.import'] = 'Import';
+		values['profile.modal.title'] = 'Save Profile';
+		values['profile.modal.save'] = 'Save';
+		values['profile.modal.cancel'] = 'Cancel';
+		values['profile.modal.placeholder'] = 'Enter profile name';
+
+		// Статусные сообщения
+		values['profile.status.loaded'] = 'Profile loaded: %s';
+		values['profile.status.saved'] = 'Profile "%s" saved';
+		values['profile.status.deleted'] = 'Profile "%s" deleted';
+		values['profile.status.default'] = 'Using default settings';
+		values['profile.status.enterName'] = 'Please enter a profile name';
+		values['profile.status.importError'] = 'Import error: %s';
+		values['profile.status.exportedSettings'] = 'Exported settings';
+		values['profile.status.exportedCurrent'] = 'Current settings exported';
+		values['profile.status.exportedAll'] = 'Exported %s profiles';
+		values['profile.status.importedMultiple'] = 'Imported %s profiles';
+		values['profile.status.importedSingle'] = 'Profile "%s" imported';
+
+		// Диалоги
+		values['profile.confirm.delete'] = 'Delete profile "%s"?';
+		values['profile.confirm.overwrite'] = 'Profile "%s" already exists. Overwrite?';
+	} else {
+		// UI элементы
+		values['profile.select.label'] = 'Профиль:';
+		values['profile.default'] = 'По умолчанию';
+		values['profile.save'] = 'Сохранить';
+		values['profile.save_as'] = 'Сохранить как...';
+		values['profile.delete'] = 'Удалить';
+		values['profile.export'] = 'Экспорт';
+		values['profile.import'] = 'Импорт';
+		values['profile.modal.title'] = 'Сохранить профиль';
+		values['profile.modal.save'] = 'Сохранить';
+		values['profile.modal.cancel'] = 'Отмена';
+		values['profile.modal.placeholder'] = 'Введите название профиля';
+
+		// Статусные сообщения
+		values['profile.status.loaded'] = 'Загружен профиль: %s';
+		values['profile.status.saved'] = 'Профиль "%s" сохранен';
+		values['profile.status.deleted'] = 'Профиль "%s" удален';
+		values['profile.status.default'] = 'Используются настройки по умолчанию';
+		values['profile.status.enterName'] = 'Введите название профиля';
+		values['profile.status.importError'] = 'Ошибка импорта: %s';
+		values['profile.status.exportedSettings'] = 'Экспортированные настройки';
+		values['profile.status.exportedCurrent'] = 'Текущие настройки экспортированы';
+		values['profile.status.exportedAll'] = 'Экспортировано профилей: %s';
+		values['profile.status.importedMultiple'] = 'Импортировано профилей: %s';
+		values['profile.status.importedSingle'] = 'Импортирован профиль "%s"';
+
+		// Диалоги
+		values['profile.confirm.delete'] = 'Удалить профиль "%s"?';
+		values['profile.confirm.overwrite'] = 'Профиль "%s" уже существует. Перезаписать?';
+	}
+
+	// Обновляем тексты в UI
+	updateProfileTexts();
+}
+
+function updateProfileTexts() {
+	// Обновляем все элементы с классом lang внутри профильной панели
+	const profileElements = document.querySelectorAll('#profilePanel .lang, #profileModal .lang');
+	profileElements.forEach(element => {
+		const key = element.id;
+		if (key && window.lang.values[key]) {
+			element.textContent = window.lang.values[key];
+		}
+	});
+
+	// Обновляем placeholder
+	const nameInput = document.getElementById('profileNameInput');
+	if (nameInput && window.lang.values['profile.modal.placeholder']) {
+		nameInput.placeholder = window.lang.values['profile.modal.placeholder'];
+	}
+
+	// Обновляем опцию "По умолчанию" в select
+	const select = document.getElementById('profileSelect');
+	if (select && select.options[0] && window.lang.values['profile.default']) {
+		select.options[0].textContent = window.lang.values['profile.default'];
+	}
+}
+
+function getProfileMessage(key, ...args) {
+	const template = window.lang.values[key] || key;
+	let message = template;
+
+	// Простая замена %s на аргументы
+	args.forEach(arg => {
+		message = message.replace('%s', arg);
+	});
+
+	return message;
+}
+
+function getCurrentSettings() {
+	const settings = {};
+	for (var elementId of formFields) {
+		var element = document.getElementById(elementId);
+		if (element) {
+			if (checkboxes.includes(elementId)) {
+				settings[elementId] = element.checked;
+			} else {
+				settings[elementId] = element.value;
+			}
+		}
+	}
+	return settings;
+}
+
+function loadProfileSettings(settings) {
+	for (var elementId of formFields) {
+		if (settings[elementId] !== undefined) {
+			var element = document.getElementById(elementId);
+			if (element) {
+				if (checkboxes.includes(elementId)) {
+					element.checked = settings[elementId];
+				} else {
+					element.value = settings[elementId];
+				}
+			}
+		}
+	}
+	updateInputDisability();
+}
+
+function updateProfileSelect() {
+	const select = document.getElementById('profileSelect');
+	const currentValue = select.value;
+
+	// Очищаем все опции кроме первой (По умолчанию)
+	while (select.options.length > 1) {
+		select.remove(1);
+	}
+
+	// Добавляем профили
+	const profiles = profileManager.getAllProfiles();
+	profiles.forEach(profile => {
+		const option = document.createElement('option');
+		option.value = profile.id;
+		option.textContent = profile.name;
+		select.appendChild(option);
+	});
+
+	// Восстанавливаем выбранное значение
+	if (currentValue) {
+		select.value = currentValue;
+	}
+}
+
+function updateDeleteButton() {
+	const select = document.getElementById('profileSelect');
+	const deleteBtn = document.getElementById('deleteProfileBtn');
+	deleteBtn.disabled = !select.value;
+}
+
+function saveCurrentProfile() {
+	const select = document.getElementById('profileSelect');
+	const profileId = select.value;
+
+	if (profileId) {
+		// Обновляем существующий профиль
+		const settings = getCurrentSettings();
+		profileManager.updateProfile(profileId, settings);
+	} else {
+		// Создаем новый профиль
+		saveAsNewProfile();
+	}
+}
+
+function saveAsNewProfile() {
+	document.getElementById('profileModal').style.display = 'flex';
+	document.getElementById('profileNameInput').value = '';
+	document.getElementById('profileNameInput').focus();
+}
+
+function confirmSaveProfile() {
+	const name = document.getElementById('profileNameInput').value.trim();
+
+	if (!name) {
+		const message = window.lang.values['profile.status.enterName'] || 'Please enter a profile name';
+		showProfileStatus(message, 'error');
+		return;
+	}
+
+	try {
+		const settings = getCurrentSettings();
+		const profile = profileManager.createProfile(name, settings);
+		profileManager.setCurrentProfile(profile.id);
+		document.getElementById('profileSelect').value = profile.id;
+		closeProfileModal();
+		updateDeleteButton();
+	} catch (e) {
+		showProfileStatus(e.message, 'error');
+	}
+}
+
+function closeProfileModal() {
+	document.getElementById('profileModal').style.display = 'none';
+}
+
+function deleteCurrentProfile() {
+	const select = document.getElementById('profileSelect');
+	const profileId = select.value;
+
+	if (!profileId) return;
+
+	const profile = profileManager.getProfile(profileId);
+	const confirmMessage = getProfileMessage('profile.confirm.delete', profile.name);
+	if (confirm(confirmMessage)) {
+		profileManager.deleteProfile(profileId);
+		select.value = '';
+		updateDeleteButton();
+	}
+}
+
+function exportProfile() {
+	const profiles = profileManager.getAllProfiles();
+
+	if (profiles.length === 0) {
+		// Если нет сохраненных профилей, экспортируем текущие настройки
+		const settings = getCurrentSettings();
+		const exportName = window.lang.values['profile.status.exportedSettings'] || 'Exported settings';
+		const tempProfile = {
+			id: profileManager.generateId(),
+			name: exportName,
+			createdAt: Date.now(),
+			updatedAt: Date.now(),
+			settings: settings
+		};
+
+		const exportData = {
+			version: '1.0',
+			exported: Date.now(),
+			profiles: [tempProfile]
+		};
+
+		const json = JSON.stringify(exportData, null, 2);
+		downloadJSON('la_calibrator_profiles.json', json);
+
+		const message = window.lang.values['profile.status.exportedCurrent'] || 'Current settings exported';
+		showProfileStatus(message, 'success');
+	} else {
+		// Экспортируем все сохраненные профили
+		const json = profileManager.exportAllProfiles();
+		const timestamp = new Date().toISOString().split('T')[0];
+		downloadJSON(`la_calibrator_profiles_${timestamp}.json`, json);
+
+		const message = getProfileMessage(
+			window.lang.values['profile.status.exportedAll'] || 'Exported %s profiles',
+			profiles.length
+		);
+		showProfileStatus(message, 'success');
+	}
+}
+
+function importProfile() {
+	document.getElementById('profileFileInput').click();
+}
+
+function handleProfileImport(event) {
+	const file = event.target.files[0];
+	if (!file) return;
+
+	const reader = new FileReader();
+	reader.onload = function(e) {
+		try {
+			const data = JSON.parse(e.target.result);
+
+			// Проверяем формат файла
+			if (data.profiles && Array.isArray(data.profiles)) {
+				// Новый формат с множественными профилями
+				const imported = profileManager.importAllProfiles(e.target.result);
+
+				if (imported.length > 0) {
+					// Активируем первый импортированный профиль
+					profileManager.setCurrentProfile(imported[0].id);
+					document.getElementById('profileSelect').value = imported[0].id;
+					updateDeleteButton();
+					updateProfileSelect();
+
+					const message = getProfileMessage(
+						window.lang.values['profile.status.importedMultiple'] || 'Imported %s profiles',
+						imported.length
+					);
+					showProfileStatus(message, 'success');
+				} else {
+					throw new Error('No profiles were imported');
+				}
+			} else {
+				throw new Error('Invalid profile file format');
+			}
+		} catch (error) {
+			const message = getProfileMessage('profile.status.importError', error.message);
+			showProfileStatus(message, 'error');
+		}
+	};
+	reader.readAsText(file);
+
+	// Очищаем input для возможности повторного импорта того же файла
+	event.target.value = '';
+}
+
+function downloadJSON(filename, content) {
+	const blob = new Blob([content], { type: 'application/json' });
+	const url = URL.createObjectURL(blob);
+	const a = document.createElement('a');
+	a.href = url;
+	a.download = filename;
+	document.body.appendChild(a);
+	a.click();
+	document.body.removeChild(a);
+	URL.revokeObjectURL(url);
+}
+
+function showProfileStatus(message, type = 'info') {
+	const statusDiv = document.getElementById('profileStatus');
+	statusDiv.textContent = message;
+	statusDiv.className = `profileStatus ${type}`;
+
+	// Автоматически скрываем через 3 секунды
+	setTimeout(() => {
+		statusDiv.className = 'profileStatus';
+	}, 3000);
 }
