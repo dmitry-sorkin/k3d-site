@@ -9,7 +9,6 @@ import (
 	"syscall/js"
 )
 
-const caliVersion = "v2.3"     // Версия калибратора. Пишется в сгенерированном файле
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = false              // Писать ли в консоль логи происходящего
