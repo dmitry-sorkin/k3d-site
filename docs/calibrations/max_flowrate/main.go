@@ -9,7 +9,7 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v0.2-beta" // Версия калибратора для сверки с lib.js
+const calibratorVersion = "v0.3-beta" // Версия калибратора для сверки с lib.js
 const retractSpeed = 35.0             // Скорость отката по умолчанию
 const retractLength = 1.0             // Длина отката по умолчанию
 const filamentDiameter = 1.75         // Диаметр филамента
@@ -512,12 +512,6 @@ func generate(this js.Value, i []js.Value) interface{} {
 	}
 
 	// Расчёт параметров генерации
-	var bedCenter Point // Центр стола
-	if delta {
-		bedCenter.X, bedCenter.Y, bedCenter.Z = 0, 0, 0
-	} else {
-		bedCenter.X, bedCenter.Y, bedCenter.Z = bedX/2, bedY/2, 0
-	}
 	maxSingleLineLength := bedY - 15
 	minFlowrate := math.Min(initFlowrate, endFlowrate)
 	maxFlowrate := math.Max(initFlowrate, endFlowrate)
@@ -555,7 +549,15 @@ func generate(this js.Value, i []js.Value) interface{} {
 	// Расчёт данных для печати линии прочистки
 	lineWidth, layerHeight = calcWidthAndHeight(2.0, 5.0, speed)
 	purgeLineLength := calcLineLength(50.0, 1.75, lineWidth, layerHeight)
+	if purgeLineLength > 2*bedX-20 {
+		purgeLineLength = 2*bedX - 20
+	}
 	purgeLineStart := Point{X: 5.0, Y: 5.0, Z: layerHeight + zOffset}
+	if delta {
+		// Для дельт смещаем начало координат на половину размера стола в минус
+		purgeLineStart.X -= bedX / 2
+		purgeLineStart.Y -= bedY / 2
+	}
 
 	// Метаданные для слайсеров
 	write(";Purge line\n")
@@ -601,6 +603,11 @@ func generate(this js.Value, i []js.Value) interface{} {
 		if i == 0 {
 			// У первого образца задаём конкретную точку начала
 			lineStartPoint = Point{X: 5.0, Y: 10.0, Z: layerHeight}
+			// У дельт смещаем точку на половину размера стола в минус
+			if delta {
+				lineStartPoint.X -= bedX / 2
+				lineStartPoint.Y -= bedY / 2
+			}
 		} else {
 			// У последующих начало на откладывается относительно предыдущей позиции
 			lineStartPoint = currentCoordinates

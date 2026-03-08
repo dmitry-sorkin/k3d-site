@@ -1,4 +1,4 @@
-const calibrator_version = 'v0.2-beta';
+const calibrator_version = 'v0.3-beta';
 window.calibrator_version = calibrator_version;
 var savedSegmentsInfo = null;
 
@@ -399,26 +399,7 @@ function init() {
 }
 
 function updateInputDisability() {
-	var klipperRadio = document.getElementById('k3d_la_klipper');
-	var targetSmoothRadio = document.getElementById('k3d_la_targetSmoothTime');
-	var targetNone = document.getElementById('k3d_la_targetNone');
-	var smoothTimeInput = document.getElementById('k3d_la_smoothTime');
-	var initAdditionalParameterInput = document.getElementById('k3d_la_initAdditionalParameter');
-	var endAdditionalParameterInput = document.getElementById('k3d_la_endAdditionalParameter');
 
-	if (klipperRadio && klipperRadio.checked &&	targetSmoothRadio && !targetSmoothRadio.checked) {
-		smoothTimeInput.disabled = false;
-	} else {
-		smoothTimeInput.disabled = true;
-	}
-
-	if (targetNone && targetNone.checked && initAdditionalParameterInput && endAdditionalParameterInput) {
-		initAdditionalParameterInput.disabled = true;
-		endAdditionalParameterInput.disabled = true;
-	} else {
-		initAdditionalParameterInput.disabled = false;
-		endAdditionalParameterInput.disabled = false;
-	}
 }
 
 // ===================== Функции управления профилями =====================
