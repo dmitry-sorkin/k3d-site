@@ -130,7 +130,7 @@ extra:
     provider: custom
     property: foobar
 extra_css:
-  - stylesheets/extra6.css
+  - stylesheets/extra7.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -184,8 +184,10 @@ nav:
         - Инструкция: ./calibrations/retractions/index.md
         - Калибровщик откатов: ./calibrations/retractions/calibrator.md
       - Pressure Advance:
-        - Методы калибровки: ./calibrations/la/index.md
-        - K3D Калибровщик PA: ./calibrations/la/calibrator.md
+        - Методика калибровки: ./calibrations/la/index.md
+        - Калибровщик PA: ./calibrations/la/calibrator.md
+      - Объёмный расход:
+        - Калибровщик расхода: ./calibrations/max_flowrate/calibrator.md
   - Проекты:
     - Перевод PrusaSlicer: ./projects/ps_translation/index.md
     - Шкивы модифицированной геометрии: ./projects/custom_pulleys/index.md
