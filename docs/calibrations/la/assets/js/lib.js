@@ -404,6 +404,7 @@ function initLang(key) {
 			values['error.unsupported_ternary_operators'] = 'Error: Ternary operators (a ? b : c) detected in Start or End G-code';
 			values['error.unsupported_math'] = 'Error: Math operations (min, max, round, etc.) detected in Start or End G-code';
 			values['error.model_size_limited'] = 'Model size must be increased to allow the print head to accelerate to the speed required for testing the specified volumetric flow rate. However, the resulting part size turned out to be larger than the print bed. Increase acceleration or decrease the volumetric flow rate values for testing';
+			values['error.different_versions'] = 'Version mismatch: Please hard refresh (Ctrl + F5) or clear your browser cache.';
 
 			values['info.delta_print_speed_too_small'] = 'Speed difference across one wall too small. Consider increasing initial volumetric flow rate for better results';
 			values['info.smooth_time_not_supported_by_firmware'] = 'Pressure advance smoothing time not supported by selected firmware';
@@ -453,6 +454,8 @@ function initLang(key) {
 			values['table.smooth_time.description'] = '[с] Время сглаживания PA<br>В прошивке Klipper уменьшает нагрузку на подающий механизм, но завышенное значение сглаживания может вызвать дефекты в виде ямок перед и после шва. Поэтому это значение стоит откалибровать с помощью установки дополнительной цели "время сглаживания"<br>В Marlin и RRF нет управления временем сглаживания PA, поэтому там этот параметр ничего не делает<br>При выборе доп. цели калибровки "время сглаживания", значение этого параметра будет проигнорировано';
 			values['table.advanced_parameters.title'] = 'Показать<br>расширенные<br>параметры';
 			values['table.advanced_parameters.description'] = 'В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров не сохраняются';
+			values['error.different_versions'] = 'Ошибка: версия движка и страницы отличаются. Обновите страницу с помощью ctrl + F5 или почистите кэш браузера вручную';
+
 
 			values['generator.generate_and_download'] = 'Генерировать и скачать';
 			values['generator.generate_button_loading'] = 'Генератор загружается...';

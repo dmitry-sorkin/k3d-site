@@ -8,3 +8,5 @@ docs/.obsidian/workspace
 .DS_Store
 *~lock.*#
 bau.sh
+/.vscode
+/.continue

@@ -9,6 +9,7 @@ import (
 	"syscall/js"
 )
 
+const calibratorVersion = "v2.4"
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = false              // Писать ли в консоль логи происходящего
@@ -71,6 +72,15 @@ func check(showErrorBox bool, allowModify bool) bool {
 	curErr := ""    // Текущее сообщение об ошибке
 	hasErr := false // Флаг текущей ошибки. Обнуляется при выводе ошибки
 	retErr := false // Флаг о наличии хотя бы 1 ошибки при проверке
+
+	// Проверка версии калибратора
+	libCaliVersion := js.Global().Get("calibrator_version").String()
+	if libCaliVersion != calibratorVersion {
+		errorMessage := getLangString("error.different_versions")
+		println(errorMessage)
+		js.Global().Call("showError", errorMessage)
+		return false
+	}
 
 	// Параметры принтера
 	// Размер стола
