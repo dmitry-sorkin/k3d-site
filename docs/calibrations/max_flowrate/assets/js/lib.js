@@ -173,7 +173,6 @@ function initForm() {
 
 	// Переменные для отслеживания: был ли хотя бы один checked в каждом списке
 	let firmwareChecked = false;
-	let targetChecked = false;
 
 	// Обработка formFields (основные поля формы)
 	for (var elementId of formFields) {
@@ -184,8 +183,7 @@ function initForm() {
 			var el = e.target;
 			var id = el.id;
 
-			
-				checkGo();
+			checkGo();
 		});
 	}
 

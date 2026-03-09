@@ -58,9 +58,9 @@ hide:
             <th class="lang" id="table.firmware.title">Прошивка</td>
             <td align="center">
                 <form style="text-align:left; width:fit-content;">
-                    <input type="radio" id="k3d_mfr_marlin" value="Marlin" checked><label for="k3d_mfr_marlin"> Marlin</label><br>
-                    <input type="radio" id="k3d_mfr_klipper" value="Klipper"><label for="k3d_mfr_klipper"> Klipper</label><br>
-                    <input type="radio" id="k3d_mfr_rrf" value="RRF"><label for="k3d_mfr_rrf"> RRF</label>
+                    <input type="radio" id="k3d_mfr_marlin" name="k3d_mfr_firmware" value="Marlin" checked><label for="k3d_mfr_marlin"> Marlin</label><br>
+                    <input type="radio" id="k3d_mfr_klipper" name="k3d_mfr_firmware" value="Klipper"><label for="k3d_mfr_klipper"> Klipper</label><br>
+                    <input type="radio" id="k3d_mfr_rrf" name="k3d_mfr_firmware" value="RRF"><label for="k3d_mfr_rrf"> RRF</label>
                 </form>
             </td>
             <td class="lang" id="table.firmware.description" style="text-align: justify; font-size: 0.9em;">Прошивка, установленная на вашем принтере<br>Если не знаете, то, скорее всего, Klipper<br>Для принтеров Bambu Lab выберите Marlin</td>
