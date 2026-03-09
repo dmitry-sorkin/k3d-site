@@ -320,7 +320,7 @@ function initLang(key) {
 			values['error.init_flowrate.format'] = 'Ошибка формата: начальное значение объёмного расхода';
 			values['error.init_flowrate.value'] = 'Ошибка значения: начальное значение объёмного расхода (меньше 1.0 или больше 50.0 мм^3/с)';
 			values['error.end_flowrate.format'] = 'Ошибка формата: конечное значение объёмного расхода';
-			values['error.end_flowrate.value'] = 'Ошибка значения: конечное значение объёмного расхода (меньше 1.0 или больше 50.0 мм^3/с)';
+			values['error.end_flowrate.value'] = 'Ошибка значения: конечное значение объёмного расхода (меньше 1.0 или больше 200.0 мм^3/с)';
 			values['error.flowrate_delta.format'] = 'Ошибка формата: Шаг расхода';
 			values['error.flowrate_delta.value'] = 'Ошибка значения: Шаг расхода (меньше 0.5 или больше 10.0)';
 			values['error.extrusion_length.format'] = 'Ошибка формата: длина экструзии на образец';

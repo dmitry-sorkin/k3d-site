@@ -296,7 +296,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 	docEndFlowrate, err := parseInputToFloat(getElementValue("k3d_mfr_endFlowrate"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.end_flowrate.format"), true
-	} else if docEndFlowrate < 1.0 || docEndFlowrate > 50.0 {
+	} else if docEndFlowrate < 1.0 || docEndFlowrate > 200.0 {
 		curErr, hasErr = getLangString("error.end_flowrate.value"), true
 	} else {
 		endFlowrate = docEndFlowrate
