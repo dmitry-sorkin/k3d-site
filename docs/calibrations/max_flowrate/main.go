@@ -9,11 +9,12 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v0.3-beta" // Версия калибратора для сверки с lib.js
+const calibratorVersion = "v0.4-beta" // Версия калибратора для сверки с lib.js
 const retractSpeed = 35.0             // Скорость отката по умолчанию
 const retractLength = 1.0             // Длина отката по умолчанию
 const filamentDiameter = 1.75         // Диаметр филамента
 const sampleSpacing = 5.0             // Расстояние между образцами
+const relativeExtrusion = true        // Относительные координаты экструдера
 const log = true                      // Писать ли в консоль логи происходящего
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
@@ -540,7 +541,11 @@ func generate(this js.Value, i []js.Value) interface{} {
 
 	// Переводим принтер в нужное нам состояние
 	write("G90;Absolute coordinates\n")
-	write("M82;Absolute extruder coordinates\n")
+	if !relativeExtrusion {
+		write("M82;Absolute extruder coordinates\n")
+	} else {
+		write("M83;Relative extruder coordinates\n")
+	}
 	write("G92 E0;Set E coordinate to zero\n")
 	write("M106 S0;Disable cooling\n")
 	write("M204 S5000;Set acceleration\n")
@@ -723,10 +728,14 @@ func generateMove(start, end Point, width float64, speed int) []string {
 	}
 
 	// add E
-	if width > 0 && math.Sqrt(float64(math.Pow((end.X-start.X), 2)+math.Pow((end.Y-start.Y), 2))) > 0.8 {
-		newE := currentE + calcExtrusion(start, end, width)
-		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(newE, 5)))
-		currentE = newE
+	if width > 0 {
+		e := calcExtrusion(start, end, width)
+		if !relativeExtrusion {
+			// Если включены абсолютные координаты экструдера, то плюсуем предыдущие координаты
+			e += currentE
+			currentE = e
+		}
+		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(e, 5)))
 	}
 
 	// add F
@@ -756,7 +765,13 @@ func generateRetraction() string {
 	} else {
 		retracted = true
 		currentSpeed = retractSpeed
-		return "G1 E" + fmt.Sprint(roundFloat(currentE-retractLength, 2)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
+		var e float64
+		if relativeExtrusion {
+			e = -retractLength
+		} else {
+			e = currentE - retractLength
+		}
+		return "G1 E" + fmt.Sprint(roundFloat(e, 5)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
 	}
 }
 
@@ -764,7 +779,13 @@ func generateDeretraction() string {
 	if retracted {
 		retracted = false
 		currentSpeed = retractSpeed
-		return "G1 E" + fmt.Sprint(roundFloat(currentE, 2)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
+		var e float64
+		if relativeExtrusion {
+			e = retractLength
+		} else {
+			e = currentE
+		}
+		return "G1 E" + fmt.Sprint(roundFloat(e, 5)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
 	} else {
 		fmt.Println("Called deretraction, but not retracted")
 		return ""
