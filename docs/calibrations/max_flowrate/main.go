@@ -9,7 +9,7 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v0.4-beta" // Версия калибратора для сверки с lib.js
+const calibratorVersion = "v0.5-beta" // Версия калибратора для сверки с lib.js
 const retractSpeed = 35.0             // Скорость отката по умолчанию
 const retractLength = 1.0             // Длина отката по умолчанию
 const filamentDiameter = 1.75         // Диаметр филамента
@@ -551,6 +551,29 @@ func generate(this js.Value, i []js.Value) interface{} {
 	write("M204 S5000;Set acceleration\n")
 	write("M221 S100;Reset flow multiplier\n")
 
+	// Объявления объекта для работы адаптивной карты высот в klipper
+	if firmware == 1 {
+		var minX, minY, maxX, maxY float64
+		if delta {
+			minX = -bedX/2 + 5.0
+			minY = -bedY/2 + 5.0
+			maxX = bedX/2 - 5.0
+			maxY = bedY/2 - 5.0
+		} else {
+			minX = 5.0
+			minY = 5.0
+			maxX = bedX - 5.0
+			maxY = bedY - 5.0
+		}
+		write(fmt.Sprintf("EXCLUDE_OBJECT_DEFINE NAME='Cali_id_0_copy_0' CENTER=%s,%s POLYGON=[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]\n",
+			fmt.Sprint(roundFloat(bedX/2, 0)), fmt.Sprint(roundFloat(bedY/2, 0)),
+			fmt.Sprint(roundFloat(minX, 0)), fmt.Sprint(roundFloat(minY, 0)),
+			fmt.Sprint(roundFloat(maxX, 0)), fmt.Sprint(roundFloat(minY, 0)),
+			fmt.Sprint(roundFloat(maxX, 0)), fmt.Sprint(roundFloat(maxY, 0)),
+			fmt.Sprint(roundFloat(minX, 0)), fmt.Sprint(roundFloat(maxY, 0)),
+			fmt.Sprint(roundFloat(minX, 0)), fmt.Sprint(roundFloat(minY, 0))))
+	}
+
 	// Расчёт данных для печати линии прочистки
 	lineWidth, layerHeight = calcWidthAndHeight(2.0, 5.0, speed)
 	purgeLineLength := calcLineLength(50.0, 1.75, lineWidth, layerHeight)
@@ -607,7 +630,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 		var lineStartPoint Point
 		if i == 0 {
 			// У первого образца задаём конкретную точку начала
-			lineStartPoint = Point{X: 5.0, Y: 10.0, Z: layerHeight}
+			lineStartPoint = Point{X: 5.0, Y: 10.0, Z: layerHeight + zOffset}
 			// У дельт смещаем точку на половину размера стола в минус
 			if delta {
 				lineStartPoint.X -= bedX / 2
@@ -617,6 +640,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 			// У последующих начало на откладывается относительно предыдущей позиции
 			lineStartPoint = currentCoordinates
 			lineStartPoint.X += sampleSpacing
+			lineStartPoint.Z = layerHeight + zOffset
 		}
 		// Проверка на то, не выходит ли образец за пределы области печати
 		if lineStartPoint.X+lineWidth*float64(numLines) > bedX {
@@ -685,18 +709,6 @@ func generate(this js.Value, i []js.Value) interface{} {
 	return js.ValueOf(nil)
 }
 
-func generateLACommand(kFactor float64) string {
-	if firmware == 0 {
-		return fmt.Sprintf("M900 K%s\n", fmt.Sprint(roundFloat(kFactor, 3)))
-	} else if firmware == 1 {
-		return fmt.Sprintf("SET_PRESSURE_ADVANCE ADVANCE=%s\n", fmt.Sprint(roundFloat(kFactor, 3)))
-	} else if firmware == 2 {
-		return fmt.Sprintf("M572 D0 S%s\n", fmt.Sprint(roundFloat(kFactor, 3)))
-	}
-
-	return ";no firmware information\n"
-}
-
 func generateRelativeMove(x, y, z, width float64, speed int) []string {
 	endPoint := currentCoordinates
 	endPoint.X += x
@@ -714,17 +726,17 @@ func generateMove(start, end Point, width float64, speed int) []string {
 
 	// add X
 	if end.X != start.X {
-		command += fmt.Sprintf(" X%s", fmt.Sprint(roundFloat(end.X, 2)))
+		command += fmt.Sprintf(" X%s", fmt.Sprint(roundFloat(end.X, 3)))
 	}
 
 	// add Y
 	if end.Y != start.Y {
-		command += fmt.Sprintf(" Y%s", fmt.Sprint(roundFloat(end.Y, 2)))
+		command += fmt.Sprintf(" Y%s", fmt.Sprint(roundFloat(end.Y, 3)))
 	}
 
 	// add Z
 	if end.Z != start.Z {
-		command += fmt.Sprintf(" Z%s", fmt.Sprint(roundFloat(end.Z, 2)))
+		command += fmt.Sprintf(" Z%s", fmt.Sprint(roundFloat(end.Z, 3)))
 	}
 
 	// add E
@@ -753,7 +765,6 @@ func generateMove(start, end Point, width float64, speed int) []string {
 
 func calcExtrusion(start, end Point, width float64) float64 {
 	lineLength := math.Sqrt(math.Pow((end.X-start.X), 2) + math.Pow((end.Y-start.Y), 2))
-	// extrusion := width * layerHeight * lineLength * 4 / math.Pi / math.Pow(filamentDiameter, 2)
 	extrusion := (4 * lineLength * ((width-layerHeight)*layerHeight + math.Pi*layerHeight*layerHeight/4)) / (math.Pi * filamentDiameter * filamentDiameter)
 	return extrusion
 }
