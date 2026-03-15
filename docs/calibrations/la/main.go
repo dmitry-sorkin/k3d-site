@@ -902,19 +902,30 @@ func generate(this js.Value, i []js.Value) interface{} {
 		fmt.Sprintf(";Segment height: "+fmt.Sprint(roundFloat(segmentHeight/layerHeight, 0))+" layers ("+fmt.Sprint(roundFloat(segmentHeight, 3))+" mm)")+"\n",
 		caliParams)
 
+	// Генерируем текущие параметры
+	var bedCenter Point
+	if delta {
+		bedCenter.X, bedCenter.Y, bedCenter.Z = 0, 0, layerHeight
+	} else {
+		bedCenter.X, bedCenter.Y, bedCenter.Z = bedX/2, bedY/2, layerHeight
+	}
+	currentE = 0
+	currentSpeed = minPrintSpeed
+	currentCoordinates.X, currentCoordinates.Y, currentCoordinates.Z = 0, 0, 0
+
 	// Объявления объекта для работы адаптивной карты высот в klipper
 	if firmware == 1 {
-		minX := int(roundFloat(bedX/2-55.0, 0))
-		minY := int(roundFloat(bedY/2-modelWidth/2-25.0, 0))
-		maxX := int(roundFloat(bedX/2+55.0, 0))
-		maxY := int(roundFloat(bedY/2+modelWidth/2+15, 0))
-		write(fmt.Sprintf("EXCLUDE_OBJECT_DEFINE NAME='Cali_id_0_copy_0' CENTER=%s,%s POLYGON=[[%d,%d],[%d,%d],[%d,%d],[%d,%d],[%d,%d]]\n",
+		minX := math.Min(bedCenter.X-55.0, bedCenter.X-modelWidth/2-15.0)
+		minY := bedCenter.Y - modelWidth/2 - 25.0
+		maxX := math.Max(bedCenter.X+55.0, bedCenter.X+modelWidth/2+15.0)
+		maxY := bedCenter.Y + modelWidth/2 + 15.0
+		write(fmt.Sprintf("EXCLUDE_OBJECT_DEFINE NAME='Cali_id_0_copy_0' CENTER=%s,%s POLYGON=[[%s,%s],[%s,%s],[%s,%s],[%s,%s],[%s,%s]]\n",
 			fmt.Sprint(roundFloat(bedX/2, 0)), fmt.Sprint(roundFloat(bedY/2, 0)),
-			minX, minY,
-			maxX, minY,
-			maxX, maxY,
-			minX, maxY,
-			minX, minY))
+			fmt.Sprint(roundFloat(minX, 0)), fmt.Sprint(roundFloat(minY, 0)),
+			fmt.Sprint(roundFloat(maxX, 0)), fmt.Sprint(roundFloat(minY, 0)),
+			fmt.Sprint(roundFloat(maxX, 0)), fmt.Sprint(roundFloat(maxY, 0)),
+			fmt.Sprint(roundFloat(minX, 0)), fmt.Sprint(roundFloat(maxY, 0)),
+			fmt.Sprint(roundFloat(minX, 0)), fmt.Sprint(roundFloat(minY, 0))))
 	}
 
 	// Стартовый G-код
@@ -940,17 +951,6 @@ func generate(this js.Value, i []js.Value) interface{} {
 	write(";HEIGHT:" + fmt.Sprint(roundFloat(layerHeight, 3)) + "\n")
 	write(";TYPE:Support interface\n")
 	write(";WIDTH:" + fmt.Sprint(roundFloat(firstLayerLineWidth, 3)) + "\n")
-
-	// Генерируем первый слой
-	var bedCenter Point
-	if delta {
-		bedCenter.X, bedCenter.Y, bedCenter.Z = 0, 0, layerHeight
-	} else {
-		bedCenter.X, bedCenter.Y, bedCenter.Z = bedX/2, bedY/2, layerHeight
-	}
-	currentE = 0
-	currentSpeed = minPrintSpeed
-	currentCoordinates.X, currentCoordinates.Y, currentCoordinates.Z = 0, 0, 0
 
 	// Передвигаемся по Z на высоту слоя и применяем Z-оффсет
 	write(fmt.Sprintf("G1 Z%s\n", fmt.Sprint(roundFloat(layerHeight+zOffset, 2))))
