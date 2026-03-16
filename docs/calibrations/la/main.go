@@ -9,7 +9,7 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v2.4"
+const calibratorVersion = "v2.5"
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = false              // Писать ли в консоль логи происходящего
@@ -594,12 +594,6 @@ func check(showErrorBox bool, allowModify bool) bool {
 		retErr = true
 	}
 
-	// Применяем ограничения
-
-	if layerHeight > layerHeightLimit {
-		layerHeight = layerHeightLimit
-	}
-
 	// Подгоняем высоту сегмента таким образом, чтобы она делилась на высоту слоя без остатка
 	// Если в сегменте менее 5 слоёв, то увеличиваем количество слоёв до 5
 
@@ -649,6 +643,12 @@ func check(showErrorBox bool, allowModify bool) bool {
 		println("maxSpeedDelta=" + fmt.Sprint(maxSpeedDelta))
 		println("defaultModelWidth=" + fmt.Sprint(defaultModelWidth))
 		println("defaultSlowLineLength=" + fmt.Sprint(defaultSlowLineLength))
+	}
+
+	// Применяем ограничения
+
+	if layerHeight > layerHeightLimit {
+		layerHeight = layerHeightLimit
 	}
 
 	// Окончание проверки параметров

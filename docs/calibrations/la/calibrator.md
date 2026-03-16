@@ -132,7 +132,7 @@ hide:
                             <td class="innerTableTD"  style="text-align:center">Fast</td>
                         </tr>
                         <tr class="innerTableTR">
-                            <td class="innerTableTD"  style="text-align:center"><input class="calibratorInputSmall" type="text" id="k3d_la_minPrintSpeed" name="k3d_la_minPrintSpeed" value="20"></td>
+                            <td class="innerTableTD"  style="text-align:center"><input class="calibratorInputSmall" type="text" id="k3d_la_minPrintSpeed" name="k3d_la_minPrintSpeed" value="30"></td>
                             <td class="innerTableTD"  style="text-align:center"><input class="calibratorInputSmall" type="text" id="k3d_la_maxPrintSpeed" name="k3d_la_maxPrintSpeed" value="100"></td>
                         </tr>
                     </tbody>
