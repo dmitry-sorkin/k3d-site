@@ -47,361 +47,361 @@ description: PETG 235/255ºC
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.96,
+        "underextrusion": 99.04,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -1.55,
+        "underextrusion": 98.45,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -2.08,
+        "underextrusion": 97.92,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -2.62,
+        "underextrusion": 97.38,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -2.78,
+        "underextrusion": 97.22,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -3.53,
+        "underextrusion": 96.47,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -4.45,
+        "underextrusion": 95.55,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -5.2,
+        "underextrusion": 94.8,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -6.38,
+        "underextrusion": 93.62,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -6.38,
+        "underextrusion": 93.62,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -9.71,
+        "underextrusion": 90.29,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -16.75,
+        "underextrusion": 83.25,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -23.57,
+        "underextrusion": 76.43,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -29.18,
+        "underextrusion": 70.82,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -34.74,
+        "underextrusion": 65.26,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -39.09,
+        "underextrusion": 60.91,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -43.52,
+        "underextrusion": 56.48,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -47.47,
+        "underextrusion": 52.53,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -50.93,
+        "underextrusion": 49.07,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -52.79,
+        "underextrusion": 47.21,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.2,
+        "underextrusion": 99.8,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.74,
+        "underextrusion": 99.26,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -1.17,
+        "underextrusion": 98.83,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.65,
+        "underextrusion": 98.35,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -2.19,
+        "underextrusion": 97.81,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -2.62,
+        "underextrusion": 97.38,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -3.05,
+        "underextrusion": 96.95,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -3.7,
+        "underextrusion": 96.3,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -4.23,
+        "underextrusion": 95.77,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -4.98,
+        "underextrusion": 95.02,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -4.98,
+        "underextrusion": 95.02,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -5.63,
+        "underextrusion": 94.37,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -6.81,
+        "underextrusion": 93.19,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -14.01,
+        "underextrusion": 85.99,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -20.67,
+        "underextrusion": 79.33,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -26.2,
+        "underextrusion": 73.8,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -33.51,
+        "underextrusion": 66.49,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -38.88,
+        "underextrusion": 61.12,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -44.46,
+        "underextrusion": 55.54,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -47.47,
+        "underextrusion": 52.53,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 4,
-        "underextrusion": 0.06,
+        "underextrusion": 100.06,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.31,
+        "underextrusion": 99.69,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.85,
+        "underextrusion": 99.15,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.17,
+        "underextrusion": 98.83,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -1.76,
+        "underextrusion": 98.24,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -2.3,
+        "underextrusion": 97.7,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -3,
+        "underextrusion": 97,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -3.37,
+        "underextrusion": 96.63,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -4.23,
+        "underextrusion": 95.77,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -5.47,
+        "underextrusion": 94.53,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -5.47,
+        "underextrusion": 94.53,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -6.33,
+        "underextrusion": 93.67,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -13.42,
+        "underextrusion": 86.58,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -22.6,
+        "underextrusion": 77.4,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -27.65,
+        "underextrusion": 72.35,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -33.93,
+        "underextrusion": 66.07,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -38.12,
+        "underextrusion": 61.88,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -43.12,
+        "underextrusion": 56.88,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -47.15,
+        "underextrusion": 52.85,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -49.24,
+        "underextrusion": 50.76,
         "skipping": 1
       }
     ]
@@ -429,7 +429,7 @@ description: PETG 235/255ºC
         "y": {
           "field": "underextrusion",
           "type": "quantitative",
-          "scale": {"domainMin": -10, "domainMax": 1},
+          "scale": {"domainMin": 90, "domainMax": 101},
           "axis": {
             "title": "Relative extrusion [%]",
             "titleFontSize": 16,
@@ -531,361 +531,361 @@ description: PETG 235/255ºC
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.04,
+        "underextrusion": 99.96,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.37,
+        "underextrusion": 99.63,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.74,
+        "underextrusion": 99.26,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -0.96,
+        "underextrusion": 99.04,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -1.33,
+        "underextrusion": 98.67,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -2.08,
+        "underextrusion": 97.92,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -2.14,
+        "underextrusion": 97.86,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -2.84,
+        "underextrusion": 97.16,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -3.21,
+        "underextrusion": 96.79,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -3.59,
+        "underextrusion": 96.41,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -5.09,
+        "underextrusion": 94.91,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -5.09,
+        "underextrusion": 94.91,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -12.02,
+        "underextrusion": 87.98,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -17.55,
+        "underextrusion": 82.45,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -21.63,
+        "underextrusion": 78.37,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -27.06,
+        "underextrusion": 72.94,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -31.09,
+        "underextrusion": 68.91,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -35.44,
+        "underextrusion": 64.56,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -37.48,
+        "underextrusion": 62.52,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -42.07,
+        "underextrusion": 57.93,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 4,
-        "underextrusion": 0.23,
+        "underextrusion": 100.23,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 6,
-        "underextrusion": 0.01,
+        "underextrusion": 100.01,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.47,
+        "underextrusion": 99.53,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -0.42,
+        "underextrusion": 99.58,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -0.58,
+        "underextrusion": 99.42,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -1.55,
+        "underextrusion": 98.45,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -1.55,
+        "underextrusion": 98.45,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -2.30,
+        "underextrusion": 97.70,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -2.46,
+        "underextrusion": 97.54,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -2.46,
+        "underextrusion": 97.54,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -2.73,
+        "underextrusion": 97.27,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -3.16,
+        "underextrusion": 96.84,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -3.48,
+        "underextrusion": 96.52,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -3.96,
+        "underextrusion": 96.04,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -4.61,
+        "underextrusion": 95.39,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -5.90,
+        "underextrusion": 94.10,
         "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -5.90,
+        "underextrusion": 94.10,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -11.43,
+        "underextrusion": 88.57,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -15.94,
+        "underextrusion": 84.06,
         "skipping": 1
       },
       {
         "Hotend": "H2D 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -20.56,
+        "underextrusion": 79.44,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.02,
+        "underextrusion": 99.98,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.42,
+        "underextrusion": 99.58,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.58,
+        "underextrusion": 99.42,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -0.98,
+        "underextrusion": 99.02,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -0.74,
+        "underextrusion": 99.26,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -1.14,
+        "underextrusion": 98.86,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -1.47,
+        "underextrusion": 98.53,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -1.87,
+        "underextrusion": 98.13,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -2.67,
+        "underextrusion": 97.33,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -2.67,
+        "underextrusion": 97.33,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -3.40,
+        "underextrusion": 96.60,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -4.04,
+        "underextrusion": 95.96,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -5.17,
+        "underextrusion": 94.83,
         "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -5.17,
+        "underextrusion": 94.83,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -10.17,
+        "underextrusion": 89.83,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -15.32,
+        "underextrusion": 84.68,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -20.40,
+        "underextrusion": 79.60,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -24.59,
+        "underextrusion": 75.41,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -28.86,
+        "underextrusion": 71.14,
         "skipping": 1
       },
       {
         "Hotend": "A1 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -32.81,
+        "underextrusion": 67.19,
         "skipping": 1
       }
     ]
@@ -913,7 +913,7 @@ description: PETG 235/255ºC
         "y": {
           "field": "underextrusion",
           "type": "quantitative",
-          "scale": {"domainMin": -10, "domainMax": 1},
+          "scale": {"domainMin": 90, "domainMax": 101},
           "axis": {
             "title": "Relative extrusion [%]",
             "titleFontSize": 16,
@@ -1016,361 +1016,361 @@ description: PETG 235/255ºC
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.37,
+        "underextrusion": 99.63,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.96,
+        "underextrusion": 99.04,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.96,
+        "underextrusion": 99.04,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.22,
+        "underextrusion": 98.78,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -1.71,
+        "underextrusion": 98.29,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -1.76,
+        "underextrusion": 98.24,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -2.46,
+        "underextrusion": 97.54,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -2.62,
+        "underextrusion": 97.38,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -2.94,
+        "underextrusion": 97.06,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -3.75,
+        "underextrusion": 96.25,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -4.50,
+        "underextrusion": 95.50,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -4.50,
+        "underextrusion": 95.50,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -5.90,
+        "underextrusion": 94.10,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -16.59,
+        "underextrusion": 83.41,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -24.05,
+        "underextrusion": 75.95,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -22.71,
+        "underextrusion": 77.29,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -28.56,
+        "underextrusion": 71.44,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -33.88,
+        "underextrusion": 66.12,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -36.66,
+        "underextrusion": 63.34,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -41.78,
+        "underextrusion": 58.22,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.63,
+        "underextrusion": 99.37,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.42,
+        "underextrusion": 99.58,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.37,
+        "underextrusion": 99.63,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.01,
+        "underextrusion": 98.99,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -1.12,
+        "underextrusion": 98.88,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -2.19,
+        "underextrusion": 97.81,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -2.14,
+        "underextrusion": 97.86,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -3.59,
+        "underextrusion": 96.41,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -3.59,
+        "underextrusion": 96.41,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -8.27,
+        "underextrusion": 91.73,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -17.02,
+        "underextrusion": 82.98,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -26.09,
+        "underextrusion": 73.91,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -34.15,
+        "underextrusion": 65.85,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -40.33,
+        "underextrusion": 59.67,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -43.01,
+        "underextrusion": 56.99,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -46.13,
+        "underextrusion": 53.87,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -48.81,
+        "underextrusion": 51.19,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -51.61,
+        "underextrusion": 48.39,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -54.61,
+        "underextrusion": 45.39,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -57.03,
+        "underextrusion": 42.97,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -1.60,
+        "underextrusion": 98.40,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -1.55,
+        "underextrusion": 98.45,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -1.49,
+        "underextrusion": 98.51,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.92,
+        "underextrusion": 98.08,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -2.11,
+        "underextrusion": 97.89,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -2.57,
+        "underextrusion": 97.43,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -2.73,
+        "underextrusion": 97.27,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -3.40,
+        "underextrusion": 96.60,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -3.16,
+        "underextrusion": 96.84,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -3.43,
+        "underextrusion": 96.57,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -4.13,
+        "underextrusion": 95.87,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -4.13,
+        "underextrusion": 95.87,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -5.15,
+        "underextrusion": 94.85,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -7.72,
+        "underextrusion": 92.28,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -14.44,
+        "underextrusion": 85.56,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -11.75,
+        "underextrusion": 88.25,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -19.49,
+        "underextrusion": 80.51,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -25.18,
+        "underextrusion": 74.82,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -30.18,
+        "underextrusion": 69.82,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -34.42,
+        "underextrusion": 65.58,
         "skipping": 1
       }
     ]
@@ -1398,7 +1398,7 @@ description: PETG 235/255ºC
         "y": {
           "field": "underextrusion",
           "type": "quantitative",
-          "scale": {"domainMin": -10, "domainMax": 1},
+          "scale": {"domainMin": 90, "domainMax": 101},
           "axis": {
             "title": "Relative extrusion [%]",
             "titleFontSize": 16,
@@ -1499,361 +1499,361 @@ description: PETG 235/255ºC
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.15,
+        "underextrusion": 99.85,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.42,
+        "underextrusion": 99.58,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.2,
+        "underextrusion": 99.80,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -0.2,
+        "underextrusion": 99.80,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -0.1,
+        "underextrusion": 99.90,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -0.53,
+        "underextrusion": 99.47,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -0.85,
+        "underextrusion": 99.15,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -0.79,
+        "underextrusion": 99.21,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -1.55,
+        "underextrusion": 98.45,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -1.65,
+        "underextrusion": 98.35,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -1.98,
+        "underextrusion": 98.02,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -2.57,
+        "underextrusion": 97.43,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -2.35,
+        "underextrusion": 97.65,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -2.94,
+        "underextrusion": 97.06,
         "skipping": 0
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -2.94,
+        "underextrusion": 97.06,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -5.82,
+        "underextrusion": 94.18,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -8.39,
+        "underextrusion": 91.61,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -14.71,
+        "underextrusion": 85.29,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -18.68,
+        "underextrusion": 81.32,
         "skipping": 1
       },
       {
         "Hotend": "Stock 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -23.35,
+        "underextrusion": 76.65,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.37,
+        "underextrusion": 99.63,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.63,
+        "underextrusion": 99.37,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.63,
+        "underextrusion": 99.37,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.06,
+        "underextrusion": 98.94,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -1.49,
+        "underextrusion": 98.51,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -1.82,
+        "underextrusion": 98.18,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -1.98,
+        "underextrusion": 98.02,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -3.32,
+        "underextrusion": 96.68,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -3.32,
+        "underextrusion": 96.68,
         "skipping": 0
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -3.32,
+        "underextrusion": 96.68,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -4.66,
+        "underextrusion": 95.34,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -19.92,
+        "underextrusion": 80.08,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -26.04,
+        "underextrusion": 73.96,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -30.98,
+        "underextrusion": 69.02,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -34.15,
+        "underextrusion": 65.85,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -37.86,
+        "underextrusion": 62.14,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -41.4,
+        "underextrusion": 58.60,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -44.73,
+        "underextrusion": 55.27,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -47.31,
+        "underextrusion": 52.69,
         "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -47.31,
+        "underextrusion": 52.69,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 4,
-        "underextrusion": -0.15,
+        "underextrusion": 99.85,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 6,
-        "underextrusion": -0.42,
+        "underextrusion": 99.58,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 8,
-        "underextrusion": -0.42,
+        "underextrusion": 99.58,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 10,
-        "underextrusion": -1.29,
+        "underextrusion": 98.71,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 12,
-        "underextrusion": -0.79,
+        "underextrusion": 99.21,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 14,
-        "underextrusion": -0.96,
+        "underextrusion": 99.04,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 16,
-        "underextrusion": -0.96,
+        "underextrusion": 99.04,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 18,
-        "underextrusion": -1.01,
+        "underextrusion": 98.99,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 20,
-        "underextrusion": -0.85,
+        "underextrusion": 99.15,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 22,
-        "underextrusion": -2.35,
+        "underextrusion": 97.65,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 24,
-        "underextrusion": -2.3,
+        "underextrusion": 97.70,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 26,
-        "underextrusion": -2.67,
+        "underextrusion": 97.33,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 28,
-        "underextrusion": -3.64,
+        "underextrusion": 96.36,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 30,
-        "underextrusion": -3.4,
+        "underextrusion": 96.60,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 32,
-        "underextrusion": -4.18,
+        "underextrusion": 95.82,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 34,
-        "underextrusion": -5.25,
+        "underextrusion": 94.75,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -5.47,
+        "underextrusion": 94.53,
         "skipping": 0
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 36,
-        "underextrusion": -5.47,
+        "underextrusion": 94.53,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 38,
-        "underextrusion": -10.46,
+        "underextrusion": 89.54,
         "skipping": 1
       },
       {
         "Hotend": "Conch 0.4",
         "volumetric_flow": 40,
-        "underextrusion": -14.22,
+        "underextrusion": 85.78,
         "skipping": 1
       }
     ]
@@ -1881,7 +1881,7 @@ description: PETG 235/255ºC
         "y": {
           "field": "underextrusion",
           "type": "quantitative",
-          "scale": {"domainMin": -10, "domainMax": 1},
+          "scale": {"domainMin": 90, "domainMax": 101},
           "axis": {
             "title": "Relative extrusion [%]",
             "titleFontSize": 16,
