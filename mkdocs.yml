@@ -206,6 +206,7 @@ nav:
     - ЧАВО по G-кодам: ./articles/custom_gcode.md
     - Тест сопел volcano 0.4: ./articles/nozzle_test_2024.md
     - Сверхпроизводительные хотэнды: ./articles/ultra_high_flow_hotends.md
+    - Тест хотэндов AD5M/AD5X: ./articles/ad5m_ad5x_hotend_test.md
     - Дефекты охлаждения: ./articles/cooling_problems.md
   - Доработки:
     - Anycubic Kobra 3: ./printers/kobra3.md

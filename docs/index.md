@@ -54,8 +54,10 @@ description: Главная страница
 - :material-file-document:{ .lg .middle } __Статьи__
 
 	├ [:material-weight-lifter: Принципы прочной печати](./articles/print_strong.md)<br>
-	├ [:material-code-block-tags: ЧАВО по скриптам](./articles/custom_gcode.md)<br>
+	├ [:material-code-block-tags: ЧАВО по G-кодам](./articles/custom_gcode.md)<br>
 	├ [:material-printer-3d-nozzle: Тест сопел Volcano](./articles/nozzle_test_2024.md)<br>
+	├ [:material-printer-3d-nozzle: Сверхпроизводительные хотэнды](./articles/uhf_hotends.md)<br>
+	├ [:material-printer-3d-nozzle: Тест хотэндов AD5M/AD5X](./articles/ad5m_ad5x_hotend_test.md)<br>
 	└ [:material-fan: Дефекты охлаждения](./articles/cooling_problems.md)
 	
 - :material-wrench:{ .lg .middle } __Доработки принтеров__
