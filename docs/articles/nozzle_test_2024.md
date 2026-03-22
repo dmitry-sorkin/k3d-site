@@ -50,6 +50,7 @@ description: Volcano 0.4mm
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "K3D Nozzle flowrate test",
     "subtitle": "PETG; 245ºC; K3D Minifeeder; Titanium heatbreak",
@@ -163,6 +164,7 @@ description: Volcano 0.4mm
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "K3D Nozzle flowrate test",
     "subtitle": "PETG; 245ºC; K3D Minifeeder; Titanium heatbreak",
@@ -298,6 +300,7 @@ description: Volcano 0.4mm
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "K3D Nozzle flowrate test",
     "subtitle": "PLA; 220ºC; K3D Minifeeder; Titanium heatbreak",
@@ -432,6 +435,7 @@ description: Volcano 0.4mm
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "K3D Nozzle flowrate test",
     "subtitle": "PLA; 220ºC; K3D Minifeeder; Titanium heatbreak",
@@ -570,6 +574,7 @@ description: Volcano 0.4mm
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "K3D Nozzle pressure advance test",
     "subtitle": "PETG; 245ºC; K3D Minifeeder; Titanium heatbreak",
@@ -646,6 +651,7 @@ description: Volcano 0.4mm
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "K3D Nozzle retraction test",
     "subtitle": "PETG; 245ºC; K3D Minifeeder; Titanium heatbreak; 30mm/s",

@@ -20,6 +20,7 @@ description: Goliath, CHC XL, Rapido ACE
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "[K3D] Hotend thermistor taring",
     "subtitle": "",
@@ -490,6 +491,7 @@ PETG Bestfilament. Температуры хотэндов по собствен
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "[K3D] Ultra-high-flow hotends flowrate test",
     "subtitle": "PETG; 235ºC; K3D Microfeeder",
@@ -1034,6 +1036,7 @@ PETG Bestfilament. Температуры хотэндов по собствен
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "[K3D] Ultra-high-flow hotends flowrate test",
     "subtitle": "PETG; 248ºC; K3D Microfeeder",
@@ -1634,6 +1637,7 @@ eSun ePLA HF протестирован на 300ºC по термопаре (285
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "[K3D] Goliath flowrate test",
     "subtitle": "PETG; K3D Microfeeder",
@@ -2085,6 +2089,7 @@ eSun ePLA HF протестирован на 300ºC по термопаре (285
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "[K3D] Goliath flowrate test",
     "subtitle": "PETG; K3D Microfeeder",
@@ -2500,6 +2505,7 @@ eSun ePLA HF протестирован на 300ºC по термопаре (285
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "transparent",
   "title": {
     "text": "[K3D] Goliath flowrate test",
     "subtitle": "PETG; K3D Microfeeder",
