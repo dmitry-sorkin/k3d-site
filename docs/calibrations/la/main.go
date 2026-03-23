@@ -9,11 +9,12 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v2.5"
+const calibratorVersion = "v2.6"
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = false              // Писать ли в консоль логи происходящего
 const maxSeparatorOffset = 0.2 // Ограничение выпирания линии, разделяющей сегменты
+const relativeExtrusion = true // Включить относительные координаты экструдера
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
 var (
@@ -933,7 +934,11 @@ func generate(this js.Value, i []js.Value) interface{} {
 
 	// Переводим принтер в нужное нам состояние
 	write("G90\n")
-	write("M82\n")
+	if relativeExtrusion {
+		write("M83\n")
+	} else {
+		write("M82\n")
+	}
 	write("G92 E0\n")
 
 	// Устанавливаем значение обдува
@@ -954,7 +959,9 @@ func generate(this js.Value, i []js.Value) interface{} {
 
 	// Передвигаемся по Z на высоту слоя и применяем Z-оффсет
 	write(fmt.Sprintf("G1 Z%s\n", fmt.Sprint(roundFloat(layerHeight+zOffset, 2))))
-	write(fmt.Sprintf("G92 Z%s\n", fmt.Sprint(roundFloat(layerHeight, 2))))
+	if zOffset != 0 {
+		write(fmt.Sprintf("G92 Z%s\n", fmt.Sprint(roundFloat(layerHeight, 2))))
+	}
 	currentCoordinates.Z = layerHeight
 
 	// Расчёт точек для печати линии для прочистки сопла
@@ -1279,24 +1286,28 @@ func generateMove(start, end Point, width float64, speed int) []string {
 
 	// add X
 	if end.X != start.X {
-		command += fmt.Sprintf(" X%s", fmt.Sprint(roundFloat(end.X, 2)))
+		command += fmt.Sprintf(" X%s", fmt.Sprint(roundFloat(end.X, 3)))
 	}
 
 	// add Y
 	if end.Y != start.Y {
-		command += fmt.Sprintf(" Y%s", fmt.Sprint(roundFloat(end.Y, 2)))
+		command += fmt.Sprintf(" Y%s", fmt.Sprint(roundFloat(end.Y, 3)))
 	}
 
 	// add Z
 	if end.Z != start.Z {
-		command += fmt.Sprintf(" Z%s", fmt.Sprint(roundFloat(end.Z, 2)))
+		command += fmt.Sprintf(" Z%s", fmt.Sprint(roundFloat(end.Z, 3)))
 	}
 
 	// add E
-	if width > 0 && math.Sqrt(float64(math.Pow((end.X-start.X), 2)+math.Pow((end.Y-start.Y), 2))) > 0.8 {
-		newE := currentE + calcExtrusion(start, end, width)
-		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(newE, 5)))
-		currentE = newE
+	if width > 0 {
+		e := calcExtrusion(start, end, width)
+		if !relativeExtrusion {
+			// Если включены абсолютные координаты экструдера, то плюсуем предыдущие координаты
+			e += currentE
+			currentE = e
+		}
+		command += fmt.Sprintf(" E%s", fmt.Sprint(roundFloat(e, 5)))
 	}
 
 	// add F
@@ -1387,7 +1398,13 @@ func generateRetraction() string {
 	} else {
 		retracted = true
 		currentSpeed = retractSpeed
-		return "G1 E" + fmt.Sprint(roundFloat(currentE-retractLength, 2)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
+		var e float64
+		if relativeExtrusion {
+			e = -retractLength
+		} else {
+			e = currentE - retractLength
+		}
+		return "G1 E" + fmt.Sprint(roundFloat(e, 5)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
 	}
 }
 
@@ -1395,7 +1412,13 @@ func generateDeretraction() string {
 	if retracted {
 		retracted = false
 		currentSpeed = retractSpeed
-		return "G1 E" + fmt.Sprint(roundFloat(currentE, 2)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
+		var e float64
+		if relativeExtrusion {
+			e = retractLength
+		} else {
+			e = currentE
+		}
+		return "G1 E" + fmt.Sprint(roundFloat(e, 5)) + " F" + fmt.Sprint(retractSpeed*60) + "\n"
 	} else {
 		fmt.Println("Called deretraction, but not retracted")
 		return ""
