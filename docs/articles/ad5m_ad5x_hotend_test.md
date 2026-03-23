@@ -226,9 +226,9 @@ description: PETG 235/255ºC
       },
       {
         "Hotend": "H2D 0.4",
-        "volumetric_flow": 22,
-        "underextrusion": 95.02,
-        "skipping": 1
+        "volumetric_flow": 24,
+        "underextrusion": 94.37,
+        "skipping": 0
       },
       {
         "Hotend": "H2D 0.4",
@@ -346,9 +346,9 @@ description: PETG 235/255ºC
       },
       {
         "Hotend": "A1 0.4",
-        "volumetric_flow": 22,
-        "underextrusion": 94.53,
-        "skipping": 1
+        "volumetric_flow": 24,
+        "underextrusion": 93.67,
+        "skipping": 0
       },
       {
         "Hotend": "A1 0.4",
