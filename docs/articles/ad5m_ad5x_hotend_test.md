@@ -1177,9 +1177,9 @@ description: PETG 235/255ºC
       },
       {
         "Hotend": "Bambuhot 0.4",
-        "volumetric_flow": 18,
-        "underextrusion": 96.41,
-        "skipping": 0
+        "volumetric_flow": 16,
+        "underextrusion": 97.86,
+        "skipping": 1
       },
       {
         "Hotend": "Bambuhot 0.4",
