@@ -81,6 +81,12 @@ plugins:
         './vostok/y_drive.md': 'vostok/v8/y_drive.md'
         './vostok/z_drive.md': 'vostok/v8/z_drive.md'
         './articles/filament_drying.md': 'part-navi/filament_dryers.md'
+        './redirects/vostok_drawings.md': 'vostok/releases/latest/drawings.7z'
+        './redirects/vostok_parasolid_assembly.md': 'vostok/releases/latest/assembly.x_t.7z'
+        './redirects/vostok_step_assembly.md': 'vostok/releases/latest/assembly.stp.7z'
+        './redirects/vostok_specification.md': 'vostok/releases/latest/specification.ods'
+        './redirects/vostok_stl.md': 'vostok/releases/latest/stl.7z'
+        './redirects/vostok_config.md': 'https://github.com/dmitry-sorkin/vostok_configuration'
   - charts
   - table-reader
 markdown_extensions:
@@ -148,15 +154,21 @@ nav:
     - Сушка филамента: ./part-navi/filament_dryers.md
     - Расходники: ./part-navi/consumables.md
   - VOSTOK:
-    - K3D VOSTOK: ./vostok/index.md
-    - Релизы: ./redirects/vostok_releases.md
-    - Инструменты: ./vostok/tools.md
-    - Модификации: ./redirects/vostok_mods.md
-    - Багтрекер: ./redirects/vostok_bugtracker.md
+    - Описание конструкции: ./vostok/index.md
+    - Инструкции:
+      - С чего начать: ./vostok/manual/start.md
+    - Скачать:
+      - Сборка Parasolid: ./redirects/vostok_parasolid_assembly.md
+      - Сборка STEP: ./redirects/vostok_step_assembly.md
+      - Файлы STL: ./redirects/vostok_stl.md
+      - Спецификация: ./redirects/vostok_specification.md
+      - Чертежи: ./redirects/vostok_drawings.md
+      - Конфигурация: ./redirects/vostok_config.md
     - Ресурсы проекта:
-      - Telegram канал: ./redirects/vostok_channel.md
       - Telegram чат: ./redirects/vostok_chat.md
-      - Форум проекта: ./redirects/forum.md
+      - Релизы: ./redirects/vostok_releases.md
+      - Модификации: ./redirects/vostok_mods.md
+      - Багтрекер: ./redirects/vostok_bugtracker.md
     - Архивные статьи:
       - Инструкция по сборке VOSTOK v0.8.x:
         - С чего начать: ./vostok/v8/guide_index.md
@@ -180,6 +192,7 @@ nav:
       - Калибровка потока: ./calibrations/flow.md
       - Калибровка точности: ./calibrations/accuracy/index.md
       - Тест ряби: ./calibrations/vfa.md
+      - Калибровка смещения печатающих голов: ./calibrations/printhead_offset.md
       - Калибровка откатов:
         - Инструкция: ./calibrations/retractions/index.md
         - Калибровщик откатов: ./calibrations/retractions/calibrator.md
