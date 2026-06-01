@@ -96,6 +96,18 @@ func getElementValue(id string) string {
 	return js.Global().Get("document").Call("getElementById", id).Get("value").String()
 }
 
+func appendValidationError(errorString *string, retErr *bool, curErr string) {
+	*errorString += curErr + "\n"
+	*retErr = true
+}
+
+func appendGroupError(groupErr *string, curErr string) {
+	if *groupErr != "" {
+		*groupErr += "<br>"
+	}
+	*groupErr += curErr
+}
+
 func check(showErrorBox bool, allowModify bool) bool {
 	// Функция проверки введённых данных
 
@@ -118,6 +130,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Параметры принтера
 	// Размер стола
 
+	bedSizeErr := ""
+	bedSizeHasErr := false
+
 	docBedX, err := parseInputToFloat(getElementValue("k3d_mfr_bedX"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.bed_size_x.format"), true
@@ -127,11 +142,11 @@ func check(showErrorBox bool, allowModify bool) bool {
 		bedX = docBedX
 	}
 
-	setErrorDescription(doc, "table.bed_size.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&bedSizeErr, curErr)
+		bedSizeHasErr = true
 		hasErr = false
-		retErr = true
 	}
 
 	docBedY, err := parseInputToFloat(getElementValue("k3d_mfr_bedY"))
@@ -143,12 +158,13 @@ func check(showErrorBox bool, allowModify bool) bool {
 		bedY = docBedY
 	}
 
-	setErrorDescription(doc, "table.bed_size.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&bedSizeErr, curErr)
+		bedSizeHasErr = true
 		hasErr = false
-		retErr = true
 	}
+	setErrorDescription(doc, "table.bed_size.description", bedSizeErr, bedSizeHasErr, allowModify)
 
 	// Прошивка
 
@@ -207,6 +223,9 @@ func check(showErrorBox bool, allowModify bool) bool {
 	// Параметры филамента
 	// Температура хотэнда
 
+	temperaturesErr := ""
+	temperaturesHasErr := false
+
 	docHotTemp, err := parseInputToInt(getElementValue("k3d_mfr_hotendTemperature"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.hotend_temp.format"), true
@@ -218,11 +237,11 @@ func check(showErrorBox bool, allowModify bool) bool {
 		hotendTemperature = docHotTemp
 	}
 
-	setErrorDescription(doc, "table.temperatures.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&temperaturesErr, curErr)
+		temperaturesHasErr = true
 		hasErr = false
-		retErr = true
 	}
 
 	// Температура стола
@@ -230,21 +249,28 @@ func check(showErrorBox bool, allowModify bool) bool {
 	docBedTemp, err := parseInputToInt(getElementValue("k3d_mfr_bedTemperature"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.bed_temp.format")+err.Error(), true
+	} else if docBedTemp < 0 {
+		curErr, hasErr = getLangString("error.bed_temp.too_low"), true
 	} else if docBedTemp > 150 {
 		curErr, hasErr = getLangString("error.bed_temp.too_high"), true
 	} else {
 		bedTemperature = docBedTemp
 	}
 
-	setErrorDescription(doc, "table.temperatures.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&temperaturesErr, curErr)
+		temperaturesHasErr = true
 		hasErr = false
-		retErr = true
 	}
+	setErrorDescription(doc, "table.temperatures.description", temperaturesErr, temperaturesHasErr, allowModify)
 
 	// Параметры калибровки
 	// Скорость движения печатающей головы при печати образцов
+
+	speedErr := ""
+	speedHasErr := false
+
 	docSpeed, err := parseInputToInt(getElementValue("k3d_mfr_speed"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.speed.format"), true
@@ -253,11 +279,11 @@ func check(showErrorBox bool, allowModify bool) bool {
 	} else {
 		speed = docSpeed
 	}
-	setErrorDescription(doc, "table.speed.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&speedErr, curErr)
+		speedHasErr = true
 		hasErr = false
-		retErr = true
 	}
 
 	// Скорость движения печатающей головы при холостых перемещениях
@@ -269,14 +295,19 @@ func check(showErrorBox bool, allowModify bool) bool {
 	} else {
 		travelSpeed = docTravelSpeed
 	}
-	setErrorDescription(doc, "table.speed.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&speedErr, curErr)
+		speedHasErr = true
 		hasErr = false
-		retErr = true
 	}
+	setErrorDescription(doc, "table.speed.description", speedErr, speedHasErr, allowModify)
 
 	// Объёмный расход - начальное значение
+
+	flowrateErr := ""
+	flowrateHasErr := false
+
 	docInitFlowrate, err := parseInputToFloat(getElementValue("k3d_mfr_initFlowrate"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.init_flowrate.format"), true
@@ -285,11 +316,11 @@ func check(showErrorBox bool, allowModify bool) bool {
 	} else {
 		initFlowrate = docInitFlowrate
 	}
-	setErrorDescription(doc, "table.flowrate.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&flowrateErr, curErr)
+		flowrateHasErr = true
 		hasErr = false
-		retErr = true
 	}
 
 	// Объёмный расход - конечное значение
@@ -301,12 +332,13 @@ func check(showErrorBox bool, allowModify bool) bool {
 	} else {
 		endFlowrate = docEndFlowrate
 	}
-	setErrorDescription(doc, "table.flowrate.description", curErr, hasErr, allowModify)
 	if hasErr {
-		errorString = errorString + curErr + "\n"
+		appendValidationError(&errorString, &retErr, curErr)
+		appendGroupError(&flowrateErr, curErr)
+		flowrateHasErr = true
 		hasErr = false
-		retErr = true
 	}
+	setErrorDescription(doc, "table.flowrate.description", flowrateErr, flowrateHasErr, allowModify)
 
 	// Дельта изменения объёмного расхода
 	docFlowrateDelta, err := parseInputToFloat(getElementValue("k3d_mfr_flowrateDelta"))
