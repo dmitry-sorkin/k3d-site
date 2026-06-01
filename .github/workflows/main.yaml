@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+      - build-stage-python
+      - test-lolo
   pull_request:
 concurrency:
   group: deploy-${{ github.ref }}
@@ -14,12 +16,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      - name: Build
-        uses: Tiryoh/actions-mkdocs@v0
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
-          mkdocs_version: 'latest'
-          requirements: './.github/workflows/requirements.txt'
-          configfile: 'mkdocs.yml'
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: .github/workflows/requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .github/workflows/requirements.txt
+      - name: Build
+        run: mkdocs build --clean
       - name: Copy htaccess
         run: |
           sudo chown -R runner:docker ./site
