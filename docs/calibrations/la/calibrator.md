@@ -236,39 +236,39 @@ hide:
             <td class="lang" id="table.advanced_parameters.description" style="text-align: justify; font-size: 0.9em;">В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров не сохраняются</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Layer height<br>limit</th>
+            <th class="lang" id="table.advanced.layer_height_limit.title">Layer height<br>limit</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_layerHeightLimit" value="0.3"></td>
-            <td>[0.1-10.0]</td>
+            <td id="table.advanced.layer_height_limit.range" data-default="[0.1-10.0]">[0.1-10.0]</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Filament diameter</th>
+            <th class="lang" id="table.advanced.filament_diameter.title">Filament diameter</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_filamentDiameter" value="1.75"></td>
-            <td>[0.1-5.0]</td>
+            <td id="table.advanced.filament_diameter.range" data-default="[0.1-5.0]">[0.1-5.0]</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Default segment<br>height</th>
+            <th class="lang" id="table.advanced.default_segment_height.title">Default segment<br>height</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_defaultSegmentHeight" value="3.0"></td>
-            <td>[1.0-100.0]</td>
+            <td id="table.advanced.default_segment_height.range" data-default="[1.0-100.0]">[1.0-100.0]</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Min speed delta</th>
+            <th class="lang" id="table.advanced.min_speed_delta.title">Min speed delta</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_minSpeedDelta" value="10"></td>
-            <td>[0-1000]</td>
+            <td id="table.advanced.min_speed_delta.range" data-default="[0-1000]">[0-1000]</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Max speed delta</th>
+            <th class="lang" id="table.advanced.max_speed_delta.title">Max speed delta</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_maxSpeedDelta" value="100"></td>
-            <td>[10-1000]</td>
+            <td id="table.advanced.max_speed_delta.range" data-default="[10-1000]">[10-1000]</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Default model<br>width</th>
+            <th class="lang" id="table.advanced.default_model_width.title">Default model<br>width</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_defaultModelWidth" value="40.0"></td>
-            <td>[10.0-1000.0]</td>
+            <td id="table.advanced.default_model_width.range" data-default="[10.0-1000.0]">[10.0-1000.0]</td>
         </tr>
         <tr id="table.advanced_parameter.row">
-            <th>Default slow<br>line length</th>
+            <th class="lang" id="table.advanced.default_slow_line_length.title">Default slow<br>line length</th>
             <td><input class="calibratorInput" type="text" id="k3d_la_defaultSlowLineLength" value="2.0"></td>
-            <td>[0.1-1000.0]</td>
+            <td id="table.advanced.default_slow_line_length.range" data-default="[0.1-1000.0]">[0.1-1000.0]</td>
         </tr>
     </tbody>
 </table>

@@ -1,4 +1,4 @@
-const calibrator_version = 'v2.6';
+const calibrator_version = 'v2.7';
 window.calibrator_version = calibrator_version;
 var savedSegmentsInfo = null;
 
@@ -134,6 +134,13 @@ var formFields = [
 	"k3d_la_startGcode",
 	"k3d_la_endGcode",
 	"k3d_la_numPerimeters",
+	"k3d_la_layerHeightLimit",
+	"k3d_la_filamentDiameter",
+	"k3d_la_defaultSegmentHeight",
+	"k3d_la_minSpeedDelta",
+	"k3d_la_maxSpeedDelta",
+	"k3d_la_defaultModelWidth",
+	"k3d_la_defaultSlowLineLength",
 ];
 var segmentFields = [
 	"k3d_la_initKFactor",
@@ -350,6 +357,13 @@ function initLang(key) {
 			values['table.smooth_time.description'] = '[s] Pressure advance smoothing time<br>In Klipper firmware reduces load on feeder mechanism but excessive smoothing may cause defects like dents before and after seams. So this value should be calibrated via setting additional target “smoothing time”<br>In Marlin and RRF there\'s no control over PA smoothing time, hence this parameter does nothing there<br>When selecting “smoothing time” as additional calibration target, this parameter’s value will be ignored';
 			values['table.advanced_parameters.title'] = 'Show<br>advanced<br>parameters';
 			values['table.advanced_parameters.description'] = 'This section contains parameters that regular users should not change. Specifying incorrect values may lead to incorrect model generation. Therefore, when using these parameters, be sure to check the G-code before printing. These parameters are not saved';
+			values['table.advanced.layer_height_limit.title'] = 'Layer height<br>limit';
+			values['table.advanced.filament_diameter.title'] = 'Filament diameter';
+			values['table.advanced.default_segment_height.title'] = 'Default segment<br>height';
+			values['table.advanced.min_speed_delta.title'] = 'Min speed delta';
+			values['table.advanced.max_speed_delta.title'] = 'Max speed delta';
+			values['table.advanced.default_model_width.title'] = 'Default model<br>width';
+			values['table.advanced.default_slow_line_length.title'] = 'Default slow<br>line length';
 
 
 			values['generator.generate_and_download'] = 'Generate & Download';
@@ -404,6 +418,13 @@ function initLang(key) {
 			values['error.unsupported_ternary_operators'] = 'Error: Ternary operators (a ? b : c) detected in Start or End G-code';
 			values['error.unsupported_math'] = 'Error: Math operations (min, max, round, etc.) detected in Start or End G-code';
 			values['error.model_size_limited'] = 'Model size must be increased to allow the print head to accelerate to the speed required for testing the specified volumetric flow rate. However, the resulting part size turned out to be larger than the print bed. Increase acceleration or decrease the volumetric flow rate values for testing';
+			values['error.layer_height_limit.value'] = 'Value error: Layer height limit (less than 0.1 or more than 10.0 mm)';
+			values['error.filament_diameter.value'] = 'Value error: Filament diameter (less than 0.1 or more than 5.0 mm)';
+			values['error.default_segment_height.value'] = 'Value error: Default segment height (less than 1.0 or more than 100.0 mm)';
+			values['error.min_speed_delta.value'] = 'Value error: Min speed delta (less than 0 or more than 1000 mm/s)';
+			values['error.max_speed_delta.value'] = 'Value error: Max speed delta (less than 10 or more than 1000 mm/s)';
+			values['error.default_model_width.value'] = 'Value error: Default model width (less than 10.0 or more than 1000.0 mm)';
+			values['error.default_slow_line_length.value'] = 'Value error: Default slow line length (less than 0.1 or more than 1000.0 mm)';
 			values['error.different_versions'] = 'Version mismatch: Please hard refresh (Ctrl + F5) or clear your browser cache.';
 
 			values['info.delta_print_speed_too_small'] = 'Speed difference across one wall too small. Consider increasing initial volumetric flow rate for better results';
@@ -454,6 +475,13 @@ function initLang(key) {
 			values['table.smooth_time.description'] = '[с] Время сглаживания PA<br>В прошивке Klipper уменьшает нагрузку на подающий механизм, но завышенное значение сглаживания может вызвать дефекты в виде ямок перед и после шва. Поэтому это значение стоит откалибровать с помощью установки дополнительной цели "время сглаживания"<br>В Marlin и RRF нет управления временем сглаживания PA, поэтому там этот параметр ничего не делает<br>При выборе доп. цели калибровки "время сглаживания", значение этого параметра будет проигнорировано';
 			values['table.advanced_parameters.title'] = 'Показать<br>расширенные<br>параметры';
 			values['table.advanced_parameters.description'] = 'В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров не сохраняются';
+			values['table.advanced.layer_height_limit.title'] = 'Ограничение<br>высоты слоя';
+			values['table.advanced.filament_diameter.title'] = 'Диаметр<br>филамента';
+			values['table.advanced.default_segment_height.title'] = 'Высота сегмента<br>по умолчанию';
+			values['table.advanced.min_speed_delta.title'] = 'Минимальная<br>разница скоростей';
+			values['table.advanced.max_speed_delta.title'] = 'Максимальная<br>разница скоростей';
+			values['table.advanced.default_model_width.title'] = 'Ширина модели<br>по умолчанию';
+			values['table.advanced.default_slow_line_length.title'] = 'Длина медленного<br>участка по умолчанию';
 			values['error.different_versions'] = 'Ошибка: версия движка и страницы отличаются. Обновите страницу с помощью ctrl + F5 или почистите кэш браузера вручную';
 
 
@@ -509,6 +537,13 @@ function initLang(key) {
 			values['error.unsupported_ternary_operators'] = 'Ошибка: В начальном или конечном G-коде замечены тернарные операторы (a ? b : c)';
 			values['error.unsupported_math'] = 'Ошибка: В начальном или конечном G-коде замечены математические операции (min, max, round и подобные)';
 			values['error.model_size_limited'] = 'Размер модели должен быть увеличен для того, чтобы печатающая голова успевала разогнаться до скорости, необходимой для проверки заданного объёмного расхода. Но получаемый размер детали оказался больше стола. Увеличьте ускорение или уменьшите значения объёмного расхода для проверки';
+			values['error.layer_height_limit.value'] = 'Ошибка значения: ограничение высоты слоя (меньше 0.1 или больше 10.0 мм)';
+			values['error.filament_diameter.value'] = 'Ошибка значения: диаметр филамента (меньше 0.1 или больше 5.0 мм)';
+			values['error.default_segment_height.value'] = 'Ошибка значения: высота сегмента по умолчанию (меньше 1.0 или больше 100.0 мм)';
+			values['error.min_speed_delta.value'] = 'Ошибка значения: минимальная разница скоростей (меньше 0 или больше 1000 мм/с)';
+			values['error.max_speed_delta.value'] = 'Ошибка значения: максимальная разница скоростей (меньше 10 или больше 1000 мм/с)';
+			values['error.default_model_width.value'] = 'Ошибка значения: ширина модели по умолчанию (меньше 10.0 или больше 1000.0 мм)';
+			values['error.default_slow_line_length.value'] = 'Ошибка значения: длина медленного участка по умолчанию (меньше 0.1 или больше 1000.0 мм)';
 
 			values['info.delta_print_speed_too_small'] = 'Перепад скоростей на одной из стенок слишком мал. Рекомендуется увеличить начальное значение объёмного расхода для проверки';
 			values['info.smooth_time_not_supported_by_firmware'] = 'Время сглаживания pressure advance не поддерживается выбранной прошивкой';

@@ -9,7 +9,7 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v2.6"
+const calibratorVersion = "v2.7"
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = false              // Писать ли в консоль логи происходящего
@@ -52,6 +52,19 @@ func setErrorDescription(doc js.Value, key string, curErr string, hasErr bool, a
 		el.Set("innerHTML", getLangString(key)+"<br><br><span class=\"inline-error\">"+curErr+"</span>")
 	} else {
 		el.Set("innerHTML", getLangString(key))
+	}
+}
+
+func setAdvancedRangeError(doc js.Value, key string, curErr string, hasErr bool, allowModify bool) {
+	if !allowModify {
+		return
+	}
+	el := doc.Call("getElementById", key)
+	defaultText := el.Get("dataset").Get("default").String()
+	if hasErr {
+		el.Set("innerHTML", defaultText+"<br><span class=\"inline-error\">"+curErr+"</span>")
+	} else {
+		el.Set("innerHTML", defaultText)
 	}
 }
 
@@ -272,7 +285,7 @@ func check(showErrorBox bool, allowModify bool) bool {
 	docMaxPrintSpeed, err := parseInputToInt(getElementValue("k3d_la_maxPrintSpeed"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.max_print_speed.format"), true
-	} else if docMinPrintSpeed < 5 || docMinPrintSpeed > 1000 {
+	} else if docMaxPrintSpeed < 5 || docMaxPrintSpeed > 1000 {
 		curErr, hasErr = getLangString("error.max_print_speed.value"), true
 	} else {
 		maxPrintSpeed = docMaxPrintSpeed
@@ -308,8 +321,8 @@ func check(showErrorBox bool, allowModify bool) bool {
 	docNumPerimeters, err := parseInputToInt(getElementValue("k3d_la_numPerimeters"))
 	if err != nil {
 		curErr, hasErr = getLangString("error.num_perimeters.format"), true
-	} else if docAcceleration < 500 || docAcceleration > 50000 {
-		curErr, hasErr = getLangString("error.num_perimters.value"), true
+	} else if docNumPerimeters < 1 || docNumPerimeters > 5 {
+		curErr, hasErr = getLangString("error.num_perimeters.value"), true
 	} else {
 		numPerimeters = docNumPerimeters
 	}
@@ -487,12 +500,12 @@ func check(showErrorBox bool, allowModify bool) bool {
 	if docLayerHeightLimit != docLayerHeightLimit {
 		docLayerHeightLimit = 0.3
 	} else if err != nil || docLayerHeightLimit < 0.1 || docLayerHeightLimit > 10.0 {
-		curErr, hasErr = "Error: layer height limit", true
+		curErr, hasErr = getLangString("error.layer_height_limit.value"), true
 	} else {
 		layerHeightLimit = docLayerHeightLimit
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.layer_height_limit.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
@@ -502,13 +515,13 @@ func check(showErrorBox bool, allowModify bool) bool {
 	docFilamentDiameter, err := parseInputToFloat(getElementValue("k3d_la_filamentDiameter"))
 	if docFilamentDiameter != docFilamentDiameter {
 		docFilamentDiameter = 1.75
-	} else if err != nil || docFilamentDiameter < 0.1 || docLayerHeightLimit > 5.0 {
-		curErr, hasErr = "Error: filament diameter", true
+	} else if err != nil || docFilamentDiameter < 0.1 || docFilamentDiameter > 5.0 {
+		curErr, hasErr = getLangString("error.filament_diameter.value"), true
 	} else {
 		filamentDiameter = docFilamentDiameter
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.filament_diameter.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
@@ -519,12 +532,12 @@ func check(showErrorBox bool, allowModify bool) bool {
 	if docDefaultSegmentHeight != docDefaultSegmentHeight {
 		docDefaultSegmentHeight = 3.0
 	} else if err != nil || docDefaultSegmentHeight < 1.0 || docDefaultSegmentHeight > 100.0 {
-		curErr, hasErr = "Error: default segment height", true
+		curErr, hasErr = getLangString("error.default_segment_height.value"), true
 	} else {
 		defaultSegmentHeight = docDefaultSegmentHeight
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.default_segment_height.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
@@ -534,13 +547,13 @@ func check(showErrorBox bool, allowModify bool) bool {
 	docMinSpeedDelta, err := parseInputToInt(getElementValue("k3d_la_minSpeedDelta"))
 	if docMinSpeedDelta != docMinSpeedDelta {
 		docMinSpeedDelta = 10
-	} else if err != nil || docMinSpeedDelta > 1000 {
-		curErr, hasErr = "Error: min speed delta", true
+	} else if err != nil || docMinSpeedDelta < 0 || docMinSpeedDelta > 1000 {
+		curErr, hasErr = getLangString("error.min_speed_delta.value"), true
 	} else {
 		minSpeedDelta = docMinSpeedDelta
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.min_speed_delta.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
@@ -551,12 +564,12 @@ func check(showErrorBox bool, allowModify bool) bool {
 	if docMaxSpeedDelta != docMaxSpeedDelta {
 		docMaxSpeedDelta = 100
 	} else if err != nil || docMaxSpeedDelta < 10 || docMaxSpeedDelta > 1000 {
-		curErr, hasErr = "Error: max speed delta", true
+		curErr, hasErr = getLangString("error.max_speed_delta.value"), true
 	} else {
 		maxSpeedDelta = docMaxSpeedDelta
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.max_speed_delta.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
@@ -567,12 +580,12 @@ func check(showErrorBox bool, allowModify bool) bool {
 	if docDefaultModelWidth != docDefaultModelWidth {
 		docDefaultModelWidth = 40.0
 	} else if err != nil || docDefaultModelWidth < 10.0 || docDefaultModelWidth > 1000.0 {
-		curErr, hasErr = "Error: default model width", true
+		curErr, hasErr = getLangString("error.default_model_width.value"), true
 	} else {
 		defaultModelWidth = docDefaultModelWidth
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.default_model_width.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
@@ -583,12 +596,12 @@ func check(showErrorBox bool, allowModify bool) bool {
 	if docDefaultSlowLineLength != docDefaultSlowLineLength {
 		docDefaultSlowLineLength = 2.0
 	} else if err != nil || docDefaultSlowLineLength < 0.1 || docDefaultSlowLineLength > 1000.0 {
-		curErr, hasErr = "Error: default slow line length", true
+		curErr, hasErr = getLangString("error.default_slow_line_length.value"), true
 	} else {
 		defaultSlowLineLength = docDefaultSlowLineLength
 	}
 
-	setErrorDescription(doc, "table.advanced_parameters.description", curErr, hasErr, allowModify)
+	setAdvancedRangeError(doc, "table.advanced.default_slow_line_length.range", curErr, hasErr, allowModify)
 	if hasErr {
 		errorString = errorString + curErr + "\n"
 		hasErr = false
