@@ -1,4 +1,4 @@
-const calibrator_version = 'v0.5-beta';
+const calibrator_version = 'v0.6-beta';
 window.calibrator_version = calibrator_version;
 var savedSegmentsInfo = null;
 
@@ -100,6 +100,8 @@ var formFields = [
 	"k3d_mfr_zOffset",
 	"k3d_mfr_hotendTemperature",
 	"k3d_mfr_bedTemperature",
+	"k3d_mfr_speed",
+	"k3d_mfr_travelSpeed",
 	"k3d_mfr_initFlowrate",
 	"k3d_mfr_endFlowrate",
 	"k3d_mfr_flowrateDelta",
@@ -247,14 +249,18 @@ function initLang(key) {
 			values['error.nozzle_diameter.value'] = 'Value Error: Nozzle Diameter (less than 0.1 or greater than 2.0 mm)';
 			values['error.hotend_temp.format'] = 'Format Error: Hotend Temperature';
 			values['error.hotend_temp.value'] = 'Value Error: Hotend Temperature (less than 100°C or greater than 500°C)';
+			values['error.hotend_temp.too_low'] = 'Value Error: Hotend Temperature (less than 100°C)';
+			values['error.hotend_temp.too_high'] = 'Value Error: Hotend Temperature (greater than 500°C)';
 			values['error.bed_temp.format'] = 'Format Error: Bed Temperature';
 			values['error.bed_temp.value'] = 'Value Error: Bed Temperature (greater than 150°C)';
+			values['error.bed_temp.too_low'] = 'Value Error: Bed Temperature (less than 0°C)';
+			values['error.bed_temp.too_high'] = 'Value Error: Bed Temperature (greater than 150°C)';
 			values['error.init_flowrate.format'] = 'Format Error: Initial Volumetric Flow Rate value';
 			values['error.init_flowrate.value'] = 'Value Error: Initial Volumetric Flow Rate value (less than 1.0 or greater than 50.0 mm^3/s)';
 			values['error.end_flowrate.format'] = 'Format Error: Final Volumetric Flow Rate value';
-			values['error.end_flowrate.value'] = 'Value Error: Final Volumetric Flow Rate value (less than 1.0 or greater than 50.0 mm^3/s)';
+			values['error.end_flowrate.value'] = 'Value Error: Final Volumetric Flow Rate value (less than 1.0 or greater than 200.0 mm^3/s)';
 			values['error.flowrate_delta.format'] = 'Format Error: Flow Rate Step';
-			values['error.flowrate_delta.value'] = 'Value Error: Flow Rate Step (less than 0.5 or greater than 10.0)';
+			values['error.flowrate_delta.value'] = 'Value Error: Flow Rate Step (less than 0.01 or greater than 10.0)';
 			values['error.extrusion_length.format'] = 'Format Error: Extrusion Length per Sample';
 			values['error.extrusion_length.value'] = 'Value Error: Extrusion Length per Sample (less than 50 or greater than 5000 mm)';
 			values['error.z_offset.format'] = 'Format Error: Z-offset';
@@ -315,14 +321,18 @@ function initLang(key) {
 			values['error.nozzle_diameter.value'] = 'Ошибка значения: Диаметр сопла (меньше 0.1 или больше 2.0 мм)';
 			values['error.hotend_temp.format'] = 'Ошибка формата: Температура хотэнда';
 			values['error.hotend_temp.value'] = 'Ошибка значения: Температура хотэнда (меньше 100°C или больше 500°C)';
+			values['error.hotend_temp.too_low'] = 'Ошибка значения: Температура хотэнда (меньше 100°C)';
+			values['error.hotend_temp.too_high'] = 'Ошибка значения: Температура хотэнда (больше 500°C)';
 			values['error.bed_temp.format'] = 'Ошибка формата: Температура стола';
 			values['error.bed_temp.value'] = 'Ошибка значения: Температура стола (выше 150°C)';
+			values['error.bed_temp.too_low'] = 'Ошибка значения: Температура стола (меньше 0°C)';
+			values['error.bed_temp.too_high'] = 'Ошибка значения: Температура стола (выше 150°C)';
 			values['error.init_flowrate.format'] = 'Ошибка формата: начальное значение объёмного расхода';
 			values['error.init_flowrate.value'] = 'Ошибка значения: начальное значение объёмного расхода (меньше 1.0 или больше 50.0 мм^3/с)';
 			values['error.end_flowrate.format'] = 'Ошибка формата: конечное значение объёмного расхода';
 			values['error.end_flowrate.value'] = 'Ошибка значения: конечное значение объёмного расхода (меньше 1.0 или больше 200.0 мм^3/с)';
 			values['error.flowrate_delta.format'] = 'Ошибка формата: Шаг расхода';
-			values['error.flowrate_delta.value'] = 'Ошибка значения: Шаг расхода (меньше 0.5 или больше 10.0)';
+			values['error.flowrate_delta.value'] = 'Ошибка значения: Шаг расхода (меньше 0.01 или больше 10.0)';
 			values['error.extrusion_length.format'] = 'Ошибка формата: длина экструзии на образец';
 			values['error.extrusion_length.value'] = 'Ошибка значения: длина экструзии на образец (меньше 50 или больше 5000 мм)';
 			values['error.z_offset.format'] = 'Ошибка формата: Z-offset';
