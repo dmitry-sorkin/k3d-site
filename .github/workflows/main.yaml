@@ -3,31 +3,59 @@ on:
   push:
     branches:
       - main
+      - build-stage-python
+      - test-lolo
   pull_request:
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build
-        uses: Tiryoh/actions-mkdocs@v0
+        uses: actions/checkout@v6
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
-          mkdocs_version: 'latest'
-          requirements: './.github/workflows/requirements.txt'
-          configfile: 'mkdocs.yml'
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: .github/workflows/requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r .github/workflows/requirements.txt
+      - name: Build
+        run: mkdocs build --clean
       - name: Copy htaccess
         run: |
           sudo chown -R runner:docker ./site
           find docs -name "*.wasm" | sed -r 's#^docs(.*)\/.*$#\"./docs\1\/.htaccess" "./site\1\/"#g' | xargs -n2 cp
       - name: Deploy
-        uses: burnett01/rsync-deployments@5.2.1
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        with:
-          switches: -avzr --delete
-          path: ./site/
-          remote_path: ${{ secrets.deploy_path }}
-          remote_host: ${{ secrets.ssh_server }}
-          remote_user: ${{ secrets.ssh_username }}
-          remote_key: ${{ secrets.ssh_private_key }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
+          delays=(120 300 600 1200 1800)
+          max_attempts=$((${#delays[@]} + 1))
+
+          for attempt in $(seq 1 "$max_attempts"); do
+            rsync -avzr --delete \
+              -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=no -o ConnectTimeout=30 -o ServerAliveInterval=15 -o ServerAliveCountMax=3" \
+              ./site/ \
+              "${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_SERVER }}:${{ secrets.DEPLOY_PATH }}" \
+              && exit 0
+
+            if [ "$attempt" -eq "$max_attempts" ]; then
+              break
+            fi
+
+            delay="${delays[$((attempt - 1))]}"
+            echo "Deploy failed, attempt ${attempt}/${max_attempts}. Retrying in ${delay} seconds..."
+            sleep "$delay"
+          done
+
+          exit 1
