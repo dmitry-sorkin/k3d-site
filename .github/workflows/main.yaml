@@ -27,11 +27,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r .github/workflows/requirements.txt
       - name: Build
-        run: mkdocs build --clean
-      - name: Copy htaccess
-        run: |
-          sudo chown -R runner:docker ./site
-          find docs -name "*.wasm" | sed -r 's#^docs(.*)\/.*$#\"./docs\1\/.htaccess" "./site\1\/"#g' | xargs -n2 cp
+        run: properdocs build --clean
       - name: Deploy
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: |

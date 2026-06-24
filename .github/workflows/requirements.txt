@@ -1,7 +1,8 @@
 mkdocs==1.6.1
+properdocs==1.6.7
 pillow==10.4.0
+mkdocs-materialx[imaging]==10.1.8
 mkdocs-glightbox==0.5.2
-mkdocs-material[imaging]==9.7.6
 mkdocs-redirects==1.2.3
 mkdocs-charts-plugin==0.0.13
 mkdocs-table-reader-plugin==3.1.0

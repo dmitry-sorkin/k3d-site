@@ -14,7 +14,7 @@ theme:
         icon: material/lightbulb-outline
         name: Light theme
   logo: assets/k3d_logo.png
-  name: material
+  name: materialx
   language: ru
   favicon: pics/favicon.ico
   features:
