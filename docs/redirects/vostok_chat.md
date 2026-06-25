@@ -1,7 +1,6 @@
 ---
 icon: fontawesome/brands/telegram
 title: Telegram чат VOSTOK
-subtitle: Обсуждение VOSTOK в Telegram
 description: Обсуждение VOSTOK в Telegram
 ---
 

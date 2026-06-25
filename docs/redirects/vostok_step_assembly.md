@@ -1,7 +1,6 @@
 ---
 icon: octicons/gear-16
 title: K3D VOSTOK - Сборка STEP
-subtitle: Для всего остального
 description: Скачать сборку .STEP
 ---
 

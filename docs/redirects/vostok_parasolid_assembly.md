@@ -1,7 +1,6 @@
 ---
 icon: octicons/gear-16
 title: K3D VOSTOK - Сборка Parasolid
-subtitle: Для NX, T-flex и т.п.
 description: Скачать сборку Parasolid
 ---
 

@@ -1,7 +1,6 @@
 ---
 icon: octicons/bug-16
 title: K3D VOSTOK - Багтрекер
-subtitle: Сообщить о проблемах
 description: Сообщить о проблемах
 ---
 

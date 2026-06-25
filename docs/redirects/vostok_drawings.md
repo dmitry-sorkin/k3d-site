@@ -1,7 +1,6 @@
 ---
 icon: material/google-spreadsheet
 title: K3D VOSTOK - Чертежи
-subtitle: Стола, профилей и зашивки
 description: Скачать чертежи профилей, зашивки и деталей стола
 ---
 

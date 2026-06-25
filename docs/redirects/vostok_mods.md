@@ -1,7 +1,6 @@
 ---
 icon: octicons/gear-16
 title: K3D VOSTOK - Модификации
-subtitle: Пользовательские доработки
 description: Пользовательские модификации VOSTOK
 ---
 

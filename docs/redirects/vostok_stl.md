@@ -1,7 +1,6 @@
 ---
 icon: simple/sequelize
 title: K3D VOSTOK - STL
-subtitle: Готовые для печати
 description: Скачать файлы для печати STL
 ---
 

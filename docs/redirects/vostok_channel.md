@@ -1,7 +1,6 @@
 ---
 icon: fontawesome/brands/telegram
 title: Telegram канал VOSTOK
-subtitle: Новости VOSTOK в Telegram
 description: Новости VOSTOK в Telegram
 ---
 

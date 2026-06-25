@@ -1,7 +1,6 @@
 ---
 icon: material/file-document
 title: K3D VOSTOK - Спецификация
-subtitle: Что покупать и печатать
 description: Скачать спецификацию K3D VOSTOK
 ---
 

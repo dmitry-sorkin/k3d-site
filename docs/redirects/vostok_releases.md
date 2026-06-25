@@ -1,7 +1,6 @@
 ---
 icon: material/download
 title: K3D VOSTOK - Релизы
-subtitle: Другие версии и ченджлоги
 description: Скачать документацию и модели для K3D VOSTOK
 ---
 

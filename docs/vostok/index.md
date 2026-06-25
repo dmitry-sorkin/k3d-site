@@ -1,7 +1,6 @@
 ---
 icon: material/printer-3d
 title: K3D VOSTOK
-subtitle: Общее описание конструкции
 description: Общее описание конструкции
 hide:
     - toc
