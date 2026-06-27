@@ -5,6 +5,10 @@ authors:
 icon: simple/sequelize
 title: K3D VOSTOK - STL
 description: Скачать файлы для печати STL
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены на скачивание файла. Если этого не произошло автоматически, перейдите по ссылке вручную:

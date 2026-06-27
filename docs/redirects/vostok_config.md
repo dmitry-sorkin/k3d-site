@@ -5,6 +5,10 @@ authors:
 icon: material/github
 title: K3D VOSTOK - Конфигурация
 description: Скачать конфигурацию принтера и слайсера
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены на скачивание файла. Если этого не произошло автоматически, перейдите по ссылке вручную:

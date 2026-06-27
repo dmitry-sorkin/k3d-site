@@ -5,6 +5,10 @@ authors:
 icon: octicons/gear-16
 title: K3D VOSTOK - Сборка Parasolid
 description: Скачать сборку Parasolid
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены на скачивание файла. Если этого не произошло автоматически, перейдите по ссылке вручную:

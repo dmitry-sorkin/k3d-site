@@ -5,6 +5,10 @@ authors:
 icon: material/file-document
 title: K3D VOSTOK - Спецификация
 description: Скачать спецификацию K3D VOSTOK
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены на скачивание файла. Если этого не произошло автоматически, перейдите по ссылке вручную:

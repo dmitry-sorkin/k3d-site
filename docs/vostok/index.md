@@ -1,5 +1,4 @@
 ---
-
 authors:
   - sorkin
 icon: material/printer-3d
@@ -7,6 +6,9 @@ title: K3D VOSTOK
 description: Общее описание конструкции
 hide:
     - toc
+show_created: false
+show_updated: false
+show_author: false
 ---
 
 # 

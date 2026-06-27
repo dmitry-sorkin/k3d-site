@@ -5,6 +5,10 @@ authors:
 icon: fontawesome/brands/telegram
 title: Telegram чат VOSTOK
 description: Обсуждение VOSTOK в Telegram
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены в telegram-чат K3D VOSTOK. Если это не произошло автоматически, то перейдите вручную:

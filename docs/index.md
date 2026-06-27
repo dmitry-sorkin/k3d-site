@@ -1,5 +1,4 @@
 ---
-
 authors:
   - sorkin
 hide:
@@ -7,6 +6,9 @@ hide:
   - toc
 title: K3D - ВСË О 3D ПЕЧАТИ
 description: Главная страница
+show_created: false
+show_updated: false
+show_author: false
 ---
 
 # 

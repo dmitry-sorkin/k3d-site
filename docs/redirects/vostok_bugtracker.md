@@ -5,6 +5,10 @@ authors:
 icon: octicons/bug-16
 title: K3D VOSTOK - Багтрекер
 description: Сообщить о проблемах
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены в раздел багтрекера на форуме проекта K3D. Если это не произошло автоматически, то перейдите вручную:

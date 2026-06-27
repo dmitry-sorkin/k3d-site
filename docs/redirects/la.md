@@ -4,6 +4,10 @@ authors:
   - sorkin
 icon: octicons/package-16
 title: K3D Калибровщик Linear Advance
+show_created: false
+show_updated: false
+show_author: false
+
 ---
 
 Сейчас вы будете перенаправлены на страницу калибровщика LA K3D. Если этого не произошло автоматически, перейдите по ссылке вручную:
