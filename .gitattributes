@@ -1,0 +1,42 @@
+# Line endings: force LF for all text files, regardless of OS or core.autocrlf
+* text=auto eol=lf
+
+# Binary files must never be normalized
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+# Archives / 3D models / binaries
+*.zip binary
+*.7z binary
+*.rar binary
+*.gz binary
+*.stl binary
+*.3mf binary
+*.step binary
+*.stp binary
+*.x_t binary
+*.parasolid binary
+*.pdf binary
+*.wasm binary
+
+# Office
+*.docx binary
+*.xlsx binary
+*.ods binary
+
+# Video / audio
+*.mp4 binary
+*.webm binary
+*.mov binary
+*.mp3 binary
+*.wav binary
