@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/source-commit-local
 title: K3D VOSTOK - Электроника
 description: Сборка и настройка электроники

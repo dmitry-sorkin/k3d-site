@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: fontawesome/solid/maximize
 title: Калибровка точности
 subtitle: Сделать печать точнее

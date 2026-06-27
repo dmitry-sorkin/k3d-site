@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/file-document
 title: K3D калибровщик откатов
 description: описание и инструкция

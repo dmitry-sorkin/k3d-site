@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: material/heat-wave
 title: 3D рекомендатор - Сушка филамента
 subtitle: В чём сушить и хранить филамент

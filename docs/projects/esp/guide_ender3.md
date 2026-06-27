@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/format-list-numbered
 title: K3D ESP - инструкция для Ender-3
 description: Проект печатающей головы для Ender-3 на основе экструдера Sprite

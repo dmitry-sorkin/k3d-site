@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: octicons/gear-16
 title: K3D VOSTOK - Модификации
 description: Пользовательские модификации VOSTOK

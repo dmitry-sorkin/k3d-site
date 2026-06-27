@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: material/printer-3d-nozzle
 title: 3D рекомендатор - детали экструдеров
 subtitle: Фидеры, хотэнды и детали для них

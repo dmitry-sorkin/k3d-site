@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/subdirectory-arrow-right
 title: K3D Feeder965
 subtitle: На основе HGX

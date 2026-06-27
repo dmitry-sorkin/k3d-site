@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/file-document
 title: K3D VOSTOK - Спецификация
 description: Скачать спецификацию K3D VOSTOK

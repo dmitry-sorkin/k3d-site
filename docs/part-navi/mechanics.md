@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: fontawesome/solid/wrench
 title: 3D рекомендатор - механика
 subtitle: Направляющие, моторы, ремни...

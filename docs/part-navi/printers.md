@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: material/printer-3d
 title: 3D рекомендатор - принтеры
 subtitle: Лучшие модели под разные задачи

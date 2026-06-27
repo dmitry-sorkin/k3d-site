@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: material/water
 title: 3D рекомендатор - Расходники
 subtitle: Клеи, смазка, обезжириватели...

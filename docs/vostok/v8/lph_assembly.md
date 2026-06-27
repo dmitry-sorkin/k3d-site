@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/source-commit-local
 title: K3D VOSTOK - Сборка печатающей головы LPH
 description: Инструкция по сборке VOSTOK

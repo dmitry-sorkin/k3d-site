@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Доработки Anycubic Kobra 3
 icon: material/printer-3d
 ---

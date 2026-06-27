@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/water-off
 title: ЧАВО по сушке филамента
 subtitle: В чём и как сушить филамент

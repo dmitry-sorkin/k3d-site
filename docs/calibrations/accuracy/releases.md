@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Калибровка точности
 description: Релизы
 ---

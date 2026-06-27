@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Доработки Elegoo Neptune 4
 description: Подключение Wi-Fi, установка Volcano, Open Nept4une, порядок настроек принтера и калибровка Input Shaping
 icon: material/printer-3d

@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/format-list-numbered
 title: K3D Minifeeder - сборка
 description: Открытый проект компактного и лёгкого подающего механизма на основе деталей BMG

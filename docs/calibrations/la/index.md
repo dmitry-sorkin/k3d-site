@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/file-document
 title: Калибровка Pressure Advance
 description: Подробная инструкция по калибровке PA

@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/subdirectory-arrow-right
 title: K3D ESP - описание
 subtitle: На основе Creality Sprite

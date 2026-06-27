@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: fontawesome/solid/microchip
 title: 3D рекомендатор - электроника
 subtitle: Материнки, вентиляторы и т.п.

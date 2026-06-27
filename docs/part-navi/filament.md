@@ -1,4 +1,8 @@
 ---
+
+authors:
+  - sorkin
+  - makarov
 icon: fontawesome/solid/drum-steelpan
 title: 3D рекомендатор - филамент
 subtitle: Кто продаёт нужный вам пластик

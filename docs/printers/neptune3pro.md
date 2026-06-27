@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Доработки Elegoo Neptune 3 Pro
 icon: material/printer-3d
 ---

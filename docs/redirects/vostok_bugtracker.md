@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: octicons/bug-16
 title: K3D VOSTOK - Багтрекер
 description: Сообщить о проблемах

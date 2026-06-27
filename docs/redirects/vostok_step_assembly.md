@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: octicons/gear-16
 title: K3D VOSTOK - Сборка STEP
 description: Скачать сборку .STEP

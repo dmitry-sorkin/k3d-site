@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Шкивы модифицированной геометрии
 description: Уменьшают амплитуду ряби
 icon: octicons/gear-24

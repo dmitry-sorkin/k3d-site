@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: simple/sequelize
 title: K3D VOSTOK - STL
 description: Скачать файлы для печати STL

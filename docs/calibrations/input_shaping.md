@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: fontawesome/solid/wave-square
 title: Калибровка Input Shaping
 subtitle: Автоматический и ручной подбор шейперов

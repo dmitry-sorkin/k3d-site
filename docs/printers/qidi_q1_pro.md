@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Доработки QIDI Q1 Pro
 description: Исправление проблем принтера
 icon: material/printer-3d

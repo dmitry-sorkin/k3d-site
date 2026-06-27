@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: fontawesome/solid/temperature-low
 title: Калибровка разрешения экструдера
 subtitle: Чтобы экструдер подавал правильное количество филамента

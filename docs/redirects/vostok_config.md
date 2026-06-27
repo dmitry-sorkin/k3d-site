@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/github
 title: K3D VOSTOK - Конфигурация
 description: Скачать конфигурацию принтера и слайсера

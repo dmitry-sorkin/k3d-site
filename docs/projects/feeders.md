@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: fontawesome/solid/gears
 title: Печатающие головы K3D
 subtitle: Обзор проектов

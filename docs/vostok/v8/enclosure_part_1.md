@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/source-commit-local
 title: K3D VOSTOK - Установка первой части зашивки и регулировка рамы
 description: Инструкция по сборке VOSTOK

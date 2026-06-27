@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: fontawesome/brands/telegram
 title: Telegram чат VOSTOK
 description: Обсуждение VOSTOK в Telegram

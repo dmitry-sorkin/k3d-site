@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: fontawesome/brands/telegram
 title: Telegram канал VOSTOK
 description: Новости VOSTOK в Telegram

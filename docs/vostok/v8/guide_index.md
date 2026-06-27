@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/source-commit-start
 title: K3D VOSTOK - С чего начать?
 description: Инструкция по сборке VOSTOK

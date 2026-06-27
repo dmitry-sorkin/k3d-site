@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/forum
 title: K3D Форум
 subtitle: Обсуждение, барахолка и т.д.

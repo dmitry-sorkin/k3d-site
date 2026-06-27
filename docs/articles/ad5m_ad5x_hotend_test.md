@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/printer-3d-nozzle
 title: Тест хотэндов
 subtitle: Flashforge AD5M/AD5X

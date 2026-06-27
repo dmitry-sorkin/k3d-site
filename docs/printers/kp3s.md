@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 title: Доработки Kingroon KP3S
 icon: material/printer-3d
 ---

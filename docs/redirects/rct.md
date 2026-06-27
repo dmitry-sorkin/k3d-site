@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: octicons/package-16
 title: K3D Калибровщик откатов
 ---

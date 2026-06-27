@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/water-check
 title: Калибровка потока
 subtitle: Убрать пере- и недоэкструзию

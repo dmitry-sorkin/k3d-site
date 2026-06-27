@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/notification-clear-all
 title: Порядок калибровок
 subtitle: Как настроить свой принтер с нуля

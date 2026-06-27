@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/format-list-numbered
 title: K3D EBP - покупные детали
 description: Проект печатающей головы для Ender-3 на основе экструдера BMG

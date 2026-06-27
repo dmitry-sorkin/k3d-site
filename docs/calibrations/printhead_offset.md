@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/arrow-left-right-bold
 title: Калибровка смещения печатающих голов
 subtitle: Для мультиэкструдерных принтеров

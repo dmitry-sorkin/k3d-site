@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 hide:
   - navigation
   - toc

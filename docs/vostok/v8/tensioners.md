@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/source-commit-local
 title: K3D VOSTOK - Сборка натяжителей ремней
 description: Инструкция по сборке VOSTOK

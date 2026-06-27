@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/printer-3d-nozzle
 title: Печатающие головы K3D
 subtitle: Обзор проектов

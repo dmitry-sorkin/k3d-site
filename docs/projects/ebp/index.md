@@ -1,4 +1,7 @@
 ---
+
+authors:
+  - sorkin
 icon: material/subdirectory-arrow-right
 title: K3D EBP - Ender-3 BMG Printhead
 subtitle: На основе BMG + E3D V6
