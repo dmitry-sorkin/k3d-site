@@ -20,7 +20,6 @@ theme:
   favicon: pics/favicon.ico
   features:
     - navigation.tabs
-    #    - navigation.tabs.sticky
     - navigation.top
     - navigation.sections
     - content.code.copy
@@ -156,9 +155,11 @@ nav:
       - Сушка филамента: ./part-navi/filament_dryers.md
       - Расходники: ./part-navi/consumables.md
   - VOSTOK:
-      - О VOSTOK: ./vostok/index.md
-      - Инструкции:
-          - С чего начать: ./vostok/manual/start.md
+      - Особенности: ./vostok/index.md
+      - Начало сборки: ./vostok/manual/start.md
+      - Электроника и софт:
+          - Настройка слайсера: ./vostok/manual/slicer_configuration.md
+          - Скрипт быстрой смены инструмента: ./vostok/manual/fast_tool_swaps.md
       - Скачать:
           - Сборка Parasolid: ./redirects/vostok_parasolid_assembly.md
           - Сборка STEP: ./redirects/vostok_step_assembly.md

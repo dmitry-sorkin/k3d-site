@@ -2,7 +2,7 @@
 
 authors:
   - sorkin
-icon: material/source-commit-start
+icon: lucide/list-todo
 title: K3D VOSTOK - С чего начать
 description: Что делать, если вы захотели собрать VOSTOK?
 ---
