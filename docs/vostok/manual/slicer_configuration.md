@@ -230,14 +230,21 @@ T{next_extruder}
 
 ![](./pics/slicer_configuration/orcaslicer_bed_texture.png)
 
-1. Скачайте [архив с моделями и текстурами стола](./assets/vostok_v9.x_bed_models_and_textures.7z){ download="vostok_v9.x_bed_models_and_textures.7z"};
-2. Распакуйте его содержимое в любую удобную папку у вас на компьютере. Желательно чтобы эта папка находилась там, откуда вы случайно не удалите эти файлы, а также чтобы по пути к ней не было кириллицы;
+1. Скачайте модели и текстуры для вашего типоразмера принтера:
+
+  | Типоразмер | Модель | Текстура |
+  |:-|:-:|:-:|
+  | **M** | [:material-download:](./assets/vostok_m9_bed_model_full.stl){ download="vostok_m9_bed_model_full.stl" } | [:material-download:](./assets/vostok_m9_bed_texture_full.png){ download="vostok_m9_bed_texture_full.png" } |
+  | **L** | [:material-download:](./assets/vostok_l9_bed_model_full.stl){ download="vostok_l9_bed_model_full.stl" } | [:material-download:](./assets/vostok_l9_bed_texture_full.png){ download="vostok_l9_bed_texture_full.png" } |
+  | **XL** | [:material-download:](./assets/vostok_xl9_bed_model_full.stl){ download="vostok_xl9_bed_model_full.stl" } | [:material-download:](./assets/vostok_xl9_bed_texture_full.png){ download="vostok_xl9_bed_texture_full.png" } |
+
+2. Поместите модель и текстуру в удобную папку у вас на компьютере. Желательно чтобы эта папка находилась там, откуда вы случайно не удалите эти файлы, а также чтобы по пути к ней не было кириллицы;
 3. Перейдите в `Профиль принтера` → `Основные` → `Область печати`;
-4. В открывшемся окне в качестве текстуры выберите файл `vostok_...9_bed_texture_full.png` из папки под ваш типоразмер принтера;
+4. В открывшемся окне в качестве текстуры выберите файл `vostok_*9_bed_texture_full.png` из папки под ваш типоразмер принтера;
 5. В качестве модели выберите `vostok_*9_bed_model_full.stl` из папки под ваш типоразмер принтера;
 6. Сохраните изменения.
 
-!!! tip "Если вы собираете VOSTOK в нестандартном размере, то модель и текстуру придётся делать самостоятельно. В качестве исходника для текстуры стола используйте файлы `.afdesign` (Affinity). В качестве исходников модели стола используйте модели из сборки принтера"
+!!! tip "Если вы собираете VOSTOK в нестандартном размере, то модель и текстуру придётся делать самостоятельно. В качестве исходника для текстуры стола используйте файлы `.afdesign` (Affinity) из [:material-download: архива](./assets/vostok_v9.x_bed_models_and_textures.7z){ download="vostok_v9.x_bed_models_and_textures.7z" }. В качестве исходников модели стола используйте модели из сборки принтера"
 
 ## Общие рекомендации при нарезке
 
