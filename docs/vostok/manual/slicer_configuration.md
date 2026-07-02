@@ -246,6 +246,266 @@ T{next_extruder}
 
 !!! tip "Если вы собираете VOSTOK в нестандартном размере, то модель и текстуру придётся делать самостоятельно. В качестве исходника для текстуры стола используйте файлы `.afdesign` (Affinity) из [:material-download: архива](./assets/vostok_v9.x_bed_models_and_textures.7z){ download="vostok_v9.x_bed_models_and_textures.7z" }. В качестве исходников модели стола используйте модели из сборки принтера"
 
+## Настройка PrusaSlicer
+
+Настройка PrusaSlicer аналогична настройке OrcaSlicer, за исключением нескольких моментов:
+
+### Размер области печати
+
+В PrusaSlicer нет поддержки IDEX принтеров, поэтому придётся создавать 3 профиля принтера под 3 разных режима печати:
+
+| Режим | VOSTOK M9 | VOSTOK L9 | VOSTOK XL9 | Другие |
+|:-|:-:|:-:|:-:|:-:|
+| Классический | X=400<br>Y=250 | X=400<br>Y=400 | X=500<br>Y=500 | $X = X_{full}$<br>$Y = Y_{full}$ |
+| Дублирующий | X=200<br>Y=250 | X=200<br>Y=400 | X=250<br>Y=500 | $X = X_{full}/2$<br>$Y = Y_{full}$ |
+| Зеркальный | X=179<br>Y=250 | X=179<br>Y=400 | X=229<br>Y=500 | $X = (X_{full} - 42)/2$<br>$Y = Y_{full}$ |
+
+### Стартовый G-код
+
+=== "Классический режим"
+
+    ``` gcode
+    {global imex_mode_index = 0};Выбор режима IDEX. 0 - классический, 1 - дублирующий, 2 - зеркальный
+
+    {if (is_extruder_used[0] and is_extruder_used[1]) or imex_mode_index != 0}
+      {local bed_temp = max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])};При использовании 2 печатающих голов, температура стола будет установлена наибольшей из температур для обоих используемых филаментов
+    {elsif is_extruder_used[1]}
+      {local bed_temp = first_layer_bed_temperature[1]}
+    {else}
+      {local bed_temp = first_layer_bed_temperature[0]}
+    {endif}
+
+    SET_PA_VALUES EXTRUDER=0 ADVANCE={custom_parameter_filament_e0_pa[0]} SMOOTH_TIME={custom_parameter_filament_e0_pa_smooth_time[0]};Установка значения PA для левой печатающей головы
+    SET_PA_VALUES EXTRUDER=1 ADVANCE={custom_parameter_filament_e0_pa[1]} SMOOTH_TIME={custom_parameter_filament_e0_pa_smooth_time[1]};Установка значения PA для правой печатающей головы
+    APPLY_PA_VALUES;Применить сохранённые ранее значения PA
+
+    M190 S{bed_temp};Нагрев стола
+    G28;Автопарковка
+    IDEX_RESET;Сбрасываем режим IDEX на время выполнения скрипта начала печати
+
+    {if imex_mode_index == 0}
+      BED_MESH_CALIBRATE ADAPTIVE=1;Для классического режима снимаем карту высот
+    {else}
+      BED_MESH_CLEAR;Для дублирующего и зеркального режима сбрасываем 
+    {endif}
+
+    G1 F30000
+    PARK_XW;Парковка обеих печатающих голов
+    G1 Y0
+
+    {if is_extruder_used[0]}M104 T0 S{first_layer_temperature[0]}{endif}
+    {if is_extruder_used[1] or imex_mode_index != 0}M104 T1 S{first_layer_temperature[1]}{endif}
+    {if is_extruder_used[0]}M109 T0 S{first_layer_temperature[0]}{endif}
+    {if is_extruder_used[1] or imex_mode_index != 0}M109 T1 S{first_layer_temperature[1]}{endif}
+
+    M83;Переводим экструдер в относительные координаты
+
+    {if imex_mode_index != 0 or (is_extruder_used[0] and is_extruder_used[1])}
+      IDEX_MODE_MIRROR MOVE=1
+    {elsif imex_mode_index == 0}
+      T{initial_extruder}
+    {endif}
+    G1 Z2 F600;Опускаем стол
+    G1 X{is_extruder_used[0] ? 1 : print_bed_max[0] - 1} Y0 F30000;Перемещаемся к началу линии очистки
+    G1 Z0.3 F600;Опускаемся на высоту печати линии очистки
+    G1 Y30 E20 F300;Печатаем линию очистки
+    G1 F30000
+
+    {if imex_mode_index == 0};Классический режим
+      IDEX_RESET
+      {if initial_extruder == 0}
+        PARK_W
+      {else}
+        PARK_X
+      {endif}
+    {elsif imex_mode_index == 1};Дублирующий режим
+      IDEX_MODE_COPY MOVE=1;Включаем дублирующий режим с перемещением печатающих голов в базовую позицию
+    {elsif imex_mode_index == 2};Зеркальный режим
+      IDEX_MODE_MIRROR MOVE=1;Включаем зеркальный режим с перемещением печатающих голов в базовую позицию
+    {endif}
+
+    M220 S100
+    M221 S100
+    G92 E0
+
+    ;Подготовка скрипта быстрой смены инструмента
+    {if imex_mode_index == 0 and is_extruder_used[0] and is_extruder_used[1]}
+      M104 T0 S0
+      M104 T1 S0
+      ;fast_tool_swaps_start
+      T{initial_extruder}
+      M104 T0 S{first_layer_temperature[0]}
+      M104 T1 S{first_layer_temperature[1]}
+    {endif}
+    ```
+
+=== "Дублирующий режим"
+
+    ``` gcode
+    {global imex_mode_index = 1};Выбор режима IDEX. 0 - классический, 1 - дублирующий, 2 - зеркальный
+
+    {if (is_extruder_used[0] and is_extruder_used[1]) or imex_mode_index != 0}
+      {local bed_temp = max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])};При использовании 2 печатающих голов, температура стола будет установлена наибольшей из температур для обоих используемых филаментов
+    {elsif is_extruder_used[1]}
+      {local bed_temp = first_layer_bed_temperature[1]}
+    {else}
+      {local bed_temp = first_layer_bed_temperature[0]}
+    {endif}
+
+    SET_PA_VALUES EXTRUDER=0 ADVANCE={custom_parameter_filament_e0_pa[0]} SMOOTH_TIME={custom_parameter_filament_e0_pa_smooth_time[0]};Установка значения PA для левой печатающей головы
+    SET_PA_VALUES EXTRUDER=1 ADVANCE={custom_parameter_filament_e0_pa[1]} SMOOTH_TIME={custom_parameter_filament_e0_pa_smooth_time[1]};Установка значения PA для правой печатающей головы
+    APPLY_PA_VALUES;Применить сохранённые ранее значения PA
+
+    M190 S{bed_temp};Нагрев стола
+    G28;Автопарковка
+    IDEX_RESET;Сбрасываем режим IDEX на время выполнения скрипта начала печати
+
+    {if imex_mode_index == 0}
+      BED_MESH_CALIBRATE ADAPTIVE=1;Для классического режима снимаем карту высот
+    {else}
+      BED_MESH_CLEAR;Для дублирующего и зеркального режима сбрасываем 
+    {endif}
+
+    G1 F30000
+    PARK_XW;Парковка обеих печатающих голов
+    G1 Y0
+
+    {if is_extruder_used[0]}M104 T0 S{first_layer_temperature[0]}{endif}
+    {if is_extruder_used[1] or imex_mode_index != 0}M104 T1 S{first_layer_temperature[1]}{endif}
+    {if is_extruder_used[0]}M109 T0 S{first_layer_temperature[0]}{endif}
+    {if is_extruder_used[1] or imex_mode_index != 0}M109 T1 S{first_layer_temperature[1]}{endif}
+
+    M83;Переводим экструдер в относительные координаты
+
+    {if imex_mode_index != 0 or (is_extruder_used[0] and is_extruder_used[1])}
+      IDEX_MODE_MIRROR MOVE=1
+    {elsif imex_mode_index == 0}
+      T{initial_extruder}
+    {endif}
+    G1 Z2 F600;Опускаем стол
+    G1 X{is_extruder_used[0] ? 1 : print_bed_max[0] - 1} Y0 F30000;Перемещаемся к началу линии очистки
+    G1 Z0.3 F600;Опускаемся на высоту печати линии очистки
+    G1 Y30 E20 F300;Печатаем линию очистки
+    G1 F30000
+
+    {if imex_mode_index == 0};Классический режим
+      IDEX_RESET
+      {if initial_extruder == 0}
+        PARK_W
+      {else}
+        PARK_X
+      {endif}
+    {elsif imex_mode_index == 1};Дублирующий режим
+      IDEX_MODE_COPY MOVE=1;Включаем дублирующий режим с перемещением печатающих голов в базовую позицию
+    {elsif imex_mode_index == 2};Зеркальный режим
+      IDEX_MODE_MIRROR MOVE=1;Включаем зеркальный режим с перемещением печатающих голов в базовую позицию
+    {endif}
+
+    M220 S100
+    M221 S100
+    G92 E0
+
+    ;Подготовка скрипта быстрой смены инструмента
+    {if imex_mode_index == 0 and is_extruder_used[0] and is_extruder_used[1]}
+      M104 T0 S0
+      M104 T1 S0
+      ;fast_tool_swaps_start
+      T{initial_extruder}
+      M104 T0 S{first_layer_temperature[0]}
+      M104 T1 S{first_layer_temperature[1]}
+    {endif}
+    ```
+
+=== "Зеркальный режим"
+
+    ``` gcode
+    {global imex_mode_index = 2};Выбор режима IDEX. 0 - классический, 1 - дублирующий, 2 - зеркальный
+
+    {if (is_extruder_used[0] and is_extruder_used[1]) or imex_mode_index != 0}
+      {local bed_temp = max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])};При использовании 2 печатающих голов, температура стола будет установлена наибольшей из температур для обоих используемых филаментов
+    {elsif is_extruder_used[1]}
+      {local bed_temp = first_layer_bed_temperature[1]}
+    {else}
+      {local bed_temp = first_layer_bed_temperature[0]}
+    {endif}
+
+    SET_PA_VALUES EXTRUDER=0 ADVANCE={custom_parameter_filament_e0_pa[0]} SMOOTH_TIME={custom_parameter_filament_e0_pa_smooth_time[0]};Установка значения PA для левой печатающей головы
+    SET_PA_VALUES EXTRUDER=1 ADVANCE={custom_parameter_filament_e0_pa[1]} SMOOTH_TIME={custom_parameter_filament_e0_pa_smooth_time[1]};Установка значения PA для правой печатающей головы
+    APPLY_PA_VALUES;Применить сохранённые ранее значения PA
+
+    M190 S{bed_temp};Нагрев стола
+    G28;Автопарковка
+    IDEX_RESET;Сбрасываем режим IDEX на время выполнения скрипта начала печати
+
+    {if imex_mode_index == 0}
+      BED_MESH_CALIBRATE ADAPTIVE=1;Для классического режима снимаем карту высот
+    {else}
+      BED_MESH_CLEAR;Для дублирующего и зеркального режима сбрасываем 
+    {endif}
+
+    G1 F30000
+    PARK_XW;Парковка обеих печатающих голов
+    G1 Y0
+
+    {if is_extruder_used[0]}M104 T0 S{first_layer_temperature[0]}{endif}
+    {if is_extruder_used[1] or imex_mode_index != 0}M104 T1 S{first_layer_temperature[1]}{endif}
+    {if is_extruder_used[0]}M109 T0 S{first_layer_temperature[0]}{endif}
+    {if is_extruder_used[1] or imex_mode_index != 0}M109 T1 S{first_layer_temperature[1]}{endif}
+
+    M83;Переводим экструдер в относительные координаты
+
+    {if imex_mode_index != 0 or (is_extruder_used[0] and is_extruder_used[1])}
+      IDEX_MODE_MIRROR MOVE=1
+    {elsif imex_mode_index == 0}
+      T{initial_extruder}
+    {endif}
+    G1 Z2 F600;Опускаем стол
+    G1 X{is_extruder_used[0] ? 1 : print_bed_max[0] - 1} Y0 F30000;Перемещаемся к началу линии очистки
+    G1 Z0.3 F600;Опускаемся на высоту печати линии очистки
+    G1 Y30 E20 F300;Печатаем линию очистки
+    G1 F30000
+
+    {if imex_mode_index == 0};Классический режим
+      IDEX_RESET
+      {if initial_extruder == 0}
+        PARK_W
+      {else}
+        PARK_X
+      {endif}
+    {elsif imex_mode_index == 1};Дублирующий режим
+      IDEX_MODE_COPY MOVE=1;Включаем дублирующий режим с перемещением печатающих голов в базовую позицию
+    {elsif imex_mode_index == 2};Зеркальный режим
+      IDEX_MODE_MIRROR MOVE=1;Включаем зеркальный режим с перемещением печатающих голов в базовую позицию
+    {endif}
+
+    M220 S100
+    M221 S100
+    G92 E0
+
+    ;Подготовка скрипта быстрой смены инструмента
+    {if imex_mode_index == 0 and is_extruder_used[0] and is_extruder_used[1]}
+      M104 T0 S0
+      M104 T1 S0
+      ;fast_tool_swaps_start
+      T{initial_extruder}
+      M104 T0 S{first_layer_temperature[0]}
+      M104 T1 S{first_layer_temperature[1]}
+    {endif}
+    ```
+
+### Настройка Pressure Advance
+
+`Настройки филамента` → `Пользовательский G-код` → `Пользовательские параметры`
+
+``` json
+{
+  "e0_pa": "0.025",
+  "e0_pa_smooth_time": "0.02",
+  "e1_pa": "0.035",
+  "e1_pa_smooth_time": "0.02"
+}
+```
+
 ## Общие рекомендации при нарезке
 
 - Помните, что зона около 10-12мм вблизи левого края стола не покрывается правой печатающей головой, и такая же зона около правого края стола не покрывается левой головой. На данный момент проверки на выход модели в эту зону нет;
