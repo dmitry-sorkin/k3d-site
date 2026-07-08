@@ -161,6 +161,7 @@ nav:
           - Прошивка: ./vostok/manual/firmware.md
           - Настройка слайсера: ./vostok/manual/slicer_configuration.md
           - Скрипт быстрой смены инструмента: ./vostok/manual/fast_tool_swaps.md
+          - Макросы: ./vostok/manual/macros.md
       - Скачать:
           - Сборка Parasolid: ./redirects/vostok_parasolid_assembly.md
           - Сборка STEP: ./redirects/vostok_step_assembly.md
