@@ -442,3 +442,7 @@ input[type="text"]:disabled {
     opacity: 0.6;
 }
 
+.rounded {
+	border-radius: 8px;
+}
+

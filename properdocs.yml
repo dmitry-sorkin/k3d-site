@@ -158,6 +158,7 @@ nav:
       - Особенности: ./vostok/index.md
       - Начало сборки: ./vostok/manual/start.md
       - Электроника и софт:
+          - Схемы подключения: ./vostok/manual/wiring.md
           - Прошивка: ./vostok/manual/firmware.md
           - Настройка слайсера: ./vostok/manual/slicer_configuration.md
           - Скрипт быстрой смены инструмента: ./vostok/manual/fast_tool_swaps.md
