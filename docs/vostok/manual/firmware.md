@@ -3,7 +3,7 @@ authors:
   - sorkin
   - alexander
 icon: lucide/code-2
-title: K3D VOSTOK - Прошивка
+title: VOSTOK - Прошивка
 description: Octopus Pro v1.1 + Fysetc H36
 ---
 

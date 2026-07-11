@@ -2,7 +2,7 @@
 authors:
   - sorkin
 icon: custom/orcaslicer
-title: K3D VOSTOK - Конфигурация слайсера
+title: VOSTOK - Конфигурация слайсера
 description: Как правильно настроить PrusaSlicer и OrcaSlicer
 ---
 

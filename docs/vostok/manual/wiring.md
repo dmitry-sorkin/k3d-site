@@ -2,7 +2,7 @@
 authors:
   - sorkin
 icon: lucide/plug
-title: K3D VOSTOK - Схемы подключения
+title: VOSTOK - Схемы подключения
 description: Подробные схемы подключения всех электронных компонентов VOSTOK
 ---
 

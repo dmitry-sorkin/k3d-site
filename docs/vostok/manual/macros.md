@@ -2,7 +2,7 @@
 authors:
   - sorkin
 icon: lucide/command
-title: K3D VOSTOK - Макросы
+title: VOSTOK - Макросы
 description: Гайд по макросам в конфигурации VOSTOK
 ---
 

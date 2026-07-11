@@ -3,7 +3,7 @@
 authors:
   - sorkin
 icon: lucide/list-todo
-title: K3D VOSTOK - С чего начать
+title: VOSTOK - С чего начать
 description: Что делать, если вы захотели собрать VOSTOK?
 ---
 

@@ -3,7 +3,7 @@
 authors:
   - sorkin
 icon: material/toolbox
-title: K3D VOSTOK - Инструменты
+title: VOSTOK - Инструменты
 subtitle: Детали, облегчающие сборку
 description: Печатные детали, облегчающие сборку
 ---

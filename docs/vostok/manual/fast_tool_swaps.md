@@ -2,7 +2,7 @@
 authors:
   - sorkin
 icon: material/swap-horizontal
-title: K3D VOSTOK - Скрипт быстрой смены инструмента
+title: VOSTOK - Скрипт быстрой смены инструмента
 description: Как правильно настроить быструю смену инструмента на IDEX
 ---
 
