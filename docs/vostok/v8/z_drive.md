@@ -211,37 +211,3 @@ description: Инструкция по сборке VOSTOK
 4. Опустите винт с муфтой пока торец винта не упрётся в торец вала мотора;
 5. Затяните нижние винты муфты;
 6. При необходимости отрегулируйте положение мотора или кронштейна гайки так, чтобы винт был вертикален (точности "на глаз хватит").
-   
----
-
-<table class="navitable">
-    <tbody>
-        <tr>
-            <td><a class="md-button" href="../bed_frame" style="width: 100%; padding-left: 0em; padding-right: 0em;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg></span> Рама стола</a></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
----
-
-<div id='discourse-comments'></div>
-<meta name='discourse-username' content='DISCOURSE_USERNAME'>
-
-<script type="text/javascript">
-  DiscourseEmbed = {
-    discourseUrl: 'https://forum.k3d.tech/',
-    discourseEmbedUrl: 'https://k3d.tech/vostok/y_drive/',
-    // className: 'CLASS_NAME',
-  };
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
-
----
-
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://k3d.tech/vostok/">K3D VOSTOK</a> by <span property="cc:attributionName">Dmitry Sorkin</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
