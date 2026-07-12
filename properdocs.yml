@@ -163,6 +163,7 @@ nav:
           - Багтрекер: ./redirects/vostok_bugtracker.md
       - Инструкция по сборке:
           - Начало сборки: ./vostok/manual/start.md
+          - Подготовка: ./vostok/manual/prepare.md
       - Электроника и софт:
           - Схемы подключения: ./vostok/manual/wiring.md
           - Прошивка: ./vostok/manual/firmware.md
