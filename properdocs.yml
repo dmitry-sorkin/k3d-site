@@ -155,26 +155,20 @@ nav:
       - Сушка филамента: ./part-navi/filament_dryers.md
       - Расходники: ./part-navi/consumables.md
   - VOSTOK:
-      - Особенности: ./vostok/index.md
-      - Начало сборки: ./vostok/manual/start.md
+      - О VOSTOK: ./vostok/index.md
+      - Скачать: ./vostok/releases/index.md
+      - Ресурсы проекта:
+          - Telegram чат: ./redirects/vostok_chat.md
+          - Модификации: ./redirects/vostok_mods.md
+          - Багтрекер: ./redirects/vostok_bugtracker.md
+      - Инструкция по сборке:
+          - Начало сборки: ./vostok/manual/start.md
       - Электроника и софт:
           - Схемы подключения: ./vostok/manual/wiring.md
           - Прошивка: ./vostok/manual/firmware.md
           - Настройка слайсера: ./vostok/manual/slicer_configuration.md
           - Скрипт быстрой смены инструмента: ./vostok/manual/fast_tool_swaps.md
           - Макросы: ./vostok/manual/macros.md
-      - Скачать:
-          - Сборка Parasolid: ./redirects/vostok_parasolid_assembly.md
-          - Сборка STEP: ./redirects/vostok_step_assembly.md
-          - Файлы STL: ./redirects/vostok_stl.md
-          - Спецификация: ./redirects/vostok_specification.md
-          - Чертежи: ./redirects/vostok_drawings.md
-          - Конфигурация: ./redirects/vostok_config.md
-      - Ресурсы проекта:
-          - Telegram чат: ./redirects/vostok_chat.md
-          - Релизы: ./redirects/vostok_releases.md
-          - Модификации: ./redirects/vostok_mods.md
-          - Багтрекер: ./redirects/vostok_bugtracker.md
       - Архивные статьи:
           - Инструкции v0.8.x:
               - С чего начать: ./vostok/v8/guide_index.md

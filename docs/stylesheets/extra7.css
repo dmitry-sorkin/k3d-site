@@ -59,7 +59,7 @@
 }
 
 .md-grid {
-	max-width: 1500px; 
+	max-width: 1500px;
 }
 
 .md-nav__link svg {
@@ -431,11 +431,11 @@ input[type="text"]:disabled {
 }
 
 .inlineButton:focus {
-    color: var(--md-accent-fg-color) !important; 
+    color: var(--md-accent-fg-color) !important;
 }
 
 .inlineButton:hover {
-    color: var(--md-accent-fg-color) !important; 
+    color: var(--md-accent-fg-color) !important;
 }
 
 .inlineButton:disabled {
@@ -446,3 +446,34 @@ input[type="text"]:disabled {
 	border-radius: 8px;
 }
 
+/* Скругление углов у всех изображений в контенте (8px), кроме эмодзи и логотипа */
+.md-typeset img:not(.twemoji):not(.md-logo) {
+  border-radius: 8px;
+}
+
+/* Вариант grid cards без отступов между карточками */
+.grid.cards.no-gap > ul > li {
+  padding: 0;
+}
+
+.grid.cards.no-gap.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.cards.no-gap.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 60rem) {
+  .grid.cards.no-gap.cols-2,
+  .grid.cards.no-gap.cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .grid.cards.no-gap.cols-2,
+  .grid.cards.no-gap.cols-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
