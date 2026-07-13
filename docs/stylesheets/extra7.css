@@ -442,13 +442,13 @@ input[type="text"]:disabled {
     opacity: 0.6;
 }
 
-.rounded {
-	border-radius: 8px;
-}
-
 /* Скругление углов у всех изображений в контенте (8px), кроме эмодзи и логотипа */
 .md-typeset img:not(.twemoji):not(.md-logo) {
   border-radius: 8px;
+}
+
+.md-typeset img.notrounded:not(.twemoji):not(.md-logo) {
+  border-radius: 0;
 }
 
 /* Вариант grid cards без отступов между карточками */
@@ -476,4 +476,44 @@ input[type="text"]:disabled {
   .grid.cards.no-gap.cols-3 {
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+/* Горизонтальный блок «картинка слева, текст справа».
+   На широком экране элементы в строку с вертикальным центрированием.
+   На узком — перестраиваются в колонку, картинка растягивается на всю ширину. */
+.md-typeset .image-text-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1em 0;
+}
+
+/* Картинка справа, текст слева. DOM-порядок при этом сохраняется обычный. */
+.md-typeset .image-text-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.md-typeset .image-text-row .image-text-img {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.md-typeset .image-text-row .image-text-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.md-typeset .image-text-row .image-text-content {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.md-typeset .image-text-row .image-text-content > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .image-text-row .image-text-content > :last-child {
+    margin-bottom: 0;
 }

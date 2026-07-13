@@ -30,6 +30,10 @@ theme:
   custom_dir: overrides
   font:
     text: Cascadia Code
+  admonition:
+    fire:
+      icon: material/fire
+      color: '#ff7700'
 plugins:
   - glightbox
   - social:
