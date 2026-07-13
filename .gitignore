@@ -6,9 +6,9 @@ docs/.obsidian/workspace
 *.ods#
 .cache/*
 .DS_Store
-*~lock.*#
+*~lock~
 bau.sh
+/*.lock
 /.vscode
 /.continue
-docs/vostok/manual/pics/wiring/wiring_source.af~lock~
 nul
