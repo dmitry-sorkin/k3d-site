@@ -499,7 +499,9 @@ input[type="text"]:disabled {
     max-width: 100%;
 }
 
-.md-typeset .image-text-row .image-text-img img {
+/* :where(...) зануляет специфичность классов, чтобы не перебивать
+   правила темы для img[src$="#only-light"] / img[src$="#only-dark"]. */
+:where(.md-typeset .image-text-row .image-text-img) img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -516,4 +518,8 @@ input[type="text"]:disabled {
 
 .md-typeset .image-text-row .image-text-content > :last-child {
     margin-bottom: 0;
+}
+
+.md-typeset .admonition-title:before, .md-typeset summary:before {
+    top: .3rem;
 }

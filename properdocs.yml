@@ -34,6 +34,15 @@ theme:
     fire:
       icon: material/fire
       color: '#ff7700'
+    speed:
+      icon: material/speedometer
+      color: '#4caf50'
+    time:
+      icon: material/clock-outline
+      color: '#2196f3'
+    clone:
+          icon: octicons/mirror-16
+          color: '#ffc107'
 plugins:
   - glightbox
   - social:
