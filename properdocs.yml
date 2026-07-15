@@ -59,7 +59,7 @@ plugins:
         "./redirects/vostok_channel.md": "https://t.me/vostok3dp"
         "./redirects/vostok_chat.md": "https://t.me/k3d_vostok"
         "./redirects/vostok_mods.md": "https://forum.k3d.tech/c/vostok-mods"
-        "./redirects/vostok_releases.md": "https://forum.k3d.tech/c/vostok-releases/"
+        "./redirects/vostok_releases.md": "vostok/releases/index.md"
         "./bemege/index.md": "projects/bemege/index.md"
         "./feeder965/index.md": "projects/feeder965/index.md"
         "./feeder965/releases.md": "projects/feeder965/releases.md"
