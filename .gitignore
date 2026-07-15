@@ -10,5 +10,6 @@ docs/.obsidian/workspace
 bau.sh
 /*.lock
 /.vscode
+/.vs
 /.continue
 nul
