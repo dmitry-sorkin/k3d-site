@@ -54,7 +54,7 @@ description: Проект печатающей головы для Ender-3 на 
 - Добавлены версии деталей под вплавляемые втулки
 - Добавлено крепление BLTouch
 - Незначительно изменена геометрия деталей `base` и `mount`
-- Значительно увеличено выходное сечение вентиляторов. Обдув расчитан заново
+- Значительно увеличено выходное сечение вентиляторов. Обдув рассчитан заново
 
 ### Скачать
 
@@ -83,7 +83,7 @@ description: Проект печатающей головы для Ender-3 на 
 
 ### Скачать
 
-- [:material-printer-3d-nozzle: Крошнтейн](./releases/3.0/mount_v3.stl){ download="mount_v3.stl" }
+- [:material-printer-3d-nozzle: Кронштейн](./releases/3.0/mount_v3.stl){ download="mount_v3.stl" }
 - [:material-printer-3d-nozzle: Корпус](./releases/3.0/base_v3.stl){ download="base_v3.stl" }
 - [:material-printer-3d-nozzle: Сопло](./releases/3.0/fan_duct_v3.stl){ download="fan_duct_v3.stl" }
 - [:material-video-3d: Сборка STEP](./releases/3.0/k3d_e3_bmg_v6_printhead.stp){ download="k3d_e3_bmg_v6_printhead.stp" }

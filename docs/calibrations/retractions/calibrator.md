@@ -43,7 +43,7 @@ hide:
       <tr>
         <td class="lang" id="table.z_offset.title">Z-offset</td>
         <td style="text-align:center"><input class="calibratorInput" type="text" id="zOffset" name="zOffset" value="0.0"></td>
-        <td class="lang" id="table.z_offset.description" style="text-align: justify;">[мм] Смещение всей модели по вертикали. Нужно чтобы компенсировать слишком тонкую/толстую калибровку первого слоя. В общем случае оставьте ноль</td>
+        <td class="lang" id="table.z_offset.description" style="text-align: justify;">[мм] Смещение всей модели по вертикали. Нужно, чтобы компенсировать слишком тонкую/толстую калибровку первого слоя. В общем случае оставьте ноль</td>
       </tr>
       <tr>
         <td class="lang" id="table.delta.title">Начало координат в центре стола</td>
@@ -136,8 +136,8 @@ hide:
       <tr>
         <td class="lang" id="table.segment_height.title">Высота сегмента</td>
         <td style="text-align:center"><input class="calibratorInput" type="text" id="segmentHeight" name="segmentHeight" value="3"></td>
-        <td class="lang" id="table.segment_height.description" style="text-align: justify;">[мм] Высота одного сегмента башенки. К примеру, если высота сегмента 3мм, а количество сегментов 10, то
-          высота всей башенки будет 30мм</td>
+        <td class="lang" id="table.segment_height.description" style="text-align: justify;">[мм] Высота одного сегмента башенки. К примеру, если высота сегмента 3 мм, а количество сегментов 10, то
+          высота всей башенки будет 30 мм</td>
       </tr>
       <tr>
         <td class="lang" id="table.k_factor.title">k-фактор Linear Advance</td>
