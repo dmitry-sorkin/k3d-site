@@ -21,7 +21,7 @@ show_author: false
 <div class="image-text-row" markdown>
 <div class="image-text-img" markdown>
 
-![](.\manual\pics\slicer_configuration\fast_tool_swaps.webp){ width="300" }
+![](manual/pics/slicer_configuration/fast_tool_swaps.webp){ width="300" }
 
 </div>
 <div class="image-text-content" markdown>
@@ -123,8 +123,8 @@ IDEX хорош не только в печати одно/двухматери�
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](.\pics\printhead_boards.png#only-light){ width="300" }
-![](.\pics\printhead_boards_dark.png#only-dark){ width="300" }
+![](pics/printhead_boards.png#only-light){ width="300" }
+![](pics/printhead_boards_dark.png#only-dark){ width="300" }
 
 </div>
 <div class="image-text-content" markdown>

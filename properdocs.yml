@@ -92,16 +92,9 @@ plugins:
         "./vostok/tersioners.md": "vostok/v8/tensioners.md"
         "./vostok/x_beam.md": "vostok/v8/x_beam.md"
         "./vostok/xu_drives.md": "vostok/v8/xu_drives.md"
-        "./vostok/xy_endstops.md": "vostok/v8/xy_endstops.md"
         "./vostok/y_drive.md": "vostok/v8/y_drive.md"
         "./vostok/z_drive.md": "vostok/v8/z_drive.md"
         "./articles/filament_drying.md": "part-navi/filament_dryers.md"
-        "./redirects/vostok_drawings.md": "vostok/releases/latest/drawings.7z"
-        "./redirects/vostok_parasolid_assembly.md": "vostok/releases/latest/assembly.x_t.7z"
-        "./redirects/vostok_step_assembly.md": "vostok/releases/latest/assembly.stp.7z"
-        "./redirects/vostok_specification.md": "vostok/releases/latest/specification.ods"
-        "./redirects/vostok_stl.md": "vostok/releases/latest/stl.7z"
-        "./redirects/vostok_config.md": "https://github.com/dmitry-sorkin/vostok_configuration"
   - charts
   - table-reader
 markdown_extensions:
