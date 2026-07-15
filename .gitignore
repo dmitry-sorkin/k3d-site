@@ -13,3 +13,11 @@ bau.sh
 /.vs
 /.continue
 nul
+
+# Python / MkDocs build
+.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.build/
+build.sh
