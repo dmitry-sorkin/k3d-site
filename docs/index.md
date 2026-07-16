@@ -27,8 +27,8 @@ show_author: false
 
 - :material-printer-3d:{ .lg .middle } __K3D VOSTOK__
 
-	├ [`:octicons-rocket-24: K3D VOSTOK`](./vostok/index.md)<br>
-	├ [`:material-download: Релизы`](./vostok/releases/index.md){ target="_blank" }<br>
+	├ [:octicons-rocket-24: K3D VOSTOK](./vostok/index.md)<br>
+	├ [:material-download: Релизы](./vostok/releases/index.md){ target="_blank" }<br>
 	├ [:material-tools: Инструменты](./vostok/tools.md)<br>
 	├ [:octicons-gear-16: Модификации](./redirects/vostok_mods.md){ target="_blank" }<br>
 	└ [:octicons-bug-16: Багтрекер](./redirects/vostok_bugtracker.md){ target="_blank" }
