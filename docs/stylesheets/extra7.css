@@ -520,6 +520,10 @@ input[type="text"]:disabled {
     margin-bottom: 0;
 }
 
+.md-typeset .image-text-row .image-text-content > p {
+    line-height: 1.6;
+}
+
 .md-typeset .admonition-title:before, .md-typeset summary:before {
     top: .3rem;
 }
