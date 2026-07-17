@@ -30,7 +30,7 @@ docs/
   articles/           # long-form posts (print_strong, custom_gcode, nozzle_test_2024, ultra_high_flow_hotends, ad5m_ad5x_hotend_test, cooling_problems)
   redirects/          # stub .md files whose real target is in properdocs.yml `redirect_maps`
   pics/, assets/, models/   # images and 3D models referenced from MD
-  stylesheets/        # extra7.css referenced from theme
+  stylesheets/        # extra8.css referenced from theme
   javascripts/        # mathjax loader
 overrides/            # Material theme partial overrides (partials/integrations/, .icons/)
 site/                 # build output, gitignored

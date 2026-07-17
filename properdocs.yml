@@ -144,7 +144,7 @@ extra:
     provider: custom
     property: foobar
 extra_css:
-  - stylesheets/extra7.css
+  - stylesheets/extra8.css
 extra_javascript:
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

@@ -480,22 +480,22 @@ input[type="text"]:disabled {
 
 /* Горизонтальный блок «картинка слева, текст справа».
    На широком экране элементы в строку с вертикальным центрированием.
-   На узком — перестраиваются в колонку, картинка растягивается на всю ширину. */
+   На узком — перестраиваются в колонку, ширина текста жёстко равна ширине картинки. */
 .md-typeset .image-text-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
     margin: 1em 0;
 }
 
 /* Картинка справа, текст слева. DOM-порядок при этом сохраняется обычный. */
 .md-typeset .image-text-row.reverse {
-    flex-direction: row-reverse;
+    grid-template-columns: minmax(0, 1fr) auto;
 }
 
 .md-typeset .image-text-row .image-text-img {
-    flex: 0 0 auto;
     max-width: 100%;
 }
 
@@ -508,8 +508,20 @@ input[type="text"]:disabled {
 }
 
 .md-typeset .image-text-row .image-text-content {
-    flex: 1 1 0;
     min-width: 0;
+}
+
+/* Узкий экран: одна колонка во всю ширину контейнера;
+   картинка тянется на всю колонку, текст под ней занимает ту же ширину. */
+@media (max-width: 40rem) {
+    .md-typeset .image-text-row,
+    .md-typeset .image-text-row.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    :where(.md-typeset .image-text-row .image-text-img) img {
+        width: 100%;
+    }
 }
 
 .md-typeset .image-text-row .image-text-content > :first-child {
