@@ -442,12 +442,15 @@ input[type="text"]:disabled {
     opacity: 0.6;
 }
 
-/* Скругление углов у всех изображений в контенте (8px), кроме эмодзи и логотипа */
-.md-typeset img:not(.twemoji):not(.md-logo) {
+/* Скругление углов у всех изображений и видео в контенте (8px),
+   кроме эмодзи и логотипа */
+.md-typeset img:not(.twemoji):not(.md-logo),
+.md-typeset video {
   border-radius: 8px;
 }
 
-.md-typeset img.notrounded:not(.twemoji):not(.md-logo) {
+.md-typeset img.notrounded:not(.twemoji):not(.md-logo),
+.md-typeset video.notrounded {
   border-radius: 0;
 }
 
