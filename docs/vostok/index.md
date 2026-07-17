@@ -15,7 +15,6 @@ show_author: false
 ![](./pics/vostok_logo_black.png#only-light){ .notrounded width="900" }
 
 <video autoplay loop muted playsinline width="900">
-  <source src="./pics/index_main.webm" type="video/webm">
   <source src="./pics/index_main.mp4" type="video/mp4">
 </video>
 
@@ -27,7 +26,6 @@ show_author: false
 <div class="image-text-img" markdown>
 
 <video autoplay loop muted playsinline width="300">
-  <source src="manual/pics/slicer_configuration/fast_tool_swaps.webm" type="video/webm">
   <source src="manual/pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
 </video>
 
@@ -49,7 +47,6 @@ show_author: false
 <div class="image-text-img" markdown>
 
 <video autoplay loop muted playsinline width="300">
-  <source src="./pics/hotend.webm" type="video/webm">
   <source src="./pics/hotend.mp4" type="video/mp4">
 </video>
 
@@ -71,7 +68,6 @@ show_author: false
 <div class="image-text-img" markdown>
 
 <video autoplay loop muted playsinline width="300">
-  <source src="./pics/speed.webm" type="video/webm">
   <source src="./pics/speed.mp4" type="video/mp4">
 </video>
 
@@ -97,7 +93,6 @@ show_author: false
 <div class="image-text-img" markdown>
 
 <video autoplay loop muted playsinline width="330">
-  <source src="./pics/mirror.webm" type="video/webm">
   <source src="./pics/mirror.mp4" type="video/mp4">
 </video>
 
