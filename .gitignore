@@ -3,6 +3,7 @@ site/
 docs/.obsidian/workspace
 
 .idea
+.tmp/
 *.ods#
 .cache/*
 .DS_Store
