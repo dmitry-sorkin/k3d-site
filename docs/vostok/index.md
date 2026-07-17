@@ -14,7 +14,10 @@ show_author: false
 ![](./pics/vostok_logo_white.png#only-dark){ .notrounded width="900" }
 ![](./pics/vostok_logo_black.png#only-light){ .notrounded width="900" }
 
-![](./pics/index_main.webp){ width="900" }
+<video autoplay loop muted playsinline width="900">
+  <source src="./pics/index_main.webm" type="video/webm">
+  <source src="./pics/index_main.mp4" type="video/mp4">
+</video>
 
 <p align="center" style="font-size: 1.3em;">Проект быстрого крупногабаритного IDEX 3D-принтера с открытыми исходниками</p>
 
@@ -23,7 +26,10 @@ show_author: false
 <div class="image-text-row" markdown>
 <div class="image-text-img" markdown>
 
-![](manual/pics/slicer_configuration/fast_tool_swaps.webp){ width="300" }
+<video autoplay loop muted playsinline width="300">
+  <source src="manual/pics/slicer_configuration/fast_tool_swaps.webm" type="video/webm">
+  <source src="manual/pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
+</video>
 
 </div>
 <div class="image-text-content" markdown>
@@ -42,7 +48,10 @@ show_author: false
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/hotend.webp){ width="300" align="right" }
+<video autoplay loop muted playsinline width="300">
+  <source src="./pics/hotend.webm" type="video/webm">
+  <source src="./pics/hotend.mp4" type="video/mp4">
+</video>
 
 </div>
 <div class="image-text-content" markdown>
@@ -61,7 +70,10 @@ show_author: false
 <div class="image-text-row" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/speed.webp){ width="300" }
+<video autoplay loop muted playsinline width="300">
+  <source src="./pics/speed.webm" type="video/webm">
+  <source src="./pics/speed.mp4" type="video/mp4">
+</video>
 
 </div>
 <div class="image-text-content" markdown>
@@ -84,7 +96,10 @@ show_author: false
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/mirror.webp){ width="330" }
+<video autoplay loop muted playsinline width="330">
+  <source src="./pics/mirror.webm" type="video/webm">
+  <source src="./pics/mirror.mp4" type="video/mp4">
+</video>
 
 </div>
 <div class="image-text-content" markdown>

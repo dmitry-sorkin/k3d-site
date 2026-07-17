@@ -21,3 +21,6 @@ nul
 .pytest_cache/
 .build/
 build.sh
+
+# ProRes source footage for animations (large files, kept locally only)
+docs/vostok/pics/sources/

@@ -479,11 +479,11 @@ input[type="text"]:disabled {
 }
 
 /* Горизонтальный блок «картинка слева, текст справа».
-   На широком экране элементы в строку с вертикальным центрированием.
-   На узком — перестраиваются в колонку, ширина текста жёстко равна ширине картинки. */
+   Используем flex вместо grid, потому что flex-direction: row-reverse —
+   единственный короткий способ визуально переставить элементы без order. */
 .md-typeset .image-text-row {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
@@ -492,23 +492,33 @@ input[type="text"]:disabled {
 
 /* Картинка справа, текст слева. DOM-порядок при этом сохраняется обычный. */
 .md-typeset .image-text-row.reverse {
-    grid-template-columns: minmax(0, 1fr) auto;
+    flex-direction: row-reverse;
 }
 
 .md-typeset .image-text-row .image-text-img {
+    flex: 0 0 auto;
     max-width: 100%;
+}
+
+.md-typeset .image-text-row .image-text-content {
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 /* :where(...) зануляет специфичность классов, чтобы не перебивать
    правила темы для img[src$="#only-light"] / img[src$="#only-dark"]. */
-:where(.md-typeset .image-text-row .image-text-img) img {
+:where(.md-typeset .image-text-row .image-text-img) img,
+:where(.md-typeset .image-text-row .image-text-img) video {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.md-typeset .image-text-row .image-text-content {
-    min-width: 0;
+/* <video> без загруженных метаданных имеет intrinsic 0×0 → без явной ширины
+   flex-basis: auto даёт ноль, и блок пропадает. Задаём width + aspect-ratio. */
+:where(.md-typeset .image-text-row .image-text-img) video {
+    width: 320px;
+    aspect-ratio: 1 / 1;
 }
 
 /* Узкий экран: одна колонка во всю ширину контейнера;
@@ -516,10 +526,11 @@ input[type="text"]:disabled {
 @media (max-width: 40rem) {
     .md-typeset .image-text-row,
     .md-typeset .image-text-row.reverse {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
-    :where(.md-typeset .image-text-row .image-text-img) img {
+    :where(.md-typeset .image-text-row .image-text-img) img,
+    :where(.md-typeset .image-text-row .image-text-img) video {
         width: 100%;
     }
 }
