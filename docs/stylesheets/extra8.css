@@ -582,19 +582,29 @@ input[type="text"]:disabled {
 
 /* В галерее grid.cards.no-gap рендерится сеткой квадратных превью:
    кроп через object-fit: cover, оригинал открывается по клику через
-   <a class="glightbox">, который генерит build.py. */
+   glightbox (он навешивается на ссылки с data-glightbox). */
 .md-typeset .gallery .grid.cards.no-gap > ul > li {
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 .md-typeset .gallery .grid.cards.no-gap > ul > li > a,
 .md-typeset .gallery .grid.cards.no-gap > ul > li > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p > a,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > img,
 .md-typeset .gallery .grid.cards.no-gap > ul > li > video {
   display: block;
   width: 100%;
   height: 100%;
 }
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 .md-typeset .gallery .grid.cards.no-gap > ul > li > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > img,
 .md-typeset .gallery .grid.cards.no-gap > ul > li > video {
   object-fit: cover;
 }

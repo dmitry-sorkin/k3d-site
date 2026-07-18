@@ -27,6 +27,12 @@ from __future__ import annotations
 import re
 import sys
 from pathlib import Path
+from typing import Optional
+
+try:
+    from PIL import Image
+except ImportError:  # Pillow опционален — без него подставляем "1".
+    Image = None  # type: ignore[assignment]
 
 GALLERY_DIR = Path("docs/vostok/gallery")
 POSTS_DIR = GALLERY_DIR / "posts"
@@ -48,6 +54,45 @@ show_author: false
 <div class="gallery" markdown>
 
 """
+
+VERSION_UNKNOWN = "v?"
+VERSION_9X = "v9.x"
+VERSION_08X = "v0.8.x"
+
+
+def format_title(version: str, size: str, date: str) -> str:
+    v = (version or "").strip()
+    if v == "-" or not v:
+        v = VERSION_UNKNOWN
+    elif not v.startswith("v"):
+        v = "v" + v
+    # Из типоразмера вытаскиваем только размер стола: "L (400x400)" → "400x400".
+    s = (size or "").strip()
+    if not s or s == "-":
+        s = "-"
+    else:
+        m = re.search(r"(\d+\s*[xх×]\s*\d+)", s)
+        s = re.sub(r"\s+", "", m.group(1).replace("х", "x").replace("×", "x")) if m else s
+    # Выравниваем колонку версий по центру: слева и справа от названия
+    # одинаковое количество неразрывных пробелов (лишний — слева).
+    col = max(len(VERSION_9X), len(VERSION_08X), len(VERSION_UNKNOWN))
+    pad = col - len(v)
+    left = (pad + 1) // 2
+    right = pad - left
+    return f"{'&nbsp;' * left}{v}{'&nbsp;' * right} | {s}"
+
+
+def version_rank(version: str) -> int:
+    v = (version or "").strip()
+    if v in ("9.x", "v9.x"):
+        return 0
+    if v in ("0.8.x", "v0.8.x"):
+        return 1
+    return 2
+
+
+def date_sort_key(date: str) -> str:
+    return date or "0000-00-00"
 
 FOOTER = """</div>
 
@@ -133,6 +178,16 @@ def media_markup(post_dir: Path) -> str:
     return "\n".join(lines)
 
 
+def image_dims(path: Path) -> Optional[tuple[int, int]]:
+    if Image is None:
+        return None
+    try:
+        with Image.open(path) as im:
+            return im.size
+    except Exception:
+        return None
+
+
 def escape_md(text: str) -> str:
     # Не экранируем специально, чтобы сохранить ссылки и форматирование из текста.
     return text
@@ -161,7 +216,7 @@ def render_post(post_dir: Path) -> str:
 
     lines = [
         '<article class="gallery-post" markdown>',
-        f"## {author} {{ #{anchor} }}",
+        f"## {format_title(version, size, date)} {{ #{anchor} }}",
         "",
         "---",
         "",
@@ -196,7 +251,13 @@ def render_post(post_dir: Path) -> str:
             lines.append(f'- <video src="{rel}" controls preload="none"></video>')
         elif suffix in {".jpg", ".jpeg", ".png", ".webp", ".gif"}:
             alt = post_dir.name
-            lines.append(f'- ![{alt}]({rel}){{ loading="lazy" }}')
+            # Реальные размеры не дают браузеру зарезервировать место под
+            # оригинальные пропорции до загрузки; object-fit: cover в
+            # extra8.css обрежет картинку под квадрат превью.
+            size = image_dims(f) or (1, 1)
+            lines.append(
+                f'- ![{alt}]({rel}){{ loading="lazy" width="{size[0]}" height="{size[1]}" }}'
+            )
         else:
             lines.append(f'- [{f.name}]({rel})')
     lines.append("")
@@ -212,15 +273,23 @@ def main() -> int:
         print(f"Папка с постами не найдена: {POSTS_DIR}", file=sys.stderr)
         return 1
 
-    post_dirs = sorted(
-        d for d in POSTS_DIR.iterdir()
-        if d.is_dir() and d.name.startswith("post-")
-    )
-    # Сортируем по числовой части, если она есть, иначе по имени.
-    def sort_key(d: Path):
-        m = re.search(r"(\d+)", d.name)
-        return (int(m.group(1)) if m else 0, d.name)
-    post_dirs.sort(key=sort_key, reverse=True)
+    post_dirs = [d for d in POSTS_DIR.iterdir() if d.is_dir() and d.name.startswith("post-")]
+    # Сортируем по версии (v9.x → v0.8.x → неизвестно) и внутри группы по дате
+    # (свежие выше; неизвестные даты уходят в конец группы).
+    decorated = []
+    for d in post_dirs:
+        meta = parse_caption(d / "caption.txt")
+        decorated.append((version_rank(meta["version"]), date_sort_key(meta["date"]), d.name, d))
+
+    grouped: dict[int, list[tuple]] = {0: [], 1: [], 2: []}
+    for item in decorated:
+        grouped[item[0]].append(item)
+    post_dirs = []
+    for rank in (0, 1, 2):
+        # По убыванию даты; имя используется как стабильный тай-брейкер.
+        post_dirs.extend(
+            item[3] for item in sorted(grouped[rank], key=lambda x: (x[1], x[2]), reverse=True)
+        )
 
     if not post_dirs:
         print("Посты не найдены.", file=sys.stderr)
