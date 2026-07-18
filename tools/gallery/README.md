@@ -72,6 +72,6 @@ properdocs build --clean
 ## Как это работает
 
 - Каждый пост — это `<article class="gallery-post">` с заголовком `<h2 id="post-NNN">`.
-- CSS в `docs/stylesheets/gallery.css` скрывает все посты, кроме выбранного (через `:target` и `:has()`).
+- CSS в `docs/stylesheets/extra9.css` (блок «Галерея сборок VOSTOK») скрывает все посты, кроме выбранного (через `:target` и `:has()`).
 - Минимальный inline-скрипт в `index.md` дублирует логику переключения для старых браузеров без `:has()`.
 - Правая панель TOC Material автоматически строится из заголовков `h2` и ссылается на `#post-NNN`.

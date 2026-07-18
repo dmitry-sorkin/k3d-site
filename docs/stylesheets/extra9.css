@@ -582,7 +582,7 @@ input[type="text"]:disabled {
 
 /* В галерее grid.cards.no-gap рендерится сеткой квадратных превью:
    кроп через object-fit: cover, оригинал открывается по клику через
-   glightbox (он навешивается на ссылки с data-glightbox).
+   glightbox (он навешивается на ссылки с data-glightbox). */
 .md-typeset .gallery .grid.cards.no-gap > ul > li {
   aspect-ratio: 1 / 1;
   overflow: hidden;

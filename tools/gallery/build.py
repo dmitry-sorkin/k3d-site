@@ -2,7 +2,7 @@
 """Генерирует docs/vostok/gallery/index.md из папок posts/post-*/caption.txt и медиа.
 
 Использование:
-    python scripts/build_gallery.py
+    python tools/gallery/build.py
 
 Структура поста:
     docs/vostok/gallery/posts/post-<NNN>/
@@ -150,40 +150,6 @@ def parse_caption(path: Path) -> dict:
     }
 
 
-def media_markup(post_dir: Path) -> str:
-    """Возвращает markdown-разметку медиа файлов поста в виде grid cards.
-
-    Каждый файл оформляется как отдельный пункт списка, чтобы grid cards
-    рендерился в <ul><li>...</li></ul> и CSS-сетка работала корректно.
-    Возвращает строку с уже обёрнутым <div class="grid ...">...первая
-    ячейка подставляется отдельно, поэтому оставляем только медиа.
-    """
-    files = sorted(
-        p for p in post_dir.iterdir()
-        if p.is_file() and p.name.lower() not in ("caption.txt", "index.md", "readme.md")
-    )
-
-    if not files:
-        return ""
-
-    cols = "cols-3"
-
-    lines = [f'<div class="grid cards no-gap {cols}" markdown>', ""]
-    for f in files:
-        rel = f"posts/{post_dir.name}/{f.name}"
-        suffix = f.suffix.lower()
-        if suffix in {".mp4", ".mov", ".webm"}:
-            lines.append(f'- <video src="{rel}" controls preload="none"></video>')
-        elif suffix in {".jpg", ".jpeg", ".png", ".webp", ".gif"}:
-            alt = post_dir.name
-            lines.append(f'- ![{alt}]({rel}){{ loading="lazy" }}')
-        else:
-            lines.append(f'- [{f.name}]({rel})')
-    lines.append("")
-    lines.append("</div>")
-    return "\n".join(lines)
-
-
 def image_dims(path: Path) -> Optional[tuple[int, int]]:
     if Image is None:
         return None
@@ -192,11 +158,6 @@ def image_dims(path: Path) -> Optional[tuple[int, int]]:
             return im.size
     except Exception:
         return None
-
-
-def escape_md(text: str) -> str:
-    # Не экранируем специально, чтобы сохранить ссылки и форматирование из текста.
-    return text
 
 
 def render_post(post_dir: Path) -> str:

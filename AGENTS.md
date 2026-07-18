@@ -30,7 +30,7 @@ docs/
   articles/           # long-form posts (print_strong, custom_gcode, nozzle_test_2024, ultra_high_flow_hotends, ad5m_ad5x_hotend_test, cooling_problems)
   redirects/          # stub .md files whose real target is in properdocs.yml `redirect_maps`
   pics/, assets/, models/   # images and 3D models referenced from MD
-  stylesheets/        # extra8.css referenced from theme
+  stylesheets/        # extra9.css referenced from theme
   javascripts/        # mathjax loader
 overrides/            # Material theme partial overrides (partials/integrations/, .icons/)
 tools/gallery/           # tracked build helpers (gallery/extract.py, gallery/build.py, gallery/README.md)
@@ -103,4 +103,4 @@ python -m properdocs build --clean
 
 To add a single post by hand when there is no fresh export: create `posts/post-NNN/`, drop the media in, write `caption.txt` with the template in `tools/gallery/README.md`, then re-run `build.py`. The `<!-- author: ... -->`, `<!-- date: ... -->`, `<!-- first_id: ... -->` lines in `caption.txt` are stripped at build time and feed the per-post header card + Telegram link.
 
-The gallery uses CSS for one-post-at-a-time display: each post is `<article class="gallery-post">` with an `h2[id^="post-"]`, and the rules in `docs/stylesheets/gallery.css` hide every article except the one whose H2 matches the URL fragment (via `:has()` + `:target`). A tiny inline script in `index.md` provides the same behavior as a fallback for browsers without `:has()` support.
+The gallery uses CSS for one-post-at-a-time display: each post is `<article class="gallery-post">` with an `h2[id^="post-"]`, and the rules in `docs/stylesheets/extra9.css` (block «Галерея сборок VOSTOK») hide every article except the one whose H2 matches the URL fragment (via `:has()` + `:target`). A tiny inline script in `index.md` provides the same behavior as a fallback for browsers without `:has()` support.
