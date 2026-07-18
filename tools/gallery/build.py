@@ -259,7 +259,7 @@ def render_post(post_dir: Path) -> str:
             alt = post_dir.name
             # Реальные размеры не дают браузеру зарезервировать место под
             # оригинальные пропорции до загрузки; object-fit: cover в
-            # extra8.css обрежет картинку под квадрат превью.
+            # extra9.css обрежет картинку под квадрат превью.
             size = image_dims(f) or (1, 1)
             lines.append(
                 f'- ![{alt}]({rel}){{ loading="lazy" width="{size[0]}" height="{size[1]}" }}'

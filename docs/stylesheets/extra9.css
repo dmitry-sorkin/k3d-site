@@ -1,0 +1,629 @@
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.md-typeset {
+	line-height: 1.3;
+	font-size: 0.7rem;
+}
+
+.md-typeset table:not([class]) th {
+    min-width: 2.5rem;
+    vertical-align: middle;
+}
+
+.md-typeset table:not([class]) td {
+	vertical-align: middle;
+	min-width: none;
+}
+
+.md-typeset p {
+	line-height: 1.3;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+	line-height: 1.3
+}
+
+.md-nav {
+	line-height: 1.3
+}
+
+.md-grid {
+	max-width: 1500px;
+}
+
+.md-nav__link svg {
+    height: 1.3em;
+	max-width: 1.3em
+}
+
+.printertable {
+	width: 100%;
+	font-size: .7rem;
+}
+
+.printertable td {
+	padding-bottom: 0.5em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.5em;
+}
+
+.printerimg {
+	width: 230px;
+}
+
+.altprinters {
+	width: fit-content;
+	line-height: 1.6em;
+	font-size: .7rem;
+}
+
+.altprinters th {
+	font-size: 1rem;
+}
+
+.altprinters td {
+	padding-bottom: 0.9375em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.9375em;
+	min-width: 120px;
+	vertical-align: middle;
+	text-align: justify;
+}
+
+.altprinterimg {
+	width: 120px;
+	min-width: 120px;
+}
+
+.printerimgtd {
+	padding-right: 50px;
+	vertical-align: middle;
+	padding-bottom: 0.9375em;
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.9375em;
+	min-width: 120px;
+}
+
+@media (max-width: 600px) {
+	.printerimgtd {
+		display: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.altprinterimgtd {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+	.upperprinterimgtr {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 76.25em) {
+	.md-nav__item--section {
+		margin-top: 2em;
+	}
+}
+
+[dir=ltr] .md-header__title {
+	margin-top: 0.1rem;
+	margin-left: 0.5rem;
+	font-size: 1.6rem;
+  }
+
+.md-header__topic:first-child {
+    font-weight: 100;
+}
+
+.navitable {
+	width: 100%;
+	font-size: large;
+}
+
+.navitable td {
+	text-align: center;
+	width: 33%;
+	padding: 0.2rem;
+}
+
+.calibratorInput {
+	text-align: center;
+	min-height: 2.0em;
+	border-radius: 0.3em;
+	max-width: 8.4em;
+	font-size: 0.8rem;
+	border: 1px solid #000000;
+}
+
+.calibratorInputSmall {
+	text-align: center;
+	min-height: 2.0em;
+	border-radius: 0.3em;
+	max-width: 4em;
+	font-size: 0.8rem;
+	border: 1px solid #000000;
+}
+
+input[type=radio] {
+	min-height: fit-content;
+}
+
+.calibrationCodeTable {
+	width: 100%;
+	border-top: 0.05rem solid var(--md-typeset-table-color);
+	border-bottom: 0.05rem solid var(--md-typeset-table-color);
+	border-left: 0.05rem solid var(--md-typeset-table-color);
+	border-right: 0.05rem solid var(--md-typeset-table-color);
+}
+
+.calibrationCodeTable th {
+	font-weight: 700;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.calibrationCodeTable td {
+	text-align: center;
+	padding-left: 0.5em;
+	padding-bottom: .5em;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+}
+
+.calibrationCodeTable textarea {
+	width: 100%;
+}
+
+.caliButton {
+    border-width: 0.1rem solid var(--md-primary-fg-color);
+    font-weight: 700;
+    border-radius: 0.1rem;
+    border-style: solid;
+    color: var(--md-primary-fg-color);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+.caliButton:hover {
+    background-color: var(--md-accent-fg-color);
+	border-color: var(--md-accent-fg-color);
+    color: var(--md-accent-bg-color);
+}
+
+.caliButton:focus {
+    background-color: #6c91d5;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 0 4px #6c91d5;
+}
+
+.caliButtonTable {
+	width: 100%;
+	font-size: .8rem;
+	border: 0px;
+	margin-top: 2em;
+}
+
+.caliButtonTable td {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	align-content: center;
+}
+
+.filamentName {
+	white-space: nowrap;
+	font-size: 0.56rem;
+}
+
+.md-typeset__table th {
+	white-space: nowrap;
+}
+
+.innerTable {
+	border: 0px;
+}
+
+.innerTableTR:hover {
+	background-color: #1e212900 !important;
+	box-shadow: 0px 0px 0px 0px !important;
+}
+
+.innerTableTD {
+	padding: 0.2em !important;
+	border: 0px !important;
+}
+
+.inline-error {
+	color: rgb(255, 70, 70);
+	padding-top: 1em;
+}
+
+input[type="text"]:disabled {
+	opacity: 0.6;
+}
+
+/* =====================================================
+   Стили для системы управления профилями калибровщика
+   ===================================================== */
+
+/* Панель управления профилями - Material Design */
+.profilePanel {
+    padding: 20px;
+    background-color: var(--md-default-bg-color);
+    border: .05rem solid var(--md-typeset-table-color);
+}
+
+.profileControls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.profileControls label {
+    font-weight: 700;
+    color: var(--md-typeset-color);
+    margin-right: 8px;
+}
+
+
+.profileSelect {
+    padding: 0.7em;
+    font-weight: 700;
+    /*font-size: 14px;*/
+    min-width: 15.0em;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0.3em;
+	border: 1px solid #000000;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Модальное окно */
+.profileModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.profileModalContent {
+    background: linear-gradient(135deg, #2a2b38 0%, #1e1f2a 100%);
+    border: 1px solid rgba(0, 148, 133, 0.2);
+    padding: 32px;
+    min-width: 450px;
+    max-width: 90vw;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+    animation: modalSlideIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.profileModalContent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #009485, #5d6cc0, #009485);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.profileModalContent h3 {
+    margin: 0 0 24px 0;
+    color: rgba(233, 235, 252, 0.95);
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.profileNameInput {
+    width: 100%;
+    padding: 14px 16px;
+    background: rgba(40, 41, 54, 0.6);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: rgb(233, 235, 252);
+    font-size: 15px;
+    margin-bottom: 28px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profileNameInput:focus {
+    outline: none;
+    background: rgba(40, 41, 54, 0.8);
+    border-color: #009485;
+    box-shadow: 0 0 0 4px rgba(0, 148, 133, 0.1);
+}
+
+.profileModalButtons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.inlineButton {
+    color: var(--md-typeset-a-color) !important;
+}
+
+.inlineButton:focus {
+    color: var(--md-accent-fg-color) !important;
+}
+
+.inlineButton:hover {
+    color: var(--md-accent-fg-color) !important;
+}
+
+.inlineButton:disabled {
+    opacity: 0.6;
+}
+
+/* Скругление углов у всех изображений и видео в контенте (8px),
+   кроме эмодзи и логотипа */
+.md-typeset img:not(.twemoji):not(.md-logo),
+.md-typeset video {
+  border-radius: 8px;
+}
+
+.md-typeset img.notrounded:not(.twemoji):not(.md-logo),
+.md-typeset video.notrounded {
+  border-radius: 0;
+}
+
+/* Вариант grid cards без отступов между карточками */
+.grid.cards.no-gap > ul > li {
+  padding: 0;
+}
+
+.grid.cards.no-gap.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.cards.no-gap.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 60rem) {
+  .grid.cards.no-gap.cols-2,
+  .grid.cards.no-gap.cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  .grid.cards.no-gap.cols-2,
+  .grid.cards.no-gap.cols-3 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Горизонтальный блок «картинка слева, текст справа».
+   Используем flex вместо grid, потому что flex-direction: row-reverse —
+   единственный короткий способ визуально переставить элементы без order. */
+.md-typeset .image-text-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1em 0;
+}
+
+/* Картинка справа, текст слева. DOM-порядок при этом сохраняется обычный. */
+.md-typeset .image-text-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.md-typeset .image-text-row .image-text-img {
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.md-typeset .image-text-row .image-text-content {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+/* :where(...) зануляет специфичность классов, чтобы не перебивать
+   правила темы для img[src$="#only-light"] / img[src$="#only-dark"]. */
+:where(.md-typeset .image-text-row .image-text-img) img,
+:where(.md-typeset .image-text-row .image-text-img) video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* <video> без загруженных метаданных имеет intrinsic 0×0 → без явной ширины
+   flex-basis: auto даёт ноль, и блок пропадает. Задаём width + aspect-ratio. */
+:where(.md-typeset .image-text-row .image-text-img) video {
+    width: 320px;
+    aspect-ratio: 1 / 1;
+}
+
+/* Узкий экран: одна колонка во всю ширину контейнера;
+   картинка тянется на всю колонку, текст под ней занимает ту же ширину. */
+@media (max-width: 40rem) {
+    .md-typeset .image-text-row,
+    .md-typeset .image-text-row.reverse {
+        flex-direction: column;
+    }
+
+    :where(.md-typeset .image-text-row .image-text-img) img,
+    :where(.md-typeset .image-text-row .image-text-img) video {
+        width: 100%;
+    }
+}
+
+.md-typeset .image-text-row .image-text-content > :first-child {
+    margin-top: 0;
+}
+
+.md-typeset .image-text-row .image-text-content > :last-child {
+    margin-bottom: 0;
+}
+
+.md-typeset .image-text-row .image-text-content > p {
+    line-height: 1.6;
+}
+
+.md-typeset .admonition-title:before, .md-typeset summary:before {
+    top: .3rem;
+}
+
+/* =====================================================
+   Галерея сборок VOSTOK (docs/vostok/gallery/index.md)
+   ===================================================== */
+
+/* Каждый пост — это <article class="gallery-post"> с H2 (id="post-NNN"),
+   шапкой, текстом и сеткой медиа внутри. Скрываем все посты, кроме того,
+   на который указывает URL-фрагмент (#post-NNN). Material TOC генерирует
+   ссылки на эти H2 — клик по ним меняет хеш, после чего CSS показывает
+   нужный пост без перезагрузки страницы. */
+.md-typeset .gallery > .gallery-post {
+  display: none;
+  scroll-margin-top: 4.5rem;
+}
+
+/* ID якоря ставится на H2 внутри <article>, потому что так Material
+   подхватывает заголовок в TOC. Активируем пост через :has(). */
+.md-typeset .gallery > .gallery-post:has(h2[id^="post-"]:target) {
+  display: block;
+}
+
+/* Если в URL нет фрагмента (первый заход / рефреш) — показываем первый пост.
+   :has() поддерживается во всех актуальных браузерах с 2023 года. */
+.md-typeset .gallery:not(:has(h2[id^="post-"]:target)) > .gallery-post:first-of-type {
+  display: block;
+}
+
+/* В галерее grid.cards.no-gap рендерится сеткой квадратных превью:
+   кроп через object-fit: cover, оригинал открывается по клику через
+   glightbox (он навешивается на ссылки с data-glightbox).
+.md-typeset .gallery .grid.cards.no-gap > ul > li {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.md-typeset .gallery .grid.cards.no-gap > ul > li > a,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p > a,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.md-typeset .gallery .grid.cards.no-gap > ul > li > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > p > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > video {
+  object-fit: cover;
+}
+
+/* Если первая ячейка сетки содержит admonition (например, инфо-карточка
+   поста), то вместо квадратного превью admonition должен заполнять ячейку
+   целиком, а его содержимое выравниваться по центру по вертикали. */
+.md-typeset .gallery .grid.cards.no-gap > ul > li:has(> .admonition) {
+  aspect-ratio: auto;
+  overflow: visible;
+  display: flex;
+  padding: 0;
+}
+
+.md-typeset .gallery .grid.cards.no-gap > ul > li:has(> .admonition) > .admonition {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
