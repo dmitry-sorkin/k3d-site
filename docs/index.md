@@ -13,7 +13,7 @@ show_author: false
 
 # 
 
-<div class="grid cards" markdown>
+<div class="grid cards cols-3" markdown>
 
 - :material-list-box:{ .lg .middle } __3D Рекомендатор__
 
