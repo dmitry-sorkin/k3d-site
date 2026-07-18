@@ -17,8 +17,6 @@ show_author: false
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 380x250 { #post-016 }
 
----
-
 <div class="grid cards no-gap cols-3" markdown>
 
 -  
@@ -50,12 +48,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-002){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x250 { #post-002 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-016){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -82,12 +82,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-021){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x400 { #post-021 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-002){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -113,12 +115,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-020){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 350x350 { #post-020 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-021){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -142,12 +146,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-019){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x300 { #post-019 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-020){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -179,12 +185,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-018){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 300x300 { #post-018 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-019){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -213,12 +221,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-015){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; { #post-015 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-018){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -247,12 +257,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-014){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 200x176 { #post-014 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-015){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -280,12 +292,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-013){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x300 { #post-013 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-014){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -316,12 +330,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-012){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x250 { #post-012 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-013){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -353,12 +369,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-011){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x280 { #post-011 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-012){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -389,12 +407,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-010){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 510x510 { #post-010 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-011){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -422,12 +442,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-006){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 500x500 { #post-006 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-010){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -460,12 +482,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-001){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x250 { #post-001 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-006){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -496,12 +520,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-017){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## v0.8.x | 400x250 { #post-017 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-001){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -528,12 +554,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-007){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## v0.8.x | 400x250 { #post-007 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-017){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -562,12 +590,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-005){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## v0.8.x | &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; { #post-005 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-007){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -598,12 +628,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-004){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## v0.8.x | 330x300 { #post-004 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-005){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -631,12 +663,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-003){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## v0.8.x | 600x400 { #post-003 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-004){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -663,12 +697,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-009){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;&nbsp;v?&nbsp;&nbsp; | 450x350 { #post-009 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-003){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 
@@ -700,12 +736,14 @@ show_author: false
 
 </div>
 
+[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#post-008){ .gallery-nav .gallery-nav--next }
+
 </article>
 
 <article class="gallery-post" markdown>
 ## &nbsp;&nbsp;v?&nbsp;&nbsp; | 500x400 { #post-008 }
 
----
+[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#post-009){ .gallery-nav .gallery-nav--prev }
 
 <div class="grid cards no-gap cols-3" markdown>
 

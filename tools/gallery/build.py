@@ -160,7 +160,7 @@ def image_dims(path: Path) -> Optional[tuple[int, int]]:
         return None
 
 
-def render_post(post_dir: Path) -> str:
+def render_post(post_dir: Path, prev_anchor: Optional[str], next_anchor: Optional[str]) -> str:
     caption = parse_caption(post_dir / "caption.txt")
     anchor = post_dir.name
     author = caption["author"]
@@ -181,12 +181,25 @@ def render_post(post_dir: Path) -> str:
     )
     cols = "cols-3"
 
+    prev_button = (
+        f'[<span class="gallery-nav__arrow">&larr;</span> Предыдущий пост](#{prev_anchor}){{ .gallery-nav .gallery-nav--prev }}'
+        if prev_anchor
+        else ""
+    )
+    next_button = (
+        f'[Следующий пост <span class="gallery-nav__arrow">&rarr;</span>](#{next_anchor}){{ .gallery-nav .gallery-nav--next }}'
+        if next_anchor
+        else ""
+    )
+
     lines = [
         '<article class="gallery-post" markdown>',
         f"## {format_title(version, size, date)} {{ #{anchor} }}",
         "",
-        "---",
-        "",
+    ]
+    if prev_button:
+        lines += [prev_button, ""]
+    lines += [
         f'<div class="grid cards no-gap {cols}" markdown>',
         "",
         "-  ",
@@ -230,6 +243,8 @@ def render_post(post_dir: Path) -> str:
     lines.append("")
     lines.append("</div>")
     lines.append("")
+    if next_button:
+        lines += [next_button, ""]
     lines.append("</article>")
     lines.append("")
     return "\n".join(lines)
@@ -271,8 +286,10 @@ def main() -> int:
         return 1
 
     parts = [FRONTMATTER]
-    for post_dir in post_dirs:
-        parts.append(render_post(post_dir))
+    for i, post_dir in enumerate(post_dirs):
+        prev_anchor = post_dirs[i - 1].name if i > 0 else None
+        next_anchor = post_dirs[i + 1].name if i + 1 < len(post_dirs) else None
+        parts.append(render_post(post_dir, prev_anchor, next_anchor))
     parts.append(FOOTER)
 
     INDEX_PATH.write_text("\n".join(parts), encoding="utf-8")

@@ -627,3 +627,47 @@ input[type="text"]:disabled {
   margin: 0;
   width: 100%;
 }
+
+/* Кнопки навигации между постами (предыдущий/следующий).
+   По умолчанию скрыты: при широком экране справа виден TOC со списком
+   постов, отдельные кнопки не нужны. Показываем только когда TOC скрылся
+   из-за узкого экрана (тот же breakpoint, что у .md-sidebar--secondary
+   в Material). */
+.md-typeset .gallery .gallery-nav {
+  display: none;
+  margin: 0.6rem 0;
+}
+
+.md-typeset .gallery .gallery-nav__arrow {
+  display: inline-block;
+  transition: transform 0.15s ease-out;
+}
+
+.md-typeset .gallery .gallery-nav--prev:hover .gallery-nav__arrow {
+  transform: translateX(-2px);
+}
+
+.md-typeset .gallery .gallery-nav--next:hover .gallery-nav__arrow {
+  transform: translateX(2px);
+}
+
+.md-typeset .gallery .gallery-nav--next {
+  text-align: right;
+}
+
+@media screen and (max-width: 59.984375em) {
+  .md-typeset .gallery .gallery-nav {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    padding: 0.4rem 0.8rem;
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.4rem;
+    background-color: var(--md-default-bg-color--light);
+  }
+
+  .md-typeset .gallery .gallery-nav--next {
+    text-align: center;
+  }
+}
