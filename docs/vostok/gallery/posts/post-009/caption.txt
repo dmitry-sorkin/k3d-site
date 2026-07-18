@@ -1,6 +1,6 @@
 <!-- version: - -->
 <!-- size: 450x350 -->
-<!-- hotends: - -->
+<!-- hotends: Dragon HF -->
 <!-- author: Alexey -->
 <!-- date: 2025-09-20 -->
 <!-- first_id: 364488 -->

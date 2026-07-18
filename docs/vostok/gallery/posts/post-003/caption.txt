@@ -1,4 +1,4 @@
-<!-- version: - -->
+<!-- version: 0.8.x -->
 <!-- size: 600x400 -->
 <!-- hotends: - -->
 <!-- author: Aleksey M -->

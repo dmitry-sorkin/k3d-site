@@ -1,4 +1,4 @@
-<!-- version: - -->
+<!-- version: 9.x -->
 <!-- size: 400x280 -->
 <!-- hotends: CHC Pro -->
 <!-- author: Павел -->

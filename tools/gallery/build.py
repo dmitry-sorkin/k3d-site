@@ -75,11 +75,17 @@ def format_title(version: str, size: str, date: str) -> str:
         s = re.sub(r"\s+", "", m.group(1).replace("х", "x").replace("×", "x")) if m else s
     # Выравниваем колонку версий по центру: слева и справа от названия
     # одинаковое количество неразрывных пробелов (лишний — слева).
-    col = max(len(VERSION_9X), len(VERSION_08X), len(VERSION_UNKNOWN))
-    pad = col - len(v)
+    col_v = max(len(VERSION_9X), len(VERSION_08X), len(VERSION_UNKNOWN))
+    pad = col_v - len(v)
     left = (pad + 1) // 2
     right = pad - left
-    return f"{'&nbsp;' * left}{v}{'&nbsp;' * right} | {s}"
+    # Колонка размеров — по центру: равные отступы слева и справа (лишний — слева).
+    col_s = 7  # 510x510 — самый длинный реальный размер
+    pad_s = col_s - len(s)
+    left_s = (pad_s + 1) // 2
+    right_s = pad_s - left_s
+    s_padded = ("&nbsp;" * left_s) + s + ("&nbsp;" * right_s)
+    return f"{'&nbsp;' * left}{v}{'&nbsp;' * right} | {s_padded}"
 
 
 def version_rank(version: str) -> int:

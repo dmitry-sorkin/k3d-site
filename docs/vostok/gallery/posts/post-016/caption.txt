@@ -1,5 +1,5 @@
 <!-- version: 9.x -->
-<!-- size: 250x380 -->
+<!-- size: 380x250 -->
 <!-- hotends: CHC Pro -->
 <!-- author: ЮРИЙ -->
 <!-- date: 2025-09-27 -->

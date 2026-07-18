@@ -1,6 +1,6 @@
-<!-- version: - -->
+<!-- version: 9.x -->
 <!-- size: M (400x250) -->
-<!-- hotends: - -->
+<!-- hotends: CHC Pro -->
 <!-- author: Александр Соколь -->
 <!-- date: 2025-08-16 -->
 <!-- first_id: 361174 -->

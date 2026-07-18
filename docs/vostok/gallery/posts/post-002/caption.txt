@@ -1,4 +1,4 @@
-<!-- version: - -->
+<!-- version: 9.x -->
 <!-- size: M (400x250) -->
 <!-- hotends: - -->
 <!-- author: Andrei Kureichyk -->

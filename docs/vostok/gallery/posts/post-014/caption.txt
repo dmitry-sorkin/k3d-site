@@ -1,6 +1,6 @@
-<!-- version: - -->
+<!-- version: 9.x -->
 <!-- size: 200x176 -->
-<!-- hotends: - -->
+<!-- hotends: Volcano -->
 <!-- author: Oleg Romanenko -->
 <!-- date: 2025-09-25 -->
 <!-- first_id: 365154 -->

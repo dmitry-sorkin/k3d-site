@@ -1,6 +1,6 @@
 <!-- version: 9.x -->
 <!-- size: 300x300 -->
-<!-- hotends: - -->
+<!-- hotends: Volcano -->
 <!-- author: Konstantin Rumyantsev -->
 <!-- date: 2025-09-27 -->
 <!-- first_id: 365292 -->

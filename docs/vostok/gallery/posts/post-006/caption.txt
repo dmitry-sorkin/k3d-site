@@ -1,4 +1,4 @@
-<!-- version: - -->
+<!-- version: 9.x -->
 <!-- size: XL (500x500) -->
 <!-- hotends: Goliath -->
 <!-- author: Павел -->

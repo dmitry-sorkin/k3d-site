@@ -1,6 +1,6 @@
 <!-- version: 9.x -->
 <!-- size: 400x300 -->
-<!-- hotends: - -->
+<!-- hotends: CHC Pro -->
 <!-- author: Maks -->
 <!-- date: 2025-09-25 -->
 <!-- first_id: 365144 -->

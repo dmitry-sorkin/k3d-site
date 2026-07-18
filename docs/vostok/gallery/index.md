@@ -90,7 +90,7 @@ show_author: false
         - [Оригинал в Telegram](https://t.me/k3d_vostok/365329){ target="_blank" }
         - Версия: 9.x
         - Типоразмер: 400x300
-        - Хотэнды: -
+        - Хотэнды: Volcano
 
         - Комментарий автора: (1)
           { .annotate }
@@ -127,7 +127,7 @@ show_author: false
         - [Оригинал в Telegram](https://t.me/k3d_vostok/365292){ target="_blank" }
         - Версия: 9.x
         - Типоразмер: 300x300
-        - Хотэнды: -
+        - Хотэнды: Volcano
 
         - Комментарий автора: (1)
           { .annotate }
@@ -146,7 +146,7 @@ show_author: false
 </article>
 
 <article class="gallery-post" markdown>
-## &nbsp;v9.x&nbsp; | 250x380 { #post-016 }
+## &nbsp;v9.x&nbsp; | 380x250 { #post-016 }
 
 ---
 
@@ -160,7 +160,7 @@ show_author: false
         - Дата: 2025-09-27
         - [Оригинал в Telegram](https://t.me/k3d_vostok/365247){ target="_blank" }
         - Версия: 9.x
-        - Типоразмер: 250x380
+        - Типоразмер: 380x250
         - Хотэнды: CHC Pro
 
         - Комментарий автора: (1)
@@ -184,7 +184,7 @@ show_author: false
 </article>
 
 <article class="gallery-post" markdown>
-## &nbsp;v9.x&nbsp; | - { #post-015 }
+## &nbsp;v9.x&nbsp; | &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; { #post-015 }
 
 ---
 
@@ -218,6 +218,39 @@ show_author: false
 </article>
 
 <article class="gallery-post" markdown>
+## &nbsp;v9.x&nbsp; | 200x176 { #post-014 }
+
+---
+
+<div class="grid cards no-gap cols-3" markdown>
+
+-  
+
+    !!! info ""
+
+        - Автор: Oleg Romanenko
+        - Дата: 2025-09-25
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/365154){ target="_blank" }
+        - Версия: 9.x
+        - Типоразмер: 200x176
+        - Хотэнды: Volcano
+
+        - Комментарий автора: (1)
+          { .annotate }
+
+              1. МикроВосток<br>Размеры принтера 460х424х400<br>Область печати 200х176х170<br>Делался такой, чтобы помещаться в икеевский стеллаж с небольшим зазором. <br>WS7040 внутри отсека электроники, так как сверху места уже нет. Но забирает воздух из основного объема.<br>Купола нет и не будет ещё долго. Дверки тоже пока без надобности. Но все нарезано и ждёт переезда.<br>Электроника RPi3B+, octopus (подключен по uart), ebb36 (подключены по CAN через U2C).<br>Высоковольтная часть внизу, низковольтная - сзади.<br>Блоков питания должно было быть 3 - на 12В (ws7040, led  освещение, BTT pi), 24В (octopus, ebb36), 48В (моторы x,y,w), но BTT pi померла и вместе нее теперь Raspberry Pi3b+ с отдельным БП на 5В.<br>Одно твердотельное реле на отключение принтера при аварии, второе на стол. Третье - запасное - для грелки камеры. Пока просто занимает место :)<br>Собирать было интересно. Часть деталей переделывал уже под свои хотелки. Удобно, когда исходники проекта есть. Дмитрию большое спасибо.
+
+- ![post-014](posts/post-014/photo-01.jpg){ loading="lazy" width="2560" height="1816" }
+- ![post-014](posts/post-014/photo-02.jpg){ loading="lazy" width="2440" height="2560" }
+- ![post-014](posts/post-014/photo-03.jpg){ loading="lazy" width="1809" height="2560" }
+- ![post-014](posts/post-014/photo-04.jpg){ loading="lazy" width="2560" height="1920" }
+- ![post-014](posts/post-014/photo-05.jpg){ loading="lazy" width="2377" height="2560" }
+
+</div>
+
+</article>
+
+<article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 400x300 { #post-013 }
 
 ---
@@ -233,7 +266,7 @@ show_author: false
         - [Оригинал в Telegram](https://t.me/k3d_vostok/365144){ target="_blank" }
         - Версия: 9.x
         - Типоразмер: 400x300
-        - Хотэнды: -
+        - Хотэнды: CHC Pro
 
         - Комментарий автора: (1)
           { .annotate }
@@ -291,6 +324,42 @@ show_author: false
 </article>
 
 <article class="gallery-post" markdown>
+## &nbsp;v9.x&nbsp; | 400x280 { #post-011 }
+
+---
+
+<div class="grid cards no-gap cols-3" markdown>
+
+-  
+
+    !!! info ""
+
+        - Автор: Павел
+        - Дата: 2025-09-24
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/364988){ target="_blank" }
+        - Версия: 9.x
+        - Типоразмер: 400x280
+        - Хотэнды: CHC Pro
+
+        - Комментарий автора: (1)
+          { .annotate }
+
+              1. Мой Восток. Собирал прошлой зимой. Область печати 400х280. Зашивка- алюмокомпозит, купол-поликарбонат.  Хотенды CHC Pro. Материнская плата BTT Octopus+BTT Pi  и драйвера TMC 2209.  Грелка термокамеры 600W 220В, с корпусом из ABC и передней защитной сеткой из   PA6 GF, мощности хватает.  Блок питания 300W.  Собирал принтер несколько месяцев было интересно и увлекательно, много в чем разобрался и научился. В итоге получился отличный принтер, все устраивает,  есть  еще что нужно доработать, но руки не доходят. За время эксплуатации   отклеилась грелка стола  пришлось  удалять с нее родной клеи  и клеить на высокотемпературный  герметик , сейчас держится отлично, еще спустя месяц эксплуатации сгорела кнопка включения , а так же сейчас стало заметно что один из роликов балки истирает ремень, тогда ремни в других местах совсем без износа.  В общем принтером доволен и огромное спасибо Дмитрию Соркину за потраченные усилия по разработке проекта!
+
+- ![post-011](posts/post-011/photo-01.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-011](posts/post-011/photo-02.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-011](posts/post-011/photo-03.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-011](posts/post-011/photo-04.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-011](posts/post-011/photo-05.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-011](posts/post-011/photo-06.jpg){ loading="lazy" width="720" height="1280" }
+- ![post-011](posts/post-011/photo-07.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-011](posts/post-011/photo-08.jpg){ loading="lazy" width="1280" height="720" }
+
+</div>
+
+</article>
+
+<article class="gallery-post" markdown>
 ## &nbsp;v9.x&nbsp; | 510x510 { #post-010 }
 
 ---
@@ -318,6 +387,112 @@ show_author: false
 - ![post-010](posts/post-010/photo-03.jpg){ loading="lazy" width="1280" height="575" }
 - ![post-010](posts/post-010/photo-04.jpg){ loading="lazy" width="800" height="600" }
 - ![post-010](posts/post-010/photo-05.jpg){ loading="lazy" width="800" height="600" }
+
+</div>
+
+</article>
+
+<article class="gallery-post" markdown>
+## &nbsp;v9.x&nbsp; | 500x500 { #post-006 }
+
+---
+
+<div class="grid cards no-gap cols-3" markdown>
+
+-  
+
+    !!! info ""
+
+        - Автор: Павел
+        - Дата: 2025-08-22
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/361988){ target="_blank" }
+        - Версия: 9.x
+        - Типоразмер: XL (500x500)
+        - Хотэнды: Goliath
+
+        - Комментарий автора: (1)
+          { .annotate }
+
+              1. Выкладываю свой Восток. <br>Размер - XL<br>Головы - 2шт<br>Зашивка - алюминий + поликарбонат <br>Движки - Leadshine кроме Z<br>Хотенды - голиафы <br>Почти всё по БОМ, кроме профиля 20х60(установлен V-слот вместо Т-слота) и плиты стола(установлена 5мм)<br>На стол приклеен магнит из магазина и ещё куплен магнит у энергетиков вместе с PEI листом. Так же имеется FR4 на нерже. <br>Все печатные детали из ABS. <br>Дата заказа первой детали - 10 мая<br>Дата первой печати - 13 августа<br>Из модов - установлен 15 дюймовый сенсорный экран на регулируемой руке.<br>Бюджет - 198622р без учета печатных деталей.<br>В планах: откалибровать принтер на нужные пластики, включая композиты. Погонять какое-то время, после чего перепечатать детали, которые того требуют, из PA-GF30 и PP-GF30. Активная термокамера, видеокамера, подсветка. <br>Сборка Востока оказалась интересной. Особых проблем не возникало. По мелочи: нужно как то надежнее закрепить переходник дуйки СРАР, хотя он неплохо держится и сейчас. Допилить немного конфиг.<br>Диме спасибо за продуманную разработку.
+
+- ![post-006](posts/post-006/photo-01.jpg){ loading="lazy" width="1280" height="1218" }
+- ![post-006](posts/post-006/photo-02.jpg){ loading="lazy" width="1117" height="1280" }
+- ![post-006](posts/post-006/photo-03.jpg){ loading="lazy" width="960" height="1280" }
+- ![post-006](posts/post-006/photo-04.jpg){ loading="lazy" width="1084" height="1280" }
+- ![post-006](posts/post-006/photo-05.jpg){ loading="lazy" width="960" height="1280" }
+- ![post-006](posts/post-006/photo-06.jpg){ loading="lazy" width="1280" height="960" }
+- ![post-006](posts/post-006/photo-07.jpg){ loading="lazy" width="1030" height="1280" }
+- ![post-006](posts/post-006/photo-08.jpg){ loading="lazy" width="1131" height="1280" }
+- ![post-006](posts/post-006/photo-09.jpg){ loading="lazy" width="960" height="1280" }
+- ![post-006](posts/post-006/photo-10.jpg){ loading="lazy" width="832" height="1280" }
+
+</div>
+
+</article>
+
+<article class="gallery-post" markdown>
+## &nbsp;v9.x&nbsp; | 400x250 { #post-002 }
+
+---
+
+<div class="grid cards no-gap cols-3" markdown>
+
+-  
+
+    !!! info ""
+
+        - Автор: Andrei Kureichyk
+        - Дата: 2025-08-18
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/361484){ target="_blank" }
+        - Версия: 9.x
+        - Типоразмер: M (400x250)
+        - Хотэнды: -
+
+        - Комментарий автора: (1)
+          { .annotate }
+
+              1. Вот такой у меня красавец получился. Размер М. Хотенды CHC XL, Manta M8P. Живу в Минске. Идея собирать Восток появилась в ноябре 2024 - хотелось собрать двухголовый принтер :)  Первые детали заказал в марте, сборку закончил в июне. Все собрано по канону, единственное отличие - Manta M8p (она уже была в наличии, потому решил  Octopus не брать). Моторы Leadshine, ремни с шагом 1.5. Зашивка: портал - алюминий, пол и задняя стенка - алюмокомпозит, стенки и купол - поликарбонат. Из модов ещё поставил измененный держатель платы головы с жестким креплением провода. По резонансам - 18900 по Х, 13200 по Y - это на столе. На плиточном полу 20500 и 14600, соответственно. В принципе, мне более чем достаточно, но я ещё над этим работаю :). Детали оси Х и головы - PA-GF30, остальные внутренние детали PP-GF30, наружные - ASA-CF.<br>Искренняя благодарность Дмитрию за прекрасно проработанный проект - никаких существенных проблем при сборке не возникло. Занимаюсь дописыванием и оптимизацией макросов и файлов конфигурации. :)
+
+- ![post-002](posts/post-002/photo-01.jpg){ loading="lazy" width="848" height="1280" }
+- ![post-002](posts/post-002/photo-02.jpg){ loading="lazy" width="890" height="1280" }
+- ![post-002](posts/post-002/photo-03.jpg){ loading="lazy" width="849" height="1280" }
+- ![post-002](posts/post-002/photo-04.jpg){ loading="lazy" width="838" height="1280" }
+
+</div>
+
+</article>
+
+<article class="gallery-post" markdown>
+## &nbsp;v9.x&nbsp; | 400x250 { #post-001 }
+
+---
+
+<div class="grid cards no-gap cols-3" markdown>
+
+-  
+
+    !!! info ""
+
+        - Автор: Александр Соколь
+        - Дата: 2025-08-16
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/361174){ target="_blank" }
+        - Версия: 9.x
+        - Типоразмер: M (400x250)
+        - Хотэнды: CHC Pro
+
+        - Комментарий автора: (1)
+          { .annotate }
+
+              1. Собрал восток. Публикую фото для публикации в галереи. На данный момент есть проблемы с держателями катушек. И не смог настроить зеркало и копию. Но это не проблема принтера а чтото с моей прошивкой.Размер M ускорения не очень получились какая-то проблем с Y всего 8000. По итогу если сильнее натягивать ремни то 11000 получась. Но как показала практика при печати с такими ремнями начинаются пропуски шагов. По Х 18000. Но в целом меня все устраивает. Может позже переберу принтер посмотрю что в Y не так работает.
+
+- ![post-001](posts/post-001/photo-01.jpg){ loading="lazy" width="1280" height="960" }
+- ![post-001](posts/post-001/photo-02.jpg){ loading="lazy" width="1280" height="960" }
+- ![post-001](posts/post-001/photo-03.jpg){ loading="lazy" width="1280" height="960" }
+- ![post-001](posts/post-001/photo-04.jpg){ loading="lazy" width="1280" height="960" }
+- ![post-001](posts/post-001/photo-05.jpg){ loading="lazy" width="1280" height="960" }
+- ![post-001](posts/post-001/photo-06.jpg){ loading="lazy" width="720" height="1280" }
+- ![post-001](posts/post-001/photo-07.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-001](posts/post-001/photo-08.jpg){ loading="lazy" width="720" height="1280" }
 
 </div>
 
@@ -371,7 +546,7 @@ show_author: false
         - [Оригинал в Telegram](https://t.me/k3d_vostok/364354){ target="_blank" }
         - Версия: 0.8.x
         - Типоразмер: 400x250
-        - Хотэнды: -
+        - Хотэнды: CHC
 
         - Комментарий автора: (1)
           { .annotate }
@@ -384,6 +559,42 @@ show_author: false
 - ![post-007](posts/post-007/photo-04.jpg){ loading="lazy" width="1920" height="2560" }
 - ![post-007](posts/post-007/photo-05.jpg){ loading="lazy" width="1920" height="2560" }
 - ![post-007](posts/post-007/photo-06.jpg){ loading="lazy" width="1920" height="2560" }
+
+</div>
+
+</article>
+
+<article class="gallery-post" markdown>
+## v0.8.x | &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; { #post-005 }
+
+---
+
+<div class="grid cards no-gap cols-3" markdown>
+
+-  
+
+    !!! info ""
+
+        - Автор: Solos
+        - Дата: 2025-08-20
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/361760){ target="_blank" }
+        - Версия: 0.8.x
+        - Типоразмер: -
+        - Хотэнды: -
+
+        - Комментарий автора: (1)
+          { .annotate }
+
+              1. Мой Восток двухгодичной давности. В данной версии был переработан почти весь обвес портала, включая всё на балке, и печатающие головы. Идея была в том, чтобы максимально близко совместить центры масс голов с точкой приложения усилия ремней к головам, до минимума сократить расстояние от подающих шестерен до сопла, а так же уместить 2х5015 на голову без потери области печати. Результатом доволен, трудится в практически неизменном виде до сих пор.
+
+- ![post-005](posts/post-005/photo-01.jpg){ loading="lazy" width="1199" height="1280" }
+- ![post-005](posts/post-005/photo-02.jpg){ loading="lazy" width="1111" height="1280" }
+- ![post-005](posts/post-005/photo-03.jpg){ loading="lazy" width="1087" height="1280" }
+- ![post-005](posts/post-005/photo-04.jpg){ loading="lazy" width="1171" height="1280" }
+- ![post-005](posts/post-005/photo-05.jpg){ loading="lazy" width="1236" height="1280" }
+- ![post-005](posts/post-005/photo-06.jpg){ loading="lazy" width="1280" height="1042" }
+- ![post-005](posts/post-005/photo-07.jpg){ loading="lazy" width="783" height="614" }
+- ![post-005](posts/post-005/photo-08.jpg){ loading="lazy" width="878" height="735" }
 
 </div>
 
@@ -405,7 +616,7 @@ show_author: false
         - [Оригинал в Telegram](https://t.me/k3d_vostok/361735){ target="_blank" }
         - Версия: 0.8.x
         - Типоразмер: 330x300
-        - Хотэнды: -
+        - Хотэнды: Dragon HF
 
         - Комментарий автора: (1)
           { .annotate }
@@ -423,7 +634,7 @@ show_author: false
 </article>
 
 <article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | 200x176 { #post-014 }
+## v0.8.x | 600x400 { #post-003 }
 
 ---
 
@@ -433,59 +644,22 @@ show_author: false
 
     !!! info ""
 
-        - Автор: Oleg Romanenko
-        - Дата: 2025-09-25
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/365154){ target="_blank" }
-        - Версия: -
-        - Типоразмер: 200x176
+        - Автор: Aleksey M
+        - Дата: 2025-08-18
+        - [Оригинал в Telegram](https://t.me/k3d_vostok/361516){ target="_blank" }
+        - Версия: 0.8.x
+        - Типоразмер: 600x400
         - Хотэнды: -
 
         - Комментарий автора: (1)
           { .annotate }
 
-              1. МикроВосток<br>Размеры принтера 460х424х400<br>Область печати 200х176х170<br>Делался такой, чтобы помещаться в икеевский стеллаж с небольшим зазором. <br>WS7040 внутри отсека электроники, так как сверху места уже нет. Но забирает воздух из основного объема.<br>Купола нет и не будет ещё долго. Дверки тоже пока без надобности. Но все нарезано и ждёт переезда.<br>Электроника RPi3B+, octopus (подключен по uart), ebb36 (подключены по CAN через U2C).<br>Высоковольтная часть внизу, низковольтная - сзади.<br>Блоков питания должно было быть 3 - на 12В (ws7040, led  освещение, BTT pi), 24В (octopus, ebb36), 48В (моторы x,y,w), но BTT pi померла и вместе нее теперь Raspberry Pi3b+ с отдельным БП на 5В.<br>Одно твердотельное реле на отключение принтера при аварии, второе на стол. Третье - запасное - для грелки камеры. Пока просто занимает место :)<br>Собирать было интересно. Часть деталей переделывал уже под свои хотелки. Удобно, когда исходники проекта есть. Дмитрию большое спасибо.
+              1. Не знаю какой версии аппарат, что то около 8й + всякие нужные и не особо нужные эксперименты.<br>Область печати 600*400*250. Ускорения и прочие скоростные характеристики неизвестны по причине лени владельца, да и печатает он в основном композиты в дубле - разгоняться некуда.
 
-- ![post-014](posts/post-014/photo-01.jpg){ loading="lazy" width="2560" height="1816" }
-- ![post-014](posts/post-014/photo-02.jpg){ loading="lazy" width="2440" height="2560" }
-- ![post-014](posts/post-014/photo-03.jpg){ loading="lazy" width="1809" height="2560" }
-- ![post-014](posts/post-014/photo-04.jpg){ loading="lazy" width="2560" height="1920" }
-- ![post-014](posts/post-014/photo-05.jpg){ loading="lazy" width="2377" height="2560" }
-
-</div>
-
-</article>
-
-<article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | 400x280 { #post-011 }
-
----
-
-<div class="grid cards no-gap cols-3" markdown>
-
--  
-
-    !!! info ""
-
-        - Автор: Павел
-        - Дата: 2025-09-24
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/364988){ target="_blank" }
-        - Версия: -
-        - Типоразмер: 400x280
-        - Хотэнды: CHC Pro
-
-        - Комментарий автора: (1)
-          { .annotate }
-
-              1. Мой Восток. Собирал прошлой зимой. Область печати 400х280. Зашивка- алюмокомпозит, купол-поликарбонат.  Хотенды CHC Pro. Материнская плата BTT Octopus+BTT Pi  и драйвера TMC 2209.  Грелка термокамеры 600W 220В, с корпусом из ABC и передней защитной сеткой из   PA6 GF, мощности хватает.  Блок питания 300W.  Собирал принтер несколько месяцев было интересно и увлекательно, много в чем разобрался и научился. В итоге получился отличный принтер, все устраивает,  есть  еще что нужно доработать, но руки не доходят. За время эксплуатации   отклеилась грелка стола  пришлось  удалять с нее родной клеи  и клеить на высокотемпературный  герметик , сейчас держится отлично, еще спустя месяц эксплуатации сгорела кнопка включения , а так же сейчас стало заметно что один из роликов балки истирает ремень, тогда ремни в других местах совсем без износа.  В общем принтером доволен и огромное спасибо Дмитрию Соркину за потраченные усилия по разработке проекта!
-
-- ![post-011](posts/post-011/photo-01.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-011](posts/post-011/photo-02.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-011](posts/post-011/photo-03.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-011](posts/post-011/photo-04.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-011](posts/post-011/photo-05.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-011](posts/post-011/photo-06.jpg){ loading="lazy" width="720" height="1280" }
-- ![post-011](posts/post-011/photo-07.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-011](posts/post-011/photo-08.jpg){ loading="lazy" width="1280" height="720" }
+- ![post-003](posts/post-003/photo-01.jpg){ loading="lazy" width="715" height="691" }
+- ![post-003](posts/post-003/photo-02.jpg){ loading="lazy" width="1066" height="663" }
+- ![post-003](posts/post-003/photo-03.jpg){ loading="lazy" width="720" height="1280" }
+- ![post-003](posts/post-003/photo-04.jpg){ loading="lazy" width="1138" height="604" }
 
 </div>
 
@@ -507,7 +681,7 @@ show_author: false
         - [Оригинал в Telegram](https://t.me/k3d_vostok/364488){ target="_blank" }
         - Версия: -
         - Типоразмер: 450x350
-        - Хотэнды: -
+        - Хотэнды: Dragon HF
 
         - Комментарий автора: (1)
           { .annotate }
@@ -558,180 +732,6 @@ show_author: false
 - ![post-008](posts/post-008/photo-05.jpg){ loading="lazy" width="960" height="1280" }
 - ![post-008](posts/post-008/photo-06.jpg){ loading="lazy" width="1280" height="720" }
 - ![post-008](posts/post-008/photo-07.jpg){ loading="lazy" width="960" height="1280" }
-
-</div>
-
-</article>
-
-<article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | 500x500 { #post-006 }
-
----
-
-<div class="grid cards no-gap cols-3" markdown>
-
--  
-
-    !!! info ""
-
-        - Автор: Павел
-        - Дата: 2025-08-22
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/361988){ target="_blank" }
-        - Версия: -
-        - Типоразмер: XL (500x500)
-        - Хотэнды: Goliath
-
-        - Комментарий автора: (1)
-          { .annotate }
-
-              1. Выкладываю свой Восток. <br>Размер - XL<br>Головы - 2шт<br>Зашивка - алюминий + поликарбонат <br>Движки - Leadshine кроме Z<br>Хотенды - голиафы <br>Почти всё по БОМ, кроме профиля 20х60(установлен V-слот вместо Т-слота) и плиты стола(установлена 5мм)<br>На стол приклеен магнит из магазина и ещё куплен магнит у энергетиков вместе с PEI листом. Так же имеется FR4 на нерже. <br>Все печатные детали из ABS. <br>Дата заказа первой детали - 10 мая<br>Дата первой печати - 13 августа<br>Из модов - установлен 15 дюймовый сенсорный экран на регулируемой руке.<br>Бюджет - 198622р без учета печатных деталей.<br>В планах: откалибровать принтер на нужные пластики, включая композиты. Погонять какое-то время, после чего перепечатать детали, которые того требуют, из PA-GF30 и PP-GF30. Активная термокамера, видеокамера, подсветка. <br>Сборка Востока оказалась интересной. Особых проблем не возникало. По мелочи: нужно как то надежнее закрепить переходник дуйки СРАР, хотя он неплохо держится и сейчас. Допилить немного конфиг.<br>Диме спасибо за продуманную разработку.
-
-- ![post-006](posts/post-006/photo-01.jpg){ loading="lazy" width="1280" height="1218" }
-- ![post-006](posts/post-006/photo-02.jpg){ loading="lazy" width="1117" height="1280" }
-- ![post-006](posts/post-006/photo-03.jpg){ loading="lazy" width="960" height="1280" }
-- ![post-006](posts/post-006/photo-04.jpg){ loading="lazy" width="1084" height="1280" }
-- ![post-006](posts/post-006/photo-05.jpg){ loading="lazy" width="960" height="1280" }
-- ![post-006](posts/post-006/photo-06.jpg){ loading="lazy" width="1280" height="960" }
-- ![post-006](posts/post-006/photo-07.jpg){ loading="lazy" width="1030" height="1280" }
-- ![post-006](posts/post-006/photo-08.jpg){ loading="lazy" width="1131" height="1280" }
-- ![post-006](posts/post-006/photo-09.jpg){ loading="lazy" width="960" height="1280" }
-- ![post-006](posts/post-006/photo-10.jpg){ loading="lazy" width="832" height="1280" }
-
-</div>
-
-</article>
-
-<article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | - { #post-005 }
-
----
-
-<div class="grid cards no-gap cols-3" markdown>
-
--  
-
-    !!! info ""
-
-        - Автор: Solos
-        - Дата: 2025-08-20
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/361760){ target="_blank" }
-        - Версия: -
-        - Типоразмер: -
-        - Хотэнды: -
-
-        - Комментарий автора: (1)
-          { .annotate }
-
-              1. Мой Восток двухгодичной давности. В данной версии был переработан почти весь обвес портала, включая всё на балке, и печатающие головы. Идея была в том, чтобы максимально близко совместить центры масс голов с точкой приложения усилия ремней к головам, до минимума сократить расстояние от подающих шестерен до сопла, а так же уместить 2х5015 на голову без потери области печати. Результатом доволен, трудится в практически неизменном виде до сих пор.
-
-- ![post-005](posts/post-005/photo-01.jpg){ loading="lazy" width="1199" height="1280" }
-- ![post-005](posts/post-005/photo-02.jpg){ loading="lazy" width="1111" height="1280" }
-- ![post-005](posts/post-005/photo-03.jpg){ loading="lazy" width="1087" height="1280" }
-- ![post-005](posts/post-005/photo-04.jpg){ loading="lazy" width="1171" height="1280" }
-- ![post-005](posts/post-005/photo-05.jpg){ loading="lazy" width="1236" height="1280" }
-- ![post-005](posts/post-005/photo-06.jpg){ loading="lazy" width="1280" height="1042" }
-- ![post-005](posts/post-005/photo-07.jpg){ loading="lazy" width="783" height="614" }
-- ![post-005](posts/post-005/photo-08.jpg){ loading="lazy" width="878" height="735" }
-
-</div>
-
-</article>
-
-<article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | 600x400 { #post-003 }
-
----
-
-<div class="grid cards no-gap cols-3" markdown>
-
--  
-
-    !!! info ""
-
-        - Автор: Aleksey M
-        - Дата: 2025-08-18
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/361516){ target="_blank" }
-        - Версия: -
-        - Типоразмер: 600x400
-        - Хотэнды: -
-
-        - Комментарий автора: (1)
-          { .annotate }
-
-              1. Не знаю какой версии аппарат, что то около 8й + всякие нужные и не особо нужные эксперименты.<br>Область печати 600*400*250. Ускорения и прочие скоростные характеристики неизвестны по причине лени владельца, да и печатает он в основном композиты в дубле - разгоняться некуда.
-
-- ![post-003](posts/post-003/photo-01.jpg){ loading="lazy" width="715" height="691" }
-- ![post-003](posts/post-003/photo-02.jpg){ loading="lazy" width="1066" height="663" }
-- ![post-003](posts/post-003/photo-03.jpg){ loading="lazy" width="720" height="1280" }
-- ![post-003](posts/post-003/photo-04.jpg){ loading="lazy" width="1138" height="604" }
-
-</div>
-
-</article>
-
-<article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | 400x250 { #post-002 }
-
----
-
-<div class="grid cards no-gap cols-3" markdown>
-
--  
-
-    !!! info ""
-
-        - Автор: Andrei Kureichyk
-        - Дата: 2025-08-18
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/361484){ target="_blank" }
-        - Версия: -
-        - Типоразмер: M (400x250)
-        - Хотэнды: -
-
-        - Комментарий автора: (1)
-          { .annotate }
-
-              1. Вот такой у меня красавец получился. Размер М. Хотенды CHC XL, Manta M8P. Живу в Минске. Идея собирать Восток появилась в ноябре 2024 - хотелось собрать двухголовый принтер :)  Первые детали заказал в марте, сборку закончил в июне. Все собрано по канону, единственное отличие - Manta M8p (она уже была в наличии, потому решил  Octopus не брать). Моторы Leadshine, ремни с шагом 1.5. Зашивка: портал - алюминий, пол и задняя стенка - алюмокомпозит, стенки и купол - поликарбонат. Из модов ещё поставил измененный держатель платы головы с жестким креплением провода. По резонансам - 18900 по Х, 13200 по Y - это на столе. На плиточном полу 20500 и 14600, соответственно. В принципе, мне более чем достаточно, но я ещё над этим работаю :). Детали оси Х и головы - PA-GF30, остальные внутренние детали PP-GF30, наружные - ASA-CF.<br>Искренняя благодарность Дмитрию за прекрасно проработанный проект - никаких существенных проблем при сборке не возникло. Занимаюсь дописыванием и оптимизацией макросов и файлов конфигурации. :)
-
-- ![post-002](posts/post-002/photo-01.jpg){ loading="lazy" width="848" height="1280" }
-- ![post-002](posts/post-002/photo-02.jpg){ loading="lazy" width="890" height="1280" }
-- ![post-002](posts/post-002/photo-03.jpg){ loading="lazy" width="849" height="1280" }
-- ![post-002](posts/post-002/photo-04.jpg){ loading="lazy" width="838" height="1280" }
-
-</div>
-
-</article>
-
-<article class="gallery-post" markdown>
-## &nbsp;&nbsp;v?&nbsp;&nbsp; | 400x250 { #post-001 }
-
----
-
-<div class="grid cards no-gap cols-3" markdown>
-
--  
-
-    !!! info ""
-
-        - Автор: Александр Соколь
-        - Дата: 2025-08-16
-        - [Оригинал в Telegram](https://t.me/k3d_vostok/361174){ target="_blank" }
-        - Версия: -
-        - Типоразмер: M (400x250)
-        - Хотэнды: -
-
-        - Комментарий автора: (1)
-          { .annotate }
-
-              1. Собрал восток. Публикую фото для публикации в галереи. На данный момент есть проблемы с держателями катушек. И не смог настроить зеркало и копию. Но это не проблема принтера а чтото с моей прошивкой.Размер M ускорения не очень получились какая-то проблем с Y всего 8000. По итогу если сильнее натягивать ремни то 11000 получась. Но как показала практика при печати с такими ремнями начинаются пропуски шагов. По Х 18000. Но в целом меня все устраивает. Может позже переберу принтер посмотрю что в Y не так работает.
-
-- ![post-001](posts/post-001/photo-01.jpg){ loading="lazy" width="1280" height="960" }
-- ![post-001](posts/post-001/photo-02.jpg){ loading="lazy" width="1280" height="960" }
-- ![post-001](posts/post-001/photo-03.jpg){ loading="lazy" width="1280" height="960" }
-- ![post-001](posts/post-001/photo-04.jpg){ loading="lazy" width="1280" height="960" }
-- ![post-001](posts/post-001/photo-05.jpg){ loading="lazy" width="1280" height="960" }
-- ![post-001](posts/post-001/photo-06.jpg){ loading="lazy" width="720" height="1280" }
-- ![post-001](posts/post-001/photo-07.jpg){ loading="lazy" width="1280" height="720" }
-- ![post-001](posts/post-001/photo-08.jpg){ loading="lazy" width="720" height="1280" }
 
 </div>
 

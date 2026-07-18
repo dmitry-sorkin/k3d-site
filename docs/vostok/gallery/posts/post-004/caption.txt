@@ -1,6 +1,6 @@
 <!-- version: 0.8.x -->
 <!-- size: 330x300 -->
-<!-- hotends: - -->
+<!-- hotends: Dragon HF -->
 <!-- author: Шуня -->
 <!-- date: 2025-08-20 -->
 <!-- first_id: 361735 -->

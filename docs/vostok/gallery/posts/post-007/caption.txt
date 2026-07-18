@@ -1,6 +1,6 @@
 <!-- version: 0.8.x -->
 <!-- size: 400x250 -->
-<!-- hotends: - -->
+<!-- hotends: CHC -->
 <!-- author: Mikhail -->
 <!-- date: 2025-09-18 -->
 <!-- first_id: 364354 -->
