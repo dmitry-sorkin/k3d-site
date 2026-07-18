@@ -467,16 +467,28 @@ input[type="text"]:disabled {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid.cards.cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid.cards.cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 @media screen and (max-width: 60rem) {
   .grid.cards.no-gap.cols-2,
-  .grid.cards.no-gap.cols-3 {
+  .grid.cards.no-gap.cols-3,
+  .grid.cards.cols-2,
+  .grid.cards.cols-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media screen and (max-width: 30rem) {
   .grid.cards.no-gap.cols-2,
-  .grid.cards.no-gap.cols-3 {
+  .grid.cards.no-gap.cols-3,
+  .grid.cards.cols-2,
+  .grid.cards.cols-3 {
     grid-template-columns: minmax(0, 1fr);
   }
 }
