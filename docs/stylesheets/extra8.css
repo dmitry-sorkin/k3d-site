@@ -553,3 +553,67 @@ input[type="text"]:disabled {
 .md-typeset .admonition-title:before, .md-typeset summary:before {
     top: .3rem;
 }
+
+/* =====================================================
+   Галерея сборок VOSTOK (docs/vostok/gallery/index.md)
+   ===================================================== */
+
+/* Каждый пост — это <article class="gallery-post"> с H2 (id="post-NNN"),
+   шапкой, текстом и сеткой медиа внутри. Скрываем все посты, кроме того,
+   на который указывает URL-фрагмент (#post-NNN). Material TOC генерирует
+   ссылки на эти H2 — клик по ним меняет хеш, после чего CSS показывает
+   нужный пост без перезагрузки страницы. */
+.md-typeset .gallery > .gallery-post {
+  display: none;
+  scroll-margin-top: 4.5rem;
+}
+
+/* ID якоря ставится на H2 внутри <article>, потому что так Material
+   подхватывает заголовок в TOC. Активируем пост через :has(). */
+.md-typeset .gallery > .gallery-post:has(h2[id^="post-"]:target) {
+  display: block;
+}
+
+/* Если в URL нет фрагмента (первый заход / рефреш) — показываем первый пост.
+   :has() поддерживается во всех актуальных браузерах с 2023 года. */
+.md-typeset .gallery:not(:has(h2[id^="post-"]:target)) > .gallery-post:first-of-type {
+  display: block;
+}
+
+/* В галерее grid.cards.no-gap рендерится сеткой квадратных превью:
+   кроп через object-fit: cover, оригинал открывается по клику через
+   <a class="glightbox">, который генерит build.py. */
+.md-typeset .gallery .grid.cards.no-gap > ul > li {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.md-typeset .gallery .grid.cards.no-gap > ul > li > a,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.md-typeset .gallery .grid.cards.no-gap > ul > li > a > img,
+.md-typeset .gallery .grid.cards.no-gap > ul > li > video {
+  object-fit: cover;
+}
+
+/* Если первая ячейка сетки содержит admonition (например, инфо-карточка
+   поста), то вместо квадратного превью admonition должен заполнять ячейку
+   целиком, а его содержимое выравниваться по центру по вертикали. */
+.md-typeset .gallery .grid.cards.no-gap > ul > li:has(> .admonition) {
+  aspect-ratio: auto;
+  overflow: visible;
+  display: flex;
+  padding: 0;
+}
+
+.md-typeset .gallery .grid.cards.no-gap > ul > li:has(> .admonition) > .admonition {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}

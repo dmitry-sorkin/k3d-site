@@ -24,9 +24,9 @@ theme:
     - navigation.sections
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
     - search.suggest
     - search.highlight
-    - content.tooltips
   custom_dir: overrides
   font:
     text: Cascadia Code
@@ -163,6 +163,7 @@ nav:
   - VOSTOK:
       - О VOSTOK: ./vostok/index.md
       - Частые вопросы: ./vostok/faq.md
+      - Галерея: ./vostok/gallery/index.md
       - Скачать: ./vostok/releases/index.md
       - Ресурсы проекта:
           - Telegram чат: ./redirects/vostok_chat.md
