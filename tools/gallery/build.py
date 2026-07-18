@@ -251,12 +251,20 @@ def main() -> int:
     grouped: dict[int, list[tuple]] = {0: [], 1: [], 2: []}
     for item in decorated:
         grouped[item[0]].append(item)
-    post_dirs = []
+    sorted_dirs = []
     for rank in (0, 1, 2):
         # По убыванию даты; имя используется как стабильный тай-брейкер.
-        post_dirs.extend(
+        sorted_dirs.extend(
             item[3] for item in sorted(grouped[rank], key=lambda x: (x[1], x[2]), reverse=True)
         )
+
+    # Закрепляем post-016 первым и post-002 вторым; остальные посты остаются
+    # в порядке сортировки по версии/дате.
+    pinned_first = "post-016"
+    pinned_second = "post-002"
+    pinned = [d for d in sorted_dirs if d.name == pinned_first]
+    pinned += [d for d in sorted_dirs if d.name == pinned_second]
+    post_dirs = pinned + [d for d in sorted_dirs if d.name not in (pinned_first, pinned_second)]
 
     if not post_dirs:
         print("Посты не найдены.", file=sys.stderr)
