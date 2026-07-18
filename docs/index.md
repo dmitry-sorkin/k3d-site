@@ -27,9 +27,18 @@ show_author: false
 
 - :material-printer-3d:{ .lg .middle } __K3D VOSTOK__
 
-	├ [:octicons-rocket-24: K3D VOSTOK](./vostok/index.md)<br>
+	├ [:material-printer-3d: K3D VOSTOK](./vostok/index.md)<br>
+	├ [:material-help-circle: Частые вопросы](./vostok/faq.md)<br>
+	├ [:material-image-multiple: Галерея сборок](./vostok/gallery/index.md)<br>
 	├ [:material-download: Релизы](./vostok/releases/index.md){ target="_blank" }<br>
-	├ [:material-tools: Инструменты](./vostok/tools.md)<br>
+	├ [:material-toolbox: Инструменты](./vostok/tools.md)<br>
+	├ [:lucide-code-2: Прошивка](./vostok/manual/firmware.md)<br>
+	├ [:custom-orcaslicer: Настройка слайсера](./vostok/manual/slicer_configuration.md)<br>
+	├ [:lucide-command: Макросы](./vostok/manual/macros.md)<br>
+	├ [:material-swap-horizontal: Быстрая смена инструмента](./vostok/manual/fast_tool_swaps.md)<br>
+	├ [:lucide-list-todo: Начало сборки](./vostok/manual/start.md)<br>
+	├ [:lucide-package-open: Подготовка](./vostok/manual/prepare.md)<br>
+	├ [:lucide-plug: Схемы подключения](./vostok/manual/wiring.md)<br>
 	├ [:octicons-gear-16: Модификации](./redirects/vostok_mods.md){ target="_blank" }<br>
 	└ [:octicons-bug-16: Багтрекер](./redirects/vostok_bugtracker.md){ target="_blank" }
 	
@@ -38,10 +47,17 @@ show_author: false
 	├ [:material-notification-clear-all: Порядок калибровок](./calibrations/index.md)<br>
 	├ [:fontawesome-solid-temperature-low: Калибровка PID](./calibrations/pid.md)<br>
 	├ [:fontawesome-solid-wave-square: Ручная калибровка IS](./calibrations/manual_is_calibration.md)<br>
+	├ [:material-water-check: Калибровка потока](./calibrations/flow.md)<br>
+	├ [:material-arrow-left-right-bold: Калибровка смещения печатающих голов](./calibrations/printhead_offset.md)<br>
 	├ [:fontawesome-solid-maximize: Калибровка точности](./calibrations/accuracy/index.md)<br>
 	├ [:material-sine-wave: Тест ряби для PS](./calibrations/vfa.md)<br>
-	├ [:material-rounded-corner: Калибровщик PA ](./calibrations/la/calibrator.md)<br>
-	└ [:material-printer-3d-nozzle-alert-outline: Калибровщик откатов ](./calibrations/retractions/calibrator.md)
+	├ [:material-rounded-corner: Калибровка PA](./calibrations/la/index.md)<br>
+	│&nbsp;&nbsp;├ [ Методика](./calibrations/la/index.md)<br>
+	│&nbsp;&nbsp;└ [ Калибровщик](./calibrations/la/calibrator.md)<br>
+	├ [:material-file-document: Калибровка откатов](./calibrations/retractions/index.md)<br>
+	│&nbsp;&nbsp;├ [ Инструкция](./calibrations/retractions/index.md)<br>
+	│&nbsp;&nbsp;└ [ Калибровщик](./calibrations/retractions/calibrator.md)<br>
+	└ [:material-speedometer: Объёмный расход](./calibrations/max_flowrate/calibrator.md)
 
 - :simple-blueprint:{ .lg .middle } __Другие проекты__
 
