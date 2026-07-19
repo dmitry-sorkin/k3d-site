@@ -683,3 +683,176 @@ input[type="text"]:disabled {
     text-align: center;
   }
 }
+
+/* ============ Прототипы главной страницы (временно) ============ */
+
+/* Герой (общий для вариантов A/B/C) */
+.md-typeset .lp-hero {
+    margin: 1rem 0 2.5rem;
+    padding: 3rem 2rem;
+    border-radius: 0.6rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--dark));
+}
+
+.md-typeset .lp-hero h1 {
+    margin: 0 0 0.8rem;
+    color: #ffffff;
+    font-size: 2.1rem;
+}
+
+.md-typeset .lp-hero p {
+    max-width: 36rem;
+    margin: 0 auto 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.md-typeset .lp-hero p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* Кнопки в герое */
+.md-typeset .lp-hero .md-button--primary {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset .lp-hero .md-button--primary:hover {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.md-typeset .lp-hero .lp-btn-ghost {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.md-typeset .lp-hero .lp-btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+}
+
+/* Сетка карточек (варианты A и C) */
+.md-typeset .lp-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.md-typeset a.lp-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: inherit;
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.5rem;
+    background: var(--md-default-bg-color);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.md-typeset a.lp-card:hover {
+    transform: translateY(-0.15rem);
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.18);
+}
+
+.md-typeset .lp-card img {
+    width: 100%;
+    height: 8.5rem;
+    margin: 0;
+    object-fit: cover;
+}
+
+.md-typeset .lp-card-body {
+    padding: 0.9rem 1rem 1.1rem;
+}
+
+.md-typeset .lp-card-body h3 {
+    margin: 0 0 0.4rem;
+    font-size: 0.95rem;
+}
+
+.md-typeset .lp-card-body p {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--md-default-fg-color--light);
+}
+
+/* Номерные текстовые карточки (вариант C) */
+.md-typeset .lp-num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--md-primary-fg-color);
+}
+
+.md-typeset .lp-search-note {
+    margin: -1.5rem 0 2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .lp-search-note kbd {
+    padding: 0 0.3rem;
+    border: 0.05rem solid var(--md-default-fg-color--lightest);
+    border-radius: 0.2rem;
+}
+
+/* Второстепенные разделы (общий блок) */
+.md-typeset .lp-secondary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1rem;
+    padding-top: 1.2rem;
+    border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+    font-size: 0.75rem;
+}
+
+.md-typeset .lp-secondary h4 {
+    margin: 0 0 0.4rem;
+    font-size: 0.8rem;
+    color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .lp-secondary ul {
+    margin: 0;
+    padding-left: 1rem;
+}
+
+/* Появление текста героя при загрузке */
+@keyframes lp-rise {
+    from { opacity: 0; transform: translateY(1rem); }
+    to   { opacity: 1; transform: none; }
+}
+
+.md-typeset .lp-hero h1 { animation: lp-rise 0.6s 0.1s backwards; }
+.md-typeset .lp-hero p:nth-of-type(1) { animation: lp-rise 0.6s 0.3s backwards; }
+
+/* Плавное появление блоков при прокрутке (где поддерживается) */
+@supports (animation-timeline: view()) {
+    .md-typeset .lp-card,
+    .md-typeset .lp-secondary > div {
+        animation: lp-rise linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 70%;
+    }
+}
+
+/* Зум фото карточки при наведении */
+.md-typeset .lp-card img {
+    transition: transform 0.3s ease;
+}
+
+.md-typeset a.lp-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Уважение к prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .md-typeset .lp-hero *,
+    .md-typeset .lp-cards *,
+    .md-typeset .lp-secondary * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
