@@ -748,12 +748,21 @@ input[type="text"]:disabled {
     border: 0.05rem solid var(--md-default-fg-color--lightest);
     border-radius: 0.5rem;
     background: var(--md-default-bg-color);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: top 0.25s ease, box-shadow 0.25s ease;
 }
 
-.md-typeset a.lp-card:hover {
-    transform: translateY(-0.15rem);
-    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.18);
+.md-typeset a.lp-card:hover,
+.md-typeset a.lp-card:focus-visible {
+    text-decoration: none;
+    top: -0.33rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.22);
+}
+
+.md-typeset a.lp-card * {
+    text-decoration: none;
 }
 
 .md-typeset .lp-card img {
@@ -847,12 +856,11 @@ input[type="text"]:disabled {
     transform: scale(1.05);
 }
 
-/* Уважение к prefers-reduced-motion */
+/* Уважение к prefers-reduced-motion: только подавляем входные анимации, hover-переходы оставляем */
 @media (prefers-reduced-motion: reduce) {
     .md-typeset .lp-hero *,
     .md-typeset .lp-cards *,
     .md-typeset .lp-secondary * {
         animation: none !important;
-        transition: none !important;
     }
 }
