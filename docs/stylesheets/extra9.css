@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400;700&display=swap');
+
 .divTable{
 	display: table;
 	width: 100%;
@@ -686,50 +688,97 @@ input[type="text"]:disabled {
 
 /* ============ Прототипы главной страницы (временно) ============ */
 
-/* Герой (общий для вариантов A/B/C) */
+/* Герой: видео-фон с затемнением, размытием и логотипом + заголовком */
 .md-typeset .lp-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
     margin: 1rem 0 2.5rem;
-    padding: 3rem 2rem;
+    padding: 3.5rem 2rem;
+    overflow: hidden;
     border-radius: 0.6rem;
-    text-align: center;
-    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-primary-fg-color--dark));
-}
-
-.md-typeset .lp-hero h1 {
-    margin: 0 0 0.8rem;
+    background: #000;
     color: #ffffff;
-    font-size: 2.1rem;
 }
 
-.md-typeset .lp-hero p {
-    max-width: 36rem;
-    margin: 0 auto 1.5rem;
-    color: rgba(255, 255, 255, 0.9);
+.md-typeset .lp-hero__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: blur(4px);
 }
 
-.md-typeset .lp-hero p:last-of-type {
-    margin-bottom: 0;
+.md-typeset .lp-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
 }
 
-/* Кнопки в герое */
-.md-typeset .lp-hero .md-button--primary {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: var(--md-primary-fg-color);
+.md-typeset .lp-hero__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
 }
 
-.md-typeset .lp-hero .md-button--primary:hover {
-    background: rgba(255, 255, 255, 0.85);
+.md-typeset .lp-hero__logo {
+    height: 56px;
+    width: auto;
+    border-radius: 0 !important;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
+    animation: lp-rise 0.7s 0.1s backwards;
 }
 
-.md-typeset .lp-hero .lp-btn-ghost {
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.6);
+.md-typeset .lp-hero__title {
+    font-family: 'Tektur', var(--md-text-font), sans-serif;
+    font-weight: 400;
+    font-size: 79px;
+    line-height: 79px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 0 4px rgba(0, 0, 0, 0.5);
+    animation: lp-rise 0.7s 0.3s backwards;
 }
 
-.md-typeset .lp-hero .lp-btn-ghost:hover {
-    background: rgba(255, 255, 255, 0.12);
-    border-color: #ffffff;
+.md-typeset .lp-hero__content {
+    gap: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .md-typeset .lp-hero__logo {
+        height: 1.8rem;
+    }
+
+    .md-typeset .lp-hero__title {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .md-typeset .lp-hero__content {
+        gap: 0.8rem;
+    }
+}
+
+/* На главной странице название в шапке прозрачное (чтобы layout не съезжал);
+   логотип оставляем видимым */
+body:has(.lp-hero) .md-header__title {
+    visibility: hidden;
+}
+
+/* На главной скрываем авто-сгенерированный <h1> из frontmatter title над hero */
+body:has(.lp-hero) .md-content__inner > h1:first-of-type {
+    display: none;
 }
 
 /* Сетка карточек (варианты A и C) */
@@ -930,8 +979,7 @@ input[type="text"]:disabled {
     to   { opacity: 1; transform: none; }
 }
 
-.md-typeset .lp-hero h1 { animation: lp-rise 0.6s 0.1s backwards; }
-.md-typeset .lp-hero p:nth-of-type(1) { animation: lp-rise 0.6s 0.3s backwards; }
+/* (анимации lp-rise для h1/p старого hero удалены — структура изменилась) */
 
 /* Плавное появление блоков при прокрутке (где поддерживается) */
 @supports (animation-timeline: view()) {

@@ -9,14 +9,18 @@ description: Главная страница
 show_created: false
 show_updated: false
 show_author: false
+glightbox: false
 ---
 
-<div class="lp-hero" markdown>
-
-# K3D — всё о 3D-печати
-
-Рекомендаторы, собственные проекты и калибровки. Выберите раздел ниже или просто начните искать.
-
+<div class="lp-hero">
+	<video class="lp-hero__video" autoplay muted loop playsinline poster="/vostok/pics/vostok_index.png">
+		<source src="/vostok/pics/index_main.mp4" type="video/mp4">
+	</video>
+	<div class="lp-hero__overlay"></div>
+	<div class="lp-hero__content">
+		<img class="lp-hero__logo" src="/assets/k3d_logo.png" alt="K3D">
+		<span class="lp-hero__title">ВСЁ О 3D ПЕЧАТИ</span>
+	</div>
 </div>
 
 <div class="lp-search-note">
