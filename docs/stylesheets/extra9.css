@@ -807,25 +807,109 @@ input[type="text"]:disabled {
     border-radius: 0.2rem;
 }
 
-/* Второстепенные разделы (общий блок) */
-.md-typeset .lp-secondary {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-    gap: 1rem;
-    padding-top: 1.2rem;
-    border-top: 0.05rem solid var(--md-default-fg-color--lightest);
-    font-size: 0.75rem;
+/* Карта навигации (6 колонок, переход 6→3→2→1) */
+.grid.cards.cols-6 {
+    grid-template-columns: repeat(6, 1fr);
 }
 
-.md-typeset .lp-secondary h4 {
-    margin: 0 0 0.4rem;
-    font-size: 0.8rem;
-    color: var(--md-default-fg-color--light);
+@media screen and (max-width: 1200px) {
+    .grid.cards.cols-6 {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-.md-typeset .lp-secondary ul {
+@media screen and (max-width: 700px) {
+    .grid.cards.cols-6 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .grid.cards.cols-6 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.md-typeset .lp-secondary > ul > li {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    font-size: 0.7rem;
+    line-height: 1.4;
+    border: none !important;
+    border-radius: 0 !important;
+    background: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+}
+
+.md-typeset .lp-secondary > ul > li:hover,
+.md-typeset .lp-secondary > ul > li:focus-within {
+    transform: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.md-typeset .lp-secondary > ul > li > p {
     margin: 0;
-    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    line-height: 1.3;
+}
+
+.md-typeset .lp-secondary > ul > li > p:first-child svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: var(--md-primary-fg-color);
+    flex: 0 0 auto;
+}
+
+.md-typeset .lp-secondary > ul > li > p:first-child a {
+    color: var(--md-primary-fg-color);
+    font-weight: 700;
+    font-size: 0.78rem;
+}
+
+.md-typeset .lp-secondary > ul > li > hr {
+    margin: 0.3rem 0;
+    border: 0;
+    border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+/* Список ссылок: убираем большие отступы от <br>, делаем компактным */
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) {
+    display: block;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) a {
+    display: block;
+    line-height: 1.5;
+    color: var(--md-default-fg-color);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) a:hover,
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) a:focus-visible {
+    color: var(--md-primary-fg-color);
+    text-decoration: none;
+}
+
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) svg {
+    width: 1em;
+    height: 1em;
+    fill: var(--md-default-fg-color--light);
+    margin-right: 0.3rem;
+    vertical-align: -0.15em;
+    transition: fill 0.15s ease;
+}
+
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) a:hover svg,
+.md-typeset .lp-secondary > ul > li > p:not(:first-child) a:focus-visible svg {
+    fill: var(--md-primary-fg-color);
 }
 
 /* Появление текста героя при загрузке */
