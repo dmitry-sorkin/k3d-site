@@ -58,7 +58,7 @@ glightbox: false
 		<div class="lp-card-body">
 			<div class="lp-num">03</div>
 			<h3>K3D VOSTOK</h3>
-			<p>Проект быстрого крупногабаритного IDEX 3D-принтера с открытыми исходниками</p>
+			<p>Проект большого и быстрого IDEX 3D-принтера с открытыми исходниками</p>
 		</div>
 	</a>
 	<a class="lp-card" href="/calibrations/">

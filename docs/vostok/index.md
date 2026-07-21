@@ -18,7 +18,7 @@ show_author: false
   <source src="./pics/index_main.mp4" type="video/mp4">
 </video>
 
-<p align="center" style="font-size: 1.3em;">Проект быстрого крупногабаритного IDEX 3D-принтера с открытыми исходниками</p>
+<p align="center" style="font-size: 1.3em;">Проект большого и быстрого IDEX 3D-принтера с открытыми исходниками</p>
 
 ---
 
