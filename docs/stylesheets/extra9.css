@@ -735,9 +735,21 @@ input[type="text"]:disabled {
 /* Сетка карточек (варианты A и C) */
 .md-typeset .lp-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .md-typeset .lp-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .md-typeset .lp-cards {
+        grid-template-columns: 1fr;
+    }
 }
 
 .md-typeset a.lp-card {
