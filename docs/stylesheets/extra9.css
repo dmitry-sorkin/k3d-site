@@ -751,23 +751,27 @@ input[type="text"]:disabled {
     animation: lp-rise 0.7s 0.3s backwards;
 }
 
-.md-typeset .lp-hero__content {
-    gap: 2.5rem;
+.md-typeset .lp-hero {
+    container-type: inline-size;
 }
 
-@media screen and (max-width: 600px) {
-    .md-typeset .lp-hero__logo {
-        height: 1.8rem;
-    }
+.md-typeset .lp-hero__content {
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
-    .md-typeset .lp-hero__title {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-    }
+.md-typeset .lp-hero__logo {
+    flex: 0 0 auto;
+    height: 56px;
+}
 
-    .md-typeset .lp-hero__content {
-        gap: 0.8rem;
-    }
+.md-typeset .lp-hero__title {
+    white-space: nowrap;
+    flex: 0 0 auto;
+    font-size: clamp(28px, 13cqi, 79px);
+    line-height: 1;
 }
 
 /* На главной странице название в шапке прозрачное (чтобы layout не съезжал);
