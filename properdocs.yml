@@ -233,6 +233,8 @@ nav:
       - UHF хотэнды: ./articles/ultra_high_flow_hotends.md
       - Хотэнды AD5M/AD5X: ./articles/ad5m_ad5x_hotend_test.md
       - Дефекты охлаждения: ./articles/cooling_problems.md
+      - Обзор Sovol SV08: ./articles/sv08/sv08.md
+      - Графики IS SV08: ./articles/sv08/sv08_is.md
   - Доработки:
       - QIDI Q2: ./printers/qidi_q2/index.md
       - QIDI Q1 Pro: ./printers/qidi_q1_pro.md

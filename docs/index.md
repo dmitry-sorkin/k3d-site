@@ -100,7 +100,7 @@ glightbox: false
 
     ---
 
-    [:material-weight-lifter: Прочность](./articles/print_strong.md)    [:material-code-block-tags: G-коды](./articles/custom_gcode.md)    [:material-printer-3d-nozzle: Сопла Volcano](./articles/nozzle_test_2024.md)    [:material-printer-3d-nozzle: UHF хотэнды](./articles/ultra_high_flow_hotends.md)    [:material-printer-3d-nozzle: Хотэнды AD5M/AD5X](./articles/ad5m_ad5x_hotend_test.md)    [:material-fan: Дефекты охлаждения](./articles/cooling_problems.md)
+    [:material-weight-lifter: Прочность](./articles/print_strong.md)    [:material-code-block-tags: G-коды](./articles/custom_gcode.md)    [:material-printer-3d-nozzle: Сопла Volcano](./articles/nozzle_test_2024.md)    [:material-printer-3d-nozzle: UHF хотэнды](./articles/ultra_high_flow_hotends.md)    [:material-printer-3d-nozzle: Хотэнды AD5M/AD5X](./articles/ad5m_ad5x_hotend_test.md)    [:material-fan: Дефекты охлаждения](./articles/cooling_problems.md)    [:material-printer-3d-nozzle: Обзор Sovol SV08](./articles/sv08/sv08.md)    [:fontawesome-solid-wave-square: Графики IS SV08](./articles/sv08/sv08_is.md)
 
 -   :material-printer-3d:{ .lg .middle } __[Доработки](./printers/qidi_q2/index.md)__
 
