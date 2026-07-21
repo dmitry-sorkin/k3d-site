@@ -218,9 +218,9 @@ nav:
       - Шкивы: ./projects/custom_pulleys/index.md
       - Печатающие головы:
           - Печатающие головы: ./projects/printheads.md
-          - Ender-3 BMG Printhead: ./projects/ebp/index.md
-          - Ender-3 H2 Printhead: ./projects/ehp/index.md
-          - Ender-3 Sprite Printhead: ./projects/esp/index.md
+          - EBP: ./projects/ebp/index.md
+          - EH2P: ./projects/ehp/index.md
+          - ESP: ./projects/esp/index.md
       - Фидеры:
           - Фидеры: ./projects/feeders.md
           - BeMeGe: ./projects/bemege/index.md

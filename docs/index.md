@@ -76,36 +76,36 @@ glightbox: false
 
     ---
 
-    [:material-printer-3d: Принтеры](./part-navi/printers.md)    [:material-printer-3d-nozzle: Экструдеры](./part-navi/extruder.md)    [:fontawesome-solid-microchip: Электроника](./part-navi/electronics.md)    [:fontawesome-solid-wrench: Механика](./part-navi/mechanics.md)    [:fontawesome-solid-drum-steelpan: Филаменты](./part-navi/filament.md)    [:material-heat-wave: Сушка филамента](./part-navi/filament_dryers.md)    [:material-water: Расходники](./part-navi/consumables.md)
+    [:material-printer-3d: 3D Принтеры](./part-navi/printers.md)    [:material-printer-3d-nozzle: Экструдеры](./part-navi/extruder.md)    [:fontawesome-solid-microchip: Электроника](./part-navi/electronics.md)    [:fontawesome-solid-wrench: Механика](./part-navi/mechanics.md)    [:fontawesome-solid-drum-steelpan: Филаменты](./part-navi/filament.md)    [:material-heat-wave: Сушка филамента](./part-navi/filament_dryers.md)    [:material-water: Расходники](./part-navi/consumables.md)
 
 -   :material-printer-3d:{ .lg .middle } __[VOSTOK](./vostok/index.md)__
 
     ---
 
-    [:material-printer-3d: О проекте](./vostok/index.md)    [:material-help-circle: Частые вопросы](./vostok/faq.md)    [:material-image-multiple: Галерея](./vostok/gallery/index.md)    [:material-download: Релизы](./vostok/releases/index.md)
+    [:material-printer-3d: О VOSTOK](./vostok/index.md)    [:lucide-help-circle: Частые вопросы](./vostok/faq.md)    [:material-image-multiple: Галерея](./vostok/gallery/index.md)    [:lucide-download: Релизы](./vostok/releases/index.md)    [:lucide-list-todo: Начало](./vostok/manual/start.md)    [:lucide-package-open: Подготовка](./vostok/manual/prepare.md)    [:lucide-plug: Схемы](./vostok/manual/wiring.md)    [:lucide-code-2: Прошивка](./vostok/manual/firmware.md)    [:custom-orcaslicer: Слайсер](./vostok/manual/slicer_configuration.md)    [:material-swap-horizontal: СБСИ](./vostok/manual/fast_tool_swaps.md)    [:lucide-command: Макросы](./vostok/manual/macros.md)
 
 -   :material-notification-clear-all:{ .lg .middle } __[Калибровки](./calibrations/index.md)__
 
     ---
 
-    [:material-notification-clear-all: Порядок](./calibrations/index.md)    [:fontawesome-solid-temperature-low: PID](./calibrations/pid.md)    [:fontawesome-solid-wave-square: Input Shaping](./calibrations/manual_is_calibration.md)    [:material-water-check: Поток](./calibrations/flow.md)    [:material-arrow-left-right-bold: Смещение голов](./calibrations/printhead_offset.md)    [:fontawesome-solid-maximize: Точность](./calibrations/accuracy/index.md)    [:material-sine-wave: Рябь PS](./calibrations/vfa.md)    [:material-rounded-corner: Pressure Advance](./calibrations/la/index.md)    [:material-file-document: Откаты](./calibrations/retractions/index.md)    [:material-speedometer: Объёмный расход](./calibrations/max_flowrate/calibrator.md)
+    [:material-notification-clear-all: Порядок](./calibrations/index.md)    [:fontawesome-solid-temperature-low: PID](./calibrations/pid.md)    [:fontawesome-solid-wave-square: Input Shaping](./calibrations/manual_is_calibration.md)    [:material-water-check: Поток](./calibrations/flow.md)    [:fontawesome-solid-maximize: Точность](./calibrations/accuracy/index.md)    [:material-sine-wave: Рябь](./calibrations/vfa.md)    [:material-arrow-left-right-bold: Смещение голов](./calibrations/printhead_offset.md)    [:octicons-package-16: Откаты](./calibrations/retractions/calibrator.md)    [:octicons-package-16: Pressure Advance](./calibrations/la/calibrator.md)    [:octicons-package-16: Объёмный расход](./calibrations/max_flowrate/calibrator.md)
 
 -   :material-translate:{ .lg .middle } __[Проекты](./projects/ps_translation/index.md)__
 
     ---
 
-    [:material-translate: PrusaSlicer](./projects/ps_translation/index.md)    [:octicons-gear-24: Шкивы](./projects/custom_pulleys/index.md)    [:fontawesome-solid-gears: Подачи](./projects/feeders.md)    [:material-printer-3d-nozzle: Печатающие головы](./projects/printheads.md)    [:material-printer-3d-nozzle: Ender-3 BMG](./projects/ebp/index.md)    [:material-printer-3d-nozzle: Ender-3 H2](./projects/ehp/index.md)
+    [:material-translate: Перевод PrusaSlicer](./projects/ps_translation/index.md)    [:octicons-gear-24: Шкивы](./projects/custom_pulleys/index.md)    [:material-printer-3d-nozzle: Печатающие головы](./projects/printheads.md)    [:material-subdirectory-arrow-right: EBP](./projects/ebp/index.md)    [:material-subdirectory-arrow-right: EH2P](./projects/ehp/index.md)    [:material-subdirectory-arrow-right: ESP](./projects/esp/index.md)    [:fontawesome-solid-gears: Фидеры](./projects/feeders.md)    [:material-subdirectory-arrow-right: BeMeGe](./projects/bemege/index.md)    [:material-subdirectory-arrow-right: Minifeeder](./projects/minifeeder/index.md)    [:material-subdirectory-arrow-right: Feeder965](./projects/feeder965/index.md)
 
 -   :material-weight-lifter:{ .lg .middle } __[Статьи](./articles/print_strong.md)__
 
     ---
 
-    [:material-weight-lifter: Прочная печать](./articles/print_strong.md)    [:material-code-block-tags: G-коды](./articles/custom_gcode.md)    [:material-printer-3d-nozzle: Тест Volcano](./articles/nozzle_test_2024.md)    [:material-printer-3d-nozzle: Хотэнды UHF](./articles/ultra_high_flow_hotends.md)    [:material-printer-3d-nozzle: Хотэнды AD5M/AD5X](./articles/ad5m_ad5x_hotend_test.md)    [:material-fan: Охлаждение](./articles/cooling_problems.md)
+    [:material-weight-lifter: Прочность](./articles/print_strong.md)    [:material-code-block-tags: G-коды](./articles/custom_gcode.md)    [:material-printer-3d-nozzle: Сопла Volcano](./articles/nozzle_test_2024.md)    [:material-printer-3d-nozzle: UHF хотэнды](./articles/ultra_high_flow_hotends.md)    [:material-printer-3d-nozzle: Хотэнды AD5M/AD5X](./articles/ad5m_ad5x_hotend_test.md)    [:material-fan: Дефекты охлаждения](./articles/cooling_problems.md)
 
 -   :material-printer-3d:{ .lg .middle } __[Доработки принтеров](./printers/kobra3.md)__
 
     ---
 
-    [:material-printer-3d: Kobra 3](./printers/kobra3.md)    [:material-printer-3d: K1](./printers/k1.md)    [:material-printer-3d: Neptune 3 Pro](./printers/neptune3pro.md)    [:material-printer-3d: Neptune 4](./printers/neptune4.md)    [:material-printer-3d: KP3S](./printers/kp3s.md)    [:material-printer-3d: Q1 Pro](./printers/qidi_q1_pro.md)    [:material-printer-3d: Q2](./printers/qidi_q2/index.md)
+    [:material-printer-3d: QIDI Q2](./printers/qidi_q2/index.md)    [:material-printer-3d: QIDI Q1 Pro](./printers/qidi_q1_pro.md)    [:material-printer-3d: Creality K1](./printers/k1.md)    [:material-printer-3d: Anycubic Kobra 3](./printers/kobra3.md)    [:material-printer-3d: Elegoo Neptune 4](./printers/neptune4.md)    [:material-printer-3d: Elegoo Neptune 3 Pro](./printers/neptune3pro.md)    [:material-printer-3d: Kingroon KP3S](./printers/kp3s.md)
 
 </div>
