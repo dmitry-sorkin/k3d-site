@@ -157,7 +157,7 @@ extra_javascript:
 nav:
   - 3D Рекомендатор:
       - 3D Принтеры: ./part-navi/printers.md
-      - Детали экструдеров: ./part-navi/extruder.md
+      - Экструдеры: ./part-navi/extruder.md
       - Электроника: ./part-navi/electronics.md
       - Механика: ./part-navi/mechanics.md
       - Филаменты: ./part-navi/filament.md
@@ -167,19 +167,19 @@ nav:
       - О VOSTOK: ./vostok/index.md
       - Частые вопросы: ./vostok/faq.md
       - Галерея: ./vostok/gallery/index.md
-      - Скачать: ./vostok/releases/index.md
+      - Релизы: ./vostok/releases/index.md
       - Ресурсы проекта:
           - Telegram чат: ./redirects/vostok_chat.md
           - Модификации: ./redirects/vostok_mods.md
           - Багтрекер: ./redirects/vostok_bugtracker.md
-      - Инструкция по сборке:
-          - Начало сборки: ./vostok/manual/start.md
+      - Сборка:
+          - Начало: ./vostok/manual/start.md
           - Подготовка: ./vostok/manual/prepare.md
       - Электроника и софт:
-          - Схемы подключения: ./vostok/manual/wiring.md
+          - Схемы: ./vostok/manual/wiring.md
           - Прошивка: ./vostok/manual/firmware.md
-          - Настройка слайсера: ./vostok/manual/slicer_configuration.md
-          - Скрипт быстрой смены инструмента: ./vostok/manual/fast_tool_swaps.md
+          - Слайсер: ./vostok/manual/slicer_configuration.md
+          - СБСИ: ./vostok/manual/fast_tool_swaps.md
           - Макросы: ./vostok/manual/macros.md
       - Архивные статьи:
           - Инструкции v0.8.x:
@@ -198,49 +198,49 @@ nav:
               - Рама стола: ./vostok/v8/bed_frame.md
               - Ось Z: ./vostok/v8/z_drive.md
   - Калибровки:
-      - Порядок калибровок: ./calibrations/index.md
-      - Калибровка PID: ./calibrations/pid.md
+      - Порядок: ./calibrations/index.md
+      - PID: ./calibrations/pid.md
       - Input Shaping: ./calibrations/manual_is_calibration.md
-      - Калибровка потока: ./calibrations/flow.md
-      - Калибровка точности: ./calibrations/accuracy/index.md
-      - Тест ряби: ./calibrations/vfa.md
-      - Калибровка смещения печатающих голов: ./calibrations/printhead_offset.md
-      - Калибровка откатов:
+      - Поток: ./calibrations/flow.md
+      - Точность: ./calibrations/accuracy/index.md
+      - Рябь: ./calibrations/vfa.md
+      - Смещение голов: ./calibrations/printhead_offset.md
+      - Откаты:
           - Инструкция: ./calibrations/retractions/index.md
-          - Калибровщик откатов: ./calibrations/retractions/calibrator.md
+          - Калибровщик: ./calibrations/retractions/calibrator.md
       - Pressure Advance:
-          - Методика калибровки: ./calibrations/la/index.md
-          - Калибровщик PA: ./calibrations/la/calibrator.md
+          - Методика: ./calibrations/la/index.md
+          - Калибровщик: ./calibrations/la/calibrator.md
       - Объёмный расход:
-          - Калибровщик расхода: ./calibrations/max_flowrate/calibrator.md
+          - Калибровщик: ./calibrations/max_flowrate/calibrator.md
   - Проекты:
       - Перевод PrusaSlicer: ./projects/ps_translation/index.md
-      - Шкивы модифицированной геометрии: ./projects/custom_pulleys/index.md
-      - Печатающие головы K3D:
-          - Печатающие головы K3D: ./projects/printheads.md
+      - Шкивы: ./projects/custom_pulleys/index.md
+      - Печатающие головы:
+          - Печатающие головы: ./projects/printheads.md
           - Ender-3 BMG Printhead: ./projects/ebp/index.md
           - Ender-3 H2 Printhead: ./projects/ehp/index.md
           - Ender-3 Sprite Printhead: ./projects/esp/index.md
-      - Подающие механизмы:
-          - Подающие механизмы K3D: ./projects/feeders.md
+      - Фидеры:
+          - Фидеры: ./projects/feeders.md
           - BeMeGe: ./projects/bemege/index.md
           - Minifeeder: ./projects/minifeeder/index.md
           - Feeder965: ./projects/feeder965/index.md
   - Статьи:
-      - Принципы прочной печати: ./articles/print_strong.md
-      - ЧАВО по G-кодам: ./articles/custom_gcode.md
-      - Тест сопел Volcano: ./articles/nozzle_test_2024.md
-      - Сверхпроизводительные хотэнды: ./articles/ultra_high_flow_hotends.md
-      - Тест хотэндов AD5M/AD5X: ./articles/ad5m_ad5x_hotend_test.md
+      - Прочность: ./articles/print_strong.md
+      - G-коды: ./articles/custom_gcode.md
+      - Сопла Volcano: ./articles/nozzle_test_2024.md
+      - UHF хотэнды: ./articles/ultra_high_flow_hotends.md
+      - Хотэнды AD5M/AD5X: ./articles/ad5m_ad5x_hotend_test.md
       - Дефекты охлаждения: ./articles/cooling_problems.md
   - Доработки:
-      - Anycubic Kobra 3: ./printers/kobra3.md
-      - Creality K1: ./printers/k1.md
-      - Elegoo Neptune 3 Pro: ./printers/neptune3pro.md
-      - Elegoo Neptune 4: ./printers/neptune4.md
-      - Kingroon KP3S: ./printers/kp3s.md
-      - QIDI Q1 Pro: ./printers/qidi_q1_pro.md
       - QIDI Q2: ./printers/qidi_q2/index.md
+      - QIDI Q1 Pro: ./printers/qidi_q1_pro.md
+      - Creality K1: ./printers/k1.md
+      - Anycubic Kobra 3: ./printers/kobra3.md
+      - Elegoo Neptune 4: ./printers/neptune4.md
+      - Elegoo Neptune 3 Pro: ./printers/neptune3pro.md
+      - Kingroon KP3S: ./printers/kp3s.md
   - YouTube: http://www.youtube.com/@SorkinDmitry/
   - Telegram: http://t.me/dsorkin
   - Чат K3D: http://t.me/K_3_D
