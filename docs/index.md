@@ -13,7 +13,7 @@ glightbox: false
 ---
 
 <div class="lp-hero">
-	<video class="lp-hero__video" autoplay muted loop playsinline poster="/vostok/pics/vostok_index.png">
+	<video class="lp-hero__video" autoplay muted loop playsinline>
 		<source src="/vostok/pics/index_main.mp4" type="video/mp4">
 	</video>
 	<div class="lp-hero__overlay"></div>
@@ -22,6 +22,18 @@ glightbox: false
 		<span class="lp-hero__title">ВСЁ О 3D ПЕЧАТИ</span>
 	</div>
 </div>
+
+<script>
+(() => {
+  const v = document.querySelector('.lp-hero__video');
+  if (!v) return;
+  if (v.readyState >= 2) {
+    v.classList.add('is-loaded');
+  } else {
+    v.addEventListener('loadeddata', () => v.classList.add('is-loaded'), { once: true });
+  }
+})();
+</script>
 
 <div class="lp-search-note">
 	Нажмите <kbd>/</kbd> и начните печатать — поиск работает по всем статьям и гайдам сайта

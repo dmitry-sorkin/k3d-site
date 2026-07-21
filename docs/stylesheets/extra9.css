@@ -699,7 +699,7 @@ input[type="text"]:disabled {
     padding: 3.5rem 2rem;
     overflow: hidden;
     border-radius: 0.6rem;
-    background: #000;
+    background: color-mix(in srgb, var(--md-default-bg-color), black 30%);
     color: #ffffff;
 }
 
@@ -711,13 +711,19 @@ input[type="text"]:disabled {
     object-fit: cover;
     z-index: 0;
     filter: blur(4px);
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.md-typeset .lp-hero__video.is-loaded {
+    opacity: 1;
 }
 
 .md-typeset .lp-hero__overlay {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     pointer-events: none;
 }
 
@@ -730,25 +736,6 @@ input[type="text"]:disabled {
     gap: 1.5rem;
     padding: 0.5rem 1rem;
     flex-wrap: wrap;
-}
-
-.md-typeset .lp-hero__logo {
-    height: 56px;
-    width: auto;
-    border-radius: 0 !important;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
-    animation: lp-rise 0.7s 0.1s backwards;
-}
-
-.md-typeset .lp-hero__title {
-    font-family: 'Tektur', var(--md-text-font), sans-serif;
-    font-weight: 400;
-    font-size: 79px;
-    line-height: 79px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7), 0 0 4px rgba(0, 0, 0, 0.5);
-    animation: lp-rise 0.7s 0.3s backwards;
 }
 
 .md-typeset .lp-hero {
@@ -765,13 +752,23 @@ input[type="text"]:disabled {
 .md-typeset .lp-hero__logo {
     flex: 0 0 auto;
     height: 56px;
+    width: auto;
+    border-radius: 0 !important;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.85));
+    animation: lp-rise 0.7s 0.1s backwards;
 }
 
 .md-typeset .lp-hero__title {
-    white-space: nowrap;
-    flex: 0 0 auto;
+    font-family: 'Tektur', var(--md-text-font), sans-serif;
+    font-weight: 400;
     font-size: clamp(28px, 13cqi, 79px);
     line-height: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85), 0 0 6px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+    flex: 0 0 auto;
+    animation: lp-rise 0.7s 0.3s backwards;
 }
 
 /* На главной странице название в шапке прозрачное (чтобы layout не съезжал);
