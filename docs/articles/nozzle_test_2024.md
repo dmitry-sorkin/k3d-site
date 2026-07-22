@@ -4,7 +4,6 @@ authors:
   - sorkin
 icon: material/printer-3d-nozzle
 title: Тест сопел
-subtitle: Сравнение популярных типов сопел
 description: Volcano 0.4mm
 ---
 

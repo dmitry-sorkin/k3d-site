@@ -4,7 +4,6 @@ authors:
   - sorkin
 icon: material/printer-3d-nozzle
 title: Сверхпроизводительные хотэнды
-subtitle: Goliath, CHC XL, Rapido ACE
 description: Goliath, CHC XL, Rapido ACE
 ---
 

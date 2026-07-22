@@ -4,7 +4,6 @@ authors:
   - sorkin
 icon: material/weight-lifter
 title: Принципы прочной печати
-subtitle: Как печатать прочные детали
 description: Как получить прочную деталь из плохо спекающихся материалов
 ---
 

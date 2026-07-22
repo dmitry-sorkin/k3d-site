@@ -4,7 +4,6 @@ authors:
   - sorkin
 icon: material/fan
 title: Дефекты охлаждения
-subtitle: Как настроить охлаждение детали
 description: Как настроить охлаждение детали
 ---
 
