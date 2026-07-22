@@ -468,6 +468,25 @@ input[type="text"]:disabled {
   padding: 0;
 }
 
+/* Квадратные превью-картинки в grid cards.
+   Картинки большого разрешения выводятся в квадрате с центрированным
+   кропом, чтобы превью выглядело аккуратно независимо от
+   соотношения сторон исходника. Не задевает текстовые карточки
+   (у тех первым ребёнком <li> идёт <p> с эмодзи/заголовком, а не <img>). */
+.md-typeset .grid.cards > ul > li > a:has(> img:only-child) {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.md-typeset .grid.cards > ul > li > a:has(> img:only-child) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .grid.cards.no-gap.cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
