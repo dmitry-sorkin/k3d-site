@@ -79,6 +79,7 @@
 .printertable {
 	width: 100%;
 	font-size: .7rem;
+	table-layout: fixed;
 }
 
 .printertable td {
@@ -86,6 +87,11 @@
 	padding-left: 1.25em;
 	padding-right: 1.25em;
 	padding-top: 0.5em;
+}
+
+.printertable td.printerimgtd {
+	width: 50%;
+	text-align: center;
 }
 
 .printerimg {
