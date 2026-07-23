@@ -202,7 +202,7 @@ Adventurer 5M - компактный, относительно быстрый (~
         </tr>
         <tr>
             <td>Обзор:</td>
-            <td style="text-align: center;">В процессе</td>
+            <td style="text-align: center;">[:material-file-document: Обзор](../articles/sv08/sv08.md){ target="_blank" }</td>
         </tr>
         <tr>
             <td>Купить:</td>
