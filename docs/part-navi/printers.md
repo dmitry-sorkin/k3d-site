@@ -21,7 +21,7 @@ description: Какой принтер купить, а какой не стои
 <table class="printertable">
     <tbody>
         <tr class="upperprinterimgtr">
-        <td colspan=999 style="text-align: center;"><img class="printerimg" src="../pics/qidi_q2.png"></img></td>
+            <td colspan=3 style="text-align: center;"><img class="printerimg" src="../pics/qidi_q2.png"></img></td>
         </tr>
         <tr>
             <td rowspan="5" class="printerimgtd"><img class="printerimg" src="../pics/qidi_q2.png"></img></td>
