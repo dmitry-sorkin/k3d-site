@@ -16,6 +16,9 @@ theme:
         name: Light theme
   logo: assets/k3d_logo.png
   name: materialx
+  code:
+    fold:
+      enabled: true
   language: ru
   favicon: pics/favicon.ico
   features:
@@ -33,16 +36,16 @@ theme:
   admonition:
     fire:
       icon: material/fire
-      color: '#ff7700'
+      color: "#ff7700"
     speed:
       icon: material/speedometer
-      color: '#4caf50'
+      color: "#4caf50"
     time:
       icon: material/clock-outline
-      color: '#2196f3'
+      color: "#2196f3"
     clone:
-          icon: octicons/mirror-16
-          color: '#ffc107'
+      icon: octicons/mirror-16
+      color: "#ffc107"
 plugins:
   - glightbox
   - social:
@@ -113,6 +116,8 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - admonition
   - pymdownx.details
+  - pymdownx.highlight:
+      line_spans: __code
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
