@@ -33,7 +33,7 @@ hide:
         <td class="lang" id="table.firmware.title">Прошивка</td>
         <td align="center">
           <form style="text-align:left; width:fit-content;">
-			<input type="radio" id="firmwareMarlin" name="firmware" value="Marlin" checked><label for="firmwareMarlin">Marlin</label><br>
+   <input type="radio" id="firmwareMarlin" name="firmware" value="Marlin" checked><label for="firmwareMarlin">Marlin</label><br>
             <input type="radio" id="firmwareKlipper" name="firmware" value="Klipper"><label for="firmwareKlipper">Klipper</label><br>
             <input type="radio" id="firmwareRRF" name="firmware" value="RRF"><label for="firmwareRRF">RRF</label>
           </form>
@@ -66,7 +66,7 @@ hide:
         <td style="text-align:center"><input class="calibratorInput" type="text" id="bedTemperature" name="bedTemperature" value="60"></td>
         <td class="lang" id="table.bed_temp.description" style="text-align: justify;">[°C] Температура, до которой нагреть стол перед печатью. Стол будет нагрет до выполнения парковки и автокалибровки стола</td>
       </tr>
-	  <tr>
+   <tr>
         <td class="lang" id="table.flow.title">Поток</td>
         <td style="text-align:center"><input class="calibratorInput" type="text" id="flow" name="flow" value="100"></td>
         <td class="lang" id="table.flow.description" style="text-align: justify;">[%] Поток в процентах. Нужен для компенсации пере- или недоэкструзии</td>
@@ -155,8 +155,7 @@ hide:
         <td style="text-align:center"><input type="checkbox" id="hardmode" name="hardmode"></td>
         <td class="lang" id="table.hardmode.description" style="text-align: justify;">В обычном режиме (параметр выключен) порядок печати башен генерируется с оптимизациями как в слайсере, в усложненном - неоптимальным методом. Рекомендуется включать только тогда, когда обычный режим показывает слишком оптимистичный результат. Подробнее в инструкции</td>
       </tr>
-	  <tr>
-    </tbody>
+   </tbody>
 </table>
 
 <table class="calibrationCodeTable" style="padding-top: 0; margin-top: 0;">
@@ -166,7 +165,7 @@ hide:
             <th class="lang" id="table.end_gcode.title" style="text-align: center;">Конечный G-код</th>
         </tr>
         <tr>
-            <td width="50%"><textarea type="text" id="startGcode" name="startGcode" rows="11">
+            <td width="50%"><textarea id="startGcode" name="startGcode" rows="11">
 M104 S150 ;прогреть хотэнд до 150 градусов
 M190 S$BEDTEMP ;прогреть стол до температуры, указанной в настройках
 M109 S$HOTTEMP ;прогреть хотэнд до температуры, указанной в настройках
@@ -179,7 +178,7 @@ G92 E0 ;сбросить координату экструдера
 M220 S100 ;Множитель скорости 100%
 M221 S$FLOW ;Множитель потока взять из настроек
 $LA</textarea></td>
-            <td width="50%"><textarea type="text" id="endGcode" name="endGcode" rows="11">
+            <td width="50%"><textarea id="endGcode" name="endGcode" rows="11">
 M104 S0 ;выключить хотэнд
 M140 S0 ;выключить нагрев стола
 M106 S0 ;выключить вентилятор модели
