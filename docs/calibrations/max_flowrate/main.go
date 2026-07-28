@@ -9,13 +9,13 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v0.6-beta" // Версия калибратора для сверки с lib.js
-const retractSpeed = 35.0             // Скорость отката по умолчанию
-const retractLength = 1.0             // Длина отката по умолчанию
-const filamentDiameter = 1.75         // Диаметр филамента
-const sampleSpacing = 5.0             // Расстояние между образцами
-const relativeExtrusion = true        // Относительные координаты экструдера
-const log = true                      // Писать ли в консоль логи происходящего
+const calibratorVersion = "v0.7" // Версия калибратора для сверки с lib.js
+const retractSpeed = 35.0        // Скорость отката по умолчанию
+const retractLength = 1.0        // Длина отката по умолчанию
+const filamentDiameter = 1.75    // Диаметр филамента
+const sampleSpacing = 5.0        // Расстояние между образцами
+const relativeExtrusion = true   // Относительные координаты экструдера
+const log = false                // Писать ли в консоль логи происходящего
 
 // Переменные, которые должны быть доступны для записи и чтения из любой части программы
 var (
@@ -628,7 +628,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 	// Перемещаемся к началу линии прочистки
 	write(generateMove(currentCoordinates, Point{currentCoordinates.X, currentCoordinates.Y, 5.0}, 0.0, travelSpeed)...)
 	write(generateRetraction())
-	write(generateMove(currentCoordinates, Point{purgeLineStart.X, purgeLineStart.X, currentCoordinates.Z}, 0.0, travelSpeed)...)
+	write(generateMove(currentCoordinates, Point{purgeLineStart.X, purgeLineStart.Y, currentCoordinates.Z}, 0.0, travelSpeed)...)
 	write(generateMove(currentCoordinates, purgeLineStart, 0.0, travelSpeed)...)
 	write(generateDeretraction())
 

@@ -34,12 +34,14 @@ hide:
     </div>
 </div>
 
+<input type="file" id="profileFileInput" accept="application/json,.json" style="display: none;" onchange="handleProfileImport(event)">
+
 <table style="width: 100%; font-size: 0.7rem;">
     <tbody>
     <!-- Параметры принтера -->
         <!-- Размер стола -->
         <tr>
-            <th class="lang" id="table.bed_size.title">Размер стола</td>
+            <th class="lang" id="table.bed_size.title">Размер стола</th>
             <td style="text-align:center">
                 <table class="innerTable">
                     <tbody>
@@ -58,7 +60,7 @@ hide:
         </tr>
         <!-- Прошивка -->
         <tr>
-            <th class="lang" id="table.firmware.title">Прошивка</td>
+            <th class="lang" id="table.firmware.title">Прошивка</th>
             <td align="center">
                 <form style="text-align:left; width:fit-content;">
                     <input type="radio" id="k3d_mfr_marlin" name="k3d_mfr_firmware" value="Marlin" checked><label for="k3d_mfr_marlin"> Marlin</label><br>
@@ -70,26 +72,26 @@ hide:
         </tr>
         <!-- Начало координат в центре стола (режим дельты) -->
         <tr>
-            <th class="lang" id="table.delta.title">Начало координат<br>в центре стола</td>
-            <td style="text-align:center"><input type="checkbox" id="k3d_mfr_delta"></td>
+            <th class="lang" id="table.delta.title">Начало координат<br>в центре стола</th>
+            <td style="text-align:center"><input type="checkbox" id="k3d_mfr_delta" name="k3d_mfr_delta"></td>
             <td class="lang" id="table.delta.description" style="text-align: justify; font-size: 0.9em;">Для декартовых принтеров должно быть выключено<br>Для дельт и AD5M включено</td>
         </tr>
         <!-- Диаметр сопла -->
         <tr>
-            <th class="lang" id="table.nozzle_diameter.title">Диаметр сопла</td>
+            <th class="lang" id="table.nozzle_diameter.title">Диаметр сопла</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_mfr_nozzleDiameter" value="0.4"></td>
             <td class="lang" id="table.nozzle_diameter.description" style="text-align: justify; font-size: 0.9em; font-size: 0.9em;">[мм] Диаметр сопла, установленного на вашем принтере. Влияет на ширину линии и толщину слоя при печати образцов и вспомогательных элементов</td>
         </tr>
         <!-- Z offset -->
         <tr>
-            <th class="lang" id="table.z_offset.title">Z offset</td>
+            <th class="lang" id="table.z_offset.title">Z offset</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_mfr_zOffset" value="0.0"></td>
             <td class="lang" id="table.z_offset.description" style="text-align: justify; font-size: 0.9em;">[мм] Смещение всей модели по вертикали для компенсации неправильного расстояния от сопла до стола на первом слое. Положительное значение смещает модель вверх, отрицательное - вниз.<br>Если в вашем стартовом G-коде уже есть установка Z-offset'а, то оставьте 0</td>
         </tr>
     <!-- Параметры филамента -->
         <!-- Температуры -->
         <tr>
-            <th class="lang" id="table.temperatures.title">Температура</td>
+            <th class="lang" id="table.temperatures.title">Температура</th>
             <td style="text-align:center">
                 <table class="innerTable">
                     <tbody>
@@ -147,13 +149,13 @@ hide:
         </tr>
         <!-- Шаг расхода -->
         <tr>
-            <th class="lang" id="table.flowrate_delta.title">Шаг расхода</td>
+            <th class="lang" id="table.flowrate_delta.title">Шаг расхода</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_mfr_flowrateDelta" value="2"></td>
             <td class="lang" id="table.flowrate_delta.description" style="text-align: justify; font-size: 0.9em;">[мм^3/с] Разница объёмного расхода между соседними проверяемыми элементами. Чем меньше, тем больше образцов будет напечатано</td>
         </tr>
         <!-- Длина экструзии на образец -->
         <tr>
-            <th class="lang" id="table.extrusion_length.title">Длина экструзии<br>на образец</td>
+            <th class="lang" id="table.extrusion_length.title">Длина экструзии<br>на образец</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_mfr_extrusionLength" value="200"></td>
             <td class="lang" id="table.extrusion_length.description" style="text-align: justify; font-size: 0.9em;">[мм] Сколько мм прутка будет экструдировано для печати каждого образца. Считается по входу в подающий механизм</td>
         </tr>
@@ -167,7 +169,7 @@ hide:
             <td rowspan=5 style="text-align: left; font-size: 0.9em; padding-right: 1.0em; padding-top: 1.0em; vertical-align: middle;" class="lang" id="table.gcodes.description">Для того, чтобы печать была правильно инициализирована и завершена, необходимо указать корректные для вашего принтера G-коды. Проще всего скопировать их из вашего слайсера. Если G-коды в слайсере не содержат неподдерживаемых элементов, то их можно копировать без изменений. Если неподдерживаемые элементы есть, то придётся от них избавиться - вручную заменить неподдерживаемые плейсхолдеры на значения, посчитать результаты математических функций, раскрыть условия и т.д.<hr><u>Поддерживаемые плейсхолдеры:</u><br>- <code>$HOTTEMP</code>, <code>{temperature}</code>, <code>{first_layer_temperature}</code> будут заменены на температуру хотэнда;<br>- <code>$BEDTEMP</code>, <code>{bed_temperature}</code>, <code>{first_layer_bed_temperature}</code> будут заменены на температуру стола;<br>- <code>{chamber_temperature}</code>, <code>{chamber_minimal_temperature}</code> будут заменены на 0;- <code>$FLOW</code> будет заменён на значение потока<br>- Разные вариации указанных выше плейсхолдеров. Например, в квадратных скобках вместо фигурных, с указанием номера элемента массива, с арифметикой внутри фигурных скобок и т.д.<hr><u>Не поддерживаются:</u><br>- Другие плейсхолдеры;<br>- Условные операторы (<code>if</code>);<br>- Тернарные операторы (<code>a ? b : c</code>);<br>- Математические функции и выражения</td>
         </tr>
         <tr>
-            <td width="50%"><textarea type="text" id="k3d_mfr_startGcode" name="k3d_mfr_startGcode" rows="15">
+            <td width="50%"><textarea id="k3d_mfr_startGcode" name="k3d_mfr_startGcode" rows="15">
 M104 S150 ;прогреть хотэнд до 150 градусов
 M190 S$BEDTEMP ;прогреть стол до температуры, указанной в настройках
 M109 S$HOTTEMP ;прогреть хотэнд до температуры, указанной в настройках
@@ -184,7 +186,7 @@ M221 S$FLOW ;Множитель потока взять из настроек</t
             <th class="lang" id="table.end_gcode.title" style="padding-top: 0.5em;">Конечный G-код</th>
         </tr>
         <tr>
-            <td width="50%"><textarea type="text" id="k3d_mfr_endGcode" name="k3d_mfr_endGcode" rows="15">
+            <td width="50%"><textarea id="k3d_mfr_endGcode" name="k3d_mfr_endGcode" rows="15">
 M104 S0 ;выключить хотэнд
 M140 S0 ;выключить нагрев стола
 M106 S0 ;выключить вентилятор модели
