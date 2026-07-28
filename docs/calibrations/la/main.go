@@ -9,7 +9,7 @@ import (
 	"syscall/js"
 )
 
-const calibratorVersion = "v2.7"
+const calibratorVersion = "v2.8"
 const retractSpeed = 35.0      // Скорость отката по умолчанию
 const retractLength = 1.0      // Длина отката по умолчанию
 const log = false              // Писать ли в консоль логи происходящего
@@ -903,7 +903,7 @@ func generate(this js.Value, i []js.Value) interface{} {
 		fmt.Sprintf(";Nozzle diameter: %s [mm]\n", fmt.Sprint(roundFloat(nozzleDiameter, 2))),
 		fmt.Sprintf(";Max print speed: %d [mm/s]\n", maxPrintSpeed),
 		fmt.Sprintf(";Min print speed: %d [mm/s]\n", minPrintSpeed),
-		fmt.Sprintf(";Acceleration: "+fmt.Sprint(acceleration))+" [mm/s^2]\n",
+		fmt.Sprintf(";Acceleration: %d [mm/s^2]\n", acceleration),
 		fmt.Sprintf(";K factor: %s-%s\n", fmt.Sprint(roundFloat(initKFactor, 3)), fmt.Sprint(roundFloat(endKFactor, 3))),
 		fmt.Sprintf(";Number of segments: %d\n", numSegments),
 		fmt.Sprintf(";Smooth time: %s [s]\n", fmt.Sprint(roundFloat(smoothTime, 3))),

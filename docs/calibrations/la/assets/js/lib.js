@@ -1,4 +1,4 @@
-const calibrator_version = "v2.7";
+const calibrator_version = "v2.8";
 window.calibrator_version = calibrator_version;
 var savedSegmentsInfo = null;
 
@@ -140,7 +140,6 @@ var formFields = [
 	"k3d_la_numSegments",
 	"k3d_la_initAdditionalParameter",
 	"k3d_la_endAdditionalParameter",
-	"k3d_la_delta",
 	"k3d_la_marlin",
 	"k3d_la_klipper",
 	"k3d_la_rrf",
@@ -801,13 +800,13 @@ function init() {
 	initLang(lang);
 	initProfileLang(lang);
 
-	setTimeout(function () {
-		if (checkGo != undefined && window.lang != undefined) {
+	(function tryCheckGo() {
+		if (typeof checkGo === "function" && window.lang != undefined) {
 			checkGo();
 		} else {
-			setTimeout(this, 100);
+			setTimeout(tryCheckGo, 100);
 		}
-	}, 100);
+	})();
 }
 
 function updateInputDisability() {
@@ -937,10 +936,29 @@ function initProfileLang(key) {
 		// UI элементы
 		values["profile.select.label"] = "Профиль: ";
 		values["profile.default"] = "По умолчанию";
+		values["profile.save"] = "Сохранить";
+		values["profile.save_as"] = "Сохранить как...";
+		values["profile.delete"] = "Удалить";
+		values["profile.export"] = "Экспорт";
+		values["profile.import"] = "Импорт";
 		values["profile.modal.title"] = "Сохранить профиль";
 		values["profile.modal.save"] = "Сохранить";
 		values["profile.modal.cancel"] = "Отмена";
 		values["profile.modal.placeholder"] = "Введите название профиля";
+
+		// Статусные сообщения
+		values["profile.status.loaded"] = "Профиль загружен: %s";
+		values["profile.status.saved"] = 'Профиль "%s" сохранён';
+		values["profile.status.deleted"] = 'Профиль "%s" удалён';
+		values["profile.status.default"] = "Используются настройки по умолчанию";
+		values["profile.status.enterName"] = "Введите название профиля";
+		values["profile.status.importError"] = "Ошибка импорта: %s";
+		values["profile.status.exportedSettings"] = "Экспортированные настройки";
+		values["profile.status.exportedCurrent"] =
+			"Текущие настройки экспортированы";
+		values["profile.status.exportedAll"] = "Экспортировано профилей: %s";
+		values["profile.status.importedMultiple"] = "Импортировано профилей: %s";
+		values["profile.status.importedSingle"] = 'Профиль "%s" импортирован';
 
 		// Диалоги
 		values["profile.confirm.delete"] = 'Удалить профиль "%s"?';

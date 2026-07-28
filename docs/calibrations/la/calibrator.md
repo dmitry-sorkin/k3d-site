@@ -34,12 +34,14 @@ hide:
     </div>
 </div>
 
+<input type="file" id="profileFileInput" accept="application/json,.json" style="display: none;" onchange="handleProfileImport(event)">
+
 <table style="width: 100%; font-size: 0.7rem;">
     <tbody>
     <!-- Параметры принтера -->
         <!-- Размер стола -->
         <tr>
-            <th class="lang" id="table.bed_size.title">Размер стола</td>
+            <th class="lang" id="table.bed_size.title">Размер стола</th>
             <td style="text-align:center">
                 <table class="innerTable">
                     <tbody>
@@ -58,7 +60,7 @@ hide:
         </tr>
         <!-- Прошивка -->
         <tr>
-            <th class="lang" id="table.firmware.title">Прошивка</td>
+            <th class="lang" id="table.firmware.title">Прошивка</th>
             <td align="center">
                 <form style="text-align:left; width:fit-content;">
                     <input type="radio" id="k3d_la_marlin" name="k3d_la_firmware" value="Marlin" checked><label for="k3d_la_marlin"> Marlin</label><br>
@@ -70,13 +72,13 @@ hide:
         </tr>
         <!-- Начало координат в центре стола (режим дельты) -->
         <tr>
-            <th class="lang" id="table.delta.title">Начало координат в<br>центре стола</td>
+            <th class="lang" id="table.delta.title">Начало координат в<br>центре стола</th>
             <td style="text-align:center"><input type="checkbox" id="k3d_la_delta" name="k3d_la_delta"></td>
             <td class="lang" id="table.delta.description" style="text-align: justify; font-size: 0.9em;">Для декартовых принтеров должно быть выключено<br>Для дельт и AD5M включено</td>
         </tr>
         <!-- Диаметр сопла -->
         <tr>
-            <th class="lang" id="table.nozzle_diameter.title">Диаметр сопла</td>
+            <th class="lang" id="table.nozzle_diameter.title">Диаметр сопла</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_nozzleDiameter" name="k3d_la_nozzleDiameter" value="0.4"></td>
             <td class="lang" id="table.nozzle_diameter.description" style="text-align: justify; font-size: 0.9em; font-size: 0.9em;">[мм] Диаметр сопла, установленного на вашем принтере. Влияет на:<br>
              - Ширина линии первого слоя = D * 1.5<br>
@@ -87,14 +89,14 @@ hide:
             </td>
         </tr>
         <tr>
-            <th class="lang" id="table.z_offset.title">Z offset</td>
+            <th class="lang" id="table.z_offset.title">Z offset</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_zOffset" name="k3d_la_zOffset" value="0.0"></td>
             <td class="lang" id="table.z_offset.description" style="text-align: justify; font-size: 0.9em;">[мм] Смещение всей модели по вертикали для компенсации неправильного расстояния от сопла до стола на первом слое. Положительное значение смещает модель вверх, отрицательное - вниз.<br>Если в вашем стартовом G-коде уже есть установка Z-offset'а, то оставьте 0</td>
         </tr>
     <!-- Параметры филамента -->
         <!-- Температуры -->
         <tr>
-            <th class="lang" id="table.temperatures.title">Температуры</td>
+            <th class="lang" id="table.temperatures.title">Температуры</th>
             <td style="text-align:center">
                 <table class="innerTable">
                     <tbody>
@@ -113,20 +115,20 @@ hide:
         </tr>
         <!-- Скорость вентилятора -->
         <tr>
-            <th class="lang" id="table.fan_speed.title">Скорость вентилятора</td>
+            <th class="lang" id="table.fan_speed.title">Скорость вентилятора</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_cooling" name="k3d_la_cooling" value="100"></td>
             <td class="lang" id="table.fan_speed.description" style="text-align: justify; font-size: 0.9em;">[%] Обороты вентилятора в процентах<br>Для предотвращения ошибок, связанных с охлаждением хотэнда, указанная скорость вентилятора будет достигнута только к 4-му слою</td>
         </tr>
         <!-- Поток -->
         <tr>
-            <th class="lang" id="table.flow.title">Поток</td>
+            <th class="lang" id="table.flow.title">Поток</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_flow" name="k3d_la_flow" value="100"></td>
             <td class="lang" id="table.flow.description" style="text-align: justify; font-size: 0.9em;">[%] Поток в процентах. Нужен для компенсации общей пере- или недоэкструзии</td>
         </tr>
     <!-- Параметры калибровки -->
         <!-- Скорость движения печатающей головы -->
         <tr>
-            <th class="lang" id="table.speed.title">Скорость движения<br>печатающей головы</td>
+            <th class="lang" id="table.speed.title">Скорость движения<br>печатающей головы</th>
             <td style="text-align:center">
                 <table class="innerTable">
                     <tbody>
@@ -180,7 +182,7 @@ hide:
         </tr>
         <!-- Количество сегментов -->
         <tr>
-            <th class="lang" id="table.num_segments.title">Количество сегментов</td>
+            <th class="lang" id="table.num_segments.title">Количество сегментов</th>
             <td style="text-align:center"><input class="calibratorInput" type="text" id="k3d_la_numSegments" name="k3d_la_numSegments" value="11"></td>
             <td class="lang" id="table.num_segments.description" style="text-align: justify; font-size: 0.9em;">Количество сегментов башенки. В течение сегмента коэффициент LA/PA остаётся неизменным. Сегменты визуально
                 разделены для упрощения анализа модели<br>
@@ -199,7 +201,7 @@ hide:
         </tr>
         <!-- Дополнительная цель калибровки -->
         <tr>
-            <th class="lang" id="table.additional_calibration_target.title">Дополнительная цель<br>калибровки</td>
+            <th class="lang" id="table.additional_calibration_target.title">Дополнительная цель<br>калибровки</th>
             <td align="center">
                 <form style="text-align:left; width:fit-content;"><input type="radio" id="k3d_la_targetNone" name="k3d_la_additionalCalibrationTarget" value="None" checked><label for="k3d_la_targetNone"> Нет</label><br>
                 <input type="radio" id="k3d_la_targetSmoothTime" name="k3d_la_additionalCalibrationTarget" value="SmoothTime"><label for="k3d_la_targetSmoothTime"> Smooth time</label><br>
@@ -236,7 +238,7 @@ hide:
         <tr>
             <th class="lang" id="table.advanced_parameters.title">Показать<br>расширенные<br>параметры</th>
             <td style="text-align:center"><input type="checkbox" id="k3d_la_advancedParameters" name="k3d_la_advancedParameters"></td>
-            <td class="lang" id="table.advanced_parameters.description" style="text-align: justify; font-size: 0.9em;">В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров не сохраняются</td>
+            <td class="lang" id="table.advanced_parameters.description" style="text-align: justify; font-size: 0.9em;">В этом разделе содержатся такие параметры, которые рядовому пользователю менять не надо. Указание неправильных значений в них может привести к генерации неправильной модели. Поэтому, воспользовавшись этими параметрами, обязательно проверьте G-код перед печатью. Значения этих параметров сохраняются в браузере вместе с остальными параметрами формы</td>
         </tr>
         <tr id="table.advanced_parameter.row">
             <th class="lang" id="table.advanced.layer_height_limit.title">Layer height<br>limit</th>
@@ -283,7 +285,7 @@ hide:
             <td rowspan=5 style="text-align: left; font-size: 0.9em; padding-right: 1.0em; padding-top: 1.0em; vertical-align: middle;" class="lang" id="table.gcodes.description">Для того, чтобы печать была правильно инициализирована и завершена, необходимо указать корректные для вашего принтера G-коды. Проще всего скопировать их из вашего слайсера. Если G-коды в слайсере не содержат неподдерживаемых элементов, то их можно копировать без изменений. Если неподдерживаемые элементы есть, то придётся от них избавиться - вручную заменить неподдерживаемые плейсхолдеры на значения, посчитать результаты математических функций, раскрыть условия и т. д.<hr><u>Поддерживаемые плейсхолдеры:</u><br>- <code>$HOTTEMP</code>, <code>{temperature}</code>, <code>{first_layer_temperature}</code> будут заменены на температуру хотэнда;<br>- <code>$BEDTEMP</code>, <code>{bed_temperature}</code>, <code>{first_layer_bed_temperature}</code> будут заменены на температуру стола;<br>- <code>{chamber_temperature}</code>, <code>{chamber_minimal_temperature}</code> будут заменены на 0;- <code>$FLOW</code> будет заменён на значение потока<br>- Разные вариации указанных выше плейсхолдеров. Например, в квадратных скобках вместо фигурных, с указанием номера элемента массива, с арифметикой внутри фигурных скобок и т. д.<hr><u>Не поддерживаются:</u><br>- Другие плейсхолдеры;<br>- Условные операторы (<code>if</code>);<br>- Тернарные операторы (<code>a ? b : c</code>);<br>- Математические функции и выражения</td>
         </tr>
         <tr>
-            <td width="50%"><textarea type="text" id="k3d_la_startGcode" name="k3d_la_startGcode" rows="15">
+            <td width="50%"><textarea id="k3d_la_startGcode" name="k3d_la_startGcode" rows="15">
 M104 S150 ;прогреть хотэнд до 150 градусов
 M190 S$BEDTEMP ;прогреть стол до температуры, указанной в настройках
 M109 S$HOTTEMP ;прогреть хотэнд до температуры, указанной в настройках
@@ -300,7 +302,7 @@ M221 S$FLOW ;Множитель потока взять из настроек</t
             <th class="lang" id="table.end_gcode.title" style="padding-top: 0.5em;">Конечный G-код</th>
         </tr>
         <tr>
-            <td width="50%"><textarea type="text" id="k3d_la_endGcode" name="k3d_la_endGcode" rows="15">
+            <td width="50%"><textarea id="k3d_la_endGcode" name="k3d_la_endGcode" rows="15">
 M104 S0 ;выключить хотэнд
 M140 S0 ;выключить нагрев стола
 M106 S0 ;выключить вентилятор модели
