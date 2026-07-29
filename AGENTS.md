@@ -8,11 +8,13 @@ Russian-language documentation site for the K3D 3D-printing community, built wit
 - Source: `docs/`. Output: `site/` (gitignored).
 - Python deps live in `.github/workflows/requirements.txt` (mkdocs 1.6.1, properdocs 1.6.7, mkdocs-materialx, glightbox, redirects, charts, table-reader, document-dates, pillow).
 - Local build:
+
   ```
   python -m venv .venv && .venv/Scripts/activate
   pip install -r .github/workflows/requirements.txt
   properdocs build --clean
   ```
+
   Dev server: `properdocs serve` (port 8000 by default). No tests, no linter — this is a static site.
 - Deploy: `.github/workflows/main.yaml` builds on push/PR to `main`, `build-stage-python`, `test-lolo`; deploys via rsync-over-SSH only on push to `main`. Secrets: `SSH_PRIVATE_KEY`, `SSH_USERNAME`, `SSH_SERVER`, `DEPLOY_PATH`.
 
@@ -44,6 +46,7 @@ Nav structure is defined explicitly in `properdocs.yml` under `nav:` — folder 
 
 - All content is Russian. Keep filenames ASCII; titles and headings in Russian.
 - Every page starts with YAML frontmatter. Minimum expected keys (see `docs/index.md`):
+
   ```
   ---
   authors:
@@ -52,6 +55,7 @@ Nav structure is defined explicitly in `properdocs.yml` under `nav:` — folder 
   description: ...
   ---
   ```
+
   Optional: `hide: [navigation, toc]`, `show_created`, `show_updated`, `show_author`. Authors must exist in `docs/authors.yml`.
 - Use Material admonitions and these custom ones defined in config: `fire`, `speed`, `time`, `clone` (icons: fire, speedometer, clock-outline, mirror).
 - Mermaid, Vega-Lite, MathJax, tabs, keys, superfences, critic/caret/mark/tilde are enabled — use them instead of screenshots or hand-drawn diagrams.
@@ -104,3 +108,21 @@ python -m properdocs build --clean
 To add a single post by hand when there is no fresh export: create `posts/post-NNN/`, drop the media in, write `caption.txt` with the template in `tools/gallery/README.md`, then re-run `build.py`. The `<!-- author: ... -->`, `<!-- date: ... -->`, `<!-- first_id: ... -->` lines in `caption.txt` are stripped at build time and feed the per-post header card + Telegram link.
 
 The gallery uses CSS for one-post-at-a-time display: each post is `<article class="gallery-post">` with an `h2[id^="post-"]`, and the rules in `docs/stylesheets/extra9.css` (block «Галерея сборок VOSTOK») hide every article except the one whose H2 matches the URL fragment (via `:has()` + `:target`). A tiny inline script in `index.md` provides the same behavior as a fallback for browsers without `:has()` support.
+
+## Image prep (`tools/strip_white.py`)
+
+One-shot script for the part-viewplaceholders in `docs/vostok/manual/prepare.md`. Takes an opaque-PNG (white background, the part on it), returns an RGBA where the background is transparent, a thin anti-aliased white stroke hugs the object's silhouette, and empty margins are cropped. Reference output: `docs/vostok/manual/pics/prepare/threaded_inserts.png`.
+
+```
+python tools/strip_white.py <path> [<path> ...]
+```
+
+Pipeline:
+
+1. 4-connected BFS from the 4 corners over pure-white pixels marks the outer background → alpha 0. White highlights inside the part are not reachable from the corners, so they stay opaque.
+2. Hole removal: connected components of remaining opaque white pixels with size ≥ `MIN_HOLE_PIX` (50) and fill-ratio ≥ `MIN_FILL_RATIO` (0.5) are removed. These are the white pixels visible through holes in the part — the part's own outline around the hole is an anti-aliased gray ring that the corner BFS can't reach, so the inner white stays opaque. The size + fill-ratio heuristic distinguishes them from white highlights on the part's surface (which are small and irregular).
+3. Two-pass chamfer-3-4 distance transform (forward TL→BR, backward BR→TL, orthogonal cost 3, diagonal cost 4, normalized by 3) gives an approximate Euclidean distance field from every transparent pixel to the nearest opaque one. Chamfer 3-4 is uniform across directions — unlike the square `MaxFilter` dilation it replaces, which makes diagonal strokes √2 thicker than orthogonal ones.
+4. Stroke region: `0 < dist ≤ STROKE_PX`. Solid alpha 255 for `dist ≤ STROKE_PX - AA_WIDTH`, linear fade to 0 across the last `AA_WIDTH` pixels. Knobs at the top of the file: `STROKE_PX = 4.0`, `AA_WIDTH = 2.0`.
+5. Crop to the bounding box of the new opaque region.
+
+Originals are renamed `.bak1`, `.bak2`, … (first free index) inside a `.bak/` subfolder next to the source before the new file is written. The script is **not** idempotent — a second run treats the previous stroke as part of the foreground and grows the silhouette outward by `STROKE_PX + AA_WIDTH`. Original always survives in `.bak/<name>.bak1`. Pass `--no-crop` to skip the margin crop in step 5.
