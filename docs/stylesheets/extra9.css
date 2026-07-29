@@ -683,7 +683,7 @@ input[type="text"]:disabled {
 /* Если первая ячейка сетки содержит admonition (например, инфо-карточка
    поста), то вместо квадратного превью admonition должен заполнять ячейку
    целиком, а его содержимое выравниваться по центру по вертикали. */
-.md-typeset .gallery .grid.cards.no-gap > ul > li:has(> .admonition) {
+.md-typeset .grid.cards.no-gap > ul > li:has(> .admonition) {
 	aspect-ratio: auto;
 	overflow: visible;
 	display: flex;
@@ -691,7 +691,6 @@ input[type="text"]:disabled {
 }
 
 .md-typeset
-	.gallery
 	.grid.cards.no-gap
 	> ul
 	> li:has(> .admonition)
