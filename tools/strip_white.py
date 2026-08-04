@@ -84,7 +84,7 @@ def distance_transform(mask: np.ndarray) -> np.ndarray:
     return d / 3.0  # нормировка: 1 ед. = 1 px
 
 
-def strip_white(path: Path, *, crop: bool = True) -> None:
+def strip_white(path: Path, *, crop: bool = True, square: bool = False) -> None:
     img = Image.open(path).convert("RGBA")
     arr = np.array(img)
     h, w = arr.shape[:2]
@@ -187,6 +187,16 @@ def strip_white(path: Path, *, crop: bool = True) -> None:
     else:
         out = arr
 
+    if square:
+        oh, ow = out.shape[:2]
+        side = max(oh, ow)
+        canvas = np.zeros((side, side, 4), dtype=out.dtype)
+        # центрируем содержимое на квадратном холсте
+        y_off = (side - oh) // 2
+        x_off = (side - ow) // 2
+        canvas[y_off : y_off + oh, x_off : x_off + ow] = out
+        out = canvas
+
     backup = next_backup_path(path)
     path.rename(backup)
     Image.fromarray(out, mode="RGBA").save(path)
@@ -205,6 +215,12 @@ def main(argv: list[str]) -> int:
         action="store_false",
         help="keep transparent margins instead of cropping to the opaque bbox",
     )
+    parser.add_argument(
+        "--square",
+        dest="square",
+        action="store_true",
+        help="pad the result to a square canvas (transparent), centered",
+    )
     args = parser.parse_args(argv)
     if not args.paths:
         parser.print_help(sys.stderr)
@@ -214,7 +230,7 @@ def main(argv: list[str]) -> int:
         if not p.is_file():
             print(f"{p}: не файл, пропускаю", file=sys.stderr)
             continue
-        strip_white(p, crop=args.crop)
+        strip_white(p, crop=args.crop, square=args.square)
     return 0
 
 
