@@ -109,6 +109,9 @@ plugins:
   - charts
   - table-reader
 markdown_extensions:
+  - markdown_aafigure:
+      tag_type: inline_svg
+  - abbr
   - abbr
   - attr_list
   - md_in_html
@@ -188,7 +191,8 @@ nav:
           - Багтрекер: ./redirects/vostok_bugtracker.md
       - Подготовка:
           - Начало: ./vostok/manual/prepare/start.md
-          - Обработка деталей: ./vostok/manual/prepare/parts_postprocessing.md
+          - Печать: ./vostok/manual/prepare/printing_guide.md
+          - обработка: ./vostok/manual/prepare/parts_postprocessing.md
       - Электроника:
           - Схемы: ./vostok/manual/electronics/wiring.md
           - Прошивка: ./vostok/manual/electronics/firmware.md
