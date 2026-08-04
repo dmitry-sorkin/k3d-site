@@ -88,6 +88,14 @@ description: Гайд по подготовке деталей к сборке 3
 
 !!! note "Проще всего удалить мембрану сверлом подходящего диаметра или надфилем круглого сечения. Но в большинстве мест может справиться и обычный канцелярский нож"
 
+### V9-11411
+
+<div class="grid cards cols-2" markdown>
+
+- ![](./pics/prepare/v9-11411.png)
+
+</div>
+
 ### V9-1142
 
 <div class="grid cards cols-2" markdown>
@@ -101,6 +109,7 @@ description: Гайд по подготовке деталей к сборке 3
 <div class="grid cards cols-2" markdown>
 
 - ![](./pics/prepare/v9-1143.png)
+- ![](./pics/prepare/v9-1143-2.png)
 
 </div>
 
@@ -233,4 +242,3 @@ description: Гайд по подготовке деталей к сборке 3
 - ![](./pics/prepare/inserts_v9-625.png)
 
 </div>
-
