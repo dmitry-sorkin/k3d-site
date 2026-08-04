@@ -82,7 +82,7 @@ glightbox: false
 
     ---
 
-    [:material-printer-3d: О VOSTOK](./vostok/index.md)    [:lucide-help-circle: Частые вопросы](./vostok/faq.md)    [:material-image-multiple: Галерея](./vostok/gallery/index.md)    [:lucide-download: Релизы](./vostok/releases/index.md)    [:lucide-list-todo: Начало](./vostok/manual/start.md)    [:lucide-package-open: Подготовка](./vostok/manual/prepare.md)    [:lucide-plug: Схемы](./vostok/manual/wiring.md)    [:lucide-code-2: Прошивка](./vostok/manual/firmware.md)    [:custom-orcaslicer: Слайсер](./vostok/manual/slicer_configuration.md)    [:material-swap-horizontal: СБСИ](./vostok/manual/fast_tool_swaps.md)    [:lucide-command: Макросы](./vostok/manual/macros.md)
+    [:material-printer-3d: О VOSTOK](./vostok/index.md)    [:lucide-help-circle: Частые вопросы](./vostok/faq.md)    [:material-image-multiple: Галерея](./vostok/gallery/index.md)    [:lucide-download: Релизы](./vostok/releases/index.md)    [:lucide-list-todo: Начало](./vostok/manual/prepare/start.md)    [:lucide-package-open: Подготовка](./vostok/manual/prepare/parts_postprocessing.md)    [:lucide-plug: Схемы](./vostok/manual/electronics/wiring.md)    [:lucide-code-2: Прошивка](./vostok/manual/electronics/firmware.md)    [:custom-orcaslicer: Слайсер](./vostok/manual/electronics/slicer_configuration.md)    [:material-swap-horizontal: СБСИ](./vostok/manual/electronics/fast_tool_swaps.md)    [:lucide-command: Макросы](./vostok/manual/electronics/macros.md)
 
 -   :material-notification-clear-all:{ .lg .middle } __[Калибровки](./calibrations/index.md)__
 

@@ -26,7 +26,7 @@ show_author: false
 <div class="image-text-img" markdown>
 
 <video autoplay loop muted playsinline width="300">
-  <source src="manual/pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
+  <source src="manual/electronics/pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
 </video>
 
 </div>
@@ -190,7 +190,7 @@ VOSTOK выпускается под лицензией [Creative Commons Attrib
 
     Узнать о структуре документации и первых шагах сборки ещё до сборки.
 
-    [:octicons-arrow-right-24: С чего начать?](./manual/start.md)
+    [:octicons-arrow-right-24: С чего начать?](./manual/prepare/start.md)
 
 -   :material-frequently-asked-questions:{ .lg .middle } __Остались вопросы__
 

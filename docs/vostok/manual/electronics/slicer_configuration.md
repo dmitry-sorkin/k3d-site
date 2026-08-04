@@ -14,7 +14,7 @@ description: Как правильно настроить PrusaSlicer и OrcaSli
 
 Для печати двумя головами попеременно, IDEX принтеру нужен G-код как для обычного двухэкструдерного принтера. А для работы зеркального и повторяющего режимов принтеру нужен G-код как для обычного одноэкструдерного принтера. Вторая печатающая голова переключается в режим зеркалирования/копирования просто макросом в стартовом G-коде. Эти функции поддерживаются любыми, даже очень старыми слайсерами. Поэтому использовать можно любой, просто надо будет создать 3 профиля принтера под 3 разных режима печати.
 
-![](./pics/slicer_configuration/orcaslicer_idex_mode.png)
+![](pics/slicer_configuration/orcaslicer_idex_mode.png)
 
 Тем не менее, в OrcaSlicer готовится PR с поддержкой IDEX принтеров. Плюсы этой поддержки:
 
@@ -40,7 +40,7 @@ description: Как правильно настроить PrusaSlicer и OrcaSli
 
 ### Профиль принтера
 
-![](./pics/slicer_configuration/orcaslicer_klipper_base_profile.png){ width=500 }
+![](pics/slicer_configuration/orcaslicer_klipper_base_profile.png){ width=500 }
 
 Профиль надо основывать на базовом Klipper профиле. Возможна настройка и на основе другого профиля, но в этом случае потенциально могут возникнуть проблемы при обновлении базового профиля, а также при бэкапах и переносах профиля.
 
@@ -171,7 +171,7 @@ T{next_extruder}
 | Safety Margin | 0 |  |
 | Pre-slice warning | вкл. | После того, как поймёте как работает поддержка IDEX в OrcaSlicer, сможете выключить |
 
-![](./pics/slicer_configuration/orcaslicer_idex_parallel_modes.png)
+![](pics/slicer_configuration/orcaslicer_idex_parallel_modes.png)
 
 В подразделе IDEX/IQEX Parallel Modes:
 
@@ -224,19 +224,19 @@ T{next_extruder}
 
 Если вы хотите, чтобы ваш VOSTOK мог менять головы без печати черновой башни, то вам необходимо настроить скрипт быстрой смены инструмента. Информация о его настройке и установке вынесена в отдельную статью.
 
-[Перейти к настройке скрипта быстрой смены инструмента](./fast_tool_swaps.md){ .md-button .md-button--primary }
+[Перейти к настройке скрипта быстрой смены инструмента](fast_tool_swaps.md){ .md-button .md-button--primary }
 
 ### Модель и текстура стола
 
-![](./pics/slicer_configuration/orcaslicer_bed_texture.png)
+![](pics/slicer_configuration/orcaslicer_bed_texture.png)
 
 1. Скачайте модели и текстуры для вашего типоразмера принтера:
 
   | Типоразмер | Модель | Текстура |
   |:-|:-:|:-:|
-  | **M** | [:material-download:](./assets/vostok_m9_bed_model_full.stl){ download="vostok_m9_bed_model_full.stl" } | [:material-download:](./assets/vostok_m9_bed_texture_full.png){ download="vostok_m9_bed_texture_full.png" } |
-  | **L** | [:material-download:](./assets/vostok_l9_bed_model_full.stl){ download="vostok_l9_bed_model_full.stl" } | [:material-download:](./assets/vostok_l9_bed_texture_full.png){ download="vostok_l9_bed_texture_full.png" } |
-  | **XL** | [:material-download:](./assets/vostok_xl9_bed_model_full.stl){ download="vostok_xl9_bed_model_full.stl" } | [:material-download:](./assets/vostok_xl9_bed_texture_full.png){ download="vostok_xl9_bed_texture_full.png" } |
+  | **M** | [:material-download:](assets/vostok_m9_bed_model_full.stl){ download="vostok_m9_bed_model_full.stl" } | [:material-download:](assets/vostok_m9_bed_texture_full.png){ download="vostok_m9_bed_texture_full.png" } |
+  | **L** | [:material-download:](assets/vostok_l9_bed_model_full.stl){ download="vostok_l9_bed_model_full.stl" } | [:material-download:](assets/vostok_l9_bed_texture_full.png){ download="vostok_l9_bed_texture_full.png" } |
+  | **XL** | [:material-download:](assets/vostok_xl9_bed_model_full.stl){ download="vostok_xl9_bed_model_full.stl" } | [:material-download:](assets/vostok_xl9_bed_texture_full.png){ download="vostok_xl9_bed_texture_full.png" } |
 
 2. Поместите модель и текстуру в удобную папку у вас на компьютере. Желательно чтобы эта папка находилась там, откуда вы случайно не удалите эти файлы, а также чтобы по пути к ней не было кириллицы;
 3. Перейдите в `Профиль принтера` → `Основные` → `Область печати`;
@@ -244,7 +244,7 @@ T{next_extruder}
 5. В качестве модели выберите `vostok_*9_bed_model_full.stl` из папки под ваш типоразмер принтера;
 6. Сохраните изменения.
 
-!!! tip "Если вы собираете VOSTOK в нестандартном размере, то модель и текстуру придётся делать самостоятельно. В качестве исходника для текстуры стола используйте файлы `.afdesign` (Affinity) из [:material-download: архива](./assets/vostok_v9.x_bed_models_and_textures.7z){ download="vostok_v9.x_bed_models_and_textures.7z" }. В качестве исходников модели стола используйте модели из сборки принтера"
+!!! tip "Если вы собираете VOSTOK в нестандартном размере, то модель и текстуру придётся делать самостоятельно. В качестве исходника для текстуры стола используйте файлы `.afdesign` (Affinity) из [:material-download: архива](assets/vostok_v9.x_bed_models_and_textures.7z){ download="vostok_v9.x_bed_models_and_textures.7z" }. В качестве исходников модели стола используйте модели из сборки принтера"
 
 ## Настройка PrusaSlicer
 

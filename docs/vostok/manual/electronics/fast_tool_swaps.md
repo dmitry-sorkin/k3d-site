@@ -11,7 +11,7 @@ description: Как правильно настроить быструю сме�
 ## Что это и зачем нужно?
 
 <video width="300" height="300" autoplay loop muted playsinline align="left" style="float: left; margin-right: 1em; margin-bottom: 1em;">
-  <source src="../pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
+  <source src="pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
 </video>
 
 На IDEX принтерах физически возможно двигать печатающими головами независимо друг от друга. Если прошивка принтера это поддерживает, то становится возможным прочищать неактивную печатающую голову пока активная еще печатает. Это убирает необходимость печати черновой башенки, сокращая время смены инструмента с ~5 до 0.5-0.7 секунд.

@@ -23,7 +23,7 @@ description: Гайд по подготовке деталей к сборке 3
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/prepare/profile_threads.png){ width="250" .notrounded }
+![](pics/parts_postprocessing/profile_threads.png){ width="250" .notrounded }
 
 </div>
 <div class="image-text-content" markdown>
@@ -38,7 +38,7 @@ description: Гайд по подготовке деталей к сборке 3
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/prepare/warped_part.png){ width="250" .notrounded }
+![](pics/parts_postprocessing/warped_part.png){ width="250" .notrounded }
 
 </div>
 <div class="image-text-content" markdown>
@@ -55,7 +55,7 @@ description: Гайд по подготовке деталей к сборке 3
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/prepare/seating_surface.png){ width="250" .notrounded }
+![](pics/parts_postprocessing/seating_surface.png){ width="250" .notrounded }
 
 </div>
 <div class="image-text-content" markdown>
@@ -70,7 +70,7 @@ description: Гайд по подготовке деталей к сборке 3
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-![](./pics/prepare/belt_tensioner.png){ width="250" .notrounded }
+![](pics/parts_postprocessing/belt_tensioner.png){ width="250" .notrounded }
 
 </div>
 <div class="image-text-content" markdown>
@@ -92,7 +92,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-11411.png)
+- ![](pics/parts_postprocessing/v9-11411.png)
 
 </div>
 
@@ -100,7 +100,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-1142.png)
+- ![](pics/parts_postprocessing/v9-1142.png)
 
 </div>
 
@@ -108,8 +108,8 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-1143.png)
-- ![](./pics/prepare/v9-1143-2.png)
+- ![](pics/parts_postprocessing/v9-1143.png)
+- ![](pics/parts_postprocessing/v9-1143-2.png)
 
 </div>
 
@@ -117,7 +117,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-11461.png)
+- ![](pics/parts_postprocessing/v9-11461.png)
 
 </div>
 
@@ -125,7 +125,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-121.png)
+- ![](pics/parts_postprocessing/v9-121.png)
 
 </div>
 
@@ -133,7 +133,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-141.png)
+- ![](pics/parts_postprocessing/v9-141.png)
 
 </div>
 
@@ -141,7 +141,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards cols-2" markdown>
 
-- ![](./pics/prepare/v9-563.png)
+- ![](pics/parts_postprocessing/v9-563.png)
 
 </div>
 
@@ -157,8 +157,8 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-1110.png)
-- ![](./pics/prepare/inserts_v9-1110-2.png)
+- ![](pics/parts_postprocessing/inserts_v9-1110.png)
+- ![](pics/parts_postprocessing/inserts_v9-1110-2.png)
 
 </div>
 
@@ -168,8 +168,8 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-1142.png)
-- ![](./pics/prepare/inserts_v9-1142-2.png)
+- ![](pics/parts_postprocessing/inserts_v9-1142.png)
+- ![](pics/parts_postprocessing/inserts_v9-1142-2.png)
 
 </div>
 
@@ -179,7 +179,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-140.png)
+- ![](pics/parts_postprocessing/inserts_v9-140.png)
 
 </div>
 
@@ -189,7 +189,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-3111.png)
+- ![](pics/parts_postprocessing/inserts_v9-3111.png)
 
 </div>
 
@@ -199,7 +199,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-4151.png)
+- ![](pics/parts_postprocessing/inserts_v9-4151.png)
 
 </div>
 
@@ -209,7 +209,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-4361.png)
+- ![](pics/parts_postprocessing/inserts_v9-4361.png)
 
 </div>
 
@@ -219,7 +219,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-4362.png)
+- ![](pics/parts_postprocessing/inserts_v9-4362.png)
 
 </div>
 
@@ -229,7 +229,7 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-623.png)
+- ![](pics/parts_postprocessing/inserts_v9-623.png)
 
 </div>
 
@@ -239,6 +239,6 @@ description: Гайд по подготовке деталей к сборке 3
 
 <div class="grid cards no-gap cols-2" markdown>
 
-- ![](./pics/prepare/inserts_v9-625.png)
+- ![](pics/parts_postprocessing/inserts_v9-625.png)
 
 </div>

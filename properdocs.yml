@@ -97,6 +97,14 @@ plugins:
         "./vostok/xu_drives.md": "vostok/v8/xu_drives.md"
         "./vostok/y_drive.md": "vostok/v8/y_drive.md"
         "./vostok/z_drive.md": "vostok/v8/z_drive.md"
+        "./vostok/manual/start.md": "vostok/manual/prepare/start.md"
+        "./vostok/manual/prepare.md": "vostok/manual/prepare/parts_postprocessing.md"
+        "./vostok/manual/prepare/parts_preprocessing.md": "vostok/manual/prepare/parts_postprocessing.md"
+        "./vostok/manual/wiring.md": "vostok/manual/electronics/wiring.md"
+        "./vostok/manual/firmware.md": "vostok/manual/electronics/firmware.md"
+        "./vostok/manual/slicer_configuration.md": "vostok/manual/electronics/slicer_configuration.md"
+        "./vostok/manual/fast_tool_swaps.md": "vostok/manual/electronics/fast_tool_swaps.md"
+        "./vostok/manual/macros.md": "vostok/manual/electronics/macros.md"
         "./articles/filament_drying.md": "part-navi/filament_dryers.md"
   - charts
   - table-reader
@@ -178,15 +186,15 @@ nav:
           - Telegram чат: ./redirects/vostok_chat.md
           - Модификации: ./redirects/vostok_mods.md
           - Багтрекер: ./redirects/vostok_bugtracker.md
-      - Сборка:
-          - Начало: ./vostok/manual/start.md
-          - Подготовка: ./vostok/manual/prepare.md
-      - Электроника и софт:
-          - Схемы: ./vostok/manual/wiring.md
-          - Прошивка: ./vostok/manual/firmware.md
-          - Слайсер: ./vostok/manual/slicer_configuration.md
-          - СБСИ: ./vostok/manual/fast_tool_swaps.md
-          - Макросы: ./vostok/manual/macros.md
+      - Подготовка:
+          - Начало: ./vostok/manual/prepare/start.md
+          - Обработка деталей: ./vostok/manual/prepare/parts_postprocessing.md
+      - Электроника:
+          - Схемы: ./vostok/manual/electronics/wiring.md
+          - Прошивка: ./vostok/manual/electronics/firmware.md
+          - Слайсер: ./vostok/manual/electronics/slicer_configuration.md
+          - СБСИ: ./vostok/manual/electronics/fast_tool_swaps.md
+          - Макросы: ./vostok/manual/electronics/macros.md
       - Архивные статьи:
           - Инструкции v0.8.x:
               - С чего начать: ./vostok/v8/guide_index.md

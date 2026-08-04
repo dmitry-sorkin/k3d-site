@@ -17,24 +17,24 @@ description: Подробные схемы подключения всех эл�
 - Рекомендуется кинуть заземление на раму принтера, раму стола и плиту стола;
 - Если на розетку, в которую включен принтер, не стоит УЗО, лучше установить его прямо в принтер между розеткой и WAGO 222-415.
 
-![](./pics/wiring/220v.png#only-light){ .rounded }
-![](./pics/wiring/220v_dark.png#only-dark){ .rounded }
+![](pics/wiring/220v.png#only-light){ .rounded }
+![](pics/wiring/220v_dark.png#only-dark){ .rounded }
 
 ## 24В силовая проводка
 
 - На питание материнской платы сечение провода минимум 20AWG (0.52 мм²);
 - На питание остальных потребителей минимум 22AWG (0.33 мм²) на каждого. Но я бы для простоты везде кинул 20AWG.
 
-![](./pics/wiring/24v.png#only-light){ .rounded }
-![](./pics/wiring/24v_dark.png#only-dark){ .rounded }
+![](pics/wiring/24v.png#only-light){ .rounded }
+![](pics/wiring/24v_dark.png#only-dark){ .rounded }
 
 ## Джамперы
 
 - Подходит для конфигурации электроники по спецификации и `electronics_octopus_pro_v1.1_h723_5x2240_2xH36.cfg`;
 - Если хотите питать моторы от отдельного БП, то джамперы сверху драйверов надо переставить в альтернативную позицию.
 
-![](./pics/wiring/jumpers.png#only-light){ .rounded }
-![](./pics/wiring/jumpers_dark.png#only-dark){ .rounded }
+![](pics/wiring/jumpers.png#only-light){ .rounded }
+![](pics/wiring/jumpers_dark.png#only-dark){ .rounded }
 
 ## Драйверы и моторы
 
@@ -47,23 +47,23 @@ description: Подробные схемы подключения всех эл�
 
 Если направление вращения двигателя инвертировано, то лучше всего инвертировать DIR пин в конфигурации. Но также можно просто инвертировать все пины в разъёме (1-2-3-4 -> 4-3-2-1).
 
-![](./pics/wiring/motors.png#only-light){ .rounded }
-![](./pics/wiring/motors_dark.png#only-dark){ .rounded }
+![](pics/wiring/motors.png#only-light){ .rounded }
+![](pics/wiring/motors_dark.png#only-dark){ .rounded }
 
 ## ws7040
 
 - Цвета проводов у драйвера ws7040 могут отличаться от производителя к производителю.
 
-![](./pics/wiring/ws7040.png#only-light){ .rounded }
-![](./pics/wiring/ws7040_dark.png#only-dark){ .rounded }
+![](pics/wiring/ws7040.png#only-light){ .rounded }
+![](pics/wiring/ws7040_dark.png#only-dark){ .rounded }
 
 ## Нагревательный стол
 
 - Рекомендуется вместе с проводами, отображёнными на схеме, кинуть еще 2 провода - заземление рамы и плиты стола (на схеме не показано);
 - Если будете использовать реле не по спецификации, то перед подключением проводов к ним внимательно ознакомьтесь со схемой реле. Большинство других реле требуют другого подключения.
 
-![](./pics/wiring/heatbed.png#only-light){ .rounded }
-![](./pics/wiring/heatbed_dark.png#only-dark){ .rounded }
+![](pics/wiring/heatbed.png#only-light){ .rounded }
+![](pics/wiring/heatbed_dark.png#only-dark){ .rounded }
 
 ## Нагреватель термокамеры
 
@@ -72,33 +72,33 @@ description: Подробные схемы подключения всех эл�
 - Chamber heater thermistor - термистор, располагающийся на нагревателе термокамеры;
 - Питание вентилятора нагревателя термокамеры не показано т.к. у разных нагревателей оно должно быть устроено по-разному. В общем случае рекомендуется замена вентилятора на 24в с поддержкой ШИМ, чтобы была возможность управлять скоростью его вращения программно.
 
-![](./pics/wiring/chamber.png#only-light){ .rounded }
-![](./pics/wiring/chamber_dark.png#only-dark){ .rounded }
+![](pics/wiring/chamber.png#only-light){ .rounded }
+![](pics/wiring/chamber_dark.png#only-dark){ .rounded }
 
 ## Подключение печатающих голов
 
 - Номера пинов на разъёмах GX16 можно посмотреть прямо на пластиковом сепараторе;
 - Перед включением принтера настоятельно рекомендуется убедиться, что пины на разъёмах GX16 подключены строго по номерам.
 
-![](./pics/wiring/printhead_boards.png#only-light)
-![](./pics/wiring/printhead_boards_dark.png#only-dark)
+![](pics/wiring/printhead_boards.png#only-light)
+![](pics/wiring/printhead_boards_dark.png#only-dark)
 
 ## Потребители печатающих голов
 
 - Показана схема подключения потребителей на левой печатающей голове. На правой печатающей голове всё аналогично, кроме того, что там отсутствует MicroProbe.
 
-![](./pics/wiring/printhead.png#only-light){ .rounded }
-![](./pics/wiring/printhead_dark.png#only-dark){ .rounded }
+![](pics/wiring/printhead.png#only-light){ .rounded }
+![](pics/wiring/printhead_dark.png#only-dark){ .rounded }
 
 ## Другое
 
 Остальные потребители - вентиляторы, подсветка, концевики.
 
-![](./pics/wiring/other.png#only-light){ .rounded }
-![](./pics/wiring/other_dark.png#only-dark){ .rounded }
+![](pics/wiring/other.png#only-light){ .rounded }
+![](pics/wiring/other_dark.png#only-dark){ .rounded }
 
 ## Схемы подключения для другой электроники
 
 При использовании другой электроники ориентируйтесь на схемы подключения, расположенные в начале каждого файла `electronics_*.cfg`.
 
-![](./pics/wiring/electronics_cfg.png){ .rounded }
+![](pics/wiring/electronics_cfg.png){ .rounded }

@@ -207,8 +207,8 @@ G-code Shell Command необходим для работы макросов а�
 7. Переведите Octopus в режим DFU: установите джампер на пины `BOOT0`, после чего нажмите кнопку `RESET` (1);
 { .annotate }
 
-    1. ![](./pics/prepare/dfu.png#only-light)
-       ![](./pics/prepare/dfu_dark.png#only-dark)
+    1. ![](pics/firmware/dfu.png#only-light)
+       ![](pics/firmware/dfu_dark.png#only-dark)
 
 8. Убедитесь, что плата видна в системе как устройство DFU:
 
@@ -368,7 +368,7 @@ G-code Shell Command необходим для работы макросов а�
 7. Нажмите и удерживайте кнопку `BOOT0`. Не отпуская её нажмите `RST` и отпустите `BOOT0`(1);
     { .annotate }
 
-    1. ![h36_buttons](./pics/firmware/h36_buttons.png)
+    1. ![h36_buttons](pics/firmware/h36_buttons.png)
 
 8. Проверьте, что плата отображается в выводе `dfu-util`:
 
@@ -485,19 +485,19 @@ G-code Shell Command необходим для работы макросов а�
 2. Перейдите на вкладку `Система` и откройте окно `Устройства` (1);
     { .annotate }
 
-    1. ![fluidd_devices](./pics/firmware/fluidd_devices.png)
+    1. ![fluidd_devices](pics/firmware/fluidd_devices.png)
 
 3. В появившемся окне перейдите на вкладку `CAN` и нажмите `Обновить` (1);
     { .annotate }
 
-    1. ![fluid_devices_window](./pics/firmware/fluid_devices_window.png)
+    1. ![fluid_devices_window](pics/firmware/fluid_devices_window.png)
 
 4. Появятся список из 3 UUID. Чтобы узнать какой из них какой:
     1. На H36 левой печатающей головы 2 раза быстро нажмите кнопку reset. Должен начать мигать красный светодиод между USB и XT30 разъёмами;
     2. Обновите список в окне `Устройства`. Одно из них начнёт отображаться как `Katapult`. Это и есть коммутационная плата левой печатающей головы. Запишите её UUID (1);
         { .annotate }
 
-        1. ![fluidd_devices_katapult](./pics/firmware/fluidd_devices_katapult.png)
+        1. ![fluidd_devices_katapult](pics/firmware/fluidd_devices_katapult.png)
 
     3. Повторите действия для H36 правой печатающей головы. То устройство, тип которого изменился с `Klipper` на `Katapult` - коммутационная плата правой печатающей головы;
     4. Последнее оставшееся устройство - Octopus Pro;
@@ -569,7 +569,7 @@ ip -s -d link show can0
 
 Вывод должен выглядеть так:
 
-![ip_link_show_can0](./pics/firmware/ip_link_show_can0.png)
+![ip_link_show_can0](pics/firmware/ip_link_show_can0.png)
 
 Здесь важно несколько моментов:
 
