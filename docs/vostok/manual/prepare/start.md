@@ -44,7 +44,7 @@ treeView-beta
                   "..."
             "V9-60 - Additions" icon(mdi:folder)
                   "..."
-            "V9-70 - Tools" icon(mdi:folder)
+            "V9-70 - Tools" icon(mdi:folder) ## Приспособления для обработки деталей и сборки
                   "..."
       "vostok_v9.x_drawings" icon(mdi:folder) ## Чертежи нестандартных деталей
             "VOSTOK_M" icon(mdi:folder)
