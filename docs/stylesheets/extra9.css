@@ -1107,7 +1107,6 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 .md-typeset .divTable,
 .md-typeset .divTableCell,
 .md-typeset .divTableHead,
-.md-typeset table th,
 .md-typeset table td {
 	letter-spacing: 0;
 	font-weight: 300;
