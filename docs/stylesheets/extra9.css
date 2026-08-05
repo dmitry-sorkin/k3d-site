@@ -1101,3 +1101,9 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 		animation: none !important;
 	}
 }
+
+/* Основной текст без разрядки букв и чуть тоньше */
+.md-typeset {
+	letter-spacing: 0;
+	font-weight: 300;
+}
