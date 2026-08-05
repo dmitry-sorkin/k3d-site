@@ -690,11 +690,7 @@ input[type="text"]:disabled {
 	padding: 0;
 }
 
-.md-typeset
-	.grid.cards.no-gap
-	> ul
-	> li:has(> .admonition)
-	> .admonition {
+.md-typeset .grid.cards.no-gap > ul > li:has(> .admonition) > .admonition {
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;

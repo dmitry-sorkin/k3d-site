@@ -61,6 +61,41 @@ Nav structure is defined explicitly in `properdocs.yml` under `nav:` — folder 
 - Mermaid, Vega-Lite, MathJax, tabs, keys, superfences, critic/caret/mark/tilde are enabled — use them instead of screenshots or hand-drawn diagrams.
 - Inline images: place in the same section's folder or in `docs/pics/`, reference with relative paths.
 
+### Mermaid diagrams
+
+- **Always set `labelColor` and `lineColor` to the theme CSS variables** in the diagram's `themeVariables` frontmatter — otherwise colors don't follow light/dark mode and are unreadable on dark backgrounds. The safe template for any mermaid block:
+
+  ````
+  ```mermaid
+  ---
+  config:
+      themeVariables:
+          labelColor: 'var(--md-mermaid-label-fg-color)'
+          lineColor: 'var(--md-mermaid-label-fg-color)'
+  ---
+  ...diagram...
+  ```
+  ````
+
+  For `treeView` diagrams the variables go under `themeVariables.treeView` (they are not inherited from the top level):
+
+  ````
+  ```mermaid
+  ---
+  config:
+      themeVariables:
+          treeView:
+              labelColor: 'var(--md-mermaid-label-fg-color)'
+              lineColor: 'var(--md-mermaid-label-fg-color)'
+  ---
+  treeView-beta
+  ...
+  ```
+  ````
+
+- **TreeView icons (Material, `mdi` pack)**: supported via `docs/javascripts/mermaid-icons.js` (registered in `extra_javascript`). It registers the `mdi` icon pack with `mermaid.registerIconPacks()` and forces `securityLevel: "loose"` (mermaid's strict sanitizer strips the `<use>` elements icons are rendered with — without this patch icons show as empty space). To use an icon on a node, append `icon(mdi:name)` after the label, e.g. `"vostok" icon(mdi:folder)`. Common icons: `mdi:folder`, `mdi:file`, `mdi:table`, `mdi:cube`, `mdi:file-document`, `mdi:file-image`. Icons are fetched on demand from unpkg (`@iconify-json/mdi`), so the site must be online.
+- Mermaid trims `\s`-class whitespace (including `&nbsp;` U+00A0) from the start/end of labels. To pad a label to equal width, use the `&nbsp;` entity — it survives trimming as ASCII and decodes to a real space at render time.
+
 ## Redirects
 
 If you move a page, add a mapping in `properdocs.yml` under `plugins.redirects.redirect_maps` AND keep the old stub in `docs/redirects/` so links from external sites don't 404. External links (forum, Telegram, bugtracker) live in `redirects/` with a single external `target=` link in frontmatter.
