@@ -81,11 +81,11 @@ description: История релизов и обновлений конфиг�
 
 ### Скачать
 
-- [:material-table: Спецификация](./9.4/assets/vostok_v9.4_bom.xlsx)
-- [:material-cube-outline: Сборка Parasolid](./9.4/assets/vostok_v9.4_assembly.x_t.7z)
-- [:material-cube-outline: Сборка STEP](./9.4/assets/vostok_v9.4_assembly.stp.7z)
-- [:material-printer-3d-nozzle: Файлы для печати STL](./9.4/assets/vostok_v9.4_stl.7z)
-- [:lucide-drafting-compass: Чертежи](./9.4/assets/vostok_v9.4_drawings.7z)
+- [:material-table: Спецификация](./9.4/assets/vostok_v9.4_bom.xlsx){ download="vostok_v9.4_bom.xlsx" }
+- [:material-cube-outline: Сборка Parasolid](./9.4/assets/vostok_v9.4_assembly.x_t.7z){ download="vostok_v9.4_assembly.x_t.7z" }
+- [:material-cube-outline: Сборка STEP](./9.4/assets/vostok_v9.4_assembly.stp.7z){ download="vostok_v9.4_assembly.stp.7z" }
+- [:material-printer-3d-nozzle: Файлы для печати STL](./9.4/assets/vostok_v9.4_stl.7z){ download="vostok_v9.4_stl.7z" }
+- [:lucide-drafting-compass: Чертежи](./9.4/assets/vostok_v9.4_drawings.7z){ download="vostok_v9.4_drawings.7z" }
 
 ## v9.3
 
@@ -105,11 +105,11 @@ description: История релизов и обновлений конфиг�
 
 ### Скачать
 
-- [:material-table: Спецификация](./9.3/assets/vostok_v9.3_bom.ods)
-- [:material-cube-outline: Сборка Parasolid](./9.3/assets/vostok_v9.3_assembly.x_t.7z)
-- [:material-cube-outline: Сборка STEP](./9.3/assets/vostok_v9.3_assembly.stp.7z)
-- [:material-printer-3d-nozzle: Файлы для печати STL](./9.3/assets/vostok_v9.3_stl.7z)
-- [:lucide-drafting-compass: Чертежи](./9.3/assets/vostok_v9.3_drawings.7z)
+- [:material-table: Спецификация](./9.3/assets/vostok_v9.3_bom.ods){ download="vostok_v9.3_bom.ods" }
+- [:material-cube-outline: Сборка Parasolid](./9.3/assets/vostok_v9.3_assembly.x_t.7z){ download="vostok_v9.3_assembly.x_t.7z" }
+- [:material-cube-outline: Сборка STEP](./9.3/assets/vostok_v9.3_assembly.stp.7z){ download="vostok_v9.3_assembly.stp.7z" }
+- [:material-printer-3d-nozzle: Файлы для печати STL](./9.3/assets/vostok_v9.3_stl.7z){ download="vostok_v9.3_stl.7z" }
+- [:lucide-drafting-compass: Чертежи](./9.3/assets/vostok_v9.3_drawings.7z){ download="vostok_v9.3_drawings.7z" }
 
 ## v9.2
 
@@ -222,10 +222,10 @@ description: История релизов и обновлений конфиг�
 
 ### Скачать
 
-- :material-cube-outline: [vostok_v9.2_assembly.stp.7z](./9.2/assets/vostok_v9.2_assembly.stp.7z)
-- :material-table: [vostok_v9.2_bom.7z](./9.2/assets/vostok_v9.2_bom.7z)
-- :lucide-drafting-compass: [vostok_v9.2_drawings.7z](./9.2/assets/vostok_v9.2_drawings.7z)
-- :material-printer-3d-nozzle: [vostok_v9.2_stl.7z](./9.2/assets/vostok_v9.2_stl.7z)
+- :material-cube-outline: [vostok_v9.2_assembly.stp.7z](./9.2/assets/vostok_v9.2_assembly.stp.7z){ download="vostok_v9.2_assembly.stp.7z" }
+- :material-table: [vostok_v9.2_bom.7z](./9.2/assets/vostok_v9.2_bom.7z){ download="vostok_v9.2_bom.7z" }
+- :lucide-drafting-compass: [vostok_v9.2_drawings.7z](./9.2/assets/vostok_v9.2_drawings.7z){ download="vostok_v9.2_drawings.7z" }
+- :material-printer-3d-nozzle: [vostok_v9.2_stl.7z](./9.2/assets/vostok_v9.2_stl.7z){ download="vostok_v9.2_stl.7z" }
 
 ## v9.1
 
@@ -267,9 +267,9 @@ description: История релизов и обновлений конфиг�
 
 ### Скачать
 
-- :material-cube-outline: [vostok_v9.1_assembly.stp.7z](./9.1/assets/vostok_v9.1_assembly.stp.7z)
-- :material-file-document: [vostok_v9.1_docs.7z](./9.1/assets/vostok_v9.1_docs.7z)
-- :material-printer-3d-nozzle: [vostok_v9.1_stl.7z](./9.1/assets/vostok_v9.1_stl.7z)
+- :material-cube-outline: [vostok_v9.1_assembly.stp.7z](./9.1/assets/vostok_v9.1_assembly.stp.7z){ download="vostok_v9.1_assembly.stp.7z" }
+- :material-file-document: [vostok_v9.1_docs.7z](./9.1/assets/vostok_v9.1_docs.7z){ download="vostok_v9.1_docs.7z" }
+- :material-printer-3d-nozzle: [vostok_v9.1_stl.7z](./9.1/assets/vostok_v9.1_stl.7z){ download="vostok_v9.1_stl.7z" }
 
 ## v9.0
 
@@ -423,6 +423,6 @@ description: История релизов и обновлений конфиг�
 
 ### Скачать
 
-- :material-printer-3d-nozzle: [vostok_v9.0_bugfix1_stl.7z](./9.0/assets/vostok_v9.0_bugfix1_stl.7z)
-- :material-cube-outline: [vostok_v9.0_bugfix1_assembly.stp.7z](./9.0/assets/vostok_v9.0_bugfix1_assembly.stp.7z)
-- :material-file-document: [vostok_v9.0_bugfix1_docs.7z](./9.0/assets/vostok_v9.0_bugfix1_docs.7z)
+- :material-printer-3d-nozzle: [vostok_v9.0_bugfix1_stl.7z](./9.0/assets/vostok_v9.0_bugfix1_stl.7z){ download="vostok_v9.0_bugfix1_stl.7z" }
+- :material-cube-outline: [vostok_v9.0_bugfix1_assembly.stp.7z](./9.0/assets/vostok_v9.0_bugfix1_assembly.stp.7z){ download="vostok_v9.0_bugfix1_assembly.stp.7z" }
+- :material-file-document: [vostok_v9.0_bugfix1_docs.7z](./9.0/assets/vostok_v9.0_bugfix1_docs.7z){ download="vostok_v9.0_bugfix1_docs.7z" }
