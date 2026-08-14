@@ -531,6 +531,22 @@ input[type="text"]:disabled {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* Класс .no-border для grid cards: убирает обводку ячеек и hover-эффект
+   (подъём/тень/заливку). Вешается на любой grid cards — cols-N, no-gap,
+   обычный. Без него дефолтные стили Material (обводка + hover) сохраняются. */
+.md-typeset .grid.cards.no-border > ul > li {
+	border: none;
+	background: transparent;
+	box-shadow: none;
+}
+
+.md-typeset .grid.cards.no-border > ul > li:hover {
+	border: none;
+	background: transparent;
+	box-shadow: none;
+	transform: none;
+}
+
 @media screen and (max-width: 60rem) {
 	.grid.cards.no-gap.cols-2,
 	.grid.cards.no-gap.cols-3,

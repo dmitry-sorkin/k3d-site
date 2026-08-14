@@ -65,83 +65,69 @@ description: Гайд по подготовке деталей к сборке 3
 </div>
 </div>
 
-## Сминаемые элементы
-
-<div class="image-text-row reverse" markdown>
-<div class="image-text-img" markdown>
-
-![](pics/parts_postprocessing/belt_tensioner.png){ width="250" .notrounded }
-
-</div>
-<div class="image-text-content" markdown>
-
-Ползуны натяжителей ремней и выступающие элементы на каретках оси Y специально выполнены так, чтобы их сечение было больше сечения отверстий, в которые они вставляются. Это необходимо для того, чтобы исключить люфт в этих соединениях. Тем не менее, если печатать немного в плюс по размеру, то может возникнуть ситуация, когда собрать соединение окажется невозможным. В таком случае придётся прибегнуть к доработке деталей по месту напильником. Главное - обрабатывать по чуть-чуть, чтобы не допустить люфта в соединении.
-
-!!! tip "Размер этих элементов значительно проще подгонять пока принтер еще не собран"
-
-</div>
-</div>
-
 ## Жертвенные слои
 
 Для того, чтобы цекованные отверстия на деталях печатались без необходимости ставить мосты под них, они закрыты мембранами толщиной в 1-2 слоя. Перед сборкой принтера эти мембраны необходимо удалить.
 
 !!! note "Проще всего удалить мембрану сверлом подходящего диаметра или надфилем круглого сечения. Но в большинстве мест может справиться и обычный канцелярский нож"
 
-### V9-11411
-
-<div class="grid cards cols-2" markdown>
-
-- ![](pics/parts_postprocessing/v9-11411.png)
-
-</div>
-
 ### V9-1142
 
-<div class="grid cards cols-2" markdown>
+<div class="grid cards no-border cols-2" markdown>
 
-- ![](pics/parts_postprocessing/v9-1142.png)
+- ![](pics/parts_postprocessing/v9-1142_2.png){ .notrounded }
+- ![](pics/parts_postprocessing/v9-1142.png){ .notrounded }
 
 </div>
 
 ### V9-1143
 
-<div class="grid cards cols-2" markdown>
+<div class="grid cards no-border cols-2" markdown>
 
-- ![](pics/parts_postprocessing/v9-1143.png)
-- ![](pics/parts_postprocessing/v9-1143-2.png)
+- ![](pics/parts_postprocessing/v9-1143.png){ .notrounded }
+- ![](pics/parts_postprocessing/v9-1143-2.png){ .notrounded }
 
 </div>
 
 ### V9-11461
 
-<div class="grid cards cols-2" markdown>
+<div class="grid cards no-border cols-2" markdown>
 
-- ![](pics/parts_postprocessing/v9-11461.png)
+- ![](pics/parts_postprocessing/v9-11461.png){ .notrounded }
 
 </div>
 
 ### V9-121 и V9-141
 
-<div class="grid cards cols-2" markdown>
+<div class="grid cards no-border cols-2" markdown>
 
-- ![](pics/parts_postprocessing/v9-121.png)
+- ![](pics/parts_postprocessing/v9-121.png){ .notrounded }
 
 </div>
 
 ### V9-141 и V9-151
 
-<div class="grid cards cols-2" markdown>
+<div class="grid cards no-border cols-2" markdown>
 
-- ![](pics/parts_postprocessing/v9-141.png)
+- ![](pics/parts_postprocessing/v9-141.png){ .notrounded }
+
+</div>
+
+### V9-4441
+
+!!! note "Особенностью этой детали является то, что, если вы не собираетесь устанавливать разъёмы в какое-то из отверстий, то мембрану из него убирать не надо т.к. она будет выступать в роли заглушки"
+
+<div class="grid cards no-border cols-2" markdown>
+
+- ![](pics/parts_postprocessing/v9-4441.png){ .notrounded }
 
 </div>
 
 ### V9-563
 
-<div class="grid cards cols-2" markdown>
+<div class="grid cards no-border cols-2" markdown>
 
-- ![](pics/parts_postprocessing/v9-563.png)
+- ![](pics/parts_postprocessing/v9-563.png){ .notrounded }
 
 </div>
 
@@ -155,10 +141,10 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 2шт. | M3x5 - 8шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-1110.png)
-- ![](pics/parts_postprocessing/inserts_v9-1110-2.png)
+- ![](pics/parts_postprocessing/inserts_v9-1110.png){ .notrounded }
+- ![](pics/parts_postprocessing/inserts_v9-1110-2.png){ .notrounded }
 
 </div>
 
@@ -166,10 +152,10 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 10шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-1142.png)
-- ![](pics/parts_postprocessing/inserts_v9-1142-2.png)
+- ![](pics/parts_postprocessing/inserts_v9-1142.png){ .notrounded }
+- ![](pics/parts_postprocessing/inserts_v9-1142-2.png){ .notrounded }
 
 </div>
 
@@ -177,9 +163,9 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 2шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-140.png)
+- ![](pics/parts_postprocessing/inserts_v9-140.png){ .notrounded }
 
 </div>
 
@@ -187,9 +173,9 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x5 - 5шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-3111.png)
+- ![](pics/parts_postprocessing/inserts_v9-3111.png){ .notrounded }
 
 </div>
 
@@ -197,9 +183,9 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 2шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-4151.png)
+- ![](pics/parts_postprocessing/inserts_v9-4151.png){ .notrounded }
 
 </div>
 
@@ -207,9 +193,9 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 2шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-4361.png)
+- ![](pics/parts_postprocessing/inserts_v9-4361.png){ .notrounded }
 
 </div>
 
@@ -217,9 +203,9 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 2шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-4362.png)
+- ![](pics/parts_postprocessing/inserts_v9-4362.png){ .notrounded }
 
 </div>
 
@@ -227,9 +213,9 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 2шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-623.png)
+- ![](pics/parts_postprocessing/inserts_v9-623.png){ .notrounded }
 
 </div>
 
@@ -237,8 +223,32 @@ description: Гайд по подготовке деталей к сборке 3
 
 `M3x3 - 3шт.`
 
-<div class="grid cards no-gap cols-2" markdown>
+<div class="grid cards no-border no-gap cols-2" markdown>
 
-- ![](pics/parts_postprocessing/inserts_v9-625.png)
+- ![](pics/parts_postprocessing/inserts_v9-625.png){ .notrounded }
+
+</div>
+
+## Рассверливание отверстий
+
+Из-за особенностей 3D печати, диаметр отверстия на напечатанной детали всегда будет заметно отличаться от диаметра этого отверстия в модели. Для компенсации этого, в моделях диаметр отверстий увеличен на 0.2-0.3 миллиметра. В большинстве случаев это работает хорошо.
+
+Если в вашем случае диаметр каких-то отверстий оказался заметно больше необходимого, то детали придётся перепечатать. Если меньше, то не зазорно рассверлить отверстия до необходимого диаметра. Только перед этим не забудьте перепроверить по модели, что отверстие действительно должно быть диаметром больше, чем получилось у вас.
+
+Также есть ряд деталей, отверстия на которых необходимо пройти сверлом в обязательном порядке:
+
+### V9-11411
+
+<div class="grid cards no-border cols-2" markdown>
+
+- ![](pics/parts_postprocessing/holes_v9-11411.png){ .notrounded }
+
+</div>
+
+### V9-3211
+
+<div class="grid cards no-border cols-2" markdown>
+
+- ![](pics/parts_postprocessing/holes_v9-3211.png){ .notrounded }
 
 </div>
