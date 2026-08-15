@@ -1127,3 +1127,31 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 	letter-spacing: 0;
 	font-weight: 300;
 }
+
+/* Цветные номера шагов: <div class="steps colored" markdown> */
+.md-typeset .steps.colored > ol > li::before {
+	color: #fff;
+	border: none;
+	font-size: 16px;
+}
+.md-typeset .steps.colored > ol > li:nth-child(1)::before {
+	background-color: #00b294;
+}
+.md-typeset .steps.colored > ol > li:nth-child(2)::before {
+	background-color: #f7630c;
+}
+.md-typeset .steps.colored > ol > li:nth-child(3)::before {
+	background-color: #c239b3;
+}
+.md-typeset .steps.colored > ol > li:nth-child(4)::before {
+	background-color: #0078d7;
+}
+.md-typeset .steps.colored > ol > li:nth-child(5)::before {
+	background-color: #8e8cd8;
+}
+.md-typeset .steps.colored > ol > li:nth-child(6)::before {
+	background-color: #7a7574;
+}
+.md-typeset .steps.colored > ol > li:nth-child(7)::before {
+	background-color: #498205;
+}

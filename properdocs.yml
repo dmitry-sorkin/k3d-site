@@ -47,7 +47,8 @@ theme:
       icon: octicons/mirror-16
       color: "#ffc107"
 plugins:
-  - glightbox
+  - glightbox:
+      background: "transparent"
   - social:
       cards_layout_options:
         background_color: "#009485"
