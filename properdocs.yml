@@ -194,7 +194,9 @@ nav:
       - Подготовка:
           - Начало: ./vostok/manual/prepare/start.md
           - Печать: ./vostok/manual/prepare/printing_guide.md
-          - обработка: ./vostok/manual/prepare/parts_postprocessing.md
+          - Обработка: ./vostok/manual/prepare/parts_postprocessing.md
+      - Механика:
+          - Портал: ./vostok/manual/mechanics/portal.md
       - Электроника:
           - Схемы: ./vostok/manual/electronics/wiring.md
           - Прошивка: ./vostok/manual/electronics/firmware.md
