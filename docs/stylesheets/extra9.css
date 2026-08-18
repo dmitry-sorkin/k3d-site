@@ -1150,8 +1150,8 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 	background-color: #8e8cd8;
 }
 .md-typeset .steps.colored > ol > li:nth-child(6)::before {
-	background-color: #7a7574;
+	background-color: #498205;
 }
 .md-typeset .steps.colored > ol > li:nth-child(7)::before {
-	background-color: #498205;
+	background-color: #ff4343;
 }
