@@ -199,6 +199,7 @@ nav:
           - Портал: ./vostok/manual/mechanics/portal.md
           - Рама: ./vostok/manual/mechanics/frame.md
           - Ось Z: ./vostok/manual/mechanics/z_axis.md
+          - Головы: ./vostok/manual/mechanics/printhead.md
       - Электроника:
           - Схемы: ./vostok/manual/electronics/wiring.md
           - Прошивка: ./vostok/manual/electronics/firmware.md
