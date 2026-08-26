@@ -159,6 +159,16 @@ description: Гайд по подготовке деталей к сборке 3
 
 </div>
 
+### V9-1143
+
+`M3x5 - 4шт.`
+
+<div class="grid cards no-border no-gap cols-2" markdown>
+
+- ![](pics/parts_postprocessing/inserts_v9-1143.png){ .notrounded }
+
+</div>
+
 ### V9-141 и V9-151
 
 `M3x3 - 2шт.`
@@ -176,6 +186,16 @@ description: Гайд по подготовке деталей к сборке 3
 <div class="grid cards no-border no-gap cols-2" markdown>
 
 - ![](pics/parts_postprocessing/inserts_v9-3111.png){ .notrounded }
+
+</div>
+
+### V9-3212
+
+`M3x5 - 1шт.`
+
+<div class="grid cards no-border no-gap cols-2" markdown>
+
+- ![](pics/parts_postprocessing/inserts_v9-3212.png){ .notrounded }
 
 </div>
 
