@@ -61,78 +61,23 @@ description: Как правильно настроить PrusaSlicer и OrcaSli
 
 #### Раздел "Вставка G-кода"
 
-##### G-код перед началом печати
+##### G-код заголовка файла
 
 ``` gcode
-{if (is_extruder_used[0] and is_extruder_used[1]) or imex_mode_index != 0}
-  {local bed_temp = max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])};При использовании 2 печатающих голов, температура стола будет установлена наибольшей из температур для обоих используемых филаментов
-{elsif is_extruder_used[1]}
-  {local bed_temp = first_layer_bed_temperature[1]}
-{else}
-  {local bed_temp = first_layer_bed_temperature[0]}
-{endif}
-
-M190 S{bed_temp};Нагрев стола
-G28;Автопарковка
-IDEX_RESET;Сбрасываем режим IDEX на время выполнения скрипта начала печати
-
-{if imex_mode_index == 0}
-  BED_MESH_CALIBRATE ADAPTIVE=1;Для классического режима снимаем карту высот
-{else}
-  BED_MESH_CLEAR;Для дублирующего и зеркального режима сбрасываем 
-{endif}
-
-G1 F30000
-PARK_XW;Парковка обеих печатающих голов
-G1 Y0
-
-{if is_extruder_used[0]}M104 T0 S{first_layer_temperature[0]}{endif}
-{if is_extruder_used[1] or imex_mode_index != 0}M104 T1 S{first_layer_temperature[1]}{endif}
-{if is_extruder_used[0]}M109 T0 S{first_layer_temperature[0]}{endif}
-{if is_extruder_used[1] or imex_mode_index != 0}M109 T1 S{first_layer_temperature[1]}{endif}
-
-M83;Переводим экструдер в относительные координаты
-
-{if imex_mode_index != 0 or (is_extruder_used[0] and is_extruder_used[1])}
-  IDEX_MODE_MIRROR MOVE=1
-{elsif imex_mode_index == 0}
-  T{initial_extruder}
-{endif}
-G1 Z2 F600;Опускаем стол
-G1 X1 Y0 F30000;Перемещаемся к началу линии очистки
-G1 Z0.3 F600;Опускаемся на высоту печати линии очистки
-G1 Y30 E20 F300;Печатаем линию очистки
-G1 F30000
-
-{if imex_mode_index == 0};Классический режим
-  IDEX_RESET
-  {if initial_extruder == 0}
-    PARK_W
-  {else}
-    PARK_X
-  {endif}
-{elsif imex_mode_index == 1};Дублирующий режим
-  IDEX_MODE_COPY MOVE=1;Включаем дублирующий режим с перемещением печатающих голов в базовую позицию
-{elsif imex_mode_index == 2};Зеркальный режим
-  IDEX_MODE_MIRROR MOVE=1;Включаем зеркальный режим с перемещением печатающих голов в базовую позицию
-{endif}
+; Сброс состояния принтера
 
 M220 S100
 M221 S100
-G92 E0
-
-;Подготовка скрипта быстрой смены инструмента
-{if imex_mode_index == 0}
-  M104 T0 S0
-  M104 T1 S0
-  {if is_extruder_used[0] and is_extruder_used[1]}
-    ;fast_tool_swaps_start
-  {endif}
-  T{initial_extruder}
-  {if is_extruder_used[0]}M104 T0 S{first_layer_temperature[0]}{endif}
-  {if is_extruder_used[1] or imex_mode_index != 0}M104 T1 S{first_layer_temperature[1]}{endif}
-{endif}
+M106 S0
+IDEX_RESET
+G1 F18000
+M204 S10000
+M83
 ```
+
+##### G-код перед началом печати
+
+Оставьте пустым. Инициализация печати происходит в G-кодах режимов.
 
 ##### G-код после завершения печати
 
@@ -154,6 +99,7 @@ T{next_extruder}
 
 #### Раздел "Многоцвет"
 
+##### Основные параметры
 
 | Параметр | Все размеры | Комментарий |
 | :------- | :---------: | :---------- |
@@ -177,7 +123,141 @@ T{next_extruder}
 
 1. Добавьте к `Primary` еще два режима и назовите их `Copy` и `Mirror`. Порядок важен!
 2. Прощёлкайте по иконкам `T0` `T1` рядом с ними, чтобы они стали такого же цвета, как на скриншоте;
-3. Поля G-кодов стоит оставить пустыми т.к. вся логика инициализации печати идёт в `G-код перед началом печати`.
+3. Заполните G-коды режимов:
+
+##### G-код Primary
+
+``` gcode
+; Нагрев стола
+
+{if (is_extruder_used[0] and is_extruder_used[1])}
+    ; Если используются оба экструдера, то греем стол до большей из температур
+    M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])}
+{elsif is_extruder_used[0]}
+    ; Если используется левый экструдер, то греем стол до температуры в профиле материала в левом экструдере
+    M190 S{first_layer_bed_temperature[0]}
+{elsif is_extruder_used[1]}
+    ; Если используется правый экструдер, то греем стол до температуры в профиле материала в правом экструдере
+    M190 S{first_layer_bed_temperature[1]}
+{else}
+CANCEL_PRINT ;Ошибка - отменяем печать
+{endif}
+
+; Автопаркова и снятие карты высот стола
+
+G1 F30000
+G28
+BED_MESH_CALIBRATE ADAPTIVE=1
+
+; Перемещение голов в стартовую позицию
+
+IDEX_MODE_MIRROR MOVE=1
+G1 X-30 Y0 F30000
+
+; Прогрев хотэндов
+
+M104 T0 S{is_extruder_used[0] ? first_layer_temperature[0] : 0}
+M104 T1 S{is_extruder_used[1] ? first_layer_temperature[1] : 0}
+M109 T0 S{is_extruder_used[0] ? first_layer_temperature[0] : 0}
+M109 T1 S{is_extruder_used[1] ? first_layer_temperature[1] : 0}
+
+; Прочистка активных хотэндов
+
+G1 Z2 F600 ;Опускаем стол
+{if not (is_extruder_used[0] and is_extruder_used[1])}
+    ; Если используется только 1 печатающая голова, то сбрасываем режим IDEX и включаем её. В противном случае остаёмся в зеркальном режиме, чтобы прочистились обе головы
+    IDEX_RESET
+    T{initial_extruder}
+    G1 X{is_extruder_used[0] ? 1 : 399} Y0 F30000 ;Перемещение к началу линии очистки
+{else}
+    ; Если надо прочистить обе печатающие головы, то остаёмся в зеркальном режиме
+    G1 X1 Y0 F30000 ;Перемещение к началу линии очистки
+{endif}
+G1 Z0.3 F600 ;Опускаемся на высоту печати линии очистки
+G1 Y30 E20 F300 ;Печатаем линию очистки
+G1 F30000 ;Возвращаем скорость движений
+
+; Подготовка положения печатающих голов
+
+{if (is_extruder_used[0] and is_extruder_used[1])}
+    IDEX_RESET ;Если прочищали обе печатающие головы, то сбрасываем зеркальный режим
+    {(initial_extruder == 0) ? "PARK_W" : "PARK_X"} ; Паркуем неактивную голову
+{endif}
+
+; Подготовка скрипта быстрой смены инструмента
+
+{if (is_extruder_used[0] and is_extruder_used[1])}
+    ;fast_tool_swaps_start
+    M104 T0 S{first_layer_temperature[0]}
+    M104 T1 S{first_layer_temperature[1]}
+    T{initial_extruder}
+{endif}
+```
+
+##### G-код Copy
+
+``` gcode
+M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])} ;Прогреваем стол до наибольшей из температур в профилях материалов
+
+; Автопарковка и сброс карты высот т.к. в режимах копии и зеркала она не работает
+
+G28
+BED_MESH_CLEAR
+
+; Перемещение голов в стартовую позицию
+
+IDEX_MODE_MIRROR MOVE=1
+G1 X0 Y0 F30000
+
+; Прогрев хотэндов
+
+M104 T0 S{first_layer_temperature[0]}
+M104 T1 S{first_layer_temperature[1]}
+M109 T0 S{first_layer_temperature[0]}
+M109 T1 S{first_layer_temperature[1]}
+
+; Прочистка активных хотэндов
+
+G1 Z2 F600 ;Опускаем стол
+G1 X1 Y0 F30000 ;Перемещение к началу линии очистки
+G1 Z0.3 F600 ;Опускаемся на высоту печати линии очистки
+G1 Y30 E20 F300 ;Печатаем линию очистки
+G1 F30000 ;Возвращаем скорость движений
+
+; Подготовка состояния принтера
+IDEX_MODE_COPY MOVE=1
+```
+
+##### G-код Mirror
+
+``` gcode
+M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])} ;Прогреваем стол до наибольшей из температур в профилях материалов
+
+; Автопарковка и сброс карты высот т.к. в режимах копии и зеркала она не работает
+
+G28
+BED_MESH_CLEAR
+
+; Перемещение голов в стартовую позицию
+
+IDEX_MODE_MIRROR MOVE=1
+G1 X0 Y0 F30000
+
+; Прогрев хотэндов
+
+M104 T0 S{first_layer_temperature[0]}
+M104 T1 S{first_layer_temperature[1]}
+M109 T0 S{first_layer_temperature[0]}
+M109 T1 S{first_layer_temperature[1]}
+
+; Прочистка активных хотэндов
+
+G1 Z2 F600 ;Опускаем стол
+G1 X1 Y0 F30000 ;Перемещение к началу линии очистки
+G1 Z0.3 F600 ;Опускаемся на высоту печати линии очистки
+G1 Y30 E20 F300 ;Печатаем линию очистки
+G1 F30000 ;Возвращаем скорость движений
+```
 
 #### Разделы "Экструдер"
 
