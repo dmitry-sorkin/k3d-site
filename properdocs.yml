@@ -78,6 +78,8 @@ plugins:
         "./ebp/releases.md": "projects/ebp/index.md"
         "./ehp/guide_old.md": "projects/ehp/guide_old.md"
         "./ehp/guide.md": "projects/ehp/index.md"
+        "./vostok/manual/mechanics/electronics.md": "vostok/manual/electronics/install.md"
+        "./vostok/manual/mechanics/finalization.md": "vostok/manual/mechanics/addons.md"
         "./ehp/index.md": "projects/ehp/index.md"
         "./ehp/releases.md": "projects/ehp/index.md"
         "./esp/guide_ender3.md": "projects/esp/index.md"
@@ -200,7 +202,9 @@ nav:
           - Рама: ./vostok/manual/mechanics/frame.md
           - Ось Z: ./vostok/manual/mechanics/z_axis.md
           - Головы: ./vostok/manual/mechanics/printhead.md
+          - Навесное: ./vostok/manual/mechanics/addons.md
       - Электроника:
+          - Установка: ./vostok/manual/electronics/install.md
           - Схемы: ./vostok/manual/electronics/wiring.md
           - Прошивка: ./vostok/manual/electronics/firmware.md
           - Слайсер: ./vostok/manual/electronics/slicer_configuration.md
