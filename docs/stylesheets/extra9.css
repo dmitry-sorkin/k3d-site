@@ -486,6 +486,24 @@ input[type="text"]:disabled {
 	border-radius: 8px;
 }
 
+/* Видео с ленивой подгрузкой: сначала чёрная заглушка, после загрузки
+   первого кадра (loadeddata) плавное появление — как на главной. */
+.md-typeset video.lazy-video {
+	background: #000;
+	opacity: 0;
+	transition: opacity 2s ease;
+}
+
+.md-typeset video.lazy-video.is-loaded {
+	opacity: 1;
+}
+
+/* Верхнее широкое видео без явной высоты: до загрузки метаданных у <video>
+   нет intrinsic-размера, поэтому задаём соотношение сторон из исходника. */
+.md-typeset video.lazy-video.video-wide {
+	aspect-ratio: 1280 / 536;
+}
+
 .md-typeset img.notrounded:not(.twemoji):not(.md-logo),
 .md-typeset video.notrounded {
 	border-radius: 0;

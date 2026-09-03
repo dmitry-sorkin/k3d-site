@@ -14,7 +14,7 @@ show_author: false
 ![](./pics/vostok_logo_white.png#only-dark){ .notrounded width="900" }
 ![](./pics/vostok_logo_black.png#only-light){ .notrounded width="900" }
 
-<video autoplay loop muted playsinline width="900">
+<video class="lazy-video video-wide" autoplay loop muted playsinline width="900">
   <source src="./pics/index_main.mp4" type="video/mp4">
 </video>
 
@@ -25,7 +25,7 @@ show_author: false
 <div class="image-text-row" markdown>
 <div class="image-text-img" markdown>
 
-<video autoplay loop muted playsinline width="300">
+<video class="lazy-video" autoplay loop muted playsinline width="300">
   <source src="manual/electronics/pics/slicer_configuration/fast_tool_swaps.mp4" type="video/mp4">
 </video>
 
@@ -46,7 +46,7 @@ show_author: false
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-<video autoplay loop muted playsinline width="300">
+<video class="lazy-video" autoplay loop muted playsinline width="300">
   <source src="./pics/hotend.mp4" type="video/mp4">
 </video>
 
@@ -67,7 +67,7 @@ show_author: false
 <div class="image-text-row" markdown>
 <div class="image-text-img" markdown>
 
-<video autoplay loop muted playsinline width="300">
+<video class="lazy-video" autoplay loop muted playsinline width="300">
   <source src="./pics/speed.mp4" type="video/mp4">
 </video>
 
@@ -92,7 +92,7 @@ show_author: false
 <div class="image-text-row reverse" markdown>
 <div class="image-text-img" markdown>
 
-<video autoplay loop muted playsinline width="330">
+<video class="lazy-video" autoplay loop muted playsinline width="330">
   <source src="./pics/mirror.mp4" type="video/mp4">
 </video>
 
@@ -170,7 +170,7 @@ VOSTOK выпускается под лицензией [Creative Commons Attrib
 
 <div class="grid cards" markdown>
 
--   :material-download-box:{ .lg .middle } __Начать сборку__
+- :material-download-box:{ .lg .middle } __Начать сборку__
 
     ---
 
@@ -178,7 +178,7 @@ VOSTOK выпускается под лицензией [Creative Commons Attrib
 
     [:octicons-arrow-right-24: Скачать](./releases/index.md)
 
--   :lucide-book-open:{ .lg .middle } __Почитать__
+- :lucide-book-open:{ .lg .middle } __Почитать__
 
     ---
 
@@ -186,7 +186,7 @@ VOSTOK выпускается под лицензией [Creative Commons Attrib
 
     [:octicons-arrow-right-24: С чего начать?](./manual/prepare/start.md)
 
--   :material-frequently-asked-questions:{ .lg .middle } __Остались вопросы__
+- :material-frequently-asked-questions:{ .lg .middle } __Остались вопросы__
 
     ---
 
@@ -194,7 +194,7 @@ VOSTOK выпускается под лицензией [Creative Commons Attrib
 
     [:octicons-arrow-right-24: Почитать ЧаВо](./faq.md)
 
--   :simple-telegram:{ .lg .middle } __Пообщаться__
+- :simple-telegram:{ .lg .middle } __Пообщаться__
 
     ---
 
@@ -203,6 +203,20 @@ VOSTOK выпускается под лицензией [Creative Commons Attrib
     [:octicons-arrow-right-24: Обсуждение K3D VOSTOK](https://t.me/k3d_vostok){ target="_blank" }
 
 </div>
+
+<script>
+(() => {
+  document.querySelectorAll('video.lazy-video').forEach((v) => {
+    const show = () => v.classList.add('is-loaded');
+    if (v.readyState >= 2) {
+      show();
+    } else {
+      v.addEventListener('loadeddata', show, { once: true });
+      v.addEventListener('error', show, { once: true });
+    }
+  });
+})();
+</script>
 
 [^1]: RatRig на стоковой прошивке не умеет прочищать неактивную голову пока активная ещё печатает, и ему требуется печать черновой башенки. Подробнее в [ЧаВо](./faq.md){ target="_blank" }
 [^2]: Максимальные ускорения до падения детализации. Вычисляются при калибровке Input Shaping
