@@ -203,6 +203,7 @@ nav:
           - Ось Z: ./vostok/manual/mechanics/z_axis.md
           - Головы: ./vostok/manual/mechanics/printhead.md
           - Навесное: ./vostok/manual/mechanics/addons.md
+          - Зашивка: ./vostok/manual/mechanics/enclosure.md
       - Электроника:
           - Установка: ./vostok/manual/electronics/install.md
           - Схемы: ./vostok/manual/electronics/wiring.md
