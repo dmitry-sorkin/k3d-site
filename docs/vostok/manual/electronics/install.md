@@ -116,7 +116,9 @@ description: Установа управляющей электроники
 
 ## Блок питания
 
-![](./pics/install/power_supply.png){ width="500" }
+<figure markdown="span">
+    ![](./pics/install/power_supply.png){ width="500" }
+</figure>
 
 <div class="steps colored" markdown>
 
@@ -141,7 +143,9 @@ description: Установа управляющей электроники
 
 ## Твердотельные реле
 
-![](./pics/install/ssr_mount.png){ width="500"}
+<figure markdown="span">
+    ![](./pics/install/ssr_mount.png){ width="500"}
+</figure>
 
 <div class="steps colored" markdown>
 
