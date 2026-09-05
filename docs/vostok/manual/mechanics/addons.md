@@ -12,7 +12,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Крепление
 
-![](./pics/finalizing/cable_chain_mount.png)
+![](./pics/addons/cable_chain_mount.png)
 
 <div class="steps colored" markdown>
 
@@ -23,7 +23,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Звенья
 
-![](./pics/finalizing/cable_chain.png)
+![](./pics/addons/cable_chain.png)
 
 <div class="steps colored" markdown>
 
@@ -35,7 +35,7 @@ description: Пошаговый гайд по установке навесно�
 
 ## Защита ремней
 
-![](./pics/finalizing/belt_protector.png)
+![](./pics/addons/belt_protector.png)
 
 <div class="steps colored" markdown>
 
@@ -46,7 +46,7 @@ description: Пошаговый гайд по установке навесно�
 
 ## Проходные заглушки
 
-![](./pics/finalizing/hole_cover.png)
+![](./pics/addons/hole_cover.png)
 
 <div class="steps colored" markdown>
 
@@ -58,7 +58,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Задняя центральная крышка
 
-![](./pics/finalizing/back_center_cover.png)
+![](./pics/addons/back_center_cover.png)
 
 <div class="steps colored" markdown>
 
@@ -69,7 +69,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Боковые крышки
 
-![](./pics/finalizing/portal_printed_panels.png)
+![](./pics/addons/portal_printed_panels.png)
 
 <div class="steps colored" markdown>
 
@@ -83,7 +83,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Сборка
 
-![](./pics/finalizing/spool_holder_assembl.png)
+![](./pics/addons/spool_holder_assembl.png)
 
 <div class="steps colored" markdown>
 
@@ -104,7 +104,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Установка
 
-![](./pics/finalizing/spool_holder_install.png)
+![](./pics/addons/spool_holder_install.png)
 
 <div class="steps colored" markdown>
 
@@ -119,7 +119,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Термистор нагревателя
 
-![](./pics/finalizing/enmg_heater_thermistor.png)
+![](./pics/addons/enmg_heater_thermistor.png)
 
 <div class="steps colored" markdown>
 
@@ -130,7 +130,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Термистор термокамеры
 
-![](./pics/finalizing/chamber_air_thermistor.png)
+![](./pics/addons/chamber_air_thermistor.png)
 
 <div class="steps colored" markdown>
 
@@ -143,7 +143,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Установка
 
-![](./pics/finalizing/chamber_heater_install.png)
+![](./pics/addons/chamber_heater_install.png)
 
 !!! info "Так как нагреватель термокамеры - это опциональное и экспериментальное оборудование, то отверстия для его крепления в панели зашивки не предусмотрены. Если вы хотите установить нагреватель, то отверстия вам придётся сверлить самому с помощью шаблона `V9-74`. Допускатся как сделать резьбовые отверстия в самой панели, так и сделать свободные отверстия и использовать гайки с обратной стороны"
 
@@ -158,7 +158,7 @@ description: Пошаговый гайд по установке навесно�
 
 ## Стойки купола
 
-![](./pics/finalizing/enclosure_top_posts.png)
+![](./pics/addons/enclosure_top_posts.png)
 
 <div class="steps colored" markdown>
 
@@ -171,7 +171,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Разветвитель CPAP трубки
 
-![](./pics/finalizing/ws7040_splitter.png)
+![](./pics/addons/ws7040_splitter.png)
 
 <div class="steps colored" markdown>
 
@@ -183,7 +183,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Разветвители PTFE трубок
 
-![](./pics/finalizing/ptfe_tube_splitters.png)
+![](./pics/addons/ptfe_tube_splitters.png)
 
 <div class="steps colored" markdown>
 
@@ -194,7 +194,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Крепление
 
-![](./pics/finalizing/ws7040_mount.png)
+![](./pics/addons/ws7040_mount.png)
 
 <div class="steps colored" markdown>
 
@@ -206,7 +206,7 @@ description: Пошаговый гайд по установке навесно�
 
 ### Установка ws7040
 
-![](./pics/finalizing/ws7040_install.png)
+![](./pics/addons/ws7040_install.png)
 
 <div class="steps colored" markdown>
 
