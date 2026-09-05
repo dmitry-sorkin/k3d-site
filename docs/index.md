@@ -82,7 +82,7 @@ glightbox: false
 
     ---
 
-    [:material-printer-3d: О VOSTOK](./vostok/index.md)    [:lucide-help-circle: Частые вопросы](./vostok/faq.md)    [:material-image-multiple: Галерея](./vostok/gallery/index.md)    [:lucide-download: Релизы](./vostok/releases/index.md)    [:lucide-list-todo: Инструкции](./vostok/manual/prepare/start.md)
+    [:material-printer-3d: О VOSTOK](./vostok/index.md)    [:lucide-help-circle: Частые вопросы](./vostok/faq.md)    [:material-image-multiple: Галерея](./vostok/gallery/index.md)    [:lucide-download: Релизы](./vostok/releases/index.md)    [:fontawesome-brands-telegram: Сообщество](./redirects/vostok_chat.md)    [:octicons-gear-16: Модификации](./redirects/vostok_mods.md)    [:octicons-bug-16: Багтрекер](./redirects/vostok_bugtracker.md)    [:lucide-list-todo: Инструкции](./vostok/manual/prepare/start.md)
 
 - :material-notification-clear-all:{ .lg .middle } __[Калибровки](./calibrations/index.md)__
 
