@@ -8,18 +8,45 @@ description: История релизов и обновлений конфиг�
 
 # Релизы
 
+## v9.5
+
+### Изменения посравнению с v9.4
+
+<div class="grid cards no-gap cols-2" markdown>
+
+- ![](./9.5/pics/air_thermistor_mount.png)
+- ![](./9.5/pics/bed_arm_end.png)
+- ![](./9.5/pics/drilling_jig.png)
+- ![](./9.5/pics/x_beam_drilling_jig.png)
+
+</div>
+
+- Добавлено крепление термистора термокамеры;
+- Крепление стола `V9-3211` переработано чтобы проще печаталось и лучше подходило под разные варианты алюминиевых профилей;
+- Добавлен кондуктор для сверления отверстий под крепление нагревателя термокамеры;
+- Кондуктор для сверления отверстий под крепление балки оси X разделён на 2: левый и правый. Чтобы не перепутать;
+- Исправлено большое количество мелких ошибок в спецификации и моделях.
+
+### Скачать
+
+- [:material-table: Спецификация](./9.5/assets/vostok_v9.5_bom.xlsx){ download="vostok_v9.5_bom.xlsx" }
+- [:material-cube-outline: Сборка Parasolid](./9.5/assets/vostok_v9.5_assembly.x_t.7z){ download="vostok_v9.5_assembly.x_t.7z" }
+- [:material-cube-outline: Сборка STEP](./9.5/assets/vostok_v9.5_assembly.stp.7z){ download="vostok_v9.5_assembly.stp.7z" }
+- [:material-printer-3d-nozzle: Файлы для печати STL](./9.5/assets/vostok_v9.5_stl.7z){ download="vostok_v9.5_stl.7z" }
+- [:lucide-drafting-compass: Чертежи](./9.5/assets/vostok_v9.5_drawings.7z){ download="vostok_v9.5_drawings.7z" }
+
 ## v9.4
 
 ### Изменения по сравнению с v9.3
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![](./9.4/pics/printhead.png)
-  - ![](./9.4/pics/microfeeder.png)
-  - ![](./9.4/pics/bereza_letters.png)
-  - ![](./9.4/pics/bereza_carriage.png)
-  - ![](./9.4/pics/bereza_cooling_system.png)
-  - ![](./9.4/pics/bereza_cable_management.png)
+- ![](./9.4/pics/printhead.png)
+- ![](./9.4/pics/microfeeder.png)
+- ![](./9.4/pics/bereza_letters.png)
+- ![](./9.4/pics/bereza_carriage.png)
+- ![](./9.4/pics/bereza_cooling_system.png)
+- ![](./9.4/pics/bereza_cable_management.png)
 
 </div>
 
@@ -36,8 +63,8 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![](./9.4/pics/belt_tensioner.png)
-  - ![](./9.4/pics/roller_tensioner.png)
+- ![](./9.4/pics/belt_tensioner.png)
+- ![](./9.4/pics/roller_tensioner.png)
 
 </div>
 
@@ -46,9 +73,9 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![](./9.4/pics/z_axis_overview.png)
-  - ![](./9.4/pics/z_axis_overview_2.png)
-  - ![](./9.4/pics/z_axis_carriage.png)
+- ![](./9.4/pics/z_axis_overview.png)
+- ![](./9.4/pics/z_axis_overview_2.png)
+- ![](./9.4/pics/z_axis_carriage.png)
 
 </div>
 
@@ -64,10 +91,10 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![](./9.4/pics/chamber_heater.png)
-  - ![](./9.4/pics/chamber_heater_side.png)
-  - ![](./9.4/pics/ws7040_splitter.png)
-  - ![](./9.4/pics/top_panel_center_back_cover.png)
+- ![](./9.4/pics/chamber_heater.png)
+- ![](./9.4/pics/chamber_heater_side.png)
+- ![](./9.4/pics/ws7040_splitter.png)
+- ![](./9.4/pics/top_panel_center_back_cover.png)
 
 </div>
 
@@ -100,8 +127,8 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![](./9.3/pics/x_beam_screws.png)
-  - ![](./9.3/pics/x_beam_screws_2.png)
+- ![](./9.3/pics/x_beam_screws.png)
+- ![](./9.3/pics/x_beam_screws_2.png)
 
 </div>
 
@@ -124,9 +151,9 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![ugraf_hqVvNWX8OA](./9.2/pics/d01f364bce.png)
-  - ![ugraf_V8kJLB8vsE](./9.2/pics/6c47fc332a.png)
-  - ![ugraf_WR1P23r9K8](./9.2/pics/597ca30a86.png)
+- ![ugraf_hqVvNWX8OA](./9.2/pics/d01f364bce.png)
+- ![ugraf_V8kJLB8vsE](./9.2/pics/6c47fc332a.png)
+- ![ugraf_WR1P23r9K8](./9.2/pics/597ca30a86.png)
 
 </div>
 
@@ -140,9 +167,9 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![ugraf_3SlvX9b6BJ](./9.2/pics/7a291fa25d.png)
-  - ![ugraf_7Oosvdu8jh](./9.2/pics/27a8626595.png)
-  - ![ugraf_EyRcJmc7hF](./9.2/pics/c3d5036d94.png)
+- ![ugraf_3SlvX9b6BJ](./9.2/pics/7a291fa25d.png)
+- ![ugraf_7Oosvdu8jh](./9.2/pics/27a8626595.png)
+- ![ugraf_EyRcJmc7hF](./9.2/pics/c3d5036d94.png)
 
 </div>
 
@@ -150,12 +177,12 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![ugraf_2WpYTE1Qyk](./9.2/pics/72fc595d8a.png)
-  - ![ugraf_AD9dMvj8el](./9.2/pics/1082f6d0fd.png)
-  - ![ugraf_GGOE85qq8N](./9.2/pics/d39caddc56.png)
-  - ![ugraf_NwycOvs5t5](./9.2/pics/772f444f91.png)
-  - ![ugraf_u4GnACIzfa](./9.2/pics/acbe0a5676.png)
-  - ![ugraf_Y98xywzCeY](./9.2/pics/c9a98f4a56.png)
+- ![ugraf_2WpYTE1Qyk](./9.2/pics/72fc595d8a.png)
+- ![ugraf_AD9dMvj8el](./9.2/pics/1082f6d0fd.png)
+- ![ugraf_GGOE85qq8N](./9.2/pics/d39caddc56.png)
+- ![ugraf_NwycOvs5t5](./9.2/pics/772f444f91.png)
+- ![ugraf_u4GnACIzfa](./9.2/pics/acbe0a5676.png)
+- ![ugraf_Y98xywzCeY](./9.2/pics/c9a98f4a56.png)
 
 </div>
 
@@ -170,10 +197,10 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![ugraf_NI4KTKMQGo](./9.2/pics/0c14a270d4.png)
-  - ![ugraf_RQCxZpSuHV](./9.2/pics/eeb5080a5e.png)
-  - ![ugraf_XuLTTUC9Pk](./9.2/pics/0411653ba8.png)
-  - ![ugraf_zPaQAtst3m](./9.2/pics/f2e2a5ab70.png)
+- ![ugraf_NI4KTKMQGo](./9.2/pics/0c14a270d4.png)
+- ![ugraf_RQCxZpSuHV](./9.2/pics/eeb5080a5e.png)
+- ![ugraf_XuLTTUC9Pk](./9.2/pics/0411653ba8.png)
+- ![ugraf_zPaQAtst3m](./9.2/pics/f2e2a5ab70.png)
 
 </div>
 
@@ -190,12 +217,12 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![brave_uNw4ue3WEP](./9.2/pics/ed30a0eb70.png)
-  - ![ugraf_3vmeJPwjP8](./9.2/pics/c25bafab37.png)
-  - ![ugraf_SkFmhjTNye](./9.2/pics/b5e044b2a6.png)
-  - ![ugraf_TeKiTppx7m](./9.2/pics/c9b5df5f4b.png)
-  - ![ugraf_uvhz2CZLE4](./9.2/pics/59998c7568.png)
-  - ![ugraf_ZP0FO9KqVy](./9.2/pics/3e6dc32b8b.png)
+- ![brave_uNw4ue3WEP](./9.2/pics/ed30a0eb70.png)
+- ![ugraf_3vmeJPwjP8](./9.2/pics/c25bafab37.png)
+- ![ugraf_SkFmhjTNye](./9.2/pics/b5e044b2a6.png)
+- ![ugraf_TeKiTppx7m](./9.2/pics/c9b5df5f4b.png)
+- ![ugraf_uvhz2CZLE4](./9.2/pics/59998c7568.png)
+- ![ugraf_ZP0FO9KqVy](./9.2/pics/3e6dc32b8b.png)
 
 </div>
 
@@ -208,12 +235,12 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![ugraf_aKG19kyW7U](./9.2/pics/45160dc65e.jpeg)
-  - ![ugraf_JcZ26V3Z02](./9.2/pics/c382a04de4.png)
-  - ![ugraf_McINkHqCV2](./9.2/pics/67092a5aea.jpeg)
-  - ![ugraf_SkFmhjTNye](./9.2/pics/b5e044b2a6.png)
-  - ![ugraf_laT5Ph6c5j](./9.2/pics/c08477fb28.png)
-  - ![ugraf_mx1aPVTXYp](./9.2/pics/016f7f838e.png)
+- ![ugraf_aKG19kyW7U](./9.2/pics/45160dc65e.jpeg)
+- ![ugraf_JcZ26V3Z02](./9.2/pics/c382a04de4.png)
+- ![ugraf_McINkHqCV2](./9.2/pics/67092a5aea.jpeg)
+- ![ugraf_SkFmhjTNye](./9.2/pics/b5e044b2a6.png)
+- ![ugraf_laT5Ph6c5j](./9.2/pics/c08477fb28.png)
+- ![ugraf_mx1aPVTXYp](./9.2/pics/016f7f838e.png)
 
 </div>
 
@@ -242,9 +269,9 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![image](./9.1/pics/b83c4736a1.png)
-  - ![image](./9.1/pics/eefb78af12.png)
-  - ![image](./9.1/pics/8f20e42b94.jpeg)
+- ![image](./9.1/pics/b83c4736a1.png)
+- ![image](./9.1/pics/eefb78af12.png)
+- ![image](./9.1/pics/8f20e42b94.jpeg)
 
 </div>
 
@@ -290,10 +317,10 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![vostok_trimetric](./9.0/pics/ed6d1c5099.png)
-  - ![vostok_front](./9.0/pics/5f8bf8aac1.png)
-  - ![vostok_back](./9.0/pics/e1be26a101.png)
-  - ![vostok_right](./9.0/pics/e2441322bf.png)
+- ![vostok_trimetric](./9.0/pics/ed6d1c5099.png)
+- ![vostok_front](./9.0/pics/5f8bf8aac1.png)
+- ![vostok_back](./9.0/pics/e1be26a101.png)
+- ![vostok_right](./9.0/pics/e2441322bf.png)
 
 </div>
 
@@ -320,11 +347,11 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-3" markdown>
 
-  - ![bereza_front](./9.0/pics/5fd6e93c8d.png)
-  - ![bereza_back](./9.0/pics/494e1fe1b7.png)
-  - ![bereza_trimetric](./9.0/pics/16d171a90b.png)
-  - ![bereza_left](./9.0/pics/7e4902537e.png)
-  - ![bereza_right](./9.0/pics/dfdfbe4e0d.png)
+- ![bereza_front](./9.0/pics/5fd6e93c8d.png)
+- ![bereza_back](./9.0/pics/494e1fe1b7.png)
+- ![bereza_trimetric](./9.0/pics/16d171a90b.png)
+- ![bereza_left](./9.0/pics/7e4902537e.png)
+- ![bereza_right](./9.0/pics/dfdfbe4e0d.png)
 
 </div>
 
@@ -344,10 +371,10 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![Belt_tensioner](./9.0/pics/3789e75999.png)
-  - ![XY_drive](./9.0/pics/de34f8b068.png)
-  - ![Y_carriage 2](./9.0/pics/acfdd4952f.png)
-  - ![Y_carriage](./9.0/pics/b7f728d9f7.png)
+- ![Belt_tensioner](./9.0/pics/3789e75999.png)
+- ![XY_drive](./9.0/pics/de34f8b068.png)
+- ![Y_carriage 2](./9.0/pics/acfdd4952f.png)
+- ![Y_carriage](./9.0/pics/b7f728d9f7.png)
 
 </div>
 
@@ -369,10 +396,10 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![Hearbed frame 2](./9.0/pics/f49e7aa17b.png)
-  - ![Heatbed frame](./9.0/pics/da6a19291e.png)
-  - ![Heated_bed](./9.0/pics/94f82b2702.png)
-  - ![Z_axis_drive](./9.0/pics/d17990b6f9.png)
+- ![Hearbed frame 2](./9.0/pics/f49e7aa17b.png)
+- ![Heatbed frame](./9.0/pics/da6a19291e.png)
+- ![Heated_bed](./9.0/pics/94f82b2702.png)
+- ![Z_axis_drive](./9.0/pics/d17990b6f9.png)
 
 </div>
 
@@ -396,8 +423,8 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![Additions](./9.0/pics/52600b5a9f.jpeg)
-  - ![ws7040 install](./9.0/pics/71655bda7e.jpeg)
+- ![Additions](./9.0/pics/52600b5a9f.jpeg)
+- ![ws7040 install](./9.0/pics/71655bda7e.jpeg)
 
 </div>
 
@@ -416,8 +443,8 @@ description: История релизов и обновлений конфиг�
 
 <div class="grid cards no-gap cols-2" markdown>
 
-  - ![bed_drawings](./9.0/pics/854a81a424.png)
-  - ![bed_texture](./9.0/pics/b85c45b1bc.png)
+- ![bed_drawings](./9.0/pics/854a81a424.png)
+- ![bed_texture](./9.0/pics/b85c45b1bc.png)
 
 </div>
 
