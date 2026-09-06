@@ -28,7 +28,7 @@ description: Octopus Pro v1.1 + Fysetc H36
       2. `eth=end0`;
       3. `wlan=wlan0`;
       4. `hostname="vostok"`;
-      5. `WIDI_SSID="Имя_Вашей_Сети"`;
+      5. `WIFI_SSID="Имя_Вашей_Сети"`;
       6. `WIFI_PASSWD="Пароль_Сети"`;
 6. Сохраните изменения и извлеките MicroSD из компьютера;
 7. Вставьте MicroSD в слот на нижней стороне Pi 1.2;
