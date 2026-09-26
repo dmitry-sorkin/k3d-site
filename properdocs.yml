@@ -193,18 +193,16 @@ nav:
           - Telegram чат: ./redirects/vostok_chat.md
           - Модификации: ./redirects/vostok_mods.md
           - Багтрекер: ./redirects/vostok_bugtracker.md
-      - Подготовка:
+      - Инструкции:
           - Начало: ./vostok/manual/prepare/start.md
           - Печать: ./vostok/manual/prepare/printing_guide.md
           - Обработка: ./vostok/manual/prepare/parts_postprocessing.md
-      - Механика:
           - Портал: ./vostok/manual/mechanics/portal.md
           - Рама: ./vostok/manual/mechanics/frame.md
           - Ось Z: ./vostok/manual/mechanics/z_axis.md
           - Головы: ./vostok/manual/mechanics/printhead.md
           - Навесное: ./vostok/manual/mechanics/addons.md
           - Зашивка: ./vostok/manual/mechanics/enclosure.md
-      - Электроника:
           - Установка: ./vostok/manual/electronics/install.md
           - Схемы: ./vostok/manual/electronics/wiring.md
           - Прошивка: ./vostok/manual/electronics/firmware.md
