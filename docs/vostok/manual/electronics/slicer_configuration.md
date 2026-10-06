@@ -130,7 +130,9 @@ T{next_extruder}
 ##### G-код Primary
 
 ``` gcode
-; Нагрев стола
+; Нагрев термокамеры и стола
+
+M141 S{max(chamber_minimal_temperature[0],chamber_minimal_temperature[1])}
 
 {if (is_extruder_used[0] and is_extruder_used[1])}
     ; Если используются оба экструдера, то греем стол до большей из температур
@@ -145,6 +147,10 @@ T{next_extruder}
 CANCEL_PRINT ;Ошибка - отменяем печать
 {endif}
 
+M204 S5000 ; Ограничиваем ускорения для стартового скрипта
+
+M191 S{max(chamber_minimal_temperature[0],chamber_minimal_temperature[1])}
+
 ; Автопаркова и снятие карты высот стола
 
 G1 F30000
@@ -154,7 +160,7 @@ BED_MESH_CALIBRATE ADAPTIVE=1
 ; Перемещение голов в стартовую позицию
 
 IDEX_MODE_MIRROR MOVE=1
-G1 X-30 Y0 F30000
+G1 Y0 F30000
 
 ; Прогрев хотэндов
 
@@ -199,7 +205,13 @@ G1 F30000 ;Возвращаем скорость движений
 ##### G-код Copy
 
 ``` gcode
-M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])} ;Прогреваем стол до наибольшей из температур в профилях материалов
+;Прогреваем стол и термокамеру до наибольшей из температур в профилях материалов
+
+M141 S{max(chamber_minimal_temperature[0],chamber_minimal_temperature[1])}
+M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])}
+M191 S{max(chamber_minimal_temperature[0],chamber_minimal_temperature[1])}
+
+M204 S5000 ; Ограничиваем ускорения для стартового скрипта
 
 ; Автопарковка и сброс карты высот т.к. в режимах копии и зеркала она не работает
 
@@ -233,7 +245,13 @@ IDEX_MODE_COPY MOVE=1
 ##### G-код Mirror
 
 ``` gcode
-M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])} ;Прогреваем стол до наибольшей из температур в профилях материалов
+;Прогреваем стол и термокамеру до наибольшей из температур в профилях материалов
+
+M141 S{max(chamber_minimal_temperature[0],chamber_minimal_temperature[1])}
+M190 S{max(first_layer_bed_temperature[0],first_layer_bed_temperature[1])}
+M191 S{max(chamber_minimal_temperature[0],chamber_minimal_temperature[1])}
+
+M204 S5000 ; Ограничиваем ускорения для стартового скрипта
 
 ; Автопарковка и сброс карты высот т.к. в режимах копии и зеркала она не работает
 
