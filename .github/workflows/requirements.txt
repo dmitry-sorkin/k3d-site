@@ -4,6 +4,8 @@ pillow==10.4.0
 mkdocs-materialx[imaging]==10.2.0
 mkdocs-document-dates==3.8.7
 mkdocs-glightbox==0.5.2
+# glightbox 0.5.2 moves <img> nodes with the selectolax API; selectolax 1.x silently drops them (all images vanish from the built HTML)
+selectolax==0.4.11
 mkdocs-redirects==1.2.3
 mkdocs-charts-plugin==0.0.13
 mkdocs-table-reader-plugin==3.1.0
