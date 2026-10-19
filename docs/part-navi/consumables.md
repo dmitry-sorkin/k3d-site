@@ -13,7 +13,6 @@ description: Каталог расходников для 3D печати
 
 Почти на всех современных принтерах в стоке идут адгезивные листы с покрытием из текстурированного PEI. Большинство материалов хорошо липнет на такое покрытие, и в таком случае мазать его клеем нет никакой необходимости. Обезжириватели тоже не нужны т. к. проще просто помыть лист со средством для мытья посуды. Это обезжирит поверхность не хуже, но без неприятного запаха и шанса повредить покрытие. Поэтому в общем случае докупать к принтеру надо только смазку.
 
-!!! success "Таблица обновлена 16.02.2026"
 !!! question "По поводу ошибок или помощи с выбором деталей, стоит обращаться в [telegram-чат K3D](https://t.me/K_3_D){ .target=/"_blank/" }"
 
 ## Смазка
@@ -31,8 +30,8 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| Литол-24 ГОСТ | [:material-shopping:](https://www.ozon.ru/product/smazka-universalnaya-avtomobilnaya-vodostoykaya-gazpromneft-litol-24-100gr-544266863){ target="_blank" } | Универсальная дешёвая консистентная смазка. Очень распространена, и до сих пор не зафиксировано случаев, когда из-за неё были бы какие-нибудь проблемы |
-| ВМПАВТО RUBIN | [:material-shopping:](https://www.ozon.ru/product/smazka-vodostoykaya-litievaya-kaltsievaya-ms-1520-rubin-200-gr-tuba-vmpavto-327240593){ target="_blank" } | Менее густая смазка. Принципиальной разницы в работе с Литол-24 нет, принтер лучше или быстрее печатать от такой смазки не станет |
+| Литол-24 ГОСТ | [:material-shopping:](https://market.yandex.ru/card/smazka-litol-24-gazpromneft-100-gr-2389906978/5814294782){ target="_blank" } | Универсальная дешёвая консистентная смазка. Очень распространена, и до сих пор не зафиксировано случаев, когда из-за неё были бы какие-нибудь проблемы |
+| ВМПАВТО RUBIN | [:material-shopping:](https://market.yandex.ru/card/smazka-mnogotselevaya-vmpauto-mc-1520-vodostoykaya-200-ml-1413/102203929061){ target="_blank" } | Менее густая смазка. Принципиальной разницы в работе с Литол-24 нет, принтер лучше или быстрее печатать от такой смазки не станет |
 
 ## Готовые клеи
 
@@ -42,7 +41,7 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| 3D-клей | [:material-shopping:](https://www.ozon.ru/category/3d-kley/){ target="_blank" } | Хорошо липнут `PLA`, `PETG`, `ABS`, `ASA`, `HIPS`, `TPU`, `PVA`, `PVB`, `SBS`, `SAN`. Средне липнут `PC`, `PA12`. Наносится тонким слоем, не влияет на внешний вид нижней поверхности. Легко смывается водой или спиртом |
+| 3D-клей | [:material-shopping:](https://market.yandex.ru/search?text=3%D0%B4%20%D0%BA%D0%BB%D0%B5%D0%B9){ target="_blank" } | Хорошо липнут `PLA`, `PETG`, `ABS`, `ASA`, `HIPS`, `TPU`, `PVA`, `PVB`, `SBS`, `SAN`. Средне липнут `PC`, `PA12`. Наносится тонким слоем, не влияет на внешний вид нижней поверхности. Легко смывается водой или спиртом |
 
 ## Самодельные клеи
 
@@ -56,9 +55,9 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| БФ-2 | [:material-shopping:](https://www.ozon.ru/product/kley-bf-2-solins-universalnyy-dlya-metalla-alyuminiya-keramiki-tkani-stali-plastikov-stekla-282539355/?asb=aDFtWa9TLph59Zk7AO3pf7DZXriRuM%252B9wwMXqXs7OVQ%253D&asb2=CXPORi2-s4-zMEmwM6TGgXFKWHiCaAVFM-aN9jCUN5sgVGt2s21HOekrUVhmejht&avtc=1&avte=2&avts=1698447793&keywords=%D0%B1%D1%84-2+solins){ target="_blank" } | Необходимо размешать с изопропанолом 1:1. Хорошо липнет всё, кроме `SEBS`. Слишком хорошо липнут нейлоны, могут быть проблемы с отделением от стола. Наносится кисточкой, может оставлять на модели следы. Не смывается |
-| Изопропанол | [:material-shopping:](https://www.ozon.ru/product/spirt-izopropilovyy-absolyutirovannyy-99-7-gost-1-l-511782155/){ target="_blank" } [:material-shopping:](https://www.wildberries.ru/catalog/213880149/detail.aspx){ target="_blank" } | Для разбавления БФ-2. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
-| Кисточка | [:material-shopping:](https://www.ozon.ru/product/kist-ploskaya-universalnaya-shirina-shchetiny-25-mm-tolshchina-6-mm-chernaya-ruchka-akor-standart-1672933720){ target="_blank" } | Кисточку лучше держать прям в банке с раствором БФ-2 |
+| БФ-2 | [:material-shopping:](https://market.yandex.ru/card/kley-bf-2-100-ml/101769238247){ target="_blank" } | Необходимо размешать с изопропанолом 1:1. Хорошо липнет всё, кроме `SEBS`. Слишком хорошо липнут нейлоны, могут быть проблемы с отделением от стола. Наносится кисточкой, может оставлять на модели следы. Не смывается |
+| Изопропанол | [:material-shopping:](https://market.yandex.ru/card/izopropanol-spirt-izopropilovyy-promkhim-1l-9997/5878254855){ target="_blank" } | Для разбавления БФ-2. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
+| Кисточка | [:material-shopping:](https://market.yandex.ru/card/kist-fleytsevaya-25-mm-akor-standart/102614719516){ target="_blank" } | Кисточку лучше держать прям в банке с раствором БФ-2 |
 
 ### PVP K-30 и K-90
 
@@ -70,18 +69,19 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| PVP K-30 | [:material-shopping:](https://www.ozon.ru/product/povidon-k-30-polivinilpirrolidon-pvp-k-30-100-gramm-2899953189 "Ozon"){ target="_blank" } | Менее "держаковый" вариант. Лучше подходит для печати простыми материалами |
-| PVP K-90 | [:material-shopping:](https://alli.pub/7akocc?erid=2SDnjd19JNb "AliExpress"){ target="_blank" } [:material-shopping:](https://www.ozon.ru/product/polivinilpirrolidon-pvp-k-90-povidon-pvp-k-90-kontsentrat-3d-kleya-1529563475 "Ozon"){ target="_blank" } | Более "держаковый" вариант. Предпочтительно для филаментов с высокой усадкой |
-| Изопропанол | [:material-shopping:](https://www.ozon.ru/product/spirt-izopropilovyy-absolyutirovannyy-99-7-gost-1-l-511782155/){ target="_blank" } [:material-shopping:](https://www.wildberries.ru/catalog/213880149/detail.aspx){ target="_blank" } | Используется для разбавления PVP. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
-| Маркер перезаполняемый | [:material-shopping:](https://www.ozon.ru/product/pustoy-marker-50mm-russian-roulette-pod-zapravku-dlya-graffiti-i-tegginga-979849086/ "Ozon"){ target="_blank" } | Очень удобный маркер, которым получается наносить клей тонким ровным слоем |
+| PVP K-30 | [:material-shopping:](https://market.yandex.ru/card/povidon-k-30-polivinilpirrolidon-35-gramm/102223674255){ target="_blank" } | Менее "держаковый" вариант. Лучше подходит для печати простыми материалами |
+| PVP K-90 | [:material-shopping:](https://market.yandex.ru/card/polivinilpirrolidon-pvp-k-90-povidon-pvp-k-90-kontsentrat-3d-kleya-3kh5gramm/103217749249){ target="_blank" } | Более "держаковый" вариант. Предпочтительно для филаментов с высокой усадкой |
+| Изопропанол | [:material-shopping:](https://market.yandex.ru/card/izopropanol-spirt-izopropilovyy-promkhim-1l-9997/5878254855){ target="_blank" } | Используется для разбавления PVP. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
+| Маркер перезаполняемый | [:material-shopping:](https://market.yandex.ru/card/marker-tolshchina-50-mm-1-sht-dlya-graffiti/5858382858){ target="_blank" } | Очень удобный маркер, которым получается наносить клей тонким ровным слоем |
 
 ## Растворители и обезжириватели
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| Изопропанол | [:material-shopping:](https://www.ozon.ru/product/spirt-izopropilovyy-absolyutirovannyy-99-7-gost-1-l-511782155/){ target="_blank" } [:material-shopping:](https://www.wildberries.ru/catalog/213880149/detail.aspx){ target="_blank" } | Используется для разбавления БФ-2 и PVP, промывки направляющих и очистки деталей механики принтера. Для обезжиривания стола не лучший вариант т. к. оставляет тонкую плёнку, которая ухудшает адгезию деталей к столу |
-| Обезжириватель | [:material-shopping:](https://www.ozon.ru/product/welltex-obezzhirivatel-1-l-1551748667/){ target="_blank" } [:material-shopping:](https://market.yandex.ru/search?text=%D0%BE%D0%B1%D0%B5%D0%B7%D0%B6%D0%B8%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%20welltex%201%D0%BB&rs=eJwzamIOYDzKyMAgYAskF9zeAyQdVtgASYWGvSDxCSC2w3kQe4EiSE2DHEiNghKI_eAoSFwhCkwW7gKSB1aAZA98B8kqFIHNbAez54LIhMbdIBOY9oHULALpSsgDkQ7rwCZfBpvjYwfSdRWsiwOsSx1MzgC5pAHsHoag_SDbtUF2PdADyTKstAbJ-oH0KjCD3fYfbAIzyMwDvGDyENico2DfGYBtLAGJN2iBffcZZBrDJbAtk8F6GcAulAT5y4Ef5OYF2mBzesCy9WDZXLAfX4LdsAHkOwdzsO0TwXbFgNlHwOJX9sD9_uAkSCRhHziEi_cAAFzViVQ%2C&allowCollapsing=1&local-offers-first=0){ target="_blank" } | Обезжиривает не оставляя следов, может использоваться для промывки направляющих или чистки механики принтера |
+| Изопропанол | [:material-shopping:](https://market.yandex.ru/card/izopropanol-spirt-izopropilovyy-promkhim-1l-9997/5878254855){ target="_blank" } | Используется для разбавления БФ-2 и PVP, промывки направляющих и очистки деталей механики принтера. Для обезжиривания стола не лучший вариант т.к. оставляет тонкую плёнку, которая ухудшает адгезию деталей к столу |
+| Обезжириватель | [:material-shopping:](https://market.yandex.ru/card/rastvoritel-obezzhirivatel-welltex-bystroisparyayushchiysya-1l-60220/102536456872){ target="_blank" } | Обезжиривает не оставляя следов, может использоваться для промывки направляющих или чистки механики принтера |
 
 ^`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`^[^1]
+^`Реклама. ООО "АЕР Услуги" ИНН 7703380158.`^[^1]
 
 [^1]: Нет человека или юр.лица, которые заказали бы создание этой страницы или рекламу товаров, приводимых на этой странице. Я создал все статьи в рекомендаторе сам, по своему желанию и в целях сообщества. Тем не менее, по законодательству РФ, любая ссылка на товар является рекламой. Поэтому я вынужден делать эту приписку, чтобы не нарушать закон.

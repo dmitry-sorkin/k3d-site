@@ -11,7 +11,6 @@ description: Каталог проверенных ссылок на детал�
 
 # 3D рекомендатор: механика
 
-!!! success "Таблица обновлена 16.02.2026"
 !!! question "По поводу ошибок или помощи с выбором деталей, стоит обращаться в [telegram-чат K3D](https://t.me/K_3_D){ .target=/"_blank/" }"
 
 ## Направляющие серии MGN
@@ -62,13 +61,13 @@ description: Каталог проверенных ссылок на детал�
 
 | Типоразмер | BTT | Energetic | Другое | Комментарий |
 | :----: | :----: | :----: | :----: | :--------- |
-| 184х184 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mso?erid=2SDnjbrm1bb){ target="_blank" } | Используется на Bambu Lab A1 Mini |
+| 184х184 | [:material-shopping:](https://ali.click/sc36o1y?erid=2SDnje5udsi "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mso?erid=2SDnjbrm1bb){ target="_blank" } | Используется на Bambu Lab A1 Mini |
 | 235x235 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/7akv8u?erid=2SDnjeWwNy5){ target="_blank" } | [:material-shopping:](https://alli.pub/774mtn?erid=2SDnjc7atR3){ target="_blank" } | Adventurer 5M / 5M Pro |
 | 235x235 с ключами | - | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mtu?erid=2SDnjcPtkWq){ target="_blank" } | Ender-3S1, Ender-3V3, K1, K1C, K1SE |
 | 250x250 | - | [:material-shopping:](https://alli.pub/773hne?erid=2SDnjcViepd){ target="_blank" } | [:material-shopping:](https://alli.pub/774mu8?erid=2SDnjcbkemb){ target="_blank" } | Qidi Q1 Pro |
-| 257x257 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mum?erid=2SDnjcraXb3){ target="_blank" } | Bambu Lab A1 / P1P / P1S / X1C / X1E |
+| 257x257 | [:material-shopping:](https://alli.pub/773hmf?erid=2SDnjbrexn1 "BigTreeTech"){ target="_blank" } | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mum?erid=2SDnjcraXb3){ target="_blank" } | Bambu Lab A1 / P1P / P1S / X1C / X1E / X2D |
 | 280x280 | - | [:material-shopping:](https://alli.pub/7akv9t?erid=2SDnjepjEMD){ target="_blank" } | [:material-shopping:](https://alli.pub/7akva7?erid=2SDnjex9Akw){ target="_blank" } | Qidi Q2 |
-| 310x315 | - | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://alli.pub/774mos?erid=2SDnjdHmyty){ target="_blank" } | Creality K1 Max |
+| 310x315 | - | [:material-shopping:](https://alli.pub/773hns?erid=2SDnjcd8bEM){ target="_blank" } | [:material-shopping:](https://ali.click/uc36o1j?erid=2SDnje7PdA4){ target="_blank" } | Creality K1 Max |
 | 350x320 | [:material-shopping:](https://alli.pub/774mpy?erid=2SDnje4FcMK){ target="_blank" } | [:material-shopping:](https://alli.pub/7akvaz?erid=2SDnjc94sEw){ target="_blank" } | [:material-shopping:](https://alli.pub/774msa?erid=2SDnjekHGxd){ target="_blank" } | Bambu lab H2D |
 | 355x355 | - | [:material-shopping:](https://ali.click/ib4qzc?erid=2SDnjcBoiRf){ target="_blank" } | [:material-shopping:](https://ali.click/3c4qzr?erid=2SDnjcNBdQ5){ target="_blank" } | Sovol SV08 |
 
@@ -106,11 +105,11 @@ description: Каталог проверенных ссылок на детал�
 | Типоразмер | Длина | Кр.момент | Ток_RMS | Ссылки | Комментарий |
 |:----------:|:-----:|:---------:|:-------:|:------:|:----------- |
 | Nema 17 | 38 мм | 420 мН*м | 1.5 А | [:material-shopping:](https://alli.pub/7akvh0?erid=2SDnjdPibXm "Usongshine Official Store"){ target="_blank" } | `Usongshine 17HS4401` Дешевый, но относительно неплохой мотор, рябит слабо |
-| Nema 17 | 48 мм | 440 мН*м | 1.68 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy-dvigatel-ldo-42sth48-1684ac-nema-17/ "RRF 3D Shop"){ target="_blank" } | `LDO-42STH48-1684AC` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
-| Nema 17 | 48 мм | 590 мН*м | 2.0 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy_dvigatel_ldo_42sth48_2004ac_vrn_nema_17/ "RRF 3D Shop"){ target="_blank" } | `LDO-42STH48-2004AC` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
-| Nema 17 | 48 мм | 600 мН*м | 2.5 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy-dvigatel-42cm06-leadshine/ "RRF 3D Shop"){ target="_blank" } [:material-shopping:](https://alli.pub/72s2xd?erid=2SDnjcAPojh "perfectperfect Store"){ target="_blank" } | `Leadshine 42cm06` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
+| Nema 17 | 48 мм | 440 мН*м | 1.68 А | - | `LDO-42STH48-1684AC` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
+| Nema 17 | 48 мм | 590 мН*м | 2.0 А | - | `LDO-42STH48-2004AC` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
+| Nema 17 | 48 мм | 600 мН*м | 2.5 А | [:material-shopping:](https://ali.click/wc36o1o?erid=2SDnje8scSQ "Millin Shtrs Store"){ target="_blank" } [:material-shopping:](https://alli.pub/72s2xd?erid=2SDnjcAPojh "perfectperfect Store"){ target="_blank" } | `Leadshine 42cm06` Хороший универсальный мотор. Качественный и хорошо сопротивляется ряби |
 | Nema 17 | 60 мм | 850 мН*м | 2.0 А | [:material-shopping:](https://alli.pub/770ms0?erid=2SDnjc38v37 "Mellow Store"){ target="_blank" } | `LDO-42STH60-2004AC` Хороший крупный мотор. Качественный и хорошо сопротивляется ряби |
-| Nema 17 | 60 мм | 800 мН*м | 2.5 А | [:material-shopping:](https://rrf3dshop.ru/catalog/mekhanika/motory/shagovyy-dvigatel-42cm08-leadshine/ "RRF 3D Shop"){ target="_blank" } [:material-shopping:](https://alli.pub/72s2x6?erid=2SDnjc7RqB1 "perfectperfect Store"){ target="_blank" } | `Leadshine 42cm08` Хороший крупный мотор. Качественный и хорошо сопротивляется ряби |
+| Nema 17 | 60 мм | 800 мН*м | 2.5 А | [:material-shopping:](https://alli.pub/72s2x6?erid=2SDnjc7RqB1 "perfectperfect Store"){ target="_blank" } | `Leadshine 42cm08` Хороший крупный мотор. Качественный и хорошо сопротивляется ряби |
 
 ### Ходовые винты и гайки
 
@@ -119,10 +118,10 @@ description: Каталог проверенных ссылок на детал�
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
 | Винт Tr8x8 (P2) с латунной гайкой | [:material-shopping:](https://alli.pub/6tvxqg?erid=2SDnjeidC64 "KINGROON Official Store"){ target="_blank" } | Четырёхзаходная резьба. Такие винты наиболее распространены среди 3D-принтеров. Дают возможность перемещать ось Z относительно быстро. Не обладают самоторможением, то есть трогая стол/балку можно через гайку прокрутить винт |
-| Гайка Tr8x8 (P2) POM обычная | [:material-shopping:](https://alli.pub/6tvxqn?erid=2SDnjek7BNQ "FYSETC Official Store"){ target="_blank" } | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
+| Гайка Tr8x8 (P2) POM обычная | [:material-shopping:](https://ali.click/zc36o11?erid=2SDnjeAMbik "3D-Future Store"){ target="_blank" } | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
 | Гайка Tr8x8 (P2) POM под Ender | [:material-shopping:](https://alli.pub/6tvxr1?erid=2SDnjepZ9DS "TWOTREES Speciality Store"){ target="_blank" } | Гайка типоразмера как у Ender-3. Если не собираетесь менять стоковый винт, то вам нужна именно такая |
 | Винт Tr8x2 с латунной гайкой | [:material-shopping:](https://ali.click/7h4qz3?erid=2SDnjdrAuk5 "IdeaFormer Official Store"){ target="_blank" } | Однозаходная резьба. Теоретически, в 4 раза точнее, чем винты с четырёхзаходной резьбой, но на практике это не ощущается. Обладают самоторможением, что бывает удобно в некоторых конструкциях |
-| Гайка Tr8x2 POM обычная | [:material-shopping:](https://alli.pub/6tvxqn?erid=2SDnjek7BNQ "FYSETC Official Store"){ target="_blank" } | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
+| Гайка Tr8x2 POM обычная | [:material-shopping:](https://ali.click/zc36o11?erid=2SDnjeAMbik "3D-Future Store"){ target="_blank" } | Гайка из ПОМ типоразмера как используется на большинстве принтеров. Сидят плотнее, чем латунные гайки, за счёт чего ниже шанс дефектов печати |
 
 ### Муфты
 
@@ -134,6 +133,7 @@ description: Каталог проверенных ссылок на детал�
 | Муфта кулачковая 5х8мм | ![муфта кулачковая](pics/copler_2.png){ width=100 } | [:material-shopping:](https://alli.pub/6tvyig?erid=2SDnjeids3v "VENTSPOW Official Store"){ target="_blank" } | Лучше продольно-стяжной тем, что частично поглощает вибрации. Хуже тем, что не скрепляет винт и мотор жестко |
 
 ^`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`^[^1]
+^`Реклама. ООО "АЕР Услуги" ИНН 7703380158.`^[^1]
 
 [^1]: Нет человека или юр.лица, которые заказали бы создание этой страницы или рекламу товаров, приводимых на этой странице. Я создал все статьи в рекомендаторе сам, по своему желанию и в целях сообщества. Тем не менее, по законодательству РФ, любая ссылка на товар является рекламой. Поэтому я вынужден делать эту приписку, чтобы не нарушать закон
 [^2]: KGT - китайская компания, производящая рельсы. Качество лотерейное, может придти как вообще нормальная рельса, так и полное фуфло, которое даже не спасти, зато дешево. В случае брака нормально идут на контакт, меняют.

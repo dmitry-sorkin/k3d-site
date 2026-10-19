@@ -11,7 +11,6 @@ description: Каталог проверенных ссылок на детал�
 
 # 3D рекомендатор: детали экструдера
 
-!!! success "Таблица обновлена 16.02.2026"
 !!! question "По поводу ошибок или помощи с выбором деталей, стоит обращаться в [telegram-чат K3D](https://t.me/K_3_D){ .target=/"_blank/" }"
 
 ## Сопла
@@ -32,7 +31,7 @@ description: Каталог проверенных ссылок на детал�
 |:------------ |:----------:|:------:|:----------- |
 | E3D V6 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239438 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkbb?erid=2SDnjefzhJY "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttkbi?erid=2SDnjesrbZJ "Mellow"){ target="_blank" } | Не подходит для композитных материалов |
 | E3D V6 латунное 0.15мм | - | [:material-shopping:](https://alli.pub/6ttkco?erid=2SDnjcFAD1i "Trianglelab"){ target="_blank" } | Сопло с малым выходным отверстием. Печатать таким относительно тяжело + очень медленно, но детализация очень высокая. Не подходит для композитов |
-| E3D V6 стальное калёное с CHT вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | [:material-shopping:](https://www.ozon.ru/search/?text=cht+v6&from_global=true "Ozon"){ target="_blank" } | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
+| E3D V6 стальное калёное с CHT вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | - | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
 | E3D V6 медное с калёной вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | [:material-shopping:](https://alli.pub/770mvw?erid=2SDnjdLkHQh){ target="_blank" } | Аналог zs сопел из обзора. Подходит для композитов. Прогревает филамент хуже, чем стальное калёное с CHT вставкой, но лучше работают PA и откаты |
 
 #### E3D Volcano
@@ -41,9 +40,9 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Volcano латунное | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239405 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkk9?erid=2SDnjdgBrGx "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttkl8?erid=2SDnjdw1j6Q "Mellow"){ target="_blank" } | Не подходит для композитных материалов. |
+| Volcano латунное | [:simple-youtube:](https://youtu.be/rywLgUy9-8c "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239405 "Тест"){ target="_blank" } | [:material-shopping:](https://ali.click/ho36o1b?erid=2SDnje1U1Wc "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttkl8?erid=2SDnjdw1j6Q "Mellow"){ target="_blank" } | Не подходит для композитных материалов. |
 | Volcano латунное 0.2мм | - | [:material-shopping:](https://alli.pub/6w5vkq?erid=2SDnjex4DKv "Mellow"){ target="_blank" } | Сопло с малым выходным отверстием. Печатать таким относительно тяжело + очень медленно, но детализация очень высокая. Не подходит для композитных материалов |
-| Volcano стальное калёное с CHT вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | [:material-shopping:](https://www.ozon.ru/search/?text=cht+volcano&from_global=true "Ozon"){ target="_blank" } | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
+| Volcano стальное калёное с CHT вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | - | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
 | Volcano медное с калёной вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | [:material-shopping:](https://alli.pub/770mwo?erid=2SDnjdSgEY5){ target="_blank" } | Аналог zs сопел из обзора. Подходит для композитов. Прогревает филамент хуже, чем стальное калёное с CHT вставкой, но лучше работают PA и откаты |
 
 #### Mk8
@@ -53,7 +52,7 @@ description: Каталог проверенных ссылок на детал�
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
 | Mk8 латунное | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4 "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239438 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttkgy?erid=2SDnje1TMTW "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttkhj?erid=2SDnjeDKFiG "Mellow"){ target="_blank" } | Не подходит для композитных материалов |
-| Mk8 стальное калёное с CHT вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | [:material-shopping:](https://www.ozon.ru/search/?text=cht+mk8&from_global=true "Ozon"){ target="_blank" } | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
+| Mk8 стальное калёное с CHT вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | - | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Хорошо прогревает пластик и подходит для композитных материалов. Качество посредственное, но этого типа сопел хорошего качества нет |
 | Mk8 медное с калёной вставкой | [:simple-youtube:](https://youtu.be/BiY8nC-Sdqc){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239579){ target="_blank" } | [:material-shopping:](https://alli.pub/770mwa?erid=2SDnjdPiFyP){ target="_blank" } | Аналог zs сопел из обзора. Подходит для композитов. Прогревает филамент хуже, чем стальное калёное с CHT вставкой, но лучше работают PA и откаты |
 
 #### TUN / TUN Pro
@@ -77,7 +76,7 @@ description: Каталог проверенных ссылок на детал�
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
 | Bambu латунное | [:material-shopping:](https://alli.pub/7akvxx?erid=2SDnjdd5pzb){ target="_blank" } | Не подходит для композитных материалов |
-| Bambu стальное закалённое CHT | [:material-shopping:](https://www.ozon.ru/search/?text=cht+bambu+lab&from_global=true "Ozon"){ target="_blank" } | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Подходит для всех материалов |
+| Bambu стальное закалённое CHT | - | На момент обновления рекомендатора пропали у всех продавцов на AliExpress. Подходит для всех материалов |
 | Bambu медное с калёной вставкой | [:material-shopping:](https://alli.pub/7akvyb?erid=2SDnjdsuhp3){ target="_blank" } | Подходит для композитов. Прогревает филамент хуже, чем стальное калёное с CHT вставкой, но лучше работают PA и откаты |
 
 ### Адаптеры V6/Volcano
@@ -104,14 +103,14 @@ description: Каталог проверенных ссылок на детал�
 | Q1 Pro медные с калёной вставкой | [:material-shopping:](https://ali.click/46rszu?erid=2SDnjcNEKQM "3D Home"){ target="_blank" } | Подходит для всех материалов |
 | Q2/Plus4 медные с калёной вставкой | [:material-shopping:](https://ali.click/67rsz4?erid=2SDnjcd4CDo "Haldis"){ target="_blank" } | Подходит для всех материалов |
 
-#### Bambu Lab A1/P2/H2
+#### Bambu Lab A1/A2/P2/X2/H2
 
-В актуальных линейках Bambu Lab используются два вида сопел: более короткие от A1 серии и более длинные от P2/H2 серий. Между ними есть обратная совместимость: сопла от A1 можно ставить в P2/H2 и наоборот. Носок при этом должен быть от той же линейки, что и сопло. Неоригинальные сопла могут негативно влиять на качество автоматических калибровок по датчику вихревых токов, а также часто страдают от плохой запрессовки, поэтому здесь не представлены
+В актуальных линейках Bambu Lab используются два вида сопел: более короткие от A1/A2 серии и более длинные от P2/X2/H2 серий. Между ними есть обратная совместимость: сопла от A1/A2 можно ставить в P2/X2/H2 и наоборот. Носок при этом должен быть от той же линейки, что и сопло. Неоригинальные сопла могут негативно влиять на качество автоматических калибровок по датчику вихревых токов, а также часто страдают от плохой запрессовки, поэтому здесь не представлены
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| A1 серия| [:material-shopping:](https://alli.pub/7akvyw?erid=2SDnjeVVQaK "Juupine"){ target="_blank" } | Оригинальные сопла для A1 серии. 0.2 и 0.4 со вставкой из нержавеющей стали не подходят для композитов, остальные подходят для всех материалов|
-| P2/H2 серия| [:material-shopping:](https://ali.click/11tsz4?erid=2SDnjeCzmcu "Juupine"){ target="_blank" }  [:material-shopping:](https://ali.click/73tsze?erid=2SDnjecia8R "Sirol"){ target="_blank" } | Оригинальные сопла для P2/H2 серии. HF версии имеют на конце вставку типа cht, которая способствует лучшему прогреву расплава, но лишает возможности полноценно сделать cold pull. 0.2 не подходит для композитов, остальные подходят для всех материалов|
+| A1/A2 серия| [:material-shopping:](https://alli.pub/7akvyw?erid=2SDnjeVVQaK "Juupine"){ target="_blank" } | Оригинальные сопла для A1/A2 серии. 0.2 и 0.4 со вставкой из нержавеющей стали не подходят для композитов, остальные подходят для всех материалов|
+| P2/X2/H2 серия| [:material-shopping:](https://ali.click/11tsz4?erid=2SDnjeCzmcu "Juupine"){ target="_blank" }  [:material-shopping:](https://ali.click/73tsze?erid=2SDnjecia8R "Sirol"){ target="_blank" } | Оригинальные сопла для P2/X2/H2 серии. HF версии имеют на конце вставку типа cht, которая способствует лучшему прогреву расплава, но лишает возможности полноценно сделать cold pull. 0.2 не подходит для композитов, остальные подходят для всех материалов|
 
 #### Unicorn (Creality)
 
@@ -119,8 +118,8 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| K1 медные с калёной вставкой | [:material-shopping:](https://alli.pub/6xtst2?erid=2SDnjdK2Cjj "Trianglelab"){ target="_blank" } [:material-shopping:](https://alli.pub/705aux?erid=2SDnjbytWFC "3D TopPrinting"){ target="_blank" } | Подходит для всех материалов |
-| K2 медные с калёной вставкой | [:material-shopping:](https://ali.click/25tsz9?erid=2SDnjepaUPB "Creality Online"){ target="_blank" } | Подходит для всех материалов |
+| K1 медные с калёной вставкой | [:material-shopping:](https://ali.click/0n36o17?erid=2SDnjdULGbN "Begrint"){ target="_blank" } | Подходит для всех материалов |
+| K2 медные с калёной вставкой | [:material-shopping:](https://ali.click/4n36o1v?erid=2SDnjdXJFA4 "HALOT"){ target="_blank" } | Подходит для всех материалов |
 
 ### Носки
 
@@ -130,23 +129,24 @@ description: Каталог проверенных ссылок на детал�
 |:------------ |:------:|:----------- |
 | Носок для E3D V6 | [:material-shopping:](https://alli.pub/6ttjm8?erid=2SDnjdRLJ3r "5A. Выбирать V6 Pt100"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttjn0?erid=2SDnjdYkETa "Trianglelab"){ target="_blank" } |  |
 | Носок для E3D Volcano | [:material-shopping:](https://alli.pub/6ttjnl?erid=2SDnjdj89Rz "5A. Выбирать Volcano Pt100"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttjo6?erid=2SDnjdoa7H2 "Trianglelab"){ target="_blank" } |  |
-| Носок для CR-10 | [:material-shopping:](https://alli.pub/6ttjor?erid=2SDnje1S1Xn "5A. Выбирать CR-10"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttjpc?erid=2SDnje4Pz6U "Trianglelab"){ target="_blank" } | Также подходит для mk8 хитблоков |
-| Носок для CHC Pro | [:material-shopping:](https://alli.pub/6ttjpq?erid=2SDnjeDHunY "Trianglelab"){ target="_blank" } |  |
+| Носок для CR-10 | [:material-shopping:](https://alli.pub/6ttjor?erid=2SDnje1S1Xn "5A. Выбирать CR-10"){ target="_blank" } [:material-shopping:](https://ali.click/lo36o1e?erid=2SDnje4Rz5J "Mellow"){ target="_blank" } | Также подходит для mk8 хитблоков |
+| Носок для CHC Pro | [:material-shopping:](https://ali.click/6n36o15?erid=2SDnjdYnESQ "Trianglelab"){ target="_blank" } |  |
 | Носок для CHCB-V | [:material-shopping:](https://alli.pub/770mvb?erid=2SDnjdGJKZf "Trianglelab"){ target="_blank" } |  |
 | Носок для Goliath | [:material-shopping:](https://alli.pub/72s2xy?erid=2SDnjcHok9R "Mellow"){ target="_blank" } |  |
 | Носок для CHC XL | [:material-shopping:](https://ali.click/q6tsz4?erid=2SDnjbrcFB7 "BLV"){ target="_blank" } |  |
 | Носок для Qidi Q1 Pro| [:material-shopping:](https://ali.click/j8tsza?erid=2SDnjcX9vW5 "QIDI Official"){ target="_blank" } |  |
 | Носок для Qidi Q2| [:material-shopping:](https://ali.click/4atszt?erid=2SDnjcj1pkq "QIDI Official"){ target="_blank" } |  |
 | Носок для Bambu Lab P1/X1 серии| [:material-shopping:](https://alli.pub/770mvi?erid=2SDnjdHnJr1 "Juupine"){ target="_blank" } |  |
-| Носок для Bambu Lab A1 серии| [:material-shopping:](https://alli.pub/7akw2s?erid=2SDnjdXADM9 "Juupine"){ target="_blank" } |  |
-| Носок для Bambu Lab P2/H2 серии| [:material-shopping:](https://ali.click/bbtszr?erid=2SDnjcxMiHw "Juupine"){ target="_blank" } |  |
+| Носок для Bambu Lab A1/A2 серии| [:material-shopping:](https://alli.pub/7akw2s?erid=2SDnjdXADM9 "Juupine"){ target="_blank" } |  |
+| Носок для Bambu Lab P2/X2/H2 серии| [:material-shopping:](https://ali.click/bbtszr?erid=2SDnjcxMiHw "Juupine"){ target="_blank" } |  |
 | Носок для Creality K1| [:material-shopping:](https://ali.click/hctsz0?erid=2SDnjdADcYh "3D TopPrinting"){ target="_blank" } |  |
+| Носок для Creality K2| [:material-shopping:](https://ali.click/an36o15?erid=2SDnjdaGDik "3D TopPrinting"){ target="_blank" } |  |
 
 ## Экструдеры в сборе
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)"){ target="_blank" } [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239430 "Обзор V1 (отличий от V2S мало)"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239413 "Тестирование V1 (отличий от V2S мало)"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttfek?erid=2SDnje8mFCU "Big Tree Tech co. LTD"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttfey?erid=2SDnjeDDD3W "BIGTREETECH Mavellous store"){ target="_blank" } | В комплекте биметаллическое горло, хитблок, аналогичный V6, латунное сопло и вентилятор обдува радиатора |
+| Biqu H2 V2S | [:simple-youtube:](https://youtu.be/n_B7iGDqVm0?si=W9iGbhY8JryHXCu3 "Обзор V1 (отличий от V2S мало)"){ target="_blank" } [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=uPnWUsVEUV9v34pQ "Тестирование V1 (отличий от V2S мало)"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239430 "Обзор V1 (отличий от V2S мало)"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239413 "Тестирование V1 (отличий от V2S мало)"){ target="_blank" } | [:material-shopping:](https://ali.click/dn36o1z?erid=2SDnjdbkD16 "Big Tree Tech Global"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttfey?erid=2SDnjeDDD3W "BIGTREETECH Mavellous store"){ target="_blank" } | В комплекте биметаллическое горло, хитблок, аналогичный V6, латунное сопло и вентилятор обдува радиатора |
 | Creality Sprite | [:simple-youtube:](https://youtu.be/mGZxazupZqU?t=343 "Часть обзора E3S1 посвящена спрайту"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239395?t=5m44s "Часть обзора E3S1 посвящена спрайту"){ target="_blank" } | [:material-shopping:](https://alli.pub/6txmvr?erid=2SDnje89ywN "Creality 3D printer online store"){ target="_blank" } | Standard версия (самая дешёвая) - В комплекте экструдер, стальное горло со сквозным прохождением трубки, хитблок CR-10, латунное сопло. Рекомендуется заменить горло на биметаллическое. Pro Kit версия (самая дорогая) - в комплекте экструдер, титановое цельнометаллическое горло, хитблок CR-10, латунное и медное сопла, коммутационная плата со шлейфом и каретка для эндероподобных принтеров |
 | Trianglelab Matrix Lite | [:simple-youtube:](https://youtu.be/2bxKz0nOVpY?si=bUOmRvFc1P1ZAs-f "Обзор"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239413 "Обзор"){ target="_blank"} | [:material-shopping:](https://alli.pub/6ttfgp?erid=2SDnjeirxgQ "Trianglelab"){ target="_blank" } | В комплекте экструдер, вентилятор 40 мм, биметаллическое горло, хитблок e3d v6 с носком и латунным соплом, термистор и нагреватель |
 | E3D Titan Aero (клон) | - | [:material-shopping:](https://alli.pub/6ttfha?erid=2SDnjeygqVr "Trianglelab"){ target="_blank" } | В комплекте экструдер, вентилятор 40 мм, стальное горло, хитблок и сопло V6/Volcano, нагреватель, термистор 104GT-2, носок. Горло под замену! |
@@ -157,7 +157,7 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| BMG 5A | - | [:material-shopping:](https://alli.pub/6ttfho?erid=2SDnjbqLhKN "5A"){ target="_blank" } | Выбирать Right clear hardened. Вариант с низкокачественным корпусом, но хорошими подающими колёсами. Под печать только твёрдыми филаментами или в качестве донора для других проектов |
+| BMG 5A | - | [:material-shopping:](https://alli.pub/6ttfho?erid=2SDnjbqLhKN "5A"){ target="_blank" } | Выбирать Right clear. Вариант с низкокачественным корпусом, но нормальными подающими колёсами. Под печать только твёрдыми филаментами или в качестве донора для других проектов |
 | BMG Trianglelab | - | [:material-shopping:](https://alli.pub/6ttfhv?erid=2SDnjbtJft4 "Trianglelab"){ target="_blank" } | Значительно более качественная, но и более дорогая версия. Способна печатать средне-мягкими эластомерами, если с остальными частями экструдера всё будет хорошо. Очень мягкие эластомеры жует |
 | Подающий механизм Bambu Lab A1/A1Mini | - | [:material-shopping:](https://alli.pub/7akw09?erid=2SDnjcPvkwy){ target="_blank" } | Оригинальный подающий механизм для Bambu Lab A1/A1 Mini. Имеет смысл заменять при износе шестерней или некорректной работе калибровок стола и Pressure Advance, не исправляющихся протягиванием семи винтов крепления хотэнда, заменой детали крепления хотэнда к голове и использованием оригинального хотэнда. |
 
@@ -165,7 +165,7 @@ description: Каталог проверенных ссылок на детал�
 
 | Типоразмер | Длина | Кр.момент | Ток_RMS | Ссылки | Комментарий |
 |:----------:|:-----:|:---------:|:-------:|:------:|:----------- |
-| Nema 14 | 17 мм | 100 мН*м | 1 А | [:material-shopping:](https://alli.pub/7051l2?erid=2SDnjcTo9vr "BTT Brand Store"){ target="_blank" } | `Moons CSE14HRA1L410A-01` с 10-зубой шестерней. Необходим для подающих механизмов, у которых очень ограничен габарит в глубину. В противном случае лучше взять 20 мм мотор |
+| Nema 14 | 17 мм | 100 мН*м | 1 А | [:material-shopping:](https://ali.click/kn36o1t?erid=2SDnjddECHS "Mellow Store"){ target="_blank" } | `Moons CSE14HRA1L410A-01` с 10-зубой шестерней. Неразборный, благодаря чему по характеристикам аналогичен 20мм разборному. Имеет смысл для подающих механизмов, у которых очень ограничен габарит в глубину. |
 | Nema 14 | 20 мм | 100 мН*м | 1 А | [:material-shopping:](https://alli.pub/770mtk?erid=2SDnjcjAaeR "Mellow Store"){ target="_blank" } | `LDO 36STH20-1004AHG` с 10-зубой шестерней. Распространенный вариант под небольшие подающие механизмы |
 | Nema 17 | 22 мм | 130 мН*м | 1 А | [:material-shopping:](https://alli.pub/770mtr?erid=2SDnjcyzTTs "Usongshine Official Store"){ target="_blank" } [:material-shopping:](https://alli.pub/770mty?erid=2SDnjd1USkD "RRF 3D Shop"){ target="_blank" } | `Usongshine 17HS4023` Для подающих механизмов Titan, BMG и подобных |
 
@@ -173,11 +173,12 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| Подающие колёса BMG 5A | [:material-shopping:](https://alli.pub/6ttfke?erid=2SDnjcbpKmi "5A"){ target="_blank" } | Качественные подающие колёса для фидеров `Minifeeder`, `SMG`, `Titanator`, `Sherpa Mini/Micro` и подобных. По ссылке можно купить в том числе и калёные |
-| Подающие колёса Sprite| [:material-shopping:](https://alli.pub/705apv?erid=2SDnjdfjMN2 "FYSETC Official Store"){ target="_blank" } [:material-shopping:](https://alli.pub/770mu5?erid=2SDnjd2xS2Z "Juupine Store"){ target="_blank" } | Подающие колёса для Creality Sprite, позволяющие свободно печатать композитными и мягкими филаментами. Первая ссылка - подороже, но проверенные. Вторая - подешевле. |
-| Подающие колёса Biqu H2 | [:material-shopping:](https://www.ozon.ru/product/zakalennye-shesterni-dlya-ekstrudera-biqu-h2-v2s-1144804197/ "RRF3D Shop"){ target="_blank" } | Закалённые шестерни для Biqu H2 |
+| Подающие колёса BMG 5A | [:material-shopping:](https://ali.click/nn36o1r?erid=2SDnjdeiBZn "5A"){ target="_blank" } | Недорогие качественные подающие колёса для фидеров `Minifeeder`, `SMG`, `Titanator`, `Sherpa Mini/Micro` и подобных. Для использования с круглыми nema14 моторами необходимо укоротить вал. По ссылке можно купить в том числе и калёные |
+| Подающие колёса Sprite| [:material-shopping:](https://alli.pub/770mu5?erid=2SDnjd2xS2Z "Juupine Store"){ target="_blank" } | Подающие колёса для Creality Sprite, позволяющие свободно печатать композитными и мягкими филаментами. |
+| Подающие колёса Biqu H2 | - | Закалённые шестерни для Biqu H2. На AliExpress пропали, но можно найти на Ozon |
 | Подающие колёса Neptune 4| [:material-shopping:](https://alli.pub/7akw11?erid=2SDnjcbnfCj "YUNSN"){ target="_blank" } | Закалённые шестерни для замены в фидере Neptune 4/4 Pro/4 Plus/4 Max |
 | Подающие колёса Creality K1 | [:material-shopping:](https://alli.pub/7154e5?erid=2SDnjeA4usx "Trianglelab"){ target="_blank" } | Калёные шестерни для подающего механизма Creality K1 |
+| Подающие колёса Sovol SV08 | [:material-shopping:](https://ali.click/un36o12?erid=2SDnjdgCAr8 "Noname"){ target="_blank" } | Качественные калёные шестерни для подающего механизма Sovol SV08 |
 
 ## Хотэнды
 
@@ -187,7 +188,8 @@ description: Каталог проверенных ссылок на детал�
 |:------------ |:----------:|:------:|:----------- |
 | Mellow Goliath | - | [:material-shopping:](https://alli.pub/72s2xy?erid=2SDnjcHok9R "Mellow Store"){ target="_blank" } | Использует сопла V6. Самый производительный хотэнд на рынке в данный момент. ||
 | Trianglelab CHC XL | - | [:material-shopping:](https://alli.pub/770muc?erid=2SDnjd4SRJu "Trianglelab"){ target="_blank" } | Использует сопла V6. По производительности чуть-чуть уступает Goliath, зато значительно дешевле |
-| Trianglelab CHCB-V V6DM | - | [:material-shopping:](https://alli.pub/770muq?erid=2SDnjd7QPsb "Trianglelab"){ target="_blank" } | Аналогичен volcano, но стоит дешевле, чем набор качественных комплектующих для него. |
+| Creality K2 Plus | - | [:material-shopping:](https://ali.click/0o36o1o?erid=2SDnjdjA9Qp "Creality Official"){ target="_blank" } | Использует собственные Unicorn сопла. Недорогой вариант под проекты с производительностью выше, чем у Volcano и Bambu X1C/P1S хотендов|
+| Trianglelab CHCB-V V6DM | - | [:material-shopping:](https://alli.pub/770muq?erid=2SDnjd7QPsb "Trianglelab"){ target="_blank" } | Аналогичен Volcano, но стоит дешевле, чем набор качественных комплектующих для него. |
 | Bambu X1C/P1S hotend (неориг.) | - | [:material-shopping:](https://alli.pub/6xts3z?erid=2SDnjdZqQbK "Kingroon"){ target="_blank" } [:material-shopping:](https://alli.pub/6xts55?erid=2SDnjeBR7Mb "Kingroon"){ target="_blank" } | Для замены штатного хотэнда в принтерах Bambu Lab. Имеют сменные сопла, благодаря чему обслуживание принтера становится заметно дешевле + можно поставить сопла, прогревающие филамент лучше, чем стоковые. Также используются в некоторых проектах по доработке других принтеров |
 
 
@@ -210,13 +212,13 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Обзор\Тест | Ссылки | Комментарий |
 |:------------ |:----------:|:------:|:----------- |
-| E3D V6 биметаллический сталь+медь | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239451 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/770mv4?erid=2SDnjdDLLzy "Mellow Store"){ target="_blank" } | Для радиатора E3D V6. Особо неудачные экземпляры термобарьеров с медной горячей частью могут течь или саморазбираться. |
-| E3D V6 титановый цельнометаллический | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239451 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttg8w?erid=2SDnjePc8Ti "5A"){ target="_blank" } | Выбирать titanium 1.75. Для радиатора E3D V6 |
-| Chimera биметаллический сталь+медь | - | [:material-shopping:](https://alli.pub/6ttg9h?erid=2SDnjeYW49n "5А"){ target="_blank" } | Выбирать smooth. Для радиатора CR-10[^3], а также хотэндов на Neptune 3 Pro/Plus/Max[^3], FBG6 и других с цилиндрическим отверстием диаметром 7 мм. Особо неудачные экземпляры термобарьеров с медной горячей частью могут течь или саморазбираться. |
+| E3D V6 биметаллический сталь+медь | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239451 "Тест"){ target="_blank" } | [:material-shopping:](https://alli.pub/770mv4?erid=2SDnjdDLLzy "Mellow Store"){ target="_blank" } | Для радиатора E3D V6. |
+| E3D V6 титановый цельнометаллический | [:simple-youtube:](https://youtu.be/IsUzO5mi974 "Тест"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239451 "Тест"){ target="_blank" } | [:material-shopping:](https://ali.click/po36o1u?erid=2SDnje8swvL "Mellow"){ target="_blank" } | Выбирать titanium 1.75. Для радиатора E3D V6 |
+| Chimera биметаллический сталь+медь | - | [:material-shopping:](https://ali.click/eo36o1b?erid=2SDnjdxW2wv "Mellow"){ target="_blank" } | Выбирать DCrazy. Для радиатора CR-10[^3], а также хотэндов на Neptune 3 Pro/Plus/Max[^3], FBG6 и других с цилиндрическим отверстием диаметром 7 мм. |
 | Chimera титановый цельнометаллический | - | [:material-shopping:](https://alli.pub/6ttga9?erid=2SDnjecx1zp "Trianglelab"){ target="_blank" } | Для радиатора CR-10[^3], а также хотэндов на Neptune 3 Pro/Plus/Max[^3], FBG6 и других с цилиндрическим отверстием диаметром 7 мм |
 | TD6 биметаллический | - | [:material-shopping:](https://alli.pub/6ttgau?erid=2SDnjerHuXv "Trianglelab"){ target="_blank" } | Для радиатора TD6S, Matrix/Matrix Lite. Если обрезать по длине, подойдёт к радиатору от Bambu Lab |
-| Sprite биметаллический | - | [:material-shopping:](https://alli.pub/6ttgb1?erid=2SDnjexDrfJ "Creality Online Store"){ target="_blank" } | Для экструдеров Sprite и K1 |
-| H2 биметаллический/титановый | - | [:material-shopping:](https://alli.pub/6ttgbm?erid=2SDnjbrqh3W "BigTreeTech"){ target="_blank" } | Для экструдера H2, кроме версий Revo. На H2 V2S Lite установка такого термобарьера возможна, но придётся заменить и весь хотэнд |
+| Sprite биметаллический | - | [:material-shopping:](https://ali.click/7o36o1k?erid=2SDnjdn87yW "Creality Online Store"){ target="_blank" } | Для экструдеров Sprite и K1 |
+| H2 биметаллический/титановый | - | [:material-shopping:](https://ali.click/9o36o17?erid=2SDnjdq66YC "BigTreeTech"){ target="_blank" } | Для экструдера H2, кроме версий Revo. На H2 V2S Lite установка такого термобарьера возможна, но придётся заменить и весь хотэнд |
 
 ### Хитблоки
 
@@ -228,6 +230,7 @@ description: Каталог проверенных ссылок на детал�
 | E3D Volcano | [:simple-youtube:](https://youtu.be/rywLgUy9-8c){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239405){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttghu?erid=2SDnjdoWkTi "5A"){ target="_blank" } [:material-shopping:](https://alli.pub/6ttgim?erid=2SDnjdvvgsS "Trianglelab"){ target="_blank" } | Под сопла volcano, термистор в гильзе и стандартный нагреватель D6 L20 |
 | CR-10 | [:simple-youtube:](https://youtu.be/0Dulv9ZTQy4){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239438){ target="_blank" } | [:material-shopping:](https://alli.pub/6ttgj7?erid=2SDnjePcTwe "Trianglelab"){ target="_blank" } | Под сопла mk8, термистор-каплю и стандартный нагреватель D6 L20. Практически во всех случаях лучше сразу менять на V6, чтобы перейти на термисторы в гильзах, так как они безопаснее и надежнее. Также вместо покупки этого хитблока выгодно сразу проводить апгрейд до других, более производительных вариантов |
 | CHC Pro | [:simple-youtube:](https://youtu.be/ZMRE5Hb7uyA "Обзор"){ target="_blank" } [:simple-vk:](https://vk.com/video-168896673_456239402 "Обзор"){ target="_blank" } | [:material-shopping:](https://alli.pub/7akw2e?erid=2SDnjdHpKp3 "Trianglelab"){ target="_blank" } | Под сопла Volcano. Имеет встроенный нагреватель и термистор |
+| Bambu Lab A1 | - | [:material-shopping:](https://ali.click/bo36o1l?erid=2SDnjdt456t "Juupine"){ target="_blank" } | В лоте есть как оригинальный хитблок, так и неоригинальные подешевле. Стоит брать версии с керамическим теплоизолятором - он не деформируется со временем |
 
 ### Датчики температуры
 
@@ -285,8 +288,8 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| PC4-M6 | [:material-shopping:](https://alli.pub/6tuptf?erid=2SDnjcHzTaQ){ target="_blank" } |  |
-| PC4-01 | [:material-shopping:](https://alli.pub/6tupul?erid=2SDnjcStPGU){ target="_blank" } |  |
+| PC4-M6 | [:material-shopping:](https://ali.click/uo36o1i?erid=2SDnjeDKumN){ target="_blank" } |  |
+| PC4-01 | [:material-shopping:](https://ali.click/uo36o1i?erid=2SDnjeDKumN){ target="_blank" } |  |
 | Встраиваемый фиттинг | [:material-shopping:](https://alli.pub/6tupuz?erid=2SDnjcVrMqA "5шт. в комплекте. IdeaFormer Factory Store"){ target="_blank" } [:material-shopping:](https://alli.pub/6tupvk?erid=2SDnjcbnJxY "XCR3D"){ target="_blank" } | Для некоторых проектов подающих механизмов |
 
 ## Список деталей для сборки хотэндов E3D V6 и E3D Volcano
@@ -314,6 +317,7 @@ description: Каталог проверенных ссылок на детал�
 ---
 
 ^`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`^[^1]
+^`Реклама. ООО "АЕР Услуги" ИНН 7703380158.`^[^1]
 
 [^1]: Нет человека или юр.лица, которые заказали бы создание этой страницы или рекламу товаров, приводимых на этой странице. Я создал все статьи в рекомендаторе сам, по своему желанию и в целях сообщества. Тем не менее, по законодательству РФ, любая ссылка на товар является рекламой. Поэтому я вынужден делать эту приписку, чтобы не нарушать закон.
 [^2]: Если качество детали крайне важно для эксплуатации принтера, то будет указана ссылка на самое качественное, известное мне. Если деталь важна, но не критически, то будет указан оптимум цена/качество. Если деталь для 3D-печати не особо важна, то будет указана ссылка на самое дешевое из проверенных магазинов.
