@@ -46,6 +46,9 @@ theme:
     clone:
       icon: octicons/mirror-16
       color: "#ffc107"
+    compare:
+      icon: material/compare-horizontal
+      color: "#009485"
 plugins:
   - glightbox:
       background: "transparent"
@@ -170,6 +173,7 @@ extra_css:
 extra_javascript:
   - javascripts/search-hotkey.js
   - javascripts/mermaid-icons.js
+  - javascripts/compare-panels.js
   - javascripts/mathjax.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/vega@5

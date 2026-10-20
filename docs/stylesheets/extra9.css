@@ -628,8 +628,7 @@ input[type="text"]:disabled {
 
 /* Узкий экран: одна колонка во всю ширину контейнера;
    картинка тянется на всю колонку, текст под ней занимает ту же ширину. */
-@media (max-width: 40rem) {
-	.md-typeset .image-text-row,
+@media (max-width: 40rem) {	.md-typeset .image-text-row,
 	.md-typeset .image-text-row.reverse {
 		flex-direction: column;
 	}
@@ -1172,4 +1171,243 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 }
 .md-typeset .steps.colored > ol > li:nth-child(7)::before {
 	background-color: #ff4343;
+}
+
+/* =====================================================
+   Рекомендатор принтеров (docs/part-navi/printers.md)
+   ===================================================== */
+
+/* Карточка принтера. Раскладку «фото слева / текст справа» и переход в
+   одну колонку на узком экране даёт уже существующий .image-text-row,
+   здесь добавляется только «коробка». */
+.md-typeset .printer-card {
+	padding: 0.9rem 1.25rem;
+	border: 0.05rem solid var(--md-default-fg-color--lightest);
+	border-radius: 0.5rem;
+	background-color: var(--md-default-bg-color);
+	transition:
+		border-color 0.25s ease,
+		box-shadow 0.25s ease;
+}
+
+/* glightbox оборачивает <img> в <p>, а у абзаца в теме есть margin 1em
+   сверху и снизу. В колонке с фото это чистая пустота вокруг картинки,
+   да ещё и колонка с фото самая высокая в ряду — она задаёт высоту всей
+   карточки, так что отступы видны как воздух над и под принтером. */
+.md-typeset .printer-card .image-text-img > p {
+	margin: 0;
+}
+
+/* На узком экране .image-text-row разворачивается в колонку и по общему
+   правилу тянет фото на всю ширину — в карточке принтера это даёт
+   полтысячи пикселей пустоты по вертикали. Ограничиваем и центруем:
+   остальные блоки site с этим классом не затрагиваются. */
+@media (max-width: 40rem) {
+	.md-typeset .printer-card .image-text-img {
+		align-self: center;
+	}
+
+	.md-typeset .printer-card .image-text-img img {
+		width: auto;
+		max-width: 15rem;
+	}
+}
+
+.md-typeset .printer-card:hover {
+	border-color: var(--md-primary-fg-color--transparent);
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.14);
+}
+
+/* Роль принтера под заголовком («Малогабаритный базовый принтер»).
+   Markdown оборачивает _…_ в <p>, поэтому отступы правим на параграфе. */
+.md-typeset .printer-role {
+	display: block;
+	font-size: 0.75rem;
+	color: var(--md-default-fg-color--light);
+}
+
+.md-typeset p:has(> .printer-role) {
+	margin: -0.25rem 0 1rem;
+}
+
+/* Таблица характеристик. Пустая строка заголовка нужна потому, что
+   Markdown не умеет таблиц без неё, — прячем. Зебру, hover и рамку
+   убираем: на четырёх строках внутри карточки они только шумят.
+   :not([class]) повторяет селектор темы и перебивает его по
+   специфичности (extra9.css подключается позже main.css). */
+.md-typeset .printer-card table:not([class]) {
+	border: none;
+	background-color: transparent;
+	font-size: 0.7rem;
+}
+
+.md-typeset .printer-card thead {
+	display: none;
+}
+
+.md-typeset .printer-card table:not([class]) td {
+	border-top: none;
+	padding: 0.15rem 0.6rem 0.15rem 0;
+}
+
+.md-typeset .printer-card table:not([class]) tbody tr:nth-of-type(odd),
+.md-typeset .printer-card table:not([class]) tbody tr:hover {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+/* Первая колонка — подписи граф: приглушённые и в одну строку.
+   width: 1% не даёт колонке занять больше места, чем нужно. */
+.md-typeset .printer-card table:not([class]) td:first-child {
+	width: 1%;
+	color: var(--md-default-fg-color--light);
+	white-space: nowrap;
+}
+
+/* Тема раздвигает таблицу отрицательными полями в паре с её же
+   внутренними отступами; внутри карточки отступы убраны, поэтому
+   поля зануляем тоже. */
+.md-typeset .printer-card .md-typeset__scrollwrap {
+	margin: 0;
+}
+
+.md-typeset .printer-card .md-typeset__table {
+	padding: 0;
+}
+
+/* Кнопки «Сравнить с …» (docs/part-navi/printers.md).
+
+   В разметке — подряд идущие адмониции `??? compare`; скрипт
+   docs/javascripts/compare-panels.js перестраивает их в одну группу:
+   подпись «Сравнить с:», ряд кнопок и одна панель под этим рядом.
+   Открыта всегда не более одной панели.
+
+   Нарочно тихо: это вспомогательная информация, а не основная. */
+.md-typeset .compare-group {
+	margin: 0.4rem 0 0.8rem;
+	/* Браузерный scroll anchoring при раскрытии панели подкручивает страницу,
+	   чтобы «удержать» видимый блок ниже — экран прыгает. Исключаем группу
+	   из выбора якоря: позиция прокрутки от неё больше не зависит. */
+	overflow-anchor: none;
+}
+
+.md-typeset .compare-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.35rem;
+}
+
+.md-typeset .compare-label {
+	font-size: 0.7rem;
+	color: var(--md-default-fg-color--light);
+}
+
+/* Кнопка. font: inherit и appearance: none нужны, чтобы перебить
+   дефолтное оформление <button> в теме. */
+.md-typeset button.compare-chip {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+	padding: 0.15rem 0.6rem;
+	border: 0.05rem solid var(--md-default-fg-color--lightest);
+	border-radius: 0.3rem;
+	background-color: transparent;
+	color: var(--md-default-fg-color--light);
+	font: inherit;
+	font-size: 0.7rem;
+	font-weight: 400;
+	line-height: 1.6;
+	cursor: pointer;
+	transition:
+		color 0.2s ease,
+		border-color 0.2s ease,
+		background-color 0.2s ease;
+}
+
+.md-typeset button.compare-chip:hover,
+.md-typeset button.compare-chip:focus-visible {
+	border-color: var(--md-accent-fg-color);
+	background-color: var(--md-accent-fg-color--transparent);
+	color: var(--md-accent-fg-color);
+}
+
+/* Открытая кнопка выделена рамкой и цветом текста, но без заливки —
+   чтобы следующая за ней панель оставалась главным акцентом. */
+.md-typeset button.compare-chip[aria-expanded="true"] {
+	border-color: var(--md-primary-fg-color);
+	color: var(--md-primary-fg-color);
+}
+
+.md-typeset .compare-panel {
+	margin-top: 0.5rem;
+	padding: 0.5rem 0.75rem;
+	border: 0.05rem solid var(--md-default-fg-color--lightest);
+	border-radius: 0.3rem;
+	background-color: var(--md-default-fg-color--lightest);
+}
+
+/* Тема может перебивать [hidden] своим display — фиксируем явно */
+.md-typeset .compare-panel[hidden] {
+	display: none;
+}
+
+.md-typeset .compare-panel > :first-child {
+	margin-top: 0;
+}
+
+.md-typeset .compare-panel > :last-child {
+	margin-bottom: 0;
+}
+
+/* Без JS адмониции остаются как есть — держим ряд читаемым */
+.md-typeset details.compare {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0.4rem 0.5rem 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	color: inherit;
+}
+
+.md-typeset details.compare > summary {
+	width: fit-content;
+	max-width: 100%;
+	margin: 0;
+	padding: 0.2rem 1.2rem 0.2rem 0.5rem;
+	border: 0.05rem solid var(--md-default-fg-color--lightest);
+	border-radius: 0.3rem;
+	background-color: transparent;
+	color: var(--md-default-fg-color--light);
+	font-weight: 400;
+}
+
+/* Иконка адмониции крупнее текста и растягивает кнопку — убираем,
+   оставляем только шеврон, и тот уменьшаем с дефолтного 1rem */
+.md-typeset details.compare > summary:before {
+	content: none;
+}
+
+.md-typeset details.compare > summary:after {
+	height: 0.8rem;
+	width: 0.8rem;
+	margin-top: -0.4rem;
+	background-color: var(--md-default-fg-color--lighter);
+}
+
+/* Нерекомендуемые принтеры: плитки grid cards cols-2 с фото сверху.
+   Фото (glightbox оборачивает его в <p><a>) и название центрируем,
+   текст причины оставляем по левому краю. */
+.md-typeset .printer-bad > ul > li > p:not(:last-of-type) {
+	margin-bottom: 0.4rem;
+	text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.md-typeset .printer-card,
+	.md-typeset button.compare-chip {
+		transition: none;
+	}
 }
