@@ -23,6 +23,10 @@ nul
 .pytest_cache/
 .build/
 build.sh
+# Temp build dirs that `properdocs serve` creates next to the config
+# (mkdocs-like tools build into ./<tool>_xxxx instead of site/)
+properdocs_*/
+mkdocs_*/
 
 # ProRes source footage for animations (large files, kept locally only)
 docs/vostok/pics/sources/
