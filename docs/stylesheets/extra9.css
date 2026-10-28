@@ -1236,6 +1236,12 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
    :not([class]) повторяет селектор темы и перебивает его по
    специфичности (extra9.css подключается позже main.css). */
 .md-typeset .printer-card table:not([class]) {
+	/* display: table обязателен: тема делает таблицы inline-block, и тогда
+	   ширина 100% и проценты в колонках считаются не от колонки карточки,
+	   а от «внутренней» таблицы по содержимому — колонки перестают
+	   делиться пополам. С настоящим табличным боксом проценты работают. */
+	display: table;
+	width: 100%;
 	border: none;
 	background-color: transparent;
 	font-size: 0.7rem;
@@ -1264,6 +1270,33 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 	white-space: nowrap;
 }
 
+/* Таблицы в стиле «подпись: значение» (в markdown подписи выровнены
+   вправо, то есть шапка разделителей `----:`) читаются симметрично
+   вокруг вертикали между подписью и значением: подписи прижаты к этой
+   вертикали справа, значения начинаются от неё. Поэтому визуальный
+   центр такой таблицы — именно разделитель, а не середина её рамки.
+   Ставим обе колонки по 50%: разделитель попадает ровно в центр
+   колонки карточки, и таблица перестаёт «уезжать» влево.
+   У таблиц с левыми подписями (шапка `:----`) разделитель серединой не
+   является — их это правило не трогает (выключка ячеек приходит из
+   markdown инлайновым style). */
+.md-typeset .printer-card table:not([class]) td:first-child[style*="right"] {
+	width: 50%;
+	/* Зазор 0.6rem между подписью и значением делим пополам между
+	   колонками: тогда его середина — то есть сам разделитель — стоит
+	   ровно на границе колонок, а граница совпадает с центром колонки
+	   карточки и с центром ряда кнопок. */
+	padding-right: 0.3rem;
+}
+
+.md-typeset
+	.printer-card
+	table:not([class])
+	td:first-child[style*="right"]
+	+ td {
+	padding-left: 0.3rem;
+}
+
 /* Тема раздвигает таблицу отрицательными полями в паре с её же
    внутренними отступами; внутри карточки отступы убраны, поэтому
    поля зануляем тоже. */
@@ -1272,7 +1305,100 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 }
 
 .md-typeset .printer-card .md-typeset__table {
+	/* display: block нужен, чтобы таблица заняла всю ширину колонки:
+	   по умолчанию обёртка темы — inline-block и ужимается по содержимому,
+	   тогда проценты в колонках таблицы считаются от её же ширины. */
+	display: block;
+	width: 100%;
 	padding: 0;
+}
+
+/* Кнопки-ссылки внизу карточки принтера — «Обзор» и «Купить».
+   В разметке это абзац .printer-actions со ссылками .printer-action
+   (у главного действия ещё модификатор --primary).
+
+   Раньше такие ссылки стояли строками в таблице характеристик и
+   читались как обычный текст. Теперь это ряд кнопок под таблицей. */
+
+/* Ряд кнопок центрируется по той же вертикали, что и разделитель таблицы
+   (обе величины — центр колонки карточки). Поэтому стык двух кнопок, при
+   трёх — середина средней, при четырёх — стык второй и третьей попадают
+   точно под разделитель «подпись — значение», и ряд читается как
+   продолжение таблицы, а не как сдвинутый вбок блок. */
+.md-typeset .printer-card .printer-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 0.9rem 0 0;
+}
+
+/* Кнопка. Геометрия — как у .md-button в теме (радиус 0.4rem), но
+   компактная: размер шрифта и высота подогнаны под таблицу (0.7rem).
+   flex: 1 1 0 — кнопки делят ширину ряда строго поровну (при двух это
+   половина колонки, при трёх — треть), так что их стыки оказываются
+   симметрично относительно центра. Уже своей подписи кнопка не станет
+   (white-space: nowrap + браузерный min-width: auto), а если кнопок
+   много и всё не влезает, ряд переносится. */
+.md-typeset .printer-card .printer-action {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 0;
+	/* min-width: max-content не даёт кнопке ужаться меньше собственного
+	   содержимого (иконка + подпись + отступы). Без него в тесном ряду
+	   кнопка сжималась «внутрь» подписи: сначала уходили боковые отступы,
+	   а иконка, как самый мелкий flex-элемент, схлопывалась в ноль. */
+	min-width: max-content;
+	max-width: 14rem;
+	gap: 0.35rem;
+	padding: 0.35rem 0.9rem;
+	border-radius: 0.4rem;
+	background-color: var(--md-primary-fg-color--transparent);
+	color: var(--md-typeset-a-color);
+	font-size: 0.7rem;
+	font-weight: 700;
+	line-height: 1.5;
+	text-align: center;
+	/* Тема подчёркивает ссылки при наведении — кнопке это не нужно. */
+	text-decoration: none;
+	white-space: nowrap;
+	transition:
+		color 0.2s ease,
+		background-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+/* Иконка внутри кнопки не сжимается. .twemoji — flex-элемент, а у него
+   по умолчанию flex-shrink: 1, при этом его автоматический минимум равен
+   нулю. Текст рядом держит свой минимум (white-space: nowrap), поэтому
+   когда кнопке не хватает ширины, сжималась именно иконка — сначала
+   уменьшалась, а потом исчезала совсем (видно на «Доработках» в Q2 при
+   сужении окна). С flex: 0 0 auto размер иконки постоянен, а ряд в тесноте
+   переносится целиком. */
+.md-typeset .printer-card .printer-action .twemoji {
+	flex: 0 0 auto;
+}
+
+/* Главное действие — сплошная заливка цветом темы: в паре кнопок сразу
+   видно, что «Купить» важнее «Обзора». */
+.md-typeset .printer-card .printer-action--primary {
+	background-color: var(--md-primary-fg-color);
+	color: var(--md-primary-bg-color);
+}
+
+.md-typeset .printer-card .printer-action:hover,
+.md-typeset .printer-card .printer-action:focus-visible {
+	background-color: var(--md-primary-fg-color);
+	color: var(--md-primary-bg-color);
+	box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.18);
+}
+
+/* У залитой кнопки наведение уводит цвет в тёмный оттенок темы:
+   осветление до акцента дало бы белый текст на светлой заливке. */
+.md-typeset .printer-card .printer-action--primary:hover,
+.md-typeset .printer-card .printer-action--primary:focus-visible {
+	background-color: var(--md-primary-fg-color--dark);
 }
 
 /* Кнопки «Сравнить с …» (docs/part-navi/printers.md).
@@ -1407,6 +1533,7 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 
 @media (prefers-reduced-motion: reduce) {
 	.md-typeset .printer-card,
+	.md-typeset .printer-card .printer-action,
 	.md-typeset button.compare-chip {
 		transition: none;
 	}
