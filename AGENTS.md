@@ -110,6 +110,7 @@ If you move a page, add a mapping in `properdocs.yml` under `plugins.redirects.r
 
 ## Don't
 
+- Don't commit anything unless the user explicitly asks for a commit («оформи коммит», «закоммить»). Finishing a task, building the site, or running a tool is never a reason to commit — leave the changes in the working tree. Never push unless asked.
 - Don't rename `properdocs.yml` to `mkdocs.yml` — the `properdocs` package entry-point expects this name.
 - Don't commit `site/`, `.cache/`, `.venv/`, `.obsidian/workspace`, `*.ods#`, lock files, or `.vs/`, `.idea/`, `.continue/`.
 - Don't add plugins/extensions without updating `.github/workflows/requirements.txt` and the `Build` section above.
@@ -216,7 +217,7 @@ Exit code is `0` when everything that was found got converted (or nothing matche
 ### After running
 
 1. Confirm in the report that every AliExpress link on the page was either replaced or skipped, and that the script wrote the file.
-2. `python -m properdocs build --clean` to make sure the page still builds. Commit the page; `.cache/` stays untracked.
+2. `python -m properdocs build --clean` to make sure the page still builds. Do **not** commit the page — commits happen only when the user explicitly asks; `.cache/` stays untracked.
 
 **Do not audit the rest of the file.** The user edits these pages himself before publishing, so the working tree routinely carries his own uncommitted changes — removed rows, reworded comments, dropped external links, added ad-marking lines. That is normal and none of it is the script's business. Never attribute those changes to the script, never ask whether they were intentional, never "restore" them. Report only what the script itself did: the URLs from its report.
 
