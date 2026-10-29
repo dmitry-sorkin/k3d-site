@@ -1616,3 +1616,63 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 .md-typeset .tabbed-set:has(table thead th abbr) > .tabbed-labels > label .twemoji {
 	display: none;
 }
+
+
+/* Значки магазинов всегда одного размера — и на десктопе, и на телефоне.
+   Размер задан в rem (а не в em от шрифта таблицы, как в теме), а max-width
+   и max-height сняты: ни тема, ни узкая ячейка не могут смять или растянуть
+   иконку. Если таблица с такими значками не влезает — включается прокрутка
+   (см. медиазапрос ниже), а не «сломанная» таблица. */
+.md-typeset .tabbed-block table:has(thead th abbr) td .twemoji {
+	width: 0.9rem;
+	height: 0.9rem;
+	flex: none;
+}
+
+.md-typeset .tabbed-block table:has(thead th abbr) td .twemoji svg {
+	width: 0.9rem;
+	height: 0.9rem;
+	max-width: none;
+	max-height: none;
+}
+
+/* Узкие экраны. Горизонтальные подписи колонок там уже не помещаются, поэтому:
+   1) заголовки становятся вертикальными (чтение снизу вверх, без переноса);
+   2) таблица имеет ширину по содержимому — колонки больше не сжимаются,
+      значки магазинов остаются того же размера, что и на десктопе;
+   3) если и так не влезает, вкладка прокручивается по горизонтали, вместо
+      того чтобы показывать нечитаемую таблицу. */
+@media screen and (max-width: 60em) {
+	.md-typeset .tabbed-block {
+		overflow-x: auto;
+	}
+
+	.md-typeset .tabbed-block table:has(thead th abbr) {
+		width: max-content;
+		min-width: 0;
+		table-layout: auto;
+	}
+
+	.md-typeset .tabbed-block table:has(thead th abbr) th:nth-child(n + 4),
+	.md-typeset .tabbed-block table:has(thead th abbr) td:nth-child(n + 4) {
+		width: 1.9rem;
+	}
+
+	/* Заголовки колонок с типами филамента — вертикальные, без переносов */
+	.md-typeset .tabbed-block table:has(thead th abbr) th:nth-child(n + 4) {
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		padding: 0.4rem 0.15rem;
+		white-space: nowrap;
+		vertical-align: bottom;
+	}
+
+	/* «Производитель», ПРК и ПРЦ остаются горизонтальными */
+	.md-typeset .tabbed-block table:has(thead th abbr) th:first-child,
+	.md-typeset .tabbed-block table:has(thead th abbr) th:nth-child(2),
+	.md-typeset .tabbed-block table:has(thead th abbr) th:nth-child(3) {
+		writing-mode: horizontal-tb;
+		transform: none;
+		white-space: normal;
+	}
+}
