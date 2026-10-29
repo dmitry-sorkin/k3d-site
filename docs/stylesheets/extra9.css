@@ -719,6 +719,7 @@ input[type="text"]:disabled {
 .md-typeset .grid.cards.no-gap > ul > li:has(> .admonition) {
 	aspect-ratio: auto;
 	overflow: visible;
+	table-layout: fixed;
 	display: flex;
 	padding: 0;
 }
@@ -1537,4 +1538,81 @@ body:has(.lp-hero) .md-content__inner > h1:first-of-type {
 	.md-typeset button.compare-chip {
 		transition: none;
 	}
+}
+
+/* ---------------------------------------------------------------------------
+   Таблицы карты филамента (docs/part-navi/filament.md) — компактный режим.
+
+   Зачем: в таблицах 10–15 колонок, и материал даёт каждой колонке минимум по
+   ширине заголовка. В сумме таблица шире колонки контента, а материал ставит
+   таблице display: inline-block и overflow: auto — отсюда горизонтальная
+   прокрутка. Ячейки здесь — только значки-ссылки, поэтому таблицу можно
+   ужать фиксированной раскладкой без потери информации.
+
+   Область действия: read_csv-таблицы внутри вкладок, у которых в шапке есть
+   <abbr> — сейчас это только карта филамента (заголовки ПРК / ПРЦ).
+
+   Откат: удалить этот блок целиком — таблицы вернутся к стандартному виду.
+   Ни markdown, ни CSV менять не нужно.
+   --------------------------------------------------------------------------- */
+.md-typeset .tabbed-block table:has(thead th abbr) {
+	display: table;
+	width: 100%;
+	max-width: 100%;
+	overflow: visible;
+	table-layout: fixed;
+}
+
+/* Ячейки: узкие отступы, но достаточные, чтобы соседние заголовки не
+   слипались; длинные слова переносятся, а не налезают на соседнюю колонку */
+.md-typeset .tabbed-block table:has(thead th abbr) th,
+.md-typeset .tabbed-block table:has(thead th abbr) td {
+	padding: 0.22rem 0.3rem;
+	overflow-wrap: anywhere;
+	hyphens: auto;
+	vertical-align: middle;
+}
+
+/* Колонка производителя — фиксированная, длинные названия переносятся в две
+   строки вместо того, чтобы растягивать таблицу */
+.md-typeset .tabbed-block table:has(thead th abbr) th:first-child,
+.md-typeset .tabbed-block table:has(thead th abbr) td:first-child {
+	width: 7.2rem;
+	text-align: left;
+}
+
+/* ПРК и ПРЦ — только «9,1», поэтому им достаточно узкой колонки; освободившееся
+   место уходит колонкам с типами филамента, где заголовки длиннее */
+.md-typeset .tabbed-block table:has(thead th abbr) th:nth-child(2),
+.md-typeset .tabbed-block table:has(thead th abbr) td:nth-child(2),
+.md-typeset .tabbed-block table:has(thead th abbr) th:nth-child(3),
+.md-typeset .tabbed-block table:has(thead th abbr) td:nth-child(3) {
+	width: 2.6rem;
+	white-space: nowrap;
+}
+
+/* Материал ставит каждому заголовку min-width: 5rem (80 px) и padding
+   .9375em 1.25em. При фиксированной раскладке это заставляет текст вылезать
+   из ячейки и наезжать на соседние заголовки. Снимаем минимум и разрешаем
+   перенос, а шрифт шапки чуть уменьшаем. */
+.md-typeset .tabbed-block table:has(thead th abbr) th {
+	min-width: 0;
+	padding: 0.22rem 0.15rem;
+	white-space: normal;
+	font-size: 0.64rem;
+}
+
+/* В наборе вкладок карты филамента семь подписей — «Художественные 1/2» к пяти
+   прежним, — и со стандартными отступами метки не умещаются в одну строку.
+   Поджимаем отступы и шрифт только у этого набора (он опознаётся по таблицам
+   с <abbr> в шапке). */
+.md-typeset .tabbed-set:has(table thead th abbr) > .tabbed-labels > label {
+	padding: 0.7em 0.35em;
+	font-size: 0.6rem;
+}
+
+/* Иконки у меток вкладок убираем: с семью подписями они не дают строке
+   уместиться в ширину контента */
+.md-typeset .tabbed-set:has(table thead th abbr) > .tabbed-labels > label .twemoji {
+	display: none;
 }
