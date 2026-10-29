@@ -169,7 +169,7 @@ extra:
     provider: custom
     property: foobar
 extra_css:
-  - stylesheets/extra9.css
+  - stylesheets/extra10.css
 extra_javascript:
   - javascripts/search-hotkey.js
   - javascripts/mermaid-icons.js
