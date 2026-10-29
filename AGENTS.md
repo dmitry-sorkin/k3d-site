@@ -108,6 +108,16 @@ If you move a page, add a mapping in `properdocs.yml` under `plugins.redirects.r
 - Extra CSS goes in `docs/stylesheets/` and is registered in `properdocs.yml` under `extra_css`.
 - Extra JS goes in `docs/javascripts/` (registered under `extra_javascript`) — CDN scripts are listed inline in the config.
 
+## CSS cache busting (check before every push)
+
+The stylesheet is served from a fixed URL, so a returning visitor may still hold the previous copy in the browser cache and see the old layout after a deploy. Therefore, **before pushing**:
+
+1. Check whether anything in `docs/stylesheets/` changed since the last push: `git status --short docs/stylesheets/` for uncommitted edits and `git log --oneline origin/main..HEAD -- docs/stylesheets/` for commits that are about to go out.
+2. If CSS did change, make **one more commit right before the push** that only renames the file — `extraN.css` → `extraN+1.css` via `git mv` — and update every reference in the same commit: `extra_css` in `properdocs.yml`, `AGENTS.md`, the comments in `tools/gallery/`, and the file-name comment inside the stylesheet itself.
+3. Rebuild with `python -m properdocs build --clean` and confirm the built pages link the new name and that the old file is gone from `site/stylesheets/`.
+
+Do not push CSS changes under the old name, and do not skip the check because the CSS diff looks small — the rename is exactly what makes browsers fetch the file again without `Ctrl+F5`.
+
 ## Don't
 
 - Don't commit anything unless the user explicitly asks for a commit («оформи коммит», «закоммить»). Finishing a task, building the site, or running a tool is never a reason to commit — leave the changes in the working tree. Never push unless asked.
