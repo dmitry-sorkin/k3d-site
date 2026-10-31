@@ -136,7 +136,7 @@ _Увеличенная версия A1_{ .printer-role }
 | ММ печать: | :material-star::material-star::material-star::material-star-outline::material-star-outline: |
 | Ликвидность: | :material-star::material-star::material-star::material-star::material-star-outline: |
 
-[:simple-youtube: Обзор](){ .printer-action target="_blank" } [:material-shopping: Купить](){ .printer-action .printer-action--primary target="_blank" }
+[:material-shopping: Купить](https://market.yandex.ru/cc/BSKvCa?erid=5jtCeReNx12oak2syyaCfmS){ .printer-action .printer-action--primary target="_blank" }
 { .printer-actions }
 
 </div>
@@ -275,7 +275,7 @@ QIDI Q2 в первую очередь заточен под решение за
 | ММ печать: | :material-star::material-star::material-star::material-star::material-star-outline: |
 | Ликвидность: | :material-star::material-star::material-star::material-star::material-star: |
 
-[:simple-youtube: Обзор](){ .printer-action target="_blank" } [:material-shopping: Купить](){ .printer-action .printer-action--primary target="_blank" }
+[:material-shopping: Купить](https://market.yandex.ru/cc/BSKwee?erid=5jtCeReNx12oak2syyaCfma){ .printer-action .printer-action--primary target="_blank" }
 { .printer-actions }
 
 </div>
