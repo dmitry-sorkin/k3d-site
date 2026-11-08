@@ -213,7 +213,7 @@ Bambu Lab X2D - один из самых сбалансированных при
 
 ### QIDI Q2
 
-_Более дешёвая альтернатива под техничку_{ .printer-role }
+_Бюджетный среднегабаритный принтер для инженерной печати_{ .printer-role }
 
 <div class="image-text-row printer-card" markdown>
 <div class="image-text-img" markdown>
@@ -254,6 +254,8 @@ QIDI Q2 в первую очередь заточен под решение за
     X2D стоит почти вдвое дороже, имеет область печати чуть-чуть меньше, ускорения немного ниже, а также хотэнды у него греются не до 350, а до 310°C. Но при этом у него более производительные хотэнды, сильно более производительный обдув, двойной экструдер и X2D заметно более простой и надёжный в эксплуатации. Поэтому, если есть деньги на X2D, то я бы брал его. Q2 же имеет смысл только если бюджета на X2D не хватает, но печатать техничку надо.
 
 ### Bambu Lab H2D
+
+_Крупногабаритный принтер для инженерной печати_{ .printer-role }
 
 <div class="image-text-row printer-card" markdown>
 <div class="image-text-img" markdown>
@@ -296,6 +298,46 @@ H2D - это крупногабаритный принтер Bambu Lab, зато
 ??? compare "Сравнить с Bambu Lab H2C"
 
     H2C - это H2D, у которого вместо правого экструдера тулченджер. При этом тулченджер этот весьма посредственный, ведь, хоть и имеет довольно много каналов, но меняет филамент очень долго - около 40 секунд. Это примерно вдвое быстрее, чем менять филамент через AMS, и примерно втрое медленнее, чем его меняют полноценные тулченджеры. Учитывая то, что H2C при этом стоит примерно на 40000-60000 ₽ дороже, а также тот факт, что уже анонсированы полноценные тулченджеры от Bambu Lab, я бы его на данный момент всерьёз не рассматривал.
+
+??? compare "Сравнить с Qidi Plus 5"
+
+    H2D имеет двойной экструдер, возможность подключать до нескольких AMS 2 Pro / AMS HT, более производительные хотэнды и обдув, множество удобств типа вентиляции, а также качество и надёжность заметно выше. Зато Plus 5 стоит буквально втрое дешевле. Если есть деньги на H2D, то я бы взял его. Если лишних 100к в кармане не завалялось, то и Plus 5 норм.
+
+### QIDI Plus 5
+
+_Бюджетный крупногабаритный принтер для инженерной печати_{ .printer-role }
+
+<div class="image-text-row printer-card" markdown>
+<div class="image-text-img" markdown>
+
+![QIDI Plus 5](pics/qidi_plus5.png){ width="260" }
+
+</div>
+<div class="image-text-content" markdown>
+
+|                  |                                                                                               |
+| ----------------:|:----------------------------------------------------------------------------------------------|
+| Стоимость:        | ~50000-60000 ₽ (Без Box) |
+| Область печати:   | 320×320×300 мм |
+| Простота и удобство: | :material-star::material-star::material-star-outline::material-star-outline::material-star-outline: |
+| Скорость: | :material-star::material-star::material-star::material-star::material-star-outline: |
+| Надёжность: | :material-star::material-star::material-star::material-star-outline::material-star-outline: |
+| Базовая печать: | :material-star::material-star::material-star::material-star-outline::material-star-outline: |
+| Инженерная печать: | :material-star::material-star::material-star::material-star::material-star: |
+| ММ печать: | :material-star::material-star::material-star-outline::material-star-outline::material-star-outline: |
+| Ликвидность: | :material-star::material-star::material-star-outline::material-star-outline::material-star-outline: |
+
+[:material-shopping: Купить](https://ali.click/vhj8q10?erid=2SDnjehThtp){ .printer-action .printer-action--primary target="_blank" }
+{ .printer-actions }
+
+</div>
+</div>
+
+Просто увеличенная версия [Qidi Q2](#qidi-q2) с теми же плюсами и минусами.
+
+??? compare "Сравнить с Bambu Lab H2D"
+
+    H2D имеет двойной экструдер, возможность подключать до нескольких AMS 2 Pro / AMS HT, более производительные хотэнды и обдув, множество удобств типа вентиляции, а также качество и надёжность заметно выше. Зато Plus 5 стоит буквально втрое дешевле. Если есть деньги на H2D, то я бы взял его. Если лишних 100к в кармане не завалялось, то и Plus 5 норм.
 
 ## Мультиматериальная печать { #multimaterial }
 
