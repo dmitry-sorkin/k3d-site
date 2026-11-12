@@ -108,12 +108,12 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование |  Напряжение   | Мощность | Ссылки  | Комментарий |
 | :----------- | :-----------: | :------: | :-----: | :---------- |
-| RS-15-5 | 5в | 15Вт | [:material-shopping:](https://market.yandex.ru/card/rs-15-5-mean-well-blok-pitaniya-v-kozhukhe-na-shassi-acdc-15-vt-5-v/103666096992){ target="_blank" } | Для питания одноплатных компьютеров, если нет возможности запитать от платы или через преобразователь |
-| LRS-350-12 | 12в | 348Вт | [:material-shopping:](https://market.yandex.ru/card/lrs-350-12-mean-well-blok-pitaniya-na-shassi-350vt-12v-29a-impulsnyy-v-kozhukhe-s-ventilyatorom-vibroustoychivost-led-indikator-pitaniya-1u-bez-kkm-pereklyuchatel-115230v/103666073352){ target="_blank" } | Для ремонта старых принтеров на 12в. При сборке принтера такие лучше не использовать |
-| LRS-200-24 | 24в | 211Вт | [:material-shopping:](https://market.yandex.ru/card/lrs-200-24-mean-well-blok-pitaniya-na-shassi-200vt-24v-88a-v-kozhukhe-passivnoye-okhlazhdeniye-led-indikator-pitaniya-kompleks-zashchit-vysokaya-rabochaya-temperatura-nizkoye-energopotrebleniye-bez-nagruzki/103666071284){ target="_blank" } | Хватит на среднестатистический принтер, если стол запитан отдельно |
-| LRS-350-24 | 24в | 350Вт | [:material-shopping:](https://market.yandex.ru/card/lrs-350-24-mean-well-blok-pitaniya-na-shassi-350vt-24v-146a-impulsnyy-v-kozhukhe-s-ventilyatorom-vibroustoychivost-led-indikator-pitaniya-1u-bez-kkm-pereklyuchatel-115230v/103666078836){ target="_blank" } | Хватает на среднестатистический принтер (Ender-3/FBG6 и подобное) с питанием стола, или на продвинутый принтер в "жирной" комплектации без подогрева стола |
-| LRS-600-24 | 24в | 600Вт | [:material-shopping:](https://market.yandex.ru/card/lrs-600-24-mean-well-blok-pitaniya-na-shassi-600vt-24v-25a-impulsnyy-v-kozhukhe-s-ventilyatorom-vibroustoychivost-podkhodit-dlya-led-1u-bez-kkm-pereklyuchatel-115230v/103666072236){ target="_blank" } | Для принтеров с большими столами, питающимися от БП |
-| LRS-200-48 | 48в | 211Вт | [:material-shopping:](https://market.yandex.ru/card/lrs-200-48-mean-well-blok-pitaniya-na-shassi-200vt-48v-44a-v-kozhukhe-passivnoye-okhlazhdeniye-led-indikator-pitaniya-kompleks-zashchit-vysokaya-rabochaya-temperatura-nizkoye-energopotrebleniye-bez-nagruzki/103666071229){ target="_blank" } | Для питания моторов в продвинутых принтерах с высоковольтными драйверами |
+| RS-15-5 | 5в | 15Вт | [:material-shopping:](https://market.yandex.ru/cc/BWXAze?erid=5jtCeReNx12oak2tyBBDAy5){ target="_blank" } | Для питания одноплатных компьютеров, если нет возможности запитать от платы или через преобразователь |
+| LRS-350-12 | 12в | 348Вт | [:material-shopping:](https://market.yandex.ru/cc/BWXbN7?erid=5jtCeReNx12oak2tyBBEBwk){ target="_blank" } | Для ремонта старых принтеров на 12в. При сборке принтера такие лучше не использовать |
+| LRS-200-24 | 24в | 211Вт | [:material-shopping:](https://market.yandex.ru/cc/BWXbmS?erid=5jtCeReNx12oak2tyBBEC29){ target="_blank" } | Хватит на среднестатистический принтер, если стол запитан отдельно |
+| LRS-350-24 | 24в | 350Вт | [:material-shopping:](https://market.yandex.ru/cc/BWXuRk?erid=5jtCeReNx12oak2tyBBFCAC){ target="_blank" } | Хватает на среднестатистический принтер (Ender-3/FBG6 и подобное) с питанием стола, или на продвинутый принтер в "жирной" комплектации без подогрева стола |
+| LRS-600-24 | 24в | 600Вт | [:material-shopping:](https://market.yandex.ru/cc/BWXuqz?erid=5jtCeReNx12oak2tyBBFCAJ){ target="_blank" } | Для принтеров с большими столами, питающимися от БП |
+| LRS-200-48 | 48в | 211Вт | [:material-shopping:](https://market.yandex.ru/cc/BWYafK?erid=5jtCeReNx12oak2tyBCiBJU){ target="_blank" } | Для питания моторов в продвинутых принтерах с высоковольтными драйверами |
 | XL4015 | Настраивается | - | [:material-shopping:](https://ali.click/rn1iq1s?erid=2SDnjdycEk4 "TENSTAR ROBOT"){ target="_blank" } | Для подключения одноплатников к БП принтера. Также можно использовать для питания светодиодной ленты и прочих потребителей, чьё напряжение питания отличается от напряжения с БП принтера. Ток заявлен до 5А, но это китайские амперы |
 | MP1584 | Настраивается | - | [:material-shopping:](https://ali.click/fl1iq14?erid=2SDnjdsgHcg "TZT"){ target="_blank" } | Для подключения вентиляторов 5-12в к принтеру с питанием 24в. Маленький и дешевый. Макс. ток заявлен до 3А, но это китайские амперы |
 
@@ -351,7 +351,7 @@ description: Каталог проверенных ссылок на детал�
 
 | Наименование | Ссылки | Комментарий |
 | :----------- | :----: | :---------- |
-| Logitech C270 | [:material-shopping:](https://ali.click/2r36o1e?erid=2SDnjbwPMAc "AliExpress"){ target="_blank" } [:material-shopping:](https://market.yandex.ru/card/veb-kamera-logitech-webcam-c270-hd-960-001063/103320186095 "ЯндексМаркет"){ target="_blank" } | Очень распространенная камера. Легко установить и настроить, даёт сносную картинку, стоит дешево |
+| Logitech C270 | [:material-shopping:](https://ali.click/2r36o1e?erid=2SDnjbwPMAc "AliExpress"){ target="_blank" } [:material-shopping:](https://ali.click/so4mq1p?erid=2SDnjePQk52 "ЯндексМаркет"){ target="_blank" } | Очень распространенная камера. Легко установить и настроить, даёт сносную картинку, стоит дешево |
 | K1 camera |  [:material-shopping:](https://ali.click/nq36o1g?erid=2SDnjeyoYDi){ target="_blank" }  | Камера для установки на Creality K1 или K1 Max. Дешевая, даёт HD разрешение. Не протестирована на других принтерах |
 
 ## Твердотельные реле

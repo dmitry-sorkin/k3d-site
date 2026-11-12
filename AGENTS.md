@@ -224,6 +224,20 @@ Exit code is `0` when everything that was found got converted (or nothing matche
 - `прямых ссылок на AliExpress нет — файл не изменён` — nothing to do; this also means the page was already processed (re-runs are safe: affiliate links sit on `ali.click`/`alli.pub` hosts and are not matched by the link regex).
 - Errors worth relaying to the user instead of retrying blindly: `422 Offer does not match placement!` → `ALIEXPRESS_PLACEMENT_ID` is stale or belongs to another offer; `422 Offer not found!` / offer id ≠ 1 → the link is not really an AliExpress product offer; `429` → rate limit, the script already retries with backoff.
 
+### Workaround for `422 The product does not participate in the AE Platform program`
+
+Some product links get rejected with `422 The product does not participate in the AE Platform program. No rewards are accrued for purchases. Cannot be advertised.` even though the product exists and the link is correct. This is a known EPN/AliExpress bug, not a bad link — do not conclude that the product cannot be advertised.
+
+Reliable workaround: convert the product link into a search link for the same article number, then run the script again on that page.
+
+1. Take the article number out of `https://aliexpress.ru/item/<art>.html` (the `<art>` part).
+2. Replace the URL with `https://aliexpress.ru/wholesale?SearchText=<art>`, keeping the surrounding markup untouched — the link title, `{ target="_blank" }`, the icon, and the CSV quoting all stay as they are.
+3. Run `python tools/affiliate.py <page>` again, still one page per run. Search links convert without errors.
+
+How it was verified: on 2026-11-09 every one of the 69 product links that had been rejected with this 422 (in `electronics.md` and the filament map CSVs) converted successfully after being rewritten to search links — 68 unique links, no failures.
+
+Bulk rewrite of the URLs is a plain text edit and may be done in one pass over the pages that hold such links; the **conversion** itself still goes through `tools/affiliate.py` one page at a time.
+
 ### After running
 
 1. Confirm in the report that every AliExpress link on the page was either replaced or skipped, and that the script wrote the file.

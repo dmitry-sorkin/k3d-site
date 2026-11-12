@@ -30,8 +30,8 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| Литол-24 ГОСТ | [:material-shopping:](https://market.yandex.ru/card/smazka-litol-24-gazpromneft-100-gr-2389906978/5814294782){ target="_blank" } | Универсальная дешёвая консистентная смазка. Очень распространена, и до сих пор не зафиксировано случаев, когда из-за неё были бы какие-нибудь проблемы |
-| ВМПАВТО RUBIN | [:material-shopping:](https://market.yandex.ru/card/smazka-mnogotselevaya-vmpauto-mc-1520-vodostoykaya-200-ml-1413/102203929061){ target="_blank" } | Менее густая смазка. Принципиальной разницы в работе с Литол-24 нет, принтер лучше или быстрее печатать от такой смазки не станет |
+| Литол-24 ГОСТ | [:material-shopping:](https://market.yandex.ru/cc/BWVw6E?erid=5jtCeReNx12oak2tyB9iXFj){ target="_blank" } | Универсальная дешёвая консистентная смазка. Очень распространена, и до сих пор не зафиксировано случаев, когда из-за неё были бы какие-нибудь проблемы |
+| ВМПАВТО RUBIN | [:material-shopping:](https://market.yandex.ru/cc/BWVwQM?erid=5jtCeReNx12oak2tyB9iXL3){ target="_blank" } | Менее густая смазка. Принципиальной разницы в работе с Литол-24 нет, принтер лучше или быстрее печатать от такой смазки не станет |
 
 ## Готовые клеи
 
@@ -41,7 +41,7 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| 3D-клей | [:material-shopping:](https://market.yandex.ru/search?text=3%D0%B4%20%D0%BA%D0%BB%D0%B5%D0%B9){ target="_blank" } | Хорошо липнут `PLA`, `PETG`, `ABS`, `ASA`, `HIPS`, `TPU`, `PVA`, `PVB`, `SBS`, `SAN`. Средне липнут `PC`, `PA12`. Наносится тонким слоем, не влияет на внешний вид нижней поверхности. Легко смывается водой или спиртом |
+| 3D-клей | [:material-shopping:](https://ali.click/odrlq1o?erid=2SDnjcLeL3N){ target="_blank" } | Хорошо липнут `PLA`, `PETG`, `ABS`, `ASA`, `HIPS`, `TPU`, `PVA`, `PVB`, `SBS`, `SAN`. Средне липнут `PC`, `PA12`. Наносится тонким слоем, не влияет на внешний вид нижней поверхности. Легко смывается водой или спиртом |
 
 ## Самодельные клеи
 
@@ -55,9 +55,9 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| БФ-2 | [:material-shopping:](https://market.yandex.ru/card/kley-bf-2-100-ml/101769238247){ target="_blank" } | Необходимо размешать с изопропанолом 1:1. Хорошо липнет всё, кроме `SEBS`. Слишком хорошо липнут нейлоны, могут быть проблемы с отделением от стола. Наносится кисточкой, может оставлять на модели следы. Не смывается |
-| Изопропанол | [:material-shopping:](https://market.yandex.ru/card/izopropanol-spirt-izopropilovyy-promkhim-1l-9997/5878254855){ target="_blank" } | Для разбавления БФ-2. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
-| Кисточка | [:material-shopping:](https://market.yandex.ru/card/kist-fleytsevaya-25-mm-akor-standart/102614719516){ target="_blank" } | Кисточку лучше держать прям в банке с раствором БФ-2 |
+| БФ-2 | [:material-shopping:](https://market.yandex.ru/cc/BWW4u7?erid=5jtCeReNx12oak2tyB9jCDb){ target="_blank" } | Необходимо размешать с изопропанолом 1:1. Хорошо липнет всё, кроме `SEBS`. Слишком хорошо липнут нейлоны, могут быть проблемы с отделением от стола. Наносится кисточкой, может оставлять на модели следы. Не смывается |
+| Изопропанол | [:material-shopping:](https://market.yandex.ru/cc/BWW6Sf?erid=5jtCeReNx12oak2tyB9jXAc){ target="_blank" } | Для разбавления БФ-2. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
+| Кисточка | [:material-shopping:](https://market.yandex.ru/cc/BWW8TE?erid=5jtCeReNx12oak2tyB9jXUB){ target="_blank" } | Кисточку лучше держать прям в банке с раствором БФ-2 |
 
 ### PVP K-30 и K-90
 
@@ -69,17 +69,17 @@ description: Каталог расходников для 3D печати
 
 | Наименование | Ссылки | Комментарий |
 |:------------ | :----: | :---------- |
-| PVP K-30 | [:material-shopping:](https://market.yandex.ru/card/povidon-k-30-polivinilpirrolidon-35-gramm/102223674255){ target="_blank" } | Менее "держаковый" вариант. Лучше подходит для печати простыми материалами |
-| PVP K-90 | [:material-shopping:](https://market.yandex.ru/card/polivinilpirrolidon-pvp-k-90-povidon-pvp-k-90-kontsentrat-3d-kleya-3kh5gramm/103217749249){ target="_blank" } | Более "держаковый" вариант. Предпочтительно для филаментов с высокой усадкой |
-| Изопропанол | [:material-shopping:](https://market.yandex.ru/card/izopropanol-spirt-izopropilovyy-promkhim-1l-9997/5878254855){ target="_blank" } | Используется для разбавления PVP. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
-| Маркер перезаполняемый | [:material-shopping:](https://market.yandex.ru/card/marker-tolshchina-50-mm-1-sht-dlya-graffiti/5858382858){ target="_blank" } | Очень удобный маркер, которым получается наносить клей тонким ровным слоем |
+| PVP K-30 | :material-help-circle:{ title='Такой филамент есть в каталоге производителя, но из-за закона о рекламе я не смог добавить ссылку на него. Воспользуйтесь поиском по вашему любимому маркетплейсу' } | Менее "держаковый" вариант. Лучше подходит для печати простыми материалами |
+| PVP K-90 | [:material-shopping:](https://market.yandex.ru/cc/BWX6JQ?erid=5jtCeReNx12oak2tyBBCqiP){ target="_blank" } | Более "держаковый" вариант. Предпочтительно для филаментов с высокой усадкой |
+| Изопропанол | [:material-shopping:](https://market.yandex.ru/cc/BWW6Sf?erid=5jtCeReNx12oak2tyB9jXAc){ target="_blank" } | Используется для разбавления PVP. Также может использоваться для чистки механики, обезжиривания поверхностей и т.д. Поэтому взять побольше не будет ошибкой |
+| Маркер перезаполняемый | [:material-shopping:](https://market.yandex.ru/cc/BWX7Ms?erid=5jtCeReNx12oak2tyBBCqs5){ target="_blank" } | Очень удобный маркер, которым получается наносить клей тонким ровным слоем |
 
 ## Растворители и обезжириватели
 
 | Наименование | Ссылки | Комментарий |
 |:------------ |:------:|:----------- |
-| Изопропанол | [:material-shopping:](https://market.yandex.ru/card/izopropanol-spirt-izopropilovyy-promkhim-1l-9997/5878254855){ target="_blank" } | Используется для разбавления БФ-2 и PVP, промывки направляющих и очистки деталей механики принтера. Для обезжиривания стола не лучший вариант т.к. оставляет тонкую плёнку, которая ухудшает адгезию деталей к столу |
-| Обезжириватель | [:material-shopping:](https://market.yandex.ru/card/rastvoritel-obezzhirivatel-welltex-bystroisparyayushchiysya-1l-60220/102536456872){ target="_blank" } | Обезжиривает не оставляя следов, может использоваться для промывки направляющих или чистки механики принтера |
+| Изопропанол | [:material-shopping:](https://market.yandex.ru/cc/BWW6Sf?erid=5jtCeReNx12oak2tyB9jXAc){ target="_blank" } | Используется для разбавления БФ-2 и PVP, промывки направляющих и очистки деталей механики принтера. Для обезжиривания стола не лучший вариант т.к. оставляет тонкую плёнку, которая ухудшает адгезию деталей к столу |
+| Обезжириватель | [:material-shopping:](https://market.yandex.ru/cc/BWX9rk?erid=5jtCeReNx12oak2tyBBCr6R){ target="_blank" } | Обезжиривает не оставляя следов, может использоваться для промывки направляющих или чистки механики принтера |
 
 ^`Реклама: ООО "АЛИБАБА.КОМ (РУ)" ИНН 7703380158`^[^1]
 ^`Реклама. ООО "АЕР Услуги" ИНН 7703380158.`^[^1]

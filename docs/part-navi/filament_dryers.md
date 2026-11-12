@@ -101,7 +101,7 @@ description: Каталог проверенных ссылок на сушил�
 | Наименование | Ссылки | Примечание |
 | :----------- | :----: | :--------- |
 | Силикагелевый наполнитель для кошек | - | Работает хуже, чем технический силикагель. Зато можно купить в любом зоомагазине |
-| КСМГ | [:material-shopping:](https://market.yandex.ru/card/silikagel-prozrachnyy-ksmg-1l-v-granulakh-dlya-osushitelya-szhatogo-vozdukha-grossair-tekhnicheskiy/103698446517){ target="_blank" } | Наилучший выбор для хранения филамента |
+| КСМГ | [:material-shopping:](https://market.yandex.ru/cc/BWYa3V?erid=5jtCeReNx12oak2tyBCiB9f){ target="_blank" } | Наилучший выбор для хранения филамента |
 | Индикаторный силикагель | [:material-shopping:](https://market.yandex.ru/card/silikagel-indikatornyy-ksmg-siniy-1l-v-granulakh-dlya-osushitelya-szhatogo-vozdukha/4743037016){ target="_blank" } | Похож на КСМГ, но меняет свой цвет, если влажный. Обычно используют не сам по себе, а примешивают небольшую часть к КСМГ |
 
 ### Регенерация силикагеля
