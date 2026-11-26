@@ -244,6 +244,7 @@ nav:
           - Методика: ./calibrations/la/index.md
           - Калибровщик: ./calibrations/la/calibrator.md
       - Объёмный расход:
+          - Методика: ./calibrations/max_flowrate/index.md
           - Калибровщик: ./calibrations/max_flowrate/calibrator.md
   - Проекты:
       - Перевод PrusaSlicer: ./projects/ps_translation/index.md
