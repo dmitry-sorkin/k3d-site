@@ -1,6 +1,7 @@
 ---
 
 authors:
+  - maeln0r
   - sorkin
 icon: material/file-document
 title: Калибровка расхода
